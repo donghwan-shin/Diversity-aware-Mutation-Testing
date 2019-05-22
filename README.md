@@ -35,6 +35,6 @@ If you simply run the file as it is, you will find the output files under `resou
 ## Remarks
 
 Unfortunately, it does not support "good" documentations for details.
-You need to take a look the source codes. Everything is there.
-However, you can use the "Issues" board if you have some questions. 
+You need to take a look the source codes. Sorry.
+Of course, you can use the "Issues" board if you have some questions. 
 I will try to my best to reply your questions. Thanks!
