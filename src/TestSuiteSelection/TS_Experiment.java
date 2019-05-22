@@ -27,7 +27,7 @@ public class TS_Experiment {
 
         // you can specify a test pool type and the number of threads for running the experiments
         String POOL = "dev"; // select one among {"all", "dev", "randoop", "evosuite-branch"}
-        int NO_THREAD = 1;
+        int NO_THREAD = 4;
 
         /* CHOOSE one or more of the following:
         * score control: change score of a test suite from 0.05 to 1 in steps of 0.05

@@ -17,7 +17,7 @@ public class SizeControlThread implements Runnable {
     String n;
     String testPool;
     boolean printAll;
-    int MAX_REP = 10000;
+    int MAX_REP = 1000;
 
     public SizeControlThread(String workingDir, String p, String v, String n, String testPool, boolean printAll) {
         this.workingDir = workingDir;
