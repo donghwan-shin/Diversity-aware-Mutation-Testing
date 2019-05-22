@@ -1,0 +1,429 @@
+1:ROR:<(int,int):!=(int,int):org.jfree.data.time.Week@<init>(int,int):128:week < FIRST_WEEK_IN_YEAR |==> week != FIRST_WEEK_IN_YEAR
+2:ROR:<(int,int):<=(int,int):org.jfree.data.time.Week@<init>(int,int):128:week < FIRST_WEEK_IN_YEAR |==> week <= FIRST_WEEK_IN_YEAR
+3:ROR:<(int,int):==(int,int):org.jfree.data.time.Week@<init>(int,int):128:week < FIRST_WEEK_IN_YEAR |==> week == FIRST_WEEK_IN_YEAR
+4:ROR:<(int,int):>(int,int):org.jfree.data.time.Week@<init>(int,int):128:week < FIRST_WEEK_IN_YEAR |==> week > FIRST_WEEK_IN_YEAR
+5:ROR:<(int,int):>=(int,int):org.jfree.data.time.Week@<init>(int,int):128:week < FIRST_WEEK_IN_YEAR |==> week >= FIRST_WEEK_IN_YEAR
+6:ROR:<(int,int):FALSE(int,int):org.jfree.data.time.Week@<init>(int,int):128:week < FIRST_WEEK_IN_YEAR |==> false
+7:ROR:<(int,int):TRUE(int,int):org.jfree.data.time.Week@<init>(int,int):128:week < FIRST_WEEK_IN_YEAR |==> true
+8:ROR:>(int,int):!=(int,int):org.jfree.data.time.Week@<init>(int,int):128:week > LAST_WEEK_IN_YEAR |==> week != LAST_WEEK_IN_YEAR
+9:ROR:>(int,int):<(int,int):org.jfree.data.time.Week@<init>(int,int):128:week > LAST_WEEK_IN_YEAR |==> week < LAST_WEEK_IN_YEAR
+10:ROR:>(int,int):<=(int,int):org.jfree.data.time.Week@<init>(int,int):128:week > LAST_WEEK_IN_YEAR |==> week <= LAST_WEEK_IN_YEAR
+11:ROR:>(int,int):==(int,int):org.jfree.data.time.Week@<init>(int,int):128:week > LAST_WEEK_IN_YEAR |==> week == LAST_WEEK_IN_YEAR
+12:ROR:>(int,int):>=(int,int):org.jfree.data.time.Week@<init>(int,int):128:week > LAST_WEEK_IN_YEAR |==> week >= LAST_WEEK_IN_YEAR
+13:ROR:>(int,int):FALSE(int,int):org.jfree.data.time.Week@<init>(int,int):128:week > LAST_WEEK_IN_YEAR |==> false
+14:ROR:>(int,int):TRUE(int,int):org.jfree.data.time.Week@<init>(int,int):128:week > LAST_WEEK_IN_YEAR |==> true
+15:COR:&&(boolean,boolean):!=(boolean,boolean):org.jfree.data.time.Week@<init>(int,int):128:(week < FIRST_WEEK_IN_YEAR) && (week > LAST_WEEK_IN_YEAR) |==> (week < FIRST_WEEK_IN_YEAR) != (week > LAST_WEEK_IN_YEAR)
+16:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.data.time.Week@<init>(int,int):128:(week < FIRST_WEEK_IN_YEAR) && (week > LAST_WEEK_IN_YEAR) |==> (week < FIRST_WEEK_IN_YEAR) == (week > LAST_WEEK_IN_YEAR)
+17:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.data.time.Week@<init>(int,int):128:(week < FIRST_WEEK_IN_YEAR) && (week > LAST_WEEK_IN_YEAR) |==> false
+18:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.data.time.Week@<init>(int,int):128:(week < FIRST_WEEK_IN_YEAR) && (week > LAST_WEEK_IN_YEAR) |==> (week < FIRST_WEEK_IN_YEAR)
+19:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.data.time.Week@<init>(int,int):128:(week < FIRST_WEEK_IN_YEAR) && (week > LAST_WEEK_IN_YEAR) |==> (week > LAST_WEEK_IN_YEAR)
+20:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.jfree.data.time.Week@<init>(int,int):128:(week < FIRST_WEEK_IN_YEAR) && (week > LAST_WEEK_IN_YEAR) |==> true
+21:COR:&&(boolean,boolean):||(boolean,boolean):org.jfree.data.time.Week@<init>(int,int):128:(week < FIRST_WEEK_IN_YEAR) && (week > LAST_WEEK_IN_YEAR) |==> (week < FIRST_WEEK_IN_YEAR) || (week > LAST_WEEK_IN_YEAR)
+22:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@<init>(int,int):132:this.week = (byte)week |==> <NO-OP>
+23:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@<init>(int,int):133:this.year = (short)year |==> <NO-OP>
+24:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@<init>(int,int):134:peg(Calendar.getInstance()) |==> <NO-OP>
+25:ROR:<(int,int):!=(int,int):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:week < FIRST_WEEK_IN_YEAR |==> week != FIRST_WEEK_IN_YEAR
+26:ROR:<(int,int):<=(int,int):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:week < FIRST_WEEK_IN_YEAR |==> week <= FIRST_WEEK_IN_YEAR
+27:ROR:<(int,int):==(int,int):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:week < FIRST_WEEK_IN_YEAR |==> week == FIRST_WEEK_IN_YEAR
+28:ROR:<(int,int):>(int,int):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:week < FIRST_WEEK_IN_YEAR |==> week > FIRST_WEEK_IN_YEAR
+29:ROR:<(int,int):>=(int,int):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:week < FIRST_WEEK_IN_YEAR |==> week >= FIRST_WEEK_IN_YEAR
+30:ROR:<(int,int):FALSE(int,int):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:week < FIRST_WEEK_IN_YEAR |==> false
+31:ROR:<(int,int):TRUE(int,int):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:week < FIRST_WEEK_IN_YEAR |==> true
+32:ROR:>(int,int):!=(int,int):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:week > LAST_WEEK_IN_YEAR |==> week != LAST_WEEK_IN_YEAR
+33:ROR:>(int,int):<(int,int):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:week > LAST_WEEK_IN_YEAR |==> week < LAST_WEEK_IN_YEAR
+34:ROR:>(int,int):<=(int,int):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:week > LAST_WEEK_IN_YEAR |==> week <= LAST_WEEK_IN_YEAR
+35:ROR:>(int,int):==(int,int):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:week > LAST_WEEK_IN_YEAR |==> week == LAST_WEEK_IN_YEAR
+36:ROR:>(int,int):>=(int,int):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:week > LAST_WEEK_IN_YEAR |==> week >= LAST_WEEK_IN_YEAR
+37:ROR:>(int,int):FALSE(int,int):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:week > LAST_WEEK_IN_YEAR |==> false
+38:ROR:>(int,int):TRUE(int,int):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:week > LAST_WEEK_IN_YEAR |==> true
+39:COR:&&(boolean,boolean):!=(boolean,boolean):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:(week < FIRST_WEEK_IN_YEAR) && (week > LAST_WEEK_IN_YEAR) |==> (week < FIRST_WEEK_IN_YEAR) != (week > LAST_WEEK_IN_YEAR)
+40:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:(week < FIRST_WEEK_IN_YEAR) && (week > LAST_WEEK_IN_YEAR) |==> (week < FIRST_WEEK_IN_YEAR) == (week > LAST_WEEK_IN_YEAR)
+41:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:(week < FIRST_WEEK_IN_YEAR) && (week > LAST_WEEK_IN_YEAR) |==> false
+42:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:(week < FIRST_WEEK_IN_YEAR) && (week > LAST_WEEK_IN_YEAR) |==> (week < FIRST_WEEK_IN_YEAR)
+43:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:(week < FIRST_WEEK_IN_YEAR) && (week > LAST_WEEK_IN_YEAR) |==> (week > LAST_WEEK_IN_YEAR)
+44:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:(week < FIRST_WEEK_IN_YEAR) && (week > LAST_WEEK_IN_YEAR) |==> true
+45:COR:&&(boolean,boolean):||(boolean,boolean):org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):144:(week < FIRST_WEEK_IN_YEAR) && (week > LAST_WEEK_IN_YEAR) |==> (week < FIRST_WEEK_IN_YEAR) || (week > LAST_WEEK_IN_YEAR)
+46:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):148:this.week = (byte)week |==> <NO-OP>
+47:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):149:this.year = (short)year.getYear() |==> <NO-OP>
+48:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@<init>(int,org.jfree.data.time.Year):150:peg(Calendar.getInstance()) |==> <NO-OP>
+49:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):189:time == null |==> time != null
+50:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):189:time == null |==> false
+51:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):189:time == null |==> true
+52:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):192:zone == null |==> zone != null
+53:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):192:zone == null |==> false
+54:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):192:zone == null |==> true
+55:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):195:locale == null |==> locale != null
+56:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):195:locale == null |==> false
+57:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):195:locale == null |==> true
+58:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):199:calendar.setTime(time) |==> <NO-OP>
+59:LVR:POS:0:org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):205:1 |==> 0
+60:LVR:POS:NEG:org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):205:1 |==> -1
+61:ROR:==(int,int):!=(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):205:tempWeek == 1 |==> tempWeek != 1
+62:ROR:==(int,int):<(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):205:tempWeek == 1 |==> tempWeek < 1
+63:ROR:==(int,int):<=(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):205:tempWeek == 1 |==> tempWeek <= 1
+64:ROR:==(int,int):>(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):205:tempWeek == 1 |==> tempWeek > 1
+65:ROR:==(int,int):>=(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):205:tempWeek == 1 |==> tempWeek >= 1
+66:ROR:==(int,int):FALSE(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):205:tempWeek == 1 |==> false
+67:ROR:==(int,int):TRUE(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):205:tempWeek == 1 |==> true
+68:ROR:==(int,int):!=(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):206:calendar.get(Calendar.MONTH) == Calendar.DECEMBER |==> calendar.get(Calendar.MONTH) != Calendar.DECEMBER
+69:ROR:==(int,int):<(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):206:calendar.get(Calendar.MONTH) == Calendar.DECEMBER |==> calendar.get(Calendar.MONTH) < Calendar.DECEMBER
+70:ROR:==(int,int):<=(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):206:calendar.get(Calendar.MONTH) == Calendar.DECEMBER |==> calendar.get(Calendar.MONTH) <= Calendar.DECEMBER
+71:ROR:==(int,int):>(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):206:calendar.get(Calendar.MONTH) == Calendar.DECEMBER |==> calendar.get(Calendar.MONTH) > Calendar.DECEMBER
+72:ROR:==(int,int):>=(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):206:calendar.get(Calendar.MONTH) == Calendar.DECEMBER |==> calendar.get(Calendar.MONTH) >= Calendar.DECEMBER
+73:ROR:==(int,int):FALSE(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):206:calendar.get(Calendar.MONTH) == Calendar.DECEMBER |==> false
+74:ROR:==(int,int):TRUE(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):206:calendar.get(Calendar.MONTH) == Calendar.DECEMBER |==> true
+75:COR:&&(boolean,boolean):!=(boolean,boolean):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):205:tempWeek == 1 && calendar.get(Calendar.MONTH) == Calendar.DECEMBER |==> tempWeek == 1 != (calendar.get(Calendar.MONTH) == Calendar.DECEMBER)
+76:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):205:tempWeek == 1 && calendar.get(Calendar.MONTH) == Calendar.DECEMBER |==> tempWeek == 1 == (calendar.get(Calendar.MONTH) == Calendar.DECEMBER)
+77:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):206:tempWeek == 1 && calendar.get(Calendar.MONTH) == Calendar.DECEMBER |==> false
+78:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):205:tempWeek == 1 && calendar.get(Calendar.MONTH) == Calendar.DECEMBER |==> tempWeek == 1
+79:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):206:tempWeek == 1 && calendar.get(Calendar.MONTH) == Calendar.DECEMBER |==> calendar.get(Calendar.MONTH) == Calendar.DECEMBER
+80:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):206:tempWeek == 1 && calendar.get(Calendar.MONTH) == Calendar.DECEMBER |==> true
+81:COR:&&(boolean,boolean):||(boolean,boolean):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):205:tempWeek == 1 && calendar.get(Calendar.MONTH) == Calendar.DECEMBER |==> tempWeek == 1 || calendar.get(Calendar.MONTH) == Calendar.DECEMBER
+82:LVR:POS:0:org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):207:1 |==> 0
+83:LVR:POS:NEG:org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):207:1 |==> -1
+84:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):207:this.week = 1 |==> <NO-OP>
+85:LVR:POS:0:org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):208:1 |==> 0
+86:LVR:POS:NEG:org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):208:1 |==> -1
+87:AOR:+(int,int):%(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):208:calendar.get(Calendar.YEAR) + 1 |==> calendar.get(Calendar.YEAR) % 1
+88:AOR:+(int,int):*(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):208:calendar.get(Calendar.YEAR) + 1 |==> calendar.get(Calendar.YEAR) * 1
+89:AOR:+(int,int):-(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):208:calendar.get(Calendar.YEAR) + 1 |==> calendar.get(Calendar.YEAR) - 1
+90:AOR:+(int,int):/(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):208:calendar.get(Calendar.YEAR) + 1 |==> calendar.get(Calendar.YEAR) / 1
+91:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):208:this.year = (short)(calendar.get(Calendar.YEAR) + 1) |==> <NO-OP>
+92:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):211:this.week = (byte)Math.min(tempWeek, LAST_WEEK_IN_YEAR) |==> <NO-OP>
+93:ROR:==(int,int):!=(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):215:calendar.get(Calendar.MONTH) == Calendar.JANUARY |==> calendar.get(Calendar.MONTH) != Calendar.JANUARY
+94:ROR:==(int,int):<(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):215:calendar.get(Calendar.MONTH) == Calendar.JANUARY |==> calendar.get(Calendar.MONTH) < Calendar.JANUARY
+95:ROR:==(int,int):<=(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):215:calendar.get(Calendar.MONTH) == Calendar.JANUARY |==> calendar.get(Calendar.MONTH) <= Calendar.JANUARY
+96:ROR:==(int,int):>(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):215:calendar.get(Calendar.MONTH) == Calendar.JANUARY |==> calendar.get(Calendar.MONTH) > Calendar.JANUARY
+97:ROR:==(int,int):>=(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):215:calendar.get(Calendar.MONTH) == Calendar.JANUARY |==> calendar.get(Calendar.MONTH) >= Calendar.JANUARY
+98:ROR:==(int,int):FALSE(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):215:calendar.get(Calendar.MONTH) == Calendar.JANUARY |==> false
+99:ROR:==(int,int):TRUE(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):215:calendar.get(Calendar.MONTH) == Calendar.JANUARY |==> true
+100:LVR:POS:0:org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):216:52 |==> 0
+101:LVR:POS:NEG:org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):216:52 |==> -52
+102:ROR:>=(int,int):!=(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):216:this.week >= 52 |==> this.week != 52
+103:ROR:>=(int,int):<(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):216:this.week >= 52 |==> this.week < 52
+104:ROR:>=(int,int):<=(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):216:this.week >= 52 |==> this.week <= 52
+105:ROR:>=(int,int):==(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):216:this.week >= 52 |==> this.week == 52
+106:ROR:>=(int,int):>(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):216:this.week >= 52 |==> this.week > 52
+107:ROR:>=(int,int):FALSE(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):216:this.week >= 52 |==> false
+108:ROR:>=(int,int):TRUE(int,int):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):216:this.week >= 52 |==> true
+109:COR:&&(boolean,boolean):!=(boolean,boolean):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):215:calendar.get(Calendar.MONTH) == Calendar.JANUARY && this.week >= 52 |==> calendar.get(Calendar.MONTH) == Calendar.JANUARY != this.week >= 52
+110:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):215:calendar.get(Calendar.MONTH) == Calendar.JANUARY && this.week >= 52 |==> calendar.get(Calendar.MONTH) == Calendar.JANUARY == this.week >= 52
+111:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):216:calendar.get(Calendar.MONTH) == Calendar.JANUARY && this.week >= 52 |==> false
+112:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):215:calendar.get(Calendar.MONTH) == Calendar.JANUARY && this.week >= 52 |==> calendar.get(Calendar.MONTH) == Calendar.JANUARY
+113:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):216:calendar.get(Calendar.MONTH) == Calendar.JANUARY && this.week >= 52 |==> this.week >= 52
+114:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):216:calendar.get(Calendar.MONTH) == Calendar.JANUARY && this.week >= 52 |==> true
+115:COR:&&(boolean,boolean):||(boolean,boolean):org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):215:calendar.get(Calendar.MONTH) == Calendar.JANUARY && this.week >= 52 |==> calendar.get(Calendar.MONTH) == Calendar.JANUARY || this.week >= 52
+116:STD:<DEC>:<NO-OP>:org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):217:yyyy-- |==> <NO-OP>
+117:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):219:this.year = (short)yyyy |==> <NO-OP>
+118:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@<init>(java.util.Date,java.util.TimeZone,java.util.Locale):221:peg(calendar) |==> <NO-OP>
+119:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@peg(java.util.Calendar):288:this.firstMillisecond = getFirstMillisecond(calendar) |==> <NO-OP>
+120:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@peg(java.util.Calendar):289:this.lastMillisecond = getLastMillisecond(calendar) |==> <NO-OP>
+121:ROR:!=(int,int):<(int,int):org.jfree.data.time.Week@previous():303:this.week != FIRST_WEEK_IN_YEAR |==> this.week < FIRST_WEEK_IN_YEAR
+122:ROR:!=(int,int):<=(int,int):org.jfree.data.time.Week@previous():303:this.week != FIRST_WEEK_IN_YEAR |==> this.week <= FIRST_WEEK_IN_YEAR
+123:ROR:!=(int,int):==(int,int):org.jfree.data.time.Week@previous():303:this.week != FIRST_WEEK_IN_YEAR |==> this.week == FIRST_WEEK_IN_YEAR
+124:ROR:!=(int,int):>(int,int):org.jfree.data.time.Week@previous():303:this.week != FIRST_WEEK_IN_YEAR |==> this.week > FIRST_WEEK_IN_YEAR
+125:ROR:!=(int,int):>=(int,int):org.jfree.data.time.Week@previous():303:this.week != FIRST_WEEK_IN_YEAR |==> this.week >= FIRST_WEEK_IN_YEAR
+126:ROR:!=(int,int):FALSE(int,int):org.jfree.data.time.Week@previous():303:this.week != FIRST_WEEK_IN_YEAR |==> false
+127:ROR:!=(int,int):TRUE(int,int):org.jfree.data.time.Week@previous():303:this.week != FIRST_WEEK_IN_YEAR |==> true
+128:LVR:POS:0:org.jfree.data.time.Week@previous():304:1 |==> 0
+129:LVR:POS:NEG:org.jfree.data.time.Week@previous():304:1 |==> -1
+130:AOR:-(int,int):%(int,int):org.jfree.data.time.Week@previous():304:this.week - 1 |==> this.week % 1
+131:AOR:-(int,int):*(int,int):org.jfree.data.time.Week@previous():304:this.week - 1 |==> this.week * 1
+132:AOR:-(int,int):+(int,int):org.jfree.data.time.Week@previous():304:this.week - 1 |==> this.week + 1
+133:AOR:-(int,int):/(int,int):org.jfree.data.time.Week@previous():304:this.week - 1 |==> this.week / 1
+134:LVR:POS:0:org.jfree.data.time.Week@previous():308:1900 |==> 0
+135:LVR:POS:NEG:org.jfree.data.time.Week@previous():308:1900 |==> -1900
+136:ROR:>(int,int):!=(int,int):org.jfree.data.time.Week@previous():308:this.year > 1900 |==> this.year != 1900
+137:ROR:>(int,int):<(int,int):org.jfree.data.time.Week@previous():308:this.year > 1900 |==> this.year < 1900
+138:ROR:>(int,int):<=(int,int):org.jfree.data.time.Week@previous():308:this.year > 1900 |==> this.year <= 1900
+139:ROR:>(int,int):==(int,int):org.jfree.data.time.Week@previous():308:this.year > 1900 |==> this.year == 1900
+140:ROR:>(int,int):>=(int,int):org.jfree.data.time.Week@previous():308:this.year > 1900 |==> this.year >= 1900
+141:ROR:>(int,int):FALSE(int,int):org.jfree.data.time.Week@previous():308:this.year > 1900 |==> false
+142:ROR:>(int,int):TRUE(int,int):org.jfree.data.time.Week@previous():308:this.year > 1900 |==> true
+143:LVR:POS:0:org.jfree.data.time.Week@previous():309:1 |==> 0
+144:LVR:POS:NEG:org.jfree.data.time.Week@previous():309:1 |==> -1
+145:AOR:-(int,int):%(int,int):org.jfree.data.time.Week@previous():309:this.year - 1 |==> this.year % 1
+146:AOR:-(int,int):*(int,int):org.jfree.data.time.Week@previous():309:this.year - 1 |==> this.year * 1
+147:AOR:-(int,int):+(int,int):org.jfree.data.time.Week@previous():309:this.year - 1 |==> this.year + 1
+148:AOR:-(int,int):/(int,int):org.jfree.data.time.Week@previous():309:this.year - 1 |==> this.year / 1
+149:LVR:POS:0:org.jfree.data.time.Week@previous():311:31 |==> 0
+150:LVR:POS:NEG:org.jfree.data.time.Week@previous():311:31 |==> -31
+151:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@previous():311:prevYearCalendar.set(yy, Calendar.DECEMBER, 31) |==> <NO-OP>
+152:LVR:POS:0:org.jfree.data.time.Week@next():335:52 |==> 0
+153:LVR:POS:NEG:org.jfree.data.time.Week@next():335:52 |==> -52
+154:ROR:<(int,int):!=(int,int):org.jfree.data.time.Week@next():335:this.week < 52 |==> this.week != 52
+155:ROR:<(int,int):<=(int,int):org.jfree.data.time.Week@next():335:this.week < 52 |==> this.week <= 52
+156:ROR:<(int,int):==(int,int):org.jfree.data.time.Week@next():335:this.week < 52 |==> this.week == 52
+157:ROR:<(int,int):>(int,int):org.jfree.data.time.Week@next():335:this.week < 52 |==> this.week > 52
+158:ROR:<(int,int):>=(int,int):org.jfree.data.time.Week@next():335:this.week < 52 |==> this.week >= 52
+159:ROR:<(int,int):FALSE(int,int):org.jfree.data.time.Week@next():335:this.week < 52 |==> false
+160:ROR:<(int,int):TRUE(int,int):org.jfree.data.time.Week@next():335:this.week < 52 |==> true
+161:LVR:POS:0:org.jfree.data.time.Week@next():336:1 |==> 0
+162:LVR:POS:NEG:org.jfree.data.time.Week@next():336:1 |==> -1
+163:AOR:+(int,int):%(int,int):org.jfree.data.time.Week@next():336:this.week + 1 |==> this.week % 1
+164:AOR:+(int,int):*(int,int):org.jfree.data.time.Week@next():336:this.week + 1 |==> this.week * 1
+165:AOR:+(int,int):-(int,int):org.jfree.data.time.Week@next():336:this.week + 1 |==> this.week - 1
+166:AOR:+(int,int):/(int,int):org.jfree.data.time.Week@next():336:this.week + 1 |==> this.week / 1
+167:LVR:POS:0:org.jfree.data.time.Week@next():340:31 |==> 0
+168:LVR:POS:NEG:org.jfree.data.time.Week@next():340:31 |==> -31
+169:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@next():340:calendar.set(this.year, Calendar.DECEMBER, 31) |==> <NO-OP>
+170:ROR:<(int,int):!=(int,int):org.jfree.data.time.Week@next():343:this.week < actualMaxWeek |==> this.week != actualMaxWeek
+171:ROR:<(int,int):<=(int,int):org.jfree.data.time.Week@next():343:this.week < actualMaxWeek |==> this.week <= actualMaxWeek
+172:ROR:<(int,int):==(int,int):org.jfree.data.time.Week@next():343:this.week < actualMaxWeek |==> this.week == actualMaxWeek
+173:ROR:<(int,int):>(int,int):org.jfree.data.time.Week@next():343:this.week < actualMaxWeek |==> this.week > actualMaxWeek
+174:ROR:<(int,int):>=(int,int):org.jfree.data.time.Week@next():343:this.week < actualMaxWeek |==> this.week >= actualMaxWeek
+175:ROR:<(int,int):FALSE(int,int):org.jfree.data.time.Week@next():343:this.week < actualMaxWeek |==> false
+176:ROR:<(int,int):TRUE(int,int):org.jfree.data.time.Week@next():343:this.week < actualMaxWeek |==> true
+177:LVR:POS:0:org.jfree.data.time.Week@next():344:1 |==> 0
+178:LVR:POS:NEG:org.jfree.data.time.Week@next():344:1 |==> -1
+179:AOR:+(int,int):%(int,int):org.jfree.data.time.Week@next():344:this.week + 1 |==> this.week % 1
+180:AOR:+(int,int):*(int,int):org.jfree.data.time.Week@next():344:this.week + 1 |==> this.week * 1
+181:AOR:+(int,int):-(int,int):org.jfree.data.time.Week@next():344:this.week + 1 |==> this.week - 1
+182:AOR:+(int,int):/(int,int):org.jfree.data.time.Week@next():344:this.week + 1 |==> this.week / 1
+183:LVR:POS:0:org.jfree.data.time.Week@next():347:9999 |==> 0
+184:LVR:POS:NEG:org.jfree.data.time.Week@next():347:9999 |==> -9999
+185:ROR:<(int,int):!=(int,int):org.jfree.data.time.Week@next():347:this.year < 9999 |==> this.year != 9999
+186:ROR:<(int,int):<=(int,int):org.jfree.data.time.Week@next():347:this.year < 9999 |==> this.year <= 9999
+187:ROR:<(int,int):==(int,int):org.jfree.data.time.Week@next():347:this.year < 9999 |==> this.year == 9999
+188:ROR:<(int,int):>(int,int):org.jfree.data.time.Week@next():347:this.year < 9999 |==> this.year > 9999
+189:ROR:<(int,int):>=(int,int):org.jfree.data.time.Week@next():347:this.year < 9999 |==> this.year >= 9999
+190:ROR:<(int,int):FALSE(int,int):org.jfree.data.time.Week@next():347:this.year < 9999 |==> false
+191:ROR:<(int,int):TRUE(int,int):org.jfree.data.time.Week@next():347:this.year < 9999 |==> true
+192:LVR:POS:0:org.jfree.data.time.Week@next():348:1 |==> 0
+193:LVR:POS:NEG:org.jfree.data.time.Week@next():348:1 |==> -1
+194:AOR:+(int,int):%(int,int):org.jfree.data.time.Week@next():348:this.year + 1 |==> this.year % 1
+195:AOR:+(int,int):*(int,int):org.jfree.data.time.Week@next():348:this.year + 1 |==> this.year * 1
+196:AOR:+(int,int):-(int,int):org.jfree.data.time.Week@next():348:this.year + 1 |==> this.year - 1
+197:AOR:+(int,int):/(int,int):org.jfree.data.time.Week@next():348:this.year + 1 |==> this.year / 1
+198:LVR:POS:0:org.jfree.data.time.Week@getSerialIndex():365:53L |==> 0L
+199:LVR:POS:NEG:org.jfree.data.time.Week@getSerialIndex():365:53L |==> -53L
+200:AOR:*(long,long):%(long,long):org.jfree.data.time.Week@getSerialIndex():365:this.year * 53L |==> this.year % 53L
+201:AOR:*(long,long):+(long,long):org.jfree.data.time.Week@getSerialIndex():365:this.year * 53L |==> this.year + 53L
+202:AOR:*(long,long):-(long,long):org.jfree.data.time.Week@getSerialIndex():365:this.year * 53L |==> this.year - 53L
+203:AOR:*(long,long):/(long,long):org.jfree.data.time.Week@getSerialIndex():365:this.year * 53L |==> this.year / 53L
+204:AOR:+(long,long):%(long,long):org.jfree.data.time.Week@getSerialIndex():365:this.year * 53L + this.week |==> this.year * 53L % this.week
+205:AOR:+(long,long):*(long,long):org.jfree.data.time.Week@getSerialIndex():365:this.year * 53L + this.week |==> this.year * 53L * this.week
+206:AOR:+(long,long):-(long,long):org.jfree.data.time.Week@getSerialIndex():365:this.year * 53L + this.week |==> this.year * 53L - this.week
+207:AOR:+(long,long):/(long,long):org.jfree.data.time.Week@getSerialIndex():365:this.year * 53L + this.week |==> this.year * 53L / this.week
+208:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@getFirstMillisecond(java.util.Calendar):381:c.clear() |==> <NO-OP>
+209:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@getFirstMillisecond(java.util.Calendar):382:c.set(Calendar.YEAR, this.year) |==> <NO-OP>
+210:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@getFirstMillisecond(java.util.Calendar):383:c.set(Calendar.WEEK_OF_YEAR, this.week) |==> <NO-OP>
+211:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@getFirstMillisecond(java.util.Calendar):384:c.set(Calendar.DAY_OF_WEEK, c.getFirstDayOfWeek()) |==> <NO-OP>
+212:LVR:0:POS:org.jfree.data.time.Week@getFirstMillisecond(java.util.Calendar):385:0 |==> 1
+213:LVR:0:NEG:org.jfree.data.time.Week@getFirstMillisecond(java.util.Calendar):385:0 |==> -1
+214:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@getFirstMillisecond(java.util.Calendar):385:c.set(Calendar.HOUR, 0) |==> <NO-OP>
+215:LVR:0:POS:org.jfree.data.time.Week@getFirstMillisecond(java.util.Calendar):386:0 |==> 1
+216:LVR:0:NEG:org.jfree.data.time.Week@getFirstMillisecond(java.util.Calendar):386:0 |==> -1
+217:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@getFirstMillisecond(java.util.Calendar):386:c.set(Calendar.MINUTE, 0) |==> <NO-OP>
+218:LVR:0:POS:org.jfree.data.time.Week@getFirstMillisecond(java.util.Calendar):387:0 |==> 1
+219:LVR:0:NEG:org.jfree.data.time.Week@getFirstMillisecond(java.util.Calendar):387:0 |==> -1
+220:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@getFirstMillisecond(java.util.Calendar):387:c.set(Calendar.SECOND, 0) |==> <NO-OP>
+221:LVR:0:POS:org.jfree.data.time.Week@getFirstMillisecond(java.util.Calendar):388:0 |==> 1
+222:LVR:0:NEG:org.jfree.data.time.Week@getFirstMillisecond(java.util.Calendar):388:0 |==> -1
+223:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@getFirstMillisecond(java.util.Calendar):388:c.set(Calendar.MILLISECOND, 0) |==> <NO-OP>
+224:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):406:c.clear() |==> <NO-OP>
+225:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):407:c.set(Calendar.YEAR, this.year) |==> <NO-OP>
+226:LVR:POS:0:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):408:1 |==> 0
+227:LVR:POS:NEG:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):408:1 |==> -1
+228:AOR:+(int,int):%(int,int):org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):408:this.week + 1 |==> this.week % 1
+229:AOR:+(int,int):*(int,int):org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):408:this.week + 1 |==> this.week * 1
+230:AOR:+(int,int):-(int,int):org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):408:this.week + 1 |==> this.week - 1
+231:AOR:+(int,int):/(int,int):org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):408:this.week + 1 |==> this.week / 1
+232:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):408:c.set(Calendar.WEEK_OF_YEAR, this.week + 1) |==> <NO-OP>
+233:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):409:c.set(Calendar.DAY_OF_WEEK, c.getFirstDayOfWeek()) |==> <NO-OP>
+234:LVR:0:POS:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):410:0 |==> 1
+235:LVR:0:NEG:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):410:0 |==> -1
+236:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):410:c.set(Calendar.HOUR, 0) |==> <NO-OP>
+237:LVR:0:POS:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):411:0 |==> 1
+238:LVR:0:NEG:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):411:0 |==> -1
+239:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):411:c.set(Calendar.MINUTE, 0) |==> <NO-OP>
+240:LVR:0:POS:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):412:0 |==> 1
+241:LVR:0:NEG:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):412:0 |==> -1
+242:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):412:c.set(Calendar.SECOND, 0) |==> <NO-OP>
+243:LVR:0:POS:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):413:0 |==> 1
+244:LVR:0:NEG:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):413:0 |==> -1
+245:STD:<CALL>:<NO-OP>:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):413:c.set(Calendar.MILLISECOND, 0) |==> <NO-OP>
+246:LVR:POS:0:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):415:1 |==> 0
+247:LVR:POS:NEG:org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):415:1 |==> -1
+248:AOR:-(long,long):%(long,long):org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):415:c.getTime().getTime() - 1 |==> c.getTime().getTime() % 1
+249:AOR:-(long,long):*(long,long):org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):415:c.getTime().getTime() - 1 |==> c.getTime().getTime() * 1
+250:AOR:-(long,long):+(long,long):org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):415:c.getTime().getTime() - 1 |==> c.getTime().getTime() + 1
+251:AOR:-(long,long):/(long,long):org.jfree.data.time.Week@getLastMillisecond(java.util.Calendar):415:c.getTime().getTime() - 1 |==> c.getTime().getTime() / 1
+252:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@equals(java.lang.Object):441:obj == this |==> obj != this
+253:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@equals(java.lang.Object):441:obj == this |==> false
+254:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@equals(java.lang.Object):441:obj == this |==> true
+255:LVR:TRUE:FALSE:org.jfree.data.time.Week@equals(java.lang.Object):442:true |==> false
+256:LVR:FALSE:TRUE:org.jfree.data.time.Week@equals(java.lang.Object):445:false |==> true
+257:ROR:!=(int,int):<(int,int):org.jfree.data.time.Week@equals(java.lang.Object):448:this.week != that.week |==> this.week < that.week
+258:ROR:!=(int,int):<=(int,int):org.jfree.data.time.Week@equals(java.lang.Object):448:this.week != that.week |==> this.week <= that.week
+259:ROR:!=(int,int):==(int,int):org.jfree.data.time.Week@equals(java.lang.Object):448:this.week != that.week |==> this.week == that.week
+260:ROR:!=(int,int):>(int,int):org.jfree.data.time.Week@equals(java.lang.Object):448:this.week != that.week |==> this.week > that.week
+261:ROR:!=(int,int):>=(int,int):org.jfree.data.time.Week@equals(java.lang.Object):448:this.week != that.week |==> this.week >= that.week
+262:ROR:!=(int,int):FALSE(int,int):org.jfree.data.time.Week@equals(java.lang.Object):448:this.week != that.week |==> false
+263:ROR:!=(int,int):TRUE(int,int):org.jfree.data.time.Week@equals(java.lang.Object):448:this.week != that.week |==> true
+264:LVR:FALSE:TRUE:org.jfree.data.time.Week@equals(java.lang.Object):449:false |==> true
+265:ROR:!=(int,int):<(int,int):org.jfree.data.time.Week@equals(java.lang.Object):451:this.year != that.year |==> this.year < that.year
+266:ROR:!=(int,int):<=(int,int):org.jfree.data.time.Week@equals(java.lang.Object):451:this.year != that.year |==> this.year <= that.year
+267:ROR:!=(int,int):==(int,int):org.jfree.data.time.Week@equals(java.lang.Object):451:this.year != that.year |==> this.year == that.year
+268:ROR:!=(int,int):>(int,int):org.jfree.data.time.Week@equals(java.lang.Object):451:this.year != that.year |==> this.year > that.year
+269:ROR:!=(int,int):>=(int,int):org.jfree.data.time.Week@equals(java.lang.Object):451:this.year != that.year |==> this.year >= that.year
+270:ROR:!=(int,int):FALSE(int,int):org.jfree.data.time.Week@equals(java.lang.Object):451:this.year != that.year |==> false
+271:ROR:!=(int,int):TRUE(int,int):org.jfree.data.time.Week@equals(java.lang.Object):451:this.year != that.year |==> true
+272:LVR:FALSE:TRUE:org.jfree.data.time.Week@equals(java.lang.Object):452:false |==> true
+273:LVR:TRUE:FALSE:org.jfree.data.time.Week@equals(java.lang.Object):454:true |==> false
+274:LVR:POS:0:org.jfree.data.time.Week@hashCode():468:17 |==> 0
+275:LVR:POS:NEG:org.jfree.data.time.Week@hashCode():468:17 |==> -17
+276:LVR:POS:0:org.jfree.data.time.Week@hashCode():469:37 |==> 0
+277:LVR:POS:NEG:org.jfree.data.time.Week@hashCode():469:37 |==> -37
+278:AOR:*(int,int):%(int,int):org.jfree.data.time.Week@hashCode():469:37 * result |==> 37 % result
+279:AOR:*(int,int):+(int,int):org.jfree.data.time.Week@hashCode():469:37 * result |==> 37 + result
+280:AOR:*(int,int):-(int,int):org.jfree.data.time.Week@hashCode():469:37 * result |==> 37 - result
+281:AOR:*(int,int):/(int,int):org.jfree.data.time.Week@hashCode():469:37 * result |==> 37 / result
+282:AOR:+(int,int):%(int,int):org.jfree.data.time.Week@hashCode():469:37 * result + this.week |==> 37 * result % this.week
+283:AOR:+(int,int):*(int,int):org.jfree.data.time.Week@hashCode():469:37 * result + this.week |==> 37 * result * this.week
+284:AOR:+(int,int):-(int,int):org.jfree.data.time.Week@hashCode():469:37 * result + this.week |==> 37 * result - this.week
+285:AOR:+(int,int):/(int,int):org.jfree.data.time.Week@hashCode():469:37 * result + this.week |==> 37 * result / this.week
+286:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@hashCode():469:result = 37 * result + this.week |==> <NO-OP>
+287:LVR:POS:0:org.jfree.data.time.Week@hashCode():470:37 |==> 0
+288:LVR:POS:NEG:org.jfree.data.time.Week@hashCode():470:37 |==> -37
+289:AOR:*(int,int):%(int,int):org.jfree.data.time.Week@hashCode():470:37 * result |==> 37 % result
+290:AOR:*(int,int):+(int,int):org.jfree.data.time.Week@hashCode():470:37 * result |==> 37 + result
+291:AOR:*(int,int):-(int,int):org.jfree.data.time.Week@hashCode():470:37 * result |==> 37 - result
+292:AOR:*(int,int):/(int,int):org.jfree.data.time.Week@hashCode():470:37 * result |==> 37 / result
+293:AOR:+(int,int):%(int,int):org.jfree.data.time.Week@hashCode():470:37 * result + this.year |==> 37 * result % this.year
+294:AOR:+(int,int):*(int,int):org.jfree.data.time.Week@hashCode():470:37 * result + this.year |==> 37 * result * this.year
+295:AOR:+(int,int):-(int,int):org.jfree.data.time.Week@hashCode():470:37 * result + this.year |==> 37 * result - this.year
+296:AOR:+(int,int):/(int,int):org.jfree.data.time.Week@hashCode():470:37 * result + this.year |==> 37 * result / this.year
+297:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@hashCode():470:result = 37 * result + this.year |==> <NO-OP>
+298:AOR:-(int,int):%(int,int):org.jfree.data.time.Week@compareTo(java.lang.Object):492:this.year - w.getYear().getYear() |==> this.year % w.getYear().getYear()
+299:AOR:-(int,int):*(int,int):org.jfree.data.time.Week@compareTo(java.lang.Object):492:this.year - w.getYear().getYear() |==> this.year * w.getYear().getYear()
+300:AOR:-(int,int):+(int,int):org.jfree.data.time.Week@compareTo(java.lang.Object):492:this.year - w.getYear().getYear() |==> this.year + w.getYear().getYear()
+301:AOR:-(int,int):/(int,int):org.jfree.data.time.Week@compareTo(java.lang.Object):492:this.year - w.getYear().getYear() |==> this.year / w.getYear().getYear()
+302:LVR:0:POS:org.jfree.data.time.Week@compareTo(java.lang.Object):493:0 |==> 1
+303:LVR:0:NEG:org.jfree.data.time.Week@compareTo(java.lang.Object):493:0 |==> -1
+304:ROR:==(int,int):!=(int,int):org.jfree.data.time.Week@compareTo(java.lang.Object):493:result == 0 |==> result != 0
+305:ROR:==(int,int):<(int,int):org.jfree.data.time.Week@compareTo(java.lang.Object):493:result == 0 |==> result < 0
+306:ROR:==(int,int):<=(int,int):org.jfree.data.time.Week@compareTo(java.lang.Object):493:result == 0 |==> result <= 0
+307:ROR:==(int,int):>(int,int):org.jfree.data.time.Week@compareTo(java.lang.Object):493:result == 0 |==> result > 0
+308:ROR:==(int,int):>=(int,int):org.jfree.data.time.Week@compareTo(java.lang.Object):493:result == 0 |==> result >= 0
+309:ROR:==(int,int):FALSE(int,int):org.jfree.data.time.Week@compareTo(java.lang.Object):493:result == 0 |==> false
+310:ROR:==(int,int):TRUE(int,int):org.jfree.data.time.Week@compareTo(java.lang.Object):493:result == 0 |==> true
+311:AOR:-(int,int):%(int,int):org.jfree.data.time.Week@compareTo(java.lang.Object):494:this.week - w.getWeek() |==> this.week % w.getWeek()
+312:AOR:-(int,int):*(int,int):org.jfree.data.time.Week@compareTo(java.lang.Object):494:this.week - w.getWeek() |==> this.week * w.getWeek()
+313:AOR:-(int,int):+(int,int):org.jfree.data.time.Week@compareTo(java.lang.Object):494:this.week - w.getWeek() |==> this.week + w.getWeek()
+314:AOR:-(int,int):/(int,int):org.jfree.data.time.Week@compareTo(java.lang.Object):494:this.week - w.getWeek() |==> this.week / w.getWeek()
+315:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@compareTo(java.lang.Object):494:result = this.week - w.getWeek() |==> <NO-OP>
+316:LVR:0:POS:org.jfree.data.time.Week@compareTo(java.lang.Object):502:0 |==> 1
+317:LVR:0:NEG:org.jfree.data.time.Week@compareTo(java.lang.Object):502:0 |==> -1
+318:LVR:POS:0:org.jfree.data.time.Week@compareTo(java.lang.Object):509:1 |==> 0
+319:LVR:POS:NEG:org.jfree.data.time.Week@compareTo(java.lang.Object):509:1 |==> -1
+320:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@parseWeek(java.lang.String):530:s != null |==> s == null
+321:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@parseWeek(java.lang.String):530:s != null |==> false
+322:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@parseWeek(java.lang.String):530:s != null |==> true
+323:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@parseWeek(java.lang.String):533:s = s.trim() |==> <NO-OP>
+324:LVR:NEG:0:org.jfree.data.time.Week@parseWeek(java.lang.String):536:-1 |==> 0
+325:LVR:NEG:POS:org.jfree.data.time.Week@parseWeek(java.lang.String):536:-1 |==> 1
+326:ROR:!=(int,int):<(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):536:i != -1 |==> i < -1
+327:ROR:!=(int,int):<=(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):536:i != -1 |==> i <= -1
+328:ROR:!=(int,int):==(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):536:i != -1 |==> i == -1
+329:ROR:!=(int,int):>(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):536:i != -1 |==> i > -1
+330:ROR:!=(int,int):>=(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):536:i != -1 |==> i >= -1
+331:ROR:!=(int,int):FALSE(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):536:i != -1 |==> false
+332:ROR:!=(int,int):TRUE(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):536:i != -1 |==> true
+333:LVR:0:POS:org.jfree.data.time.Week@parseWeek(java.lang.String):537:0 |==> 1
+334:LVR:0:NEG:org.jfree.data.time.Week@parseWeek(java.lang.String):537:0 |==> -1
+335:LVR:POS:0:org.jfree.data.time.Week@parseWeek(java.lang.String):538:1 |==> 0
+336:LVR:POS:NEG:org.jfree.data.time.Week@parseWeek(java.lang.String):538:1 |==> -1
+337:AOR:+(int,int):%(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):538:i + 1 |==> i % 1
+338:AOR:+(int,int):*(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):538:i + 1 |==> i * 1
+339:AOR:+(int,int):-(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):538:i + 1 |==> i - 1
+340:AOR:+(int,int):/(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):538:i + 1 |==> i / 1
+341:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@parseWeek(java.lang.String):542:y != null |==> y == null
+342:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@parseWeek(java.lang.String):542:y != null |==> false
+343:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@parseWeek(java.lang.String):542:y != null |==> true
+344:LVR:NEG:0:org.jfree.data.time.Week@parseWeek(java.lang.String):544:-1 |==> 0
+345:LVR:NEG:POS:org.jfree.data.time.Week@parseWeek(java.lang.String):544:-1 |==> 1
+346:ROR:==(int,int):!=(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):544:w == -1 |==> w != -1
+347:ROR:==(int,int):<(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):544:w == -1 |==> w < -1
+348:ROR:==(int,int):<=(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):544:w == -1 |==> w <= -1
+349:ROR:==(int,int):>(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):544:w == -1 |==> w > -1
+350:ROR:==(int,int):>=(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):544:w == -1 |==> w >= -1
+351:ROR:==(int,int):FALSE(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):544:w == -1 |==> false
+352:ROR:==(int,int):TRUE(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):544:w == -1 |==> true
+353:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@parseWeek(java.lang.String):548:result = new Week(w, y) |==> <NO-OP>
+354:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@parseWeek(java.lang.String):551:y = Week.evaluateAsYear(s2) |==> <NO-OP>
+355:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@parseWeek(java.lang.String):552:y != null |==> y == null
+356:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@parseWeek(java.lang.String):552:y != null |==> false
+357:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.time.Week@parseWeek(java.lang.String):552:y != null |==> true
+358:LVR:NEG:0:org.jfree.data.time.Week@parseWeek(java.lang.String):554:-1 |==> 0
+359:LVR:NEG:POS:org.jfree.data.time.Week@parseWeek(java.lang.String):554:-1 |==> 1
+360:ROR:==(int,int):!=(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):554:w == -1 |==> w != -1
+361:ROR:==(int,int):<(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):554:w == -1 |==> w < -1
+362:ROR:==(int,int):<=(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):554:w == -1 |==> w <= -1
+363:ROR:==(int,int):>(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):554:w == -1 |==> w > -1
+364:ROR:==(int,int):>=(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):554:w == -1 |==> w >= -1
+365:ROR:==(int,int):FALSE(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):554:w == -1 |==> false
+366:ROR:==(int,int):TRUE(int,int):org.jfree.data.time.Week@parseWeek(java.lang.String):554:w == -1 |==> true
+367:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@parseWeek(java.lang.String):558:result = new Week(w, y) |==> <NO-OP>
+368:LVR:NEG:0:org.jfree.data.time.Week@findSeparator(java.lang.String):588:-1 |==> 0
+369:LVR:NEG:POS:org.jfree.data.time.Week@findSeparator(java.lang.String):588:-1 |==> 1
+370:ROR:==(int,int):!=(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):588:result == -1 |==> result != -1
+371:ROR:==(int,int):<(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):588:result == -1 |==> result < -1
+372:ROR:==(int,int):<=(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):588:result == -1 |==> result <= -1
+373:ROR:==(int,int):>(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):588:result == -1 |==> result > -1
+374:ROR:==(int,int):>=(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):588:result == -1 |==> result >= -1
+375:ROR:==(int,int):FALSE(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):588:result == -1 |==> false
+376:ROR:==(int,int):TRUE(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):588:result == -1 |==> true
+377:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@findSeparator(java.lang.String):589:result = s.indexOf(',') |==> <NO-OP>
+378:LVR:NEG:0:org.jfree.data.time.Week@findSeparator(java.lang.String):591:-1 |==> 0
+379:LVR:NEG:POS:org.jfree.data.time.Week@findSeparator(java.lang.String):591:-1 |==> 1
+380:ROR:==(int,int):!=(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):591:result == -1 |==> result != -1
+381:ROR:==(int,int):<(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):591:result == -1 |==> result < -1
+382:ROR:==(int,int):<=(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):591:result == -1 |==> result <= -1
+383:ROR:==(int,int):>(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):591:result == -1 |==> result > -1
+384:ROR:==(int,int):>=(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):591:result == -1 |==> result >= -1
+385:ROR:==(int,int):FALSE(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):591:result == -1 |==> false
+386:ROR:==(int,int):TRUE(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):591:result == -1 |==> true
+387:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@findSeparator(java.lang.String):592:result = s.indexOf(' ') |==> <NO-OP>
+388:LVR:NEG:0:org.jfree.data.time.Week@findSeparator(java.lang.String):594:-1 |==> 0
+389:LVR:NEG:POS:org.jfree.data.time.Week@findSeparator(java.lang.String):594:-1 |==> 1
+390:ROR:==(int,int):!=(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):594:result == -1 |==> result != -1
+391:ROR:==(int,int):<(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):594:result == -1 |==> result < -1
+392:ROR:==(int,int):<=(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):594:result == -1 |==> result <= -1
+393:ROR:==(int,int):>(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):594:result == -1 |==> result > -1
+394:ROR:==(int,int):>=(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):594:result == -1 |==> result >= -1
+395:ROR:==(int,int):FALSE(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):594:result == -1 |==> false
+396:ROR:==(int,int):TRUE(int,int):org.jfree.data.time.Week@findSeparator(java.lang.String):594:result == -1 |==> true
+397:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@findSeparator(java.lang.String):595:result = s.indexOf('.') |==> <NO-OP>
+398:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@evaluateAsYear(java.lang.String):613:result = Year.parseYear(s) |==> <NO-OP>
+399:LVR:NEG:0:org.jfree.data.time.Week@stringToWeek(java.lang.String):631:-1 |==> 0
+400:LVR:NEG:POS:org.jfree.data.time.Week@stringToWeek(java.lang.String):631:-1 |==> 1
+401:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@stringToWeek(java.lang.String):632:s = s.replace('W', ' ') |==> <NO-OP>
+402:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@stringToWeek(java.lang.String):633:s = s.trim() |==> <NO-OP>
+403:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@stringToWeek(java.lang.String):635:result = Integer.parseInt(s) |==> <NO-OP>
+404:LVR:POS:0:org.jfree.data.time.Week@stringToWeek(java.lang.String):636:1 |==> 0
+405:LVR:POS:NEG:org.jfree.data.time.Week@stringToWeek(java.lang.String):636:1 |==> -1
+406:ROR:<(int,int):!=(int,int):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:result < 1 |==> result != 1
+407:ROR:<(int,int):<=(int,int):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:result < 1 |==> result <= 1
+408:ROR:<(int,int):==(int,int):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:result < 1 |==> result == 1
+409:ROR:<(int,int):>(int,int):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:result < 1 |==> result > 1
+410:ROR:<(int,int):>=(int,int):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:result < 1 |==> result >= 1
+411:ROR:<(int,int):FALSE(int,int):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:result < 1 |==> false
+412:ROR:<(int,int):TRUE(int,int):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:result < 1 |==> true
+413:ROR:>(int,int):!=(int,int):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:result > LAST_WEEK_IN_YEAR |==> result != LAST_WEEK_IN_YEAR
+414:ROR:>(int,int):<(int,int):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:result > LAST_WEEK_IN_YEAR |==> result < LAST_WEEK_IN_YEAR
+415:ROR:>(int,int):<=(int,int):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:result > LAST_WEEK_IN_YEAR |==> result <= LAST_WEEK_IN_YEAR
+416:ROR:>(int,int):==(int,int):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:result > LAST_WEEK_IN_YEAR |==> result == LAST_WEEK_IN_YEAR
+417:ROR:>(int,int):>=(int,int):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:result > LAST_WEEK_IN_YEAR |==> result >= LAST_WEEK_IN_YEAR
+418:ROR:>(int,int):FALSE(int,int):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:result > LAST_WEEK_IN_YEAR |==> false
+419:ROR:>(int,int):TRUE(int,int):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:result > LAST_WEEK_IN_YEAR |==> true
+420:COR:||(boolean,boolean):!=(boolean,boolean):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:(result < 1) || (result > LAST_WEEK_IN_YEAR) |==> (result < 1) != (result > LAST_WEEK_IN_YEAR)
+421:COR:||(boolean,boolean):&&(boolean,boolean):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:(result < 1) || (result > LAST_WEEK_IN_YEAR) |==> (result < 1) && (result > LAST_WEEK_IN_YEAR)
+422:COR:||(boolean,boolean):==(boolean,boolean):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:(result < 1) || (result > LAST_WEEK_IN_YEAR) |==> (result < 1) == (result > LAST_WEEK_IN_YEAR)
+423:COR:||(boolean,boolean):FALSE(boolean,boolean):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:(result < 1) || (result > LAST_WEEK_IN_YEAR) |==> false
+424:COR:||(boolean,boolean):LHS(boolean,boolean):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:(result < 1) || (result > LAST_WEEK_IN_YEAR) |==> (result < 1)
+425:COR:||(boolean,boolean):RHS(boolean,boolean):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:(result < 1) || (result > LAST_WEEK_IN_YEAR) |==> (result > LAST_WEEK_IN_YEAR)
+426:COR:||(boolean,boolean):TRUE(boolean,boolean):org.jfree.data.time.Week@stringToWeek(java.lang.String):636:(result < 1) || (result > LAST_WEEK_IN_YEAR) |==> true
+427:LVR:NEG:0:org.jfree.data.time.Week@stringToWeek(java.lang.String):637:-1 |==> 0
+428:LVR:NEG:POS:org.jfree.data.time.Week@stringToWeek(java.lang.String):637:-1 |==> 1
+429:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.Week@stringToWeek(java.lang.String):637:result = -1 |==> <NO-OP>

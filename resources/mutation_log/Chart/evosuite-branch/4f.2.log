@@ -1,0 +1,37 @@
+
+initialise:
+
+compile:
+    [javac] /home/to_donghwan/defects4j/framework/projects/Chart/Chart.build.xml:56: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-experimental:
+    [javac] /home/to_donghwan/defects4j/framework/projects/Chart/Chart.build.xml:105: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /tmp/run_mutation.pl_3289_1501503301/4f/build
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.4
+    [javac] 1 warning
+
+compile.tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_3289_1501503301/4f/build-tests
+    [javac] /home/to_donghwan/defects4j/framework/projects/Chart/Chart.build.xml:122: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 387 source files to /tmp/run_mutation.pl_3289_1501503301/4f/build-tests
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.4
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 1 warning
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: org.jfree.chart.plot.XYPlot_ESTest171[test171] failed!
+    [junit] MAJOR:  -> java.lang.ClassCastException
+    [junit] MAJOR:  -> "java.util.Date cannot be cast to org.evosuite.runtime.mock.java.util.MockDate"
+    [junit] MAJOR: Exclude 1 failing test class:
+    [junit] MAJOR:  - org.jfree.chart.plot.XYPlot_ESTest171
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 235 ordered tests to verify independence
+Caught an exception while logging the end of the build.  Exception was:

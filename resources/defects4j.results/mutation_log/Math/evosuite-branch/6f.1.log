@@ -1,0 +1,189 @@
+
+init:
+     [echo] -------- Commons MATH 3.1-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] Compiling 458 source files to /tmp/run_mutation.pl_40377_1501511475/6f/target/test-classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /tmp/run_mutation.pl_40377_1501511475/6f/src/test/java/org/apache/commons/math3/PerfTestUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 28 files to /tmp/run_mutation.pl_40377_1501511475/6f/target/test-classes
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 33 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 10.28 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 4418
+    [junit] MAJOR: Mutants covered:   225 (5.09%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 33 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer_ESTest2 (7ms / 27):
+    [junit] MAJOR: 5290 (5 / 27 / 27) -> AVG-RTPM: 195ms
+    [junit] MAJOR: Mutants killed / live: 5 (5-0-0) / 220
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer_ESTest3 (7ms / 41):
+    [junit] MAJOR: 18183 (12 / 41 / 41) -> AVG-RTPM: 314ms
+    [junit] MAJOR: Mutants killed / live: 17 (5-14-0) / 208
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer_ESTest0 (7ms / 11):
+    [junit] MAJOR: 22860 (3 / 11 / 11) -> AVG-RTPM: 425ms
+    [junit] MAJOR: Mutants killed / live: 20 (5-17-0) / 205
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer_ESTest4 (8ms / 5):
+    [junit] MAJOR: 25814 (0 / 5 / 5) -> AVG-RTPM: 590ms
+    [junit] MAJOR: Mutants killed / live: 20 (5-17-0) / 205
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer_ESTest5 (8ms / 5):
+    [junit] MAJOR: 28996 (0 / 5 / 5) -> AVG-RTPM: 636ms
+    [junit] MAJOR: Mutants killed / live: 20 (5-17-0) / 205
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer_ESTest9 (8ms / 60):
+    [junit] MAJOR: 72691 (20 / 60 / 60) -> AVG-RTPM: 728ms
+    [junit] MAJOR: Mutants killed / live: 40 (5-37-0) / 185
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer_ESTest0 (8ms / 57):
+    [junit] MAJOR: 137477 (13 / 57 / 57) -> AVG-RTPM: 1136ms
+    [junit] MAJOR: Mutants killed / live: 53 (5-61-0) / 172
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer_ESTest2 (8ms / 22):
+    [junit] MAJOR: 169842 (5 / 22 / 22) -> AVG-RTPM: 1471ms
+    [junit] MAJOR: Mutants killed / live: 58 (5-69-0) / 167
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/33 - org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer_ESTest1 (8ms / 11):
+    [junit] MAJOR: 189495 (7 / 11 / 11) -> AVG-RTPM: 1786ms
+    [junit] MAJOR: Mutants killed / live: 65 (5-73-3) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/33 - org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer_ESTest2 (8ms / 25):
+    [junit] MAJOR: 193856 (23 / 25 / 25) -> AVG-RTPM: 174ms
+    [junit] MAJOR: Mutants killed / live: 88 (5-98-3) / 137
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer_ESTest1 (9ms / 5):
+    [junit] MAJOR: 194851 (2 / 5 / 5) -> AVG-RTPM: 198ms
+    [junit] MAJOR: Mutants killed / live: 90 (5-103-3) / 135
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer_ESTest3 (9ms / 5):
+    [junit] MAJOR: 195843 (0 / 5 / 5) -> AVG-RTPM: 198ms
+    [junit] MAJOR: Mutants killed / live: 90 (5-108-3) / 135
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 13/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer_ESTest6 (9ms / 18):
+    [junit] MAJOR: 199005 (10 / 18 / 18) -> AVG-RTPM: 175ms
+    [junit] MAJOR: Mutants killed / live: 100 (5-126-3) / 125
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 14/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer_ESTest8 (9ms / 37):
+    [junit] MAJOR: 206370 (9 / 37 / 37) -> AVG-RTPM: 199ms
+    [junit] MAJOR: Mutants killed / live: 109 (5-163-3) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 15/33 - org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer_ESTest0 (9ms / 20):
+    [junit] MAJOR: 210062 (17 / 20 / 20) -> AVG-RTPM: 184ms
+    [junit] MAJOR: Mutants killed / live: 126 (5-183-3) / 99
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 16/33 - org.apache.commons.math3.optim.BaseOptimizer_ESTest4 (10ms / 8):
+    [junit] MAJOR: 211446 (3 / 8 / 8) -> AVG-RTPM: 173ms
+    [junit] MAJOR: Mutants killed / live: 129 (5-191-3) / 96
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 17/33 - org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer_ESTest1 (10ms / 0):
+    [junit] MAJOR: 211446 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 129 (5-191-3) / 96
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 18/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer_ESTest0 (10ms / 20):
+    [junit] MAJOR: 215145 (10 / 20 / 20) -> AVG-RTPM: 184ms
+    [junit] MAJOR: Mutants killed / live: 139 (5-211-3) / 86
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 19/33 - org.apache.commons.math3.optim.BaseOptimizer_ESTest1 (11ms / 3):
+    [junit] MAJOR: 215741 (0 / 3 / 3) -> AVG-RTPM: 198ms
+    [junit] MAJOR: Mutants killed / live: 139 (5-214-3) / 86
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 20/33 - org.apache.commons.math3.optim.BaseOptimizer_ESTest3 (11ms / 3):
+    [junit] MAJOR: 216252 (0 / 3 / 3) -> AVG-RTPM: 170ms
+    [junit] MAJOR: Mutants killed / live: 139 (5-217-3) / 86
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 21/33 - org.apache.commons.math3.optim.BaseOptimizer_ESTest5 (11ms / 8):
+    [junit] MAJOR: 217648 (1 / 8 / 8) -> AVG-RTPM: 174ms
+    [junit] MAJOR: Mutants killed / live: 140 (5-225-3) / 85
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 22/33 - org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer_ESTest0 (11ms / 8):
+    [junit] MAJOR: 219064 (5 / 8 / 8) -> AVG-RTPM: 177ms
+    [junit] MAJOR: Mutants killed / live: 145 (5-233-3) / 80
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 23/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer_ESTest1 (11ms / 19):
+    [junit] MAJOR: 222313 (9 / 19 / 19) -> AVG-RTPM: 171ms
+    [junit] MAJOR: Mutants killed / live: 154 (5-252-3) / 71
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 24/33 - org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer_ESTest1 (11ms / 21):
+    [junit] MAJOR: 226033 (1 / 21 / 21) -> AVG-RTPM: 177ms
+    [junit] MAJOR: Mutants killed / live: 155 (5-273-3) / 70
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 25/33 - org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer_ESTest0 (11ms / 5):
+    [junit] MAJOR: 226912 (2 / 5 / 5) -> AVG-RTPM: 175ms
+    [junit] MAJOR: Mutants killed / live: 157 (5-278-3) / 68
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 26/33 - org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer_ESTest2 (12ms / 27):
+    [junit] MAJOR: 232703 (16 / 27 / 27) -> AVG-RTPM: 214ms
+    [junit] MAJOR: Mutants killed / live: 173 (5-305-3) / 52
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 27/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer_ESTest10 (12ms / 63):
+    [junit] MAJOR: 245172 (19 / 63 / 63) -> AVG-RTPM: 197ms
+    [junit] MAJOR: Mutants killed / live: 192 (5-368-3) / 33
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 28/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer_ESTest2 (12ms / 14):
+    [junit] MAJOR: 247947 (0 / 14 / 14) -> AVG-RTPM: 198ms
+    [junit] MAJOR: Mutants killed / live: 192 (5-382-3) / 33
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 29/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer_ESTest7 (12ms / 9):
+    [junit] MAJOR: 249540 (0 / 9 / 9) -> AVG-RTPM: 176ms
+    [junit] MAJOR: Mutants killed / live: 192 (5-391-3) / 33
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 30/33 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer_ESTest1 (12ms / 31):
+    [junit] MAJOR: 254982 (16 / 31 / 31) -> AVG-RTPM: 175ms
+    [junit] MAJOR: Mutants killed / live: 208 (5-422-3) / 17
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 31/33 - org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer_ESTest3 (13ms / 21):
+    [junit] MAJOR: 260060 (0 / 21 / 21) -> AVG-RTPM: 241ms
+    [junit] MAJOR: Mutants killed / live: 208 (5-443-3) / 17
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 32/33 - org.apache.commons.math3.optim.BaseOptimizer_ESTest2 (18ms / 3):
+    [junit] MAJOR: 260575 (0 / 3 / 3) -> AVG-RTPM: 171ms
+    [junit] MAJOR: Mutants killed / live: 208 (5-446-3) / 17
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 33/33 - org.apache.commons.math3.optim.BaseOptimizer_ESTest0 (24ms / 3):
+    [junit] MAJOR: 261075 (0 / 3 / 3) -> AVG-RTPM: 166ms
+    [junit] MAJOR: Mutants killed / live: 208 (5-449-3) / 17
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  261.1 seconds
+    [junit] MAJOR: Mutation score: 4.71% (92.44%)
+    [junit] MAJOR: Mutants killed / live: 208 (5-449-3) / 17
+    [junit] MAJOR: Mutant executions: 615
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_40377_1501511475/6f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 4 minutes 41 seconds

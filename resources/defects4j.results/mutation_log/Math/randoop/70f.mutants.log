@@ -1,0 +1,48 @@
+1:LVR:POS:0:org.apache.commons.math.analysis.solvers.BisectionSolver@<init>(org.apache.commons.math.analysis.UnivariateRealFunction):44:100 |==> 0
+2:LVR:POS:NEG:org.apache.commons.math.analysis.solvers.BisectionSolver@<init>(org.apache.commons.math.analysis.UnivariateRealFunction):44:100 |==> -100
+3:LVR:POS:0:org.apache.commons.math.analysis.solvers.BisectionSolver@<init>(org.apache.commons.math.analysis.UnivariateRealFunction):44:1.0E-6 |==> 0.0
+4:LVR:POS:NEG:org.apache.commons.math.analysis.solvers.BisectionSolver@<init>(org.apache.commons.math.analysis.UnivariateRealFunction):44:1.0E-6 |==> -1.0E-6
+5:LVR:POS:0:org.apache.commons.math.analysis.solvers.BisectionSolver@<init>():52:100 |==> 0
+6:LVR:POS:NEG:org.apache.commons.math.analysis.solvers.BisectionSolver@<init>():52:100 |==> -100
+7:LVR:POS:0:org.apache.commons.math.analysis.solvers.BisectionSolver@<init>():52:1.0E-6 |==> 0.0
+8:LVR:POS:NEG:org.apache.commons.math.analysis.solvers.BisectionSolver@<init>():52:1.0E-6 |==> -1.0E-6
+9:STD:<CALL>:<NO-OP>:org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):79:clearResult() |==> <NO-OP>
+10:STD:<CALL>:<NO-OP>:org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):80:verifyInterval(min, max) |==> <NO-OP>
+11:LVR:0:POS:org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):85:0 |==> 1
+12:LVR:0:NEG:org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):85:0 |==> -1
+13:ROR:<(int,int):!=(int,int):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):86:i < maximalIterationCount |==> i != maximalIterationCount
+14:ROR:<(int,int):<=(int,int):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):86:i < maximalIterationCount |==> i <= maximalIterationCount
+15:ROR:<(int,int):==(int,int):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):86:i < maximalIterationCount |==> i == maximalIterationCount
+16:ROR:<(int,int):>(int,int):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):86:i < maximalIterationCount |==> i > maximalIterationCount
+17:ROR:<(int,int):>=(int,int):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):86:i < maximalIterationCount |==> i >= maximalIterationCount
+18:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):86:i < maximalIterationCount |==> false
+19:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):86:i < maximalIterationCount |==> true
+20:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):91:fm * fmin |==> fm % fmin
+21:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):91:fm * fmin |==> fm + fmin
+22:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):91:fm * fmin |==> fm - fmin
+23:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):91:fm * fmin |==> fm / fmin
+24:LVR:0:POS:org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):91:0.0 |==> 1.0
+25:LVR:0:NEG:org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):91:0.0 |==> -1.0
+26:ROR:>(double,double):!=(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):91:fm * fmin > 0.0 |==> fm * fmin != 0.0
+27:ROR:>(double,double):<(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):91:fm * fmin > 0.0 |==> fm * fmin < 0.0
+28:ROR:>(double,double):<=(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):91:fm * fmin > 0.0 |==> fm * fmin <= 0.0
+29:ROR:>(double,double):==(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):91:fm * fmin > 0.0 |==> fm * fmin == 0.0
+30:ROR:>(double,double):>=(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):91:fm * fmin > 0.0 |==> fm * fmin >= 0.0
+31:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):91:fm * fmin > 0.0 |==> false
+32:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):91:fm * fmin > 0.0 |==> true
+33:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):93:min = m |==> <NO-OP>
+34:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):96:max = m |==> <NO-OP>
+35:AOR:-(double,double):%(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):99:max - min |==> max % min
+36:AOR:-(double,double):*(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):99:max - min |==> max * min
+37:AOR:-(double,double):+(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):99:max - min |==> max + min
+38:AOR:-(double,double):/(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):99:max - min |==> max / min
+39:ROR:<=(double,double):!=(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):99:Math.abs(max - min) <= absoluteAccuracy |==> Math.abs(max - min) != absoluteAccuracy
+40:ROR:<=(double,double):<(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):99:Math.abs(max - min) <= absoluteAccuracy |==> Math.abs(max - min) < absoluteAccuracy
+41:ROR:<=(double,double):==(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):99:Math.abs(max - min) <= absoluteAccuracy |==> Math.abs(max - min) == absoluteAccuracy
+42:ROR:<=(double,double):>(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):99:Math.abs(max - min) <= absoluteAccuracy |==> Math.abs(max - min) > absoluteAccuracy
+43:ROR:<=(double,double):>=(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):99:Math.abs(max - min) <= absoluteAccuracy |==> Math.abs(max - min) >= absoluteAccuracy
+44:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):99:Math.abs(max - min) <= absoluteAccuracy |==> false
+45:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):99:Math.abs(max - min) <= absoluteAccuracy |==> true
+46:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):100:m = UnivariateRealSolverUtils.midpoint(min, max) |==> <NO-OP>
+47:STD:<CALL>:<NO-OP>:org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):101:setResult(m, i) |==> <NO-OP>
+48:STD:<INC>:<NO-OP>:org.apache.commons.math.analysis.solvers.BisectionSolver@solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double):104:++i |==> <NO-OP>

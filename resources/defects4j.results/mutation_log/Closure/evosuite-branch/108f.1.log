@@ -1,0 +1,98 @@
+
+rhino:
+
+properties:
+
+init:
+
+compile:
+
+compile-most:
+
+compile-jdk15:
+
+compile:
+
+properties:
+
+compile:
+
+xmlimplsrc-compile:
+     [echo] Calling /tmp/run_mutation.pl_85487_1501829366/108f/lib/rhino/xmlimplsrc/build.xml
+
+compile:
+
+compile-all:
+
+compile:
+
+jar:
+
+rhino-jarjar:
+   [jarjar] Updating jar: /tmp/run_mutation.pl_85487_1501829366/108f/build/lib/rhino.jar
+
+relversion:
+
+compile:
+    [javac] /tmp/run_mutation.pl_85487_1501829366/108f/build.xml:262: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] /tmp/run_mutation.pl_85487_1501829366/108f/build.xml:268: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+[propertyfile] Updating property file: /tmp/run_mutation.pl_85487_1501829366/108f/build/classes/com/google/javascript/jscomp/parsing/ParserConfig.properties
+
+compile-tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_85487_1501829366/108f/build/test
+    [javac] /tmp/run_mutation.pl_85487_1501829366/108f/build.xml:336: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 543 source files to /tmp/run_mutation.pl_85487_1501829366/108f/build/test
+    [javac] Note: /tmp/run_mutation.pl_85487_1501829366/108f/src/com/google/debugging/sourcemap/SourceMapConsumerV3.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] /tmp/run_mutation.pl_85487_1501829366/108f/build.xml:342: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 241 source files to /tmp/run_mutation.pl_85487_1501829366/108f/build/test
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 3 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 14.82 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 438
+    [junit] MAJOR: Mutants covered:   101 (23.06%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 3 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/3 - com.google.javascript.jscomp.ScopedAliases_ESTest1 (143ms / 100):
+    [junit] MAJOR: 332939 (13 / 100 / 100) -> AVG-RTPM: 3329ms
+    [junit] MAJOR: Mutants killed / live: 13 (0-13-0) / 88
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/3 - com.google.javascript.jscomp.ScopedAliases_ESTest0 (144ms / 4):
+    [junit] MAJOR: 337667 (3 / 4 / 4) -> AVG-RTPM: 1182ms
+    [junit] MAJOR: Mutants killed / live: 16 (0-16-0) / 85
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/3 - com.google.javascript.jscomp.ScopedAliases_ESTest2 (153ms / 100):
+    [junit] MAJOR: 355675 (85 / 100 / 100) -> AVG-RTPM: 180ms
+    [junit] MAJOR: Mutants killed / live: 101 (0-117-0) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  355.7 seconds
+    [junit] MAJOR: Mutation score: 23.06% (100.00%)
+    [junit] MAJOR: Mutants killed / live: 101 (0-117-0) / 0
+    [junit] MAJOR: Mutant executions: 204
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_85487_1501829366/108f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 6 minutes 40 seconds

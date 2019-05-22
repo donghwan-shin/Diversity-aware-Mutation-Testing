@@ -1,0 +1,557 @@
+
+init:
+     [echo] -------- Commons MATH 3.1-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] Compiling 496 source files to /tmp/run_mutation.pl_16000_1483658231/1f/target/test-classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /tmp/run_mutation.pl_16000_1483658231/1f/src/test/java/org/apache/commons/math3/PerfTestUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 32 files to /tmp/run_mutation.pl_16000_1483658231/1f/target/test-classes
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 125 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 65.46 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 1208
+    [junit] MAJOR: Mutants covered:   1189 (98.43%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 125 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/125 - org.apache.commons.math3.fraction.BigFraction_ESTest50 (6ms / 88):
+    [junit] MAJOR: 111794 (13 / 88 / 88) -> AVG-RTPM: 1270ms
+    [junit] MAJOR: Mutants killed / live: 13 (0-13-0) / 1176
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/125 - org.apache.commons.math3.fraction.BigFraction_ESTest25 (7ms / 82):
+    [junit] MAJOR: 301633 (0 / 82 / 82) -> AVG-RTPM: 2315ms
+    [junit] MAJOR: Mutants killed / live: 13 (0-24-0) / 1176
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/125 - org.apache.commons.math3.fraction.BigFraction_ESTest29 (7ms / 187):
+    [junit] MAJOR: 442288 (160 / 187 / 187) -> AVG-RTPM: 752ms
+    [junit] MAJOR: Mutants killed / live: 173 (0-193-2) / 1016
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/125 - org.apache.commons.math3.fraction.BigFraction_ESTest30 (7ms / 84):
+    [junit] MAJOR: 476496 (19 / 84 / 84) -> AVG-RTPM: 407ms
+    [junit] MAJOR: Mutants killed / live: 192 (0-277-2) / 997
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/125 - org.apache.commons.math3.fraction.BigFraction_ESTest31 (7ms / 126):
+    [junit] MAJOR: 529468 (44 / 126 / 126) -> AVG-RTPM: 420ms
+    [junit] MAJOR: Mutants killed / live: 236 (0-403-2) / 953
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/125 - org.apache.commons.math3.fraction.BigFraction_ESTest34 (7ms / 200):
+    [junit] MAJOR: 612054 (115 / 200 / 200) -> AVG-RTPM: 412ms
+    [junit] MAJOR: Mutants killed / live: 351 (0-603-2) / 838
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/125 - org.apache.commons.math3.fraction.BigFraction_ESTest35 (7ms / 98):
+    [junit] MAJOR: 653150 (0 / 98 / 98) -> AVG-RTPM: 419ms
+    [junit] MAJOR: Mutants killed / live: 351 (0-701-2) / 838
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/125 - org.apache.commons.math3.fraction.BigFraction_ESTest36 (7ms / 99):
+    [junit] MAJOR: 694064 (0 / 99 / 99) -> AVG-RTPM: 413ms
+    [junit] MAJOR: Mutants killed / live: 351 (0-800-2) / 838
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/125 - org.apache.commons.math3.fraction.BigFraction_ESTest37 (7ms / 123):
+    [junit] MAJOR: 746935 (39 / 123 / 123) -> AVG-RTPM: 429ms
+    [junit] MAJOR: Mutants killed / live: 390 (0-923-2) / 799
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/125 - org.apache.commons.math3.fraction.BigFraction_ESTest38 (7ms / 256):
+    [junit] MAJOR: 881835 (44 / 256 / 256) -> AVG-RTPM: 526ms
+    [junit] MAJOR: Mutants killed / live: 434 (0-1179-2) / 755
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/125 - org.apache.commons.math3.fraction.BigFraction_ESTest39 (7ms / 189):
+    [junit] MAJOR: 965064 (7 / 189 / 189) -> AVG-RTPM: 440ms
+    [junit] MAJOR: Mutants killed / live: 441 (0-1368-2) / 748
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/125 - org.apache.commons.math3.fraction.BigFraction_ESTest4 (7ms / 131):
+    [junit] MAJOR: 1017960 (8 / 131 / 131) -> AVG-RTPM: 403ms
+    [junit] MAJOR: Mutants killed / live: 449 (0-1499-2) / 740
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 13/125 - org.apache.commons.math3.fraction.BigFraction_ESTest40 (7ms / 100):
+    [junit] MAJOR: 1061081 (9 / 100 / 100) -> AVG-RTPM: 431ms
+    [junit] MAJOR: Mutants killed / live: 458 (0-1599-2) / 731
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 14/125 - org.apache.commons.math3.fraction.BigFraction_ESTest41 (7ms / 220):
+    [junit] MAJOR: 1153481 (0 / 220 / 220) -> AVG-RTPM: 420ms
+    [junit] MAJOR: Mutants killed / live: 458 (0-1819-2) / 731
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 15/125 - org.apache.commons.math3.fraction.BigFraction_ESTest42 (7ms / 99):
+    [junit] MAJOR: 1196237 (0 / 99 / 99) -> AVG-RTPM: 431ms
+    [junit] MAJOR: Mutants killed / live: 458 (0-1918-2) / 731
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 16/125 - org.apache.commons.math3.fraction.BigFraction_ESTest45 (7ms / 191):
+    [junit] MAJOR: 1276134 (5 / 191 / 191) -> AVG-RTPM: 418ms
+    [junit] MAJOR: Mutants killed / live: 463 (0-2109-2) / 726
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 17/125 - org.apache.commons.math3.fraction.BigFraction_ESTest46 (7ms / 173):
+    [junit] MAJOR: 1348801 (0 / 173 / 173) -> AVG-RTPM: 420ms
+    [junit] MAJOR: Mutants killed / live: 463 (0-2282-2) / 726
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 18/125 - org.apache.commons.math3.fraction.BigFraction_ESTest47 (7ms / 86):
+    [junit] MAJOR: 1385047 (0 / 86 / 86) -> AVG-RTPM: 421ms
+    [junit] MAJOR: Mutants killed / live: 463 (0-2368-2) / 726
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 19/125 - org.apache.commons.math3.fraction.BigFraction_ESTest48 (7ms / 77):
+    [junit] MAJOR: 1419201 (0 / 77 / 77) -> AVG-RTPM: 443ms
+    [junit] MAJOR: Mutants killed / live: 463 (0-2445-2) / 726
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 20/125 - org.apache.commons.math3.fraction.BigFraction_ESTest49 (7ms / 232):
+    [junit] MAJOR: 1514043 (0 / 232 / 232) -> AVG-RTPM: 408ms
+    [junit] MAJOR: Mutants killed / live: 463 (0-2677-2) / 726
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 21/125 - org.apache.commons.math3.fraction.BigFraction_ESTest5 (7ms / 182):
+    [junit] MAJOR: 1590165 (0 / 182 / 182) -> AVG-RTPM: 418ms
+    [junit] MAJOR: Mutants killed / live: 463 (0-2859-2) / 726
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 22/125 - org.apache.commons.math3.fraction.BigFraction_ESTest53 (7ms / 94):
+    [junit] MAJOR: 1630672 (0 / 94 / 94) -> AVG-RTPM: 430ms
+    [junit] MAJOR: Mutants killed / live: 463 (0-2953-2) / 726
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 23/125 - org.apache.commons.math3.fraction.BigFraction_ESTest54 (7ms / 81):
+    [junit] MAJOR: 1664812 (5 / 81 / 81) -> AVG-RTPM: 421ms
+    [junit] MAJOR: Mutants killed / live: 468 (0-3034-2) / 721
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 24/125 - org.apache.commons.math3.fraction.BigFraction_ESTest57 (7ms / 175):
+    [junit] MAJOR: 1739938 (16 / 175 / 175) -> AVG-RTPM: 429ms
+    [junit] MAJOR: Mutants killed / live: 484 (0-3209-2) / 705
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 25/125 - org.apache.commons.math3.fraction.BigFraction_ESTest58 (7ms / 197):
+    [junit] MAJOR: 1825892 (0 / 197 / 197) -> AVG-RTPM: 436ms
+    [junit] MAJOR: Mutants killed / live: 484 (0-3406-2) / 705
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 26/125 - org.apache.commons.math3.fraction.BigFraction_ESTest59 (7ms / 247):
+    [junit] MAJOR: 1932500 (2 / 247 / 247) -> AVG-RTPM: 431ms
+    [junit] MAJOR: Mutants killed / live: 486 (0-3653-2) / 703
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 27/125 - org.apache.commons.math3.fraction.BigFraction_ESTest6 (7ms / 95):
+    [junit] MAJOR: 1975031 (4 / 95 / 95) -> AVG-RTPM: 447ms
+    [junit] MAJOR: Mutants killed / live: 490 (0-3748-2) / 699
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 28/125 - org.apache.commons.math3.fraction.BigFraction_ESTest60 (7ms / 78):
+    [junit] MAJOR: 2008805 (0 / 78 / 78) -> AVG-RTPM: 432ms
+    [junit] MAJOR: Mutants killed / live: 490 (0-3826-2) / 699
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 29/125 - org.apache.commons.math3.fraction.BigFraction_ESTest61 (7ms / 76):
+    [junit] MAJOR: 2041969 (0 / 76 / 76) -> AVG-RTPM: 436ms
+    [junit] MAJOR: Mutants killed / live: 490 (0-3902-2) / 699
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 30/125 - org.apache.commons.math3.fraction.BigFraction_ESTest62 (7ms / 82):
+    [junit] MAJOR: 2078369 (0 / 82 / 82) -> AVG-RTPM: 443ms
+    [junit] MAJOR: Mutants killed / live: 490 (0-3984-2) / 699
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 31/125 - org.apache.commons.math3.fraction.BigFraction_ESTest65 (7ms / 124):
+    [junit] MAJOR: 2133532 (9 / 124 / 124) -> AVG-RTPM: 444ms
+    [junit] MAJOR: Mutants killed / live: 499 (0-4108-2) / 690
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 32/125 - org.apache.commons.math3.fraction.BigFraction_ESTest67 (7ms / 86):
+    [junit] MAJOR: 2171656 (0 / 86 / 86) -> AVG-RTPM: 443ms
+    [junit] MAJOR: Mutants killed / live: 499 (0-4194-2) / 690
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 33/125 - org.apache.commons.math3.fraction.BigFraction_ESTest68 (7ms / 167):
+    [junit] MAJOR: 2248512 (0 / 167 / 167) -> AVG-RTPM: 460ms
+    [junit] MAJOR: Mutants killed / live: 499 (0-4361-2) / 690
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 34/125 - org.apache.commons.math3.fraction.BigFraction_ESTest69 (7ms / 97):
+    [junit] MAJOR: 2294037 (0 / 97 / 97) -> AVG-RTPM: 469ms
+    [junit] MAJOR: Mutants killed / live: 499 (0-4458-2) / 690
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 35/125 - org.apache.commons.math3.fraction.BigFraction_ESTest7 (7ms / 126):
+    [junit] MAJOR: 2349456 (4 / 126 / 126) -> AVG-RTPM: 439ms
+    [junit] MAJOR: Mutants killed / live: 503 (0-4584-2) / 686
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 36/125 - org.apache.commons.math3.fraction.Fraction_ESTest13 (7ms / 116):
+    [junit] MAJOR: 2401445 (116 / 116 / 116) -> AVG-RTPM: 448ms
+    [junit] MAJOR: Mutants killed / live: 619 (0-4700-2) / 570
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 37/125 - org.apache.commons.math3.fraction.BigFraction_ESTest10 (8ms / 220):
+    [junit] MAJOR: 2499140 (0 / 220 / 220) -> AVG-RTPM: 444ms
+    [junit] MAJOR: Mutants killed / live: 619 (0-4920-2) / 570
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 38/125 - org.apache.commons.math3.fraction.BigFraction_ESTest13 (8ms / 104):
+    [junit] MAJOR: 2544892 (0 / 104 / 104) -> AVG-RTPM: 439ms
+    [junit] MAJOR: Mutants killed / live: 619 (0-5024-2) / 570
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 39/125 - org.apache.commons.math3.fraction.BigFraction_ESTest14 (8ms / 91):
+    [junit] MAJOR: 2586640 (0 / 91 / 91) -> AVG-RTPM: 458ms
+    [junit] MAJOR: Mutants killed / live: 619 (0-5115-2) / 570
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 40/125 - org.apache.commons.math3.fraction.BigFraction_ESTest20 (8ms / 110):
+    [junit] MAJOR: 2635506 (0 / 110 / 110) -> AVG-RTPM: 444ms
+    [junit] MAJOR: Mutants killed / live: 619 (0-5225-2) / 570
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 41/125 - org.apache.commons.math3.fraction.BigFraction_ESTest22 (8ms / 79):
+    [junit] MAJOR: 2671348 (0 / 79 / 79) -> AVG-RTPM: 453ms
+    [junit] MAJOR: Mutants killed / live: 619 (0-5304-2) / 570
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 42/125 - org.apache.commons.math3.fraction.BigFraction_ESTest24 (8ms / 82):
+    [junit] MAJOR: 2709077 (0 / 82 / 82) -> AVG-RTPM: 460ms
+    [junit] MAJOR: Mutants killed / live: 619 (0-5386-2) / 570
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 43/125 - org.apache.commons.math3.fraction.BigFraction_ESTest26 (8ms / 184):
+    [junit] MAJOR: 2792374 (7 / 184 / 184) -> AVG-RTPM: 452ms
+    [junit] MAJOR: Mutants killed / live: 626 (0-5570-2) / 563
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 44/125 - org.apache.commons.math3.fraction.BigFraction_ESTest28 (8ms / 88):
+    [junit] MAJOR: 2832962 (1 / 88 / 88) -> AVG-RTPM: 461ms
+    [junit] MAJOR: Mutants killed / live: 627 (0-5658-2) / 562
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 45/125 - org.apache.commons.math3.fraction.BigFraction_ESTest33 (8ms / 85):
+    [junit] MAJOR: 2872154 (0 / 85 / 85) -> AVG-RTPM: 461ms
+    [junit] MAJOR: Mutants killed / live: 627 (0-5743-2) / 562
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 46/125 - org.apache.commons.math3.fraction.BigFraction_ESTest51 (8ms / 95):
+    [junit] MAJOR: 2916338 (0 / 95 / 95) -> AVG-RTPM: 465ms
+    [junit] MAJOR: Mutants killed / live: 627 (0-5838-2) / 562
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 47/125 - org.apache.commons.math3.fraction.BigFraction_ESTest52 (8ms / 93):
+    [junit] MAJOR: 2960419 (0 / 93 / 93) -> AVG-RTPM: 473ms
+    [junit] MAJOR: Mutants killed / live: 627 (0-5931-2) / 562
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 48/125 - org.apache.commons.math3.fraction.BigFraction_ESTest55 (8ms / 204):
+    [junit] MAJOR: 3055786 (0 / 204 / 204) -> AVG-RTPM: 467ms
+    [junit] MAJOR: Mutants killed / live: 627 (0-6135-2) / 562
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 49/125 - org.apache.commons.math3.fraction.BigFraction_ESTest66 (8ms / 114):
+    [junit] MAJOR: 3110608 (0 / 114 / 114) -> AVG-RTPM: 480ms
+    [junit] MAJOR: Mutants killed / live: 627 (0-6249-2) / 562
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 50/125 - org.apache.commons.math3.fraction.BigFraction_ESTest71 (8ms / 79):
+    [junit] MAJOR: 3148406 (0 / 79 / 79) -> AVG-RTPM: 478ms
+    [junit] MAJOR: Mutants killed / live: 627 (0-6328-2) / 562
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 51/125 - org.apache.commons.math3.fraction.BigFraction_ESTest8 (8ms / 99):
+    [junit] MAJOR: 3195039 (0 / 99 / 99) -> AVG-RTPM: 471ms
+    [junit] MAJOR: Mutants killed / live: 627 (0-6427-2) / 562
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 52/125 - org.apache.commons.math3.fraction.Fraction_ESTest0 (8ms / 197):
+    [junit] MAJOR: 3286401 (103 / 197 / 197) -> AVG-RTPM: 463ms
+    [junit] MAJOR: Mutants killed / live: 730 (0-6624-2) / 459
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 53/125 - org.apache.commons.math3.fraction.Fraction_ESTest14 (8ms / 165):
+    [junit] MAJOR: 3364663 (67 / 165 / 165) -> AVG-RTPM: 474ms
+    [junit] MAJOR: Mutants killed / live: 797 (0-6789-2) / 392
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 54/125 - org.apache.commons.math3.fraction.Fraction_ESTest15 (8ms / 186):
+    [junit] MAJOR: 3450856 (92 / 186 / 186) -> AVG-RTPM: 463ms
+    [junit] MAJOR: Mutants killed / live: 889 (0-6975-2) / 300
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 55/125 - org.apache.commons.math3.fraction.Fraction_ESTest16 (8ms / 205):
+    [junit] MAJOR: 3543332 (21 / 205 / 205) -> AVG-RTPM: 451ms
+    [junit] MAJOR: Mutants killed / live: 910 (0-7180-2) / 279
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 56/125 - org.apache.commons.math3.fraction.Fraction_ESTest17 (8ms / 209):
+    [junit] MAJOR: 3639575 (27 / 209 / 209) -> AVG-RTPM: 460ms
+    [junit] MAJOR: Mutants killed / live: 937 (0-7389-2) / 252
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 57/125 - org.apache.commons.math3.fraction.Fraction_ESTest18 (8ms / 184):
+    [junit] MAJOR: 3726180 (0 / 184 / 184) -> AVG-RTPM: 470ms
+    [junit] MAJOR: Mutants killed / live: 937 (0-7573-2) / 252
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 58/125 - org.apache.commons.math3.fraction.Fraction_ESTest19 (8ms / 242):
+    [junit] MAJOR: 3839267 (29 / 242 / 242) -> AVG-RTPM: 467ms
+    [junit] MAJOR: Mutants killed / live: 966 (0-7815-2) / 223
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 59/125 - org.apache.commons.math3.fraction.Fraction_ESTest2 (8ms / 98):
+    [junit] MAJOR: 3886584 (0 / 98 / 98) -> AVG-RTPM: 482ms
+    [junit] MAJOR: Mutants killed / live: 966 (0-7913-2) / 223
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 60/125 - org.apache.commons.math3.fraction.Fraction_ESTest20 (8ms / 94):
+    [junit] MAJOR: 3930501 (0 / 94 / 94) -> AVG-RTPM: 467ms
+    [junit] MAJOR: Mutants killed / live: 966 (0-8007-2) / 223
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 61/125 - org.apache.commons.math3.fraction.Fraction_ESTest23 (8ms / 115):
+    [junit] MAJOR: 3985324 (21 / 115 / 115) -> AVG-RTPM: 476ms
+    [junit] MAJOR: Mutants killed / live: 987 (0-8122-2) / 202
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 62/125 - org.apache.commons.math3.fraction.Fraction_ESTest26 (8ms / 118):
+    [junit] MAJOR: 4040844 (24 / 118 / 118) -> AVG-RTPM: 470ms
+    [junit] MAJOR: Mutants killed / live: 1011 (0-8240-2) / 178
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 63/125 - org.apache.commons.math3.fraction.Fraction_ESTest27 (8ms / 250):
+    [junit] MAJOR: 4159808 (2 / 250 / 250) -> AVG-RTPM: 475ms
+    [junit] MAJOR: Mutants killed / live: 1013 (0-8490-2) / 176
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 64/125 - org.apache.commons.math3.fraction.Fraction_ESTest28 (8ms / 124):
+    [junit] MAJOR: 4220190 (4 / 124 / 124) -> AVG-RTPM: 486ms
+    [junit] MAJOR: Mutants killed / live: 1017 (0-8614-2) / 172
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 65/125 - org.apache.commons.math3.fraction.Fraction_ESTest30 (8ms / 118):
+    [junit] MAJOR: 4276366 (24 / 118 / 118) -> AVG-RTPM: 476ms
+    [junit] MAJOR: Mutants killed / live: 1041 (0-8732-2) / 148
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 66/125 - org.apache.commons.math3.fraction.Fraction_ESTest4 (8ms / 112):
+    [junit] MAJOR: 4328154 (14 / 112 / 112) -> AVG-RTPM: 462ms
+    [junit] MAJOR: Mutants killed / live: 1055 (0-8844-2) / 134
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 67/125 - org.apache.commons.math3.fraction.BigFraction_ESTest11 (9ms / 304):
+    [junit] MAJOR: 4469308 (0 / 304 / 304) -> AVG-RTPM: 464ms
+    [junit] MAJOR: Mutants killed / live: 1055 (0-9148-2) / 134
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 68/125 - org.apache.commons.math3.fraction.BigFraction_ESTest16 (9ms / 79):
+    [junit] MAJOR: 4506594 (0 / 79 / 79) -> AVG-RTPM: 471ms
+    [junit] MAJOR: Mutants killed / live: 1055 (0-9227-2) / 134
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 69/125 - org.apache.commons.math3.fraction.BigFraction_ESTest17 (9ms / 165):
+    [junit] MAJOR: 4586038 (0 / 165 / 165) -> AVG-RTPM: 481ms
+    [junit] MAJOR: Mutants killed / live: 1055 (0-9392-2) / 134
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 70/125 - org.apache.commons.math3.fraction.BigFraction_ESTest2 (9ms / 78):
+    [junit] MAJOR: 4623493 (0 / 78 / 78) -> AVG-RTPM: 480ms
+    [junit] MAJOR: Mutants killed / live: 1055 (0-9470-2) / 134
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 71/125 - org.apache.commons.math3.fraction.BigFraction_ESTest32 (9ms / 79):
+    [junit] MAJOR: 4661706 (0 / 79 / 79) -> AVG-RTPM: 483ms
+    [junit] MAJOR: Mutants killed / live: 1055 (0-9549-2) / 134
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 72/125 - org.apache.commons.math3.fraction.BigFraction_ESTest70 (9ms / 115):
+    [junit] MAJOR: 4717055 (0 / 115 / 115) -> AVG-RTPM: 481ms
+    [junit] MAJOR: Mutants killed / live: 1055 (0-9664-2) / 134
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 73/125 - org.apache.commons.math3.fraction.Fraction_ESTest1 (9ms / 104):
+    [junit] MAJOR: 4767884 (0 / 104 / 104) -> AVG-RTPM: 488ms
+    [junit] MAJOR: Mutants killed / live: 1055 (0-9768-2) / 134
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 74/125 - org.apache.commons.math3.fraction.Fraction_ESTest11 (9ms / 120):
+    [junit] MAJOR: 4827134 (3 / 120 / 120) -> AVG-RTPM: 493ms
+    [junit] MAJOR: Mutants killed / live: 1058 (0-9888-2) / 131
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 75/125 - org.apache.commons.math3.fraction.Fraction_ESTest12 (9ms / 106):
+    [junit] MAJOR: 4879832 (8 / 106 / 106) -> AVG-RTPM: 497ms
+    [junit] MAJOR: Mutants killed / live: 1066 (0-9994-2) / 123
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 76/125 - org.apache.commons.math3.fraction.Fraction_ESTest22 (9ms / 125):
+    [junit] MAJOR: 4940124 (6 / 125 / 125) -> AVG-RTPM: 482ms
+    [junit] MAJOR: Mutants killed / live: 1072 (0-10119-2) / 117
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 77/125 - org.apache.commons.math3.fraction.Fraction_ESTest24 (9ms / 257):
+    [junit] MAJOR: 5064384 (18 / 257 / 257) -> AVG-RTPM: 483ms
+    [junit] MAJOR: Mutants killed / live: 1090 (0-10376-2) / 99
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 78/125 - org.apache.commons.math3.fraction.Fraction_ESTest25 (9ms / 251):
+    [junit] MAJOR: 5185424 (6 / 251 / 251) -> AVG-RTPM: 482ms
+    [junit] MAJOR: Mutants killed / live: 1096 (0-10627-2) / 93
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 79/125 - org.apache.commons.math3.fraction.Fraction_ESTest29 (9ms / 111):
+    [junit] MAJOR: 5237825 (0 / 111 / 111) -> AVG-RTPM: 472ms
+    [junit] MAJOR: Mutants killed / live: 1096 (0-10738-2) / 93
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 80/125 - org.apache.commons.math3.fraction.Fraction_ESTest3 (9ms / 100):
+    [junit] MAJOR: 5284882 (2 / 100 / 100) -> AVG-RTPM: 470ms
+    [junit] MAJOR: Mutants killed / live: 1098 (0-10838-2) / 91
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 81/125 - org.apache.commons.math3.fraction.Fraction_ESTest31 (9ms / 127):
+    [junit] MAJOR: 5345246 (0 / 127 / 127) -> AVG-RTPM: 475ms
+    [junit] MAJOR: Mutants killed / live: 1098 (0-10965-2) / 91
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 82/125 - org.apache.commons.math3.fraction.Fraction_ESTest32 (9ms / 103):
+    [junit] MAJOR: 5394747 (0 / 103 / 103) -> AVG-RTPM: 480ms
+    [junit] MAJOR: Mutants killed / live: 1098 (0-11068-2) / 91
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 83/125 - org.apache.commons.math3.fraction.Fraction_ESTest33 (9ms / 98):
+    [junit] MAJOR: 5441376 (0 / 98 / 98) -> AVG-RTPM: 475ms
+    [junit] MAJOR: Mutants killed / live: 1098 (0-11166-2) / 91
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 84/125 - org.apache.commons.math3.fraction.Fraction_ESTest34 (9ms / 109):
+    [junit] MAJOR: 5493532 (2 / 109 / 109) -> AVG-RTPM: 478ms
+    [junit] MAJOR: Mutants killed / live: 1100 (0-11275-2) / 89
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 85/125 - org.apache.commons.math3.fraction.Fraction_ESTest35 (9ms / 131):
+    [junit] MAJOR: 5555694 (1 / 131 / 131) -> AVG-RTPM: 474ms
+    [junit] MAJOR: Mutants killed / live: 1101 (0-11406-2) / 88
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 86/125 - org.apache.commons.math3.fraction.Fraction_ESTest36 (9ms / 140):
+    [junit] MAJOR: 5622979 (0 / 140 / 140) -> AVG-RTPM: 480ms
+    [junit] MAJOR: Mutants killed / live: 1101 (0-11546-2) / 88
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 87/125 - org.apache.commons.math3.fraction.Fraction_ESTest37 (9ms / 131):
+    [junit] MAJOR: 5685170 (2 / 131 / 131) -> AVG-RTPM: 474ms
+    [junit] MAJOR: Mutants killed / live: 1103 (0-11677-2) / 86
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 88/125 - org.apache.commons.math3.fraction.Fraction_ESTest38 (9ms / 131):
+    [junit] MAJOR: 5746281 (0 / 131 / 131) -> AVG-RTPM: 466ms
+    [junit] MAJOR: Mutants killed / live: 1103 (0-11808-2) / 86
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 89/125 - org.apache.commons.math3.fraction.Fraction_ESTest39 (9ms / 169):
+    [junit] MAJOR: 5826373 (4 / 169 / 169) -> AVG-RTPM: 473ms
+    [junit] MAJOR: Mutants killed / live: 1107 (0-11977-2) / 82
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 90/125 - org.apache.commons.math3.fraction.Fraction_ESTest40 (9ms / 153):
+    [junit] MAJOR: 5898629 (0 / 153 / 153) -> AVG-RTPM: 472ms
+    [junit] MAJOR: Mutants killed / live: 1107 (0-12130-2) / 82
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 91/125 - org.apache.commons.math3.fraction.BigFraction_ESTest12 (10ms / 183):
+    [junit] MAJOR: 5988245 (0 / 183 / 183) -> AVG-RTPM: 489ms
+    [junit] MAJOR: Mutants killed / live: 1107 (0-12313-2) / 82
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 92/125 - org.apache.commons.math3.fraction.BigFraction_ESTest15 (10ms / 83):
+    [junit] MAJOR: 6029277 (0 / 83 / 83) -> AVG-RTPM: 494ms
+    [junit] MAJOR: Mutants killed / live: 1107 (0-12396-2) / 82
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 93/125 - org.apache.commons.math3.fraction.BigFraction_ESTest44 (10ms / 85):
+    [junit] MAJOR: 6070818 (0 / 85 / 85) -> AVG-RTPM: 488ms
+    [junit] MAJOR: Mutants killed / live: 1107 (0-12481-2) / 82
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 94/125 - org.apache.commons.math3.fraction.Fraction_ESTest10 (10ms / 202):
+    [junit] MAJOR: 6168920 (0 / 202 / 202) -> AVG-RTPM: 485ms
+    [junit] MAJOR: Mutants killed / live: 1107 (0-12683-2) / 82
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 95/125 - org.apache.commons.math3.fraction.Fraction_ESTest41 (10ms / 97):
+    [junit] MAJOR: 6217074 (0 / 97 / 97) -> AVG-RTPM: 496ms
+    [junit] MAJOR: Mutants killed / live: 1107 (0-12780-2) / 82
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 96/125 - org.apache.commons.math3.fraction.Fraction_ESTest46 (10ms / 103):
+    [junit] MAJOR: 6267533 (0 / 103 / 103) -> AVG-RTPM: 489ms
+    [junit] MAJOR: Mutants killed / live: 1107 (0-12883-2) / 82
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 97/125 - org.apache.commons.math3.fraction.Fraction_ESTest5 (10ms / 102):
+    [junit] MAJOR: 6318023 (4 / 102 / 102) -> AVG-RTPM: 495ms
+    [junit] MAJOR: Mutants killed / live: 1111 (0-12985-2) / 78
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 98/125 - org.apache.commons.math3.fraction.Fraction_ESTest52 (10ms / 104):
+    [junit] MAJOR: 6368769 (10 / 104 / 104) -> AVG-RTPM: 487ms
+    [junit] MAJOR: Mutants killed / live: 1121 (0-13089-2) / 68
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 99/125 - org.apache.commons.math3.fraction.Fraction_ESTest7 (10ms / 94):
+    [junit] MAJOR: 6414435 (0 / 94 / 94) -> AVG-RTPM: 485ms
+    [junit] MAJOR: Mutants killed / live: 1121 (0-13183-2) / 68
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 100/125 - org.apache.commons.math3.fraction.Fraction_ESTest9 (10ms / 104):
+    [junit] MAJOR: 6465017 (0 / 104 / 104) -> AVG-RTPM: 486ms
+    [junit] MAJOR: Mutants killed / live: 1121 (0-13287-2) / 68
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 101/125 - org.apache.commons.math3.fraction.BigFraction_ESTest64 (11ms / 229):
+    [junit] MAJOR: 6577500 (1 / 229 / 229) -> AVG-RTPM: 491ms
+    [junit] MAJOR: Mutants killed / live: 1122 (0-13516-2) / 67
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 102/125 - org.apache.commons.math3.fraction.Fraction_ESTest42 (11ms / 143):
+    [junit] MAJOR: 6647787 (0 / 143 / 143) -> AVG-RTPM: 491ms
+    [junit] MAJOR: Mutants killed / live: 1122 (0-13659-2) / 67
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 103/125 - org.apache.commons.math3.fraction.Fraction_ESTest43 (11ms / 126):
+    [junit] MAJOR: 6709507 (0 / 126 / 126) -> AVG-RTPM: 489ms
+    [junit] MAJOR: Mutants killed / live: 1122 (0-13785-2) / 67
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 104/125 - org.apache.commons.math3.fraction.Fraction_ESTest44 (11ms / 97):
+    [junit] MAJOR: 6756148 (0 / 97 / 97) -> AVG-RTPM: 480ms
+    [junit] MAJOR: Mutants killed / live: 1122 (0-13882-2) / 67
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 105/125 - org.apache.commons.math3.fraction.Fraction_ESTest45 (11ms / 106):
+    [junit] MAJOR: 6807942 (0 / 106 / 106) -> AVG-RTPM: 488ms
+    [junit] MAJOR: Mutants killed / live: 1122 (0-13988-2) / 67
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 106/125 - org.apache.commons.math3.fraction.Fraction_ESTest47 (11ms / 112):
+    [junit] MAJOR: 6863220 (0 / 112 / 112) -> AVG-RTPM: 493ms
+    [junit] MAJOR: Mutants killed / live: 1122 (0-14100-2) / 67
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 107/125 - org.apache.commons.math3.fraction.Fraction_ESTest48 (11ms / 187):
+    [junit] MAJOR: 6955115 (46 / 187 / 187) -> AVG-RTPM: 491ms
+    [junit] MAJOR: Mutants killed / live: 1168 (0-14287-2) / 21
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 108/125 - org.apache.commons.math3.fraction.Fraction_ESTest50 (11ms / 149):
+    [junit] MAJOR: 7029756 (0 / 149 / 149) -> AVG-RTPM: 500ms
+    [junit] MAJOR: Mutants killed / live: 1168 (0-14436-2) / 21
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 109/125 - org.apache.commons.math3.fraction.Fraction_ESTest51 (11ms / 113):
+    [junit] MAJOR: 7085690 (10 / 113 / 113) -> AVG-RTPM: 494ms
+    [junit] MAJOR: Mutants killed / live: 1178 (0-14549-2) / 11
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 110/125 - org.apache.commons.math3.fraction.Fraction_ESTest6 (11ms / 98):
+    [junit] MAJOR: 7134418 (0 / 98 / 98) -> AVG-RTPM: 497ms
+    [junit] MAJOR: Mutants killed / live: 1178 (0-14647-2) / 11
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 111/125 - org.apache.commons.math3.fraction.BigFraction_ESTest18 (12ms / 97):
+    [junit] MAJOR: 7182624 (2 / 97 / 97) -> AVG-RTPM: 496ms
+    [junit] MAJOR: Mutants killed / live: 1180 (0-14744-2) / 9
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 112/125 - org.apache.commons.math3.fraction.Fraction_ESTest49 (12ms / 169):
+    [junit] MAJOR: 7267295 (0 / 169 / 169) -> AVG-RTPM: 501ms
+    [junit] MAJOR: Mutants killed / live: 1180 (0-14913-2) / 9
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 113/125 - org.apache.commons.math3.fraction.BigFraction_ESTest3 (13ms / 128):
+    [junit] MAJOR: 7330585 (0 / 128 / 128) -> AVG-RTPM: 494ms
+    [junit] MAJOR: Mutants killed / live: 1180 (0-15041-2) / 9
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 114/125 - org.apache.commons.math3.fraction.BigFraction_ESTest21 (16ms / 167):
+    [junit] MAJOR: 7399727 (0 / 167 / 167) -> AVG-RTPM: 414ms
+    [junit] MAJOR: Mutants killed / live: 1180 (0-15208-2) / 9
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 115/125 - org.apache.commons.math3.fraction.BigFraction_ESTest9 (16ms / 129):
+    [junit] MAJOR: 7445898 (9 / 129 / 129) -> AVG-RTPM: 357ms
+    [junit] MAJOR: Mutants killed / live: 1189 (0-15337-2) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 116/125 - org.apache.commons.math3.fraction.BigFraction_ESTest0 (18ms / 256):
+    [junit] MAJOR: 7545067 (0 / 256 / 256) -> AVG-RTPM: 387ms
+    [junit] MAJOR: Mutants killed / live: 1189 (0-15593-2) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 117/125 - org.apache.commons.math3.fraction.BigFraction_ESTest19 (18ms / 217):
+    [junit] MAJOR: 7630365 (0 / 217 / 217) -> AVG-RTPM: 393ms
+    [junit] MAJOR: Mutants killed / live: 1189 (0-15810-2) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 118/125 - org.apache.commons.math3.fraction.BigFraction_ESTest1 (22ms / 114):
+    [junit] MAJOR: 7675838 (0 / 114 / 114) -> AVG-RTPM: 398ms
+    [junit] MAJOR: Mutants killed / live: 1189 (0-15924-2) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 119/125 - org.apache.commons.math3.fraction.BigFraction_ESTest56 (24ms / 85):
+    [junit] MAJOR: 7709214 (0 / 85 / 85) -> AVG-RTPM: 392ms
+    [junit] MAJOR: Mutants killed / live: 1189 (0-16009-2) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 120/125 - org.apache.commons.math3.fraction.BigFraction_ESTest27 (28ms / 175):
+    [junit] MAJOR: 7778021 (0 / 175 / 175) -> AVG-RTPM: 393ms
+    [junit] MAJOR: Mutants killed / live: 1189 (0-16184-2) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 121/125 - org.apache.commons.math3.fraction.BigFraction_ESTest43 (31ms / 129):
+    [junit] MAJOR: 7829143 (0 / 129 / 129) -> AVG-RTPM: 396ms
+    [junit] MAJOR: Mutants killed / live: 1189 (0-16313-2) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 122/125 - org.apache.commons.math3.fraction.Fraction_ESTest21 (31ms / 108):
+    [junit] MAJOR: 7872230 (0 / 108 / 108) -> AVG-RTPM: 398ms
+    [junit] MAJOR: Mutants killed / live: 1189 (0-16421-2) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 123/125 - org.apache.commons.math3.fraction.BigFraction_ESTest63 (35ms / 76):
+    [junit] MAJOR: 7902661 (0 / 76 / 76) -> AVG-RTPM: 400ms
+    [junit] MAJOR: Mutants killed / live: 1189 (0-16497-2) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 124/125 - org.apache.commons.math3.fraction.Fraction_ESTest8 (53ms / 94):
+    [junit] MAJOR: 7940058 (0 / 94 / 94) -> AVG-RTPM: 397ms
+    [junit] MAJOR: Mutants killed / live: 1189 (0-16591-2) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 125/125 - org.apache.commons.math3.fraction.BigFraction_ESTest23 (75ms / 80):
+    [junit] MAJOR: 7971987 (0 / 80 / 80) -> AVG-RTPM: 399ms
+    [junit] MAJOR: Mutants killed / live: 1189 (0-16671-2) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  7972.0 seconds
+    [junit] MAJOR: Mutation score: 98.43% (100.00%)
+    [junit] MAJOR: Mutants killed / live: 1189 (0-16671-2) / 0
+    [junit] MAJOR: Mutant executions: 16835
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_16000_1483658231/1f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 134 minutes 5 seconds

@@ -1,0 +1,121 @@
+
+rhino:
+
+properties:
+
+init:
+
+compile:
+
+compile-most:
+
+compile-jdk15:
+
+compile:
+
+properties:
+
+compile:
+
+xmlimplsrc-compile:
+     [echo] Calling /tmp/run_mutation.pl_117876_1500896362/18f/lib/rhino/xmlimplsrc/build.xml
+
+compile:
+
+compile-all:
+
+compile:
+
+jar:
+
+rhino-jarjar:
+   [jarjar] Updating jar: /tmp/run_mutation.pl_117876_1500896362/18f/build/lib/rhino.jar
+
+svnversion:
+
+compile:
+    [javac] /tmp/run_mutation.pl_117876_1500896362/18f/build.xml:252: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] /tmp/run_mutation.pl_117876_1500896362/18f/build.xml:258: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+[propertyfile] Updating property file: /tmp/run_mutation.pl_117876_1500896362/18f/build/classes/com/google/javascript/jscomp/parsing/ParserConfig.properties
+
+compile-tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_117876_1500896362/18f/build/test
+    [javac] /tmp/run_mutation.pl_117876_1500896362/18f/build.xml:325: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 403 source files to /tmp/run_mutation.pl_117876_1500896362/18f/build/test
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] Note: /tmp/run_mutation.pl_117876_1500896362/18f/src/com/google/javascript/jscomp/ant/CompileTask.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+    [javac] /tmp/run_mutation.pl_117876_1500896362/18f/build.xml:331: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 225 source files to /tmp/run_mutation.pl_117876_1500896362/18f/build/test
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] Note: /tmp/run_mutation.pl_117876_1500896362/18f/test/com/google/javascript/jscomp/parsing/JsDocInfoParserTest.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 1 warning
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 135 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 1003.81 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 1158
+    [junit] MAJOR: Mutants covered:   756 (65.28%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 135 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/135 - com.google.javascript.jscomp.Compiler_ESTest96 (-431ms / 14):
+    [junit] MAJOR: 204368 (13 / 14 / 14) -> AVG-RTPM: 14597ms
+    [junit] MAJOR: Mutants killed / live: 13 (0-12-1) / 743
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/135 - com.google.javascript.jscomp.Compiler_ESTest116 (28ms / 21):
+    [junit] MAJOR: 535304 (21 / 21 / 21) -> AVG-RTPM: 15758ms
+    [junit] MAJOR: Mutants killed / live: 34 (0-25-8) / 722
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/135 - com.google.javascript.jscomp.Compiler_ESTest120 (29ms / 32):
+    [junit] MAJOR: 1045352 (28 / 32 / 32) -> AVG-RTPM: 15939ms
+    [junit] MAJOR: Mutants killed / live: 62 (0-46-19) / 694
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/135 - com.google.javascript.jscomp.Compiler_ESTest113 (31ms / 0):
+    [junit] MAJOR: 1045352 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 62 (0-46-19) / 694
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/135 - com.google.javascript.jscomp.Compiler_ESTest127 (31ms / 24):
+    [junit] MAJOR: 1442615 (14 / 24 / 24) -> AVG-RTPM: 16552ms
+    [junit] MAJOR: Mutants killed / live: 76 (0-67-22) / 680
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/135 - com.google.javascript.jscomp.Compiler_ESTest104 (32ms / 11):
+    [junit] MAJOR: 1607531 (0 / 11 / 11) -> AVG-RTPM: 14992ms
+    [junit] MAJOR: Mutants killed / live: 76 (0-77-23) / 680
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/135 - com.google.javascript.jscomp.Compiler_ESTest124 (32ms / 47):
+    [junit] MAJOR: 2580868 (4 / 47 / 47) -> AVG-RTPM: 20709ms
+    [junit] MAJOR: Mutants killed / live: 80 (0-118-29) / 676
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/135 - com.google.javascript.jscomp.Compiler_ESTest14 (32ms / 58):
+Caught an exception while logging the end of the build.  Exception was:
+java.lang.OutOfMemoryError: PermGen space
+There has been an error prior to that:
+java.lang.OutOfMemoryError: PermGen space
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1408)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Caused by: java.lang.OutOfMemoryError: PermGen space

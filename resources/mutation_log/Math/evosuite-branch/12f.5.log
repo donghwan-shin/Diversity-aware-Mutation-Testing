@@ -1,0 +1,98 @@
+
+init:
+     [echo] -------- Commons MATH 3.1-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] Compiling 443 source files to /tmp/run_mutation.pl_28311_1483662828/12f/target/test-classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /tmp/run_mutation.pl_28311_1483662828/12f/src/test/java/org/apache/commons/math3/PerfTestUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 28 files to /tmp/run_mutation.pl_28311_1483662828/12f/target/test-classes
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: org.apache.commons.math3.random.BitsStreamGenerator_ESTest0[test0] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "expected:<1140807170> but was:<736810463>"
+    [junit] MAJOR: org.apache.commons.math3.random.BitsStreamGenerator_ESTest1[test1] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "expected:<0.26561487> but was:<0.19997144>"
+    [junit] MAJOR: org.apache.commons.math3.random.BitsStreamGenerator_ESTest2[test2] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "expected:<4899729490359568901> but was:<-2820282766823023499>"
+    [junit] MAJOR: org.apache.commons.math3.random.BitsStreamGenerator_ESTest8[test8] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "expected:<570403585> but was:<1074435772>"
+    [junit] MAJOR: Exclude 4 failing test classes:
+    [junit] MAJOR:  - org.apache.commons.math3.random.BitsStreamGenerator_ESTest0
+    [junit] MAJOR:  - org.apache.commons.math3.random.BitsStreamGenerator_ESTest1
+    [junit] MAJOR:  - org.apache.commons.math3.random.BitsStreamGenerator_ESTest2
+    [junit] MAJOR:  - org.apache.commons.math3.random.BitsStreamGenerator_ESTest8
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 6 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 1.99 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 229
+    [junit] MAJOR: Mutants covered:   176 (76.86%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 6 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/6 - org.apache.commons.math3.random.BitsStreamGenerator_ESTest4 (8ms / 13):
+    [junit] MAJOR: 1248 (5 / 13 / 13) -> AVG-RTPM: 96ms
+    [junit] MAJOR: Mutants killed / live: 5 (5-0-0) / 171
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/6 - org.apache.commons.math3.random.BitsStreamGenerator_ESTest6 (8ms / 46):
+    [junit] MAJOR: 6815 (40 / 46 / 46) -> AVG-RTPM: 121ms
+    [junit] MAJOR: Mutants killed / live: 45 (45-0-0) / 131
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/6 - org.apache.commons.math3.random.BitsStreamGenerator_ESTest7 (8ms / 11):
+    [junit] MAJOR: 8711 (5 / 11 / 11) -> AVG-RTPM: 172ms
+    [junit] MAJOR: Mutants killed / live: 50 (50-0-0) / 126
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/6 - org.apache.commons.math3.random.BitsStreamGenerator_ESTest9 (8ms / 32):
+    [junit] MAJOR: 15845 (18 / 32 / 32) -> AVG-RTPM: 222ms
+    [junit] MAJOR: Mutants killed / live: 68 (66-4-0) / 108
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/6 - org.apache.commons.math3.random.BitsStreamGenerator_ESTest3 (9ms / 13):
+    [junit] MAJOR: 19501 (6 / 13 / 13) -> AVG-RTPM: 281ms
+    [junit] MAJOR: Mutants killed / live: 74 (72-4-0) / 102
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/6 - org.apache.commons.math3.random.BitsStreamGenerator_ESTest5 (10ms / 91):
+    [junit] MAJOR: 66852 (75 / 91 / 91) -> AVG-RTPM: 520ms
+    [junit] MAJOR: Mutants killed / live: 149 (117-31-3) / 27
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  66.9 seconds
+    [junit] MAJOR: Mutation score: 65.07% (84.66%)
+    [junit] MAJOR: Mutants killed / live: 149 (117-31-3) / 27
+    [junit] MAJOR: Mutant executions: 206
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_28311_1483662828/12f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 1 minute 15 seconds

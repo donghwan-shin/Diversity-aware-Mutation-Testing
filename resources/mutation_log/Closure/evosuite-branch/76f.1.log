@@ -1,0 +1,68 @@
+
+svnversion:
+
+compile:
+    [javac] /tmp/run_mutation.pl_107800_1501758462/76f/build.xml:184: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] /tmp/run_mutation.pl_107800_1501758462/76f/build.xml:190: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+[propertyfile] Updating property file: /tmp/run_mutation.pl_107800_1501758462/76f/build/classes/com/google/javascript/jscomp/parsing/ParserConfig.properties
+
+compile-tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_107800_1501758462/76f/build/test
+    [javac] /tmp/run_mutation.pl_107800_1501758462/76f/build.xml:254: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 366 source files to /tmp/run_mutation.pl_107800_1501758462/76f/build/test
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+    [javac] /tmp/run_mutation.pl_107800_1501758462/76f/build.xml:259: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 195 source files to /tmp/run_mutation.pl_107800_1501758462/76f/build/test
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 3 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 15.84 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 335
+    [junit] MAJOR: Mutants covered:   3 (0.90%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 3 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/3 - com.google.javascript.jscomp.DeadAssignmentsElimination_ESTest1 (104ms / 3):
+    [junit] MAJOR: 6604 (1 / 3 / 3) -> AVG-RTPM: 2201ms
+    [junit] MAJOR: Mutants killed / live: 1 (1-0-0) / 2
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/3 - com.google.javascript.jscomp.DeadAssignmentsElimination_ESTest2 (105ms / 0):
+    [junit] MAJOR: 6605 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1 (1-0-0) / 2
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/3 - com.google.javascript.jscomp.DeadAssignmentsElimination_ESTest0 (157ms / 0):
+    [junit] MAJOR: 6605 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1 (1-0-0) / 2
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  6.6 seconds
+    [junit] MAJOR: Mutation score: 0.30% (33.33%)
+    [junit] MAJOR: Mutants killed / live: 1 (1-0-0) / 2
+    [junit] MAJOR: Mutant executions: 3
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_107800_1501758462/76f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 49 seconds

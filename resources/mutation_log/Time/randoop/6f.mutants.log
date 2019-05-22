@@ -1,0 +1,797 @@
+1:LVR:0:POS:org.joda.time.chrono.GJChronology@convertByWeekyear(long,org.joda.time.Chronology,org.joda.time.Chronology):96:0 |==> 1
+2:LVR:0:NEG:org.joda.time.chrono.GJChronology@convertByWeekyear(long,org.joda.time.Chronology,org.joda.time.Chronology):96:0 |==> -1
+3:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@convertByWeekyear(long,org.joda.time.Chronology,org.joda.time.Chronology):97:newInstant = to.weekOfWeekyear().set(newInstant, from.weekOfWeekyear().get(instant)) |==> <NO-OP>
+4:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@convertByWeekyear(long,org.joda.time.Chronology,org.joda.time.Chronology):98:newInstant = to.dayOfWeek().set(newInstant, from.dayOfWeek().get(instant)) |==> <NO-OP>
+5:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@convertByWeekyear(long,org.joda.time.Chronology,org.joda.time.Chronology):99:newInstant = to.millisOfDay().set(newInstant, from.millisOfDay().get(instant)) |==> <NO-OP>
+6:LVR:NEG:0:org.joda.time.chrono.GJChronology:106:-12219292800000L |==> 0L
+7:LVR:NEG:POS:org.joda.time.chrono.GJChronology:106:-12219292800000L |==> 12219292800000L
+8:LVR:POS:0:org.joda.time.chrono.GJChronology@getInstanceUTC():124:4 |==> 0
+9:LVR:POS:NEG:org.joda.time.chrono.GJChronology@getInstanceUTC():124:4 |==> -4
+10:LVR:POS:0:org.joda.time.chrono.GJChronology@getInstance():140:4 |==> 0
+11:LVR:POS:NEG:org.joda.time.chrono.GJChronology@getInstance():140:4 |==> -4
+12:LVR:POS:0:org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone):156:4 |==> 0
+13:LVR:POS:NEG:org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone):156:4 |==> -4
+14:LVR:POS:0:org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant):174:4 |==> 0
+15:LVR:POS:NEG:org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant):174:4 |==> -4
+16:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):190:zone = DateTimeUtils.getZone(zone) |==> <NO-OP>
+17:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):192:gregorianCutover == null |==> gregorianCutover != null
+18:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):192:gregorianCutover == null |==> false
+19:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):192:gregorianCutover == null |==> true
+20:LVR:0:POS:org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):197:0 |==> 1
+21:LVR:0:NEG:org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):197:0 |==> -1
+22:ROR:<=(int,int):!=(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):197:cutoverDate.getYear() <= 0 |==> cutoverDate.getYear() != 0
+23:ROR:<=(int,int):<(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):197:cutoverDate.getYear() <= 0 |==> cutoverDate.getYear() < 0
+24:ROR:<=(int,int):==(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):197:cutoverDate.getYear() <= 0 |==> cutoverDate.getYear() == 0
+25:ROR:<=(int,int):>(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):197:cutoverDate.getYear() <= 0 |==> cutoverDate.getYear() > 0
+26:ROR:<=(int,int):>=(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):197:cutoverDate.getYear() <= 0 |==> cutoverDate.getYear() >= 0
+27:ROR:<=(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):197:cutoverDate.getYear() <= 0 |==> false
+28:ROR:<=(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):197:cutoverDate.getYear() <= 0 |==> true
+29:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):205:chronos == null |==> chronos != null
+30:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):205:chronos == null |==> false
+31:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):205:chronos == null |==> true
+32:LVR:POS:0:org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):206:2 |==> 0
+33:LVR:POS:NEG:org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):206:2 |==> -2
+34:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):206:chronos = new ArrayList<GJChronology>(2) |==> <NO-OP>
+35:STD:<CALL>:<NO-OP>:org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):207:cCache.put(zone, chronos) |==> <NO-OP>
+36:LVR:0:POS:org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):209:0 |==> 1
+37:LVR:0:NEG:org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):209:0 |==> -1
+38:ROR:>=(int,int):!=(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):209:--i >= 0 |==> --i != 0
+39:ROR:>=(int,int):<(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):209:--i >= 0 |==> --i < 0
+40:ROR:>=(int,int):<=(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):209:--i >= 0 |==> --i <= 0
+41:ROR:>=(int,int):==(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):209:--i >= 0 |==> --i == 0
+42:ROR:>=(int,int):>(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):209:--i >= 0 |==> --i > 0
+43:ROR:>=(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):209:--i >= 0 |==> false
+44:ROR:>=(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):209:--i >= 0 |==> true
+45:ROR:==(int,int):!=(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):211:minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() |==> minDaysInFirstWeek != chrono.getMinimumDaysInFirstWeek()
+46:ROR:==(int,int):<(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):211:minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() |==> minDaysInFirstWeek < chrono.getMinimumDaysInFirstWeek()
+47:ROR:==(int,int):<=(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):211:minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() |==> minDaysInFirstWeek <= chrono.getMinimumDaysInFirstWeek()
+48:ROR:==(int,int):>(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):211:minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() |==> minDaysInFirstWeek > chrono.getMinimumDaysInFirstWeek()
+49:ROR:==(int,int):>=(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):211:minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() |==> minDaysInFirstWeek >= chrono.getMinimumDaysInFirstWeek()
+50:ROR:==(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):211:minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() |==> false
+51:ROR:==(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):211:minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() |==> true
+52:COR:&&(boolean,boolean):!=(boolean,boolean):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):211:minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() && cutoverInstant.equals(chrono.getGregorianCutover()) |==> minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() != cutoverInstant.equals(chrono.getGregorianCutover())
+53:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):211:minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() && cutoverInstant.equals(chrono.getGregorianCutover()) |==> minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() == cutoverInstant.equals(chrono.getGregorianCutover())
+54:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):211:minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() && cutoverInstant.equals(chrono.getGregorianCutover()) |==> false
+55:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):211:minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() && cutoverInstant.equals(chrono.getGregorianCutover()) |==> minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek()
+56:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):212:minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() && cutoverInstant.equals(chrono.getGregorianCutover()) |==> cutoverInstant.equals(chrono.getGregorianCutover())
+57:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):211:minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() && cutoverInstant.equals(chrono.getGregorianCutover()) |==> true
+58:COR:&&(boolean,boolean):||(boolean,boolean):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):211:minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() && cutoverInstant.equals(chrono.getGregorianCutover()) |==> minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek() || cutoverInstant.equals(chrono.getGregorianCutover())
+59:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):218:zone == DateTimeZone.UTC |==> zone != DateTimeZone.UTC
+60:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):218:zone == DateTimeZone.UTC |==> false
+61:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):218:zone == DateTimeZone.UTC |==> true
+62:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):225:chrono = new GJChronology(ZonedChronology.getInstance(chrono, zone), chrono.iJulianChronology, chrono.iGregorianChronology, chrono.iCutoverInstant) |==> <NO-OP>
+63:STD:<CALL>:<NO-OP>:org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int):231:chronos.add(chrono) |==> <NO-OP>
+64:ROR:==(long,long):!=(long,long):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,long,int):250:gregorianCutover == DEFAULT_CUTOVER.getMillis() |==> gregorianCutover != DEFAULT_CUTOVER.getMillis()
+65:ROR:==(long,long):<(long,long):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,long,int):250:gregorianCutover == DEFAULT_CUTOVER.getMillis() |==> gregorianCutover < DEFAULT_CUTOVER.getMillis()
+66:ROR:==(long,long):<=(long,long):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,long,int):250:gregorianCutover == DEFAULT_CUTOVER.getMillis() |==> gregorianCutover <= DEFAULT_CUTOVER.getMillis()
+67:ROR:==(long,long):>(long,long):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,long,int):250:gregorianCutover == DEFAULT_CUTOVER.getMillis() |==> gregorianCutover > DEFAULT_CUTOVER.getMillis()
+68:ROR:==(long,long):>=(long,long):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,long,int):250:gregorianCutover == DEFAULT_CUTOVER.getMillis() |==> gregorianCutover >= DEFAULT_CUTOVER.getMillis()
+69:ROR:==(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,long,int):250:gregorianCutover == DEFAULT_CUTOVER.getMillis() |==> false
+70:ROR:==(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology@getInstance(org.joda.time.DateTimeZone,long,int):250:gregorianCutover == DEFAULT_CUTOVER.getMillis() |==> true
+71:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@getZone():296:(base = getBase()) != null |==> (base = getBase()) == null
+72:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@withZone(org.joda.time.DateTimeZone):320:zone == null |==> zone != null
+73:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@withZone(org.joda.time.DateTimeZone):320:zone == null |==> false
+74:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@withZone(org.joda.time.DateTimeZone):320:zone == null |==> true
+75:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@withZone(org.joda.time.DateTimeZone):321:zone = DateTimeZone.getDefault() |==> <NO-OP>
+76:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@withZone(org.joda.time.DateTimeZone):323:zone == getZone() |==> zone != getZone()
+77:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@withZone(org.joda.time.DateTimeZone):323:zone == getZone() |==> false
+78:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@withZone(org.joda.time.DateTimeZone):323:zone == getZone() |==> true
+79:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int):334:(base = getBase()) != null |==> (base = getBase()) == null
+80:ROR:<(long,long):!=(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int):341:instant < iCutoverMillis |==> instant != iCutoverMillis
+81:ROR:<(long,long):<=(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int):341:instant < iCutoverMillis |==> instant <= iCutoverMillis
+82:ROR:<(long,long):==(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int):341:instant < iCutoverMillis |==> instant == iCutoverMillis
+83:ROR:<(long,long):>(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int):341:instant < iCutoverMillis |==> instant > iCutoverMillis
+84:ROR:<(long,long):>=(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int):341:instant < iCutoverMillis |==> instant >= iCutoverMillis
+85:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int):341:instant < iCutoverMillis |==> false
+86:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int):341:instant < iCutoverMillis |==> true
+87:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int):343:instant = iJulianChronology.getDateTimeMillis(year, monthOfYear, dayOfMonth, millisOfDay) |==> <NO-OP>
+88:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int):345:instant >= iCutoverMillis |==> instant != iCutoverMillis
+89:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int):345:instant >= iCutoverMillis |==> instant < iCutoverMillis
+90:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int):345:instant >= iCutoverMillis |==> instant <= iCutoverMillis
+91:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int):345:instant >= iCutoverMillis |==> instant == iCutoverMillis
+92:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int):345:instant >= iCutoverMillis |==> instant > iCutoverMillis
+93:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int):345:instant >= iCutoverMillis |==> false
+94:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int):345:instant >= iCutoverMillis |==> true
+95:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):359:(base = getBase()) != null |==> (base = getBase()) == null
+96:LVR:POS:0:org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:2 |==> 0
+97:LVR:POS:NEG:org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:2 |==> -2
+98:ROR:!=(int,int):<(int,int):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:monthOfYear != 2 |==> monthOfYear < 2
+99:ROR:!=(int,int):<=(int,int):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:monthOfYear != 2 |==> monthOfYear <= 2
+100:ROR:!=(int,int):==(int,int):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:monthOfYear != 2 |==> monthOfYear == 2
+101:ROR:!=(int,int):>(int,int):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:monthOfYear != 2 |==> monthOfYear > 2
+102:ROR:!=(int,int):>=(int,int):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:monthOfYear != 2 |==> monthOfYear >= 2
+103:ROR:!=(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:monthOfYear != 2 |==> false
+104:ROR:!=(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:monthOfYear != 2 |==> true
+105:LVR:POS:0:org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:29 |==> 0
+106:LVR:POS:NEG:org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:29 |==> -29
+107:ROR:!=(int,int):<(int,int):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:dayOfMonth != 29 |==> dayOfMonth < 29
+108:ROR:!=(int,int):<=(int,int):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:dayOfMonth != 29 |==> dayOfMonth <= 29
+109:ROR:!=(int,int):==(int,int):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:dayOfMonth != 29 |==> dayOfMonth == 29
+110:ROR:!=(int,int):>(int,int):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:dayOfMonth != 29 |==> dayOfMonth > 29
+111:ROR:!=(int,int):>=(int,int):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:dayOfMonth != 29 |==> dayOfMonth >= 29
+112:ROR:!=(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:dayOfMonth != 29 |==> false
+113:ROR:!=(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:dayOfMonth != 29 |==> true
+114:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:monthOfYear != 2 || dayOfMonth != 29 |==> monthOfYear != 2 != (dayOfMonth != 29)
+115:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:monthOfYear != 2 || dayOfMonth != 29 |==> monthOfYear != 2 && dayOfMonth != 29
+116:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:monthOfYear != 2 || dayOfMonth != 29 |==> monthOfYear != 2 == (dayOfMonth != 29)
+117:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:monthOfYear != 2 || dayOfMonth != 29 |==> false
+118:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:monthOfYear != 2 || dayOfMonth != 29 |==> monthOfYear != 2
+119:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:monthOfYear != 2 || dayOfMonth != 29 |==> dayOfMonth != 29
+120:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):372:monthOfYear != 2 || dayOfMonth != 29 |==> true
+121:LVR:POS:0:org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):376:28 |==> 0
+122:LVR:POS:NEG:org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):376:28 |==> -28
+123:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):378:instant >= iCutoverMillis |==> instant != iCutoverMillis
+124:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):378:instant >= iCutoverMillis |==> instant < iCutoverMillis
+125:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):378:instant >= iCutoverMillis |==> instant <= iCutoverMillis
+126:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):378:instant >= iCutoverMillis |==> instant == iCutoverMillis
+127:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):378:instant >= iCutoverMillis |==> instant > iCutoverMillis
+128:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):378:instant >= iCutoverMillis |==> false
+129:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):378:instant >= iCutoverMillis |==> true
+130:ROR:<(long,long):!=(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):382:instant < iCutoverMillis |==> instant != iCutoverMillis
+131:ROR:<(long,long):<=(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):382:instant < iCutoverMillis |==> instant <= iCutoverMillis
+132:ROR:<(long,long):==(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):382:instant < iCutoverMillis |==> instant == iCutoverMillis
+133:ROR:<(long,long):>(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):382:instant < iCutoverMillis |==> instant > iCutoverMillis
+134:ROR:<(long,long):>=(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):382:instant < iCutoverMillis |==> instant >= iCutoverMillis
+135:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):382:instant < iCutoverMillis |==> false
+136:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):382:instant < iCutoverMillis |==> true
+137:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):384:instant = iJulianChronology.getDateTimeMillis(year, monthOfYear, dayOfMonth, hourOfDay, minuteOfHour, secondOfMinute, millisOfSecond) |==> <NO-OP>
+138:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):387:instant >= iCutoverMillis |==> instant != iCutoverMillis
+139:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):387:instant >= iCutoverMillis |==> instant < iCutoverMillis
+140:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):387:instant >= iCutoverMillis |==> instant <= iCutoverMillis
+141:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):387:instant >= iCutoverMillis |==> instant == iCutoverMillis
+142:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):387:instant >= iCutoverMillis |==> instant > iCutoverMillis
+143:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):387:instant >= iCutoverMillis |==> false
+144:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology@getDateTimeMillis(int,int,int,int,int,int,int):387:instant >= iCutoverMillis |==> true
+145:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@equals(java.lang.Object):421:this == obj |==> this != obj
+146:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@equals(java.lang.Object):421:this == obj |==> false
+147:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@equals(java.lang.Object):421:this == obj |==> true
+148:LVR:TRUE:FALSE:org.joda.time.chrono.GJChronology@equals(java.lang.Object):422:true |==> false
+149:ROR:==(long,long):!=(long,long):org.joda.time.chrono.GJChronology@equals(java.lang.Object):426:iCutoverMillis == chrono.iCutoverMillis |==> iCutoverMillis != chrono.iCutoverMillis
+150:ROR:==(long,long):<(long,long):org.joda.time.chrono.GJChronology@equals(java.lang.Object):426:iCutoverMillis == chrono.iCutoverMillis |==> iCutoverMillis < chrono.iCutoverMillis
+151:ROR:==(long,long):<=(long,long):org.joda.time.chrono.GJChronology@equals(java.lang.Object):426:iCutoverMillis == chrono.iCutoverMillis |==> iCutoverMillis <= chrono.iCutoverMillis
+152:ROR:==(long,long):>(long,long):org.joda.time.chrono.GJChronology@equals(java.lang.Object):426:iCutoverMillis == chrono.iCutoverMillis |==> iCutoverMillis > chrono.iCutoverMillis
+153:ROR:==(long,long):>=(long,long):org.joda.time.chrono.GJChronology@equals(java.lang.Object):426:iCutoverMillis == chrono.iCutoverMillis |==> iCutoverMillis >= chrono.iCutoverMillis
+154:ROR:==(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology@equals(java.lang.Object):426:iCutoverMillis == chrono.iCutoverMillis |==> false
+155:ROR:==(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology@equals(java.lang.Object):426:iCutoverMillis == chrono.iCutoverMillis |==> true
+156:ROR:==(int,int):!=(int,int):org.joda.time.chrono.GJChronology@equals(java.lang.Object):427:getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() |==> getMinimumDaysInFirstWeek() != chrono.getMinimumDaysInFirstWeek()
+157:ROR:==(int,int):<(int,int):org.joda.time.chrono.GJChronology@equals(java.lang.Object):427:getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() |==> getMinimumDaysInFirstWeek() < chrono.getMinimumDaysInFirstWeek()
+158:ROR:==(int,int):<=(int,int):org.joda.time.chrono.GJChronology@equals(java.lang.Object):427:getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() |==> getMinimumDaysInFirstWeek() <= chrono.getMinimumDaysInFirstWeek()
+159:ROR:==(int,int):>(int,int):org.joda.time.chrono.GJChronology@equals(java.lang.Object):427:getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() |==> getMinimumDaysInFirstWeek() > chrono.getMinimumDaysInFirstWeek()
+160:ROR:==(int,int):>=(int,int):org.joda.time.chrono.GJChronology@equals(java.lang.Object):427:getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() |==> getMinimumDaysInFirstWeek() >= chrono.getMinimumDaysInFirstWeek()
+161:ROR:==(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology@equals(java.lang.Object):427:getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() |==> false
+162:ROR:==(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology@equals(java.lang.Object):427:getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() |==> true
+163:COR:&&(boolean,boolean):!=(boolean,boolean):org.joda.time.chrono.GJChronology@equals(java.lang.Object):426:iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() |==> iCutoverMillis == chrono.iCutoverMillis != (getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek())
+164:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.chrono.GJChronology@equals(java.lang.Object):426:iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() |==> iCutoverMillis == chrono.iCutoverMillis == (getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek())
+165:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.chrono.GJChronology@equals(java.lang.Object):426:iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() |==> false
+166:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.chrono.GJChronology@equals(java.lang.Object):426:iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() |==> iCutoverMillis == chrono.iCutoverMillis
+167:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.chrono.GJChronology@equals(java.lang.Object):427:iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() |==> getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek()
+168:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.joda.time.chrono.GJChronology@equals(java.lang.Object):426:iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() |==> true
+169:COR:&&(boolean,boolean):||(boolean,boolean):org.joda.time.chrono.GJChronology@equals(java.lang.Object):426:iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() |==> iCutoverMillis == chrono.iCutoverMillis || getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek()
+170:COR:&&(boolean,boolean):!=(boolean,boolean):org.joda.time.chrono.GJChronology@equals(java.lang.Object):426:iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() && getZone().equals(chrono.getZone()) |==> (iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek()) != getZone().equals(chrono.getZone())
+171:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.chrono.GJChronology@equals(java.lang.Object):426:iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() && getZone().equals(chrono.getZone()) |==> (iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek()) == getZone().equals(chrono.getZone())
+172:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.chrono.GJChronology@equals(java.lang.Object):427:iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() && getZone().equals(chrono.getZone()) |==> false
+173:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.chrono.GJChronology@equals(java.lang.Object):426:iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() && getZone().equals(chrono.getZone()) |==> iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek()
+174:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.chrono.GJChronology@equals(java.lang.Object):428:iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() && getZone().equals(chrono.getZone()) |==> getZone().equals(chrono.getZone())
+175:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.joda.time.chrono.GJChronology@equals(java.lang.Object):427:iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() && getZone().equals(chrono.getZone()) |==> true
+176:COR:&&(boolean,boolean):||(boolean,boolean):org.joda.time.chrono.GJChronology@equals(java.lang.Object):426:iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() && getZone().equals(chrono.getZone()) |==> iCutoverMillis == chrono.iCutoverMillis && getMinimumDaysInFirstWeek() == chrono.getMinimumDaysInFirstWeek() || getZone().equals(chrono.getZone())
+177:LVR:FALSE:TRUE:org.joda.time.chrono.GJChronology@equals(java.lang.Object):430:false |==> true
+178:LVR:POS:0:org.joda.time.chrono.GJChronology@hashCode():440:11 |==> 0
+179:LVR:POS:NEG:org.joda.time.chrono.GJChronology@hashCode():440:11 |==> -11
+180:AOR:*(int,int):%(int,int):org.joda.time.chrono.GJChronology@hashCode():440:"GJ".hashCode() * 11 |==> "GJ".hashCode() % 11
+181:AOR:*(int,int):+(int,int):org.joda.time.chrono.GJChronology@hashCode():440:"GJ".hashCode() * 11 |==> "GJ".hashCode() + 11
+182:AOR:*(int,int):-(int,int):org.joda.time.chrono.GJChronology@hashCode():440:"GJ".hashCode() * 11 |==> "GJ".hashCode() - 11
+183:AOR:*(int,int):/(int,int):org.joda.time.chrono.GJChronology@hashCode():440:"GJ".hashCode() * 11 |==> "GJ".hashCode() / 11
+184:AOR:+(int,int):%(int,int):org.joda.time.chrono.GJChronology@hashCode():440:"GJ".hashCode() * 11 + getZone().hashCode() |==> "GJ".hashCode() * 11 % getZone().hashCode()
+185:AOR:+(int,int):*(int,int):org.joda.time.chrono.GJChronology@hashCode():440:"GJ".hashCode() * 11 + getZone().hashCode() |==> "GJ".hashCode() * 11 * getZone().hashCode()
+186:AOR:+(int,int):-(int,int):org.joda.time.chrono.GJChronology@hashCode():440:"GJ".hashCode() * 11 + getZone().hashCode() |==> "GJ".hashCode() * 11 - getZone().hashCode()
+187:AOR:+(int,int):/(int,int):org.joda.time.chrono.GJChronology@hashCode():440:"GJ".hashCode() * 11 + getZone().hashCode() |==> "GJ".hashCode() * 11 / getZone().hashCode()
+188:AOR:+(int,int):%(int,int):org.joda.time.chrono.GJChronology@hashCode():440:"GJ".hashCode() * 11 + getZone().hashCode() + getMinimumDaysInFirstWeek() |==> ("GJ".hashCode() * 11 + getZone().hashCode()) % getMinimumDaysInFirstWeek()
+189:AOR:+(int,int):*(int,int):org.joda.time.chrono.GJChronology@hashCode():440:"GJ".hashCode() * 11 + getZone().hashCode() + getMinimumDaysInFirstWeek() |==> ("GJ".hashCode() * 11 + getZone().hashCode()) * getMinimumDaysInFirstWeek()
+190:AOR:+(int,int):-(int,int):org.joda.time.chrono.GJChronology@hashCode():440:"GJ".hashCode() * 11 + getZone().hashCode() + getMinimumDaysInFirstWeek() |==> "GJ".hashCode() * 11 + getZone().hashCode() - getMinimumDaysInFirstWeek()
+191:AOR:+(int,int):/(int,int):org.joda.time.chrono.GJChronology@hashCode():440:"GJ".hashCode() * 11 + getZone().hashCode() + getMinimumDaysInFirstWeek() |==> ("GJ".hashCode() * 11 + getZone().hashCode()) / getMinimumDaysInFirstWeek()
+192:AOR:+(int,int):%(int,int):org.joda.time.chrono.GJChronology@hashCode():440:"GJ".hashCode() * 11 + getZone().hashCode() + getMinimumDaysInFirstWeek() + iCutoverInstant.hashCode() |==> ("GJ".hashCode() * 11 + getZone().hashCode() + getMinimumDaysInFirstWeek()) % iCutoverInstant.hashCode()
+193:AOR:+(int,int):*(int,int):org.joda.time.chrono.GJChronology@hashCode():440:"GJ".hashCode() * 11 + getZone().hashCode() + getMinimumDaysInFirstWeek() + iCutoverInstant.hashCode() |==> ("GJ".hashCode() * 11 + getZone().hashCode() + getMinimumDaysInFirstWeek()) * iCutoverInstant.hashCode()
+194:AOR:+(int,int):-(int,int):org.joda.time.chrono.GJChronology@hashCode():440:"GJ".hashCode() * 11 + getZone().hashCode() + getMinimumDaysInFirstWeek() + iCutoverInstant.hashCode() |==> "GJ".hashCode() * 11 + getZone().hashCode() + getMinimumDaysInFirstWeek() - iCutoverInstant.hashCode()
+195:AOR:+(int,int):/(int,int):org.joda.time.chrono.GJChronology@hashCode():440:"GJ".hashCode() * 11 + getZone().hashCode() + getMinimumDaysInFirstWeek() + iCutoverInstant.hashCode() |==> ("GJ".hashCode() * 11 + getZone().hashCode() + getMinimumDaysInFirstWeek()) / iCutoverInstant.hashCode()
+196:LVR:POS:0:org.joda.time.chrono.GJChronology@toString():452:60 |==> 0
+197:LVR:POS:NEG:org.joda.time.chrono.GJChronology@toString():452:60 |==> -60
+198:STD:<CALL>:<NO-OP>:org.joda.time.chrono.GJChronology@toString():453:sb.append("GJChronology") |==> <NO-OP>
+199:STD:<CALL>:<NO-OP>:org.joda.time.chrono.GJChronology@toString():454:sb.append('[') |==> <NO-OP>
+200:STD:<CALL>:<NO-OP>:org.joda.time.chrono.GJChronology@toString():455:sb.append(getZone().getID()) |==> <NO-OP>
+201:ROR:!=(long,long):<(long,long):org.joda.time.chrono.GJChronology@toString():457:iCutoverMillis != DEFAULT_CUTOVER.getMillis() |==> iCutoverMillis < DEFAULT_CUTOVER.getMillis()
+202:ROR:!=(long,long):<=(long,long):org.joda.time.chrono.GJChronology@toString():457:iCutoverMillis != DEFAULT_CUTOVER.getMillis() |==> iCutoverMillis <= DEFAULT_CUTOVER.getMillis()
+203:ROR:!=(long,long):==(long,long):org.joda.time.chrono.GJChronology@toString():457:iCutoverMillis != DEFAULT_CUTOVER.getMillis() |==> iCutoverMillis == DEFAULT_CUTOVER.getMillis()
+204:ROR:!=(long,long):>(long,long):org.joda.time.chrono.GJChronology@toString():457:iCutoverMillis != DEFAULT_CUTOVER.getMillis() |==> iCutoverMillis > DEFAULT_CUTOVER.getMillis()
+205:ROR:!=(long,long):>=(long,long):org.joda.time.chrono.GJChronology@toString():457:iCutoverMillis != DEFAULT_CUTOVER.getMillis() |==> iCutoverMillis >= DEFAULT_CUTOVER.getMillis()
+206:ROR:!=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology@toString():457:iCutoverMillis != DEFAULT_CUTOVER.getMillis() |==> false
+207:ROR:!=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology@toString():457:iCutoverMillis != DEFAULT_CUTOVER.getMillis() |==> true
+208:STD:<CALL>:<NO-OP>:org.joda.time.chrono.GJChronology@toString():458:sb.append(",cutover=") |==> <NO-OP>
+209:LVR:0:POS:org.joda.time.chrono.GJChronology@toString():460:0 |==> 1
+210:LVR:0:NEG:org.joda.time.chrono.GJChronology@toString():460:0 |==> -1
+211:ROR:==(long,long):!=(long,long):org.joda.time.chrono.GJChronology@toString():460:withUTC().dayOfYear().remainder(iCutoverMillis) == 0 |==> withUTC().dayOfYear().remainder(iCutoverMillis) != 0
+212:ROR:==(long,long):<(long,long):org.joda.time.chrono.GJChronology@toString():460:withUTC().dayOfYear().remainder(iCutoverMillis) == 0 |==> withUTC().dayOfYear().remainder(iCutoverMillis) < 0
+213:ROR:==(long,long):<=(long,long):org.joda.time.chrono.GJChronology@toString():460:withUTC().dayOfYear().remainder(iCutoverMillis) == 0 |==> withUTC().dayOfYear().remainder(iCutoverMillis) <= 0
+214:ROR:==(long,long):>(long,long):org.joda.time.chrono.GJChronology@toString():460:withUTC().dayOfYear().remainder(iCutoverMillis) == 0 |==> withUTC().dayOfYear().remainder(iCutoverMillis) > 0
+215:ROR:==(long,long):>=(long,long):org.joda.time.chrono.GJChronology@toString():460:withUTC().dayOfYear().remainder(iCutoverMillis) == 0 |==> withUTC().dayOfYear().remainder(iCutoverMillis) >= 0
+216:ROR:==(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology@toString():460:withUTC().dayOfYear().remainder(iCutoverMillis) == 0 |==> false
+217:ROR:==(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology@toString():460:withUTC().dayOfYear().remainder(iCutoverMillis) == 0 |==> true
+218:STD:<CALL>:<NO-OP>:org.joda.time.chrono.GJChronology@toString():465:printer.withChronology(withUTC()).printTo(sb, iCutoverMillis) |==> <NO-OP>
+219:LVR:POS:0:org.joda.time.chrono.GJChronology@toString():468:4 |==> 0
+220:LVR:POS:NEG:org.joda.time.chrono.GJChronology@toString():468:4 |==> -4
+221:ROR:!=(int,int):<(int,int):org.joda.time.chrono.GJChronology@toString():468:getMinimumDaysInFirstWeek() != 4 |==> getMinimumDaysInFirstWeek() < 4
+222:ROR:!=(int,int):<=(int,int):org.joda.time.chrono.GJChronology@toString():468:getMinimumDaysInFirstWeek() != 4 |==> getMinimumDaysInFirstWeek() <= 4
+223:ROR:!=(int,int):==(int,int):org.joda.time.chrono.GJChronology@toString():468:getMinimumDaysInFirstWeek() != 4 |==> getMinimumDaysInFirstWeek() == 4
+224:ROR:!=(int,int):>(int,int):org.joda.time.chrono.GJChronology@toString():468:getMinimumDaysInFirstWeek() != 4 |==> getMinimumDaysInFirstWeek() > 4
+225:ROR:!=(int,int):>=(int,int):org.joda.time.chrono.GJChronology@toString():468:getMinimumDaysInFirstWeek() != 4 |==> getMinimumDaysInFirstWeek() >= 4
+226:ROR:!=(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology@toString():468:getMinimumDaysInFirstWeek() != 4 |==> false
+227:ROR:!=(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology@toString():468:getMinimumDaysInFirstWeek() != 4 |==> true
+228:STD:<CALL>:<NO-OP>:org.joda.time.chrono.GJChronology@toString():469:sb.append(",mdfw=") |==> <NO-OP>
+229:STD:<CALL>:<NO-OP>:org.joda.time.chrono.GJChronology@toString():470:sb.append(getMinimumDaysInFirstWeek()) |==> <NO-OP>
+230:STD:<CALL>:<NO-OP>:org.joda.time.chrono.GJChronology@toString():472:sb.append(']') |==> <NO-OP>
+231:LVR:0:POS:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):480:0 |==> 1
+232:LVR:0:NEG:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):480:0 |==> -1
+233:LVR:POS:0:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):481:1 |==> 0
+234:LVR:POS:NEG:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):481:1 |==> -1
+235:LVR:POS:0:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):482:2 |==> 0
+236:LVR:POS:NEG:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):482:2 |==> -2
+237:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):483:iCutoverMillis = cutoverInstant.getMillis() |==> <NO-OP>
+238:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):485:iJulianChronology = julian |==> <NO-OP>
+239:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):486:iGregorianChronology = gregorian |==> <NO-OP>
+240:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):487:iCutoverInstant = cutoverInstant |==> <NO-OP>
+241:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):489:getBase() != null |==> getBase() == null
+242:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):489:getBase() != null |==> false
+243:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):489:getBase() != null |==> true
+244:ROR:!=(int,int):<(int,int):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):493:julian.getMinimumDaysInFirstWeek() != gregorian.getMinimumDaysInFirstWeek() |==> julian.getMinimumDaysInFirstWeek() < gregorian.getMinimumDaysInFirstWeek()
+245:ROR:!=(int,int):<=(int,int):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):493:julian.getMinimumDaysInFirstWeek() != gregorian.getMinimumDaysInFirstWeek() |==> julian.getMinimumDaysInFirstWeek() <= gregorian.getMinimumDaysInFirstWeek()
+246:ROR:!=(int,int):==(int,int):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):493:julian.getMinimumDaysInFirstWeek() != gregorian.getMinimumDaysInFirstWeek() |==> julian.getMinimumDaysInFirstWeek() == gregorian.getMinimumDaysInFirstWeek()
+247:ROR:!=(int,int):>(int,int):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):493:julian.getMinimumDaysInFirstWeek() != gregorian.getMinimumDaysInFirstWeek() |==> julian.getMinimumDaysInFirstWeek() > gregorian.getMinimumDaysInFirstWeek()
+248:ROR:!=(int,int):>=(int,int):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):493:julian.getMinimumDaysInFirstWeek() != gregorian.getMinimumDaysInFirstWeek() |==> julian.getMinimumDaysInFirstWeek() >= gregorian.getMinimumDaysInFirstWeek()
+249:ROR:!=(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):493:julian.getMinimumDaysInFirstWeek() != gregorian.getMinimumDaysInFirstWeek() |==> false
+250:ROR:!=(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):493:julian.getMinimumDaysInFirstWeek() != gregorian.getMinimumDaysInFirstWeek() |==> true
+251:AOR:-(long,long):%(long,long):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):498:iCutoverMillis - julianToGregorianByYear(iCutoverMillis) |==> iCutoverMillis % julianToGregorianByYear(iCutoverMillis)
+252:AOR:-(long,long):*(long,long):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):498:iCutoverMillis - julianToGregorianByYear(iCutoverMillis) |==> iCutoverMillis * julianToGregorianByYear(iCutoverMillis)
+253:AOR:-(long,long):+(long,long):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):498:iCutoverMillis - julianToGregorianByYear(iCutoverMillis) |==> iCutoverMillis + julianToGregorianByYear(iCutoverMillis)
+254:AOR:-(long,long):/(long,long):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):498:iCutoverMillis - julianToGregorianByYear(iCutoverMillis) |==> iCutoverMillis / julianToGregorianByYear(iCutoverMillis)
+255:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):498:iGapDuration = iCutoverMillis - julianToGregorianByYear(iCutoverMillis) |==> <NO-OP>
+256:STD:<CALL>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):504:fields.copyFieldsFrom(gregorian) |==> <NO-OP>
+257:LVR:0:POS:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):510:0 |==> 1
+258:LVR:0:NEG:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):510:0 |==> -1
+259:ROR:==(int,int):!=(int,int):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):510:gregorian.millisOfDay().get(iCutoverMillis) == 0 |==> gregorian.millisOfDay().get(iCutoverMillis) != 0
+260:ROR:==(int,int):<(int,int):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):510:gregorian.millisOfDay().get(iCutoverMillis) == 0 |==> gregorian.millisOfDay().get(iCutoverMillis) < 0
+261:ROR:==(int,int):<=(int,int):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):510:gregorian.millisOfDay().get(iCutoverMillis) == 0 |==> gregorian.millisOfDay().get(iCutoverMillis) <= 0
+262:ROR:==(int,int):>(int,int):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):510:gregorian.millisOfDay().get(iCutoverMillis) == 0 |==> gregorian.millisOfDay().get(iCutoverMillis) > 0
+263:ROR:==(int,int):>=(int,int):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):510:gregorian.millisOfDay().get(iCutoverMillis) == 0 |==> gregorian.millisOfDay().get(iCutoverMillis) >= 0
+264:ROR:==(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):510:gregorian.millisOfDay().get(iCutoverMillis) == 0 |==> false
+265:ROR:==(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):510:gregorian.millisOfDay().get(iCutoverMillis) == 0 |==> true
+266:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):514:fields.millisOfSecond = new CutoverField(julian.millisOfSecond(), fields.millisOfSecond, iCutoverMillis) |==> <NO-OP>
+267:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):515:fields.millisOfDay = new CutoverField(julian.millisOfDay(), fields.millisOfDay, iCutoverMillis) |==> <NO-OP>
+268:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):516:fields.secondOfMinute = new CutoverField(julian.secondOfMinute(), fields.secondOfMinute, iCutoverMillis) |==> <NO-OP>
+269:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):517:fields.secondOfDay = new CutoverField(julian.secondOfDay(), fields.secondOfDay, iCutoverMillis) |==> <NO-OP>
+270:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):518:fields.minuteOfHour = new CutoverField(julian.minuteOfHour(), fields.minuteOfHour, iCutoverMillis) |==> <NO-OP>
+271:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):519:fields.minuteOfDay = new CutoverField(julian.minuteOfDay(), fields.minuteOfDay, iCutoverMillis) |==> <NO-OP>
+272:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):520:fields.hourOfDay = new CutoverField(julian.hourOfDay(), fields.hourOfDay, iCutoverMillis) |==> <NO-OP>
+273:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):521:fields.hourOfHalfday = new CutoverField(julian.hourOfHalfday(), fields.hourOfHalfday, iCutoverMillis) |==> <NO-OP>
+274:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):522:fields.clockhourOfDay = new CutoverField(julian.clockhourOfDay(), fields.clockhourOfDay, iCutoverMillis) |==> <NO-OP>
+275:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):523:fields.clockhourOfHalfday = new CutoverField(julian.clockhourOfHalfday(), fields.clockhourOfHalfday, iCutoverMillis) |==> <NO-OP>
+276:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):525:fields.halfdayOfDay = new CutoverField(julian.halfdayOfDay(), fields.halfdayOfDay, iCutoverMillis) |==> <NO-OP>
+277:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):530:fields.era = new CutoverField(julian.era(), fields.era, iCutoverMillis) |==> <NO-OP>
+278:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):540:fields.dayOfYear = new CutoverField(julian.dayOfYear(), fields.dayOfYear, cutover) |==> <NO-OP>
+279:LVR:TRUE:FALSE:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):547:true |==> false
+280:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):546:fields.weekOfWeekyear = new CutoverField(julian.weekOfWeekyear(), fields.weekOfWeekyear, cutover, true) |==> <NO-OP>
+281:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):554:fields.year = new ImpreciseCutoverField(julian.year(), fields.year, iCutoverMillis) |==> <NO-OP>
+282:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):556:fields.years = fields.year.getDurationField() |==> <NO-OP>
+283:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):557:fields.yearOfEra = new ImpreciseCutoverField(julian.yearOfEra(), fields.yearOfEra, fields.years, iCutoverMillis) |==> <NO-OP>
+284:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):559:fields.yearOfCentury = new ImpreciseCutoverField(julian.yearOfCentury(), fields.yearOfCentury, fields.years, iCutoverMillis) |==> <NO-OP>
+285:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):562:fields.centuryOfEra = new ImpreciseCutoverField(julian.centuryOfEra(), fields.centuryOfEra, iCutoverMillis) |==> <NO-OP>
+286:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):564:fields.centuries = fields.centuryOfEra.getDurationField() |==> <NO-OP>
+287:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):566:fields.monthOfYear = new ImpreciseCutoverField(julian.monthOfYear(), fields.monthOfYear, iCutoverMillis) |==> <NO-OP>
+288:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):568:fields.months = fields.monthOfYear.getDurationField() |==> <NO-OP>
+289:LVR:TRUE:FALSE:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):571:true |==> false
+290:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):570:fields.weekyear = new ImpreciseCutoverField(julian.weekyear(), fields.weekyear, null, iCutoverMillis, true) |==> <NO-OP>
+291:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):572:fields.weekyearOfCentury = new ImpreciseCutoverField(julian.weekyearOfCentury(), fields.weekyearOfCentury, fields.weekyears, iCutoverMillis) |==> <NO-OP>
+292:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):574:fields.weekyears = fields.weekyear.getDurationField() |==> <NO-OP>
+293:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):582:cf.iRangeDurationField = fields.months |==> <NO-OP>
+294:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology@assemble(org.joda.time.chrono.AssembledChronology.Fields):583:fields.dayOfMonth = cf |==> <NO-OP>
+295:LVR:FALSE:TRUE:org.joda.time.chrono.GJChronology$CutoverField@<init>(org.joda.time.DateTimeField,org.joda.time.DateTimeField,long):625:false |==> true
+296:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@<init>(org.joda.time.DateTimeField,org.joda.time.DateTimeField,long,boolean):643:iDurationField = gregorianField.getDurationField() |==> <NO-OP>
+297:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology$CutoverField@<init>(org.joda.time.DateTimeField,org.joda.time.DateTimeField,long,boolean):646:rangeField == null |==> rangeField != null
+298:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology$CutoverField@<init>(org.joda.time.DateTimeField,org.joda.time.DateTimeField,long,boolean):646:rangeField == null |==> false
+299:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology$CutoverField@<init>(org.joda.time.DateTimeField,org.joda.time.DateTimeField,long,boolean):646:rangeField == null |==> true
+300:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@<init>(org.joda.time.DateTimeField,org.joda.time.DateTimeField,long,boolean):647:rangeField = julianField.getRangeDurationField() |==> <NO-OP>
+301:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@<init>(org.joda.time.DateTimeField,org.joda.time.DateTimeField,long,boolean):649:iRangeDurationField = rangeField |==> <NO-OP>
+302:LVR:FALSE:TRUE:org.joda.time.chrono.GJChronology$CutoverField@isLenient():653:false |==> true
+303:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@get(long):657:instant >= iCutover |==> instant != iCutover
+304:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$CutoverField@get(long):657:instant >= iCutover |==> instant < iCutover
+305:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@get(long):657:instant >= iCutover |==> instant <= iCutover
+306:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@get(long):657:instant >= iCutover |==> instant == iCutover
+307:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@get(long):657:instant >= iCutover |==> instant > iCutover
+308:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@get(long):657:instant >= iCutover |==> false
+309:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@get(long):657:instant >= iCutover |==> true
+310:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@getAsText(long,java.util.Locale):665:instant >= iCutover |==> instant != iCutover
+311:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$CutoverField@getAsText(long,java.util.Locale):665:instant >= iCutover |==> instant < iCutover
+312:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@getAsText(long,java.util.Locale):665:instant >= iCutover |==> instant <= iCutover
+313:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@getAsText(long,java.util.Locale):665:instant >= iCutover |==> instant == iCutover
+314:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@getAsText(long,java.util.Locale):665:instant >= iCutover |==> instant > iCutover
+315:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@getAsText(long,java.util.Locale):665:instant >= iCutover |==> false
+316:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@getAsText(long,java.util.Locale):665:instant >= iCutover |==> true
+317:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@getAsShortText(long,java.util.Locale):677:instant >= iCutover |==> instant != iCutover
+318:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$CutoverField@getAsShortText(long,java.util.Locale):677:instant >= iCutover |==> instant < iCutover
+319:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@getAsShortText(long,java.util.Locale):677:instant >= iCutover |==> instant <= iCutover
+320:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@getAsShortText(long,java.util.Locale):677:instant >= iCutover |==> instant == iCutover
+321:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@getAsShortText(long,java.util.Locale):677:instant >= iCutover |==> instant > iCutover
+322:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@getAsShortText(long,java.util.Locale):677:instant >= iCutover |==> false
+323:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@getAsShortText(long,java.util.Locale):677:instant >= iCutover |==> true
+324:LVR:0:POS:org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):699:0 |==> 1
+325:LVR:0:NEG:org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):699:0 |==> -1
+326:ROR:==(int,int):!=(int,int):org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):699:valueToAdd == 0 |==> valueToAdd != 0
+327:ROR:==(int,int):<(int,int):org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):699:valueToAdd == 0 |==> valueToAdd < 0
+328:ROR:==(int,int):<=(int,int):org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):699:valueToAdd == 0 |==> valueToAdd <= 0
+329:ROR:==(int,int):>(int,int):org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):699:valueToAdd == 0 |==> valueToAdd > 0
+330:ROR:==(int,int):>=(int,int):org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):699:valueToAdd == 0 |==> valueToAdd >= 0
+331:ROR:==(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):699:valueToAdd == 0 |==> false
+332:ROR:==(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):699:valueToAdd == 0 |==> true
+333:COR:DateTimeUtils.isContiguous(partial):TRUE:org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):702:DateTimeUtils.isContiguous(partial) |==> false
+334:COR:DateTimeUtils.isContiguous(partial):FALSE:org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):702:DateTimeUtils.isContiguous(partial) |==> true
+335:LVR:0:POS:org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):703:0L |==> 1L
+336:LVR:0:NEG:org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):703:0L |==> -1L
+337:LVR:0:POS:org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):704:0 |==> 1
+338:LVR:0:NEG:org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):704:0 |==> -1
+339:ROR:<(int,int):!=(int,int):org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):704:i < isize |==> i != isize
+340:ROR:<(int,int):<=(int,int):org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):704:i < isize |==> i <= isize
+341:ROR:<(int,int):==(int,int):org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):704:i < isize |==> i == isize
+342:ROR:<(int,int):>(int,int):org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):704:i < isize |==> i > isize
+343:ROR:<(int,int):>=(int,int):org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):704:i < isize |==> i >= isize
+344:ROR:<(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):704:i < isize |==> false
+345:ROR:<(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):704:i < isize |==> true
+346:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):705:instant = partial.getFieldType(i).getField(GJChronology.this).set(instant, values[i]) |==> <NO-OP>
+347:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@add(org.joda.time.ReadablePartial,int,int[],int):707:instant = add(instant, valueToAdd) |==> <NO-OP>
+348:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):723:instant >= iCutover |==> instant != iCutover
+349:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):723:instant >= iCutover |==> instant < iCutover
+350:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):723:instant >= iCutover |==> instant <= iCutover
+351:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):723:instant >= iCutover |==> instant == iCutover
+352:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):723:instant >= iCutover |==> instant > iCutover
+353:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):723:instant >= iCutover |==> false
+354:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):723:instant >= iCutover |==> true
+355:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@set(long,int):724:instant = iGregorianField.set(instant, value) |==> <NO-OP>
+356:ROR:<(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):725:instant < iCutover |==> instant != iCutover
+357:ROR:<(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):725:instant < iCutover |==> instant <= iCutover
+358:ROR:<(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):725:instant < iCutover |==> instant == iCutover
+359:ROR:<(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):725:instant < iCutover |==> instant > iCutover
+360:ROR:<(long,long):>=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):725:instant < iCutover |==> instant >= iCutover
+361:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):725:instant < iCutover |==> false
+362:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):725:instant < iCutover |==> true
+363:AOR:+(long,long):%(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):727:instant + iGapDuration |==> instant % iGapDuration
+364:AOR:+(long,long):*(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):727:instant + iGapDuration |==> instant * iGapDuration
+365:AOR:+(long,long):-(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):727:instant + iGapDuration |==> instant - iGapDuration
+366:AOR:+(long,long):/(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):727:instant + iGapDuration |==> instant / iGapDuration
+367:ROR:<(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):727:instant + iGapDuration < iCutover |==> instant + iGapDuration != iCutover
+368:ROR:<(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):727:instant + iGapDuration < iCutover |==> instant + iGapDuration <= iCutover
+369:ROR:<(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):727:instant + iGapDuration < iCutover |==> instant + iGapDuration == iCutover
+370:ROR:<(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):727:instant + iGapDuration < iCutover |==> instant + iGapDuration > iCutover
+371:ROR:<(long,long):>=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):727:instant + iGapDuration < iCutover |==> instant + iGapDuration >= iCutover
+372:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):727:instant + iGapDuration < iCutover |==> false
+373:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):727:instant + iGapDuration < iCutover |==> true
+374:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@set(long,int):728:instant = gregorianToJulian(instant) |==> <NO-OP>
+375:ROR:!=(int,int):<(int,int):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):731:get(instant) != value |==> get(instant) < value
+376:ROR:!=(int,int):<=(int,int):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):731:get(instant) != value |==> get(instant) <= value
+377:ROR:!=(int,int):==(int,int):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):731:get(instant) != value |==> get(instant) == value
+378:ROR:!=(int,int):>(int,int):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):731:get(instant) != value |==> get(instant) > value
+379:ROR:!=(int,int):>=(int,int):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):731:get(instant) != value |==> get(instant) >= value
+380:ROR:!=(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):731:get(instant) != value |==> false
+381:ROR:!=(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):731:get(instant) != value |==> true
+382:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@set(long,int):737:instant = iJulianField.set(instant, value) |==> <NO-OP>
+383:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):738:instant >= iCutover |==> instant != iCutover
+384:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):738:instant >= iCutover |==> instant < iCutover
+385:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):738:instant >= iCutover |==> instant <= iCutover
+386:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):738:instant >= iCutover |==> instant == iCutover
+387:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):738:instant >= iCutover |==> instant > iCutover
+388:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):738:instant >= iCutover |==> false
+389:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):738:instant >= iCutover |==> true
+390:AOR:-(long,long):%(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):740:instant - iGapDuration |==> instant % iGapDuration
+391:AOR:-(long,long):*(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):740:instant - iGapDuration |==> instant * iGapDuration
+392:AOR:-(long,long):+(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):740:instant - iGapDuration |==> instant + iGapDuration
+393:AOR:-(long,long):/(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):740:instant - iGapDuration |==> instant / iGapDuration
+394:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):740:instant - iGapDuration >= iCutover |==> instant - iGapDuration != iCutover
+395:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):740:instant - iGapDuration >= iCutover |==> instant - iGapDuration < iCutover
+396:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):740:instant - iGapDuration >= iCutover |==> instant - iGapDuration <= iCutover
+397:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):740:instant - iGapDuration >= iCutover |==> instant - iGapDuration == iCutover
+398:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):740:instant - iGapDuration >= iCutover |==> instant - iGapDuration > iCutover
+399:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):740:instant - iGapDuration >= iCutover |==> false
+400:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):740:instant - iGapDuration >= iCutover |==> true
+401:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@set(long,int):741:instant = julianToGregorian(instant) |==> <NO-OP>
+402:ROR:!=(int,int):<(int,int):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):744:get(instant) != value |==> get(instant) < value
+403:ROR:!=(int,int):<=(int,int):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):744:get(instant) != value |==> get(instant) <= value
+404:ROR:!=(int,int):==(int,int):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):744:get(instant) != value |==> get(instant) == value
+405:ROR:!=(int,int):>(int,int):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):744:get(instant) != value |==> get(instant) > value
+406:ROR:!=(int,int):>=(int,int):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):744:get(instant) != value |==> get(instant) >= value
+407:ROR:!=(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):744:get(instant) != value |==> false
+408:ROR:!=(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology$CutoverField@set(long,int):744:get(instant) != value |==> true
+409:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):754:instant >= iCutover |==> instant != iCutover
+410:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):754:instant >= iCutover |==> instant < iCutover
+411:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):754:instant >= iCutover |==> instant <= iCutover
+412:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):754:instant >= iCutover |==> instant == iCutover
+413:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):754:instant >= iCutover |==> instant > iCutover
+414:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):754:instant >= iCutover |==> false
+415:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):754:instant >= iCutover |==> true
+416:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):755:instant = iGregorianField.set(instant, text, locale) |==> <NO-OP>
+417:ROR:<(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):756:instant < iCutover |==> instant != iCutover
+418:ROR:<(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):756:instant < iCutover |==> instant <= iCutover
+419:ROR:<(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):756:instant < iCutover |==> instant == iCutover
+420:ROR:<(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):756:instant < iCutover |==> instant > iCutover
+421:ROR:<(long,long):>=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):756:instant < iCutover |==> instant >= iCutover
+422:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):756:instant < iCutover |==> false
+423:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):756:instant < iCutover |==> true
+424:AOR:+(long,long):%(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):758:instant + iGapDuration |==> instant % iGapDuration
+425:AOR:+(long,long):*(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):758:instant + iGapDuration |==> instant * iGapDuration
+426:AOR:+(long,long):-(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):758:instant + iGapDuration |==> instant - iGapDuration
+427:AOR:+(long,long):/(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):758:instant + iGapDuration |==> instant / iGapDuration
+428:ROR:<(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):758:instant + iGapDuration < iCutover |==> instant + iGapDuration != iCutover
+429:ROR:<(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):758:instant + iGapDuration < iCutover |==> instant + iGapDuration <= iCutover
+430:ROR:<(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):758:instant + iGapDuration < iCutover |==> instant + iGapDuration == iCutover
+431:ROR:<(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):758:instant + iGapDuration < iCutover |==> instant + iGapDuration > iCutover
+432:ROR:<(long,long):>=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):758:instant + iGapDuration < iCutover |==> instant + iGapDuration >= iCutover
+433:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):758:instant + iGapDuration < iCutover |==> false
+434:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):758:instant + iGapDuration < iCutover |==> true
+435:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):759:instant = gregorianToJulian(instant) |==> <NO-OP>
+436:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):764:instant = iJulianField.set(instant, text, locale) |==> <NO-OP>
+437:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):765:instant >= iCutover |==> instant != iCutover
+438:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):765:instant >= iCutover |==> instant < iCutover
+439:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):765:instant >= iCutover |==> instant <= iCutover
+440:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):765:instant >= iCutover |==> instant == iCutover
+441:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):765:instant >= iCutover |==> instant > iCutover
+442:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):765:instant >= iCutover |==> false
+443:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):765:instant >= iCutover |==> true
+444:AOR:-(long,long):%(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):767:instant - iGapDuration |==> instant % iGapDuration
+445:AOR:-(long,long):*(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):767:instant - iGapDuration |==> instant * iGapDuration
+446:AOR:-(long,long):+(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):767:instant - iGapDuration |==> instant + iGapDuration
+447:AOR:-(long,long):/(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):767:instant - iGapDuration |==> instant / iGapDuration
+448:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):767:instant - iGapDuration >= iCutover |==> instant - iGapDuration != iCutover
+449:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):767:instant - iGapDuration >= iCutover |==> instant - iGapDuration < iCutover
+450:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):767:instant - iGapDuration >= iCutover |==> instant - iGapDuration <= iCutover
+451:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):767:instant - iGapDuration >= iCutover |==> instant - iGapDuration == iCutover
+452:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):767:instant - iGapDuration >= iCutover |==> instant - iGapDuration > iCutover
+453:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):767:instant - iGapDuration >= iCutover |==> false
+454:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):767:instant - iGapDuration >= iCutover |==> true
+455:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@set(long,java.lang.String,java.util.Locale):768:instant = julianToGregorian(instant) |==> <NO-OP>
+456:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@isLeap(long):785:instant >= iCutover |==> instant != iCutover
+457:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$CutoverField@isLeap(long):785:instant >= iCutover |==> instant < iCutover
+458:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@isLeap(long):785:instant >= iCutover |==> instant <= iCutover
+459:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@isLeap(long):785:instant >= iCutover |==> instant == iCutover
+460:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@isLeap(long):785:instant >= iCutover |==> instant > iCutover
+461:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@isLeap(long):785:instant >= iCutover |==> false
+462:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@isLeap(long):785:instant >= iCutover |==> true
+463:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@getLeapAmount(long):793:instant >= iCutover |==> instant != iCutover
+464:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$CutoverField@getLeapAmount(long):793:instant >= iCutover |==> instant < iCutover
+465:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@getLeapAmount(long):793:instant >= iCutover |==> instant <= iCutover
+466:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@getLeapAmount(long):793:instant >= iCutover |==> instant == iCutover
+467:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@getLeapAmount(long):793:instant >= iCutover |==> instant > iCutover
+468:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@getLeapAmount(long):793:instant >= iCutover |==> false
+469:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@getLeapAmount(long):793:instant >= iCutover |==> true
+470:ROR:<(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMinimumValue(long):820:instant < iCutover |==> instant != iCutover
+471:ROR:<(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMinimumValue(long):820:instant < iCutover |==> instant <= iCutover
+472:ROR:<(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMinimumValue(long):820:instant < iCutover |==> instant == iCutover
+473:ROR:<(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMinimumValue(long):820:instant < iCutover |==> instant > iCutover
+474:ROR:<(long,long):>=(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMinimumValue(long):820:instant < iCutover |==> instant >= iCutover
+475:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMinimumValue(long):820:instant < iCutover |==> false
+476:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMinimumValue(long):820:instant < iCutover |==> true
+477:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@getMinimumValue(long):828:instant = iGregorianField.set(instant, min) |==> <NO-OP>
+478:ROR:<(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMinimumValue(long):829:instant < iCutover |==> instant != iCutover
+479:ROR:<(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMinimumValue(long):829:instant < iCutover |==> instant <= iCutover
+480:ROR:<(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMinimumValue(long):829:instant < iCutover |==> instant == iCutover
+481:ROR:<(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMinimumValue(long):829:instant < iCutover |==> instant > iCutover
+482:ROR:<(long,long):>=(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMinimumValue(long):829:instant < iCutover |==> instant >= iCutover
+483:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMinimumValue(long):829:instant < iCutover |==> false
+484:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMinimumValue(long):829:instant < iCutover |==> true
+485:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@getMinimumValue(long):830:min = iGregorianField.get(iCutover) |==> <NO-OP>
+486:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):843:instant >= iCutover |==> instant != iCutover
+487:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):843:instant >= iCutover |==> instant < iCutover
+488:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):843:instant >= iCutover |==> instant <= iCutover
+489:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):843:instant >= iCutover |==> instant == iCutover
+490:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):843:instant >= iCutover |==> instant > iCutover
+491:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):843:instant >= iCutover |==> false
+492:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):843:instant >= iCutover |==> true
+493:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):851:instant = iJulianField.set(instant, max) |==> <NO-OP>
+494:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):852:instant >= iCutover |==> instant != iCutover
+495:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):852:instant >= iCutover |==> instant < iCutover
+496:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):852:instant >= iCutover |==> instant <= iCutover
+497:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):852:instant >= iCutover |==> instant == iCutover
+498:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):852:instant >= iCutover |==> instant > iCutover
+499:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):852:instant >= iCutover |==> false
+500:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):852:instant >= iCutover |==> true
+501:LVR:NEG:0:org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):853:-1 |==> 0
+502:LVR:NEG:POS:org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):853:-1 |==> 1
+503:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(long):853:max = iJulianField.get(iJulianField.add(iCutover, -1)) |==> <NO-OP>
+504:LVR:0:POS:org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial):860:0L |==> 1L
+505:LVR:0:NEG:org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial):860:0L |==> -1L
+506:LVR:0:POS:org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):866:0L |==> 1L
+507:LVR:0:NEG:org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):866:0L |==> -1L
+508:LVR:0:POS:org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):867:0 |==> 1
+509:LVR:0:NEG:org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):867:0 |==> -1
+510:ROR:<(int,int):!=(int,int):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):867:i < isize |==> i != isize
+511:ROR:<(int,int):<=(int,int):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):867:i < isize |==> i <= isize
+512:ROR:<(int,int):==(int,int):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):867:i < isize |==> i == isize
+513:ROR:<(int,int):>(int,int):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):867:i < isize |==> i > isize
+514:ROR:<(int,int):>=(int,int):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):867:i < isize |==> i >= isize
+515:ROR:<(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):867:i < isize |==> false
+516:ROR:<(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):867:i < isize |==> true
+517:ROR:<=(int,int):!=(int,int):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):869:values[i] <= field.getMaximumValue(instant) |==> values[i] != field.getMaximumValue(instant)
+518:ROR:<=(int,int):<(int,int):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):869:values[i] <= field.getMaximumValue(instant) |==> values[i] < field.getMaximumValue(instant)
+519:ROR:<=(int,int):==(int,int):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):869:values[i] <= field.getMaximumValue(instant) |==> values[i] == field.getMaximumValue(instant)
+520:ROR:<=(int,int):>(int,int):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):869:values[i] <= field.getMaximumValue(instant) |==> values[i] > field.getMaximumValue(instant)
+521:ROR:<=(int,int):>=(int,int):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):869:values[i] <= field.getMaximumValue(instant) |==> values[i] >= field.getMaximumValue(instant)
+522:ROR:<=(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):869:values[i] <= field.getMaximumValue(instant) |==> false
+523:ROR:<=(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):869:values[i] <= field.getMaximumValue(instant) |==> true
+524:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@getMaximumValue(org.joda.time.ReadablePartial,int[]):870:instant = field.set(instant, values[i]) |==> <NO-OP>
+525:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):877:instant >= iCutover |==> instant != iCutover
+526:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):877:instant >= iCutover |==> instant < iCutover
+527:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):877:instant >= iCutover |==> instant <= iCutover
+528:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):877:instant >= iCutover |==> instant == iCutover
+529:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):877:instant >= iCutover |==> instant > iCutover
+530:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):877:instant >= iCutover |==> false
+531:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):877:instant >= iCutover |==> true
+532:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):878:instant = iGregorianField.roundFloor(instant) |==> <NO-OP>
+533:ROR:<(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):879:instant < iCutover |==> instant != iCutover
+534:ROR:<(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):879:instant < iCutover |==> instant <= iCutover
+535:ROR:<(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):879:instant < iCutover |==> instant == iCutover
+536:ROR:<(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):879:instant < iCutover |==> instant > iCutover
+537:ROR:<(long,long):>=(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):879:instant < iCutover |==> instant >= iCutover
+538:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):879:instant < iCutover |==> false
+539:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):879:instant < iCutover |==> true
+540:AOR:+(long,long):%(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):881:instant + iGapDuration |==> instant % iGapDuration
+541:AOR:+(long,long):*(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):881:instant + iGapDuration |==> instant * iGapDuration
+542:AOR:+(long,long):-(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):881:instant + iGapDuration |==> instant - iGapDuration
+543:AOR:+(long,long):/(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):881:instant + iGapDuration |==> instant / iGapDuration
+544:ROR:<(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):881:instant + iGapDuration < iCutover |==> instant + iGapDuration != iCutover
+545:ROR:<(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):881:instant + iGapDuration < iCutover |==> instant + iGapDuration <= iCutover
+546:ROR:<(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):881:instant + iGapDuration < iCutover |==> instant + iGapDuration == iCutover
+547:ROR:<(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):881:instant + iGapDuration < iCutover |==> instant + iGapDuration > iCutover
+548:ROR:<(long,long):>=(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):881:instant + iGapDuration < iCutover |==> instant + iGapDuration >= iCutover
+549:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):881:instant + iGapDuration < iCutover |==> false
+550:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):881:instant + iGapDuration < iCutover |==> true
+551:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):882:instant = gregorianToJulian(instant) |==> <NO-OP>
+552:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@roundFloor(long):886:instant = iJulianField.roundFloor(instant) |==> <NO-OP>
+553:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):892:instant >= iCutover |==> instant != iCutover
+554:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):892:instant >= iCutover |==> instant < iCutover
+555:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):892:instant >= iCutover |==> instant <= iCutover
+556:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):892:instant >= iCutover |==> instant == iCutover
+557:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):892:instant >= iCutover |==> instant > iCutover
+558:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):892:instant >= iCutover |==> false
+559:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):892:instant >= iCutover |==> true
+560:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):893:instant = iGregorianField.roundCeiling(instant) |==> <NO-OP>
+561:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):895:instant = iJulianField.roundCeiling(instant) |==> <NO-OP>
+562:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):896:instant >= iCutover |==> instant != iCutover
+563:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):896:instant >= iCutover |==> instant < iCutover
+564:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):896:instant >= iCutover |==> instant <= iCutover
+565:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):896:instant >= iCutover |==> instant == iCutover
+566:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):896:instant >= iCutover |==> instant > iCutover
+567:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):896:instant >= iCutover |==> false
+568:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):896:instant >= iCutover |==> true
+569:AOR:-(long,long):%(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):898:instant - iGapDuration |==> instant % iGapDuration
+570:AOR:-(long,long):*(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):898:instant - iGapDuration |==> instant * iGapDuration
+571:AOR:-(long,long):+(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):898:instant - iGapDuration |==> instant + iGapDuration
+572:AOR:-(long,long):/(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):898:instant - iGapDuration |==> instant / iGapDuration
+573:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):898:instant - iGapDuration >= iCutover |==> instant - iGapDuration != iCutover
+574:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):898:instant - iGapDuration >= iCutover |==> instant - iGapDuration < iCutover
+575:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):898:instant - iGapDuration >= iCutover |==> instant - iGapDuration <= iCutover
+576:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):898:instant - iGapDuration >= iCutover |==> instant - iGapDuration == iCutover
+577:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):898:instant - iGapDuration >= iCutover |==> instant - iGapDuration > iCutover
+578:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):898:instant - iGapDuration >= iCutover |==> false
+579:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):898:instant - iGapDuration >= iCutover |==> true
+580:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$CutoverField@roundCeiling(long):899:instant = julianToGregorian(instant) |==> <NO-OP>
+581:COR:iConvertByWeekyear:TRUE:org.joda.time.chrono.GJChronology$CutoverField@julianToGregorian(long):917:iConvertByWeekyear |==> false
+582:COR:iConvertByWeekyear:FALSE:org.joda.time.chrono.GJChronology$CutoverField@julianToGregorian(long):917:iConvertByWeekyear |==> true
+583:COR:iConvertByWeekyear:TRUE:org.joda.time.chrono.GJChronology$CutoverField@gregorianToJulian(long):925:iConvertByWeekyear |==> false
+584:COR:iConvertByWeekyear:FALSE:org.joda.time.chrono.GJChronology$CutoverField@gregorianToJulian(long):925:iConvertByWeekyear |==> true
+585:LVR:FALSE:TRUE:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@<init>(org.joda.time.DateTimeField,org.joda.time.DateTimeField,long):947:false |==> true
+586:LVR:FALSE:TRUE:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@<init>(org.joda.time.DateTimeField,org.joda.time.DateTimeField,org.joda.time.DurationField,long):958:false |==> true
+587:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@<init>(org.joda.time.DateTimeField,org.joda.time.DateTimeField,org.joda.time.DurationField,long,boolean):971:durationField == null |==> durationField != null
+588:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@<init>(org.joda.time.DateTimeField,org.joda.time.DateTimeField,org.joda.time.DurationField,long,boolean):971:durationField == null |==> false
+589:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@<init>(org.joda.time.DateTimeField,org.joda.time.DateTimeField,org.joda.time.DurationField,long,boolean):971:durationField == null |==> true
+590:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@<init>(org.joda.time.DateTimeField,org.joda.time.DateTimeField,org.joda.time.DurationField,long,boolean):972:durationField = new LinkedDurationField(iDurationField, this) |==> <NO-OP>
+591:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@<init>(org.joda.time.DateTimeField,org.joda.time.DateTimeField,org.joda.time.DurationField,long,boolean):974:iDurationField = durationField |==> <NO-OP>
+592:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):978:instant >= iCutover |==> instant != iCutover
+593:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):978:instant >= iCutover |==> instant < iCutover
+594:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):978:instant >= iCutover |==> instant <= iCutover
+595:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):978:instant >= iCutover |==> instant == iCutover
+596:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):978:instant >= iCutover |==> instant > iCutover
+597:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):978:instant >= iCutover |==> false
+598:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):978:instant >= iCutover |==> true
+599:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):979:instant = iGregorianField.add(instant, value) |==> <NO-OP>
+600:ROR:<(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):980:instant < iCutover |==> instant != iCutover
+601:ROR:<(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):980:instant < iCutover |==> instant <= iCutover
+602:ROR:<(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):980:instant < iCutover |==> instant == iCutover
+603:ROR:<(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):980:instant < iCutover |==> instant > iCutover
+604:ROR:<(long,long):>=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):980:instant < iCutover |==> instant >= iCutover
+605:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):980:instant < iCutover |==> false
+606:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):980:instant < iCutover |==> true
+607:AOR:+(long,long):%(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):982:instant + iGapDuration |==> instant % iGapDuration
+608:AOR:+(long,long):*(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):982:instant + iGapDuration |==> instant * iGapDuration
+609:AOR:+(long,long):-(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):982:instant + iGapDuration |==> instant - iGapDuration
+610:AOR:+(long,long):/(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):982:instant + iGapDuration |==> instant / iGapDuration
+611:ROR:<(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):982:instant + iGapDuration < iCutover |==> instant + iGapDuration != iCutover
+612:ROR:<(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):982:instant + iGapDuration < iCutover |==> instant + iGapDuration <= iCutover
+613:ROR:<(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):982:instant + iGapDuration < iCutover |==> instant + iGapDuration == iCutover
+614:ROR:<(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):982:instant + iGapDuration < iCutover |==> instant + iGapDuration > iCutover
+615:ROR:<(long,long):>=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):982:instant + iGapDuration < iCutover |==> instant + iGapDuration >= iCutover
+616:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):982:instant + iGapDuration < iCutover |==> false
+617:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):982:instant + iGapDuration < iCutover |==> true
+618:COR:iConvertByWeekyear:TRUE:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):983:iConvertByWeekyear |==> false
+619:COR:iConvertByWeekyear:FALSE:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):983:iConvertByWeekyear |==> true
+620:LVR:0:POS:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):985:0 |==> 1
+621:LVR:0:NEG:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):985:0 |==> -1
+622:ROR:<=(int,int):!=(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):985:wyear <= 0 |==> wyear != 0
+623:ROR:<=(int,int):<(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):985:wyear <= 0 |==> wyear < 0
+624:ROR:<=(int,int):==(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):985:wyear <= 0 |==> wyear == 0
+625:ROR:<=(int,int):>(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):985:wyear <= 0 |==> wyear > 0
+626:ROR:<=(int,int):>=(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):985:wyear <= 0 |==> wyear >= 0
+627:ROR:<=(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):985:wyear <= 0 |==> false
+628:ROR:<=(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):985:wyear <= 0 |==> true
+629:LVR:NEG:0:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):986:-1 |==> 0
+630:LVR:NEG:POS:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):986:-1 |==> 1
+631:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):986:instant = iGregorianChronology.weekyear().add(instant, -1) |==> <NO-OP>
+632:LVR:0:POS:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):990:0 |==> 1
+633:LVR:0:NEG:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):990:0 |==> -1
+634:ROR:<=(int,int):!=(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):990:year <= 0 |==> year != 0
+635:ROR:<=(int,int):<(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):990:year <= 0 |==> year < 0
+636:ROR:<=(int,int):==(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):990:year <= 0 |==> year == 0
+637:ROR:<=(int,int):>(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):990:year <= 0 |==> year > 0
+638:ROR:<=(int,int):>=(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):990:year <= 0 |==> year >= 0
+639:ROR:<=(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):990:year <= 0 |==> false
+640:ROR:<=(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):990:year <= 0 |==> true
+641:LVR:NEG:0:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):991:-1 |==> 0
+642:LVR:NEG:POS:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):991:-1 |==> 1
+643:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):991:instant = iGregorianChronology.year().add(instant, -1) |==> <NO-OP>
+644:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):994:instant = gregorianToJulian(instant) |==> <NO-OP>
+645:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):998:instant = iJulianField.add(instant, value) |==> <NO-OP>
+646:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):999:instant >= iCutover |==> instant != iCutover
+647:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):999:instant >= iCutover |==> instant < iCutover
+648:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):999:instant >= iCutover |==> instant <= iCutover
+649:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):999:instant >= iCutover |==> instant == iCutover
+650:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):999:instant >= iCutover |==> instant > iCutover
+651:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):999:instant >= iCutover |==> false
+652:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):999:instant >= iCutover |==> true
+653:AOR:-(long,long):%(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):1001:instant - iGapDuration |==> instant % iGapDuration
+654:AOR:-(long,long):*(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):1001:instant - iGapDuration |==> instant * iGapDuration
+655:AOR:-(long,long):+(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):1001:instant - iGapDuration |==> instant + iGapDuration
+656:AOR:-(long,long):/(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):1001:instant - iGapDuration |==> instant / iGapDuration
+657:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):1001:instant - iGapDuration >= iCutover |==> instant - iGapDuration != iCutover
+658:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):1001:instant - iGapDuration >= iCutover |==> instant - iGapDuration < iCutover
+659:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):1001:instant - iGapDuration >= iCutover |==> instant - iGapDuration <= iCutover
+660:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):1001:instant - iGapDuration >= iCutover |==> instant - iGapDuration == iCutover
+661:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):1001:instant - iGapDuration >= iCutover |==> instant - iGapDuration > iCutover
+662:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):1001:instant - iGapDuration >= iCutover |==> false
+663:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):1001:instant - iGapDuration >= iCutover |==> true
+664:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,int):1003:instant = julianToGregorian(instant) |==> <NO-OP>
+665:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1011:instant >= iCutover |==> instant != iCutover
+666:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1011:instant >= iCutover |==> instant < iCutover
+667:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1011:instant >= iCutover |==> instant <= iCutover
+668:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1011:instant >= iCutover |==> instant == iCutover
+669:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1011:instant >= iCutover |==> instant > iCutover
+670:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1011:instant >= iCutover |==> false
+671:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1011:instant >= iCutover |==> true
+672:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1012:instant = iGregorianField.add(instant, value) |==> <NO-OP>
+673:ROR:<(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1013:instant < iCutover |==> instant != iCutover
+674:ROR:<(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1013:instant < iCutover |==> instant <= iCutover
+675:ROR:<(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1013:instant < iCutover |==> instant == iCutover
+676:ROR:<(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1013:instant < iCutover |==> instant > iCutover
+677:ROR:<(long,long):>=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1013:instant < iCutover |==> instant >= iCutover
+678:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1013:instant < iCutover |==> false
+679:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1013:instant < iCutover |==> true
+680:AOR:+(long,long):%(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1015:instant + iGapDuration |==> instant % iGapDuration
+681:AOR:+(long,long):*(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1015:instant + iGapDuration |==> instant * iGapDuration
+682:AOR:+(long,long):-(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1015:instant + iGapDuration |==> instant - iGapDuration
+683:AOR:+(long,long):/(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1015:instant + iGapDuration |==> instant / iGapDuration
+684:ROR:<(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1015:instant + iGapDuration < iCutover |==> instant + iGapDuration != iCutover
+685:ROR:<(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1015:instant + iGapDuration < iCutover |==> instant + iGapDuration <= iCutover
+686:ROR:<(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1015:instant + iGapDuration < iCutover |==> instant + iGapDuration == iCutover
+687:ROR:<(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1015:instant + iGapDuration < iCutover |==> instant + iGapDuration > iCutover
+688:ROR:<(long,long):>=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1015:instant + iGapDuration < iCutover |==> instant + iGapDuration >= iCutover
+689:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1015:instant + iGapDuration < iCutover |==> false
+690:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1015:instant + iGapDuration < iCutover |==> true
+691:COR:iConvertByWeekyear:TRUE:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1016:iConvertByWeekyear |==> false
+692:COR:iConvertByWeekyear:FALSE:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1016:iConvertByWeekyear |==> true
+693:LVR:0:POS:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1018:0 |==> 1
+694:LVR:0:NEG:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1018:0 |==> -1
+695:ROR:<=(int,int):!=(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1018:wyear <= 0 |==> wyear != 0
+696:ROR:<=(int,int):<(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1018:wyear <= 0 |==> wyear < 0
+697:ROR:<=(int,int):==(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1018:wyear <= 0 |==> wyear == 0
+698:ROR:<=(int,int):>(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1018:wyear <= 0 |==> wyear > 0
+699:ROR:<=(int,int):>=(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1018:wyear <= 0 |==> wyear >= 0
+700:ROR:<=(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1018:wyear <= 0 |==> false
+701:ROR:<=(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1018:wyear <= 0 |==> true
+702:LVR:NEG:0:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1019:-1 |==> 0
+703:LVR:NEG:POS:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1019:-1 |==> 1
+704:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1019:instant = iGregorianChronology.weekyear().add(instant, -1) |==> <NO-OP>
+705:LVR:0:POS:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1023:0 |==> 1
+706:LVR:0:NEG:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1023:0 |==> -1
+707:ROR:<=(int,int):!=(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1023:year <= 0 |==> year != 0
+708:ROR:<=(int,int):<(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1023:year <= 0 |==> year < 0
+709:ROR:<=(int,int):==(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1023:year <= 0 |==> year == 0
+710:ROR:<=(int,int):>(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1023:year <= 0 |==> year > 0
+711:ROR:<=(int,int):>=(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1023:year <= 0 |==> year >= 0
+712:ROR:<=(int,int):FALSE(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1023:year <= 0 |==> false
+713:ROR:<=(int,int):TRUE(int,int):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1023:year <= 0 |==> true
+714:LVR:NEG:0:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1024:-1 |==> 0
+715:LVR:NEG:POS:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1024:-1 |==> 1
+716:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1024:instant = iGregorianChronology.year().add(instant, -1) |==> <NO-OP>
+717:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1027:instant = gregorianToJulian(instant) |==> <NO-OP>
+718:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1031:instant = iJulianField.add(instant, value) |==> <NO-OP>
+719:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1032:instant >= iCutover |==> instant != iCutover
+720:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1032:instant >= iCutover |==> instant < iCutover
+721:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1032:instant >= iCutover |==> instant <= iCutover
+722:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1032:instant >= iCutover |==> instant == iCutover
+723:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1032:instant >= iCutover |==> instant > iCutover
+724:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1032:instant >= iCutover |==> false
+725:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1032:instant >= iCutover |==> true
+726:AOR:-(long,long):%(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1034:instant - iGapDuration |==> instant % iGapDuration
+727:AOR:-(long,long):*(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1034:instant - iGapDuration |==> instant * iGapDuration
+728:AOR:-(long,long):+(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1034:instant - iGapDuration |==> instant + iGapDuration
+729:AOR:-(long,long):/(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1034:instant - iGapDuration |==> instant / iGapDuration
+730:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1034:instant - iGapDuration >= iCutover |==> instant - iGapDuration != iCutover
+731:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1034:instant - iGapDuration >= iCutover |==> instant - iGapDuration < iCutover
+732:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1034:instant - iGapDuration >= iCutover |==> instant - iGapDuration <= iCutover
+733:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1034:instant - iGapDuration >= iCutover |==> instant - iGapDuration == iCutover
+734:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1034:instant - iGapDuration >= iCutover |==> instant - iGapDuration > iCutover
+735:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1034:instant - iGapDuration >= iCutover |==> false
+736:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1034:instant - iGapDuration >= iCutover |==> true
+737:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@add(long,long):1036:instant = julianToGregorian(instant) |==> <NO-OP>
+738:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1044:minuendInstant >= iCutover |==> minuendInstant != iCutover
+739:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1044:minuendInstant >= iCutover |==> minuendInstant < iCutover
+740:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1044:minuendInstant >= iCutover |==> minuendInstant <= iCutover
+741:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1044:minuendInstant >= iCutover |==> minuendInstant == iCutover
+742:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1044:minuendInstant >= iCutover |==> minuendInstant > iCutover
+743:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1044:minuendInstant >= iCutover |==> false
+744:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1044:minuendInstant >= iCutover |==> true
+745:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1045:subtrahendInstant >= iCutover |==> subtrahendInstant != iCutover
+746:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1045:subtrahendInstant >= iCutover |==> subtrahendInstant < iCutover
+747:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1045:subtrahendInstant >= iCutover |==> subtrahendInstant <= iCutover
+748:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1045:subtrahendInstant >= iCutover |==> subtrahendInstant == iCutover
+749:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1045:subtrahendInstant >= iCutover |==> subtrahendInstant > iCutover
+750:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1045:subtrahendInstant >= iCutover |==> false
+751:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1045:subtrahendInstant >= iCutover |==> true
+752:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1050:minuendInstant = gregorianToJulian(minuendInstant) |==> <NO-OP>
+753:ROR:<(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1053:subtrahendInstant < iCutover |==> subtrahendInstant != iCutover
+754:ROR:<(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1053:subtrahendInstant < iCutover |==> subtrahendInstant <= iCutover
+755:ROR:<(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1053:subtrahendInstant < iCutover |==> subtrahendInstant == iCutover
+756:ROR:<(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1053:subtrahendInstant < iCutover |==> subtrahendInstant > iCutover
+757:ROR:<(long,long):>=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1053:subtrahendInstant < iCutover |==> subtrahendInstant >= iCutover
+758:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1053:subtrahendInstant < iCutover |==> false
+759:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1053:subtrahendInstant < iCutover |==> true
+760:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifference(long,long):1058:minuendInstant = julianToGregorian(minuendInstant) |==> <NO-OP>
+761:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1064:minuendInstant >= iCutover |==> minuendInstant != iCutover
+762:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1064:minuendInstant >= iCutover |==> minuendInstant < iCutover
+763:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1064:minuendInstant >= iCutover |==> minuendInstant <= iCutover
+764:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1064:minuendInstant >= iCutover |==> minuendInstant == iCutover
+765:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1064:minuendInstant >= iCutover |==> minuendInstant > iCutover
+766:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1064:minuendInstant >= iCutover |==> false
+767:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1064:minuendInstant >= iCutover |==> true
+768:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1065:subtrahendInstant >= iCutover |==> subtrahendInstant != iCutover
+769:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1065:subtrahendInstant >= iCutover |==> subtrahendInstant < iCutover
+770:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1065:subtrahendInstant >= iCutover |==> subtrahendInstant <= iCutover
+771:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1065:subtrahendInstant >= iCutover |==> subtrahendInstant == iCutover
+772:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1065:subtrahendInstant >= iCutover |==> subtrahendInstant > iCutover
+773:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1065:subtrahendInstant >= iCutover |==> false
+774:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1065:subtrahendInstant >= iCutover |==> true
+775:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1070:minuendInstant = gregorianToJulian(minuendInstant) |==> <NO-OP>
+776:ROR:<(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1073:subtrahendInstant < iCutover |==> subtrahendInstant != iCutover
+777:ROR:<(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1073:subtrahendInstant < iCutover |==> subtrahendInstant <= iCutover
+778:ROR:<(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1073:subtrahendInstant < iCutover |==> subtrahendInstant == iCutover
+779:ROR:<(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1073:subtrahendInstant < iCutover |==> subtrahendInstant > iCutover
+780:ROR:<(long,long):>=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1073:subtrahendInstant < iCutover |==> subtrahendInstant >= iCutover
+781:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1073:subtrahendInstant < iCutover |==> false
+782:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1073:subtrahendInstant < iCutover |==> true
+783:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getDifferenceAsLong(long,long):1078:minuendInstant = julianToGregorian(minuendInstant) |==> <NO-OP>
+784:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getMinimumValue(long):1094:instant >= iCutover |==> instant != iCutover
+785:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getMinimumValue(long):1094:instant >= iCutover |==> instant < iCutover
+786:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getMinimumValue(long):1094:instant >= iCutover |==> instant <= iCutover
+787:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getMinimumValue(long):1094:instant >= iCutover |==> instant == iCutover
+788:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getMinimumValue(long):1094:instant >= iCutover |==> instant > iCutover
+789:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getMinimumValue(long):1094:instant >= iCutover |==> false
+790:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getMinimumValue(long):1094:instant >= iCutover |==> true
+791:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getMaximumValue(long):1102:instant >= iCutover |==> instant != iCutover
+792:ROR:>=(long,long):<(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getMaximumValue(long):1102:instant >= iCutover |==> instant < iCutover
+793:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getMaximumValue(long):1102:instant >= iCutover |==> instant <= iCutover
+794:ROR:>=(long,long):==(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getMaximumValue(long):1102:instant >= iCutover |==> instant == iCutover
+795:ROR:>=(long,long):>(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getMaximumValue(long):1102:instant >= iCutover |==> instant > iCutover
+796:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getMaximumValue(long):1102:instant >= iCutover |==> false
+797:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.GJChronology$ImpreciseCutoverField@getMaximumValue(long):1102:instant >= iCutover |==> true

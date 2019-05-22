@@ -1,0 +1,163 @@
+
+init:
+
+junit-present:
+
+setProxy:
+
+noProxy:
+     [echo] Proxy not used.
+
+get-custom-dep-commons-logging.jar:
+
+get-dep-commons-logging.jar:
+      [get] Getting: http://www.ibiblio.org/maven/commons-logging/jars/commons-logging-1.0.3.jar
+      [get] To: /home/to_donghwan/.maven/repository/commons-logging/jars/commons-logging-1.0.3.jar
+      [get] Error opening connection java.io.FileNotFoundException: http://www.ibiblio.org/maven/commons-logging/jars/commons-logging-1.0.3.jar
+      [get] Error opening connection java.io.FileNotFoundException: http://www.ibiblio.org/maven/commons-logging/jars/commons-logging-1.0.3.jar
+      [get] Error opening connection java.io.FileNotFoundException: http://www.ibiblio.org/maven/commons-logging/jars/commons-logging-1.0.3.jar
+      [get] Can't get http://www.ibiblio.org/maven/commons-logging/jars/commons-logging-1.0.3.jar to /home/to_donghwan/.maven/repository/commons-logging/jars/commons-logging-1.0.3.jar
+
+get-custom-dep-commons-discovery.jar:
+
+get-dep-commons-discovery.jar:
+      [get] Getting: http://www.ibiblio.org/maven/commons-discovery/jars/commons-discovery-0.2.jar
+      [get] To: /home/to_donghwan/.maven/repository/commons-discovery/jars/commons-discovery-0.2.jar
+      [get] Error opening connection java.io.FileNotFoundException: http://www.ibiblio.org/maven/commons-discovery/jars/commons-discovery-0.2.jar
+      [get] Error opening connection java.io.FileNotFoundException: http://www.ibiblio.org/maven/commons-discovery/jars/commons-discovery-0.2.jar
+      [get] Error opening connection java.io.FileNotFoundException: http://www.ibiblio.org/maven/commons-discovery/jars/commons-discovery-0.2.jar
+      [get] Can't get http://www.ibiblio.org/maven/commons-discovery/jars/commons-discovery-0.2.jar to /home/to_donghwan/.maven/repository/commons-discovery/jars/commons-discovery-0.2.jar
+
+get-deps:
+
+compile:
+    [javac] /tmp/run_mutation.pl_129162_1501597580/106f/build.xml:72: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_129162_1501597580/106f/target/test-classes
+    [javac] /tmp/run_mutation.pl_129162_1501597580/106f/build.xml:149: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 112 source files to /tmp/run_mutation.pl_129162_1501597580/106f/target/test-classes
+    [javac] /tmp/run_mutation.pl_129162_1501597580/106f/src/test/org/apache/commons/math/TestUtils.java:26: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/run_mutation.pl_129162_1501597580/106f/src/test/org/apache/commons/math/TestUtils.java:58: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertTrue("" + actual + " is not NaN.",
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_129162_1501597580/106f/src/test/org/apache/commons/math/TestUtils.java:61: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertEquals(msg, expected, actual, delta);
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_129162_1501597580/106f/src/test/org/apache/commons/math/TestUtils.java:95: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals(a.length, b.length);
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_129162_1501597580/106f/src/test/org/apache/commons/math/TestUtils.java:97: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertEquals(a[i], b[i], tolerance);
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_129162_1501597580/106f/src/test/org/apache/commons/math/TestUtils.java:161: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals("Equals check", object, object2);
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_129162_1501597580/106f/src/test/org/apache/commons/math/TestUtils.java:162: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals("HashCode check", object.hashCode(), object2.hashCode());
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_129162_1501597580/106f/src/test/org/apache/commons/math/TestUtils.java:192: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertTrue(msg, Double.isNaN(actual));
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_129162_1501597580/106f/src/test/org/apache/commons/math/TestUtils.java:194: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertTrue(msg, Double.isNaN(expected));
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_129162_1501597580/106f/src/test/org/apache/commons/math/TestUtils.java:196: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertEquals(expected, actual, relativeError);
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_129162_1501597580/106f/src/test/org/apache/commons/math/TestUtils.java:198: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertEquals(msg, actual, expected, relativeError);
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_129162_1501597580/106f/src/test/org/apache/commons/math/TestUtils.java:201: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertEquals(msg, 0.0, x, relativeError);
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_129162_1501597580/106f/src/test/org/apache/commons/math/TestUtils.java:227: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.fail(msg + 
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_129162_1501597580/106f/src/test/org/apache/commons/math/TestUtils.java:266: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.fail(msg + " Unable to find" + x);
+    [javac]             ^
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 14 warnings
+     [copy] Copying 11 files to /tmp/run_mutation.pl_129162_1501597580/106f/target/test-classes
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 10 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 4.15 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 89
+    [junit] MAJOR: Mutants covered:   86 (96.63%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 10 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/10 - org.apache.commons.math.fraction.ProperFractionFormat_ESTest4 (13ms / 27):
+    [junit] MAJOR: 3899 (4 / 27 / 27) -> AVG-RTPM: 144ms
+    [junit] MAJOR: Mutants killed / live: 4 (0-4-0) / 82
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/10 - org.apache.commons.math.fraction.ProperFractionFormat_ESTest1 (15ms / 13):
+    [junit] MAJOR: 6081 (0 / 13 / 13) -> AVG-RTPM: 167ms
+    [junit] MAJOR: Mutants killed / live: 4 (0-8-0) / 82
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/10 - org.apache.commons.math.fraction.ProperFractionFormat_ESTest3 (16ms / 8):
+    [junit] MAJOR: 8163 (0 / 8 / 8) -> AVG-RTPM: 260ms
+    [junit] MAJOR: Mutants killed / live: 4 (0-10-0) / 82
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/10 - org.apache.commons.math.fraction.ProperFractionFormat_ESTest6 (18ms / 30):
+    [junit] MAJOR: 15089 (3 / 30 / 30) -> AVG-RTPM: 230ms
+    [junit] MAJOR: Mutants killed / live: 7 (1-16-0) / 79
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/10 - org.apache.commons.math.fraction.ProperFractionFormat_ESTest2 (22ms / 30):
+    [junit] MAJOR: 25498 (0 / 30 / 30) -> AVG-RTPM: 346ms
+    [junit] MAJOR: Mutants killed / live: 7 (1-18-0) / 79
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/10 - org.apache.commons.math.fraction.ProperFractionFormat_ESTest8 (26ms / 39):
+    [junit] MAJOR: 43684 (6 / 39 / 39) -> AVG-RTPM: 466ms
+    [junit] MAJOR: Mutants killed / live: 13 (6-23-0) / 73
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/10 - org.apache.commons.math.fraction.ProperFractionFormat_ESTest9 (26ms / 4):
+    [junit] MAJOR: 45886 (1 / 4 / 4) -> AVG-RTPM: 550ms
+    [junit] MAJOR: Mutants killed / live: 14 (9-23-0) / 72
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/10 - org.apache.commons.math.fraction.ProperFractionFormat_ESTest5 (30ms / 17):
+    [junit] MAJOR: 56644 (3 / 17 / 17) -> AVG-RTPM: 632ms
+    [junit] MAJOR: Mutants killed / live: 17 (10-29-0) / 69
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/10 - org.apache.commons.math.fraction.ProperFractionFormat_ESTest0 (31ms / 35):
+    [junit] MAJOR: 80388 (17 / 35 / 35) -> AVG-RTPM: 678ms
+    [junit] MAJOR: Mutants killed / live: 34 (24-36-1) / 52
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/10 - org.apache.commons.math.fraction.ProperFractionFormat_ESTest7 (43ms / 50):
+    [junit] MAJOR: 87892 (36 / 50 / 50) -> AVG-RTPM: 150ms
+    [junit] MAJOR: Mutants killed / live: 70 (24-86-1) / 16
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  87.9 seconds
+    [junit] MAJOR: Mutation score: 78.65% (81.40%)
+    [junit] MAJOR: Mutants killed / live: 70 (24-86-1) / 16
+    [junit] MAJOR: Mutant executions: 253
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_129162_1501597580/106f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 1 minute 39 seconds

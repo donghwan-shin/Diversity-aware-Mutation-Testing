@@ -1,0 +1,58 @@
+1:STD:<CALL>:<NO-OP>:org.jfree.chart.util.ShapeList@setShape(int,java.awt.Shape):81:set(index, shape) |==> <NO-OP>
+2:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeList@equals(java.lang.Object):105:obj == this |==> obj != this
+3:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeList@equals(java.lang.Object):105:obj == this |==> false
+4:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeList@equals(java.lang.Object):105:obj == this |==> true
+5:LVR:TRUE:FALSE:org.jfree.chart.util.ShapeList@equals(java.lang.Object):106:true |==> false
+6:LVR:FALSE:TRUE:org.jfree.chart.util.ShapeList@equals(java.lang.Object):109:false |==> true
+7:LVR:0:POS:org.jfree.chart.util.ShapeList@equals(java.lang.Object):113:0 |==> 1
+8:LVR:0:NEG:org.jfree.chart.util.ShapeList@equals(java.lang.Object):113:0 |==> -1
+9:ROR:<(int,int):!=(int,int):org.jfree.chart.util.ShapeList@equals(java.lang.Object):113:i < listSize |==> i != listSize
+10:ROR:<(int,int):<=(int,int):org.jfree.chart.util.ShapeList@equals(java.lang.Object):113:i < listSize |==> i <= listSize
+11:ROR:<(int,int):==(int,int):org.jfree.chart.util.ShapeList@equals(java.lang.Object):113:i < listSize |==> i == listSize
+12:ROR:<(int,int):>(int,int):org.jfree.chart.util.ShapeList@equals(java.lang.Object):113:i < listSize |==> i > listSize
+13:ROR:<(int,int):>=(int,int):org.jfree.chart.util.ShapeList@equals(java.lang.Object):113:i < listSize |==> i >= listSize
+14:ROR:<(int,int):FALSE(int,int):org.jfree.chart.util.ShapeList@equals(java.lang.Object):113:i < listSize |==> false
+15:ROR:<(int,int):TRUE(int,int):org.jfree.chart.util.ShapeList@equals(java.lang.Object):113:i < listSize |==> true
+16:COR:ShapeUtilities.equal((Shape)get(i), (Shape)that.get(i)):TRUE:org.jfree.chart.util.ShapeList@equals(java.lang.Object):114:ShapeUtilities.equal((Shape)get(i), (Shape)that.get(i)) |==> false
+17:COR:ShapeUtilities.equal((Shape)get(i), (Shape)that.get(i)):FALSE:org.jfree.chart.util.ShapeList@equals(java.lang.Object):114:ShapeUtilities.equal((Shape)get(i), (Shape)that.get(i)) |==> true
+18:LVR:FALSE:TRUE:org.jfree.chart.util.ShapeList@equals(java.lang.Object):115:false |==> true
+19:LVR:TRUE:FALSE:org.jfree.chart.util.ShapeList@equals(java.lang.Object):118:true |==> false
+20:STD:<CALL>:<NO-OP>:org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):140:stream.defaultWriteObject() |==> <NO-OP>
+21:STD:<CALL>:<NO-OP>:org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):142:stream.writeInt(count) |==> <NO-OP>
+22:LVR:0:POS:org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):143:0 |==> 1
+23:LVR:0:NEG:org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):143:0 |==> -1
+24:ROR:<(int,int):!=(int,int):org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):143:i < count |==> i != count
+25:ROR:<(int,int):<=(int,int):org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):143:i < count |==> i <= count
+26:ROR:<(int,int):==(int,int):org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):143:i < count |==> i == count
+27:ROR:<(int,int):>(int,int):org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):143:i < count |==> i > count
+28:ROR:<(int,int):>=(int,int):org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):143:i < count |==> i >= count
+29:ROR:<(int,int):FALSE(int,int):org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):143:i < count |==> false
+30:ROR:<(int,int):TRUE(int,int):org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):143:i < count |==> true
+31:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):145:shape != null |==> shape == null
+32:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):145:shape != null |==> false
+33:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):145:shape != null |==> true
+34:STD:<CALL>:<NO-OP>:org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):146:stream.writeInt(i) |==> <NO-OP>
+35:STD:<CALL>:<NO-OP>:org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):147:SerialUtilities.writeShape(shape, stream) |==> <NO-OP>
+36:LVR:NEG:0:org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):150:-1 |==> 0
+37:LVR:NEG:POS:org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):150:-1 |==> 1
+38:STD:<CALL>:<NO-OP>:org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):150:stream.writeInt(-1) |==> <NO-OP>
+39:STD:<CALL>:<NO-OP>:org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):167:stream.defaultReadObject() |==> <NO-OP>
+40:LVR:0:POS:org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):169:0 |==> 1
+41:LVR:0:NEG:org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):169:0 |==> -1
+42:ROR:<(int,int):!=(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):169:i < count |==> i != count
+43:ROR:<(int,int):<=(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):169:i < count |==> i <= count
+44:ROR:<(int,int):==(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):169:i < count |==> i == count
+45:ROR:<(int,int):>(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):169:i < count |==> i > count
+46:ROR:<(int,int):>=(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):169:i < count |==> i >= count
+47:ROR:<(int,int):FALSE(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):169:i < count |==> false
+48:ROR:<(int,int):TRUE(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):169:i < count |==> true
+49:LVR:NEG:0:org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):171:-1 |==> 0
+50:LVR:NEG:POS:org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):171:-1 |==> 1
+51:ROR:!=(int,int):<(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):171:index != -1 |==> index < -1
+52:ROR:!=(int,int):<=(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):171:index != -1 |==> index <= -1
+53:ROR:!=(int,int):==(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):171:index != -1 |==> index == -1
+54:ROR:!=(int,int):>(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):171:index != -1 |==> index > -1
+55:ROR:!=(int,int):>=(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):171:index != -1 |==> index >= -1
+56:ROR:!=(int,int):FALSE(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):171:index != -1 |==> false
+57:ROR:!=(int,int):TRUE(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):171:index != -1 |==> true
+58:STD:<CALL>:<NO-OP>:org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):172:setShape(index, SerialUtilities.readShape(stream)) |==> <NO-OP>

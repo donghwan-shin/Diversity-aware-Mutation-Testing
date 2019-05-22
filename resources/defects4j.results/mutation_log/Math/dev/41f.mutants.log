@@ -1,0 +1,332 @@
+1:LVR:TRUE:FALSE:org.apache.commons.math.stat.descriptive.moment.Variance:84:true |==> false
+2:LVR:TRUE:FALSE:org.apache.commons.math.stat.descriptive.moment.Variance:91:true |==> false
+3:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@<init>():98:moment = new SecondMoment() |==> <NO-OP>
+4:LVR:FALSE:TRUE:org.apache.commons.math.stat.descriptive.moment.Variance@<init>(org.apache.commons.math.stat.descriptive.moment.SecondMoment):112:false |==> true
+5:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@<init>(org.apache.commons.math.stat.descriptive.moment.SecondMoment):112:incMoment = false |==> <NO-OP>
+6:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@<init>(org.apache.commons.math.stat.descriptive.moment.SecondMoment):113:this.moment = m2 |==> <NO-OP>
+7:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@<init>(boolean):125:moment = new SecondMoment() |==> <NO-OP>
+8:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@<init>(boolean):126:this.isBiasCorrected = isBiasCorrected |==> <NO-OP>
+9:LVR:FALSE:TRUE:org.apache.commons.math.stat.descriptive.moment.Variance@<init>(boolean,org.apache.commons.math.stat.descriptive.moment.SecondMoment):139:false |==> true
+10:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@<init>(boolean,org.apache.commons.math.stat.descriptive.moment.SecondMoment):139:incMoment = false |==> <NO-OP>
+11:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@<init>(boolean,org.apache.commons.math.stat.descriptive.moment.SecondMoment):140:this.moment = m2 |==> <NO-OP>
+12:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@<init>(boolean,org.apache.commons.math.stat.descriptive.moment.SecondMoment):141:this.isBiasCorrected = isBiasCorrected |==> <NO-OP>
+13:STD:<CALL>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@<init>(org.apache.commons.math.stat.descriptive.moment.Variance):151:copy(original, this) |==> <NO-OP>
+14:COR:incMoment:TRUE:org.apache.commons.math.stat.descriptive.moment.Variance@increment(double):169:incMoment |==> false
+15:COR:incMoment:FALSE:org.apache.commons.math.stat.descriptive.moment.Variance@increment(double):169:incMoment |==> true
+16:STD:<CALL>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@increment(double):170:moment.increment(d) |==> <NO-OP>
+17:LVR:0:POS:org.apache.commons.math.stat.descriptive.moment.Variance@getResult():179:0 |==> 1
+18:LVR:0:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@getResult():179:0 |==> -1
+19:ROR:==(long,long):!=(long,long):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():179:moment.n == 0 |==> moment.n != 0
+20:ROR:==(long,long):<(long,long):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():179:moment.n == 0 |==> moment.n < 0
+21:ROR:==(long,long):<=(long,long):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():179:moment.n == 0 |==> moment.n <= 0
+22:ROR:==(long,long):>(long,long):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():179:moment.n == 0 |==> moment.n > 0
+23:ROR:==(long,long):>=(long,long):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():179:moment.n == 0 |==> moment.n >= 0
+24:ROR:==(long,long):FALSE(long,long):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():179:moment.n == 0 |==> false
+25:ROR:==(long,long):TRUE(long,long):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():179:moment.n == 0 |==> true
+26:LVR:POS:0:org.apache.commons.math.stat.descriptive.moment.Variance@getResult():181:1 |==> 0
+27:LVR:POS:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@getResult():181:1 |==> -1
+28:ROR:==(long,long):!=(long,long):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():181:moment.n == 1 |==> moment.n != 1
+29:ROR:==(long,long):<(long,long):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():181:moment.n == 1 |==> moment.n < 1
+30:ROR:==(long,long):<=(long,long):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():181:moment.n == 1 |==> moment.n <= 1
+31:ROR:==(long,long):>(long,long):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():181:moment.n == 1 |==> moment.n > 1
+32:ROR:==(long,long):>=(long,long):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():181:moment.n == 1 |==> moment.n >= 1
+33:ROR:==(long,long):FALSE(long,long):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():181:moment.n == 1 |==> false
+34:ROR:==(long,long):TRUE(long,long):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():181:moment.n == 1 |==> true
+35:LVR:0:POS:org.apache.commons.math.stat.descriptive.moment.Variance@getResult():182:0.0 |==> 1.0
+36:LVR:0:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@getResult():182:0.0 |==> -1.0
+37:COR:isBiasCorrected:TRUE:org.apache.commons.math.stat.descriptive.moment.Variance@getResult():184:isBiasCorrected |==> false
+38:COR:isBiasCorrected:FALSE:org.apache.commons.math.stat.descriptive.moment.Variance@getResult():184:isBiasCorrected |==> true
+39:LVR:POS:0:org.apache.commons.math.stat.descriptive.moment.Variance@getResult():185:1.0 |==> 0.0
+40:LVR:POS:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@getResult():185:1.0 |==> -1.0
+41:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():185:moment.n - 1.0 |==> moment.n % 1.0
+42:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():185:moment.n - 1.0 |==> moment.n * 1.0
+43:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():185:moment.n - 1.0 |==> moment.n + 1.0
+44:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():185:moment.n - 1.0 |==> moment.n / 1.0
+45:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():185:moment.m2 / (moment.n - 1.0) |==> moment.m2 % (moment.n - 1.0)
+46:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():185:moment.m2 / (moment.n - 1.0) |==> moment.m2 * (moment.n - 1.0)
+47:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():185:moment.m2 / (moment.n - 1.0) |==> moment.m2 + (moment.n - 1.0)
+48:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():185:moment.m2 / (moment.n - 1.0) |==> moment.m2 - (moment.n - 1.0)
+49:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():187:moment.m2 / (moment.n) |==> moment.m2 % (moment.n)
+50:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():187:moment.m2 / (moment.n) |==> moment.m2 * (moment.n)
+51:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():187:moment.m2 / (moment.n) |==> moment.m2 + (moment.n)
+52:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@getResult():187:moment.m2 / (moment.n) |==> moment.m2 - (moment.n)
+53:COR:incMoment:TRUE:org.apache.commons.math.stat.descriptive.moment.Variance@clear():204:incMoment |==> false
+54:COR:incMoment:FALSE:org.apache.commons.math.stat.descriptive.moment.Variance@clear():204:incMoment |==> true
+55:STD:<CALL>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@clear():205:moment.clear() |==> <NO-OP>
+56:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[]):227:values == null |==> values != null
+57:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[]):227:values == null |==> false
+58:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[]):227:values == null |==> true
+59:LVR:0:POS:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[]):230:0 |==> 1
+60:LVR:0:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[]):230:0 |==> -1
+61:COR:test(values, begin, length):TRUE:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):258:test(values, begin, length) |==> false
+62:COR:test(values, begin, length):FALSE:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):258:test(values, begin, length) |==> true
+63:STD:<CALL>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):259:clear() |==> <NO-OP>
+64:LVR:POS:0:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):260:1 |==> 0
+65:LVR:POS:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):260:1 |==> -1
+66:ROR:==(int,int):!=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):260:length == 1 |==> length != 1
+67:ROR:==(int,int):<(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):260:length == 1 |==> length < 1
+68:ROR:==(int,int):<=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):260:length == 1 |==> length <= 1
+69:ROR:==(int,int):>(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):260:length == 1 |==> length > 1
+70:ROR:==(int,int):>=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):260:length == 1 |==> length >= 1
+71:ROR:==(int,int):FALSE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):260:length == 1 |==> false
+72:ROR:==(int,int):TRUE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):260:length == 1 |==> true
+73:LVR:0:POS:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):261:0.0 |==> 1.0
+74:LVR:0:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):261:0.0 |==> -1.0
+75:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):261:var = 0.0 |==> <NO-OP>
+76:LVR:POS:0:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):262:1 |==> 0
+77:LVR:POS:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):262:1 |==> -1
+78:ROR:>(int,int):!=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):262:length > 1 |==> length != 1
+79:ROR:>(int,int):<(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):262:length > 1 |==> length < 1
+80:ROR:>(int,int):<=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):262:length > 1 |==> length <= 1
+81:ROR:>(int,int):==(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):262:length > 1 |==> length == 1
+82:ROR:>(int,int):>=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):262:length > 1 |==> length >= 1
+83:ROR:>(int,int):FALSE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):262:length > 1 |==> false
+84:ROR:>(int,int):TRUE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):262:length > 1 |==> true
+85:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],int,int):265:var = evaluate(values, m, begin, length) |==> <NO-OP>
+86:COR:test(values, weights, begin, length):TRUE:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):318:test(values, weights, begin, length) |==> false
+87:COR:test(values, weights, begin, length):FALSE:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):318:test(values, weights, begin, length) |==> true
+88:STD:<CALL>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):319:clear() |==> <NO-OP>
+89:LVR:POS:0:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):320:1 |==> 0
+90:LVR:POS:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):320:1 |==> -1
+91:ROR:==(int,int):!=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):320:length == 1 |==> length != 1
+92:ROR:==(int,int):<(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):320:length == 1 |==> length < 1
+93:ROR:==(int,int):<=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):320:length == 1 |==> length <= 1
+94:ROR:==(int,int):>(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):320:length == 1 |==> length > 1
+95:ROR:==(int,int):>=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):320:length == 1 |==> length >= 1
+96:ROR:==(int,int):FALSE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):320:length == 1 |==> false
+97:ROR:==(int,int):TRUE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):320:length == 1 |==> true
+98:LVR:0:POS:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):321:0.0 |==> 1.0
+99:LVR:0:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):321:0.0 |==> -1.0
+100:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):321:var = 0.0 |==> <NO-OP>
+101:LVR:POS:0:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):322:1 |==> 0
+102:LVR:POS:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):322:1 |==> -1
+103:ROR:>(int,int):!=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):322:length > 1 |==> length != 1
+104:ROR:>(int,int):<(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):322:length > 1 |==> length < 1
+105:ROR:>(int,int):<=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):322:length > 1 |==> length <= 1
+106:ROR:>(int,int):==(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):322:length > 1 |==> length == 1
+107:ROR:>(int,int):>=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):322:length > 1 |==> length >= 1
+108:ROR:>(int,int):FALSE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):322:length > 1 |==> false
+109:ROR:>(int,int):TRUE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):322:length > 1 |==> true
+110:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],int,int):325:var = evaluate(values, weights, m, begin, length) |==> <NO-OP>
+111:LVR:0:POS:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[]):370:0 |==> 1
+112:LVR:0:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[]):370:0 |==> -1
+113:COR:test(values, begin, length):TRUE:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):404:test(values, begin, length) |==> false
+114:COR:test(values, begin, length):FALSE:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):404:test(values, begin, length) |==> true
+115:LVR:POS:0:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):405:1 |==> 0
+116:LVR:POS:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):405:1 |==> -1
+117:ROR:==(int,int):!=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):405:length == 1 |==> length != 1
+118:ROR:==(int,int):<(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):405:length == 1 |==> length < 1
+119:ROR:==(int,int):<=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):405:length == 1 |==> length <= 1
+120:ROR:==(int,int):>(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):405:length == 1 |==> length > 1
+121:ROR:==(int,int):>=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):405:length == 1 |==> length >= 1
+122:ROR:==(int,int):FALSE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):405:length == 1 |==> false
+123:ROR:==(int,int):TRUE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):405:length == 1 |==> true
+124:LVR:0:POS:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):406:0.0 |==> 1.0
+125:LVR:0:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):406:0.0 |==> -1.0
+126:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):406:var = 0.0 |==> <NO-OP>
+127:LVR:POS:0:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):407:1 |==> 0
+128:LVR:POS:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):407:1 |==> -1
+129:ROR:>(int,int):!=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):407:length > 1 |==> length != 1
+130:ROR:>(int,int):<(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):407:length > 1 |==> length < 1
+131:ROR:>(int,int):<=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):407:length > 1 |==> length <= 1
+132:ROR:>(int,int):==(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):407:length > 1 |==> length == 1
+133:ROR:>(int,int):>=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):407:length > 1 |==> length >= 1
+134:ROR:>(int,int):FALSE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):407:length > 1 |==> false
+135:ROR:>(int,int):TRUE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):407:length > 1 |==> true
+136:LVR:0:POS:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):408:0.0 |==> 1.0
+137:LVR:0:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):408:0.0 |==> -1.0
+138:LVR:0:POS:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):409:0.0 |==> 1.0
+139:LVR:0:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):409:0.0 |==> -1.0
+140:LVR:0:POS:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):410:0.0 |==> 1.0
+141:LVR:0:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):410:0.0 |==> -1.0
+142:AOR:+(int,int):%(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):411:begin + length |==> begin % length
+143:AOR:+(int,int):*(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):411:begin + length |==> begin * length
+144:AOR:+(int,int):-(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):411:begin + length |==> begin - length
+145:AOR:+(int,int):/(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):411:begin + length |==> begin / length
+146:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):411:i < begin + length |==> i != begin + length
+147:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):411:i < begin + length |==> i <= begin + length
+148:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):411:i < begin + length |==> i == begin + length
+149:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):411:i < begin + length |==> i > begin + length
+150:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):411:i < begin + length |==> i >= begin + length
+151:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):411:i < begin + length |==> false
+152:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):411:i < begin + length |==> true
+153:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):412:values[i] - mean |==> values[i] % mean
+154:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):412:values[i] - mean |==> values[i] * mean
+155:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):412:values[i] - mean |==> values[i] + mean
+156:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):412:values[i] - mean |==> values[i] / mean
+157:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):412:dev = values[i] - mean |==> <NO-OP>
+158:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):413:dev * dev |==> dev % dev
+159:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):413:dev * dev |==> dev + dev
+160:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):413:dev * dev |==> dev - dev
+161:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):413:dev * dev |==> dev / dev
+162:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):413:accum += dev * dev |==> <NO-OP>
+163:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):414:accum2 += dev |==> <NO-OP>
+164:COR:isBiasCorrected:TRUE:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):417:isBiasCorrected |==> false
+165:COR:isBiasCorrected:FALSE:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):417:isBiasCorrected |==> true
+166:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:accum2 * accum2 |==> accum2 % accum2
+167:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:accum2 * accum2 |==> accum2 + accum2
+168:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:accum2 * accum2 |==> accum2 - accum2
+169:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:accum2 * accum2 |==> accum2 / accum2
+170:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:accum2 * accum2 / len |==> accum2 * accum2 % len
+171:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:accum2 * accum2 / len |==> accum2 * accum2 * len
+172:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:accum2 * accum2 / len |==> accum2 * accum2 + len
+173:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:accum2 * accum2 / len |==> accum2 * accum2 - len
+174:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:accum - (accum2 * accum2 / len) |==> accum % (accum2 * accum2 / len)
+175:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:accum - (accum2 * accum2 / len) |==> accum * (accum2 * accum2 / len)
+176:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:accum - (accum2 * accum2 / len) |==> accum + (accum2 * accum2 / len)
+177:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:accum - (accum2 * accum2 / len) |==> accum / (accum2 * accum2 / len)
+178:LVR:POS:0:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:1.0 |==> 0.0
+179:LVR:POS:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:1.0 |==> -1.0
+180:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:len - 1.0 |==> len % 1.0
+181:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:len - 1.0 |==> len * 1.0
+182:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:len - 1.0 |==> len + 1.0
+183:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:len - 1.0 |==> len / 1.0
+184:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:(accum - (accum2 * accum2 / len)) / (len - 1.0) |==> (accum - (accum2 * accum2 / len)) % (len - 1.0)
+185:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:(accum - (accum2 * accum2 / len)) / (len - 1.0) |==> (accum - (accum2 * accum2 / len)) * (len - 1.0)
+186:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:(accum - (accum2 * accum2 / len)) / (len - 1.0) |==> (accum - (accum2 * accum2 / len)) + (len - 1.0)
+187:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:(accum - (accum2 * accum2 / len)) / (len - 1.0) |==> (accum - (accum2 * accum2 / len)) - (len - 1.0)
+188:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):418:var = (accum - (accum2 * accum2 / len)) / (len - 1.0) |==> <NO-OP>
+189:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):420:accum2 * accum2 |==> accum2 % accum2
+190:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):420:accum2 * accum2 |==> accum2 + accum2
+191:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):420:accum2 * accum2 |==> accum2 - accum2
+192:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):420:accum2 * accum2 |==> accum2 / accum2
+193:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):420:accum2 * accum2 / len |==> accum2 * accum2 % len
+194:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):420:accum2 * accum2 / len |==> accum2 * accum2 * len
+195:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):420:accum2 * accum2 / len |==> accum2 * accum2 + len
+196:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):420:accum2 * accum2 / len |==> accum2 * accum2 - len
+197:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):420:accum - (accum2 * accum2 / len) |==> accum % (accum2 * accum2 / len)
+198:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):420:accum - (accum2 * accum2 / len) |==> accum * (accum2 * accum2 / len)
+199:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):420:accum - (accum2 * accum2 / len) |==> accum + (accum2 * accum2 / len)
+200:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):420:accum - (accum2 * accum2 / len) |==> accum / (accum2 * accum2 / len)
+201:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):420:(accum - (accum2 * accum2 / len)) / len |==> (accum - (accum2 * accum2 / len)) % len
+202:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):420:(accum - (accum2 * accum2 / len)) / len |==> (accum - (accum2 * accum2 / len)) * len
+203:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):420:(accum - (accum2 * accum2 / len)) / len |==> (accum - (accum2 * accum2 / len)) + len
+204:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):420:(accum - (accum2 * accum2 / len)) / len |==> (accum - (accum2 * accum2 / len)) - len
+205:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double,int,int):420:var = (accum - (accum2 * accum2 / len)) / len |==> <NO-OP>
+206:LVR:0:POS:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double):453:0 |==> 1
+207:LVR:0:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double):453:0 |==> -1
+208:COR:test(values, weights, begin, length):TRUE:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):506:test(values, weights, begin, length) |==> false
+209:COR:test(values, weights, begin, length):FALSE:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):506:test(values, weights, begin, length) |==> true
+210:LVR:POS:0:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):507:1 |==> 0
+211:LVR:POS:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):507:1 |==> -1
+212:ROR:==(int,int):!=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):507:length == 1 |==> length != 1
+213:ROR:==(int,int):<(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):507:length == 1 |==> length < 1
+214:ROR:==(int,int):<=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):507:length == 1 |==> length <= 1
+215:ROR:==(int,int):>(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):507:length == 1 |==> length > 1
+216:ROR:==(int,int):>=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):507:length == 1 |==> length >= 1
+217:ROR:==(int,int):FALSE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):507:length == 1 |==> false
+218:ROR:==(int,int):TRUE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):507:length == 1 |==> true
+219:LVR:0:POS:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):508:0.0 |==> 1.0
+220:LVR:0:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):508:0.0 |==> -1.0
+221:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):508:var = 0.0 |==> <NO-OP>
+222:LVR:POS:0:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):509:1 |==> 0
+223:LVR:POS:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):509:1 |==> -1
+224:ROR:>(int,int):!=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):509:length > 1 |==> length != 1
+225:ROR:>(int,int):<(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):509:length > 1 |==> length < 1
+226:ROR:>(int,int):<=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):509:length > 1 |==> length <= 1
+227:ROR:>(int,int):==(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):509:length > 1 |==> length == 1
+228:ROR:>(int,int):>=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):509:length > 1 |==> length >= 1
+229:ROR:>(int,int):FALSE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):509:length > 1 |==> false
+230:ROR:>(int,int):TRUE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):509:length > 1 |==> true
+231:LVR:0:POS:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):510:0.0 |==> 1.0
+232:LVR:0:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):510:0.0 |==> -1.0
+233:LVR:0:POS:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):511:0.0 |==> 1.0
+234:LVR:0:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):511:0.0 |==> -1.0
+235:LVR:0:POS:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):512:0.0 |==> 1.0
+236:LVR:0:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):512:0.0 |==> -1.0
+237:AOR:+(int,int):%(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):513:begin + length |==> begin % length
+238:AOR:+(int,int):*(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):513:begin + length |==> begin * length
+239:AOR:+(int,int):-(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):513:begin + length |==> begin - length
+240:AOR:+(int,int):/(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):513:begin + length |==> begin / length
+241:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):513:i < begin + length |==> i != begin + length
+242:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):513:i < begin + length |==> i <= begin + length
+243:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):513:i < begin + length |==> i == begin + length
+244:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):513:i < begin + length |==> i > begin + length
+245:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):513:i < begin + length |==> i >= begin + length
+246:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):513:i < begin + length |==> false
+247:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):513:i < begin + length |==> true
+248:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):514:values[i] - mean |==> values[i] % mean
+249:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):514:values[i] - mean |==> values[i] * mean
+250:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):514:values[i] - mean |==> values[i] + mean
+251:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):514:values[i] - mean |==> values[i] / mean
+252:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):514:dev = values[i] - mean |==> <NO-OP>
+253:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):515:dev * dev |==> dev % dev
+254:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):515:dev * dev |==> dev + dev
+255:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):515:dev * dev |==> dev - dev
+256:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):515:dev * dev |==> dev / dev
+257:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):515:weights[i] * (dev * dev) |==> weights[i] % (dev * dev)
+258:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):515:weights[i] * (dev * dev) |==> weights[i] + (dev * dev)
+259:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):515:weights[i] * (dev * dev) |==> weights[i] - (dev * dev)
+260:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):515:weights[i] * (dev * dev) |==> weights[i] / (dev * dev)
+261:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):515:accum += weights[i] * (dev * dev) |==> <NO-OP>
+262:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):516:weights[i] * dev |==> weights[i] % dev
+263:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):516:weights[i] * dev |==> weights[i] + dev
+264:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):516:weights[i] * dev |==> weights[i] - dev
+265:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):516:weights[i] * dev |==> weights[i] / dev
+266:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):516:accum2 += weights[i] * dev |==> <NO-OP>
+267:LVR:0:POS:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):519:0 |==> 1
+268:LVR:0:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):519:0 |==> -1
+269:AOR:+(int,int):%(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):520:begin + length |==> begin % length
+270:AOR:+(int,int):*(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):520:begin + length |==> begin * length
+271:AOR:+(int,int):-(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):520:begin + length |==> begin - length
+272:AOR:+(int,int):/(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):520:begin + length |==> begin / length
+273:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):520:i < begin + length |==> i != begin + length
+274:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):520:i < begin + length |==> i <= begin + length
+275:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):520:i < begin + length |==> i == begin + length
+276:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):520:i < begin + length |==> i > begin + length
+277:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):520:i < begin + length |==> i >= begin + length
+278:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):520:i < begin + length |==> false
+279:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):520:i < begin + length |==> true
+280:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):521:sumWts += weights[i] |==> <NO-OP>
+281:COR:isBiasCorrected:TRUE:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):524:isBiasCorrected |==> false
+282:COR:isBiasCorrected:FALSE:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):524:isBiasCorrected |==> true
+283:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:accum2 * accum2 |==> accum2 % accum2
+284:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:accum2 * accum2 |==> accum2 + accum2
+285:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:accum2 * accum2 |==> accum2 - accum2
+286:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:accum2 * accum2 |==> accum2 / accum2
+287:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:accum2 * accum2 / sumWts |==> accum2 * accum2 % sumWts
+288:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:accum2 * accum2 / sumWts |==> accum2 * accum2 * sumWts
+289:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:accum2 * accum2 / sumWts |==> accum2 * accum2 + sumWts
+290:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:accum2 * accum2 / sumWts |==> accum2 * accum2 - sumWts
+291:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:accum - (accum2 * accum2 / sumWts) |==> accum % (accum2 * accum2 / sumWts)
+292:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:accum - (accum2 * accum2 / sumWts) |==> accum * (accum2 * accum2 / sumWts)
+293:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:accum - (accum2 * accum2 / sumWts) |==> accum + (accum2 * accum2 / sumWts)
+294:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:accum - (accum2 * accum2 / sumWts) |==> accum / (accum2 * accum2 / sumWts)
+295:LVR:POS:0:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:1.0 |==> 0.0
+296:LVR:POS:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:1.0 |==> -1.0
+297:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:sumWts - 1.0 |==> sumWts % 1.0
+298:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:sumWts - 1.0 |==> sumWts * 1.0
+299:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:sumWts - 1.0 |==> sumWts + 1.0
+300:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:sumWts - 1.0 |==> sumWts / 1.0
+301:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:(accum - (accum2 * accum2 / sumWts)) / (sumWts - 1.0) |==> (accum - (accum2 * accum2 / sumWts)) % (sumWts - 1.0)
+302:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:(accum - (accum2 * accum2 / sumWts)) / (sumWts - 1.0) |==> (accum - (accum2 * accum2 / sumWts)) * (sumWts - 1.0)
+303:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:(accum - (accum2 * accum2 / sumWts)) / (sumWts - 1.0) |==> (accum - (accum2 * accum2 / sumWts)) + (sumWts - 1.0)
+304:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:(accum - (accum2 * accum2 / sumWts)) / (sumWts - 1.0) |==> (accum - (accum2 * accum2 / sumWts)) - (sumWts - 1.0)
+305:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):525:var = (accum - (accum2 * accum2 / sumWts)) / (sumWts - 1.0) |==> <NO-OP>
+306:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):527:accum2 * accum2 |==> accum2 % accum2
+307:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):527:accum2 * accum2 |==> accum2 + accum2
+308:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):527:accum2 * accum2 |==> accum2 - accum2
+309:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):527:accum2 * accum2 |==> accum2 / accum2
+310:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):527:accum2 * accum2 / sumWts |==> accum2 * accum2 % sumWts
+311:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):527:accum2 * accum2 / sumWts |==> accum2 * accum2 * sumWts
+312:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):527:accum2 * accum2 / sumWts |==> accum2 * accum2 + sumWts
+313:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):527:accum2 * accum2 / sumWts |==> accum2 * accum2 - sumWts
+314:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):527:accum - (accum2 * accum2 / sumWts) |==> accum % (accum2 * accum2 / sumWts)
+315:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):527:accum - (accum2 * accum2 / sumWts) |==> accum * (accum2 * accum2 / sumWts)
+316:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):527:accum - (accum2 * accum2 / sumWts) |==> accum + (accum2 * accum2 / sumWts)
+317:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):527:accum - (accum2 * accum2 / sumWts) |==> accum / (accum2 * accum2 / sumWts)
+318:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):527:(accum - (accum2 * accum2 / sumWts)) / sumWts |==> (accum - (accum2 * accum2 / sumWts)) % sumWts
+319:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):527:(accum - (accum2 * accum2 / sumWts)) / sumWts |==> (accum - (accum2 * accum2 / sumWts)) * sumWts
+320:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):527:(accum - (accum2 * accum2 / sumWts)) / sumWts |==> (accum - (accum2 * accum2 / sumWts)) + sumWts
+321:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):527:(accum - (accum2 * accum2 / sumWts)) / sumWts |==> (accum - (accum2 * accum2 / sumWts)) - sumWts
+322:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double,int,int):527:var = (accum - (accum2 * accum2 / sumWts)) / sumWts |==> <NO-OP>
+323:LVR:0:POS:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double):576:0 |==> 1
+324:LVR:0:NEG:org.apache.commons.math.stat.descriptive.moment.Variance@evaluate(double[],double[],double):576:0 |==> -1
+325:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@setBiasCorrected(boolean):590:this.isBiasCorrected = biasCorrected |==> <NO-OP>
+326:STD:<CALL>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@copy():599:copy(this, result) |==> <NO-OP>
+327:STD:<CALL>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@copy(org.apache.commons.math.stat.descriptive.moment.Variance,org.apache.commons.math.stat.descriptive.moment.Variance):613:MathUtils.checkNotNull(source) |==> <NO-OP>
+328:STD:<CALL>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@copy(org.apache.commons.math.stat.descriptive.moment.Variance,org.apache.commons.math.stat.descriptive.moment.Variance):614:MathUtils.checkNotNull(dest) |==> <NO-OP>
+329:STD:<CALL>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@copy(org.apache.commons.math.stat.descriptive.moment.Variance,org.apache.commons.math.stat.descriptive.moment.Variance):615:dest.setData(source.getDataRef()) |==> <NO-OP>
+330:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@copy(org.apache.commons.math.stat.descriptive.moment.Variance,org.apache.commons.math.stat.descriptive.moment.Variance):616:dest.moment = source.moment.copy() |==> <NO-OP>
+331:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@copy(org.apache.commons.math.stat.descriptive.moment.Variance,org.apache.commons.math.stat.descriptive.moment.Variance):617:dest.isBiasCorrected = source.isBiasCorrected |==> <NO-OP>
+332:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.descriptive.moment.Variance@copy(org.apache.commons.math.stat.descriptive.moment.Variance,org.apache.commons.math.stat.descriptive.moment.Variance):618:dest.incMoment = source.incMoment |==> <NO-OP>

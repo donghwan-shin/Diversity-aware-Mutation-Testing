@@ -1,0 +1,611 @@
+1:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@<init>():39:1.0 |==> 0.0
+2:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@<init>():39:1.0 |==> -1.0
+3:STD:<CALL>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@<init>(org.apache.commons.math.distribution.ChiSquaredDistribution):50:setDistribution(x) |==> <NO-OP>
+4:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:2 |==> 0
+5:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:2 |==> -2
+6:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:expected.length < 2 |==> expected.length != 2
+7:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:expected.length < 2 |==> expected.length <= 2
+8:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:expected.length < 2 |==> expected.length == 2
+9:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:expected.length < 2 |==> expected.length > 2
+10:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:expected.length < 2 |==> expected.length >= 2
+11:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:expected.length < 2 |==> false
+12:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:expected.length < 2 |==> true
+13:ROR:!=(int,int):<(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:expected.length != observed.length |==> expected.length < observed.length
+14:ROR:!=(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:expected.length != observed.length |==> expected.length <= observed.length
+15:ROR:!=(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:expected.length != observed.length |==> expected.length == observed.length
+16:ROR:!=(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:expected.length != observed.length |==> expected.length > observed.length
+17:ROR:!=(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:expected.length != observed.length |==> expected.length >= observed.length
+18:ROR:!=(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:expected.length != observed.length |==> false
+19:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:expected.length != observed.length |==> true
+20:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:(expected.length < 2) || (expected.length != observed.length) |==> (expected.length < 2) != (expected.length != observed.length)
+21:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:(expected.length < 2) || (expected.length != observed.length) |==> (expected.length < 2) && (expected.length != observed.length)
+22:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:(expected.length < 2) || (expected.length != observed.length) |==> (expected.length < 2) == (expected.length != observed.length)
+23:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:(expected.length < 2) || (expected.length != observed.length) |==> false
+24:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:(expected.length < 2) || (expected.length != observed.length) |==> (expected.length < 2)
+25:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:(expected.length < 2) || (expected.length != observed.length) |==> (expected.length != observed.length)
+26:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):66:(expected.length < 2) || (expected.length != observed.length) |==> true
+27:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):70:!isPositive(expected) || !isNonNegative(observed) |==> !isPositive(expected) != !isNonNegative(observed)
+28:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):70:!isPositive(expected) || !isNonNegative(observed) |==> !isPositive(expected) && !isNonNegative(observed)
+29:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):70:!isPositive(expected) || !isNonNegative(observed) |==> !isPositive(expected) == !isNonNegative(observed)
+30:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):70:!isPositive(expected) || !isNonNegative(observed) |==> false
+31:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):70:!isPositive(expected) || !isNonNegative(observed) |==> !isPositive(expected)
+32:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):70:!isPositive(expected) || !isNonNegative(observed) |==> !isNonNegative(observed)
+33:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):70:!isPositive(expected) || !isNonNegative(observed) |==> true
+34:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):74:0.0 |==> 1.0
+35:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):74:0.0 |==> -1.0
+36:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):75:0.0 |==> 1.0
+37:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):75:0.0 |==> -1.0
+38:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):76:0 |==> 1
+39:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):76:0 |==> -1
+40:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):76:i < observed.length |==> i != observed.length
+41:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):76:i < observed.length |==> i <= observed.length
+42:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):76:i < observed.length |==> i == observed.length
+43:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):76:i < observed.length |==> i > observed.length
+44:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):76:i < observed.length |==> i >= observed.length
+45:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):76:i < observed.length |==> false
+46:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):76:i < observed.length |==> true
+47:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):77:sumExpected += expected[i] |==> <NO-OP>
+48:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):78:sumObserved += observed[i] |==> <NO-OP>
+49:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):80:1.0 |==> 0.0
+50:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):80:1.0 |==> -1.0
+51:LVR:FALSE:TRUE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):81:false |==> true
+52:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):82:sumExpected - sumObserved |==> sumExpected % sumObserved
+53:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):82:sumExpected - sumObserved |==> sumExpected * sumObserved
+54:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):82:sumExpected - sumObserved |==> sumExpected + sumObserved
+55:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):82:sumExpected - sumObserved |==> sumExpected / sumObserved
+56:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):82:1.0E-5 |==> 0.0
+57:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):82:1.0E-5 |==> -1.0E-5
+58:ROR:>(double,double):!=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):82:Math.abs(sumExpected - sumObserved) > 1.0E-5 |==> Math.abs(sumExpected - sumObserved) != 1.0E-5
+59:ROR:>(double,double):<(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):82:Math.abs(sumExpected - sumObserved) > 1.0E-5 |==> Math.abs(sumExpected - sumObserved) < 1.0E-5
+60:ROR:>(double,double):<=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):82:Math.abs(sumExpected - sumObserved) > 1.0E-5 |==> Math.abs(sumExpected - sumObserved) <= 1.0E-5
+61:ROR:>(double,double):==(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):82:Math.abs(sumExpected - sumObserved) > 1.0E-5 |==> Math.abs(sumExpected - sumObserved) == 1.0E-5
+62:ROR:>(double,double):>=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):82:Math.abs(sumExpected - sumObserved) > 1.0E-5 |==> Math.abs(sumExpected - sumObserved) >= 1.0E-5
+63:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):82:Math.abs(sumExpected - sumObserved) > 1.0E-5 |==> false
+64:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):82:Math.abs(sumExpected - sumObserved) > 1.0E-5 |==> true
+65:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):83:sumObserved / sumExpected |==> sumObserved % sumExpected
+66:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):83:sumObserved / sumExpected |==> sumObserved * sumExpected
+67:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):83:sumObserved / sumExpected |==> sumObserved + sumExpected
+68:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):83:sumObserved / sumExpected |==> sumObserved - sumExpected
+69:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):83:ratio = sumObserved / sumExpected |==> <NO-OP>
+70:LVR:TRUE:FALSE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):84:true |==> false
+71:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):84:rescale = true |==> <NO-OP>
+72:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):86:0.0 |==> 1.0
+73:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):86:0.0 |==> -1.0
+74:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):87:0.0 |==> 1.0
+75:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):87:0.0 |==> -1.0
+76:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):88:0 |==> 1
+77:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):88:0 |==> -1
+78:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):88:i < observed.length |==> i != observed.length
+79:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):88:i < observed.length |==> i <= observed.length
+80:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):88:i < observed.length |==> i == observed.length
+81:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):88:i < observed.length |==> i > observed.length
+82:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):88:i < observed.length |==> i >= observed.length
+83:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):88:i < observed.length |==> false
+84:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):88:i < observed.length |==> true
+85:COR:rescale:TRUE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):89:rescale |==> false
+86:COR:rescale:FALSE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):89:rescale |==> true
+87:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):90:ratio * expected[i] |==> ratio % expected[i]
+88:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):90:ratio * expected[i] |==> ratio + expected[i]
+89:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):90:ratio * expected[i] |==> ratio - expected[i]
+90:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):90:ratio * expected[i] |==> ratio / expected[i]
+91:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):90:(double)observed[i] - ratio * expected[i] |==> (double)observed[i] % (ratio * expected[i])
+92:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):90:(double)observed[i] - ratio * expected[i] |==> (double)observed[i] * (ratio * expected[i])
+93:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):90:(double)observed[i] - ratio * expected[i] |==> (double)observed[i] + ratio * expected[i]
+94:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):90:(double)observed[i] - ratio * expected[i] |==> (double)observed[i] / (ratio * expected[i])
+95:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):90:dev = ((double)observed[i] - ratio * expected[i]) |==> <NO-OP>
+96:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):91:dev * dev |==> dev % dev
+97:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):91:dev * dev |==> dev + dev
+98:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):91:dev * dev |==> dev - dev
+99:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):91:dev * dev |==> dev / dev
+100:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):91:ratio * expected[i] |==> ratio % expected[i]
+101:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):91:ratio * expected[i] |==> ratio + expected[i]
+102:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):91:ratio * expected[i] |==> ratio - expected[i]
+103:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):91:ratio * expected[i] |==> ratio / expected[i]
+104:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):91:dev * dev / (ratio * expected[i]) |==> dev * dev % (ratio * expected[i])
+105:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):91:dev * dev / (ratio * expected[i]) |==> dev * dev * (ratio * expected[i])
+106:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):91:dev * dev / (ratio * expected[i]) |==> dev * dev + (ratio * expected[i])
+107:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):91:dev * dev / (ratio * expected[i]) |==> dev * dev - (ratio * expected[i])
+108:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):91:sumSq += dev * dev / (ratio * expected[i]) |==> <NO-OP>
+109:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):93:(double)observed[i] - expected[i] |==> (double)observed[i] % expected[i]
+110:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):93:(double)observed[i] - expected[i] |==> (double)observed[i] * expected[i]
+111:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):93:(double)observed[i] - expected[i] |==> (double)observed[i] + expected[i]
+112:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):93:(double)observed[i] - expected[i] |==> (double)observed[i] / expected[i]
+113:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):93:dev = ((double)observed[i] - expected[i]) |==> <NO-OP>
+114:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):94:dev * dev |==> dev % dev
+115:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):94:dev * dev |==> dev + dev
+116:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):94:dev * dev |==> dev - dev
+117:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):94:dev * dev |==> dev / dev
+118:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):94:dev * dev / expected[i] |==> dev * dev % expected[i]
+119:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):94:dev * dev / expected[i] |==> dev * dev * expected[i]
+120:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):94:dev * dev / expected[i] |==> dev * dev + expected[i]
+121:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):94:dev * dev / expected[i] |==> dev * dev - expected[i]
+122:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(double[],long[]):94:sumSq += dev * dev / expected[i] |==> <NO-OP>
+123:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[]):114:1.0 |==> 0.0
+124:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[]):114:1.0 |==> -1.0
+125:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[]):114:expected.length - 1.0 |==> expected.length % 1.0
+126:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[]):114:expected.length - 1.0 |==> expected.length * 1.0
+127:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[]):114:expected.length - 1.0 |==> expected.length + 1.0
+128:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[]):114:expected.length - 1.0 |==> expected.length / 1.0
+129:STD:<CALL>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[]):114:distribution.setDegreesOfFreedom(expected.length - 1.0) |==> <NO-OP>
+130:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[]):115:1.0 |==> 0.0
+131:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[]):115:1.0 |==> -1.0
+132:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[]):115:1.0 - distribution.cumulativeProbability(chiSquare(expected, observed)) |==> 1.0 % distribution.cumulativeProbability(chiSquare(expected, observed))
+133:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[]):115:1.0 - distribution.cumulativeProbability(chiSquare(expected, observed)) |==> 1.0 * distribution.cumulativeProbability(chiSquare(expected, observed))
+134:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[]):115:1.0 - distribution.cumulativeProbability(chiSquare(expected, observed)) |==> 1.0 + distribution.cumulativeProbability(chiSquare(expected, observed))
+135:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[]):115:1.0 - distribution.cumulativeProbability(chiSquare(expected, observed)) |==> 1.0 / distribution.cumulativeProbability(chiSquare(expected, observed))
+136:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:0 |==> 1
+137:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:0 |==> -1
+138:ROR:<=(double,double):!=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:alpha <= 0 |==> alpha != 0
+139:ROR:<=(double,double):<(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:alpha <= 0 |==> alpha < 0
+140:ROR:<=(double,double):==(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:alpha <= 0 |==> alpha == 0
+141:ROR:<=(double,double):>(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:alpha <= 0 |==> alpha > 0
+142:ROR:<=(double,double):>=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:alpha <= 0 |==> alpha >= 0
+143:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:alpha <= 0 |==> false
+144:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:alpha <= 0 |==> true
+145:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:0.5 |==> 0.0
+146:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:0.5 |==> -0.5
+147:ROR:>(double,double):!=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:alpha > 0.5 |==> alpha != 0.5
+148:ROR:>(double,double):<(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:alpha > 0.5 |==> alpha < 0.5
+149:ROR:>(double,double):<=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:alpha > 0.5 |==> alpha <= 0.5
+150:ROR:>(double,double):==(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:alpha > 0.5 |==> alpha == 0.5
+151:ROR:>(double,double):>=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:alpha > 0.5 |==> alpha >= 0.5
+152:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:alpha > 0.5 |==> false
+153:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:alpha > 0.5 |==> true
+154:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:(alpha <= 0) || (alpha > 0.5) |==> (alpha <= 0) != (alpha > 0.5)
+155:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:(alpha <= 0) || (alpha > 0.5) |==> (alpha <= 0) && (alpha > 0.5)
+156:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:(alpha <= 0) || (alpha > 0.5) |==> (alpha <= 0) == (alpha > 0.5)
+157:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:(alpha <= 0) || (alpha > 0.5) |==> false
+158:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:(alpha <= 0) || (alpha > 0.5) |==> (alpha <= 0)
+159:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:(alpha <= 0) || (alpha > 0.5) |==> (alpha > 0.5)
+160:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):135:(alpha <= 0) || (alpha > 0.5) |==> true
+161:ROR:<(double,double):!=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):139:chiSquareTest(expected, observed) < alpha |==> chiSquareTest(expected, observed) != alpha
+162:ROR:<(double,double):<=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):139:chiSquareTest(expected, observed) < alpha |==> chiSquareTest(expected, observed) <= alpha
+163:ROR:<(double,double):==(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):139:chiSquareTest(expected, observed) < alpha |==> chiSquareTest(expected, observed) == alpha
+164:ROR:<(double,double):>(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):139:chiSquareTest(expected, observed) < alpha |==> chiSquareTest(expected, observed) > alpha
+165:ROR:<(double,double):>=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):139:chiSquareTest(expected, observed) < alpha |==> chiSquareTest(expected, observed) >= alpha
+166:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):139:chiSquareTest(expected, observed) < alpha |==> false
+167:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(double[],long[],double):139:chiSquareTest(expected, observed) < alpha |==> true
+168:STD:<CALL>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):149:checkArray(counts) |==> <NO-OP>
+169:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):151:0 |==> 1
+170:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):151:0 |==> -1
+171:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):156:0.0 |==> 1.0
+172:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):156:0.0 |==> -1.0
+173:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):157:0 |==> 1
+174:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):157:0 |==> -1
+175:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):157:row < nRows |==> row != nRows
+176:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):157:row < nRows |==> row <= nRows
+177:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):157:row < nRows |==> row == nRows
+178:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):157:row < nRows |==> row > nRows
+179:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):157:row < nRows |==> row >= nRows
+180:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):157:row < nRows |==> false
+181:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):157:row < nRows |==> true
+182:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):158:0 |==> 1
+183:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):158:0 |==> -1
+184:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):158:col < nCols |==> col != nCols
+185:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):158:col < nCols |==> col <= nCols
+186:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):158:col < nCols |==> col == nCols
+187:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):158:col < nCols |==> col > nCols
+188:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):158:col < nCols |==> col >= nCols
+189:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):158:col < nCols |==> false
+190:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):158:col < nCols |==> true
+191:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):159:rowSum[row] += (double)counts[row][col] |==> <NO-OP>
+192:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):160:colSum[col] += (double)counts[row][col] |==> <NO-OP>
+193:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):161:total += (double)counts[row][col] |==> <NO-OP>
+194:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):166:0.0 |==> 1.0
+195:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):166:0.0 |==> -1.0
+196:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):167:0.0 |==> 1.0
+197:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):167:0.0 |==> -1.0
+198:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):168:0 |==> 1
+199:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):168:0 |==> -1
+200:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):168:row < nRows |==> row != nRows
+201:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):168:row < nRows |==> row <= nRows
+202:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):168:row < nRows |==> row == nRows
+203:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):168:row < nRows |==> row > nRows
+204:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):168:row < nRows |==> row >= nRows
+205:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):168:row < nRows |==> false
+206:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):168:row < nRows |==> true
+207:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):169:0 |==> 1
+208:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):169:0 |==> -1
+209:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):169:col < nCols |==> col != nCols
+210:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):169:col < nCols |==> col <= nCols
+211:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):169:col < nCols |==> col == nCols
+212:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):169:col < nCols |==> col > nCols
+213:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):169:col < nCols |==> col >= nCols
+214:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):169:col < nCols |==> false
+215:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):169:col < nCols |==> true
+216:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):170:rowSum[row] * colSum[col] |==> rowSum[row] % colSum[col]
+217:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):170:rowSum[row] * colSum[col] |==> rowSum[row] + colSum[col]
+218:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):170:rowSum[row] * colSum[col] |==> rowSum[row] - colSum[col]
+219:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):170:rowSum[row] * colSum[col] |==> rowSum[row] / colSum[col]
+220:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):170:(rowSum[row] * colSum[col]) / total |==> (rowSum[row] * colSum[col]) % total
+221:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):170:(rowSum[row] * colSum[col]) / total |==> (rowSum[row] * colSum[col]) * total
+222:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):170:(rowSum[row] * colSum[col]) / total |==> (rowSum[row] * colSum[col]) + total
+223:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):170:(rowSum[row] * colSum[col]) / total |==> (rowSum[row] * colSum[col]) - total
+224:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):170:expected = (rowSum[row] * colSum[col]) / total |==> <NO-OP>
+225:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):171:(double)counts[row][col] - expected |==> (double)counts[row][col] % expected
+226:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):171:(double)counts[row][col] - expected |==> (double)counts[row][col] * expected
+227:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):171:(double)counts[row][col] - expected |==> (double)counts[row][col] + expected
+228:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):171:(double)counts[row][col] - expected |==> (double)counts[row][col] / expected
+229:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):172:(double)counts[row][col] - expected |==> (double)counts[row][col] % expected
+230:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):172:(double)counts[row][col] - expected |==> (double)counts[row][col] * expected
+231:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):172:(double)counts[row][col] - expected |==> (double)counts[row][col] + expected
+232:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):172:(double)counts[row][col] - expected |==> (double)counts[row][col] / expected
+233:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):171:((double)counts[row][col] - expected) * ((double)counts[row][col] - expected) |==> ((double)counts[row][col] - expected) % ((double)counts[row][col] - expected)
+234:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):171:((double)counts[row][col] - expected) * ((double)counts[row][col] - expected) |==> ((double)counts[row][col] - expected) + ((double)counts[row][col] - expected)
+235:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):171:((double)counts[row][col] - expected) * ((double)counts[row][col] - expected) |==> ((double)counts[row][col] - expected) - ((double)counts[row][col] - expected)
+236:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):171:((double)counts[row][col] - expected) * ((double)counts[row][col] - expected) |==> ((double)counts[row][col] - expected) / ((double)counts[row][col] - expected)
+237:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):171:(((double)counts[row][col] - expected) * ((double)counts[row][col] - expected)) / expected |==> (((double)counts[row][col] - expected) * ((double)counts[row][col] - expected)) % expected
+238:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):171:(((double)counts[row][col] - expected) * ((double)counts[row][col] - expected)) / expected |==> (((double)counts[row][col] - expected) * ((double)counts[row][col] - expected)) * expected
+239:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):171:(((double)counts[row][col] - expected) * ((double)counts[row][col] - expected)) / expected |==> (((double)counts[row][col] - expected) * ((double)counts[row][col] - expected)) + expected
+240:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):171:(((double)counts[row][col] - expected) * ((double)counts[row][col] - expected)) / expected |==> (((double)counts[row][col] - expected) * ((double)counts[row][col] - expected)) - expected
+241:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquare(long[][]):171:sumSq += (((double)counts[row][col] - expected) * ((double)counts[row][col] - expected)) / expected |==> <NO-OP>
+242:STD:<CALL>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):186:checkArray(counts) |==> <NO-OP>
+243:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:1 |==> 0
+244:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:1 |==> -1
+245:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:(double)counts.length - 1 |==> (double)counts.length % 1
+246:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:(double)counts.length - 1 |==> (double)counts.length * 1
+247:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:(double)counts.length - 1 |==> (double)counts.length + 1
+248:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:(double)counts.length - 1 |==> (double)counts.length / 1
+249:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:0 |==> 1
+250:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:0 |==> -1
+251:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:1 |==> 0
+252:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:1 |==> -1
+253:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:(double)counts[0].length - 1 |==> (double)counts[0].length % 1
+254:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:(double)counts[0].length - 1 |==> (double)counts[0].length * 1
+255:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:(double)counts[0].length - 1 |==> (double)counts[0].length + 1
+256:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:(double)counts[0].length - 1 |==> (double)counts[0].length / 1
+257:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:((double)counts.length - 1) * ((double)counts[0].length - 1) |==> ((double)counts.length - 1) % ((double)counts[0].length - 1)
+258:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:((double)counts.length - 1) * ((double)counts[0].length - 1) |==> ((double)counts.length - 1) + ((double)counts[0].length - 1)
+259:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:((double)counts.length - 1) * ((double)counts[0].length - 1) |==> ((double)counts.length - 1) - ((double)counts[0].length - 1)
+260:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):187:((double)counts.length - 1) * ((double)counts[0].length - 1) |==> ((double)counts.length - 1) / ((double)counts[0].length - 1)
+261:STD:<CALL>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):188:distribution.setDegreesOfFreedom(df) |==> <NO-OP>
+262:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):189:1 |==> 0
+263:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):189:1 |==> -1
+264:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):189:1 - distribution.cumulativeProbability(chiSquare(counts)) |==> 1 % distribution.cumulativeProbability(chiSquare(counts))
+265:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):189:1 - distribution.cumulativeProbability(chiSquare(counts)) |==> 1 * distribution.cumulativeProbability(chiSquare(counts))
+266:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):189:1 - distribution.cumulativeProbability(chiSquare(counts)) |==> 1 + distribution.cumulativeProbability(chiSquare(counts))
+267:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][]):189:1 - distribution.cumulativeProbability(chiSquare(counts)) |==> 1 / distribution.cumulativeProbability(chiSquare(counts))
+268:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:0 |==> 1
+269:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:0 |==> -1
+270:ROR:<=(double,double):!=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:alpha <= 0 |==> alpha != 0
+271:ROR:<=(double,double):<(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:alpha <= 0 |==> alpha < 0
+272:ROR:<=(double,double):==(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:alpha <= 0 |==> alpha == 0
+273:ROR:<=(double,double):>(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:alpha <= 0 |==> alpha > 0
+274:ROR:<=(double,double):>=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:alpha <= 0 |==> alpha >= 0
+275:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:alpha <= 0 |==> false
+276:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:alpha <= 0 |==> true
+277:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:0.5 |==> 0.0
+278:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:0.5 |==> -0.5
+279:ROR:>(double,double):!=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:alpha > 0.5 |==> alpha != 0.5
+280:ROR:>(double,double):<(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:alpha > 0.5 |==> alpha < 0.5
+281:ROR:>(double,double):<=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:alpha > 0.5 |==> alpha <= 0.5
+282:ROR:>(double,double):==(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:alpha > 0.5 |==> alpha == 0.5
+283:ROR:>(double,double):>=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:alpha > 0.5 |==> alpha >= 0.5
+284:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:alpha > 0.5 |==> false
+285:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:alpha > 0.5 |==> true
+286:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:(alpha <= 0) || (alpha > 0.5) |==> (alpha <= 0) != (alpha > 0.5)
+287:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:(alpha <= 0) || (alpha > 0.5) |==> (alpha <= 0) && (alpha > 0.5)
+288:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:(alpha <= 0) || (alpha > 0.5) |==> (alpha <= 0) == (alpha > 0.5)
+289:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:(alpha <= 0) || (alpha > 0.5) |==> false
+290:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:(alpha <= 0) || (alpha > 0.5) |==> (alpha <= 0)
+291:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:(alpha <= 0) || (alpha > 0.5) |==> (alpha > 0.5)
+292:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):202:(alpha <= 0) || (alpha > 0.5) |==> true
+293:ROR:<(double,double):!=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):205:chiSquareTest(counts) < alpha |==> chiSquareTest(counts) != alpha
+294:ROR:<(double,double):<=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):205:chiSquareTest(counts) < alpha |==> chiSquareTest(counts) <= alpha
+295:ROR:<(double,double):==(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):205:chiSquareTest(counts) < alpha |==> chiSquareTest(counts) == alpha
+296:ROR:<(double,double):>(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):205:chiSquareTest(counts) < alpha |==> chiSquareTest(counts) > alpha
+297:ROR:<(double,double):>=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):205:chiSquareTest(counts) < alpha |==> chiSquareTest(counts) >= alpha
+298:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):205:chiSquareTest(counts) < alpha |==> false
+299:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTest(long[][],double):205:chiSquareTest(counts) < alpha |==> true
+300:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:2 |==> 0
+301:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:2 |==> -2
+302:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:observed1.length < 2 |==> observed1.length != 2
+303:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:observed1.length < 2 |==> observed1.length <= 2
+304:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:observed1.length < 2 |==> observed1.length == 2
+305:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:observed1.length < 2 |==> observed1.length > 2
+306:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:observed1.length < 2 |==> observed1.length >= 2
+307:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:observed1.length < 2 |==> false
+308:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:observed1.length < 2 |==> true
+309:ROR:!=(int,int):<(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:observed1.length != observed2.length |==> observed1.length < observed2.length
+310:ROR:!=(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:observed1.length != observed2.length |==> observed1.length <= observed2.length
+311:ROR:!=(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:observed1.length != observed2.length |==> observed1.length == observed2.length
+312:ROR:!=(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:observed1.length != observed2.length |==> observed1.length > observed2.length
+313:ROR:!=(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:observed1.length != observed2.length |==> observed1.length >= observed2.length
+314:ROR:!=(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:observed1.length != observed2.length |==> false
+315:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:observed1.length != observed2.length |==> true
+316:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:(observed1.length < 2) || (observed1.length != observed2.length) |==> (observed1.length < 2) != (observed1.length != observed2.length)
+317:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:(observed1.length < 2) || (observed1.length != observed2.length) |==> (observed1.length < 2) && (observed1.length != observed2.length)
+318:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:(observed1.length < 2) || (observed1.length != observed2.length) |==> (observed1.length < 2) == (observed1.length != observed2.length)
+319:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:(observed1.length < 2) || (observed1.length != observed2.length) |==> false
+320:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:(observed1.length < 2) || (observed1.length != observed2.length) |==> (observed1.length < 2)
+321:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:(observed1.length < 2) || (observed1.length != observed2.length) |==> (observed1.length != observed2.length)
+322:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):218:(observed1.length < 2) || (observed1.length != observed2.length) |==> true
+323:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):223:!isNonNegative(observed1) || !isNonNegative(observed2) |==> !isNonNegative(observed1) != !isNonNegative(observed2)
+324:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):223:!isNonNegative(observed1) || !isNonNegative(observed2) |==> !isNonNegative(observed1) && !isNonNegative(observed2)
+325:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):223:!isNonNegative(observed1) || !isNonNegative(observed2) |==> !isNonNegative(observed1) == !isNonNegative(observed2)
+326:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):223:!isNonNegative(observed1) || !isNonNegative(observed2) |==> false
+327:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):223:!isNonNegative(observed1) || !isNonNegative(observed2) |==> !isNonNegative(observed1)
+328:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):223:!isNonNegative(observed1) || !isNonNegative(observed2) |==> !isNonNegative(observed2)
+329:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):223:!isNonNegative(observed1) || !isNonNegative(observed2) |==> true
+330:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):228:0 |==> 1
+331:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):228:0 |==> -1
+332:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):229:0 |==> 1
+333:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):229:0 |==> -1
+334:LVR:FALSE:TRUE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):230:false |==> true
+335:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):231:0.0 |==> 1.0
+336:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):231:0.0 |==> -1.0
+337:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):232:0 |==> 1
+338:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):232:0 |==> -1
+339:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):232:i < observed1.length |==> i != observed1.length
+340:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):232:i < observed1.length |==> i <= observed1.length
+341:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):232:i < observed1.length |==> i == observed1.length
+342:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):232:i < observed1.length |==> i > observed1.length
+343:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):232:i < observed1.length |==> i >= observed1.length
+344:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):232:i < observed1.length |==> false
+345:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):232:i < observed1.length |==> true
+346:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):233:countSum1 += observed1[i] |==> <NO-OP>
+347:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):234:countSum2 += observed2[i] |==> <NO-OP>
+348:AOR:*(long,long):%(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):237:countSum1 * countSum2 |==> countSum1 % countSum2
+349:AOR:*(long,long):+(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):237:countSum1 * countSum2 |==> countSum1 + countSum2
+350:AOR:*(long,long):-(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):237:countSum1 * countSum2 |==> countSum1 - countSum2
+351:AOR:*(long,long):/(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):237:countSum1 * countSum2 |==> countSum1 / countSum2
+352:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):237:0 |==> 1
+353:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):237:0 |==> -1
+354:ROR:==(long,long):!=(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):237:countSum1 * countSum2 == 0 |==> countSum1 * countSum2 != 0
+355:ROR:==(long,long):<(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):237:countSum1 * countSum2 == 0 |==> countSum1 * countSum2 < 0
+356:ROR:==(long,long):<=(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):237:countSum1 * countSum2 == 0 |==> countSum1 * countSum2 <= 0
+357:ROR:==(long,long):>(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):237:countSum1 * countSum2 == 0 |==> countSum1 * countSum2 > 0
+358:ROR:==(long,long):>=(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):237:countSum1 * countSum2 == 0 |==> countSum1 * countSum2 >= 0
+359:ROR:==(long,long):FALSE(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):237:countSum1 * countSum2 == 0 |==> false
+360:ROR:==(long,long):TRUE(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):237:countSum1 * countSum2 == 0 |==> true
+361:ROR:!=(long,long):<(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):242:countSum1 != countSum2 |==> countSum1 < countSum2
+362:ROR:!=(long,long):<=(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):242:countSum1 != countSum2 |==> countSum1 <= countSum2
+363:ROR:!=(long,long):==(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):242:countSum1 != countSum2 |==> countSum1 == countSum2
+364:ROR:!=(long,long):>(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):242:countSum1 != countSum2 |==> countSum1 > countSum2
+365:ROR:!=(long,long):>=(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):242:countSum1 != countSum2 |==> countSum1 >= countSum2
+366:ROR:!=(long,long):FALSE(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):242:countSum1 != countSum2 |==> false
+367:ROR:!=(long,long):TRUE(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):242:countSum1 != countSum2 |==> true
+368:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):242:unequalCounts = (countSum1 != countSum2) |==> <NO-OP>
+369:COR:unequalCounts:TRUE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):243:unequalCounts |==> false
+370:COR:unequalCounts:FALSE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):243:unequalCounts |==> true
+371:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):244:(double)countSum1 / (double)countSum2 |==> (double)countSum1 % (double)countSum2
+372:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):244:(double)countSum1 / (double)countSum2 |==> (double)countSum1 * (double)countSum2
+373:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):244:(double)countSum1 / (double)countSum2 |==> (double)countSum1 + (double)countSum2
+374:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):244:(double)countSum1 / (double)countSum2 |==> (double)countSum1 - (double)countSum2
+375:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):244:weight = Math.sqrt((double)countSum1 / (double)countSum2) |==> <NO-OP>
+376:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):247:0.0 |==> 1.0
+377:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):247:0.0 |==> -1.0
+378:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):248:0.0 |==> 1.0
+379:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):248:0.0 |==> -1.0
+380:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):249:0.0 |==> 1.0
+381:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):249:0.0 |==> -1.0
+382:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):250:0.0 |==> 1.0
+383:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):250:0.0 |==> -1.0
+384:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):251:0 |==> 1
+385:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):251:0 |==> -1
+386:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):251:i < observed1.length |==> i != observed1.length
+387:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):251:i < observed1.length |==> i <= observed1.length
+388:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):251:i < observed1.length |==> i == observed1.length
+389:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):251:i < observed1.length |==> i > observed1.length
+390:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):251:i < observed1.length |==> i >= observed1.length
+391:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):251:i < observed1.length |==> false
+392:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):251:i < observed1.length |==> true
+393:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:0 |==> 1
+394:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:0 |==> -1
+395:ROR:==(long,long):!=(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed1[i] == 0 |==> observed1[i] != 0
+396:ROR:==(long,long):<(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed1[i] == 0 |==> observed1[i] < 0
+397:ROR:==(long,long):<=(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed1[i] == 0 |==> observed1[i] <= 0
+398:ROR:==(long,long):>(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed1[i] == 0 |==> observed1[i] > 0
+399:ROR:==(long,long):>=(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed1[i] == 0 |==> observed1[i] >= 0
+400:ROR:==(long,long):FALSE(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed1[i] == 0 |==> false
+401:ROR:==(long,long):TRUE(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed1[i] == 0 |==> true
+402:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:0 |==> 1
+403:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:0 |==> -1
+404:ROR:==(long,long):!=(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed2[i] == 0 |==> observed2[i] != 0
+405:ROR:==(long,long):<(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed2[i] == 0 |==> observed2[i] < 0
+406:ROR:==(long,long):<=(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed2[i] == 0 |==> observed2[i] <= 0
+407:ROR:==(long,long):>(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed2[i] == 0 |==> observed2[i] > 0
+408:ROR:==(long,long):>=(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed2[i] == 0 |==> observed2[i] >= 0
+409:ROR:==(long,long):FALSE(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed2[i] == 0 |==> false
+410:ROR:==(long,long):TRUE(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed2[i] == 0 |==> true
+411:COR:&&(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed1[i] == 0 && observed2[i] == 0 |==> observed1[i] == 0 != (observed2[i] == 0)
+412:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed1[i] == 0 && observed2[i] == 0 |==> observed1[i] == 0 == (observed2[i] == 0)
+413:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed1[i] == 0 && observed2[i] == 0 |==> false
+414:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed1[i] == 0 && observed2[i] == 0 |==> observed1[i] == 0
+415:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed1[i] == 0 && observed2[i] == 0 |==> observed2[i] == 0
+416:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed1[i] == 0 && observed2[i] == 0 |==> true
+417:COR:&&(boolean,boolean):||(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):252:observed1[i] == 0 && observed2[i] == 0 |==> observed1[i] == 0 || observed2[i] == 0
+418:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):256:obs1 = (double)observed1[i] |==> <NO-OP>
+419:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):257:obs2 = (double)observed2[i] |==> <NO-OP>
+420:COR:unequalCounts:TRUE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):258:unequalCounts |==> false
+421:COR:unequalCounts:FALSE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):258:unequalCounts |==> true
+422:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):259:obs1 / weight |==> obs1 % weight
+423:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):259:obs1 / weight |==> obs1 * weight
+424:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):259:obs1 / weight |==> obs1 + weight
+425:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):259:obs1 / weight |==> obs1 - weight
+426:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):259:obs2 * weight |==> obs2 % weight
+427:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):259:obs2 * weight |==> obs2 + weight
+428:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):259:obs2 * weight |==> obs2 - weight
+429:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):259:obs2 * weight |==> obs2 / weight
+430:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):259:obs1 / weight - obs2 * weight |==> obs1 / weight % (obs2 * weight)
+431:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):259:obs1 / weight - obs2 * weight |==> obs1 / weight * (obs2 * weight)
+432:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):259:obs1 / weight - obs2 * weight |==> obs1 / weight + obs2 * weight
+433:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):259:obs1 / weight - obs2 * weight |==> obs1 / weight / (obs2 * weight)
+434:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):259:dev = obs1 / weight - obs2 * weight |==> <NO-OP>
+435:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):261:obs1 - obs2 |==> obs1 % obs2
+436:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):261:obs1 - obs2 |==> obs1 * obs2
+437:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):261:obs1 - obs2 |==> obs1 + obs2
+438:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):261:obs1 - obs2 |==> obs1 / obs2
+439:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):261:dev = obs1 - obs2 |==> <NO-OP>
+440:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):263:dev * dev |==> dev % dev
+441:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):263:dev * dev |==> dev + dev
+442:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):263:dev * dev |==> dev - dev
+443:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):263:dev * dev |==> dev / dev
+444:AOR:+(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):263:obs1 + obs2 |==> obs1 % obs2
+445:AOR:+(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):263:obs1 + obs2 |==> obs1 * obs2
+446:AOR:+(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):263:obs1 + obs2 |==> obs1 - obs2
+447:AOR:+(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):263:obs1 + obs2 |==> obs1 / obs2
+448:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):263:(dev * dev) / (obs1 + obs2) |==> (dev * dev) % (obs1 + obs2)
+449:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):263:(dev * dev) / (obs1 + obs2) |==> (dev * dev) * (obs1 + obs2)
+450:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):263:(dev * dev) / (obs1 + obs2) |==> (dev * dev) + (obs1 + obs2)
+451:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):263:(dev * dev) / (obs1 + obs2) |==> (dev * dev) - (obs1 + obs2)
+452:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareDataSetsComparison(long[],long[]):263:sumSq += (dev * dev) / (obs1 + obs2) |==> <NO-OP>
+453:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[]):278:1 |==> 0
+454:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[]):278:1 |==> -1
+455:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[]):278:(double)observed1.length - 1 |==> (double)observed1.length % 1
+456:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[]):278:(double)observed1.length - 1 |==> (double)observed1.length * 1
+457:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[]):278:(double)observed1.length - 1 |==> (double)observed1.length + 1
+458:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[]):278:(double)observed1.length - 1 |==> (double)observed1.length / 1
+459:STD:<CALL>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[]):278:distribution.setDegreesOfFreedom((double)observed1.length - 1) |==> <NO-OP>
+460:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[]):279:1 |==> 0
+461:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[]):279:1 |==> -1
+462:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[]):279:1 - distribution.cumulativeProbability(chiSquareDataSetsComparison(observed1, observed2)) |==> 1 % distribution.cumulativeProbability(chiSquareDataSetsComparison(observed1, observed2))
+463:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[]):279:1 - distribution.cumulativeProbability(chiSquareDataSetsComparison(observed1, observed2)) |==> 1 * distribution.cumulativeProbability(chiSquareDataSetsComparison(observed1, observed2))
+464:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[]):279:1 - distribution.cumulativeProbability(chiSquareDataSetsComparison(observed1, observed2)) |==> 1 + distribution.cumulativeProbability(chiSquareDataSetsComparison(observed1, observed2))
+465:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[]):279:1 - distribution.cumulativeProbability(chiSquareDataSetsComparison(observed1, observed2)) |==> 1 / distribution.cumulativeProbability(chiSquareDataSetsComparison(observed1, observed2))
+466:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:0 |==> 1
+467:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:0 |==> -1
+468:ROR:<=(double,double):!=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:alpha <= 0 |==> alpha != 0
+469:ROR:<=(double,double):<(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:alpha <= 0 |==> alpha < 0
+470:ROR:<=(double,double):==(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:alpha <= 0 |==> alpha == 0
+471:ROR:<=(double,double):>(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:alpha <= 0 |==> alpha > 0
+472:ROR:<=(double,double):>=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:alpha <= 0 |==> alpha >= 0
+473:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:alpha <= 0 |==> false
+474:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:alpha <= 0 |==> true
+475:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:0.5 |==> 0.0
+476:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:0.5 |==> -0.5
+477:ROR:>(double,double):!=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:alpha > 0.5 |==> alpha != 0.5
+478:ROR:>(double,double):<(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:alpha > 0.5 |==> alpha < 0.5
+479:ROR:>(double,double):<=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:alpha > 0.5 |==> alpha <= 0.5
+480:ROR:>(double,double):==(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:alpha > 0.5 |==> alpha == 0.5
+481:ROR:>(double,double):>=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:alpha > 0.5 |==> alpha >= 0.5
+482:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:alpha > 0.5 |==> false
+483:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:alpha > 0.5 |==> true
+484:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:(alpha <= 0) || (alpha > 0.5) |==> (alpha <= 0) != (alpha > 0.5)
+485:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:(alpha <= 0) || (alpha > 0.5) |==> (alpha <= 0) && (alpha > 0.5)
+486:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:(alpha <= 0) || (alpha > 0.5) |==> (alpha <= 0) == (alpha > 0.5)
+487:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:(alpha <= 0) || (alpha > 0.5) |==> false
+488:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:(alpha <= 0) || (alpha > 0.5) |==> (alpha <= 0)
+489:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:(alpha <= 0) || (alpha > 0.5) |==> (alpha > 0.5)
+490:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):294:(alpha <= 0) || (alpha > 0.5) |==> true
+491:ROR:<(double,double):!=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):298:chiSquareTestDataSetsComparison(observed1, observed2) < alpha |==> chiSquareTestDataSetsComparison(observed1, observed2) != alpha
+492:ROR:<(double,double):<=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):298:chiSquareTestDataSetsComparison(observed1, observed2) < alpha |==> chiSquareTestDataSetsComparison(observed1, observed2) <= alpha
+493:ROR:<(double,double):==(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):298:chiSquareTestDataSetsComparison(observed1, observed2) < alpha |==> chiSquareTestDataSetsComparison(observed1, observed2) == alpha
+494:ROR:<(double,double):>(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):298:chiSquareTestDataSetsComparison(observed1, observed2) < alpha |==> chiSquareTestDataSetsComparison(observed1, observed2) > alpha
+495:ROR:<(double,double):>=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):298:chiSquareTestDataSetsComparison(observed1, observed2) < alpha |==> chiSquareTestDataSetsComparison(observed1, observed2) >= alpha
+496:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):298:chiSquareTestDataSetsComparison(observed1, observed2) < alpha |==> false
+497:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@chiSquareTestDataSetsComparison(long[],long[],double):298:chiSquareTestDataSetsComparison(observed1, observed2) < alpha |==> true
+498:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):311:2 |==> 0
+499:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):311:2 |==> -2
+500:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):311:in.length < 2 |==> in.length != 2
+501:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):311:in.length < 2 |==> in.length <= 2
+502:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):311:in.length < 2 |==> in.length == 2
+503:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):311:in.length < 2 |==> in.length > 2
+504:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):311:in.length < 2 |==> in.length >= 2
+505:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):311:in.length < 2 |==> false
+506:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):311:in.length < 2 |==> true
+507:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):315:0 |==> 1
+508:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):315:0 |==> -1
+509:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):315:2 |==> 0
+510:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):315:2 |==> -2
+511:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):315:in[0].length < 2 |==> in[0].length != 2
+512:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):315:in[0].length < 2 |==> in[0].length <= 2
+513:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):315:in[0].length < 2 |==> in[0].length == 2
+514:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):315:in[0].length < 2 |==> in[0].length > 2
+515:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):315:in[0].length < 2 |==> in[0].length >= 2
+516:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):315:in[0].length < 2 |==> false
+517:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):315:in[0].length < 2 |==> true
+518:COR:isRectangular(in):TRUE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):319:isRectangular(in) |==> false
+519:COR:isRectangular(in):FALSE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):319:isRectangular(in) |==> true
+520:COR:isNonNegative(in):TRUE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):323:isNonNegative(in) |==> false
+521:COR:isNonNegative(in):FALSE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@checkArray(long[][]):323:isNonNegative(in) |==> true
+522:LVR:POS:0:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):350:1 |==> 0
+523:LVR:POS:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):350:1 |==> -1
+524:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):350:i < in.length |==> i != in.length
+525:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):350:i < in.length |==> i <= in.length
+526:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):350:i < in.length |==> i == in.length
+527:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):350:i < in.length |==> i > in.length
+528:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):350:i < in.length |==> i >= in.length
+529:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):350:i < in.length |==> false
+530:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):350:i < in.length |==> true
+531:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):351:0 |==> 1
+532:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):351:0 |==> -1
+533:ROR:!=(int,int):<(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):351:in[i].length != in[0].length |==> in[i].length < in[0].length
+534:ROR:!=(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):351:in[i].length != in[0].length |==> in[i].length <= in[0].length
+535:ROR:!=(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):351:in[i].length != in[0].length |==> in[i].length == in[0].length
+536:ROR:!=(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):351:in[i].length != in[0].length |==> in[i].length > in[0].length
+537:ROR:!=(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):351:in[i].length != in[0].length |==> in[i].length >= in[0].length
+538:ROR:!=(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):351:in[i].length != in[0].length |==> false
+539:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):351:in[i].length != in[0].length |==> true
+540:LVR:FALSE:TRUE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):352:false |==> true
+541:LVR:TRUE:FALSE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isRectangular(long[][]):355:true |==> false
+542:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):367:0 |==> 1
+543:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):367:0 |==> -1
+544:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):367:i < in.length |==> i != in.length
+545:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):367:i < in.length |==> i <= in.length
+546:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):367:i < in.length |==> i == in.length
+547:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):367:i < in.length |==> i > in.length
+548:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):367:i < in.length |==> i >= in.length
+549:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):367:i < in.length |==> false
+550:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):367:i < in.length |==> true
+551:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):368:0 |==> 1
+552:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):368:0 |==> -1
+553:ROR:<=(double,double):!=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):368:in[i] <= 0 |==> in[i] != 0
+554:ROR:<=(double,double):<(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):368:in[i] <= 0 |==> in[i] < 0
+555:ROR:<=(double,double):==(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):368:in[i] <= 0 |==> in[i] == 0
+556:ROR:<=(double,double):>(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):368:in[i] <= 0 |==> in[i] > 0
+557:ROR:<=(double,double):>=(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):368:in[i] <= 0 |==> in[i] >= 0
+558:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):368:in[i] <= 0 |==> false
+559:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):368:in[i] <= 0 |==> true
+560:LVR:FALSE:TRUE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):369:false |==> true
+561:LVR:TRUE:FALSE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isPositive(double[]):372:true |==> false
+562:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):384:0 |==> 1
+563:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):384:0 |==> -1
+564:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):384:i < in.length |==> i != in.length
+565:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):384:i < in.length |==> i <= in.length
+566:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):384:i < in.length |==> i == in.length
+567:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):384:i < in.length |==> i > in.length
+568:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):384:i < in.length |==> i >= in.length
+569:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):384:i < in.length |==> false
+570:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):384:i < in.length |==> true
+571:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):385:0 |==> 1
+572:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):385:0 |==> -1
+573:ROR:<(long,long):!=(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):385:in[i] < 0 |==> in[i] != 0
+574:ROR:<(long,long):<=(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):385:in[i] < 0 |==> in[i] <= 0
+575:ROR:<(long,long):==(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):385:in[i] < 0 |==> in[i] == 0
+576:ROR:<(long,long):>(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):385:in[i] < 0 |==> in[i] > 0
+577:ROR:<(long,long):>=(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):385:in[i] < 0 |==> in[i] >= 0
+578:ROR:<(long,long):FALSE(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):385:in[i] < 0 |==> false
+579:ROR:<(long,long):TRUE(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):385:in[i] < 0 |==> true
+580:LVR:FALSE:TRUE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):386:false |==> true
+581:LVR:TRUE:FALSE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[]):389:true |==> false
+582:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):401:0 |==> 1
+583:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):401:0 |==> -1
+584:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):401:i < in.length |==> i != in.length
+585:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):401:i < in.length |==> i <= in.length
+586:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):401:i < in.length |==> i == in.length
+587:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):401:i < in.length |==> i > in.length
+588:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):401:i < in.length |==> i >= in.length
+589:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):401:i < in.length |==> false
+590:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):401:i < in.length |==> true
+591:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):402:0 |==> 1
+592:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):402:0 |==> -1
+593:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):402:j < in[i].length |==> j != in[i].length
+594:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):402:j < in[i].length |==> j <= in[i].length
+595:ROR:<(int,int):==(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):402:j < in[i].length |==> j == in[i].length
+596:ROR:<(int,int):>(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):402:j < in[i].length |==> j > in[i].length
+597:ROR:<(int,int):>=(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):402:j < in[i].length |==> j >= in[i].length
+598:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):402:j < in[i].length |==> false
+599:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):402:j < in[i].length |==> true
+600:LVR:0:POS:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):403:0 |==> 1
+601:LVR:0:NEG:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):403:0 |==> -1
+602:ROR:<(long,long):!=(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):403:in[i][j] < 0 |==> in[i][j] != 0
+603:ROR:<(long,long):<=(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):403:in[i][j] < 0 |==> in[i][j] <= 0
+604:ROR:<(long,long):==(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):403:in[i][j] < 0 |==> in[i][j] == 0
+605:ROR:<(long,long):>(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):403:in[i][j] < 0 |==> in[i][j] > 0
+606:ROR:<(long,long):>=(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):403:in[i][j] < 0 |==> in[i][j] >= 0
+607:ROR:<(long,long):FALSE(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):403:in[i][j] < 0 |==> false
+608:ROR:<(long,long):TRUE(long,long):org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):403:in[i][j] < 0 |==> true
+609:LVR:FALSE:TRUE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):404:false |==> true
+610:LVR:TRUE:FALSE:org.apache.commons.math.stat.inference.ChiSquareTestImpl@isNonNegative(long[][]):408:true |==> false
+611:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.stat.inference.ChiSquareTestImpl@setDistribution(org.apache.commons.math.distribution.ChiSquaredDistribution):419:distribution = value |==> <NO-OP>

@@ -1,0 +1,89 @@
+1:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@<init>(java.text.NumberFormat,java.text.NumberFormat,java.text.NumberFormat):73:setWholeFormat(wholeFormat) |==> <NO-OP>
+2:LVR:0:POS:org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):89:0 |==> 1
+3:LVR:0:NEG:org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):89:0 |==> -1
+4:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):89:pos.setBeginIndex(0) |==> <NO-OP>
+5:LVR:0:POS:org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):90:0 |==> 1
+6:LVR:0:NEG:org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):90:0 |==> -1
+7:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):90:pos.setEndIndex(0) |==> <NO-OP>
+8:AOR:/(int,int):%(int,int):org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):94:num / den |==> num % den
+9:AOR:/(int,int):*(int,int):org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):94:num / den |==> num * den
+10:AOR:/(int,int):+(int,int):org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):94:num / den |==> num + den
+11:AOR:/(int,int):-(int,int):org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):94:num / den |==> num - den
+12:AOR:%(int,int):*(int,int):org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):95:num % den |==> num * den
+13:AOR:%(int,int):+(int,int):org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):95:num % den |==> num + den
+14:AOR:%(int,int):-(int,int):org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):95:num % den |==> num - den
+15:AOR:%(int,int):/(int,int):org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):95:num % den |==> num / den
+16:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):95:num = num % den |==> <NO-OP>
+17:LVR:0:POS:org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):97:0 |==> 1
+18:LVR:0:NEG:org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):97:0 |==> -1
+19:ROR:!=(int,int):<(int,int):org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):97:whole != 0 |==> whole < 0
+20:ROR:!=(int,int):<=(int,int):org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):97:whole != 0 |==> whole <= 0
+21:ROR:!=(int,int):==(int,int):org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):97:whole != 0 |==> whole == 0
+22:ROR:!=(int,int):>(int,int):org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):97:whole != 0 |==> whole > 0
+23:ROR:!=(int,int):>=(int,int):org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):97:whole != 0 |==> whole >= 0
+24:ROR:!=(int,int):FALSE(int,int):org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):97:whole != 0 |==> false
+25:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):97:whole != 0 |==> true
+26:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):98:getWholeFormat().format(whole, toAppendTo, pos) |==> <NO-OP>
+27:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):99:toAppendTo.append(' ') |==> <NO-OP>
+28:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):100:num = Math.abs(num) |==> <NO-OP>
+29:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):102:getNumeratorFormat().format(num, toAppendTo, pos) |==> <NO-OP>
+30:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):103:toAppendTo.append(" / ") |==> <NO-OP>
+31:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@format(org.apache.commons.math.fraction.Fraction,java.lang.StringBuffer,java.text.FieldPosition):104:getDenominatorFormat().format(den, toAppendTo, pos) |==> <NO-OP>
+32:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):133:ret != null |==> ret == null
+33:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):133:ret != null |==> false
+34:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):133:ret != null |==> true
+35:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):140:parseAndIgnoreWhitespace(source, pos) |==> <NO-OP>
+36:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):144:whole == null |==> whole != null
+37:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):144:whole == null |==> false
+38:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):144:whole == null |==> true
+39:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):148:pos.setIndex(initialIndex) |==> <NO-OP>
+40:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):153:parseAndIgnoreWhitespace(source, pos) |==> <NO-OP>
+41:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):157:num == null |==> num != null
+42:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):157:num == null |==> false
+43:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):157:num == null |==> true
+44:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):161:pos.setIndex(initialIndex) |==> <NO-OP>
+45:LVR:0:POS:org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):165:0 |==> 1
+46:LVR:0:NEG:org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):165:0 |==> -1
+47:ROR:<(int,int):!=(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):165:num.intValue() < 0 |==> num.intValue() != 0
+48:ROR:<(int,int):<=(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):165:num.intValue() < 0 |==> num.intValue() <= 0
+49:ROR:<(int,int):==(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):165:num.intValue() < 0 |==> num.intValue() == 0
+50:ROR:<(int,int):>(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):165:num.intValue() < 0 |==> num.intValue() > 0
+51:ROR:<(int,int):>=(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):165:num.intValue() < 0 |==> num.intValue() >= 0
+52:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):165:num.intValue() < 0 |==> false
+53:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):165:num.intValue() < 0 |==> true
+54:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):167:pos.setIndex(initialIndex) |==> <NO-OP>
+55:LVR:POS:0:org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):178:1 |==> 0
+56:LVR:POS:NEG:org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):178:1 |==> -1
+57:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):186:pos.setIndex(initialIndex) |==> <NO-OP>
+58:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):187:pos.setErrorIndex(startIndex) |==> <NO-OP>
+59:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):192:parseAndIgnoreWhitespace(source, pos) |==> <NO-OP>
+60:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):196:den == null |==> den != null
+61:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):196:den == null |==> false
+62:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):196:den == null |==> true
+63:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):200:pos.setIndex(initialIndex) |==> <NO-OP>
+64:LVR:0:POS:org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):204:0 |==> 1
+65:LVR:0:NEG:org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):204:0 |==> -1
+66:ROR:<(int,int):!=(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):204:den.intValue() < 0 |==> den.intValue() != 0
+67:ROR:<(int,int):<=(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):204:den.intValue() < 0 |==> den.intValue() <= 0
+68:ROR:<(int,int):==(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):204:den.intValue() < 0 |==> den.intValue() == 0
+69:ROR:<(int,int):>(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):204:den.intValue() < 0 |==> den.intValue() > 0
+70:ROR:<(int,int):>=(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):204:den.intValue() < 0 |==> den.intValue() >= 0
+71:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):204:den.intValue() < 0 |==> false
+72:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):204:den.intValue() < 0 |==> true
+73:STD:<CALL>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):206:pos.setIndex(initialIndex) |==> <NO-OP>
+74:AOR:*(int,int):%(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):213:Math.abs(w) * d |==> Math.abs(w) % d
+75:AOR:*(int,int):+(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):213:Math.abs(w) * d |==> Math.abs(w) + d
+76:AOR:*(int,int):-(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):213:Math.abs(w) * d |==> Math.abs(w) - d
+77:AOR:*(int,int):/(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):213:Math.abs(w) * d |==> Math.abs(w) / d
+78:AOR:+(int,int):%(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):213:(Math.abs(w) * d) + n |==> (Math.abs(w) * d) % n
+79:AOR:+(int,int):*(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):213:(Math.abs(w) * d) + n |==> (Math.abs(w) * d) * n
+80:AOR:+(int,int):-(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):213:(Math.abs(w) * d) + n |==> (Math.abs(w) * d) - n
+81:AOR:+(int,int):/(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):213:(Math.abs(w) * d) + n |==> (Math.abs(w) * d) / n
+82:AOR:*(int,int):%(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):213:((Math.abs(w) * d) + n) * MathUtils.sign(w) |==> ((Math.abs(w) * d) + n) % MathUtils.sign(w)
+83:AOR:*(int,int):+(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):213:((Math.abs(w) * d) + n) * MathUtils.sign(w) |==> ((Math.abs(w) * d) + n) + MathUtils.sign(w)
+84:AOR:*(int,int):-(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):213:((Math.abs(w) * d) + n) * MathUtils.sign(w) |==> ((Math.abs(w) * d) + n) - MathUtils.sign(w)
+85:AOR:*(int,int):/(int,int):org.apache.commons.math.fraction.ProperFractionFormat@parse(java.lang.String,java.text.ParsePosition):213:((Math.abs(w) * d) + n) * MathUtils.sign(w) |==> ((Math.abs(w) * d) + n) / MathUtils.sign(w)
+86:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.math.fraction.ProperFractionFormat@setWholeFormat(java.text.NumberFormat):223:format == null |==> format != null
+87:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math.fraction.ProperFractionFormat@setWholeFormat(java.text.NumberFormat):223:format == null |==> false
+88:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.math.fraction.ProperFractionFormat@setWholeFormat(java.text.NumberFormat):223:format == null |==> true
+89:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.fraction.ProperFractionFormat@setWholeFormat(java.text.NumberFormat):227:this.wholeFormat = format |==> <NO-OP>

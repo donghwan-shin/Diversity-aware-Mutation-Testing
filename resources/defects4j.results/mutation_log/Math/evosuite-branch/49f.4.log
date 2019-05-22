@@ -1,0 +1,228 @@
+
+init:
+     [echo] -------- Commons MATH 3.0-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] Compiling 328 source files to /tmp/run_mutation.pl_21847_1501577000/49f/target/test-classes
+    [javac] Note: /tmp/run_mutation.pl_21847_1501577000/49f/src/test/java/org/apache/commons/math/PerfTestUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 13 files to /tmp/run_mutation.pl_21847_1501577000/49f/target/test-classes
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: org.apache.commons.math.linear.OpenMapRealVector_ESTest12[test12] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "Expecting exception: NoClassDefFoundError"
+    [junit] MAJOR: org.apache.commons.math.linear.OpenMapRealVector_ESTest17[test17] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "Expecting exception: NoClassDefFoundError"
+    [junit] MAJOR: org.apache.commons.math.linear.OpenMapRealVector_ESTest2[test02] failed!
+    [junit] MAJOR:  -> org.apache.commons.math.exception.MathArithmeticException
+    [junit] MAJOR:  -> "zero norm"
+    [junit] MAJOR: org.apache.commons.math.linear.OpenMapRealVector_ESTest24[test24] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "Expecting exception: NoClassDefFoundError"
+    [junit] MAJOR: org.apache.commons.math.linear.OpenMapRealVector_ESTest25[test25] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "Expecting exception: NoClassDefFoundError"
+    [junit] MAJOR: org.apache.commons.math.linear.OpenMapRealVector_ESTest32[test32] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "Expecting exception: NoClassDefFoundError"
+    [junit] MAJOR: org.apache.commons.math.linear.OpenMapRealVector_ESTest33[test33] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "Expecting exception: NoClassDefFoundError"
+    [junit] MAJOR: org.apache.commons.math.linear.OpenMapRealVector_ESTest35[test35] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "Expecting exception: NoClassDefFoundError"
+    [junit] MAJOR: org.apache.commons.math.linear.OpenMapRealVector_ESTest38[test38] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "Expecting exception: NoClassDefFoundError"
+    [junit] MAJOR: org.apache.commons.math.linear.OpenMapRealVector_ESTest5[test05] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "Expecting exception: NoClassDefFoundError"
+    [junit] MAJOR: org.apache.commons.math.linear.OpenMapRealVector_ESTest6[test06] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "Expecting exception: NoClassDefFoundError"
+    [junit] MAJOR: org.apache.commons.math.linear.OpenMapRealVector_ESTest8[test08] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "Expecting exception: NoClassDefFoundError"
+    [junit] MAJOR: org.apache.commons.math.linear.OpenMapRealVector_ESTest9[test09] failed!
+    [junit] MAJOR:  -> java.lang.NullPointerException
+    [junit] MAJOR:  -> "null"
+    [junit] MAJOR: Exclude 13 failing test classes:
+    [junit] MAJOR:  - org.apache.commons.math.linear.OpenMapRealVector_ESTest12
+    [junit] MAJOR:  - org.apache.commons.math.linear.OpenMapRealVector_ESTest17
+    [junit] MAJOR:  - org.apache.commons.math.linear.OpenMapRealVector_ESTest2
+    [junit] MAJOR:  - org.apache.commons.math.linear.OpenMapRealVector_ESTest24
+    [junit] MAJOR:  - org.apache.commons.math.linear.OpenMapRealVector_ESTest25
+    [junit] MAJOR:  - org.apache.commons.math.linear.OpenMapRealVector_ESTest32
+    [junit] MAJOR:  - org.apache.commons.math.linear.OpenMapRealVector_ESTest33
+    [junit] MAJOR:  - org.apache.commons.math.linear.OpenMapRealVector_ESTest35
+    [junit] MAJOR:  - org.apache.commons.math.linear.OpenMapRealVector_ESTest38
+    [junit] MAJOR:  - org.apache.commons.math.linear.OpenMapRealVector_ESTest5
+    [junit] MAJOR:  - org.apache.commons.math.linear.OpenMapRealVector_ESTest6
+    [junit] MAJOR:  - org.apache.commons.math.linear.OpenMapRealVector_ESTest8
+    [junit] MAJOR:  - org.apache.commons.math.linear.OpenMapRealVector_ESTest9
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 30 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 16.98 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 561
+    [junit] MAJOR: Mutants covered:   175 (31.19%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 30 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest27 (8ms / 15):
+    [junit] MAJOR: 4625 (7 / 15 / 15) -> AVG-RTPM: 308ms
+    [junit] MAJOR: Mutants killed / live: 7 (2-5-0) / 168
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest31 (8ms / 3):
+    [junit] MAJOR: 5694 (1 / 3 / 3) -> AVG-RTPM: 356ms
+    [junit] MAJOR: Mutants killed / live: 8 (3-5-0) / 167
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest19 (9ms / 2):
+    [junit] MAJOR: 7091 (0 / 2 / 2) -> AVG-RTPM: 698ms
+    [junit] MAJOR: Mutants killed / live: 8 (3-5-0) / 167
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest22 (9ms / 22):
+    [junit] MAJOR: 16334 (9 / 22 / 22) -> AVG-RTPM: 419ms
+    [junit] MAJOR: Mutants killed / live: 17 (12-5-0) / 158
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest23 (9ms / 22):
+    [junit] MAJOR: 27567 (0 / 22 / 22) -> AVG-RTPM: 510ms
+    [junit] MAJOR: Mutants killed / live: 17 (21-5-0) / 158
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest3 (9ms / 6):
+    [junit] MAJOR: 31069 (3 / 6 / 6) -> AVG-RTPM: 583ms
+    [junit] MAJOR: Mutants killed / live: 20 (24-5-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest34 (9ms / 15):
+    [junit] MAJOR: 40997 (5 / 15 / 15) -> AVG-RTPM: 661ms
+    [junit] MAJOR: Mutants killed / live: 25 (27-10-0) / 150
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest36 (9ms / 23):
+    [junit] MAJOR: 56411 (0 / 23 / 23) -> AVG-RTPM: 670ms
+    [junit] MAJOR: Mutants killed / live: 25 (36-10-0) / 150
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest39 (9ms / 28):
+    [junit] MAJOR: 83745 (2 / 28 / 28) -> AVG-RTPM: 976ms
+    [junit] MAJOR: Mutants killed / live: 27 (36-12-0) / 148
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest4 (9ms / 6):
+    [junit] MAJOR: 90513 (0 / 6 / 6) -> AVG-RTPM: 1128ms
+    [junit] MAJOR: Mutants killed / live: 27 (39-12-0) / 148
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest40 (9ms / 6):
+    [junit] MAJOR: 97658 (3 / 6 / 6) -> AVG-RTPM: 1190ms
+    [junit] MAJOR: Mutants killed / live: 30 (42-12-0) / 145
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest42 (9ms / 30):
+    [junit] MAJOR: 139705 (5 / 30 / 30) -> AVG-RTPM: 1401ms
+    [junit] MAJOR: Mutants killed / live: 35 (51-17-0) / 140
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 13/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest7 (9ms / 10):
+    [junit] MAJOR: 155526 (2 / 10 / 10) -> AVG-RTPM: 1582ms
+    [junit] MAJOR: Mutants killed / live: 37 (53-17-0) / 138
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 14/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest18 (10ms / 34):
+    [junit] MAJOR: 212961 (7 / 34 / 34) -> AVG-RTPM: 1689ms
+    [junit] MAJOR: Mutants killed / live: 44 (62-24-0) / 131
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 15/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest20 (10ms / 22):
+    [junit] MAJOR: 261786 (0 / 22 / 22) -> AVG-RTPM: 2219ms
+    [junit] MAJOR: Mutants killed / live: 44 (71-24-0) / 131
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 16/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest26 (10ms / 6):
+    [junit] MAJOR: 276615 (2 / 6 / 6) -> AVG-RTPM: 2471ms
+    [junit] MAJOR: Mutants killed / live: 46 (73-24-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 17/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest37 (10ms / 32):
+    [junit] MAJOR: 366576 (6 / 32 / 32) -> AVG-RTPM: 2811ms
+    [junit] MAJOR: Mutants killed / live: 52 (82-30-0) / 123
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 18/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest11 (11ms / 40):
+    [junit] MAJOR: 376556 (28 / 40 / 40) -> AVG-RTPM: 249ms
+    [junit] MAJOR: Mutants killed / live: 80 (82-70-0) / 95
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 19/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest21 (11ms / 22):
+    [junit] MAJOR: 380947 (1 / 22 / 22) -> AVG-RTPM: 199ms
+    [junit] MAJOR: Mutants killed / live: 81 (82-92-0) / 94
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 20/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest1 (12ms / 2):
+    [junit] MAJOR: 381340 (0 / 2 / 2) -> AVG-RTPM: 196ms
+    [junit] MAJOR: Mutants killed / live: 81 (82-94-0) / 94
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 21/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest10 (12ms / 3):
+    [junit] MAJOR: 381944 (1 / 3 / 3) -> AVG-RTPM: 201ms
+    [junit] MAJOR: Mutants killed / live: 82 (82-97-0) / 93
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 22/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest13 (12ms / 3):
+    [junit] MAJOR: 382579 (1 / 3 / 3) -> AVG-RTPM: 211ms
+    [junit] MAJOR: Mutants killed / live: 83 (82-100-0) / 92
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 23/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest14 (12ms / 3):
+    [junit] MAJOR: 383214 (1 / 3 / 3) -> AVG-RTPM: 211ms
+    [junit] MAJOR: Mutants killed / live: 84 (82-103-0) / 91
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 24/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest28 (12ms / 6):
+    [junit] MAJOR: 384641 (4 / 6 / 6) -> AVG-RTPM: 237ms
+    [junit] MAJOR: Mutants killed / live: 88 (82-109-0) / 87
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 25/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest30 (12ms / 3):
+    [junit] MAJOR: 385294 (1 / 3 / 3) -> AVG-RTPM: 217ms
+    [junit] MAJOR: Mutants killed / live: 89 (82-112-0) / 86
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 26/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest41 (12ms / 17):
+    [junit] MAJOR: 388835 (3 / 17 / 17) -> AVG-RTPM: 208ms
+    [junit] MAJOR: Mutants killed / live: 92 (82-129-0) / 83
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 27/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest15 (15ms / 36):
+    [junit] MAJOR: 398334 (14 / 36 / 36) -> AVG-RTPM: 263ms
+    [junit] MAJOR: Mutants killed / live: 106 (82-165-0) / 69
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 28/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest16 (15ms / 25):
+    [junit] MAJOR: 404969 (0 / 25 / 25) -> AVG-RTPM: 265ms
+    [junit] MAJOR: Mutants killed / live: 106 (82-190-0) / 69
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 29/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest0 (17ms / 3):
+    [junit] MAJOR: 405691 (1 / 3 / 3) -> AVG-RTPM: 240ms
+    [junit] MAJOR: Mutants killed / live: 107 (82-193-0) / 68
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 30/30 - org.apache.commons.math.linear.OpenMapRealVector_ESTest29 (18ms / 15):
+    [junit] MAJOR: 409793 (12 / 15 / 15) -> AVG-RTPM: 273ms
+    [junit] MAJOR: Mutants killed / live: 119 (82-208-0) / 56
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  409.8 seconds
+    [junit] MAJOR: Mutation score: 21.21% (68.00%)
+    [junit] MAJOR: Mutants killed / live: 119 (82-208-0) / 56
+    [junit] MAJOR: Mutant executions: 460
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_21847_1501577000/49f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 7 minutes 15 seconds

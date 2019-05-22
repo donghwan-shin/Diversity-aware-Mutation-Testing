@@ -1,0 +1,98 @@
+
+init:
+     [echo] -------- joda-time 2.0 --------
+
+getjunit:
+
+installjunit:
+
+getjodaconvert:
+
+prepare:
+
+static:
+
+compile.main:
+
+compile.zoneinfo:
+
+joda-time.compile:
+
+compile:
+     [java] Writing zoneinfo files
+     [java] Writing ZoneInfoMap
+
+joda-time.compile.tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_107481_1501387794/21f/build/tests
+    [javac] Compiling 153 source files to /tmp/run_mutation.pl_107481_1501387794/21f/build/tests
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 2 files to /tmp/run_mutation.pl_107481_1501387794/21f/build/tests
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 7 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 5.45 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 141
+    [junit] MAJOR: Mutants covered:   141 (100.00%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 7 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/7 - org.joda.time.tz.DefaultNameProvider_ESTest4 (10ms / 25):
+    [junit] MAJOR: 4386 (13 / 25 / 25) -> AVG-RTPM: 175ms
+    [junit] MAJOR: Mutants killed / live: 13 (0-13-0) / 128
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/7 - org.joda.time.tz.DefaultNameProvider_ESTest5 (12ms / 28):
+    [junit] MAJOR: 10459 (2 / 28 / 28) -> AVG-RTPM: 216ms
+    [junit] MAJOR: Mutants killed / live: 15 (0-16-0) / 126
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/7 - org.joda.time.tz.DefaultNameProvider_ESTest6 (13ms / 130):
+    [junit] MAJOR: 87153 (18 / 130 / 130) -> AVG-RTPM: 589ms
+    [junit] MAJOR: Mutants killed / live: 33 (0-39-0) / 108
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/7 - org.joda.time.tz.DefaultNameProvider_ESTest1 (20ms / 129):
+    [junit] MAJOR: 250694 (71 / 129 / 129) -> AVG-RTPM: 1267ms
+    [junit] MAJOR: Mutants killed / live: 104 (46-84-0) / 37
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/7 - org.joda.time.tz.DefaultNameProvider_ESTest0 (45ms / 129):
+    [junit] MAJOR: 276732 (37 / 129 / 129) -> AVG-RTPM: 201ms
+    [junit] MAJOR: Mutants killed / live: 141 (46-213-0) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/7 - org.joda.time.tz.DefaultNameProvider_ESTest3 (51ms / 22):
+    [junit] MAJOR: 280838 (0 / 22 / 22) -> AVG-RTPM: 186ms
+    [junit] MAJOR: Mutants killed / live: 141 (46-235-0) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/7 - org.joda.time.tz.DefaultNameProvider_ESTest2 (69ms / 127):
+    [junit] MAJOR: 307972 (0 / 127 / 127) -> AVG-RTPM: 213ms
+    [junit] MAJOR: Mutants killed / live: 141 (46-362-0) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  308.0 seconds
+    [junit] MAJOR: Mutation score: 100.00% (100.00%)
+    [junit] MAJOR: Mutants killed / live: 141 (46-362-0) / 0
+    [junit] MAJOR: Mutant executions: 590
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_107481_1501387794/21f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 5 minutes 24 seconds

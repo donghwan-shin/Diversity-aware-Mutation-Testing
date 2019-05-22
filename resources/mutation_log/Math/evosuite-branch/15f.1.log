@@ -1,0 +1,59 @@
+
+init:
+     [echo] -------- Commons MATH 3.1-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] Compiling 404 source files to /tmp/run_mutation.pl_52454_1501513579/15f/target/test-classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /tmp/run_mutation.pl_52454_1501513579/15f/src/test/java/org/apache/commons/math3/PerfTestUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 24 files to /tmp/run_mutation.pl_52454_1501513579/15f/target/test-classes
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: org.apache.commons.math3.util.FastMath_ESTest0[test000] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "expected:<0.0> but was:<0.9503905061908942>"
+    [junit] MAJOR: Exclude 1 failing test class:
+    [junit] MAJOR:  - org.apache.commons.math3.util.FastMath_ESTest0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 275 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 675.95 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 10887
+    [junit] MAJOR: Mutants covered:   10702 (98.30%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 275 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/275 - org.apache.commons.math3.util.FastMath_ESTest132 (6ms / 615):
+    [junit] MAJOR: 2299754 (410 / 615 / 615) -> AVG-RTPM: 3739ms
+    [junit] MAJOR: Mutants killed / live: 410 (0-377-33) / 10292
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/275 - org.apache.commons.math3.util.FastMath_ESTest134 (6ms / 630):
+
+BUILD FAILED
+/home/to_donghwan/defects4j/framework/projects/defects4j.build.xml:185: Parallel execution timed out
+
+Total time: 60 minutes 9 seconds

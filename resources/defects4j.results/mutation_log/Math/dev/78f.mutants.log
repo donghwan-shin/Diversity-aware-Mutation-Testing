@@ -1,0 +1,320 @@
+1:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@<init>(org.apache.commons.math.ode.events.EventHandler,double,double,int):102:t0 = Double.NaN |==> <NO-OP>
+2:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@<init>(org.apache.commons.math.ode.events.EventHandler,double,double,int):103:g0 = Double.NaN |==> <NO-OP>
+3:LVR:TRUE:FALSE:org.apache.commons.math.ode.events.EventState@<init>(org.apache.commons.math.ode.events.EventHandler,double,double,int):104:true |==> false
+4:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@<init>(org.apache.commons.math.ode.events.EventHandler,double,double,int):104:g0Positive = true |==> <NO-OP>
+5:LVR:FALSE:TRUE:org.apache.commons.math.ode.events.EventState@<init>(org.apache.commons.math.ode.events.EventHandler,double,double,int):105:false |==> true
+6:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@<init>(org.apache.commons.math.ode.events.EventHandler,double,double,int):105:pendingEvent = false |==> <NO-OP>
+7:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@<init>(org.apache.commons.math.ode.events.EventHandler,double,double,int):106:pendingEventTime = Double.NaN |==> <NO-OP>
+8:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@<init>(org.apache.commons.math.ode.events.EventHandler,double,double,int):107:previousEventTime = Double.NaN |==> <NO-OP>
+9:LVR:TRUE:FALSE:org.apache.commons.math.ode.events.EventState@<init>(org.apache.commons.math.ode.events.EventHandler,double,double,int):108:true |==> false
+10:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@<init>(org.apache.commons.math.ode.events.EventHandler,double,double,int):108:increasing = true |==> <NO-OP>
+11:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@<init>(org.apache.commons.math.ode.events.EventHandler,double,double,int):109:nextAction = EventHandler.CONTINUE |==> <NO-OP>
+12:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@reinitializeBegin(double,double[]):151:t0 = tStart |==> <NO-OP>
+13:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@reinitializeBegin(double,double[]):152:g0 = handler.g(tStart, yStart) |==> <NO-OP>
+14:LVR:0:POS:org.apache.commons.math.ode.events.EventState@reinitializeBegin(double,double[]):153:0 |==> 1
+15:LVR:0:NEG:org.apache.commons.math.ode.events.EventState@reinitializeBegin(double,double[]):153:0 |==> -1
+16:ROR:>=(double,double):!=(double,double):org.apache.commons.math.ode.events.EventState@reinitializeBegin(double,double[]):153:g0 >= 0 |==> g0 != 0
+17:ROR:>=(double,double):<(double,double):org.apache.commons.math.ode.events.EventState@reinitializeBegin(double,double[]):153:g0 >= 0 |==> g0 < 0
+18:ROR:>=(double,double):<=(double,double):org.apache.commons.math.ode.events.EventState@reinitializeBegin(double,double[]):153:g0 >= 0 |==> g0 <= 0
+19:ROR:>=(double,double):==(double,double):org.apache.commons.math.ode.events.EventState@reinitializeBegin(double,double[]):153:g0 >= 0 |==> g0 == 0
+20:ROR:>=(double,double):>(double,double):org.apache.commons.math.ode.events.EventState@reinitializeBegin(double,double[]):153:g0 >= 0 |==> g0 > 0
+21:ROR:>=(double,double):FALSE(double,double):org.apache.commons.math.ode.events.EventState@reinitializeBegin(double,double[]):153:g0 >= 0 |==> false
+22:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math.ode.events.EventState@reinitializeBegin(double,double[]):153:g0 >= 0 |==> true
+23:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@reinitializeBegin(double,double[]):153:g0Positive = g0 >= 0 |==> <NO-OP>
+24:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):172:forward = interpolator.isForward() |==> <NO-OP>
+25:LVR:POS:0:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):174:1 |==> 0
+26:LVR:POS:NEG:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):174:1 |==> -1
+27:AOR:-(double,double):%(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):174:t1 - t0 |==> t1 % t0
+28:AOR:-(double,double):*(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):174:t1 - t0 |==> t1 * t0
+29:AOR:-(double,double):+(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):174:t1 - t0 |==> t1 + t0
+30:AOR:-(double,double):/(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):174:t1 - t0 |==> t1 / t0
+31:AOR:/(double,double):%(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):174:Math.abs(t1 - t0) / maxCheckInterval |==> Math.abs(t1 - t0) % maxCheckInterval
+32:AOR:/(double,double):*(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):174:Math.abs(t1 - t0) / maxCheckInterval |==> Math.abs(t1 - t0) * maxCheckInterval
+33:AOR:/(double,double):+(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):174:Math.abs(t1 - t0) / maxCheckInterval |==> Math.abs(t1 - t0) + maxCheckInterval
+34:AOR:/(double,double):-(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):174:Math.abs(t1 - t0) / maxCheckInterval |==> Math.abs(t1 - t0) - maxCheckInterval
+35:AOR:-(double,double):%(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):175:t1 - t0 |==> t1 % t0
+36:AOR:-(double,double):*(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):175:t1 - t0 |==> t1 * t0
+37:AOR:-(double,double):+(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):175:t1 - t0 |==> t1 + t0
+38:AOR:-(double,double):/(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):175:t1 - t0 |==> t1 / t0
+39:AOR:/(double,double):%(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):175:(t1 - t0) / n |==> (t1 - t0) % n
+40:AOR:/(double,double):*(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):175:(t1 - t0) / n |==> (t1 - t0) * n
+41:AOR:/(double,double):+(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):175:(t1 - t0) / n |==> (t1 - t0) + n
+42:AOR:/(double,double):-(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):175:(t1 - t0) / n |==> (t1 - t0) - n
+43:COR:interpolator.isForward():TRUE:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):179:interpolator.isForward() |==> false
+44:COR:interpolator.isForward():FALSE:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):179:interpolator.isForward() |==> true
+45:ORU:-(double):+(double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):179:-convergence |==> +convergence
+46:AOR:+(double,double):%(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):179:t0 + (interpolator.isForward() ? convergence : -convergence) |==> t0 % (interpolator.isForward() ? convergence : -convergence)
+47:AOR:+(double,double):*(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):179:t0 + (interpolator.isForward() ? convergence : -convergence) |==> t0 * (interpolator.isForward() ? convergence : -convergence)
+48:AOR:+(double,double):-(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):179:t0 + (interpolator.isForward() ? convergence : -convergence) |==> t0 - (interpolator.isForward() ? convergence : -convergence)
+49:AOR:+(double,double):/(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):179:t0 + (interpolator.isForward() ? convergence : -convergence) |==> t0 / (interpolator.isForward() ? convergence : -convergence)
+50:LVR:0:POS:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):180:0 |==> 1
+51:LVR:0:NEG:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):180:0 |==> -1
+52:ROR:<(int,int):!=(int,int):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):180:i < n |==> i != n
+53:ROR:<(int,int):<=(int,int):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):180:i < n |==> i <= n
+54:ROR:<(int,int):==(int,int):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):180:i < n |==> i == n
+55:ROR:<(int,int):>(int,int):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):180:i < n |==> i > n
+56:ROR:<(int,int):>=(int,int):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):180:i < n |==> i >= n
+57:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):180:i < n |==> false
+58:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):180:i < n |==> true
+59:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):183:tb += h |==> <NO-OP>
+60:STD:<CALL>:<NO-OP>:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):184:interpolator.setInterpolatedTime(tb) |==> <NO-OP>
+61:LVR:0:POS:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):188:0 |==> 1
+62:LVR:0:NEG:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):188:0 |==> -1
+63:ROR:>=(double,double):!=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):188:gb >= 0 |==> gb != 0
+64:ROR:>=(double,double):<(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):188:gb >= 0 |==> gb < 0
+65:ROR:>=(double,double):<=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):188:gb >= 0 |==> gb <= 0
+66:ROR:>=(double,double):==(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):188:gb >= 0 |==> gb == 0
+67:ROR:>=(double,double):>(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):188:gb >= 0 |==> gb > 0
+68:ROR:>=(double,double):FALSE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):188:gb >= 0 |==> false
+69:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):188:gb >= 0 |==> true
+70:LOR:^(boolean,boolean):&(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):188:g0Positive ^ (gb >= 0) |==> g0Positive & (gb >= 0)
+71:LOR:^(boolean,boolean):|(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):188:g0Positive ^ (gb >= 0) |==> g0Positive | (gb >= 0)
+72:AOR:*(double,double):%(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):191:ga * gb |==> ga % gb
+73:AOR:*(double,double):+(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):191:ga * gb |==> ga + gb
+74:AOR:*(double,double):-(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):191:ga * gb |==> ga - gb
+75:AOR:*(double,double):/(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):191:ga * gb |==> ga / gb
+76:LVR:0:POS:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):191:0 |==> 1
+77:LVR:0:NEG:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):191:0 |==> -1
+78:ROR:>(double,double):!=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):191:ga * gb > 0 |==> ga * gb != 0
+79:ROR:>(double,double):<(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):191:ga * gb > 0 |==> ga * gb < 0
+80:ROR:>(double,double):<=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):191:ga * gb > 0 |==> ga * gb <= 0
+81:ROR:>(double,double):==(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):191:ga * gb > 0 |==> ga * gb == 0
+82:ROR:>(double,double):>=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):191:ga * gb > 0 |==> ga * gb >= 0
+83:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):191:ga * gb > 0 |==> false
+84:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):191:ga * gb > 0 |==> true
+85:COR:forward:TRUE:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):199:forward |==> false
+86:COR:forward:FALSE:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):199:forward |==> true
+87:LVR:POS:0:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):199:0.25 |==> 0.0
+88:LVR:POS:NEG:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):199:0.25 |==> -0.25
+89:ORU:-(double):+(double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):199:-0.25 |==> +0.25
+90:LVR:POS:0:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):199:0.25 |==> 0.0
+91:LVR:POS:NEG:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):199:0.25 |==> -0.25
+92:AOR:*(double,double):%(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):199:(forward ? 0.25 : -0.25) * convergence |==> (forward ? 0.25 : -0.25) % convergence
+93:AOR:*(double,double):+(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):199:(forward ? 0.25 : -0.25) * convergence |==> (forward ? 0.25 : -0.25) + convergence
+94:AOR:*(double,double):-(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):199:(forward ? 0.25 : -0.25) * convergence |==> (forward ? 0.25 : -0.25) - convergence
+95:AOR:*(double,double):/(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):199:(forward ? 0.25 : -0.25) * convergence |==> (forward ? 0.25 : -0.25) / convergence
+96:LVR:0:POS:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:0 |==> 1
+97:LVR:0:NEG:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:0 |==> -1
+98:LVR:POS:0:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:4 |==> 0
+99:LVR:POS:NEG:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:4 |==> -4
+100:ROR:<(int,int):!=(int,int):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:k < 4 |==> k != 4
+101:ROR:<(int,int):<=(int,int):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:k < 4 |==> k <= 4
+102:ROR:<(int,int):==(int,int):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:k < 4 |==> k == 4
+103:ROR:<(int,int):>(int,int):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:k < 4 |==> k > 4
+104:ROR:<(int,int):>=(int,int):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:k < 4 |==> k >= 4
+105:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:k < 4 |==> false
+106:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:k < 4 |==> true
+107:AOR:*(double,double):%(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:ga * gb |==> ga % gb
+108:AOR:*(double,double):+(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:ga * gb |==> ga + gb
+109:AOR:*(double,double):-(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:ga * gb |==> ga - gb
+110:AOR:*(double,double):/(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:ga * gb |==> ga / gb
+111:LVR:0:POS:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:0 |==> 1
+112:LVR:0:NEG:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:0 |==> -1
+113:ROR:>(double,double):!=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:ga * gb > 0 |==> ga * gb != 0
+114:ROR:>(double,double):<(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:ga * gb > 0 |==> ga * gb < 0
+115:ROR:>(double,double):<=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:ga * gb > 0 |==> ga * gb <= 0
+116:ROR:>(double,double):==(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:ga * gb > 0 |==> ga * gb == 0
+117:ROR:>(double,double):>=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:ga * gb > 0 |==> ga * gb >= 0
+118:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:ga * gb > 0 |==> false
+119:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:ga * gb > 0 |==> true
+120:COR:&&(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:(k < 4) && (ga * gb > 0) |==> (k < 4) != (ga * gb > 0)
+121:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:(k < 4) && (ga * gb > 0) |==> (k < 4) == (ga * gb > 0)
+122:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:(k < 4) && (ga * gb > 0) |==> false
+123:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:(k < 4) && (ga * gb > 0) |==> (k < 4)
+124:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:(k < 4) && (ga * gb > 0) |==> (ga * gb > 0)
+125:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:(k < 4) && (ga * gb > 0) |==> true
+126:COR:&&(boolean,boolean):||(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):200:(k < 4) && (ga * gb > 0) |==> (k < 4) || (ga * gb > 0)
+127:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):201:ta += epsilon |==> <NO-OP>
+128:STD:<CALL>:<NO-OP>:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):202:interpolator.setInterpolatedTime(ta) |==> <NO-OP>
+129:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):203:ga = handler.g(ta, interpolator.getInterpolatedState()) |==> <NO-OP>
+130:AOR:*(double,double):%(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):205:ga * gb |==> ga % gb
+131:AOR:*(double,double):+(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):205:ga * gb |==> ga + gb
+132:AOR:*(double,double):-(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):205:ga * gb |==> ga - gb
+133:AOR:*(double,double):/(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):205:ga * gb |==> ga / gb
+134:LVR:0:POS:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):205:0 |==> 1
+135:LVR:0:NEG:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):205:0 |==> -1
+136:ROR:>(double,double):!=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):205:ga * gb > 0 |==> ga * gb != 0
+137:ROR:>(double,double):<(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):205:ga * gb > 0 |==> ga * gb < 0
+138:ROR:>(double,double):<=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):205:ga * gb > 0 |==> ga * gb <= 0
+139:ROR:>(double,double):==(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):205:ga * gb > 0 |==> ga * gb == 0
+140:ROR:>(double,double):>=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):205:ga * gb > 0 |==> ga * gb >= 0
+141:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):205:ga * gb > 0 |==> false
+142:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):205:ga * gb > 0 |==> true
+143:ROR:>=(double,double):!=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):212:gb >= ga |==> gb != ga
+144:ROR:>=(double,double):<(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):212:gb >= ga |==> gb < ga
+145:ROR:>=(double,double):<=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):212:gb >= ga |==> gb <= ga
+146:ROR:>=(double,double):==(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):212:gb >= ga |==> gb == ga
+147:ROR:>=(double,double):>(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):212:gb >= ga |==> gb > ga
+148:ROR:>=(double,double):FALSE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):212:gb >= ga |==> false
+149:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):212:gb >= ga |==> true
+150:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):212:increasing = gb >= ga |==> <NO-OP>
+151:STD:<CALL>:<NO-OP>:org.apache.commons.math.ode.events.EventState$1@value(double):217:interpolator.setInterpolatedTime(t) |==> <NO-OP>
+152:STD:<CALL>:<NO-OP>:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):227:solver.setAbsoluteAccuracy(convergence) |==> <NO-OP>
+153:STD:<CALL>:<NO-OP>:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):228:solver.setMaximalIterationCount(maxIterationCount) |==> <NO-OP>
+154:ROR:<=(double,double):!=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):229:ta <= tb |==> ta != tb
+155:ROR:<=(double,double):<(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):229:ta <= tb |==> ta < tb
+156:ROR:<=(double,double):==(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):229:ta <= tb |==> ta == tb
+157:ROR:<=(double,double):>(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):229:ta <= tb |==> ta > tb
+158:ROR:<=(double,double):>=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):229:ta <= tb |==> ta >= tb
+159:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):229:ta <= tb |==> false
+160:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):229:ta <= tb |==> true
+161:AOR:-(double,double):%(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):230:root - ta |==> root % ta
+162:AOR:-(double,double):*(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):230:root - ta |==> root * ta
+163:AOR:-(double,double):+(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):230:root - ta |==> root + ta
+164:AOR:-(double,double):/(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):230:root - ta |==> root / ta
+165:ROR:<=(double,double):!=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):230:Math.abs(root - ta) <= convergence |==> Math.abs(root - ta) != convergence
+166:ROR:<=(double,double):<(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):230:Math.abs(root - ta) <= convergence |==> Math.abs(root - ta) < convergence
+167:ROR:<=(double,double):==(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):230:Math.abs(root - ta) <= convergence |==> Math.abs(root - ta) == convergence
+168:ROR:<=(double,double):>(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):230:Math.abs(root - ta) <= convergence |==> Math.abs(root - ta) > convergence
+169:ROR:<=(double,double):>=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):230:Math.abs(root - ta) <= convergence |==> Math.abs(root - ta) >= convergence
+170:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):230:Math.abs(root - ta) <= convergence |==> false
+171:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):230:Math.abs(root - ta) <= convergence |==> true
+172:AOR:-(double,double):%(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):231:root - previousEventTime |==> root % previousEventTime
+173:AOR:-(double,double):*(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):231:root - previousEventTime |==> root * previousEventTime
+174:AOR:-(double,double):+(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):231:root - previousEventTime |==> root + previousEventTime
+175:AOR:-(double,double):/(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):231:root - previousEventTime |==> root / previousEventTime
+176:ROR:<=(double,double):!=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):231:Math.abs(root - previousEventTime) <= convergence |==> Math.abs(root - previousEventTime) != convergence
+177:ROR:<=(double,double):<(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):231:Math.abs(root - previousEventTime) <= convergence |==> Math.abs(root - previousEventTime) < convergence
+178:ROR:<=(double,double):==(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):231:Math.abs(root - previousEventTime) <= convergence |==> Math.abs(root - previousEventTime) == convergence
+179:ROR:<=(double,double):>(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):231:Math.abs(root - previousEventTime) <= convergence |==> Math.abs(root - previousEventTime) > convergence
+180:ROR:<=(double,double):>=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):231:Math.abs(root - previousEventTime) <= convergence |==> Math.abs(root - previousEventTime) >= convergence
+181:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):231:Math.abs(root - previousEventTime) <= convergence |==> false
+182:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):231:Math.abs(root - previousEventTime) <= convergence |==> true
+183:COR:&&(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):230:(Math.abs(root - ta) <= convergence) && (Math.abs(root - previousEventTime) <= convergence) |==> (Math.abs(root - ta) <= convergence) != (Math.abs(root - previousEventTime) <= convergence)
+184:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):230:(Math.abs(root - ta) <= convergence) && (Math.abs(root - previousEventTime) <= convergence) |==> (Math.abs(root - ta) <= convergence) == (Math.abs(root - previousEventTime) <= convergence)
+185:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):230:(Math.abs(root - ta) <= convergence) && (Math.abs(root - previousEventTime) <= convergence) |==> false
+186:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):230:(Math.abs(root - ta) <= convergence) && (Math.abs(root - previousEventTime) <= convergence) |==> (Math.abs(root - ta) <= convergence)
+187:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):231:(Math.abs(root - ta) <= convergence) && (Math.abs(root - previousEventTime) <= convergence) |==> (Math.abs(root - previousEventTime) <= convergence)
+188:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):230:(Math.abs(root - ta) <= convergence) && (Math.abs(root - previousEventTime) <= convergence) |==> true
+189:COR:&&(boolean,boolean):||(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):230:(Math.abs(root - ta) <= convergence) && (Math.abs(root - previousEventTime) <= convergence) |==> (Math.abs(root - ta) <= convergence) || (Math.abs(root - previousEventTime) <= convergence)
+190:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):233:ta = tb |==> <NO-OP>
+191:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):234:ga = gb |==> <NO-OP>
+192:AOR:-(double,double):%(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):236:previousEventTime - root |==> previousEventTime % root
+193:AOR:-(double,double):*(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):236:previousEventTime - root |==> previousEventTime * root
+194:AOR:-(double,double):+(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):236:previousEventTime - root |==> previousEventTime + root
+195:AOR:-(double,double):/(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):236:previousEventTime - root |==> previousEventTime / root
+196:ROR:>(double,double):!=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):236:Math.abs(previousEventTime - root) > convergence |==> Math.abs(previousEventTime - root) != convergence
+197:ROR:>(double,double):<(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):236:Math.abs(previousEventTime - root) > convergence |==> Math.abs(previousEventTime - root) < convergence
+198:ROR:>(double,double):<=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):236:Math.abs(previousEventTime - root) > convergence |==> Math.abs(previousEventTime - root) <= convergence
+199:ROR:>(double,double):==(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):236:Math.abs(previousEventTime - root) > convergence |==> Math.abs(previousEventTime - root) == convergence
+200:ROR:>(double,double):>=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):236:Math.abs(previousEventTime - root) > convergence |==> Math.abs(previousEventTime - root) >= convergence
+201:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):236:Math.abs(previousEventTime - root) > convergence |==> false
+202:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):236:Math.abs(previousEventTime - root) > convergence |==> true
+203:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):235:Double.isNaN(previousEventTime) || (Math.abs(previousEventTime - root) > convergence) |==> Double.isNaN(previousEventTime) != (Math.abs(previousEventTime - root) > convergence)
+204:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):235:Double.isNaN(previousEventTime) || (Math.abs(previousEventTime - root) > convergence) |==> Double.isNaN(previousEventTime) && (Math.abs(previousEventTime - root) > convergence)
+205:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):235:Double.isNaN(previousEventTime) || (Math.abs(previousEventTime - root) > convergence) |==> Double.isNaN(previousEventTime) == (Math.abs(previousEventTime - root) > convergence)
+206:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):235:Double.isNaN(previousEventTime) || (Math.abs(previousEventTime - root) > convergence) |==> false
+207:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):235:Double.isNaN(previousEventTime) || (Math.abs(previousEventTime - root) > convergence) |==> Double.isNaN(previousEventTime)
+208:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):236:Double.isNaN(previousEventTime) || (Math.abs(previousEventTime - root) > convergence) |==> (Math.abs(previousEventTime - root) > convergence)
+209:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):235:Double.isNaN(previousEventTime) || (Math.abs(previousEventTime - root) > convergence) |==> true
+210:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):237:pendingEventTime = root |==> <NO-OP>
+211:AOR:-(double,double):%(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:t1 - pendingEventTime |==> t1 % pendingEventTime
+212:AOR:-(double,double):*(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:t1 - pendingEventTime |==> t1 * pendingEventTime
+213:AOR:-(double,double):+(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:t1 - pendingEventTime |==> t1 + pendingEventTime
+214:AOR:-(double,double):/(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:t1 - pendingEventTime |==> t1 / pendingEventTime
+215:ROR:<=(double,double):!=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:Math.abs(t1 - pendingEventTime) <= convergence |==> Math.abs(t1 - pendingEventTime) != convergence
+216:ROR:<=(double,double):<(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:Math.abs(t1 - pendingEventTime) <= convergence |==> Math.abs(t1 - pendingEventTime) < convergence
+217:ROR:<=(double,double):==(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:Math.abs(t1 - pendingEventTime) <= convergence |==> Math.abs(t1 - pendingEventTime) == convergence
+218:ROR:<=(double,double):>(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:Math.abs(t1 - pendingEventTime) <= convergence |==> Math.abs(t1 - pendingEventTime) > convergence
+219:ROR:<=(double,double):>=(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:Math.abs(t1 - pendingEventTime) <= convergence |==> Math.abs(t1 - pendingEventTime) >= convergence
+220:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:Math.abs(t1 - pendingEventTime) <= convergence |==> false
+221:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:Math.abs(t1 - pendingEventTime) <= convergence |==> true
+222:COR:&&(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:pendingEvent && (Math.abs(t1 - pendingEventTime) <= convergence) |==> pendingEvent != (Math.abs(t1 - pendingEventTime) <= convergence)
+223:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:pendingEvent && (Math.abs(t1 - pendingEventTime) <= convergence) |==> pendingEvent == (Math.abs(t1 - pendingEventTime) <= convergence)
+224:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:pendingEvent && (Math.abs(t1 - pendingEventTime) <= convergence) |==> false
+225:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:pendingEvent && (Math.abs(t1 - pendingEventTime) <= convergence) |==> pendingEvent
+226:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:pendingEvent && (Math.abs(t1 - pendingEventTime) <= convergence) |==> (Math.abs(t1 - pendingEventTime) <= convergence)
+227:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:pendingEvent && (Math.abs(t1 - pendingEventTime) <= convergence) |==> true
+228:COR:&&(boolean,boolean):||(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):238:pendingEvent && (Math.abs(t1 - pendingEventTime) <= convergence) |==> pendingEvent || (Math.abs(t1 - pendingEventTime) <= convergence)
+229:LVR:FALSE:TRUE:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):243:false |==> true
+230:LVR:TRUE:FALSE:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):247:true |==> false
+231:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):247:pendingEvent = true |==> <NO-OP>
+232:LVR:TRUE:FALSE:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):248:true |==> false
+233:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):253:ta = tb |==> <NO-OP>
+234:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):254:ga = gb |==> <NO-OP>
+235:LVR:FALSE:TRUE:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):260:false |==> true
+236:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):260:pendingEvent = false |==> <NO-OP>
+237:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):261:pendingEventTime = Double.NaN |==> <NO-OP>
+238:LVR:FALSE:TRUE:org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):262:false |==> true
+239:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):266:cause != null |==> cause == null
+240:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):266:cause != null |==> false
+241:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):266:cause != null |==> true
+242:COR:&&(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):266:(cause != null) && (cause instanceof DerivativeException) |==> (cause != null) != (cause instanceof DerivativeException)
+243:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):266:(cause != null) && (cause instanceof DerivativeException) |==> (cause != null) == (cause instanceof DerivativeException)
+244:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):266:(cause != null) && (cause instanceof DerivativeException) |==> false
+245:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):266:(cause != null) && (cause instanceof DerivativeException) |==> (cause != null)
+246:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):266:(cause != null) && (cause instanceof DerivativeException) |==> (cause instanceof DerivativeException)
+247:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):266:(cause != null) && (cause instanceof DerivativeException) |==> true
+248:COR:&&(boolean,boolean):||(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):266:(cause != null) && (cause instanceof DerivativeException) |==> (cause != null) || (cause instanceof DerivativeException)
+249:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):268:cause != null |==> cause == null
+250:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):268:cause != null |==> false
+251:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):268:cause != null |==> true
+252:COR:&&(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):268:(cause != null) && (cause instanceof EventException) |==> (cause != null) != (cause instanceof EventException)
+253:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):268:(cause != null) && (cause instanceof EventException) |==> (cause != null) == (cause instanceof EventException)
+254:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):268:(cause != null) && (cause instanceof EventException) |==> false
+255:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):268:(cause != null) && (cause instanceof EventException) |==> (cause != null)
+256:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):268:(cause != null) && (cause instanceof EventException) |==> (cause instanceof EventException)
+257:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):268:(cause != null) && (cause instanceof EventException) |==> true
+258:COR:&&(boolean,boolean):||(boolean,boolean):org.apache.commons.math.ode.events.EventState@evaluateStep(org.apache.commons.math.ode.sampling.StepInterpolator):268:(cause != null) && (cause instanceof EventException) |==> (cause != null) || (cause instanceof EventException)
+259:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):296:t0 = t |==> <NO-OP>
+260:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):297:g0 = handler.g(t, y) |==> <NO-OP>
+261:COR:pendingEvent:TRUE:org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):299:pendingEvent |==> false
+262:COR:pendingEvent:FALSE:org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):299:pendingEvent |==> true
+263:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):301:previousEventTime = t |==> <NO-OP>
+264:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):302:g0Positive = increasing |==> <NO-OP>
+265:LOR:^(boolean,boolean):&(boolean,boolean):org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):303:increasing ^ forward |==> increasing & forward
+266:LOR:^(boolean,boolean):|(boolean,boolean):org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):303:increasing ^ forward |==> increasing | forward
+267:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):303:nextAction = handler.eventOccurred(t, y, !(increasing ^ forward)) |==> <NO-OP>
+268:LVR:0:POS:org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):305:0 |==> 1
+269:LVR:0:NEG:org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):305:0 |==> -1
+270:ROR:>=(double,double):!=(double,double):org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):305:g0 >= 0 |==> g0 != 0
+271:ROR:>=(double,double):<(double,double):org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):305:g0 >= 0 |==> g0 < 0
+272:ROR:>=(double,double):<=(double,double):org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):305:g0 >= 0 |==> g0 <= 0
+273:ROR:>=(double,double):==(double,double):org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):305:g0 >= 0 |==> g0 == 0
+274:ROR:>=(double,double):>(double,double):org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):305:g0 >= 0 |==> g0 > 0
+275:ROR:>=(double,double):FALSE(double,double):org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):305:g0 >= 0 |==> false
+276:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):305:g0 >= 0 |==> true
+277:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):305:g0Positive = g0 >= 0 |==> <NO-OP>
+278:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@stepAccepted(double,double[]):306:nextAction = EventHandler.CONTINUE |==> <NO-OP>
+279:ROR:==(int,int):!=(int,int):org.apache.commons.math.ode.events.EventState@stop():315:nextAction == EventHandler.STOP |==> nextAction != EventHandler.STOP
+280:ROR:==(int,int):<(int,int):org.apache.commons.math.ode.events.EventState@stop():315:nextAction == EventHandler.STOP |==> nextAction < EventHandler.STOP
+281:ROR:==(int,int):<=(int,int):org.apache.commons.math.ode.events.EventState@stop():315:nextAction == EventHandler.STOP |==> nextAction <= EventHandler.STOP
+282:ROR:==(int,int):>(int,int):org.apache.commons.math.ode.events.EventState@stop():315:nextAction == EventHandler.STOP |==> nextAction > EventHandler.STOP
+283:ROR:==(int,int):>=(int,int):org.apache.commons.math.ode.events.EventState@stop():315:nextAction == EventHandler.STOP |==> nextAction >= EventHandler.STOP
+284:ROR:==(int,int):FALSE(int,int):org.apache.commons.math.ode.events.EventState@stop():315:nextAction == EventHandler.STOP |==> false
+285:ROR:==(int,int):TRUE(int,int):org.apache.commons.math.ode.events.EventState@stop():315:nextAction == EventHandler.STOP |==> true
+286:COR:pendingEvent:TRUE:org.apache.commons.math.ode.events.EventState@reset(double,double[]):330:pendingEvent |==> false
+287:COR:pendingEvent:FALSE:org.apache.commons.math.ode.events.EventState@reset(double,double[]):330:pendingEvent |==> true
+288:LVR:FALSE:TRUE:org.apache.commons.math.ode.events.EventState@reset(double,double[]):331:false |==> true
+289:ROR:==(int,int):!=(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):334:nextAction == EventHandler.RESET_STATE |==> nextAction != EventHandler.RESET_STATE
+290:ROR:==(int,int):<(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):334:nextAction == EventHandler.RESET_STATE |==> nextAction < EventHandler.RESET_STATE
+291:ROR:==(int,int):<=(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):334:nextAction == EventHandler.RESET_STATE |==> nextAction <= EventHandler.RESET_STATE
+292:ROR:==(int,int):>(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):334:nextAction == EventHandler.RESET_STATE |==> nextAction > EventHandler.RESET_STATE
+293:ROR:==(int,int):>=(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):334:nextAction == EventHandler.RESET_STATE |==> nextAction >= EventHandler.RESET_STATE
+294:ROR:==(int,int):FALSE(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):334:nextAction == EventHandler.RESET_STATE |==> false
+295:ROR:==(int,int):TRUE(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):334:nextAction == EventHandler.RESET_STATE |==> true
+296:STD:<CALL>:<NO-OP>:org.apache.commons.math.ode.events.EventState@reset(double,double[]):335:handler.resetState(t, y) |==> <NO-OP>
+297:LVR:FALSE:TRUE:org.apache.commons.math.ode.events.EventState@reset(double,double[]):337:false |==> true
+298:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@reset(double,double[]):337:pendingEvent = false |==> <NO-OP>
+299:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.ode.events.EventState@reset(double,double[]):338:pendingEventTime = Double.NaN |==> <NO-OP>
+300:ROR:==(int,int):!=(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):340:nextAction == EventHandler.RESET_STATE |==> nextAction != EventHandler.RESET_STATE
+301:ROR:==(int,int):<(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):340:nextAction == EventHandler.RESET_STATE |==> nextAction < EventHandler.RESET_STATE
+302:ROR:==(int,int):<=(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):340:nextAction == EventHandler.RESET_STATE |==> nextAction <= EventHandler.RESET_STATE
+303:ROR:==(int,int):>(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):340:nextAction == EventHandler.RESET_STATE |==> nextAction > EventHandler.RESET_STATE
+304:ROR:==(int,int):>=(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):340:nextAction == EventHandler.RESET_STATE |==> nextAction >= EventHandler.RESET_STATE
+305:ROR:==(int,int):FALSE(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):340:nextAction == EventHandler.RESET_STATE |==> false
+306:ROR:==(int,int):TRUE(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):340:nextAction == EventHandler.RESET_STATE |==> true
+307:ROR:==(int,int):!=(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):341:nextAction == EventHandler.RESET_DERIVATIVES |==> nextAction != EventHandler.RESET_DERIVATIVES
+308:ROR:==(int,int):<(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):341:nextAction == EventHandler.RESET_DERIVATIVES |==> nextAction < EventHandler.RESET_DERIVATIVES
+309:ROR:==(int,int):<=(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):341:nextAction == EventHandler.RESET_DERIVATIVES |==> nextAction <= EventHandler.RESET_DERIVATIVES
+310:ROR:==(int,int):>(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):341:nextAction == EventHandler.RESET_DERIVATIVES |==> nextAction > EventHandler.RESET_DERIVATIVES
+311:ROR:==(int,int):>=(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):341:nextAction == EventHandler.RESET_DERIVATIVES |==> nextAction >= EventHandler.RESET_DERIVATIVES
+312:ROR:==(int,int):FALSE(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):341:nextAction == EventHandler.RESET_DERIVATIVES |==> false
+313:ROR:==(int,int):TRUE(int,int):org.apache.commons.math.ode.events.EventState@reset(double,double[]):341:nextAction == EventHandler.RESET_DERIVATIVES |==> true
+314:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.ode.events.EventState@reset(double,double[]):340:(nextAction == EventHandler.RESET_STATE) || (nextAction == EventHandler.RESET_DERIVATIVES) |==> (nextAction == EventHandler.RESET_STATE) != (nextAction == EventHandler.RESET_DERIVATIVES)
+315:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.math.ode.events.EventState@reset(double,double[]):340:(nextAction == EventHandler.RESET_STATE) || (nextAction == EventHandler.RESET_DERIVATIVES) |==> (nextAction == EventHandler.RESET_STATE) && (nextAction == EventHandler.RESET_DERIVATIVES)
+316:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.math.ode.events.EventState@reset(double,double[]):340:(nextAction == EventHandler.RESET_STATE) || (nextAction == EventHandler.RESET_DERIVATIVES) |==> (nextAction == EventHandler.RESET_STATE) == (nextAction == EventHandler.RESET_DERIVATIVES)
+317:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.ode.events.EventState@reset(double,double[]):340:(nextAction == EventHandler.RESET_STATE) || (nextAction == EventHandler.RESET_DERIVATIVES) |==> false
+318:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.ode.events.EventState@reset(double,double[]):340:(nextAction == EventHandler.RESET_STATE) || (nextAction == EventHandler.RESET_DERIVATIVES) |==> (nextAction == EventHandler.RESET_STATE)
+319:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.ode.events.EventState@reset(double,double[]):341:(nextAction == EventHandler.RESET_STATE) || (nextAction == EventHandler.RESET_DERIVATIVES) |==> (nextAction == EventHandler.RESET_DERIVATIVES)
+320:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.ode.events.EventState@reset(double,double[]):340:(nextAction == EventHandler.RESET_STATE) || (nextAction == EventHandler.RESET_DERIVATIVES) |==> true

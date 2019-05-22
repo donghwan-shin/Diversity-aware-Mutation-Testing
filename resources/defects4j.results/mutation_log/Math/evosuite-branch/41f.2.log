@@ -1,0 +1,137 @@
+
+init:
+     [echo] -------- Commons MATH 3.0-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] Compiling 354 source files to /tmp/run_mutation.pl_127390_1501729861/41f/target/test-classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /tmp/run_mutation.pl_127390_1501729861/41f/src/test/java/org/apache/commons/math/PerfTestUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 13 files to /tmp/run_mutation.pl_127390_1501729861/41f/target/test-classes
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 20 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 6.57 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 332
+    [junit] MAJOR: Mutants covered:   332 (100.00%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 20 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest5 (8ms / 4):
+    [junit] MAJOR: 689 (0 / 4 / 4) -> AVG-RTPM: 172ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 332
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest17 (9ms / 19):
+    [junit] MAJOR: 3814 (13 / 19 / 19) -> AVG-RTPM: 164ms
+    [junit] MAJOR: Mutants killed / live: 13 (11-2-0) / 319
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest14 (10ms / 22):
+    [junit] MAJOR: 9298 (10 / 22 / 22) -> AVG-RTPM: 249ms
+    [junit] MAJOR: Mutants killed / live: 23 (22-2-0) / 309
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest12 (11ms / 5):
+    [junit] MAJOR: 10642 (0 / 5 / 5) -> AVG-RTPM: 268ms
+    [junit] MAJOR: Mutants killed / live: 23 (23-2-0) / 309
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest6 (11ms / 16):
+    [junit] MAJOR: 15352 (4 / 16 / 16) -> AVG-RTPM: 294ms
+    [junit] MAJOR: Mutants killed / live: 27 (27-3-0) / 305
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest18 (12ms / 101):
+    [junit] MAJOR: 71258 (35 / 101 / 101) -> AVG-RTPM: 553ms
+    [junit] MAJOR: Mutants killed / live: 62 (56-10-0) / 270
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest19 (12ms / 22):
+    [junit] MAJOR: 92843 (12 / 22 / 22) -> AVG-RTPM: 981ms
+    [junit] MAJOR: Mutants killed / live: 74 (66-12-0) / 258
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest2 (12ms / 14):
+    [junit] MAJOR: 108768 (0 / 14 / 14) -> AVG-RTPM: 1137ms
+    [junit] MAJOR: Mutants killed / live: 74 (67-13-0) / 258
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest7 (12ms / 36):
+    [junit] MAJOR: 162121 (11 / 36 / 36) -> AVG-RTPM: 1482ms
+    [junit] MAJOR: Mutants killed / live: 85 (77-14-0) / 247
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest8 (12ms / 26):
+    [junit] MAJOR: 174531 (16 / 26 / 26) -> AVG-RTPM: 477ms
+    [junit] MAJOR: Mutants killed / live: 101 (79-37-0) / 231
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest16 (13ms / 7):
+    [junit] MAJOR: 175888 (1 / 7 / 7) -> AVG-RTPM: 193ms
+    [junit] MAJOR: Mutants killed / live: 102 (79-44-0) / 230
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest3 (13ms / 12):
+    [junit] MAJOR: 177992 (7 / 12 / 12) -> AVG-RTPM: 175ms
+    [junit] MAJOR: Mutants killed / live: 109 (79-56-0) / 223
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 13/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest9 (13ms / 31):
+    [junit] MAJOR: 184202 (6 / 31 / 31) -> AVG-RTPM: 200ms
+    [junit] MAJOR: Mutants killed / live: 115 (79-87-0) / 217
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 14/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest10 (15ms / 107):
+    [junit] MAJOR: 204441 (70 / 107 / 107) -> AVG-RTPM: 189ms
+    [junit] MAJOR: Mutants killed / live: 185 (79-194-0) / 147
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 15/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest13 (17ms / 27):
+    [junit] MAJOR: 209836 (4 / 27 / 27) -> AVG-RTPM: 199ms
+    [junit] MAJOR: Mutants killed / live: 189 (79-221-0) / 143
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 16/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest15 (19ms / 120):
+    [junit] MAJOR: 233126 (99 / 120 / 120) -> AVG-RTPM: 194ms
+    [junit] MAJOR: Mutants killed / live: 288 (79-341-0) / 44
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 17/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest4 (19ms / 103):
+    [junit] MAJOR: 253167 (27 / 103 / 103) -> AVG-RTPM: 194ms
+    [junit] MAJOR: Mutants killed / live: 315 (79-444-0) / 17
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 18/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest11 (21ms / 7):
+    [junit] MAJOR: 254530 (0 / 7 / 7) -> AVG-RTPM: 194ms
+    [junit] MAJOR: Mutants killed / live: 315 (79-451-0) / 17
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 19/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest0 (48ms / 5):
+    [junit] MAJOR: 255508 (0 / 5 / 5) -> AVG-RTPM: 195ms
+    [junit] MAJOR: Mutants killed / live: 315 (79-456-0) / 17
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 20/20 - org.apache.commons.math.stat.descriptive.moment.Variance_ESTest1 (63ms / 11):
+    [junit] MAJOR: 257593 (1 / 11 / 11) -> AVG-RTPM: 189ms
+    [junit] MAJOR: Mutants killed / live: 316 (79-467-0) / 16
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  257.6 seconds
+    [junit] MAJOR: Mutation score: 95.18% (95.18%)
+    [junit] MAJOR: Mutants killed / live: 316 (79-467-0) / 16
+    [junit] MAJOR: Mutant executions: 695
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_127390_1501729861/41f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 4 minutes 37 seconds

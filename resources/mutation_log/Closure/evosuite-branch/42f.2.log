@@ -1,0 +1,260 @@
+
+rhino:
+
+properties:
+
+init:
+
+compile:
+
+compile-most:
+
+compile-jdk15:
+
+compile:
+
+properties:
+
+compile:
+
+xmlimplsrc-compile:
+     [echo] Calling /tmp/run_mutation.pl_20190_1501581944/42f/lib/rhino/xmlimplsrc/build.xml
+
+compile:
+
+compile-all:
+
+compile:
+
+jar:
+
+rhino-jarjar:
+   [jarjar] Updating jar: /tmp/run_mutation.pl_20190_1501581944/42f/build/lib/rhino.jar
+
+svnversion:
+
+compile:
+    [javac] /tmp/run_mutation.pl_20190_1501581944/42f/build.xml:252: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] /tmp/run_mutation.pl_20190_1501581944/42f/build.xml:258: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+[propertyfile] Updating property file: /tmp/run_mutation.pl_20190_1501581944/42f/build/classes/com/google/javascript/jscomp/parsing/ParserConfig.properties
+
+compile-tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_20190_1501581944/42f/build/test
+    [javac] /tmp/run_mutation.pl_20190_1501581944/42f/build.xml:324: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 395 source files to /tmp/run_mutation.pl_20190_1501581944/42f/build/test
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] Note: /tmp/run_mutation.pl_20190_1501581944/42f/src/com/google/javascript/jscomp/ant/CompileTask.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+    [javac] /tmp/run_mutation.pl_20190_1501581944/42f/build.xml:330: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 219 source files to /tmp/run_mutation.pl_20190_1501581944/42f/build/test
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] Note: /tmp/run_mutation.pl_20190_1501581944/42f/test/com/google/javascript/jscomp/parsing/JsDocInfoParserTest.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 1 warning
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 42 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 57.24 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 592
+    [junit] MAJOR: Mutants covered:   241 (40.71%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 42 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest35 (20ms / 85):
+    [junit] MAJOR: 142373 (18 / 85 / 85) -> AVG-RTPM: 1674ms
+    [junit] MAJOR: Mutants killed / live: 18 (1-17-0) / 223
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest39 (20ms / 21):
+    [junit] MAJOR: 201288 (2 / 21 / 21) -> AVG-RTPM: 2805ms
+    [junit] MAJOR: Mutants killed / live: 20 (3-17-0) / 221
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest2 (23ms / 6):
+    [junit] MAJOR: 219890 (0 / 6 / 6) -> AVG-RTPM: 3100ms
+    [junit] MAJOR: Mutants killed / live: 20 (4-17-0) / 221
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest22 (23ms / 15):
+    [junit] MAJOR: 272464 (2 / 15 / 15) -> AVG-RTPM: 3504ms
+    [junit] MAJOR: Mutants killed / live: 22 (7-17-0) / 219
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest36 (23ms / 91):
+    [junit] MAJOR: 347833 (66 / 91 / 91) -> AVG-RTPM: 828ms
+    [junit] MAJOR: Mutants killed / live: 88 (8-100-0) / 153
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest21 (24ms / 63):
+    [junit] MAJOR: 357127 (18 / 63 / 63) -> AVG-RTPM: 147ms
+    [junit] MAJOR: Mutants killed / live: 106 (8-163-0) / 135
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest10 (25ms / 6):
+    [junit] MAJOR: 358428 (0 / 6 / 6) -> AVG-RTPM: 216ms
+    [junit] MAJOR: Mutants killed / live: 106 (8-169-0) / 135
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest40 (25ms / 6):
+    [junit] MAJOR: 359639 (0 / 6 / 6) -> AVG-RTPM: 201ms
+    [junit] MAJOR: Mutants killed / live: 106 (8-175-0) / 135
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest27 (26ms / 97):
+    [junit] MAJOR: 379908 (23 / 97 / 97) -> AVG-RTPM: 208ms
+    [junit] MAJOR: Mutants killed / live: 129 (8-272-0) / 112
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest30 (26ms / 77):
+    [junit] MAJOR: 394904 (3 / 77 / 77) -> AVG-RTPM: 194ms
+    [junit] MAJOR: Mutants killed / live: 132 (8-349-0) / 109
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest9 (26ms / 6):
+    [junit] MAJOR: 395789 (0 / 6 / 6) -> AVG-RTPM: 147ms
+    [junit] MAJOR: Mutants killed / live: 132 (8-355-0) / 109
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest13 (27ms / 94):
+    [junit] MAJOR: 416249 (0 / 94 / 94) -> AVG-RTPM: 217ms
+    [junit] MAJOR: Mutants killed / live: 132 (8-449-0) / 109
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 13/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest34 (27ms / 28):
+    [junit] MAJOR: 423286 (10 / 28 / 28) -> AVG-RTPM: 251ms
+    [junit] MAJOR: Mutants killed / live: 142 (8-477-0) / 99
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 14/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest8 (27ms / 25):
+    [junit] MAJOR: 426855 (3 / 25 / 25) -> AVG-RTPM: 142ms
+    [junit] MAJOR: Mutants killed / live: 145 (8-502-0) / 96
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 15/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest11 (28ms / 7):
+    [junit] MAJOR: 428350 (1 / 7 / 7) -> AVG-RTPM: 213ms
+    [junit] MAJOR: Mutants killed / live: 146 (8-509-0) / 95
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 16/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest20 (29ms / 71):
+    [junit] MAJOR: 440435 (17 / 71 / 71) -> AVG-RTPM: 170ms
+    [junit] MAJOR: Mutants killed / live: 163 (8-580-0) / 78
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 17/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest12 (30ms / 6):
+    [junit] MAJOR: 441705 (0 / 6 / 6) -> AVG-RTPM: 211ms
+    [junit] MAJOR: Mutants killed / live: 163 (8-586-0) / 78
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 18/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest15 (30ms / 79):
+    [junit] MAJOR: 455729 (13 / 79 / 79) -> AVG-RTPM: 177ms
+    [junit] MAJOR: Mutants killed / live: 176 (8-665-0) / 65
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 19/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest32 (30ms / 8):
+    [junit] MAJOR: 457470 (0 / 8 / 8) -> AVG-RTPM: 217ms
+    [junit] MAJOR: Mutants killed / live: 176 (8-673-0) / 65
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 20/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest33 (30ms / 85):
+    [junit] MAJOR: 474999 (1 / 85 / 85) -> AVG-RTPM: 206ms
+    [junit] MAJOR: Mutants killed / live: 177 (8-758-0) / 64
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 21/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest38 (30ms / 88):
+    [junit] MAJOR: 493181 (14 / 88 / 88) -> AVG-RTPM: 206ms
+    [junit] MAJOR: Mutants killed / live: 191 (8-846-0) / 50
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 22/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest1 (31ms / 6):
+    [junit] MAJOR: 494538 (0 / 6 / 6) -> AVG-RTPM: 226ms
+    [junit] MAJOR: Mutants killed / live: 191 (8-852-0) / 50
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 23/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest19 (31ms / 95):
+    [junit] MAJOR: 510879 (32 / 95 / 95) -> AVG-RTPM: 172ms
+    [junit] MAJOR: Mutants killed / live: 223 (8-947-0) / 18
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 24/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest23 (31ms / 78):
+    [junit] MAJOR: 527856 (3 / 78 / 78) -> AVG-RTPM: 217ms
+    [junit] MAJOR: Mutants killed / live: 226 (8-1025-0) / 15
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 25/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest24 (31ms / 77):
+    [junit] MAJOR: 544609 (0 / 77 / 77) -> AVG-RTPM: 217ms
+    [junit] MAJOR: Mutants killed / live: 226 (8-1102-0) / 15
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 26/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest26 (31ms / 7):
+    [junit] MAJOR: 546015 (1 / 7 / 7) -> AVG-RTPM: 200ms
+    [junit] MAJOR: Mutants killed / live: 227 (8-1109-0) / 14
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 27/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest14 (32ms / 6):
+    [junit] MAJOR: 547348 (0 / 6 / 6) -> AVG-RTPM: 222ms
+    [junit] MAJOR: Mutants killed / live: 227 (8-1115-0) / 14
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 28/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest17 (32ms / 66):
+    [junit] MAJOR: 559046 (0 / 66 / 66) -> AVG-RTPM: 177ms
+    [junit] MAJOR: Mutants killed / live: 227 (8-1181-0) / 14
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 29/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest25 (32ms / 8):
+    [junit] MAJOR: 560761 (2 / 8 / 8) -> AVG-RTPM: 214ms
+    [junit] MAJOR: Mutants killed / live: 229 (8-1189-0) / 12
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 30/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest28 (32ms / 94):
+    [junit] MAJOR: 581210 (0 / 94 / 94) -> AVG-RTPM: 217ms
+    [junit] MAJOR: Mutants killed / live: 229 (8-1283-0) / 12
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 31/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest5 (33ms / 6):
+    [junit] MAJOR: 582508 (0 / 6 / 6) -> AVG-RTPM: 216ms
+    [junit] MAJOR: Mutants killed / live: 229 (8-1289-0) / 12
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 32/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest29 (34ms / 11):
+    [junit] MAJOR: 584876 (5 / 11 / 11) -> AVG-RTPM: 215ms
+    [junit] MAJOR: Mutants killed / live: 234 (8-1300-0) / 7
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 33/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest37 (34ms / 82):
+    [junit] MAJOR: 601560 (0 / 82 / 82) -> AVG-RTPM: 203ms
+    [junit] MAJOR: Mutants killed / live: 234 (8-1382-0) / 7
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 34/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest31 (35ms / 10):
+    [junit] MAJOR: 604049 (1 / 10 / 10) -> AVG-RTPM: 248ms
+    [junit] MAJOR: Mutants killed / live: 235 (8-1392-0) / 6
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 35/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest7 (35ms / 6):
+    [junit] MAJOR: 605322 (0 / 6 / 6) -> AVG-RTPM: 212ms
+    [junit] MAJOR: Mutants killed / live: 235 (8-1398-0) / 6
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 36/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest41 (36ms / 7):
+    [junit] MAJOR: 606656 (0 / 7 / 7) -> AVG-RTPM: 190ms
+    [junit] MAJOR: Mutants killed / live: 235 (8-1405-0) / 6
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 37/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest0 (38ms / 6):
+    [junit] MAJOR: 608025 (0 / 6 / 6) -> AVG-RTPM: 228ms
+    [junit] MAJOR: Mutants killed / live: 235 (8-1411-0) / 6
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 38/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest16 (38ms / 91):
+    [junit] MAJOR: 630142 (0 / 91 / 91) -> AVG-RTPM: 243ms
+    [junit] MAJOR: Mutants killed / live: 235 (8-1502-0) / 6
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 39/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest18 (38ms / 93):
+    [junit] MAJOR: 646499 (0 / 93 / 93) -> AVG-RTPM: 175ms
+    [junit] MAJOR: Mutants killed / live: 235 (8-1595-0) / 6
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 40/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest4 (38ms / 6):
+    [junit] MAJOR: 648079 (0 / 6 / 6) -> AVG-RTPM: 263ms
+    [junit] MAJOR: Mutants killed / live: 235 (8-1601-0) / 6
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 41/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest3 (60ms / 81):
+    [junit] MAJOR: 666173 (4 / 81 / 81) -> AVG-RTPM: 223ms
+    [junit] MAJOR: Mutants killed / live: 239 (8-1682-0) / 2
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 42/42 - com.google.javascript.jscomp.parsing.IRFactory_ESTest6 (95ms / 75):
+    [junit] MAJOR: 681236 (0 / 75 / 75) -> AVG-RTPM: 200ms
+    [junit] MAJOR: Mutants killed / live: 239 (8-1757-0) / 2
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  681.2 seconds
+    [junit] MAJOR: Mutation score: 40.37% (99.17%)
+    [junit] MAJOR: Mutants killed / live: 239 (8-1757-0) / 2
+    [junit] MAJOR: Mutant executions: 1875
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_20190_1501581944/42f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 12 minutes 37 seconds

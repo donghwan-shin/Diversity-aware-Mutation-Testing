@@ -1,0 +1,322 @@
+1:LVR:POS:0:org.joda.time.format.DateTimeParserBucket:71:8 |==> 0
+2:LVR:POS:NEG:org.joda.time.format.DateTimeParserBucket:71:8 |==> -8
+3:LVR:POS:0:org.joda.time.format.DateTimeParserBucket@<init>(long,org.joda.time.Chronology,java.util.Locale):87:2000 |==> 0
+4:LVR:POS:NEG:org.joda.time.format.DateTimeParserBucket@<init>(long,org.joda.time.Chronology,java.util.Locale):87:2000 |==> -2000
+5:LVR:POS:0:org.joda.time.format.DateTimeParserBucket@<init>(long,org.joda.time.Chronology,java.util.Locale,java.lang.Integer):103:2000 |==> 0
+6:LVR:POS:NEG:org.joda.time.format.DateTimeParserBucket@<init>(long,org.joda.time.Chronology,java.util.Locale,java.lang.Integer):103:2000 |==> -2000
+7:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@<init>(long,org.joda.time.Chronology,java.util.Locale,java.lang.Integer,int):119:chrono = DateTimeUtils.getChronology(chrono) |==> <NO-OP>
+8:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@<init>(long,org.joda.time.Chronology,java.util.Locale,java.lang.Integer,int):122:locale == null |==> locale != null
+9:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@<init>(long,org.joda.time.Chronology,java.util.Locale,java.lang.Integer,int):122:locale == null |==> false
+10:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@<init>(long,org.joda.time.Chronology,java.util.Locale,java.lang.Integer,int):122:locale == null |==> true
+11:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@<init>(long,org.joda.time.Chronology,java.util.Locale,java.lang.Integer,int):122:iLocale = (locale == null ? Locale.getDefault() : locale) |==> <NO-OP>
+12:STD:<CALL>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@<init>(long,org.joda.time.Chronology,java.util.Locale,java.lang.Integer,int):123:setZone(chrono.getZone()) |==> <NO-OP>
+13:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@<init>(long,org.joda.time.Chronology,java.util.Locale,java.lang.Integer,int):124:iPivotYear = pivotYear |==> <NO-OP>
+14:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@<init>(long,org.joda.time.Chronology,java.util.Locale,java.lang.Integer,int):125:iDefaultYear = defaultYear |==> <NO-OP>
+15:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@setZone(org.joda.time.DateTimeZone):162:iSavedState = null |==> <NO-OP>
+16:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@setZone(org.joda.time.DateTimeZone):163:zone == DateTimeZone.UTC |==> zone != DateTimeZone.UTC
+17:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@setZone(org.joda.time.DateTimeZone):163:zone == DateTimeZone.UTC |==> false
+18:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@setZone(org.joda.time.DateTimeZone):163:zone == DateTimeZone.UTC |==> true
+19:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@setZone(org.joda.time.DateTimeZone):163:iZone = zone == DateTimeZone.UTC ? null : zone |==> <NO-OP>
+20:LVR:0:POS:org.joda.time.format.DateTimeParserBucket@setZone(org.joda.time.DateTimeZone):164:0 |==> 1
+21:LVR:0:NEG:org.joda.time.format.DateTimeParserBucket@setZone(org.joda.time.DateTimeZone):164:0 |==> -1
+22:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@setZone(org.joda.time.DateTimeZone):164:iOffset = 0 |==> <NO-OP>
+23:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@setOffset(int):181:iSavedState = null |==> <NO-OP>
+24:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@setOffset(int):182:iOffset = offset |==> <NO-OP>
+25:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@setOffset(int):183:iZone = null |==> <NO-OP>
+26:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@setPivotYear(java.lang.Integer):213:iPivotYear = pivotYear |==> <NO-OP>
+27:STD:<CALL>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.DateTimeField,int):224:saveField(new SavedField(field, value)) |==> <NO-OP>
+28:STD:<CALL>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.DateTimeFieldType,int):234:saveField(new SavedField(fieldType.getField(iChrono), value)) |==> <NO-OP>
+29:STD:<CALL>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.DateTimeFieldType,java.lang.String,java.util.Locale):245:saveField(new SavedField(fieldType.getField(iChrono), text, locale)) |==> <NO-OP>
+30:ROR:==(int,int):!=(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):252:savedFieldsCount == savedFields.length |==> savedFieldsCount != savedFields.length
+31:ROR:==(int,int):<(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):252:savedFieldsCount == savedFields.length |==> savedFieldsCount < savedFields.length
+32:ROR:==(int,int):<=(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):252:savedFieldsCount == savedFields.length |==> savedFieldsCount <= savedFields.length
+33:ROR:==(int,int):>(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):252:savedFieldsCount == savedFields.length |==> savedFieldsCount > savedFields.length
+34:ROR:==(int,int):>=(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):252:savedFieldsCount == savedFields.length |==> savedFieldsCount >= savedFields.length
+35:ROR:==(int,int):FALSE(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):252:savedFieldsCount == savedFields.length |==> false
+36:ROR:==(int,int):TRUE(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):252:savedFieldsCount == savedFields.length |==> true
+37:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):252:savedFieldsCount == savedFields.length || iSavedFieldsShared |==> savedFieldsCount == savedFields.length != iSavedFieldsShared
+38:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):252:savedFieldsCount == savedFields.length || iSavedFieldsShared |==> savedFieldsCount == savedFields.length && iSavedFieldsShared
+39:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):252:savedFieldsCount == savedFields.length || iSavedFieldsShared |==> savedFieldsCount == savedFields.length == iSavedFieldsShared
+40:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):252:savedFieldsCount == savedFields.length || iSavedFieldsShared |==> false
+41:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):252:savedFieldsCount == savedFields.length || iSavedFieldsShared |==> savedFieldsCount == savedFields.length
+42:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):252:savedFieldsCount == savedFields.length || iSavedFieldsShared |==> iSavedFieldsShared
+43:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):252:savedFieldsCount == savedFields.length || iSavedFieldsShared |==> true
+44:ROR:==(int,int):!=(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):255:savedFieldsCount == savedFields.length |==> savedFieldsCount != savedFields.length
+45:ROR:==(int,int):<(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):255:savedFieldsCount == savedFields.length |==> savedFieldsCount < savedFields.length
+46:ROR:==(int,int):<=(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):255:savedFieldsCount == savedFields.length |==> savedFieldsCount <= savedFields.length
+47:ROR:==(int,int):>(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):255:savedFieldsCount == savedFields.length |==> savedFieldsCount > savedFields.length
+48:ROR:==(int,int):>=(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):255:savedFieldsCount == savedFields.length |==> savedFieldsCount >= savedFields.length
+49:ROR:==(int,int):FALSE(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):255:savedFieldsCount == savedFields.length |==> false
+50:ROR:==(int,int):TRUE(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):255:savedFieldsCount == savedFields.length |==> true
+51:LVR:POS:0:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):255:2 |==> 0
+52:LVR:POS:NEG:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):255:2 |==> -2
+53:AOR:*(int,int):%(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):255:savedFieldsCount * 2 |==> savedFieldsCount % 2
+54:AOR:*(int,int):+(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):255:savedFieldsCount * 2 |==> savedFieldsCount + 2
+55:AOR:*(int,int):-(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):255:savedFieldsCount * 2 |==> savedFieldsCount - 2
+56:AOR:*(int,int):/(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):255:savedFieldsCount * 2 |==> savedFieldsCount / 2
+57:LVR:0:POS:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):256:0 |==> 1
+58:LVR:0:NEG:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):256:0 |==> -1
+59:LVR:0:POS:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):256:0 |==> 1
+60:LVR:0:NEG:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):256:0 |==> -1
+61:STD:<CALL>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):256:System.arraycopy(savedFields, 0, newArray, 0, savedFieldsCount) |==> <NO-OP>
+62:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):257:iSavedFields = savedFields = newArray |==> <NO-OP>
+63:LVR:FALSE:TRUE:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):258:false |==> true
+64:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):258:iSavedFieldsShared = false |==> <NO-OP>
+65:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):261:iSavedState = null |==> <NO-OP>
+66:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):262:savedFields[savedFieldsCount] = field |==> <NO-OP>
+67:LVR:POS:0:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):263:1 |==> 0
+68:LVR:POS:NEG:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):263:1 |==> -1
+69:AOR:+(int,int):%(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):263:savedFieldsCount + 1 |==> savedFieldsCount % 1
+70:AOR:+(int,int):*(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):263:savedFieldsCount + 1 |==> savedFieldsCount * 1
+71:AOR:+(int,int):-(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):263:savedFieldsCount + 1 |==> savedFieldsCount - 1
+72:AOR:+(int,int):/(int,int):org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):263:savedFieldsCount + 1 |==> savedFieldsCount / 1
+73:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@saveField(org.joda.time.format.DateTimeParserBucket.SavedField):263:iSavedFieldsCount = savedFieldsCount + 1 |==> <NO-OP>
+74:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@saveState():274:iSavedState == null |==> iSavedState != null
+75:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@saveState():274:iSavedState == null |==> false
+76:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@saveState():274:iSavedState == null |==> true
+77:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@saveState():275:iSavedState = new SavedState() |==> <NO-OP>
+78:COR:((SavedState)savedState).restoreState(this):TRUE:org.joda.time.format.DateTimeParserBucket@restoreState(java.lang.Object):290:((SavedState)savedState).restoreState(this) |==> false
+79:COR:((SavedState)savedState).restoreState(this):FALSE:org.joda.time.format.DateTimeParserBucket@restoreState(java.lang.Object):290:((SavedState)savedState).restoreState(this) |==> true
+80:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@restoreState(java.lang.Object):291:iSavedState = savedState |==> <NO-OP>
+81:LVR:TRUE:FALSE:org.joda.time.format.DateTimeParserBucket@restoreState(java.lang.Object):292:true |==> false
+82:LVR:FALSE:TRUE:org.joda.time.format.DateTimeParserBucket@restoreState(java.lang.Object):295:false |==> true
+83:LVR:FALSE:TRUE:org.joda.time.format.DateTimeParserBucket@computeMillis():306:false |==> true
+84:COR:iSavedFieldsShared:TRUE:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):334:iSavedFieldsShared |==> false
+85:COR:iSavedFieldsShared:FALSE:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):334:iSavedFieldsShared |==> true
+86:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):335:iSavedFields = savedFields = (SavedField[])iSavedFields.clone() |==> <NO-OP>
+87:LVR:FALSE:TRUE:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):336:false |==> true
+88:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):336:iSavedFieldsShared = false |==> <NO-OP>
+89:STD:<CALL>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):338:sort(savedFields, count) |==> <NO-OP>
+90:LVR:0:POS:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):339:0 |==> 1
+91:LVR:0:NEG:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):339:0 |==> -1
+92:ROR:>(int,int):!=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):339:count > 0 |==> count != 0
+93:ROR:>(int,int):<(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):339:count > 0 |==> count < 0
+94:ROR:>(int,int):<=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):339:count > 0 |==> count <= 0
+95:ROR:>(int,int):==(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):339:count > 0 |==> count == 0
+96:ROR:>(int,int):>=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):339:count > 0 |==> count >= 0
+97:ROR:>(int,int):FALSE(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):339:count > 0 |==> false
+98:ROR:>(int,int):TRUE(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):339:count > 0 |==> true
+99:LVR:0:POS:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):343:0 |==> 1
+100:LVR:0:NEG:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):343:0 |==> -1
+101:LVR:0:POS:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:0 |==> 1
+102:LVR:0:NEG:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:0 |==> -1
+103:ROR:>=(int,int):!=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, months) >= 0 |==> compareReverse(first, months) != 0
+104:ROR:>=(int,int):<(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, months) >= 0 |==> compareReverse(first, months) < 0
+105:ROR:>=(int,int):<=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, months) >= 0 |==> compareReverse(first, months) <= 0
+106:ROR:>=(int,int):==(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, months) >= 0 |==> compareReverse(first, months) == 0
+107:ROR:>=(int,int):>(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, months) >= 0 |==> compareReverse(first, months) > 0
+108:ROR:>=(int,int):FALSE(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, months) >= 0 |==> false
+109:ROR:>=(int,int):TRUE(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, months) >= 0 |==> true
+110:LVR:0:POS:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:0 |==> 1
+111:LVR:0:NEG:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:0 |==> -1
+112:ROR:<=(int,int):!=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, days) <= 0 |==> compareReverse(first, days) != 0
+113:ROR:<=(int,int):<(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, days) <= 0 |==> compareReverse(first, days) < 0
+114:ROR:<=(int,int):==(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, days) <= 0 |==> compareReverse(first, days) == 0
+115:ROR:<=(int,int):>(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, days) <= 0 |==> compareReverse(first, days) > 0
+116:ROR:<=(int,int):>=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, days) <= 0 |==> compareReverse(first, days) >= 0
+117:ROR:<=(int,int):FALSE(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, days) <= 0 |==> false
+118:ROR:<=(int,int):TRUE(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, days) <= 0 |==> true
+119:COR:&&(boolean,boolean):!=(boolean,boolean):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, months) >= 0 && compareReverse(first, days) <= 0 |==> compareReverse(first, months) >= 0 != compareReverse(first, days) <= 0
+120:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, months) >= 0 && compareReverse(first, days) <= 0 |==> compareReverse(first, months) >= 0 == compareReverse(first, days) <= 0
+121:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, months) >= 0 && compareReverse(first, days) <= 0 |==> false
+122:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, months) >= 0 && compareReverse(first, days) <= 0 |==> compareReverse(first, months) >= 0
+123:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, months) >= 0 && compareReverse(first, days) <= 0 |==> compareReverse(first, days) <= 0
+124:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, months) >= 0 && compareReverse(first, days) <= 0 |==> true
+125:COR:&&(boolean,boolean):||(boolean,boolean):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):344:compareReverse(first, months) >= 0 && compareReverse(first, days) <= 0 |==> compareReverse(first, months) >= 0 || compareReverse(first, days) <= 0
+126:STD:<CALL>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):345:saveField(DateTimeFieldType.year(), iDefaultYear) |==> <NO-OP>
+127:LVR:0:POS:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):352:0 |==> 1
+128:LVR:0:NEG:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):352:0 |==> -1
+129:ROR:<(int,int):!=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):352:i < count |==> i != count
+130:ROR:<(int,int):<=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):352:i < count |==> i <= count
+131:ROR:<(int,int):==(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):352:i < count |==> i == count
+132:ROR:<(int,int):>(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):352:i < count |==> i > count
+133:ROR:<(int,int):>=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):352:i < count |==> i >= count
+134:ROR:<(int,int):FALSE(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):352:i < count |==> false
+135:ROR:<(int,int):TRUE(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):352:i < count |==> true
+136:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):353:millis = savedFields[i].set(millis, resetFields) |==> <NO-OP>
+137:COR:resetFields:TRUE:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):355:resetFields |==> false
+138:COR:resetFields:FALSE:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):355:resetFields |==> true
+139:LVR:0:POS:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):356:0 |==> 1
+140:LVR:0:NEG:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):356:0 |==> -1
+141:ROR:<(int,int):!=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):356:i < count |==> i != count
+142:ROR:<(int,int):<=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):356:i < count |==> i <= count
+143:ROR:<(int,int):==(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):356:i < count |==> i == count
+144:ROR:<(int,int):>(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):356:i < count |==> i > count
+145:ROR:<(int,int):>=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):356:i < count |==> i >= count
+146:ROR:<(int,int):FALSE(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):356:i < count |==> false
+147:ROR:<(int,int):TRUE(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):356:i < count |==> true
+148:LVR:POS:0:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):357:1 |==> 0
+149:LVR:POS:NEG:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):357:1 |==> -1
+150:AOR:-(int,int):%(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):357:count - 1 |==> count % 1
+151:AOR:-(int,int):*(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):357:count - 1 |==> count * 1
+152:AOR:-(int,int):+(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):357:count - 1 |==> count + 1
+153:AOR:-(int,int):/(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):357:count - 1 |==> count / 1
+154:ROR:==(int,int):!=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):357:i == (count - 1) |==> i != (count - 1)
+155:ROR:==(int,int):<(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):357:i == (count - 1) |==> i < (count - 1)
+156:ROR:==(int,int):<=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):357:i == (count - 1) |==> i <= (count - 1)
+157:ROR:==(int,int):>(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):357:i == (count - 1) |==> i > (count - 1)
+158:ROR:==(int,int):>=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):357:i == (count - 1) |==> i >= (count - 1)
+159:ROR:==(int,int):FALSE(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):357:i == (count - 1) |==> false
+160:ROR:==(int,int):TRUE(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):357:i == (count - 1) |==> true
+161:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):357:millis = savedFields[i].set(millis, i == (count - 1)) |==> <NO-OP>
+162:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):361:text != null |==> text == null
+163:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):361:text != null |==> false
+164:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):361:text != null |==> true
+165:STD:<CALL>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):362:e.prependMessage("Cannot parse \"" + text + '\"') |==> <NO-OP>
+166:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):367:iZone == null |==> iZone != null
+167:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):367:iZone == null |==> false
+168:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):367:iZone == null |==> true
+169:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):368:millis -= iOffset |==> <NO-OP>
+170:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):371:millis -= offset |==> <NO-OP>
+171:ROR:!=(int,int):<(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):372:offset != iZone.getOffset(millis) |==> offset < iZone.getOffset(millis)
+172:ROR:!=(int,int):<=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):372:offset != iZone.getOffset(millis) |==> offset <= iZone.getOffset(millis)
+173:ROR:!=(int,int):==(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):372:offset != iZone.getOffset(millis) |==> offset == iZone.getOffset(millis)
+174:ROR:!=(int,int):>(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):372:offset != iZone.getOffset(millis) |==> offset > iZone.getOffset(millis)
+175:ROR:!=(int,int):>=(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):372:offset != iZone.getOffset(millis) |==> offset >= iZone.getOffset(millis)
+176:ROR:!=(int,int):FALSE(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):372:offset != iZone.getOffset(millis) |==> false
+177:ROR:!=(int,int):TRUE(int,int):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):372:offset != iZone.getOffset(millis) |==> true
+178:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):375:text != null |==> text == null
+179:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):375:text != null |==> false
+180:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):375:text != null |==> true
+181:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@computeMillis(boolean,java.lang.String):376:message = "Cannot parse \"" + text + "\": " + message |==> <NO-OP>
+182:LVR:POS:0:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):404:10 |==> 0
+183:LVR:POS:NEG:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):404:10 |==> -10
+184:ROR:>(int,int):!=(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):404:high > 10 |==> high != 10
+185:ROR:>(int,int):<(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):404:high > 10 |==> high < 10
+186:ROR:>(int,int):<=(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):404:high > 10 |==> high <= 10
+187:ROR:>(int,int):==(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):404:high > 10 |==> high == 10
+188:ROR:>(int,int):>=(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):404:high > 10 |==> high >= 10
+189:ROR:>(int,int):FALSE(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):404:high > 10 |==> false
+190:ROR:>(int,int):TRUE(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):404:high > 10 |==> true
+191:LVR:0:POS:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):405:0 |==> 1
+192:LVR:0:NEG:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):405:0 |==> -1
+193:STD:<CALL>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):405:Arrays.sort(array, 0, high) |==> <NO-OP>
+194:LVR:0:POS:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):407:0 |==> 1
+195:LVR:0:NEG:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):407:0 |==> -1
+196:ROR:<(int,int):!=(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):407:i < high |==> i != high
+197:ROR:<(int,int):<=(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):407:i < high |==> i <= high
+198:ROR:<(int,int):==(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):407:i < high |==> i == high
+199:ROR:<(int,int):>(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):407:i < high |==> i > high
+200:ROR:<(int,int):>=(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):407:i < high |==> i >= high
+201:ROR:<(int,int):FALSE(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):407:i < high |==> false
+202:ROR:<(int,int):TRUE(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):407:i < high |==> true
+203:LVR:0:POS:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:0 |==> 1
+204:LVR:0:NEG:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:0 |==> -1
+205:ROR:>(int,int):!=(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j > 0 |==> j != 0
+206:ROR:>(int,int):<(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j > 0 |==> j < 0
+207:ROR:>(int,int):<=(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j > 0 |==> j <= 0
+208:ROR:>(int,int):==(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j > 0 |==> j == 0
+209:ROR:>(int,int):>=(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j > 0 |==> j >= 0
+210:ROR:>(int,int):FALSE(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j > 0 |==> false
+211:ROR:>(int,int):TRUE(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j > 0 |==> true
+212:LVR:POS:0:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:1 |==> 0
+213:LVR:POS:NEG:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:1 |==> -1
+214:AOR:-(int,int):%(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j - 1 |==> j % 1
+215:AOR:-(int,int):*(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j - 1 |==> j * 1
+216:AOR:-(int,int):+(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j - 1 |==> j + 1
+217:AOR:-(int,int):/(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j - 1 |==> j / 1
+218:LVR:0:POS:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:0 |==> 1
+219:LVR:0:NEG:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:0 |==> -1
+220:ROR:>(int,int):!=(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:(array[j - 1]).compareTo(array[j]) > 0 |==> (array[j - 1]).compareTo(array[j]) != 0
+221:ROR:>(int,int):<(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:(array[j - 1]).compareTo(array[j]) > 0 |==> (array[j - 1]).compareTo(array[j]) < 0
+222:ROR:>(int,int):<=(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:(array[j - 1]).compareTo(array[j]) > 0 |==> (array[j - 1]).compareTo(array[j]) <= 0
+223:ROR:>(int,int):==(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:(array[j - 1]).compareTo(array[j]) > 0 |==> (array[j - 1]).compareTo(array[j]) == 0
+224:ROR:>(int,int):>=(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:(array[j - 1]).compareTo(array[j]) > 0 |==> (array[j - 1]).compareTo(array[j]) >= 0
+225:ROR:>(int,int):FALSE(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:(array[j - 1]).compareTo(array[j]) > 0 |==> false
+226:ROR:>(int,int):TRUE(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:(array[j - 1]).compareTo(array[j]) > 0 |==> true
+227:COR:&&(boolean,boolean):!=(boolean,boolean):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j > 0 && (array[j - 1]).compareTo(array[j]) > 0 |==> j > 0 != (array[j - 1]).compareTo(array[j]) > 0
+228:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j > 0 && (array[j - 1]).compareTo(array[j]) > 0 |==> j > 0 == (array[j - 1]).compareTo(array[j]) > 0
+229:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j > 0 && (array[j - 1]).compareTo(array[j]) > 0 |==> false
+230:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j > 0 && (array[j - 1]).compareTo(array[j]) > 0 |==> j > 0
+231:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j > 0 && (array[j - 1]).compareTo(array[j]) > 0 |==> (array[j - 1]).compareTo(array[j]) > 0
+232:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j > 0 && (array[j - 1]).compareTo(array[j]) > 0 |==> true
+233:COR:&&(boolean,boolean):||(boolean,boolean):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):408:j > 0 && (array[j - 1]).compareTo(array[j]) > 0 |==> j > 0 || (array[j - 1]).compareTo(array[j]) > 0
+234:LVR:POS:0:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):410:1 |==> 0
+235:LVR:POS:NEG:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):410:1 |==> -1
+236:AOR:-(int,int):%(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):410:j - 1 |==> j % 1
+237:AOR:-(int,int):*(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):410:j - 1 |==> j * 1
+238:AOR:-(int,int):+(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):410:j - 1 |==> j + 1
+239:AOR:-(int,int):/(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):410:j - 1 |==> j / 1
+240:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):410:array[j] = array[j - 1] |==> <NO-OP>
+241:LVR:POS:0:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):411:1 |==> 0
+242:LVR:POS:NEG:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):411:1 |==> -1
+243:AOR:-(int,int):%(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):411:j - 1 |==> j % 1
+244:AOR:-(int,int):*(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):411:j - 1 |==> j * 1
+245:AOR:-(int,int):+(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):411:j - 1 |==> j + 1
+246:AOR:-(int,int):/(int,int):org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):411:j - 1 |==> j / 1
+247:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket@sort(org.joda.time.format.DateTimeParserBucket.SavedField[],int):411:array[j - 1] = t |==> <NO-OP>
+248:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):431:enclosing != DateTimeParserBucket.this |==> enclosing == DateTimeParserBucket.this
+249:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):431:enclosing != DateTimeParserBucket.this |==> false
+250:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):431:enclosing != DateTimeParserBucket.this |==> true
+251:LVR:FALSE:TRUE:org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):432:false |==> true
+252:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):434:enclosing.iZone = this.iZone |==> <NO-OP>
+253:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):435:enclosing.iOffset = this.iOffset |==> <NO-OP>
+254:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):436:enclosing.iSavedFields = this.iSavedFields |==> <NO-OP>
+255:ROR:<(int,int):!=(int,int):org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):437:this.iSavedFieldsCount < enclosing.iSavedFieldsCount |==> this.iSavedFieldsCount != enclosing.iSavedFieldsCount
+256:ROR:<(int,int):<=(int,int):org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):437:this.iSavedFieldsCount < enclosing.iSavedFieldsCount |==> this.iSavedFieldsCount <= enclosing.iSavedFieldsCount
+257:ROR:<(int,int):==(int,int):org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):437:this.iSavedFieldsCount < enclosing.iSavedFieldsCount |==> this.iSavedFieldsCount == enclosing.iSavedFieldsCount
+258:ROR:<(int,int):>(int,int):org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):437:this.iSavedFieldsCount < enclosing.iSavedFieldsCount |==> this.iSavedFieldsCount > enclosing.iSavedFieldsCount
+259:ROR:<(int,int):>=(int,int):org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):437:this.iSavedFieldsCount < enclosing.iSavedFieldsCount |==> this.iSavedFieldsCount >= enclosing.iSavedFieldsCount
+260:ROR:<(int,int):FALSE(int,int):org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):437:this.iSavedFieldsCount < enclosing.iSavedFieldsCount |==> false
+261:ROR:<(int,int):TRUE(int,int):org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):437:this.iSavedFieldsCount < enclosing.iSavedFieldsCount |==> true
+262:LVR:TRUE:FALSE:org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):442:true |==> false
+263:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):442:enclosing.iSavedFieldsShared = true |==> <NO-OP>
+264:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):444:enclosing.iSavedFieldsCount = this.iSavedFieldsCount |==> <NO-OP>
+265:LVR:TRUE:FALSE:org.joda.time.format.DateTimeParserBucket$SavedState@restoreState(org.joda.time.format.DateTimeParserBucket):445:true |==> false
+266:LVR:0:POS:org.joda.time.format.DateTimeParserBucket$SavedField@<init>(org.joda.time.DateTimeField,java.lang.String,java.util.Locale):464:0 |==> 1
+267:LVR:0:NEG:org.joda.time.format.DateTimeParserBucket$SavedField@<init>(org.joda.time.DateTimeField,java.lang.String,java.util.Locale):464:0 |==> -1
+268:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket$SavedField@set(long,boolean):470:iText == null |==> iText != null
+269:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket$SavedField@set(long,boolean):470:iText == null |==> false
+270:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket$SavedField@set(long,boolean):470:iText == null |==> true
+271:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket$SavedField@set(long,boolean):471:millis = iField.set(millis, iValue) |==> <NO-OP>
+272:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket$SavedField@set(long,boolean):473:millis = iField.set(millis, iText, iLocale) |==> <NO-OP>
+273:COR:reset:TRUE:org.joda.time.format.DateTimeParserBucket$SavedField@set(long,boolean):475:reset |==> false
+274:COR:reset:FALSE:org.joda.time.format.DateTimeParserBucket$SavedField@set(long,boolean):475:reset |==> true
+275:STD:<ASSIGN>:<NO-OP>:org.joda.time.format.DateTimeParserBucket$SavedField@set(long,boolean):476:millis = iField.roundFloor(millis) |==> <NO-OP>
+276:LVR:0:POS:org.joda.time.format.DateTimeParserBucket$SavedField@compareTo(org.joda.time.format.DateTimeParserBucket.SavedField):490:0 |==> 1
+277:LVR:0:NEG:org.joda.time.format.DateTimeParserBucket$SavedField@compareTo(org.joda.time.format.DateTimeParserBucket.SavedField):490:0 |==> -1
+278:ROR:!=(int,int):<(int,int):org.joda.time.format.DateTimeParserBucket$SavedField@compareTo(org.joda.time.format.DateTimeParserBucket.SavedField):490:result != 0 |==> result < 0
+279:ROR:!=(int,int):<=(int,int):org.joda.time.format.DateTimeParserBucket$SavedField@compareTo(org.joda.time.format.DateTimeParserBucket.SavedField):490:result != 0 |==> result <= 0
+280:ROR:!=(int,int):==(int,int):org.joda.time.format.DateTimeParserBucket$SavedField@compareTo(org.joda.time.format.DateTimeParserBucket.SavedField):490:result != 0 |==> result == 0
+281:ROR:!=(int,int):>(int,int):org.joda.time.format.DateTimeParserBucket$SavedField@compareTo(org.joda.time.format.DateTimeParserBucket.SavedField):490:result != 0 |==> result > 0
+282:ROR:!=(int,int):>=(int,int):org.joda.time.format.DateTimeParserBucket$SavedField@compareTo(org.joda.time.format.DateTimeParserBucket.SavedField):490:result != 0 |==> result >= 0
+283:ROR:!=(int,int):FALSE(int,int):org.joda.time.format.DateTimeParserBucket$SavedField@compareTo(org.joda.time.format.DateTimeParserBucket.SavedField):490:result != 0 |==> false
+284:ROR:!=(int,int):TRUE(int,int):org.joda.time.format.DateTimeParserBucket$SavedField@compareTo(org.joda.time.format.DateTimeParserBucket.SavedField):490:result != 0 |==> true
+285:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):499:a == null |==> a != null
+286:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):499:a == null |==> false
+287:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):499:a == null |==> true
+288:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):499:a == null || !a.isSupported() |==> a == null != !a.isSupported()
+289:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):499:a == null || !a.isSupported() |==> a == null && !a.isSupported()
+290:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):499:a == null || !a.isSupported() |==> a == null == !a.isSupported()
+291:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):499:a == null || !a.isSupported() |==> false
+292:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):499:a == null || !a.isSupported() |==> a == null
+293:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):499:a == null || !a.isSupported() |==> !a.isSupported()
+294:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):499:a == null || !a.isSupported() |==> true
+295:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):500:b == null |==> b != null
+296:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):500:b == null |==> false
+297:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):500:b == null |==> true
+298:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):500:b == null || !b.isSupported() |==> b == null != !b.isSupported()
+299:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):500:b == null || !b.isSupported() |==> b == null && !b.isSupported()
+300:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):500:b == null || !b.isSupported() |==> b == null == !b.isSupported()
+301:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):500:b == null || !b.isSupported() |==> false
+302:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):500:b == null || !b.isSupported() |==> b == null
+303:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):500:b == null || !b.isSupported() |==> !b.isSupported()
+304:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):500:b == null || !b.isSupported() |==> true
+305:LVR:0:POS:org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):501:0 |==> 1
+306:LVR:0:NEG:org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):501:0 |==> -1
+307:LVR:NEG:0:org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):503:-1 |==> 0
+308:LVR:NEG:POS:org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):503:-1 |==> 1
+309:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):505:b == null |==> b != null
+310:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):505:b == null |==> false
+311:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):505:b == null |==> true
+312:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):505:b == null || !b.isSupported() |==> b == null != !b.isSupported()
+313:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):505:b == null || !b.isSupported() |==> b == null && !b.isSupported()
+314:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):505:b == null || !b.isSupported() |==> b == null == !b.isSupported()
+315:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):505:b == null || !b.isSupported() |==> false
+316:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):505:b == null || !b.isSupported() |==> b == null
+317:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):505:b == null || !b.isSupported() |==> !b.isSupported()
+318:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):505:b == null || !b.isSupported() |==> true
+319:LVR:POS:0:org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):506:1 |==> 0
+320:LVR:POS:NEG:org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):506:1 |==> -1
+321:ORU:-(int):+(int):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):508:-a.compareTo(b) |==> +a.compareTo(b)
+322:ORU:-(int):~(int):org.joda.time.format.DateTimeParserBucket@compareReverse(org.joda.time.DurationField,org.joda.time.DurationField):508:-a.compareTo(b) |==> ~a.compareTo(b)

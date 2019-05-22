@@ -1,0 +1,65 @@
+
+init:
+     [echo] -------- Commons MATH 2.1-SNAPSHOT --------
+
+compile:
+    [javac] /tmp/run_mutation.pl_34323_1501769583/84f/build.xml:154: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] /tmp/run_mutation.pl_34323_1501769583/84f/build.xml:168: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 256 source files to /tmp/run_mutation.pl_34323_1501769583/84f/target/test-classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+     [copy] Copying 11 files to /tmp/run_mutation.pl_34323_1501769583/84f/target/test-classes
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 2 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 2.65 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 100
+    [junit] MAJOR: Mutants covered:   4 (4.00%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 2 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/2 - org.apache.commons.math.optimization.direct.MultiDirectional_ESTest1 (42ms / 4):
+    [junit] MAJOR: 1437 (0 / 4 / 4) -> AVG-RTPM: 359ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 4
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/2 - org.apache.commons.math.optimization.direct.MultiDirectional_ESTest0 (56ms / 0):
+    [junit] MAJOR: 1437 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 4
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  1.4 seconds
+    [junit] MAJOR: Mutation score: 0.00% (0.00%)
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 4
+    [junit] MAJOR: Mutant executions: 4
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_34323_1501769583/84f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 26 seconds

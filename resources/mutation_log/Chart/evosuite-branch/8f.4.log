@@ -1,0 +1,177 @@
+
+initialise:
+
+compile:
+    [javac] /home/donghwan/defects4j/framework/projects/Chart/Chart.build.xml:56: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-experimental:
+    [javac] /home/donghwan/defects4j/framework/projects/Chart/Chart.build.xml:105: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 4 source files to /tmp/run_mutation.pl_106926_1501131072/8f/build
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.4
+    [javac] 1 warning
+
+compile.tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_106926_1501131072/8f/build-tests
+    [javac] /home/donghwan/defects4j/framework/projects/Chart/Chart.build.xml:122: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 359 source files to /tmp/run_mutation.pl_106926_1501131072/8f/build-tests
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.4
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 1 warning
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: org.jfree.data.time.Week_ESTest1[test01] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "expected:<106749> but was:<106931>"
+    [junit] MAJOR: org.jfree.data.time.Week_ESTest18[test18] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "expected:<1392508799999> but was:<1501372799999>"
+    [junit] MAJOR: org.jfree.data.time.Week_ESTest19[test19] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "expected:<1392508799999> but was:<1501372799999>"
+    [junit] MAJOR: org.jfree.data.time.Week_ESTest2[test02] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "expected:<Week [7, 2014]> but was:<Week [30, 2017]>"
+    [junit] MAJOR: org.jfree.data.time.Week_ESTest3[test03] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "expected:<1392508799999> but was:<1501372799999>"
+    [junit] MAJOR: org.jfree.data.time.Week_ESTest4[test04] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "expected:<2014> but was:<2017>"
+    [junit] MAJOR: org.jfree.data.time.Week_ESTest5[test05] failed!
+    [junit] MAJOR:  -> java.lang.ClassCastException
+    [junit] MAJOR:  -> "java.util.Date cannot be cast to org.evosuite.runtime.mock.java.util.MockDate"
+    [junit] MAJOR: Exclude 7 failing test classes:
+    [junit] MAJOR:  - org.jfree.data.time.Week_ESTest1
+    [junit] MAJOR:  - org.jfree.data.time.Week_ESTest18
+    [junit] MAJOR:  - org.jfree.data.time.Week_ESTest19
+    [junit] MAJOR:  - org.jfree.data.time.Week_ESTest2
+    [junit] MAJOR:  - org.jfree.data.time.Week_ESTest3
+    [junit] MAJOR:  - org.jfree.data.time.Week_ESTest4
+    [junit] MAJOR:  - org.jfree.data.time.Week_ESTest5
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 23 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 5.46 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 429
+    [junit] MAJOR: Mutants covered:   393 (91.61%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 23 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/23 - org.jfree.data.time.Week_ESTest7 (7ms / 6):
+    [junit] MAJOR: 580 (2 / 6 / 6) -> AVG-RTPM: 96ms
+    [junit] MAJOR: Mutants killed / live: 2 (0-2-0) / 391
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/23 - org.jfree.data.time.Week_ESTest8 (7ms / 9):
+    [junit] MAJOR: 1743 (2 / 9 / 9) -> AVG-RTPM: 129ms
+    [junit] MAJOR: Mutants killed / live: 4 (0-4-0) / 389
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/23 - org.jfree.data.time.Week_ESTest9 (7ms / 105):
+    [junit] MAJOR: 30454 (57 / 105 / 105) -> AVG-RTPM: 273ms
+    [junit] MAJOR: Mutants killed / live: 61 (48-15-0) / 332
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/23 - org.jfree.data.time.Week_ESTest20 (8ms / 65):
+    [junit] MAJOR: 34091 (34 / 65 / 65) -> AVG-RTPM: 55ms
+    [junit] MAJOR: Mutants killed / live: 95 (48-80-0) / 298
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/23 - org.jfree.data.time.Week_ESTest21 (8ms / 108):
+    [junit] MAJOR: 42387 (44 / 108 / 108) -> AVG-RTPM: 76ms
+    [junit] MAJOR: Mutants killed / live: 139 (48-188-0) / 254
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/23 - org.jfree.data.time.Week_ESTest22 (8ms / 127):
+    [junit] MAJOR: 50646 (7 / 127 / 127) -> AVG-RTPM: 65ms
+    [junit] MAJOR: Mutants killed / live: 146 (48-315-0) / 247
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/23 - org.jfree.data.time.Week_ESTest24 (8ms / 3):
+    [junit] MAJOR: 50799 (3 / 3 / 3) -> AVG-RTPM: 51ms
+    [junit] MAJOR: Mutants killed / live: 149 (48-318-0) / 244
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/23 - org.jfree.data.time.Week_ESTest13 (9ms / 101):
+    [junit] MAJOR: 56521 (31 / 101 / 101) -> AVG-RTPM: 56ms
+    [junit] MAJOR: Mutants killed / live: 180 (48-419-0) / 213
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/23 - org.jfree.data.time.Week_ESTest15 (9ms / 91):
+    [junit] MAJOR: 61323 (19 / 91 / 91) -> AVG-RTPM: 52ms
+    [junit] MAJOR: Mutants killed / live: 199 (48-510-0) / 194
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/23 - org.jfree.data.time.Week_ESTest16 (9ms / 97):
+    [junit] MAJOR: 66873 (6 / 97 / 97) -> AVG-RTPM: 57ms
+    [junit] MAJOR: Mutants killed / live: 205 (48-607-0) / 188
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/23 - org.jfree.data.time.Week_ESTest28 (9ms / 56):
+    [junit] MAJOR: 69564 (53 / 56 / 56) -> AVG-RTPM: 48ms
+    [junit] MAJOR: Mutants killed / live: 258 (48-663-0) / 135
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/23 - org.jfree.data.time.Week_ESTest29 (9ms / 88):
+    [junit] MAJOR: 74380 (36 / 88 / 88) -> AVG-RTPM: 54ms
+    [junit] MAJOR: Mutants killed / live: 294 (48-751-0) / 99
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 13/23 - org.jfree.data.time.Week_ESTest6 (10ms / 3):
+    [junit] MAJOR: 74554 (0 / 3 / 3) -> AVG-RTPM: 58ms
+    [junit] MAJOR: Mutants killed / live: 294 (48-754-0) / 99
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 14/23 - org.jfree.data.time.Week_ESTest25 (12ms / 43):
+    [junit] MAJOR: 77124 (0 / 43 / 43) -> AVG-RTPM: 59ms
+    [junit] MAJOR: Mutants killed / live: 294 (48-797-0) / 99
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 15/23 - org.jfree.data.time.Week_ESTest26 (12ms / 156):
+    [junit] MAJOR: 86554 (25 / 156 / 156) -> AVG-RTPM: 60ms
+    [junit] MAJOR: Mutants killed / live: 319 (48-953-0) / 74
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 16/23 - org.jfree.data.time.Week_ESTest11 (13ms / 132):
+    [junit] MAJOR: 96139 (9 / 132 / 132) -> AVG-RTPM: 72ms
+    [junit] MAJOR: Mutants killed / live: 328 (48-1085-0) / 65
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 17/23 - org.jfree.data.time.Week_ESTest14 (14ms / 88):
+    [junit] MAJOR: 102126 (6 / 88 / 88) -> AVG-RTPM: 68ms
+    [junit] MAJOR: Mutants killed / live: 334 (48-1173-0) / 59
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 18/23 - org.jfree.data.time.Week_ESTest17 (14ms / 67):
+    [junit] MAJOR: 105683 (4 / 67 / 67) -> AVG-RTPM: 53ms
+    [junit] MAJOR: Mutants killed / live: 338 (48-1240-0) / 55
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 19/23 - org.jfree.data.time.Week_ESTest23 (14ms / 91):
+    [junit] MAJOR: 112794 (12 / 91 / 91) -> AVG-RTPM: 78ms
+    [junit] MAJOR: Mutants killed / live: 350 (48-1331-0) / 43
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 20/23 - org.jfree.data.time.Week_ESTest12 (15ms / 119):
+    [junit] MAJOR: 121429 (6 / 119 / 119) -> AVG-RTPM: 72ms
+    [junit] MAJOR: Mutants killed / live: 356 (48-1450-0) / 37
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 21/23 - org.jfree.data.time.Week_ESTest27 (15ms / 71):
+    [junit] MAJOR: 127518 (9 / 71 / 71) -> AVG-RTPM: 85ms
+    [junit] MAJOR: Mutants killed / live: 365 (48-1521-0) / 28
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 22/23 - org.jfree.data.time.Week_ESTest10 (16ms / 99):
+    [junit] MAJOR: 135636 (4 / 99 / 99) -> AVG-RTPM: 82ms
+    [junit] MAJOR: Mutants killed / live: 369 (48-1620-0) / 24
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 23/23 - org.jfree.data.time.Week_ESTest0 (35ms / 94):
+    [junit] MAJOR: 141774 (24 / 94 / 94) -> AVG-RTPM: 65ms
+    [junit] MAJOR: Mutants killed / live: 393 (48-1714-0) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  141.8 seconds
+    [junit] MAJOR: Mutation score: 91.61% (100.00%)
+    [junit] MAJOR: Mutants killed / live: 393 (48-1714-0) / 0
+    [junit] MAJOR: Mutant executions: 1819
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_106926_1501131072/8f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 2 minutes 33 seconds

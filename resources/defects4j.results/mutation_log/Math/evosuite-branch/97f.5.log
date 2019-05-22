@@ -1,0 +1,156 @@
+
+init:
+
+junit-present:
+
+get-deps:
+
+compile:
+    [javac] /tmp/run_mutation.pl_62945_1483699416/97f/build.xml:46: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_62945_1483699416/97f/target/test-classes
+    [javac] /tmp/run_mutation.pl_62945_1483699416/97f/build.xml:123: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 171 source files to /tmp/run_mutation.pl_62945_1483699416/97f/target/test-classes
+    [javac] /tmp/run_mutation.pl_62945_1483699416/97f/src/test/org/apache/commons/math/TestUtils.java:26: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/run_mutation.pl_62945_1483699416/97f/src/test/org/apache/commons/math/TestUtils.java:58: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertTrue("" + actual + " is not NaN.",
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_62945_1483699416/97f/src/test/org/apache/commons/math/TestUtils.java:61: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertEquals(msg, expected, actual, delta);
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_62945_1483699416/97f/src/test/org/apache/commons/math/TestUtils.java:95: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals(a.length, b.length);
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_62945_1483699416/97f/src/test/org/apache/commons/math/TestUtils.java:97: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertEquals(a[i], b[i], tolerance);
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_62945_1483699416/97f/src/test/org/apache/commons/math/TestUtils.java:134: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals("Equals check", object, object2);
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_62945_1483699416/97f/src/test/org/apache/commons/math/TestUtils.java:135: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals("HashCode check", object.hashCode(), object2.hashCode());
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_62945_1483699416/97f/src/test/org/apache/commons/math/TestUtils.java:165: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertTrue(msg, Double.isNaN(actual));
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_62945_1483699416/97f/src/test/org/apache/commons/math/TestUtils.java:167: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertTrue(msg, Double.isNaN(expected));
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_62945_1483699416/97f/src/test/org/apache/commons/math/TestUtils.java:169: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertEquals(expected, actual, relativeError);
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_62945_1483699416/97f/src/test/org/apache/commons/math/TestUtils.java:171: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertEquals(msg, actual, expected, relativeError);
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_62945_1483699416/97f/src/test/org/apache/commons/math/TestUtils.java:174: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertEquals(msg, 0.0, x, relativeError);
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_62945_1483699416/97f/src/test/org/apache/commons/math/TestUtils.java:200: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.fail(msg + 
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_62945_1483699416/97f/src/test/org/apache/commons/math/TestUtils.java:239: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.fail(msg + " Unable to find" + x);
+    [javac]             ^
+    [javac] 14 warnings
+     [copy] Copying 12 files to /tmp/run_mutation.pl_62945_1483699416/97f/target/test-classes
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 15 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 2.79 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 476
+    [junit] MAJOR: Mutants covered:   476 (100.00%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 15 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/15 - org.apache.commons.math.analysis.BrentSolver_ESTest13 (7ms / 400):
+    [junit] MAJOR: 179053 (156 / 400 / 400) -> AVG-RTPM: 447ms
+    [junit] MAJOR: Mutants killed / live: 156 (36-117-3) / 320
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/15 - org.apache.commons.math.analysis.BrentSolver_ESTest7 (7ms / 37):
+    [junit] MAJOR: 187610 (35 / 37 / 37) -> AVG-RTPM: 231ms
+    [junit] MAJOR: Mutants killed / live: 191 (36-154-3) / 285
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/15 - org.apache.commons.math.analysis.BrentSolver_ESTest8 (7ms / 30):
+    [junit] MAJOR: 194633 (4 / 30 / 30) -> AVG-RTPM: 234ms
+    [junit] MAJOR: Mutants killed / live: 195 (36-184-3) / 281
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/15 - org.apache.commons.math.analysis.BrentSolver_ESTest11 (8ms / 38):
+    [junit] MAJOR: 203528 (19 / 38 / 38) -> AVG-RTPM: 234ms
+    [junit] MAJOR: Mutants killed / live: 214 (36-222-3) / 262
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/15 - org.apache.commons.math.analysis.BrentSolver_ESTest2 (8ms / 25):
+    [junit] MAJOR: 209051 (15 / 25 / 25) -> AVG-RTPM: 220ms
+    [junit] MAJOR: Mutants killed / live: 229 (36-247-3) / 247
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/15 - org.apache.commons.math.analysis.BrentSolver_ESTest3 (8ms / 42):
+    [junit] MAJOR: 217204 (9 / 42 / 42) -> AVG-RTPM: 194ms
+    [junit] MAJOR: Mutants killed / live: 238 (36-289-3) / 238
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/15 - org.apache.commons.math.analysis.BrentSolver_ESTest5 (8ms / 62):
+    [junit] MAJOR: 230589 (14 / 62 / 62) -> AVG-RTPM: 215ms
+    [junit] MAJOR: Mutants killed / live: 252 (36-351-3) / 224
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/15 - org.apache.commons.math.analysis.BrentSolver_ESTest9 (8ms / 33):
+    [junit] MAJOR: 238175 (0 / 33 / 33) -> AVG-RTPM: 229ms
+    [junit] MAJOR: Mutants killed / live: 252 (36-384-3) / 224
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/15 - org.apache.commons.math.analysis.BrentSolver_ESTest1 (9ms / 35):
+    [junit] MAJOR: 246315 (3 / 35 / 35) -> AVG-RTPM: 232ms
+    [junit] MAJOR: Mutants killed / live: 255 (36-419-3) / 221
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/15 - org.apache.commons.math.analysis.BrentSolver_ESTest14 (9ms / 397):
+    [junit] MAJOR: 331949 (218 / 397 / 397) -> AVG-RTPM: 215ms
+    [junit] MAJOR: Mutants killed / live: 473 (36-816-3) / 3
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/15 - org.apache.commons.math.analysis.BrentSolver_ESTest6 (10ms / 268):
+    [junit] MAJOR: 391715 (1 / 268 / 268) -> AVG-RTPM: 223ms
+    [junit] MAJOR: Mutants killed / live: 474 (36-1084-3) / 2
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/15 - org.apache.commons.math.analysis.BrentSolver_ESTest12 (11ms / 85):
+    [junit] MAJOR: 411486 (0 / 85 / 85) -> AVG-RTPM: 232ms
+    [junit] MAJOR: Mutants killed / live: 474 (36-1169-3) / 2
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 13/15 - org.apache.commons.math.analysis.BrentSolver_ESTest0 (12ms / 38):
+    [junit] MAJOR: 420214 (1 / 38 / 38) -> AVG-RTPM: 229ms
+    [junit] MAJOR: Mutants killed / live: 475 (36-1207-3) / 1
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 14/15 - org.apache.commons.math.analysis.BrentSolver_ESTest4 (33ms / 256):
+    [junit] MAJOR: 474676 (0 / 256 / 256) -> AVG-RTPM: 212ms
+    [junit] MAJOR: Mutants killed / live: 475 (36-1463-3) / 1
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 15/15 - org.apache.commons.math.analysis.BrentSolver_ESTest10 (36ms / 263):
+    [junit] MAJOR: 534238 (1 / 263 / 263) -> AVG-RTPM: 226ms
+    [junit] MAJOR: Mutants killed / live: 476 (36-1726-3) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  534.2 seconds
+    [junit] MAJOR: Mutation score: 100.00% (100.00%)
+    [junit] MAJOR: Mutants killed / live: 476 (36-1726-3) / 0
+    [junit] MAJOR: Mutant executions: 2009
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_62945_1483699416/97f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 9 minutes 0 seconds

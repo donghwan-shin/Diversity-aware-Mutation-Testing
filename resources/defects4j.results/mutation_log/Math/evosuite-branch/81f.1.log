@@ -1,0 +1,74 @@
+
+init:
+     [echo] -------- Commons MATH 2.1-SNAPSHOT --------
+
+compile:
+    [javac] /tmp/run_mutation.pl_7795_1501563752/81f/build.xml:154: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] /tmp/run_mutation.pl_7795_1501563752/81f/build.xml:168: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 257 source files to /tmp/run_mutation.pl_7795_1501563752/81f/target/test-classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+     [copy] Copying 11 files to /tmp/run_mutation.pl_7795_1501563752/81f/target/test-classes
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 43 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 21.77 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 6626
+    [junit] MAJOR: Mutants covered:   6362 (96.02%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 43 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/43 - org.apache.commons.math.linear.EigenDecompositionImpl_ESTest3 (8ms / 224):
+    [junit] MAJOR: 270325 (86 / 224 / 224) -> AVG-RTPM: 1206ms
+    [junit] MAJOR: Mutants killed / live: 86 (0-86-0) / 6276
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/43 - org.apache.commons.math.linear.EigenDecompositionImpl_ESTest10 (10ms / 694):
+    [junit] MAJOR: 639014 (579 / 694 / 694) -> AVG-RTPM: 531ms
+    [junit] MAJOR: Mutants killed / live: 665 (0-751-0) / 5697
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/43 - org.apache.commons.math.linear.EigenDecompositionImpl_ESTest7 (11ms / 231):
+    [junit] MAJOR: 709427 (25 / 231 / 231) -> AVG-RTPM: 304ms
+    [junit] MAJOR: Mutants killed / live: 690 (0-982-0) / 5672
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/43 - org.apache.commons.math.linear.EigenDecompositionImpl_ESTest19 (12ms / 763):
+    [junit] MAJOR: 955755 (536 / 763 / 763) -> AVG-RTPM: 322ms
+    [junit] MAJOR: Mutants killed / live: 1226 (0-1745-0) / 5136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/43 - org.apache.commons.math.linear.EigenDecompositionImpl_ESTest27 (12ms / 3118):
+    [junit] MAJOR: 1954501 (2358 / 3118 / 3118) -> AVG-RTPM: 320ms
+    [junit] MAJOR: Mutants killed / live: 3584 (0-4863-0) / 2778
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/43 - org.apache.commons.math.linear.EigenDecompositionImpl_ESTest30 (12ms / 4050):
+    [junit] MAJOR: 3429163 (978 / 4050 / 4050) -> AVG-RTPM: 364ms
+    [junit] MAJOR: Mutants killed / live: 4562 (0-8913-0) / 1800
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/43 - org.apache.commons.math.linear.EigenDecompositionImpl_ESTest33 (12ms / 4033):
+
+BUILD FAILED
+/home/to_donghwan/defects4j/framework/projects/defects4j.build.xml:185: Parallel execution timed out
+
+Total time: 60 minutes 10 seconds

@@ -1,0 +1,177 @@
+1:AOR:*(long,long):%(long,long):org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):52:lRow * lCol |==> lRow % lCol
+2:AOR:*(long,long):+(long,long):org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):52:lRow * lCol |==> lRow + lCol
+3:AOR:*(long,long):-(long,long):org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):52:lRow * lCol |==> lRow - lCol
+4:AOR:*(long,long):/(long,long):org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):52:lRow * lCol |==> lRow / lCol
+5:ROR:>=(long,long):!=(long,long):org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):52:lRow * lCol >= (long)Integer.MAX_VALUE |==> lRow * lCol != (long)Integer.MAX_VALUE
+6:ROR:>=(long,long):<(long,long):org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):52:lRow * lCol >= (long)Integer.MAX_VALUE |==> lRow * lCol < (long)Integer.MAX_VALUE
+7:ROR:>=(long,long):<=(long,long):org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):52:lRow * lCol >= (long)Integer.MAX_VALUE |==> lRow * lCol <= (long)Integer.MAX_VALUE
+8:ROR:>=(long,long):==(long,long):org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):52:lRow * lCol >= (long)Integer.MAX_VALUE |==> lRow * lCol == (long)Integer.MAX_VALUE
+9:ROR:>=(long,long):>(long,long):org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):52:lRow * lCol >= (long)Integer.MAX_VALUE |==> lRow * lCol > (long)Integer.MAX_VALUE
+10:ROR:>=(long,long):FALSE(long,long):org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):52:lRow * lCol >= (long)Integer.MAX_VALUE |==> false
+11:ROR:>=(long,long):TRUE(long,long):org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):52:lRow * lCol >= (long)Integer.MAX_VALUE |==> true
+12:AOR:*(long,long):%(long,long):org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):53:lRow * lCol |==> lRow % lCol
+13:AOR:*(long,long):+(long,long):org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):53:lRow * lCol |==> lRow + lCol
+14:AOR:*(long,long):-(long,long):org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):53:lRow * lCol |==> lRow - lCol
+15:AOR:*(long,long):/(long,long):org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):53:lRow * lCol |==> lRow / lCol
+16:LVR:FALSE:TRUE:org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):53:false |==> true
+17:LVR:0:POS:org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):57:0.0 |==> 1.0
+18:LVR:0:NEG:org.apache.commons.math.linear.OpenMapRealMatrix@<init>(int,int):57:0.0 |==> -1.0
+19:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):100:MatrixUtils.checkAdditionCompatible(this, m) |==> <NO-OP>
+20:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):104:iterator.advance() |==> <NO-OP>
+21:AOR:/(int,int):%(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):105:iterator.key() / columns |==> iterator.key() % columns
+22:AOR:/(int,int):*(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):105:iterator.key() / columns |==> iterator.key() * columns
+23:AOR:/(int,int):+(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):105:iterator.key() / columns |==> iterator.key() + columns
+24:AOR:/(int,int):-(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):105:iterator.key() / columns |==> iterator.key() - columns
+25:AOR:*(int,int):%(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):106:row * columns |==> row % columns
+26:AOR:*(int,int):+(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):106:row * columns |==> row + columns
+27:AOR:*(int,int):-(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):106:row * columns |==> row - columns
+28:AOR:*(int,int):/(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):106:row * columns |==> row / columns
+29:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):106:iterator.key() - row * columns |==> iterator.key() % (row * columns)
+30:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):106:iterator.key() - row * columns |==> iterator.key() * (row * columns)
+31:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):106:iterator.key() - row * columns |==> iterator.key() + row * columns
+32:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):106:iterator.key() - row * columns |==> iterator.key() / (row * columns)
+33:AOR:+(double,double):%(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):107:getEntry(row, col) + iterator.value() |==> getEntry(row, col) % iterator.value()
+34:AOR:+(double,double):*(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):107:getEntry(row, col) + iterator.value() |==> getEntry(row, col) * iterator.value()
+35:AOR:+(double,double):-(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):107:getEntry(row, col) + iterator.value() |==> getEntry(row, col) - iterator.value()
+36:AOR:+(double,double):/(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):107:getEntry(row, col) + iterator.value() |==> getEntry(row, col) / iterator.value()
+37:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@add(org.apache.commons.math.linear.OpenMapRealMatrix):107:out.setEntry(row, col, getEntry(row, col) + iterator.value()) |==> <NO-OP>
+38:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):134:MatrixUtils.checkAdditionCompatible(this, m) |==> <NO-OP>
+39:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):138:iterator.advance() |==> <NO-OP>
+40:AOR:/(int,int):%(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):139:iterator.key() / columns |==> iterator.key() % columns
+41:AOR:/(int,int):*(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):139:iterator.key() / columns |==> iterator.key() * columns
+42:AOR:/(int,int):+(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):139:iterator.key() / columns |==> iterator.key() + columns
+43:AOR:/(int,int):-(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):139:iterator.key() / columns |==> iterator.key() - columns
+44:AOR:*(int,int):%(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):140:row * columns |==> row % columns
+45:AOR:*(int,int):+(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):140:row * columns |==> row + columns
+46:AOR:*(int,int):-(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):140:row * columns |==> row - columns
+47:AOR:*(int,int):/(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):140:row * columns |==> row / columns
+48:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):140:iterator.key() - row * columns |==> iterator.key() % (row * columns)
+49:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):140:iterator.key() - row * columns |==> iterator.key() * (row * columns)
+50:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):140:iterator.key() - row * columns |==> iterator.key() + row * columns
+51:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):140:iterator.key() - row * columns |==> iterator.key() / (row * columns)
+52:AOR:-(double,double):%(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):141:getEntry(row, col) - iterator.value() |==> getEntry(row, col) % iterator.value()
+53:AOR:-(double,double):*(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):141:getEntry(row, col) - iterator.value() |==> getEntry(row, col) * iterator.value()
+54:AOR:-(double,double):+(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):141:getEntry(row, col) - iterator.value() |==> getEntry(row, col) + iterator.value()
+55:AOR:-(double,double):/(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):141:getEntry(row, col) - iterator.value() |==> getEntry(row, col) / iterator.value()
+56:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@subtract(org.apache.commons.math.linear.OpenMapRealMatrix):141:out.setEntry(row, col, getEntry(row, col) - iterator.value()) |==> <NO-OP>
+57:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):155:MatrixUtils.checkMultiplicationCompatible(this, m) |==> <NO-OP>
+58:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):160:iterator.advance() |==> <NO-OP>
+59:AOR:/(int,int):%(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):163:key / columns |==> key % columns
+60:AOR:/(int,int):*(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):163:key / columns |==> key * columns
+61:AOR:/(int,int):+(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):163:key / columns |==> key + columns
+62:AOR:/(int,int):-(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):163:key / columns |==> key - columns
+63:AOR:%(int,int):*(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):164:key % columns |==> key * columns
+64:AOR:%(int,int):+(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):164:key % columns |==> key + columns
+65:AOR:%(int,int):-(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):164:key % columns |==> key - columns
+66:AOR:%(int,int):/(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):164:key % columns |==> key / columns
+67:LVR:0:POS:org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):165:0 |==> 1
+68:LVR:0:NEG:org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):165:0 |==> -1
+69:ROR:<(int,int):!=(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):165:j < outCols |==> j != outCols
+70:ROR:<(int,int):<=(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):165:j < outCols |==> j <= outCols
+71:ROR:<(int,int):==(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):165:j < outCols |==> j == outCols
+72:ROR:<(int,int):>(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):165:j < outCols |==> j > outCols
+73:ROR:<(int,int):>=(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):165:j < outCols |==> j >= outCols
+74:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):165:j < outCols |==> false
+75:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):165:j < outCols |==> true
+76:AOR:*(double,double):%(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):166:value * m.getEntry(k, j) |==> value % m.getEntry(k, j)
+77:AOR:*(double,double):+(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):166:value * m.getEntry(k, j) |==> value + m.getEntry(k, j)
+78:AOR:*(double,double):-(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):166:value * m.getEntry(k, j) |==> value - m.getEntry(k, j)
+79:AOR:*(double,double):/(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):166:value * m.getEntry(k, j) |==> value / m.getEntry(k, j)
+80:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.RealMatrix):166:out.addToEntry(i, j, value * m.getEntry(k, j)) |==> <NO-OP>
+81:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):185:MatrixUtils.checkMultiplicationCompatible(this, m) |==> <NO-OP>
+82:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):190:iterator.advance() |==> <NO-OP>
+83:AOR:/(int,int):%(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):193:key / columns |==> key % columns
+84:AOR:/(int,int):*(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):193:key / columns |==> key * columns
+85:AOR:/(int,int):+(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):193:key / columns |==> key + columns
+86:AOR:/(int,int):-(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):193:key / columns |==> key - columns
+87:AOR:%(int,int):*(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):194:key % columns |==> key * columns
+88:AOR:%(int,int):+(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):194:key % columns |==> key + columns
+89:AOR:%(int,int):-(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):194:key % columns |==> key - columns
+90:AOR:%(int,int):/(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):194:key % columns |==> key / columns
+91:LVR:0:POS:org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):195:0 |==> 1
+92:LVR:0:NEG:org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):195:0 |==> -1
+93:ROR:<(int,int):!=(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):195:j < outCols |==> j != outCols
+94:ROR:<(int,int):<=(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):195:j < outCols |==> j <= outCols
+95:ROR:<(int,int):==(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):195:j < outCols |==> j == outCols
+96:ROR:<(int,int):>(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):195:j < outCols |==> j > outCols
+97:ROR:<(int,int):>=(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):195:j < outCols |==> j >= outCols
+98:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):195:j < outCols |==> false
+99:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):195:j < outCols |==> true
+100:COR:m.entries.containsKey(rightKey):TRUE:org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):197:m.entries.containsKey(rightKey) |==> false
+101:COR:m.entries.containsKey(rightKey):FALSE:org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):197:m.entries.containsKey(rightKey) |==> true
+102:AOR:*(double,double):%(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):200:value * m.entries.get(rightKey) |==> value % m.entries.get(rightKey)
+103:AOR:*(double,double):+(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):200:value * m.entries.get(rightKey) |==> value + m.entries.get(rightKey)
+104:AOR:*(double,double):-(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):200:value * m.entries.get(rightKey) |==> value - m.entries.get(rightKey)
+105:AOR:*(double,double):/(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):200:value * m.entries.get(rightKey) |==> value / m.entries.get(rightKey)
+106:AOR:+(double,double):%(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):200:out.entries.get(outKey) + value * m.entries.get(rightKey) |==> out.entries.get(outKey) % (value * m.entries.get(rightKey))
+107:AOR:+(double,double):*(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):200:out.entries.get(outKey) + value * m.entries.get(rightKey) |==> out.entries.get(outKey) * (value * m.entries.get(rightKey))
+108:AOR:+(double,double):-(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):200:out.entries.get(outKey) + value * m.entries.get(rightKey) |==> out.entries.get(outKey) - value * m.entries.get(rightKey)
+109:AOR:+(double,double):/(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):200:out.entries.get(outKey) + value * m.entries.get(rightKey) |==> out.entries.get(outKey) / (value * m.entries.get(rightKey))
+110:LVR:0:POS:org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):201:0.0 |==> 1.0
+111:LVR:0:NEG:org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):201:0.0 |==> -1.0
+112:ROR:==(double,double):!=(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):201:outValue == 0.0 |==> outValue != 0.0
+113:ROR:==(double,double):<(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):201:outValue == 0.0 |==> outValue < 0.0
+114:ROR:==(double,double):<=(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):201:outValue == 0.0 |==> outValue <= 0.0
+115:ROR:==(double,double):>(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):201:outValue == 0.0 |==> outValue > 0.0
+116:ROR:==(double,double):>=(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):201:outValue == 0.0 |==> outValue >= 0.0
+117:ROR:==(double,double):FALSE(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):201:outValue == 0.0 |==> false
+118:ROR:==(double,double):TRUE(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):201:outValue == 0.0 |==> true
+119:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):202:out.entries.remove(outKey) |==> <NO-OP>
+120:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@multiply(org.apache.commons.math.linear.OpenMapRealMatrix):204:out.entries.put(outKey, outValue) |==> <NO-OP>
+121:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@getEntry(int,int):216:MatrixUtils.checkRowIndex(this, row) |==> <NO-OP>
+122:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@getEntry(int,int):217:MatrixUtils.checkColumnIndex(this, column) |==> <NO-OP>
+123:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@setEntry(int,int,double):230:MatrixUtils.checkRowIndex(this, row) |==> <NO-OP>
+124:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@setEntry(int,int,double):231:MatrixUtils.checkColumnIndex(this, column) |==> <NO-OP>
+125:LVR:0:POS:org.apache.commons.math.linear.OpenMapRealMatrix@setEntry(int,int,double):232:0.0 |==> 1.0
+126:LVR:0:NEG:org.apache.commons.math.linear.OpenMapRealMatrix@setEntry(int,int,double):232:0.0 |==> -1.0
+127:ROR:==(double,double):!=(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@setEntry(int,int,double):232:value == 0.0 |==> value != 0.0
+128:ROR:==(double,double):<(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@setEntry(int,int,double):232:value == 0.0 |==> value < 0.0
+129:ROR:==(double,double):<=(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@setEntry(int,int,double):232:value == 0.0 |==> value <= 0.0
+130:ROR:==(double,double):>(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@setEntry(int,int,double):232:value == 0.0 |==> value > 0.0
+131:ROR:==(double,double):>=(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@setEntry(int,int,double):232:value == 0.0 |==> value >= 0.0
+132:ROR:==(double,double):FALSE(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@setEntry(int,int,double):232:value == 0.0 |==> false
+133:ROR:==(double,double):TRUE(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@setEntry(int,int,double):232:value == 0.0 |==> true
+134:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@setEntry(int,int,double):233:entries.remove(computeKey(row, column)) |==> <NO-OP>
+135:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@setEntry(int,int,double):235:entries.put(computeKey(row, column), value) |==> <NO-OP>
+136:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@addToEntry(int,int,double):242:MatrixUtils.checkRowIndex(this, row) |==> <NO-OP>
+137:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@addToEntry(int,int,double):243:MatrixUtils.checkColumnIndex(this, column) |==> <NO-OP>
+138:AOR:+(double,double):%(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@addToEntry(int,int,double):245:entries.get(key) + increment |==> entries.get(key) % increment
+139:AOR:+(double,double):*(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@addToEntry(int,int,double):245:entries.get(key) + increment |==> entries.get(key) * increment
+140:AOR:+(double,double):-(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@addToEntry(int,int,double):245:entries.get(key) + increment |==> entries.get(key) - increment
+141:AOR:+(double,double):/(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@addToEntry(int,int,double):245:entries.get(key) + increment |==> entries.get(key) / increment
+142:LVR:0:POS:org.apache.commons.math.linear.OpenMapRealMatrix@addToEntry(int,int,double):246:0.0 |==> 1.0
+143:LVR:0:NEG:org.apache.commons.math.linear.OpenMapRealMatrix@addToEntry(int,int,double):246:0.0 |==> -1.0
+144:ROR:==(double,double):!=(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@addToEntry(int,int,double):246:value == 0.0 |==> value != 0.0
+145:ROR:==(double,double):<(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@addToEntry(int,int,double):246:value == 0.0 |==> value < 0.0
+146:ROR:==(double,double):<=(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@addToEntry(int,int,double):246:value == 0.0 |==> value <= 0.0
+147:ROR:==(double,double):>(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@addToEntry(int,int,double):246:value == 0.0 |==> value > 0.0
+148:ROR:==(double,double):>=(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@addToEntry(int,int,double):246:value == 0.0 |==> value >= 0.0
+149:ROR:==(double,double):FALSE(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@addToEntry(int,int,double):246:value == 0.0 |==> false
+150:ROR:==(double,double):TRUE(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@addToEntry(int,int,double):246:value == 0.0 |==> true
+151:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@addToEntry(int,int,double):247:entries.remove(key) |==> <NO-OP>
+152:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@addToEntry(int,int,double):249:entries.put(key, value) |==> <NO-OP>
+153:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@multiplyEntry(int,int,double):256:MatrixUtils.checkRowIndex(this, row) |==> <NO-OP>
+154:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@multiplyEntry(int,int,double):257:MatrixUtils.checkColumnIndex(this, column) |==> <NO-OP>
+155:AOR:*(double,double):%(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiplyEntry(int,int,double):259:entries.get(key) * factor |==> entries.get(key) % factor
+156:AOR:*(double,double):+(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiplyEntry(int,int,double):259:entries.get(key) * factor |==> entries.get(key) + factor
+157:AOR:*(double,double):-(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiplyEntry(int,int,double):259:entries.get(key) * factor |==> entries.get(key) - factor
+158:AOR:*(double,double):/(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiplyEntry(int,int,double):259:entries.get(key) * factor |==> entries.get(key) / factor
+159:LVR:0:POS:org.apache.commons.math.linear.OpenMapRealMatrix@multiplyEntry(int,int,double):260:0.0 |==> 1.0
+160:LVR:0:NEG:org.apache.commons.math.linear.OpenMapRealMatrix@multiplyEntry(int,int,double):260:0.0 |==> -1.0
+161:ROR:==(double,double):!=(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiplyEntry(int,int,double):260:value == 0.0 |==> value != 0.0
+162:ROR:==(double,double):<(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiplyEntry(int,int,double):260:value == 0.0 |==> value < 0.0
+163:ROR:==(double,double):<=(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiplyEntry(int,int,double):260:value == 0.0 |==> value <= 0.0
+164:ROR:==(double,double):>(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiplyEntry(int,int,double):260:value == 0.0 |==> value > 0.0
+165:ROR:==(double,double):>=(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiplyEntry(int,int,double):260:value == 0.0 |==> value >= 0.0
+166:ROR:==(double,double):FALSE(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiplyEntry(int,int,double):260:value == 0.0 |==> false
+167:ROR:==(double,double):TRUE(double,double):org.apache.commons.math.linear.OpenMapRealMatrix@multiplyEntry(int,int,double):260:value == 0.0 |==> true
+168:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@multiplyEntry(int,int,double):261:entries.remove(key) |==> <NO-OP>
+169:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.OpenMapRealMatrix@multiplyEntry(int,int,double):263:entries.put(key, value) |==> <NO-OP>
+170:AOR:*(int,int):%(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@computeKey(int,int):274:row * columns |==> row % columns
+171:AOR:*(int,int):+(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@computeKey(int,int):274:row * columns |==> row + columns
+172:AOR:*(int,int):-(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@computeKey(int,int):274:row * columns |==> row - columns
+173:AOR:*(int,int):/(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@computeKey(int,int):274:row * columns |==> row / columns
+174:AOR:+(int,int):%(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@computeKey(int,int):274:row * columns + column |==> row * columns % column
+175:AOR:+(int,int):*(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@computeKey(int,int):274:row * columns + column |==> row * columns * column
+176:AOR:+(int,int):-(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@computeKey(int,int):274:row * columns + column |==> row * columns - column
+177:AOR:+(int,int):/(int,int):org.apache.commons.math.linear.OpenMapRealMatrix@computeKey(int,int):274:row * columns + column |==> row * columns / column

@@ -1,0 +1,162 @@
+1:LVR:NEG:0:org.apache.commons.lang.time.StopWatch:75:-1 |==> 0
+2:LVR:NEG:POS:org.apache.commons.lang.time.StopWatch:75:-1 |==> 1
+3:LVR:NEG:0:org.apache.commons.lang.time.StopWatch:79:-1 |==> 0
+4:LVR:NEG:POS:org.apache.commons.lang.time.StopWatch:79:-1 |==> 1
+5:ROR:==(int,int):!=(int,int):org.apache.commons.lang.time.StopWatch@start():96:this.runningState == STATE_STOPPED |==> this.runningState != STATE_STOPPED
+6:ROR:==(int,int):<(int,int):org.apache.commons.lang.time.StopWatch@start():96:this.runningState == STATE_STOPPED |==> this.runningState < STATE_STOPPED
+7:ROR:==(int,int):<=(int,int):org.apache.commons.lang.time.StopWatch@start():96:this.runningState == STATE_STOPPED |==> this.runningState <= STATE_STOPPED
+8:ROR:==(int,int):>(int,int):org.apache.commons.lang.time.StopWatch@start():96:this.runningState == STATE_STOPPED |==> this.runningState > STATE_STOPPED
+9:ROR:==(int,int):>=(int,int):org.apache.commons.lang.time.StopWatch@start():96:this.runningState == STATE_STOPPED |==> this.runningState >= STATE_STOPPED
+10:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.time.StopWatch@start():96:this.runningState == STATE_STOPPED |==> false
+11:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.time.StopWatch@start():96:this.runningState == STATE_STOPPED |==> true
+12:ROR:!=(int,int):<(int,int):org.apache.commons.lang.time.StopWatch@start():99:this.runningState != STATE_UNSTARTED |==> this.runningState < STATE_UNSTARTED
+13:ROR:!=(int,int):<=(int,int):org.apache.commons.lang.time.StopWatch@start():99:this.runningState != STATE_UNSTARTED |==> this.runningState <= STATE_UNSTARTED
+14:ROR:!=(int,int):==(int,int):org.apache.commons.lang.time.StopWatch@start():99:this.runningState != STATE_UNSTARTED |==> this.runningState == STATE_UNSTARTED
+15:ROR:!=(int,int):>(int,int):org.apache.commons.lang.time.StopWatch@start():99:this.runningState != STATE_UNSTARTED |==> this.runningState > STATE_UNSTARTED
+16:ROR:!=(int,int):>=(int,int):org.apache.commons.lang.time.StopWatch@start():99:this.runningState != STATE_UNSTARTED |==> this.runningState >= STATE_UNSTARTED
+17:ROR:!=(int,int):FALSE(int,int):org.apache.commons.lang.time.StopWatch@start():99:this.runningState != STATE_UNSTARTED |==> false
+18:ROR:!=(int,int):TRUE(int,int):org.apache.commons.lang.time.StopWatch@start():99:this.runningState != STATE_UNSTARTED |==> true
+19:LVR:NEG:0:org.apache.commons.lang.time.StopWatch@start():102:-1 |==> 0
+20:LVR:NEG:POS:org.apache.commons.lang.time.StopWatch@start():102:-1 |==> 1
+21:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@start():102:stopTime = -1 |==> <NO-OP>
+22:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@start():103:startTime = System.currentTimeMillis() |==> <NO-OP>
+23:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@start():104:this.runningState = STATE_RUNNING |==> <NO-OP>
+24:ROR:!=(int,int):<(int,int):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_RUNNING |==> this.runningState < STATE_RUNNING
+25:ROR:!=(int,int):<=(int,int):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_RUNNING |==> this.runningState <= STATE_RUNNING
+26:ROR:!=(int,int):==(int,int):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_RUNNING |==> this.runningState == STATE_RUNNING
+27:ROR:!=(int,int):>(int,int):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_RUNNING |==> this.runningState > STATE_RUNNING
+28:ROR:!=(int,int):>=(int,int):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_RUNNING |==> this.runningState >= STATE_RUNNING
+29:ROR:!=(int,int):FALSE(int,int):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_RUNNING |==> false
+30:ROR:!=(int,int):TRUE(int,int):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_RUNNING |==> true
+31:ROR:!=(int,int):<(int,int):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_SUSPENDED |==> this.runningState < STATE_SUSPENDED
+32:ROR:!=(int,int):<=(int,int):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_SUSPENDED |==> this.runningState <= STATE_SUSPENDED
+33:ROR:!=(int,int):==(int,int):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_SUSPENDED |==> this.runningState == STATE_SUSPENDED
+34:ROR:!=(int,int):>(int,int):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_SUSPENDED |==> this.runningState > STATE_SUSPENDED
+35:ROR:!=(int,int):>=(int,int):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_SUSPENDED |==> this.runningState >= STATE_SUSPENDED
+36:ROR:!=(int,int):FALSE(int,int):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_SUSPENDED |==> false
+37:ROR:!=(int,int):TRUE(int,int):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_SUSPENDED |==> true
+38:COR:&&(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_RUNNING && this.runningState != STATE_SUSPENDED |==> this.runningState != STATE_RUNNING != (this.runningState != STATE_SUSPENDED)
+39:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_RUNNING && this.runningState != STATE_SUSPENDED |==> this.runningState != STATE_RUNNING == (this.runningState != STATE_SUSPENDED)
+40:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_RUNNING && this.runningState != STATE_SUSPENDED |==> false
+41:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_RUNNING && this.runningState != STATE_SUSPENDED |==> this.runningState != STATE_RUNNING
+42:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_RUNNING && this.runningState != STATE_SUSPENDED |==> this.runningState != STATE_SUSPENDED
+43:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_RUNNING && this.runningState != STATE_SUSPENDED |==> true
+44:COR:&&(boolean,boolean):||(boolean,boolean):org.apache.commons.lang.time.StopWatch@stop():115:this.runningState != STATE_RUNNING && this.runningState != STATE_SUSPENDED |==> this.runningState != STATE_RUNNING || this.runningState != STATE_SUSPENDED
+45:ROR:==(int,int):!=(int,int):org.apache.commons.lang.time.StopWatch@stop():118:this.runningState == STATE_RUNNING |==> this.runningState != STATE_RUNNING
+46:ROR:==(int,int):<(int,int):org.apache.commons.lang.time.StopWatch@stop():118:this.runningState == STATE_RUNNING |==> this.runningState < STATE_RUNNING
+47:ROR:==(int,int):<=(int,int):org.apache.commons.lang.time.StopWatch@stop():118:this.runningState == STATE_RUNNING |==> this.runningState <= STATE_RUNNING
+48:ROR:==(int,int):>(int,int):org.apache.commons.lang.time.StopWatch@stop():118:this.runningState == STATE_RUNNING |==> this.runningState > STATE_RUNNING
+49:ROR:==(int,int):>=(int,int):org.apache.commons.lang.time.StopWatch@stop():118:this.runningState == STATE_RUNNING |==> this.runningState >= STATE_RUNNING
+50:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.time.StopWatch@stop():118:this.runningState == STATE_RUNNING |==> false
+51:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.time.StopWatch@stop():118:this.runningState == STATE_RUNNING |==> true
+52:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@stop():119:stopTime = System.currentTimeMillis() |==> <NO-OP>
+53:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@stop():121:this.runningState = STATE_STOPPED |==> <NO-OP>
+54:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@reset():130:this.runningState = STATE_UNSTARTED |==> <NO-OP>
+55:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@reset():131:this.splitState = STATE_UNSPLIT |==> <NO-OP>
+56:LVR:NEG:0:org.apache.commons.lang.time.StopWatch@reset():132:-1 |==> 0
+57:LVR:NEG:POS:org.apache.commons.lang.time.StopWatch@reset():132:-1 |==> 1
+58:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@reset():132:startTime = -1 |==> <NO-OP>
+59:LVR:NEG:0:org.apache.commons.lang.time.StopWatch@reset():133:-1 |==> 0
+60:LVR:NEG:POS:org.apache.commons.lang.time.StopWatch@reset():133:-1 |==> 1
+61:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@reset():133:stopTime = -1 |==> <NO-OP>
+62:ROR:!=(int,int):<(int,int):org.apache.commons.lang.time.StopWatch@split():146:this.runningState != STATE_RUNNING |==> this.runningState < STATE_RUNNING
+63:ROR:!=(int,int):<=(int,int):org.apache.commons.lang.time.StopWatch@split():146:this.runningState != STATE_RUNNING |==> this.runningState <= STATE_RUNNING
+64:ROR:!=(int,int):==(int,int):org.apache.commons.lang.time.StopWatch@split():146:this.runningState != STATE_RUNNING |==> this.runningState == STATE_RUNNING
+65:ROR:!=(int,int):>(int,int):org.apache.commons.lang.time.StopWatch@split():146:this.runningState != STATE_RUNNING |==> this.runningState > STATE_RUNNING
+66:ROR:!=(int,int):>=(int,int):org.apache.commons.lang.time.StopWatch@split():146:this.runningState != STATE_RUNNING |==> this.runningState >= STATE_RUNNING
+67:ROR:!=(int,int):FALSE(int,int):org.apache.commons.lang.time.StopWatch@split():146:this.runningState != STATE_RUNNING |==> false
+68:ROR:!=(int,int):TRUE(int,int):org.apache.commons.lang.time.StopWatch@split():146:this.runningState != STATE_RUNNING |==> true
+69:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@split():149:stopTime = System.currentTimeMillis() |==> <NO-OP>
+70:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@split():150:this.splitState = STATE_SPLIT |==> <NO-OP>
+71:ROR:!=(int,int):<(int,int):org.apache.commons.lang.time.StopWatch@unsplit():162:this.splitState != STATE_SPLIT |==> this.splitState < STATE_SPLIT
+72:ROR:!=(int,int):<=(int,int):org.apache.commons.lang.time.StopWatch@unsplit():162:this.splitState != STATE_SPLIT |==> this.splitState <= STATE_SPLIT
+73:ROR:!=(int,int):==(int,int):org.apache.commons.lang.time.StopWatch@unsplit():162:this.splitState != STATE_SPLIT |==> this.splitState == STATE_SPLIT
+74:ROR:!=(int,int):>(int,int):org.apache.commons.lang.time.StopWatch@unsplit():162:this.splitState != STATE_SPLIT |==> this.splitState > STATE_SPLIT
+75:ROR:!=(int,int):>=(int,int):org.apache.commons.lang.time.StopWatch@unsplit():162:this.splitState != STATE_SPLIT |==> this.splitState >= STATE_SPLIT
+76:ROR:!=(int,int):FALSE(int,int):org.apache.commons.lang.time.StopWatch@unsplit():162:this.splitState != STATE_SPLIT |==> false
+77:ROR:!=(int,int):TRUE(int,int):org.apache.commons.lang.time.StopWatch@unsplit():162:this.splitState != STATE_SPLIT |==> true
+78:LVR:NEG:0:org.apache.commons.lang.time.StopWatch@unsplit():165:-1 |==> 0
+79:LVR:NEG:POS:org.apache.commons.lang.time.StopWatch@unsplit():165:-1 |==> 1
+80:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@unsplit():165:stopTime = -1 |==> <NO-OP>
+81:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@unsplit():166:this.splitState = STATE_UNSPLIT |==> <NO-OP>
+82:ROR:!=(int,int):<(int,int):org.apache.commons.lang.time.StopWatch@suspend():178:this.runningState != STATE_RUNNING |==> this.runningState < STATE_RUNNING
+83:ROR:!=(int,int):<=(int,int):org.apache.commons.lang.time.StopWatch@suspend():178:this.runningState != STATE_RUNNING |==> this.runningState <= STATE_RUNNING
+84:ROR:!=(int,int):==(int,int):org.apache.commons.lang.time.StopWatch@suspend():178:this.runningState != STATE_RUNNING |==> this.runningState == STATE_RUNNING
+85:ROR:!=(int,int):>(int,int):org.apache.commons.lang.time.StopWatch@suspend():178:this.runningState != STATE_RUNNING |==> this.runningState > STATE_RUNNING
+86:ROR:!=(int,int):>=(int,int):org.apache.commons.lang.time.StopWatch@suspend():178:this.runningState != STATE_RUNNING |==> this.runningState >= STATE_RUNNING
+87:ROR:!=(int,int):FALSE(int,int):org.apache.commons.lang.time.StopWatch@suspend():178:this.runningState != STATE_RUNNING |==> false
+88:ROR:!=(int,int):TRUE(int,int):org.apache.commons.lang.time.StopWatch@suspend():178:this.runningState != STATE_RUNNING |==> true
+89:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@suspend():181:stopTime = System.currentTimeMillis() |==> <NO-OP>
+90:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@suspend():182:this.runningState = STATE_SUSPENDED |==> <NO-OP>
+91:ROR:!=(int,int):<(int,int):org.apache.commons.lang.time.StopWatch@resume():194:this.runningState != STATE_SUSPENDED |==> this.runningState < STATE_SUSPENDED
+92:ROR:!=(int,int):<=(int,int):org.apache.commons.lang.time.StopWatch@resume():194:this.runningState != STATE_SUSPENDED |==> this.runningState <= STATE_SUSPENDED
+93:ROR:!=(int,int):==(int,int):org.apache.commons.lang.time.StopWatch@resume():194:this.runningState != STATE_SUSPENDED |==> this.runningState == STATE_SUSPENDED
+94:ROR:!=(int,int):>(int,int):org.apache.commons.lang.time.StopWatch@resume():194:this.runningState != STATE_SUSPENDED |==> this.runningState > STATE_SUSPENDED
+95:ROR:!=(int,int):>=(int,int):org.apache.commons.lang.time.StopWatch@resume():194:this.runningState != STATE_SUSPENDED |==> this.runningState >= STATE_SUSPENDED
+96:ROR:!=(int,int):FALSE(int,int):org.apache.commons.lang.time.StopWatch@resume():194:this.runningState != STATE_SUSPENDED |==> false
+97:ROR:!=(int,int):TRUE(int,int):org.apache.commons.lang.time.StopWatch@resume():194:this.runningState != STATE_SUSPENDED |==> true
+98:AOR:-(long,long):%(long,long):org.apache.commons.lang.time.StopWatch@resume():197:System.currentTimeMillis() - stopTime |==> System.currentTimeMillis() % stopTime
+99:AOR:-(long,long):*(long,long):org.apache.commons.lang.time.StopWatch@resume():197:System.currentTimeMillis() - stopTime |==> System.currentTimeMillis() * stopTime
+100:AOR:-(long,long):+(long,long):org.apache.commons.lang.time.StopWatch@resume():197:System.currentTimeMillis() - stopTime |==> System.currentTimeMillis() + stopTime
+101:AOR:-(long,long):/(long,long):org.apache.commons.lang.time.StopWatch@resume():197:System.currentTimeMillis() - stopTime |==> System.currentTimeMillis() / stopTime
+102:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@resume():197:startTime += (System.currentTimeMillis() - stopTime) |==> <NO-OP>
+103:LVR:NEG:0:org.apache.commons.lang.time.StopWatch@resume():198:-1 |==> 0
+104:LVR:NEG:POS:org.apache.commons.lang.time.StopWatch@resume():198:-1 |==> 1
+105:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@resume():198:stopTime = -1 |==> <NO-OP>
+106:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.time.StopWatch@resume():199:this.runningState = STATE_RUNNING |==> <NO-OP>
+107:ROR:==(int,int):!=(int,int):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_STOPPED |==> this.runningState != STATE_STOPPED
+108:ROR:==(int,int):<(int,int):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_STOPPED |==> this.runningState < STATE_STOPPED
+109:ROR:==(int,int):<=(int,int):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_STOPPED |==> this.runningState <= STATE_STOPPED
+110:ROR:==(int,int):>(int,int):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_STOPPED |==> this.runningState > STATE_STOPPED
+111:ROR:==(int,int):>=(int,int):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_STOPPED |==> this.runningState >= STATE_STOPPED
+112:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_STOPPED |==> false
+113:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_STOPPED |==> true
+114:ROR:==(int,int):!=(int,int):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_SUSPENDED |==> this.runningState != STATE_SUSPENDED
+115:ROR:==(int,int):<(int,int):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_SUSPENDED |==> this.runningState < STATE_SUSPENDED
+116:ROR:==(int,int):<=(int,int):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_SUSPENDED |==> this.runningState <= STATE_SUSPENDED
+117:ROR:==(int,int):>(int,int):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_SUSPENDED |==> this.runningState > STATE_SUSPENDED
+118:ROR:==(int,int):>=(int,int):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_SUSPENDED |==> this.runningState >= STATE_SUSPENDED
+119:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_SUSPENDED |==> false
+120:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_SUSPENDED |==> true
+121:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_STOPPED || this.runningState == STATE_SUSPENDED |==> this.runningState == STATE_STOPPED != (this.runningState == STATE_SUSPENDED)
+122:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_STOPPED || this.runningState == STATE_SUSPENDED |==> this.runningState == STATE_STOPPED && this.runningState == STATE_SUSPENDED
+123:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_STOPPED || this.runningState == STATE_SUSPENDED |==> this.runningState == STATE_STOPPED == (this.runningState == STATE_SUSPENDED)
+124:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_STOPPED || this.runningState == STATE_SUSPENDED |==> false
+125:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_STOPPED || this.runningState == STATE_SUSPENDED |==> this.runningState == STATE_STOPPED
+126:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_STOPPED || this.runningState == STATE_SUSPENDED |==> this.runningState == STATE_SUSPENDED
+127:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang.time.StopWatch@getTime():211:this.runningState == STATE_STOPPED || this.runningState == STATE_SUSPENDED |==> true
+128:AOR:-(long,long):%(long,long):org.apache.commons.lang.time.StopWatch@getTime():212:this.stopTime - this.startTime |==> this.stopTime % this.startTime
+129:AOR:-(long,long):*(long,long):org.apache.commons.lang.time.StopWatch@getTime():212:this.stopTime - this.startTime |==> this.stopTime * this.startTime
+130:AOR:-(long,long):+(long,long):org.apache.commons.lang.time.StopWatch@getTime():212:this.stopTime - this.startTime |==> this.stopTime + this.startTime
+131:AOR:-(long,long):/(long,long):org.apache.commons.lang.time.StopWatch@getTime():212:this.stopTime - this.startTime |==> this.stopTime / this.startTime
+132:ROR:==(int,int):!=(int,int):org.apache.commons.lang.time.StopWatch@getTime():214:this.runningState == STATE_UNSTARTED |==> this.runningState != STATE_UNSTARTED
+133:ROR:==(int,int):<(int,int):org.apache.commons.lang.time.StopWatch@getTime():214:this.runningState == STATE_UNSTARTED |==> this.runningState < STATE_UNSTARTED
+134:ROR:==(int,int):<=(int,int):org.apache.commons.lang.time.StopWatch@getTime():214:this.runningState == STATE_UNSTARTED |==> this.runningState <= STATE_UNSTARTED
+135:ROR:==(int,int):>(int,int):org.apache.commons.lang.time.StopWatch@getTime():214:this.runningState == STATE_UNSTARTED |==> this.runningState > STATE_UNSTARTED
+136:ROR:==(int,int):>=(int,int):org.apache.commons.lang.time.StopWatch@getTime():214:this.runningState == STATE_UNSTARTED |==> this.runningState >= STATE_UNSTARTED
+137:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.time.StopWatch@getTime():214:this.runningState == STATE_UNSTARTED |==> false
+138:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.time.StopWatch@getTime():214:this.runningState == STATE_UNSTARTED |==> true
+139:LVR:0:POS:org.apache.commons.lang.time.StopWatch@getTime():215:0 |==> 1
+140:LVR:0:NEG:org.apache.commons.lang.time.StopWatch@getTime():215:0 |==> -1
+141:ROR:==(int,int):!=(int,int):org.apache.commons.lang.time.StopWatch@getTime():217:this.runningState == STATE_RUNNING |==> this.runningState != STATE_RUNNING
+142:ROR:==(int,int):<(int,int):org.apache.commons.lang.time.StopWatch@getTime():217:this.runningState == STATE_RUNNING |==> this.runningState < STATE_RUNNING
+143:ROR:==(int,int):<=(int,int):org.apache.commons.lang.time.StopWatch@getTime():217:this.runningState == STATE_RUNNING |==> this.runningState <= STATE_RUNNING
+144:ROR:==(int,int):>(int,int):org.apache.commons.lang.time.StopWatch@getTime():217:this.runningState == STATE_RUNNING |==> this.runningState > STATE_RUNNING
+145:ROR:==(int,int):>=(int,int):org.apache.commons.lang.time.StopWatch@getTime():217:this.runningState == STATE_RUNNING |==> this.runningState >= STATE_RUNNING
+146:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.time.StopWatch@getTime():217:this.runningState == STATE_RUNNING |==> false
+147:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.time.StopWatch@getTime():217:this.runningState == STATE_RUNNING |==> true
+148:AOR:-(long,long):%(long,long):org.apache.commons.lang.time.StopWatch@getTime():218:System.currentTimeMillis() - this.startTime |==> System.currentTimeMillis() % this.startTime
+149:AOR:-(long,long):*(long,long):org.apache.commons.lang.time.StopWatch@getTime():218:System.currentTimeMillis() - this.startTime |==> System.currentTimeMillis() * this.startTime
+150:AOR:-(long,long):+(long,long):org.apache.commons.lang.time.StopWatch@getTime():218:System.currentTimeMillis() - this.startTime |==> System.currentTimeMillis() + this.startTime
+151:AOR:-(long,long):/(long,long):org.apache.commons.lang.time.StopWatch@getTime():218:System.currentTimeMillis() - this.startTime |==> System.currentTimeMillis() / this.startTime
+152:ROR:!=(int,int):<(int,int):org.apache.commons.lang.time.StopWatch@getSplitTime():234:this.splitState != STATE_SPLIT |==> this.splitState < STATE_SPLIT
+153:ROR:!=(int,int):<=(int,int):org.apache.commons.lang.time.StopWatch@getSplitTime():234:this.splitState != STATE_SPLIT |==> this.splitState <= STATE_SPLIT
+154:ROR:!=(int,int):==(int,int):org.apache.commons.lang.time.StopWatch@getSplitTime():234:this.splitState != STATE_SPLIT |==> this.splitState == STATE_SPLIT
+155:ROR:!=(int,int):>(int,int):org.apache.commons.lang.time.StopWatch@getSplitTime():234:this.splitState != STATE_SPLIT |==> this.splitState > STATE_SPLIT
+156:ROR:!=(int,int):>=(int,int):org.apache.commons.lang.time.StopWatch@getSplitTime():234:this.splitState != STATE_SPLIT |==> this.splitState >= STATE_SPLIT
+157:ROR:!=(int,int):FALSE(int,int):org.apache.commons.lang.time.StopWatch@getSplitTime():234:this.splitState != STATE_SPLIT |==> false
+158:ROR:!=(int,int):TRUE(int,int):org.apache.commons.lang.time.StopWatch@getSplitTime():234:this.splitState != STATE_SPLIT |==> true
+159:AOR:-(long,long):%(long,long):org.apache.commons.lang.time.StopWatch@getSplitTime():237:this.stopTime - this.startTime |==> this.stopTime % this.startTime
+160:AOR:-(long,long):*(long,long):org.apache.commons.lang.time.StopWatch@getSplitTime():237:this.stopTime - this.startTime |==> this.stopTime * this.startTime
+161:AOR:-(long,long):+(long,long):org.apache.commons.lang.time.StopWatch@getSplitTime():237:this.stopTime - this.startTime |==> this.stopTime + this.startTime
+162:AOR:-(long,long):/(long,long):org.apache.commons.lang.time.StopWatch@getSplitTime():237:this.stopTime - this.startTime |==> this.stopTime / this.startTime

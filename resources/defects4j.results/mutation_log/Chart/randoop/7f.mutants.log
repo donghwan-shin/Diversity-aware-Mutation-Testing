@@ -1,0 +1,389 @@
+1:LVR:NEG:0:org.jfree.data.time.TimePeriodValues:91:-1 |==> 0
+2:LVR:NEG:POS:org.jfree.data.time.TimePeriodValues:91:-1 |==> 1
+3:LVR:NEG:0:org.jfree.data.time.TimePeriodValues:94:-1 |==> 0
+4:LVR:NEG:POS:org.jfree.data.time.TimePeriodValues:94:-1 |==> 1
+5:LVR:NEG:0:org.jfree.data.time.TimePeriodValues:97:-1 |==> 0
+6:LVR:NEG:POS:org.jfree.data.time.TimePeriodValues:97:-1 |==> 1
+7:LVR:NEG:0:org.jfree.data.time.TimePeriodValues:100:-1 |==> 0
+8:LVR:NEG:POS:org.jfree.data.time.TimePeriodValues:100:-1 |==> 1
+9:LVR:NEG:0:org.jfree.data.time.TimePeriodValues:103:-1 |==> 0
+10:LVR:NEG:POS:org.jfree.data.time.TimePeriodValues:103:-1 |==> 1
+11:LVR:NEG:0:org.jfree.data.time.TimePeriodValues:106:-1 |==> 0
+12:LVR:NEG:POS:org.jfree.data.time.TimePeriodValues:106:-1 |==> 1
+13:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@<init>(java.lang.Comparable,java.lang.String,java.lang.String):130:this.domain = domain |==> <NO-OP>
+14:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@<init>(java.lang.Comparable,java.lang.String,java.lang.String):131:this.range = range |==> <NO-OP>
+15:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@<init>(java.lang.Comparable,java.lang.String,java.lang.String):132:this.data = new ArrayList() |==> <NO-OP>
+16:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@setDomainDescription(java.lang.String):157:this.domain = description |==> <NO-OP>
+17:STD:<CALL>:<NO-OP>:org.jfree.data.time.TimePeriodValues@setDomainDescription(java.lang.String):158:firePropertyChange("Domain", old, description) |==> <NO-OP>
+18:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@setRangeDescription(java.lang.String):183:this.range = description |==> <NO-OP>
+19:STD:<CALL>:<NO-OP>:org.jfree.data.time.TimePeriodValues@setRangeDescription(java.lang.String):184:firePropertyChange("Range", old, description) |==> <NO-OP>
+20:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.time.TimePeriodValues@add(org.jfree.data.time.TimePeriodValue):243:item == null |==> item != null
+21:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.time.TimePeriodValues@add(org.jfree.data.time.TimePeriodValue):243:item == null |==> false
+22:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.time.TimePeriodValues@add(org.jfree.data.time.TimePeriodValue):243:item == null |==> true
+23:STD:<CALL>:<NO-OP>:org.jfree.data.time.TimePeriodValues@add(org.jfree.data.time.TimePeriodValue):246:this.data.add(item) |==> <NO-OP>
+24:LVR:POS:0:org.jfree.data.time.TimePeriodValues@add(org.jfree.data.time.TimePeriodValue):247:1 |==> 0
+25:LVR:POS:NEG:org.jfree.data.time.TimePeriodValues@add(org.jfree.data.time.TimePeriodValue):247:1 |==> -1
+26:AOR:-(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@add(org.jfree.data.time.TimePeriodValue):247:this.data.size() - 1 |==> this.data.size() % 1
+27:AOR:-(int,int):*(int,int):org.jfree.data.time.TimePeriodValues@add(org.jfree.data.time.TimePeriodValue):247:this.data.size() - 1 |==> this.data.size() * 1
+28:AOR:-(int,int):+(int,int):org.jfree.data.time.TimePeriodValues@add(org.jfree.data.time.TimePeriodValue):247:this.data.size() - 1 |==> this.data.size() + 1
+29:AOR:-(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@add(org.jfree.data.time.TimePeriodValue):247:this.data.size() - 1 |==> this.data.size() / 1
+30:STD:<CALL>:<NO-OP>:org.jfree.data.time.TimePeriodValues@add(org.jfree.data.time.TimePeriodValue):247:updateBounds(item.getPeriod(), this.data.size() - 1) |==> <NO-OP>
+31:STD:<CALL>:<NO-OP>:org.jfree.data.time.TimePeriodValues@add(org.jfree.data.time.TimePeriodValue):248:fireSeriesChanged() |==> <NO-OP>
+32:AOR:-(long,long):%(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):261:end - start |==> end % start
+33:AOR:-(long,long):*(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):261:end - start |==> end * start
+34:AOR:-(long,long):+(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):261:end - start |==> end + start
+35:AOR:-(long,long):/(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):261:end - start |==> end / start
+36:LVR:POS:0:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):261:2 |==> 0
+37:LVR:POS:NEG:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):261:2 |==> -2
+38:AOR:/(long,long):%(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):261:(end - start) / 2 |==> (end - start) % 2
+39:AOR:/(long,long):*(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):261:(end - start) / 2 |==> (end - start) * 2
+40:AOR:/(long,long):+(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):261:(end - start) / 2 |==> (end - start) + 2
+41:AOR:/(long,long):-(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):261:(end - start) / 2 |==> (end - start) - 2
+42:AOR:+(long,long):%(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):261:start + ((end - start) / 2) |==> start % ((end - start) / 2)
+43:AOR:+(long,long):*(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):261:start + ((end - start) / 2) |==> start * ((end - start) / 2)
+44:AOR:+(long,long):-(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):261:start + ((end - start) / 2) |==> start - ((end - start) / 2)
+45:AOR:+(long,long):/(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):261:start + ((end - start) / 2) |==> start / ((end - start) / 2)
+46:LVR:0:POS:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):263:0 |==> 1
+47:LVR:0:NEG:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):263:0 |==> -1
+48:ROR:>=(int,int):!=(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):263:this.minStartIndex >= 0 |==> this.minStartIndex != 0
+49:ROR:>=(int,int):<(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):263:this.minStartIndex >= 0 |==> this.minStartIndex < 0
+50:ROR:>=(int,int):<=(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):263:this.minStartIndex >= 0 |==> this.minStartIndex <= 0
+51:ROR:>=(int,int):==(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):263:this.minStartIndex >= 0 |==> this.minStartIndex == 0
+52:ROR:>=(int,int):>(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):263:this.minStartIndex >= 0 |==> this.minStartIndex > 0
+53:ROR:>=(int,int):FALSE(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):263:this.minStartIndex >= 0 |==> false
+54:ROR:>=(int,int):TRUE(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):263:this.minStartIndex >= 0 |==> true
+55:ROR:<(long,long):!=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):266:start < minStart |==> start != minStart
+56:ROR:<(long,long):<=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):266:start < minStart |==> start <= minStart
+57:ROR:<(long,long):==(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):266:start < minStart |==> start == minStart
+58:ROR:<(long,long):>(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):266:start < minStart |==> start > minStart
+59:ROR:<(long,long):>=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):266:start < minStart |==> start >= minStart
+60:ROR:<(long,long):FALSE(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):266:start < minStart |==> false
+61:ROR:<(long,long):TRUE(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):266:start < minStart |==> true
+62:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):267:this.minStartIndex = index |==> <NO-OP>
+63:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):271:this.minStartIndex = index |==> <NO-OP>
+64:LVR:0:POS:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):274:0 |==> 1
+65:LVR:0:NEG:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):274:0 |==> -1
+66:ROR:>=(int,int):!=(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):274:this.maxStartIndex >= 0 |==> this.maxStartIndex != 0
+67:ROR:>=(int,int):<(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):274:this.maxStartIndex >= 0 |==> this.maxStartIndex < 0
+68:ROR:>=(int,int):<=(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):274:this.maxStartIndex >= 0 |==> this.maxStartIndex <= 0
+69:ROR:>=(int,int):==(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):274:this.maxStartIndex >= 0 |==> this.maxStartIndex == 0
+70:ROR:>=(int,int):>(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):274:this.maxStartIndex >= 0 |==> this.maxStartIndex > 0
+71:ROR:>=(int,int):FALSE(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):274:this.maxStartIndex >= 0 |==> false
+72:ROR:>=(int,int):TRUE(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):274:this.maxStartIndex >= 0 |==> true
+73:ROR:>(long,long):!=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):277:start > maxStart |==> start != maxStart
+74:ROR:>(long,long):<(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):277:start > maxStart |==> start < maxStart
+75:ROR:>(long,long):<=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):277:start > maxStart |==> start <= maxStart
+76:ROR:>(long,long):==(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):277:start > maxStart |==> start == maxStart
+77:ROR:>(long,long):>=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):277:start > maxStart |==> start >= maxStart
+78:ROR:>(long,long):FALSE(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):277:start > maxStart |==> false
+79:ROR:>(long,long):TRUE(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):277:start > maxStart |==> true
+80:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):278:this.maxStartIndex = index |==> <NO-OP>
+81:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):282:this.maxStartIndex = index |==> <NO-OP>
+82:LVR:0:POS:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):285:0 |==> 1
+83:LVR:0:NEG:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):285:0 |==> -1
+84:ROR:>=(int,int):!=(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):285:this.minMiddleIndex >= 0 |==> this.minMiddleIndex != 0
+85:ROR:>=(int,int):<(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):285:this.minMiddleIndex >= 0 |==> this.minMiddleIndex < 0
+86:ROR:>=(int,int):<=(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):285:this.minMiddleIndex >= 0 |==> this.minMiddleIndex <= 0
+87:ROR:>=(int,int):==(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):285:this.minMiddleIndex >= 0 |==> this.minMiddleIndex == 0
+88:ROR:>=(int,int):>(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):285:this.minMiddleIndex >= 0 |==> this.minMiddleIndex > 0
+89:ROR:>=(int,int):FALSE(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):285:this.minMiddleIndex >= 0 |==> false
+90:ROR:>=(int,int):TRUE(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):285:this.minMiddleIndex >= 0 |==> true
+91:AOR:-(long,long):%(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):290:e - s |==> e % s
+92:AOR:-(long,long):*(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):290:e - s |==> e * s
+93:AOR:-(long,long):+(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):290:e - s |==> e + s
+94:AOR:-(long,long):/(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):290:e - s |==> e / s
+95:LVR:POS:0:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):290:2 |==> 0
+96:LVR:POS:NEG:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):290:2 |==> -2
+97:AOR:/(long,long):%(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):290:(e - s) / 2 |==> (e - s) % 2
+98:AOR:/(long,long):*(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):290:(e - s) / 2 |==> (e - s) * 2
+99:AOR:/(long,long):+(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):290:(e - s) / 2 |==> (e - s) + 2
+100:AOR:/(long,long):-(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):290:(e - s) / 2 |==> (e - s) - 2
+101:AOR:+(long,long):%(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):290:s + (e - s) / 2 |==> s % ((e - s) / 2)
+102:AOR:+(long,long):*(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):290:s + (e - s) / 2 |==> s * ((e - s) / 2)
+103:AOR:+(long,long):-(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):290:s + (e - s) / 2 |==> s - (e - s) / 2
+104:AOR:+(long,long):/(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):290:s + (e - s) / 2 |==> s / ((e - s) / 2)
+105:ROR:<(long,long):!=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):291:middle < minMiddle |==> middle != minMiddle
+106:ROR:<(long,long):<=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):291:middle < minMiddle |==> middle <= minMiddle
+107:ROR:<(long,long):==(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):291:middle < minMiddle |==> middle == minMiddle
+108:ROR:<(long,long):>(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):291:middle < minMiddle |==> middle > minMiddle
+109:ROR:<(long,long):>=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):291:middle < minMiddle |==> middle >= minMiddle
+110:ROR:<(long,long):FALSE(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):291:middle < minMiddle |==> false
+111:ROR:<(long,long):TRUE(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):291:middle < minMiddle |==> true
+112:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):292:this.minMiddleIndex = index |==> <NO-OP>
+113:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):296:this.minMiddleIndex = index |==> <NO-OP>
+114:LVR:0:POS:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):299:0 |==> 1
+115:LVR:0:NEG:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):299:0 |==> -1
+116:ROR:>=(int,int):!=(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):299:this.maxMiddleIndex >= 0 |==> this.maxMiddleIndex != 0
+117:ROR:>=(int,int):<(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):299:this.maxMiddleIndex >= 0 |==> this.maxMiddleIndex < 0
+118:ROR:>=(int,int):<=(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):299:this.maxMiddleIndex >= 0 |==> this.maxMiddleIndex <= 0
+119:ROR:>=(int,int):==(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):299:this.maxMiddleIndex >= 0 |==> this.maxMiddleIndex == 0
+120:ROR:>=(int,int):>(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):299:this.maxMiddleIndex >= 0 |==> this.maxMiddleIndex > 0
+121:ROR:>=(int,int):FALSE(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):299:this.maxMiddleIndex >= 0 |==> false
+122:ROR:>=(int,int):TRUE(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):299:this.maxMiddleIndex >= 0 |==> true
+123:AOR:-(long,long):%(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):304:e - s |==> e % s
+124:AOR:-(long,long):*(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):304:e - s |==> e * s
+125:AOR:-(long,long):+(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):304:e - s |==> e + s
+126:AOR:-(long,long):/(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):304:e - s |==> e / s
+127:LVR:POS:0:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):304:2 |==> 0
+128:LVR:POS:NEG:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):304:2 |==> -2
+129:AOR:/(long,long):%(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):304:(e - s) / 2 |==> (e - s) % 2
+130:AOR:/(long,long):*(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):304:(e - s) / 2 |==> (e - s) * 2
+131:AOR:/(long,long):+(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):304:(e - s) / 2 |==> (e - s) + 2
+132:AOR:/(long,long):-(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):304:(e - s) / 2 |==> (e - s) - 2
+133:AOR:+(long,long):%(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):304:s + (e - s) / 2 |==> s % ((e - s) / 2)
+134:AOR:+(long,long):*(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):304:s + (e - s) / 2 |==> s * ((e - s) / 2)
+135:AOR:+(long,long):-(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):304:s + (e - s) / 2 |==> s - (e - s) / 2
+136:AOR:+(long,long):/(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):304:s + (e - s) / 2 |==> s / ((e - s) / 2)
+137:ROR:>(long,long):!=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):305:middle > maxMiddle |==> middle != maxMiddle
+138:ROR:>(long,long):<(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):305:middle > maxMiddle |==> middle < maxMiddle
+139:ROR:>(long,long):<=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):305:middle > maxMiddle |==> middle <= maxMiddle
+140:ROR:>(long,long):==(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):305:middle > maxMiddle |==> middle == maxMiddle
+141:ROR:>(long,long):>=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):305:middle > maxMiddle |==> middle >= maxMiddle
+142:ROR:>(long,long):FALSE(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):305:middle > maxMiddle |==> false
+143:ROR:>(long,long):TRUE(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):305:middle > maxMiddle |==> true
+144:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):306:this.maxMiddleIndex = index |==> <NO-OP>
+145:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):310:this.maxMiddleIndex = index |==> <NO-OP>
+146:LVR:0:POS:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):313:0 |==> 1
+147:LVR:0:NEG:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):313:0 |==> -1
+148:ROR:>=(int,int):!=(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):313:this.minEndIndex >= 0 |==> this.minEndIndex != 0
+149:ROR:>=(int,int):<(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):313:this.minEndIndex >= 0 |==> this.minEndIndex < 0
+150:ROR:>=(int,int):<=(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):313:this.minEndIndex >= 0 |==> this.minEndIndex <= 0
+151:ROR:>=(int,int):==(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):313:this.minEndIndex >= 0 |==> this.minEndIndex == 0
+152:ROR:>=(int,int):>(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):313:this.minEndIndex >= 0 |==> this.minEndIndex > 0
+153:ROR:>=(int,int):FALSE(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):313:this.minEndIndex >= 0 |==> false
+154:ROR:>=(int,int):TRUE(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):313:this.minEndIndex >= 0 |==> true
+155:ROR:<(long,long):!=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):316:end < minEnd |==> end != minEnd
+156:ROR:<(long,long):<=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):316:end < minEnd |==> end <= minEnd
+157:ROR:<(long,long):==(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):316:end < minEnd |==> end == minEnd
+158:ROR:<(long,long):>(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):316:end < minEnd |==> end > minEnd
+159:ROR:<(long,long):>=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):316:end < minEnd |==> end >= minEnd
+160:ROR:<(long,long):FALSE(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):316:end < minEnd |==> false
+161:ROR:<(long,long):TRUE(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):316:end < minEnd |==> true
+162:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):317:this.minEndIndex = index |==> <NO-OP>
+163:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):321:this.minEndIndex = index |==> <NO-OP>
+164:LVR:0:POS:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):324:0 |==> 1
+165:LVR:0:NEG:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):324:0 |==> -1
+166:ROR:>=(int,int):!=(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):324:this.maxEndIndex >= 0 |==> this.maxEndIndex != 0
+167:ROR:>=(int,int):<(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):324:this.maxEndIndex >= 0 |==> this.maxEndIndex < 0
+168:ROR:>=(int,int):<=(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):324:this.maxEndIndex >= 0 |==> this.maxEndIndex <= 0
+169:ROR:>=(int,int):==(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):324:this.maxEndIndex >= 0 |==> this.maxEndIndex == 0
+170:ROR:>=(int,int):>(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):324:this.maxEndIndex >= 0 |==> this.maxEndIndex > 0
+171:ROR:>=(int,int):FALSE(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):324:this.maxEndIndex >= 0 |==> false
+172:ROR:>=(int,int):TRUE(int,int):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):324:this.maxEndIndex >= 0 |==> true
+173:ROR:>(long,long):!=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):327:end > maxEnd |==> end != maxEnd
+174:ROR:>(long,long):<(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):327:end > maxEnd |==> end < maxEnd
+175:ROR:>(long,long):<=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):327:end > maxEnd |==> end <= maxEnd
+176:ROR:>(long,long):==(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):327:end > maxEnd |==> end == maxEnd
+177:ROR:>(long,long):>=(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):327:end > maxEnd |==> end >= maxEnd
+178:ROR:>(long,long):FALSE(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):327:end > maxEnd |==> false
+179:ROR:>(long,long):TRUE(long,long):org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):327:end > maxEnd |==> true
+180:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):328:this.maxEndIndex = index |==> <NO-OP>
+181:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@updateBounds(org.jfree.data.time.TimePeriod,int):332:this.maxEndIndex = index |==> <NO-OP>
+182:LVR:NEG:0:org.jfree.data.time.TimePeriodValues@recalculateBounds():341:-1 |==> 0
+183:LVR:NEG:POS:org.jfree.data.time.TimePeriodValues@recalculateBounds():341:-1 |==> 1
+184:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@recalculateBounds():341:this.minStartIndex = -1 |==> <NO-OP>
+185:LVR:NEG:0:org.jfree.data.time.TimePeriodValues@recalculateBounds():342:-1 |==> 0
+186:LVR:NEG:POS:org.jfree.data.time.TimePeriodValues@recalculateBounds():342:-1 |==> 1
+187:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@recalculateBounds():342:this.minMiddleIndex = -1 |==> <NO-OP>
+188:LVR:NEG:0:org.jfree.data.time.TimePeriodValues@recalculateBounds():343:-1 |==> 0
+189:LVR:NEG:POS:org.jfree.data.time.TimePeriodValues@recalculateBounds():343:-1 |==> 1
+190:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@recalculateBounds():343:this.minEndIndex = -1 |==> <NO-OP>
+191:LVR:NEG:0:org.jfree.data.time.TimePeriodValues@recalculateBounds():344:-1 |==> 0
+192:LVR:NEG:POS:org.jfree.data.time.TimePeriodValues@recalculateBounds():344:-1 |==> 1
+193:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@recalculateBounds():344:this.maxStartIndex = -1 |==> <NO-OP>
+194:LVR:NEG:0:org.jfree.data.time.TimePeriodValues@recalculateBounds():345:-1 |==> 0
+195:LVR:NEG:POS:org.jfree.data.time.TimePeriodValues@recalculateBounds():345:-1 |==> 1
+196:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@recalculateBounds():345:this.maxMiddleIndex = -1 |==> <NO-OP>
+197:LVR:NEG:0:org.jfree.data.time.TimePeriodValues@recalculateBounds():346:-1 |==> 0
+198:LVR:NEG:POS:org.jfree.data.time.TimePeriodValues@recalculateBounds():346:-1 |==> 1
+199:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@recalculateBounds():346:this.maxEndIndex = -1 |==> <NO-OP>
+200:LVR:0:POS:org.jfree.data.time.TimePeriodValues@recalculateBounds():347:0 |==> 1
+201:LVR:0:NEG:org.jfree.data.time.TimePeriodValues@recalculateBounds():347:0 |==> -1
+202:ROR:<(int,int):!=(int,int):org.jfree.data.time.TimePeriodValues@recalculateBounds():347:i < this.data.size() |==> i != this.data.size()
+203:ROR:<(int,int):<=(int,int):org.jfree.data.time.TimePeriodValues@recalculateBounds():347:i < this.data.size() |==> i <= this.data.size()
+204:ROR:<(int,int):==(int,int):org.jfree.data.time.TimePeriodValues@recalculateBounds():347:i < this.data.size() |==> i == this.data.size()
+205:ROR:<(int,int):>(int,int):org.jfree.data.time.TimePeriodValues@recalculateBounds():347:i < this.data.size() |==> i > this.data.size()
+206:ROR:<(int,int):>=(int,int):org.jfree.data.time.TimePeriodValues@recalculateBounds():347:i < this.data.size() |==> i >= this.data.size()
+207:ROR:<(int,int):FALSE(int,int):org.jfree.data.time.TimePeriodValues@recalculateBounds():347:i < this.data.size() |==> false
+208:ROR:<(int,int):TRUE(int,int):org.jfree.data.time.TimePeriodValues@recalculateBounds():347:i < this.data.size() |==> true
+209:STD:<CALL>:<NO-OP>:org.jfree.data.time.TimePeriodValues@recalculateBounds():349:updateBounds(tpv.getPeriod(), i) |==> <NO-OP>
+210:STD:<CALL>:<NO-OP>:org.jfree.data.time.TimePeriodValues@add(org.jfree.data.time.TimePeriod,double):364:add(item) |==> <NO-OP>
+211:STD:<CALL>:<NO-OP>:org.jfree.data.time.TimePeriodValues@add(org.jfree.data.time.TimePeriod,java.lang.Number):376:add(item) |==> <NO-OP>
+212:STD:<CALL>:<NO-OP>:org.jfree.data.time.TimePeriodValues@update(int,java.lang.Number):388:item.setValue(value) |==> <NO-OP>
+213:STD:<CALL>:<NO-OP>:org.jfree.data.time.TimePeriodValues@update(int,java.lang.Number):389:fireSeriesChanged() |==> <NO-OP>
+214:LVR:0:POS:org.jfree.data.time.TimePeriodValues@delete(int,int):400:0 |==> 1
+215:LVR:0:NEG:org.jfree.data.time.TimePeriodValues@delete(int,int):400:0 |==> -1
+216:AOR:-(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@delete(int,int):400:end - start |==> end % start
+217:AOR:-(int,int):*(int,int):org.jfree.data.time.TimePeriodValues@delete(int,int):400:end - start |==> end * start
+218:AOR:-(int,int):+(int,int):org.jfree.data.time.TimePeriodValues@delete(int,int):400:end - start |==> end + start
+219:AOR:-(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@delete(int,int):400:end - start |==> end / start
+220:ROR:<=(int,int):!=(int,int):org.jfree.data.time.TimePeriodValues@delete(int,int):400:i <= (end - start) |==> i != (end - start)
+221:ROR:<=(int,int):<(int,int):org.jfree.data.time.TimePeriodValues@delete(int,int):400:i <= (end - start) |==> i < (end - start)
+222:ROR:<=(int,int):==(int,int):org.jfree.data.time.TimePeriodValues@delete(int,int):400:i <= (end - start) |==> i == (end - start)
+223:ROR:<=(int,int):>(int,int):org.jfree.data.time.TimePeriodValues@delete(int,int):400:i <= (end - start) |==> i > (end - start)
+224:ROR:<=(int,int):>=(int,int):org.jfree.data.time.TimePeriodValues@delete(int,int):400:i <= (end - start) |==> i >= (end - start)
+225:ROR:<=(int,int):FALSE(int,int):org.jfree.data.time.TimePeriodValues@delete(int,int):400:i <= (end - start) |==> false
+226:ROR:<=(int,int):TRUE(int,int):org.jfree.data.time.TimePeriodValues@delete(int,int):400:i <= (end - start) |==> true
+227:STD:<CALL>:<NO-OP>:org.jfree.data.time.TimePeriodValues@delete(int,int):401:this.data.remove(start) |==> <NO-OP>
+228:STD:<CALL>:<NO-OP>:org.jfree.data.time.TimePeriodValues@delete(int,int):403:recalculateBounds() |==> <NO-OP>
+229:STD:<CALL>:<NO-OP>:org.jfree.data.time.TimePeriodValues@delete(int,int):404:fireSeriesChanged() |==> <NO-OP>
+230:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):415:obj == this |==> obj != this
+231:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):415:obj == this |==> false
+232:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):415:obj == this |==> true
+233:LVR:TRUE:FALSE:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):416:true |==> false
+234:LVR:FALSE:TRUE:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):419:false |==> true
+235:COR:super.equals(obj):TRUE:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):421:super.equals(obj) |==> false
+236:COR:super.equals(obj):FALSE:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):421:super.equals(obj) |==> true
+237:LVR:FALSE:TRUE:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):422:false |==> true
+238:COR:ObjectUtilities.equal(this.getDomainDescription(), that.getDomainDescription()):TRUE:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):425:ObjectUtilities.equal(this.getDomainDescription(), that.getDomainDescription()) |==> false
+239:COR:ObjectUtilities.equal(this.getDomainDescription(), that.getDomainDescription()):FALSE:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):425:ObjectUtilities.equal(this.getDomainDescription(), that.getDomainDescription()) |==> true
+240:LVR:FALSE:TRUE:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):427:false |==> true
+241:COR:ObjectUtilities.equal(this.getRangeDescription(), that.getRangeDescription()):TRUE:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):429:ObjectUtilities.equal(this.getRangeDescription(), that.getRangeDescription()) |==> false
+242:COR:ObjectUtilities.equal(this.getRangeDescription(), that.getRangeDescription()):FALSE:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):429:ObjectUtilities.equal(this.getRangeDescription(), that.getRangeDescription()) |==> true
+243:LVR:FALSE:TRUE:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):431:false |==> true
+244:ROR:!=(int,int):<(int,int):org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):434:count != that.getItemCount() |==> count < that.getItemCount()
+245:ROR:!=(int,int):<=(int,int):org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):434:count != that.getItemCount() |==> count <= that.getItemCount()
+246:ROR:!=(int,int):==(int,int):org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):434:count != that.getItemCount() |==> count == that.getItemCount()
+247:ROR:!=(int,int):>(int,int):org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):434:count != that.getItemCount() |==> count > that.getItemCount()
+248:ROR:!=(int,int):>=(int,int):org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):434:count != that.getItemCount() |==> count >= that.getItemCount()
+249:ROR:!=(int,int):FALSE(int,int):org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):434:count != that.getItemCount() |==> false
+250:ROR:!=(int,int):TRUE(int,int):org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):434:count != that.getItemCount() |==> true
+251:LVR:FALSE:TRUE:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):435:false |==> true
+252:LVR:0:POS:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):437:0 |==> 1
+253:LVR:0:NEG:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):437:0 |==> -1
+254:ROR:<(int,int):!=(int,int):org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):437:i < count |==> i != count
+255:ROR:<(int,int):<=(int,int):org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):437:i < count |==> i <= count
+256:ROR:<(int,int):==(int,int):org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):437:i < count |==> i == count
+257:ROR:<(int,int):>(int,int):org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):437:i < count |==> i > count
+258:ROR:<(int,int):>=(int,int):org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):437:i < count |==> i >= count
+259:ROR:<(int,int):FALSE(int,int):org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):437:i < count |==> false
+260:ROR:<(int,int):TRUE(int,int):org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):437:i < count |==> true
+261:COR:getDataItem(i).equals(that.getDataItem(i)):TRUE:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):438:getDataItem(i).equals(that.getDataItem(i)) |==> false
+262:COR:getDataItem(i).equals(that.getDataItem(i)):FALSE:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):438:getDataItem(i).equals(that.getDataItem(i)) |==> true
+263:LVR:FALSE:TRUE:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):439:false |==> true
+264:LVR:TRUE:FALSE:org.jfree.data.time.TimePeriodValues@equals(java.lang.Object):442:true |==> false
+265:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.time.TimePeriodValues@hashCode():452:this.domain != null |==> this.domain == null
+266:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.time.TimePeriodValues@hashCode():452:this.domain != null |==> false
+267:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.time.TimePeriodValues@hashCode():452:this.domain != null |==> true
+268:LVR:0:POS:org.jfree.data.time.TimePeriodValues@hashCode():452:0 |==> 1
+269:LVR:0:NEG:org.jfree.data.time.TimePeriodValues@hashCode():452:0 |==> -1
+270:LVR:POS:0:org.jfree.data.time.TimePeriodValues@hashCode():453:29 |==> 0
+271:LVR:POS:NEG:org.jfree.data.time.TimePeriodValues@hashCode():453:29 |==> -29
+272:AOR:*(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@hashCode():453:29 * result |==> 29 % result
+273:AOR:*(int,int):+(int,int):org.jfree.data.time.TimePeriodValues@hashCode():453:29 * result |==> 29 + result
+274:AOR:*(int,int):-(int,int):org.jfree.data.time.TimePeriodValues@hashCode():453:29 * result |==> 29 - result
+275:AOR:*(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@hashCode():453:29 * result |==> 29 / result
+276:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.time.TimePeriodValues@hashCode():453:this.range != null |==> this.range == null
+277:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.time.TimePeriodValues@hashCode():453:this.range != null |==> false
+278:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.time.TimePeriodValues@hashCode():453:this.range != null |==> true
+279:LVR:0:POS:org.jfree.data.time.TimePeriodValues@hashCode():453:0 |==> 1
+280:LVR:0:NEG:org.jfree.data.time.TimePeriodValues@hashCode():453:0 |==> -1
+281:AOR:+(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@hashCode():453:29 * result + (this.range != null ? this.range.hashCode() : 0) |==> 29 * result % (this.range != null ? this.range.hashCode() : 0)
+282:AOR:+(int,int):*(int,int):org.jfree.data.time.TimePeriodValues@hashCode():453:29 * result + (this.range != null ? this.range.hashCode() : 0) |==> 29 * result * (this.range != null ? this.range.hashCode() : 0)
+283:AOR:+(int,int):-(int,int):org.jfree.data.time.TimePeriodValues@hashCode():453:29 * result + (this.range != null ? this.range.hashCode() : 0) |==> 29 * result - (this.range != null ? this.range.hashCode() : 0)
+284:AOR:+(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@hashCode():453:29 * result + (this.range != null ? this.range.hashCode() : 0) |==> 29 * result / (this.range != null ? this.range.hashCode() : 0)
+285:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@hashCode():453:result = 29 * result + (this.range != null ? this.range.hashCode() : 0) |==> <NO-OP>
+286:LVR:POS:0:org.jfree.data.time.TimePeriodValues@hashCode():454:29 |==> 0
+287:LVR:POS:NEG:org.jfree.data.time.TimePeriodValues@hashCode():454:29 |==> -29
+288:AOR:*(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@hashCode():454:29 * result |==> 29 % result
+289:AOR:*(int,int):+(int,int):org.jfree.data.time.TimePeriodValues@hashCode():454:29 * result |==> 29 + result
+290:AOR:*(int,int):-(int,int):org.jfree.data.time.TimePeriodValues@hashCode():454:29 * result |==> 29 - result
+291:AOR:*(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@hashCode():454:29 * result |==> 29 / result
+292:AOR:+(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@hashCode():454:29 * result + this.data.hashCode() |==> 29 * result % this.data.hashCode()
+293:AOR:+(int,int):*(int,int):org.jfree.data.time.TimePeriodValues@hashCode():454:29 * result + this.data.hashCode() |==> 29 * result * this.data.hashCode()
+294:AOR:+(int,int):-(int,int):org.jfree.data.time.TimePeriodValues@hashCode():454:29 * result + this.data.hashCode() |==> 29 * result - this.data.hashCode()
+295:AOR:+(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@hashCode():454:29 * result + this.data.hashCode() |==> 29 * result / this.data.hashCode()
+296:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@hashCode():454:result = 29 * result + this.data.hashCode() |==> <NO-OP>
+297:LVR:POS:0:org.jfree.data.time.TimePeriodValues@hashCode():455:29 |==> 0
+298:LVR:POS:NEG:org.jfree.data.time.TimePeriodValues@hashCode():455:29 |==> -29
+299:AOR:*(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@hashCode():455:29 * result |==> 29 % result
+300:AOR:*(int,int):+(int,int):org.jfree.data.time.TimePeriodValues@hashCode():455:29 * result |==> 29 + result
+301:AOR:*(int,int):-(int,int):org.jfree.data.time.TimePeriodValues@hashCode():455:29 * result |==> 29 - result
+302:AOR:*(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@hashCode():455:29 * result |==> 29 / result
+303:AOR:+(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@hashCode():455:29 * result + this.minStartIndex |==> 29 * result % this.minStartIndex
+304:AOR:+(int,int):*(int,int):org.jfree.data.time.TimePeriodValues@hashCode():455:29 * result + this.minStartIndex |==> 29 * result * this.minStartIndex
+305:AOR:+(int,int):-(int,int):org.jfree.data.time.TimePeriodValues@hashCode():455:29 * result + this.minStartIndex |==> 29 * result - this.minStartIndex
+306:AOR:+(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@hashCode():455:29 * result + this.minStartIndex |==> 29 * result / this.minStartIndex
+307:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@hashCode():455:result = 29 * result + this.minStartIndex |==> <NO-OP>
+308:LVR:POS:0:org.jfree.data.time.TimePeriodValues@hashCode():456:29 |==> 0
+309:LVR:POS:NEG:org.jfree.data.time.TimePeriodValues@hashCode():456:29 |==> -29
+310:AOR:*(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@hashCode():456:29 * result |==> 29 % result
+311:AOR:*(int,int):+(int,int):org.jfree.data.time.TimePeriodValues@hashCode():456:29 * result |==> 29 + result
+312:AOR:*(int,int):-(int,int):org.jfree.data.time.TimePeriodValues@hashCode():456:29 * result |==> 29 - result
+313:AOR:*(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@hashCode():456:29 * result |==> 29 / result
+314:AOR:+(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@hashCode():456:29 * result + this.maxStartIndex |==> 29 * result % this.maxStartIndex
+315:AOR:+(int,int):*(int,int):org.jfree.data.time.TimePeriodValues@hashCode():456:29 * result + this.maxStartIndex |==> 29 * result * this.maxStartIndex
+316:AOR:+(int,int):-(int,int):org.jfree.data.time.TimePeriodValues@hashCode():456:29 * result + this.maxStartIndex |==> 29 * result - this.maxStartIndex
+317:AOR:+(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@hashCode():456:29 * result + this.maxStartIndex |==> 29 * result / this.maxStartIndex
+318:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@hashCode():456:result = 29 * result + this.maxStartIndex |==> <NO-OP>
+319:LVR:POS:0:org.jfree.data.time.TimePeriodValues@hashCode():457:29 |==> 0
+320:LVR:POS:NEG:org.jfree.data.time.TimePeriodValues@hashCode():457:29 |==> -29
+321:AOR:*(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@hashCode():457:29 * result |==> 29 % result
+322:AOR:*(int,int):+(int,int):org.jfree.data.time.TimePeriodValues@hashCode():457:29 * result |==> 29 + result
+323:AOR:*(int,int):-(int,int):org.jfree.data.time.TimePeriodValues@hashCode():457:29 * result |==> 29 - result
+324:AOR:*(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@hashCode():457:29 * result |==> 29 / result
+325:AOR:+(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@hashCode():457:29 * result + this.minMiddleIndex |==> 29 * result % this.minMiddleIndex
+326:AOR:+(int,int):*(int,int):org.jfree.data.time.TimePeriodValues@hashCode():457:29 * result + this.minMiddleIndex |==> 29 * result * this.minMiddleIndex
+327:AOR:+(int,int):-(int,int):org.jfree.data.time.TimePeriodValues@hashCode():457:29 * result + this.minMiddleIndex |==> 29 * result - this.minMiddleIndex
+328:AOR:+(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@hashCode():457:29 * result + this.minMiddleIndex |==> 29 * result / this.minMiddleIndex
+329:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@hashCode():457:result = 29 * result + this.minMiddleIndex |==> <NO-OP>
+330:LVR:POS:0:org.jfree.data.time.TimePeriodValues@hashCode():458:29 |==> 0
+331:LVR:POS:NEG:org.jfree.data.time.TimePeriodValues@hashCode():458:29 |==> -29
+332:AOR:*(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@hashCode():458:29 * result |==> 29 % result
+333:AOR:*(int,int):+(int,int):org.jfree.data.time.TimePeriodValues@hashCode():458:29 * result |==> 29 + result
+334:AOR:*(int,int):-(int,int):org.jfree.data.time.TimePeriodValues@hashCode():458:29 * result |==> 29 - result
+335:AOR:*(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@hashCode():458:29 * result |==> 29 / result
+336:AOR:+(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@hashCode():458:29 * result + this.maxMiddleIndex |==> 29 * result % this.maxMiddleIndex
+337:AOR:+(int,int):*(int,int):org.jfree.data.time.TimePeriodValues@hashCode():458:29 * result + this.maxMiddleIndex |==> 29 * result * this.maxMiddleIndex
+338:AOR:+(int,int):-(int,int):org.jfree.data.time.TimePeriodValues@hashCode():458:29 * result + this.maxMiddleIndex |==> 29 * result - this.maxMiddleIndex
+339:AOR:+(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@hashCode():458:29 * result + this.maxMiddleIndex |==> 29 * result / this.maxMiddleIndex
+340:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@hashCode():458:result = 29 * result + this.maxMiddleIndex |==> <NO-OP>
+341:LVR:POS:0:org.jfree.data.time.TimePeriodValues@hashCode():459:29 |==> 0
+342:LVR:POS:NEG:org.jfree.data.time.TimePeriodValues@hashCode():459:29 |==> -29
+343:AOR:*(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@hashCode():459:29 * result |==> 29 % result
+344:AOR:*(int,int):+(int,int):org.jfree.data.time.TimePeriodValues@hashCode():459:29 * result |==> 29 + result
+345:AOR:*(int,int):-(int,int):org.jfree.data.time.TimePeriodValues@hashCode():459:29 * result |==> 29 - result
+346:AOR:*(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@hashCode():459:29 * result |==> 29 / result
+347:AOR:+(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@hashCode():459:29 * result + this.minEndIndex |==> 29 * result % this.minEndIndex
+348:AOR:+(int,int):*(int,int):org.jfree.data.time.TimePeriodValues@hashCode():459:29 * result + this.minEndIndex |==> 29 * result * this.minEndIndex
+349:AOR:+(int,int):-(int,int):org.jfree.data.time.TimePeriodValues@hashCode():459:29 * result + this.minEndIndex |==> 29 * result - this.minEndIndex
+350:AOR:+(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@hashCode():459:29 * result + this.minEndIndex |==> 29 * result / this.minEndIndex
+351:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@hashCode():459:result = 29 * result + this.minEndIndex |==> <NO-OP>
+352:LVR:POS:0:org.jfree.data.time.TimePeriodValues@hashCode():460:29 |==> 0
+353:LVR:POS:NEG:org.jfree.data.time.TimePeriodValues@hashCode():460:29 |==> -29
+354:AOR:*(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@hashCode():460:29 * result |==> 29 % result
+355:AOR:*(int,int):+(int,int):org.jfree.data.time.TimePeriodValues@hashCode():460:29 * result |==> 29 + result
+356:AOR:*(int,int):-(int,int):org.jfree.data.time.TimePeriodValues@hashCode():460:29 * result |==> 29 - result
+357:AOR:*(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@hashCode():460:29 * result |==> 29 / result
+358:AOR:+(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@hashCode():460:29 * result + this.maxEndIndex |==> 29 * result % this.maxEndIndex
+359:AOR:+(int,int):*(int,int):org.jfree.data.time.TimePeriodValues@hashCode():460:29 * result + this.maxEndIndex |==> 29 * result * this.maxEndIndex
+360:AOR:+(int,int):-(int,int):org.jfree.data.time.TimePeriodValues@hashCode():460:29 * result + this.maxEndIndex |==> 29 * result - this.maxEndIndex
+361:AOR:+(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@hashCode():460:29 * result + this.maxEndIndex |==> 29 * result / this.maxEndIndex
+362:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@hashCode():460:result = 29 * result + this.maxEndIndex |==> <NO-OP>
+363:LVR:0:POS:org.jfree.data.time.TimePeriodValues@clone():480:0 |==> 1
+364:LVR:0:NEG:org.jfree.data.time.TimePeriodValues@clone():480:0 |==> -1
+365:LVR:POS:0:org.jfree.data.time.TimePeriodValues@clone():480:1 |==> 0
+366:LVR:POS:NEG:org.jfree.data.time.TimePeriodValues@clone():480:1 |==> -1
+367:AOR:-(int,int):%(int,int):org.jfree.data.time.TimePeriodValues@clone():480:getItemCount() - 1 |==> getItemCount() % 1
+368:AOR:-(int,int):*(int,int):org.jfree.data.time.TimePeriodValues@clone():480:getItemCount() - 1 |==> getItemCount() * 1
+369:AOR:-(int,int):+(int,int):org.jfree.data.time.TimePeriodValues@clone():480:getItemCount() - 1 |==> getItemCount() + 1
+370:AOR:-(int,int):/(int,int):org.jfree.data.time.TimePeriodValues@clone():480:getItemCount() - 1 |==> getItemCount() / 1
+371:STD:<ASSIGN>:<NO-OP>:org.jfree.data.time.TimePeriodValues@createCopy(int,int):500:copy.data = new ArrayList() |==> <NO-OP>
+372:LVR:0:POS:org.jfree.data.time.TimePeriodValues@createCopy(int,int):501:0 |==> 1
+373:LVR:0:NEG:org.jfree.data.time.TimePeriodValues@createCopy(int,int):501:0 |==> -1
+374:ROR:>(int,int):!=(int,int):org.jfree.data.time.TimePeriodValues@createCopy(int,int):501:this.data.size() > 0 |==> this.data.size() != 0
+375:ROR:>(int,int):<(int,int):org.jfree.data.time.TimePeriodValues@createCopy(int,int):501:this.data.size() > 0 |==> this.data.size() < 0
+376:ROR:>(int,int):<=(int,int):org.jfree.data.time.TimePeriodValues@createCopy(int,int):501:this.data.size() > 0 |==> this.data.size() <= 0
+377:ROR:>(int,int):==(int,int):org.jfree.data.time.TimePeriodValues@createCopy(int,int):501:this.data.size() > 0 |==> this.data.size() == 0
+378:ROR:>(int,int):>=(int,int):org.jfree.data.time.TimePeriodValues@createCopy(int,int):501:this.data.size() > 0 |==> this.data.size() >= 0
+379:ROR:>(int,int):FALSE(int,int):org.jfree.data.time.TimePeriodValues@createCopy(int,int):501:this.data.size() > 0 |==> false
+380:ROR:>(int,int):TRUE(int,int):org.jfree.data.time.TimePeriodValues@createCopy(int,int):501:this.data.size() > 0 |==> true
+381:ROR:<=(int,int):!=(int,int):org.jfree.data.time.TimePeriodValues@createCopy(int,int):502:index <= end |==> index != end
+382:ROR:<=(int,int):<(int,int):org.jfree.data.time.TimePeriodValues@createCopy(int,int):502:index <= end |==> index < end
+383:ROR:<=(int,int):==(int,int):org.jfree.data.time.TimePeriodValues@createCopy(int,int):502:index <= end |==> index == end
+384:ROR:<=(int,int):>(int,int):org.jfree.data.time.TimePeriodValues@createCopy(int,int):502:index <= end |==> index > end
+385:ROR:<=(int,int):>=(int,int):org.jfree.data.time.TimePeriodValues@createCopy(int,int):502:index <= end |==> index >= end
+386:ROR:<=(int,int):FALSE(int,int):org.jfree.data.time.TimePeriodValues@createCopy(int,int):502:index <= end |==> false
+387:ROR:<=(int,int):TRUE(int,int):org.jfree.data.time.TimePeriodValues@createCopy(int,int):502:index <= end |==> true
+388:STD:<CALL>:<NO-OP>:org.jfree.data.time.TimePeriodValues@createCopy(int,int):506:copy.add(clone) |==> <NO-OP>
+389:STD:<CALL>:<NO-OP>:org.jfree.data.time.TimePeriodValues@createCopy(int,int):509:System.err.println("Failed to add cloned item.") |==> <NO-OP>

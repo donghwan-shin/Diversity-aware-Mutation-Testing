@@ -1,0 +1,486 @@
+1:LVR:POS:0:org.apache.commons.math.optimization.univariate.BrentOptimizer:38:0.5 |==> 0.0
+2:LVR:POS:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer:38:0.5 |==> -0.5
+3:LVR:POS:0:org.apache.commons.math.optimization.univariate.BrentOptimizer:38:3 |==> 0
+4:LVR:POS:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer:38:3 |==> -3
+5:LVR:POS:0:org.apache.commons.math.optimization.univariate.BrentOptimizer:38:5 |==> 0
+6:LVR:POS:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer:38:5 |==> -5
+7:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer:38:3 - Math.sqrt(5) |==> 3 % Math.sqrt(5)
+8:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer:38:3 - Math.sqrt(5) |==> 3 * Math.sqrt(5)
+9:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer:38:3 - Math.sqrt(5) |==> 3 + Math.sqrt(5)
+10:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer:38:3 - Math.sqrt(5) |==> 3 / Math.sqrt(5)
+11:AOR:*(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer:38:0.5 * (3 - Math.sqrt(5)) |==> 0.5 % (3 - Math.sqrt(5))
+12:AOR:*(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer:38:0.5 * (3 - Math.sqrt(5)) |==> 0.5 + (3 - Math.sqrt(5))
+13:AOR:*(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer:38:0.5 * (3 - Math.sqrt(5)) |==> 0.5 - (3 - Math.sqrt(5))
+14:AOR:*(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer:38:0.5 * (3 - Math.sqrt(5)) |==> 0.5 / (3 - Math.sqrt(5))
+15:LVR:POS:0:org.apache.commons.math.optimization.univariate.BrentOptimizer@<init>():44:1000 |==> 0
+16:LVR:POS:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@<init>():44:1000 |==> -1000
+17:STD:<CALL>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@<init>():44:setMaxEvaluations(1000) |==> <NO-OP>
+18:LVR:POS:0:org.apache.commons.math.optimization.univariate.BrentOptimizer@<init>():45:100 |==> 0
+19:LVR:POS:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@<init>():45:100 |==> -100
+20:STD:<CALL>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@<init>():45:setMaximalIterationCount(100) |==> <NO-OP>
+21:LVR:POS:0:org.apache.commons.math.optimization.univariate.BrentOptimizer@<init>():46:1.0E-11 |==> 0.0
+22:LVR:POS:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@<init>():46:1.0E-11 |==> -1.0E-11
+23:STD:<CALL>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@<init>():46:setAbsoluteAccuracy(1.0E-11) |==> <NO-OP>
+24:LVR:POS:0:org.apache.commons.math.optimization.univariate.BrentOptimizer@<init>():47:1.0E-9 |==> 0.0
+25:LVR:POS:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@<init>():47:1.0E-9 |==> -1.0E-9
+26:STD:<CALL>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@<init>():47:setRelativeAccuracy(1.0E-9) |==> <NO-OP>
+27:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.math.optimization.univariate.BrentOptimizer@doOptimize():57:getGoalType() == GoalType.MINIMIZE |==> getGoalType() != GoalType.MINIMIZE
+28:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math.optimization.univariate.BrentOptimizer@doOptimize():57:getGoalType() == GoalType.MINIMIZE |==> false
+29:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.math.optimization.univariate.BrentOptimizer@doOptimize():57:getGoalType() == GoalType.MINIMIZE |==> true
+30:LVR:0:POS:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):90:0 |==> 1
+31:LVR:0:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):90:0 |==> -1
+32:ROR:<=(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):90:eps <= 0 |==> eps != 0
+33:ROR:<=(double,double):<(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):90:eps <= 0 |==> eps < 0
+34:ROR:<=(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):90:eps <= 0 |==> eps == 0
+35:ROR:<=(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):90:eps <= 0 |==> eps > 0
+36:ROR:<=(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):90:eps <= 0 |==> eps >= 0
+37:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):90:eps <= 0 |==> false
+38:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):90:eps <= 0 |==> true
+39:LVR:0:POS:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):93:0 |==> 1
+40:LVR:0:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):93:0 |==> -1
+41:ROR:<=(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):93:t <= 0 |==> t != 0
+42:ROR:<=(double,double):<(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):93:t <= 0 |==> t < 0
+43:ROR:<=(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):93:t <= 0 |==> t == 0
+44:ROR:<=(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):93:t <= 0 |==> t > 0
+45:ROR:<=(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):93:t <= 0 |==> t >= 0
+46:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):93:t <= 0 |==> false
+47:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):93:t <= 0 |==> true
+48:ROR:<(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):97:lo < hi |==> lo != hi
+49:ROR:<(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):97:lo < hi |==> lo <= hi
+50:ROR:<(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):97:lo < hi |==> lo == hi
+51:ROR:<(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):97:lo < hi |==> lo > hi
+52:ROR:<(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):97:lo < hi |==> lo >= hi
+53:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):97:lo < hi |==> false
+54:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):97:lo < hi |==> true
+55:LVR:0:POS:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):108:0 |==> 1
+56:LVR:0:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):108:0 |==> -1
+57:LVR:0:POS:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):109:0 |==> 1
+58:LVR:0:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):109:0 |==> -1
+59:COR:isMinim:TRUE:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):111:isMinim |==> false
+60:COR:isMinim:FALSE:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):111:isMinim |==> true
+61:ORU:-(double):+(double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):112:-fx |==> +fx
+62:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):112:fx = -fx |==> <NO-OP>
+63:LVR:POS:0:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):118:0.5 |==> 0.0
+64:LVR:POS:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):118:0.5 |==> -0.5
+65:AOR:+(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):118:a + b |==> a % b
+66:AOR:+(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):118:a + b |==> a * b
+67:AOR:+(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):118:a + b |==> a - b
+68:AOR:+(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):118:a + b |==> a / b
+69:AOR:*(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):118:0.5 * (a + b) |==> 0.5 % (a + b)
+70:AOR:*(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):118:0.5 * (a + b) |==> 0.5 + (a + b)
+71:AOR:*(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):118:0.5 * (a + b) |==> 0.5 - (a + b)
+72:AOR:*(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):118:0.5 * (a + b) |==> 0.5 / (a + b)
+73:AOR:*(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):119:eps * Math.abs(x) |==> eps % Math.abs(x)
+74:AOR:*(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):119:eps * Math.abs(x) |==> eps + Math.abs(x)
+75:AOR:*(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):119:eps * Math.abs(x) |==> eps - Math.abs(x)
+76:AOR:*(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):119:eps * Math.abs(x) |==> eps / Math.abs(x)
+77:AOR:+(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):119:eps * Math.abs(x) + t |==> eps * Math.abs(x) % t
+78:AOR:+(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):119:eps * Math.abs(x) + t |==> eps * Math.abs(x) * t
+79:AOR:+(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):119:eps * Math.abs(x) + t |==> eps * Math.abs(x) - t
+80:AOR:+(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):119:eps * Math.abs(x) + t |==> eps * Math.abs(x) / t
+81:LVR:POS:0:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):120:2 |==> 0
+82:LVR:POS:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):120:2 |==> -2
+83:AOR:*(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):120:2 * tol1 |==> 2 % tol1
+84:AOR:*(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):120:2 * tol1 |==> 2 + tol1
+85:AOR:*(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):120:2 * tol1 |==> 2 - tol1
+86:AOR:*(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):120:2 * tol1 |==> 2 / tol1
+87:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:x - m |==> x % m
+88:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:x - m |==> x * m
+89:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:x - m |==> x + m
+90:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:x - m |==> x / m
+91:LVR:POS:0:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:0.5 |==> 0.0
+92:LVR:POS:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:0.5 |==> -0.5
+93:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:b - a |==> b % a
+94:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:b - a |==> b * a
+95:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:b - a |==> b + a
+96:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:b - a |==> b / a
+97:AOR:*(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:0.5 * (b - a) |==> 0.5 % (b - a)
+98:AOR:*(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:0.5 * (b - a) |==> 0.5 + (b - a)
+99:AOR:*(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:0.5 * (b - a) |==> 0.5 - (b - a)
+100:AOR:*(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:0.5 * (b - a) |==> 0.5 / (b - a)
+101:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:tol2 - 0.5 * (b - a) |==> tol2 % (0.5 * (b - a))
+102:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:tol2 - 0.5 * (b - a) |==> tol2 * (0.5 * (b - a))
+103:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:tol2 - 0.5 * (b - a) |==> tol2 + 0.5 * (b - a)
+104:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:tol2 - 0.5 * (b - a) |==> tol2 / (0.5 * (b - a))
+105:ROR:>(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:Math.abs(x - m) > tol2 - 0.5 * (b - a) |==> Math.abs(x - m) != tol2 - 0.5 * (b - a)
+106:ROR:>(double,double):<(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:Math.abs(x - m) > tol2 - 0.5 * (b - a) |==> Math.abs(x - m) < tol2 - 0.5 * (b - a)
+107:ROR:>(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:Math.abs(x - m) > tol2 - 0.5 * (b - a) |==> Math.abs(x - m) <= tol2 - 0.5 * (b - a)
+108:ROR:>(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:Math.abs(x - m) > tol2 - 0.5 * (b - a) |==> Math.abs(x - m) == tol2 - 0.5 * (b - a)
+109:ROR:>(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:Math.abs(x - m) > tol2 - 0.5 * (b - a) |==> Math.abs(x - m) >= tol2 - 0.5 * (b - a)
+110:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:Math.abs(x - m) > tol2 - 0.5 * (b - a) |==> false
+111:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):123:Math.abs(x - m) > tol2 - 0.5 * (b - a) |==> true
+112:LVR:0:POS:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):124:0 |==> 1
+113:LVR:0:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):124:0 |==> -1
+114:LVR:0:POS:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):125:0 |==> 1
+115:LVR:0:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):125:0 |==> -1
+116:LVR:0:POS:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):126:0 |==> 1
+117:LVR:0:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):126:0 |==> -1
+118:LVR:0:POS:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):127:0 |==> 1
+119:LVR:0:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):127:0 |==> -1
+120:ROR:>(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):129:Math.abs(e) > tol1 |==> Math.abs(e) != tol1
+121:ROR:>(double,double):<(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):129:Math.abs(e) > tol1 |==> Math.abs(e) < tol1
+122:ROR:>(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):129:Math.abs(e) > tol1 |==> Math.abs(e) <= tol1
+123:ROR:>(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):129:Math.abs(e) > tol1 |==> Math.abs(e) == tol1
+124:ROR:>(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):129:Math.abs(e) > tol1 |==> Math.abs(e) >= tol1
+125:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):129:Math.abs(e) > tol1 |==> false
+126:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):129:Math.abs(e) > tol1 |==> true
+127:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):130:x - w |==> x % w
+128:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):130:x - w |==> x * w
+129:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):130:x - w |==> x + w
+130:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):130:x - w |==> x / w
+131:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):130:fx - fv |==> fx % fv
+132:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):130:fx - fv |==> fx * fv
+133:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):130:fx - fv |==> fx + fv
+134:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):130:fx - fv |==> fx / fv
+135:AOR:*(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):130:(x - w) * (fx - fv) |==> (x - w) % (fx - fv)
+136:AOR:*(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):130:(x - w) * (fx - fv) |==> (x - w) + (fx - fv)
+137:AOR:*(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):130:(x - w) * (fx - fv) |==> (x - w) - (fx - fv)
+138:AOR:*(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):130:(x - w) * (fx - fv) |==> (x - w) / (fx - fv)
+139:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):130:r = (x - w) * (fx - fv) |==> <NO-OP>
+140:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):131:x - v |==> x % v
+141:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):131:x - v |==> x * v
+142:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):131:x - v |==> x + v
+143:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):131:x - v |==> x / v
+144:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):131:fx - fw |==> fx % fw
+145:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):131:fx - fw |==> fx * fw
+146:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):131:fx - fw |==> fx + fw
+147:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):131:fx - fw |==> fx / fw
+148:AOR:*(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):131:(x - v) * (fx - fw) |==> (x - v) % (fx - fw)
+149:AOR:*(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):131:(x - v) * (fx - fw) |==> (x - v) + (fx - fw)
+150:AOR:*(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):131:(x - v) * (fx - fw) |==> (x - v) - (fx - fw)
+151:AOR:*(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):131:(x - v) * (fx - fw) |==> (x - v) / (fx - fw)
+152:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):131:q = (x - v) * (fx - fw) |==> <NO-OP>
+153:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:x - v |==> x % v
+154:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:x - v |==> x * v
+155:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:x - v |==> x + v
+156:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:x - v |==> x / v
+157:AOR:*(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:(x - v) * q |==> (x - v) % q
+158:AOR:*(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:(x - v) * q |==> (x - v) + q
+159:AOR:*(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:(x - v) * q |==> (x - v) - q
+160:AOR:*(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:(x - v) * q |==> (x - v) / q
+161:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:x - w |==> x % w
+162:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:x - w |==> x * w
+163:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:x - w |==> x + w
+164:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:x - w |==> x / w
+165:AOR:*(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:(x - w) * r |==> (x - w) % r
+166:AOR:*(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:(x - w) * r |==> (x - w) + r
+167:AOR:*(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:(x - w) * r |==> (x - w) - r
+168:AOR:*(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:(x - w) * r |==> (x - w) / r
+169:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:(x - v) * q - (x - w) * r |==> (x - v) * q % ((x - w) * r)
+170:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:(x - v) * q - (x - w) * r |==> (x - v) * q * ((x - w) * r)
+171:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:(x - v) * q - (x - w) * r |==> (x - v) * q + (x - w) * r
+172:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:(x - v) * q - (x - w) * r |==> (x - v) * q / ((x - w) * r)
+173:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):132:p = (x - v) * q - (x - w) * r |==> <NO-OP>
+174:LVR:POS:0:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):133:2 |==> 0
+175:LVR:POS:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):133:2 |==> -2
+176:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):133:q - r |==> q % r
+177:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):133:q - r |==> q * r
+178:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):133:q - r |==> q + r
+179:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):133:q - r |==> q / r
+180:AOR:*(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):133:2 * (q - r) |==> 2 % (q - r)
+181:AOR:*(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):133:2 * (q - r) |==> 2 + (q - r)
+182:AOR:*(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):133:2 * (q - r) |==> 2 - (q - r)
+183:AOR:*(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):133:2 * (q - r) |==> 2 / (q - r)
+184:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):133:q = 2 * (q - r) |==> <NO-OP>
+185:LVR:0:POS:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):135:0 |==> 1
+186:LVR:0:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):135:0 |==> -1
+187:ROR:>(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):135:q > 0 |==> q != 0
+188:ROR:>(double,double):<(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):135:q > 0 |==> q < 0
+189:ROR:>(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):135:q > 0 |==> q <= 0
+190:ROR:>(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):135:q > 0 |==> q == 0
+191:ROR:>(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):135:q > 0 |==> q >= 0
+192:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):135:q > 0 |==> false
+193:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):135:q > 0 |==> true
+194:ORU:-(double):+(double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):136:-p |==> +p
+195:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):136:p = -p |==> <NO-OP>
+196:ORU:-(double):+(double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):138:-q |==> +q
+197:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):138:q = -q |==> <NO-OP>
+198:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):141:r = e |==> <NO-OP>
+199:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):142:e = d |==> <NO-OP>
+200:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:a - x |==> a % x
+201:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:a - x |==> a * x
+202:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:a - x |==> a + x
+203:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:a - x |==> a / x
+204:AOR:*(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:q * (a - x) |==> q % (a - x)
+205:AOR:*(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:q * (a - x) |==> q + (a - x)
+206:AOR:*(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:q * (a - x) |==> q - (a - x)
+207:AOR:*(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:q * (a - x) |==> q / (a - x)
+208:ROR:>(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:p > q * (a - x) |==> p != q * (a - x)
+209:ROR:>(double,double):<(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:p > q * (a - x) |==> p < q * (a - x)
+210:ROR:>(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:p > q * (a - x) |==> p <= q * (a - x)
+211:ROR:>(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:p > q * (a - x) |==> p == q * (a - x)
+212:ROR:>(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:p > q * (a - x) |==> p >= q * (a - x)
+213:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:p > q * (a - x) |==> false
+214:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:p > q * (a - x) |==> true
+215:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:b - x |==> b % x
+216:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:b - x |==> b * x
+217:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:b - x |==> b + x
+218:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:b - x |==> b / x
+219:AOR:*(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:q * (b - x) |==> q % (b - x)
+220:AOR:*(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:q * (b - x) |==> q + (b - x)
+221:AOR:*(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:q * (b - x) |==> q - (b - x)
+222:AOR:*(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:q * (b - x) |==> q / (b - x)
+223:ROR:<(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:p < q * (b - x) |==> p != q * (b - x)
+224:ROR:<(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:p < q * (b - x) |==> p <= q * (b - x)
+225:ROR:<(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:p < q * (b - x) |==> p == q * (b - x)
+226:ROR:<(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:p < q * (b - x) |==> p > q * (b - x)
+227:ROR:<(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:p < q * (b - x) |==> p >= q * (b - x)
+228:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:p < q * (b - x) |==> false
+229:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:p < q * (b - x) |==> true
+230:COR:&&(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:p > q * (a - x) && p < q * (b - x) |==> p > q * (a - x) != p < q * (b - x)
+231:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:p > q * (a - x) && p < q * (b - x) |==> p > q * (a - x) == p < q * (b - x)
+232:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:p > q * (a - x) && p < q * (b - x) |==> false
+233:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:p > q * (a - x) && p < q * (b - x) |==> p > q * (a - x)
+234:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:p > q * (a - x) && p < q * (b - x) |==> p < q * (b - x)
+235:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):145:p > q * (a - x) && p < q * (b - x) |==> true
+236:COR:&&(boolean,boolean):||(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:p > q * (a - x) && p < q * (b - x) |==> p > q * (a - x) || p < q * (b - x)
+237:LVR:POS:0:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:0.5 |==> 0.0
+238:LVR:POS:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:0.5 |==> -0.5
+239:AOR:*(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:0.5 * q |==> 0.5 % q
+240:AOR:*(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:0.5 * q |==> 0.5 + q
+241:AOR:*(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:0.5 * q |==> 0.5 - q
+242:AOR:*(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:0.5 * q |==> 0.5 / q
+243:AOR:*(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:0.5 * q * r |==> 0.5 * q % r
+244:AOR:*(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:0.5 * q * r |==> 0.5 * q + r
+245:AOR:*(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:0.5 * q * r |==> 0.5 * q - r
+246:AOR:*(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:0.5 * q * r |==> 0.5 * q / r
+247:ROR:<(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:Math.abs(p) < Math.abs(0.5 * q * r) |==> Math.abs(p) != Math.abs(0.5 * q * r)
+248:ROR:<(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:Math.abs(p) < Math.abs(0.5 * q * r) |==> Math.abs(p) <= Math.abs(0.5 * q * r)
+249:ROR:<(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:Math.abs(p) < Math.abs(0.5 * q * r) |==> Math.abs(p) == Math.abs(0.5 * q * r)
+250:ROR:<(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:Math.abs(p) < Math.abs(0.5 * q * r) |==> Math.abs(p) > Math.abs(0.5 * q * r)
+251:ROR:<(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:Math.abs(p) < Math.abs(0.5 * q * r) |==> Math.abs(p) >= Math.abs(0.5 * q * r)
+252:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:Math.abs(p) < Math.abs(0.5 * q * r) |==> false
+253:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:Math.abs(p) < Math.abs(0.5 * q * r) |==> true
+254:COR:&&(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:p > q * (a - x) && p < q * (b - x) && Math.abs(p) < Math.abs(0.5 * q * r) |==> (p > q * (a - x) && p < q * (b - x)) != Math.abs(p) < Math.abs(0.5 * q * r)
+255:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:p > q * (a - x) && p < q * (b - x) && Math.abs(p) < Math.abs(0.5 * q * r) |==> (p > q * (a - x) && p < q * (b - x)) == Math.abs(p) < Math.abs(0.5 * q * r)
+256:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:p > q * (a - x) && p < q * (b - x) && Math.abs(p) < Math.abs(0.5 * q * r) |==> false
+257:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:p > q * (a - x) && p < q * (b - x) && Math.abs(p) < Math.abs(0.5 * q * r) |==> p > q * (a - x) && p < q * (b - x)
+258:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:p > q * (a - x) && p < q * (b - x) && Math.abs(p) < Math.abs(0.5 * q * r) |==> Math.abs(p) < Math.abs(0.5 * q * r)
+259:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):146:p > q * (a - x) && p < q * (b - x) && Math.abs(p) < Math.abs(0.5 * q * r) |==> true
+260:COR:&&(boolean,boolean):||(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):144:p > q * (a - x) && p < q * (b - x) && Math.abs(p) < Math.abs(0.5 * q * r) |==> p > q * (a - x) && p < q * (b - x) || Math.abs(p) < Math.abs(0.5 * q * r)
+261:AOR:/(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):148:p / q |==> p % q
+262:AOR:/(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):148:p / q |==> p * q
+263:AOR:/(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):148:p / q |==> p + q
+264:AOR:/(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):148:p / q |==> p - q
+265:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):148:d = p / q |==> <NO-OP>
+266:AOR:+(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):149:x + d |==> x % d
+267:AOR:+(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):149:x + d |==> x * d
+268:AOR:+(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):149:x + d |==> x - d
+269:AOR:+(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):149:x + d |==> x / d
+270:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):149:u = x + d |==> <NO-OP>
+271:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):152:u - a |==> u % a
+272:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):152:u - a |==> u * a
+273:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):152:u - a |==> u + a
+274:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):152:u - a |==> u / a
+275:ROR:<(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):152:u - a < tol2 |==> u - a != tol2
+276:ROR:<(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):152:u - a < tol2 |==> u - a <= tol2
+277:ROR:<(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):152:u - a < tol2 |==> u - a == tol2
+278:ROR:<(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):152:u - a < tol2 |==> u - a > tol2
+279:ROR:<(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):152:u - a < tol2 |==> u - a >= tol2
+280:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):152:u - a < tol2 |==> false
+281:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):152:u - a < tol2 |==> true
+282:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):153:b - u |==> b % u
+283:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):153:b - u |==> b * u
+284:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):153:b - u |==> b + u
+285:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):153:b - u |==> b / u
+286:ROR:<(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):153:b - u < tol2 |==> b - u != tol2
+287:ROR:<(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):153:b - u < tol2 |==> b - u <= tol2
+288:ROR:<(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):153:b - u < tol2 |==> b - u == tol2
+289:ROR:<(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):153:b - u < tol2 |==> b - u > tol2
+290:ROR:<(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):153:b - u < tol2 |==> b - u >= tol2
+291:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):153:b - u < tol2 |==> false
+292:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):153:b - u < tol2 |==> true
+293:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):152:u - a < tol2 || b - u < tol2 |==> u - a < tol2 != b - u < tol2
+294:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):152:u - a < tol2 || b - u < tol2 |==> u - a < tol2 && b - u < tol2
+295:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):152:u - a < tol2 || b - u < tol2 |==> u - a < tol2 == b - u < tol2
+296:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):153:u - a < tol2 || b - u < tol2 |==> false
+297:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):152:u - a < tol2 || b - u < tol2 |==> u - a < tol2
+298:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):153:u - a < tol2 || b - u < tol2 |==> b - u < tol2
+299:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):153:u - a < tol2 || b - u < tol2 |==> true
+300:ROR:<=(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):154:x <= m |==> x != m
+301:ROR:<=(double,double):<(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):154:x <= m |==> x < m
+302:ROR:<=(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):154:x <= m |==> x == m
+303:ROR:<=(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):154:x <= m |==> x > m
+304:ROR:<=(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):154:x <= m |==> x >= m
+305:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):154:x <= m |==> false
+306:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):154:x <= m |==> true
+307:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):155:d = tol1 |==> <NO-OP>
+308:ORU:-(double):+(double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):157:-tol1 |==> +tol1
+309:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):157:d = -tol1 |==> <NO-OP>
+310:ROR:<(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):162:x < m |==> x != m
+311:ROR:<(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):162:x < m |==> x <= m
+312:ROR:<(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):162:x < m |==> x == m
+313:ROR:<(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):162:x < m |==> x > m
+314:ROR:<(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):162:x < m |==> x >= m
+315:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):162:x < m |==> false
+316:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):162:x < m |==> true
+317:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):163:b - x |==> b % x
+318:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):163:b - x |==> b * x
+319:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):163:b - x |==> b + x
+320:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):163:b - x |==> b / x
+321:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):163:e = b - x |==> <NO-OP>
+322:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):165:a - x |==> a % x
+323:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):165:a - x |==> a * x
+324:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):165:a - x |==> a + x
+325:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):165:a - x |==> a / x
+326:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):165:e = a - x |==> <NO-OP>
+327:AOR:*(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):167:GOLDEN_SECTION * e |==> GOLDEN_SECTION % e
+328:AOR:*(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):167:GOLDEN_SECTION * e |==> GOLDEN_SECTION + e
+329:AOR:*(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):167:GOLDEN_SECTION * e |==> GOLDEN_SECTION - e
+330:AOR:*(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):167:GOLDEN_SECTION * e |==> GOLDEN_SECTION / e
+331:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):167:d = GOLDEN_SECTION * e |==> <NO-OP>
+332:ROR:<(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):171:x < m |==> x != m
+333:ROR:<(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):171:x < m |==> x <= m
+334:ROR:<(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):171:x < m |==> x == m
+335:ROR:<(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):171:x < m |==> x > m
+336:ROR:<(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):171:x < m |==> x >= m
+337:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):171:x < m |==> false
+338:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):171:x < m |==> true
+339:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):172:b - x |==> b % x
+340:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):172:b - x |==> b * x
+341:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):172:b - x |==> b + x
+342:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):172:b - x |==> b / x
+343:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):172:e = b - x |==> <NO-OP>
+344:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):174:a - x |==> a % x
+345:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):174:a - x |==> a * x
+346:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):174:a - x |==> a + x
+347:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):174:a - x |==> a / x
+348:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):174:e = a - x |==> <NO-OP>
+349:AOR:*(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):176:GOLDEN_SECTION * e |==> GOLDEN_SECTION % e
+350:AOR:*(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):176:GOLDEN_SECTION * e |==> GOLDEN_SECTION + e
+351:AOR:*(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):176:GOLDEN_SECTION * e |==> GOLDEN_SECTION - e
+352:AOR:*(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):176:GOLDEN_SECTION * e |==> GOLDEN_SECTION / e
+353:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):176:d = GOLDEN_SECTION * e |==> <NO-OP>
+354:ROR:<(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):180:Math.abs(d) < tol1 |==> Math.abs(d) != tol1
+355:ROR:<(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):180:Math.abs(d) < tol1 |==> Math.abs(d) <= tol1
+356:ROR:<(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):180:Math.abs(d) < tol1 |==> Math.abs(d) == tol1
+357:ROR:<(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):180:Math.abs(d) < tol1 |==> Math.abs(d) > tol1
+358:ROR:<(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):180:Math.abs(d) < tol1 |==> Math.abs(d) >= tol1
+359:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):180:Math.abs(d) < tol1 |==> false
+360:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):180:Math.abs(d) < tol1 |==> true
+361:LVR:0:POS:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):181:0 |==> 1
+362:LVR:0:NEG:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):181:0 |==> -1
+363:ROR:>=(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):181:d >= 0 |==> d != 0
+364:ROR:>=(double,double):<(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):181:d >= 0 |==> d < 0
+365:ROR:>=(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):181:d >= 0 |==> d <= 0
+366:ROR:>=(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):181:d >= 0 |==> d == 0
+367:ROR:>=(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):181:d >= 0 |==> d > 0
+368:ROR:>=(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):181:d >= 0 |==> false
+369:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):181:d >= 0 |==> true
+370:AOR:+(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):182:x + tol1 |==> x % tol1
+371:AOR:+(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):182:x + tol1 |==> x * tol1
+372:AOR:+(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):182:x + tol1 |==> x - tol1
+373:AOR:+(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):182:x + tol1 |==> x / tol1
+374:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):182:u = x + tol1 |==> <NO-OP>
+375:AOR:-(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):184:x - tol1 |==> x % tol1
+376:AOR:-(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):184:x - tol1 |==> x * tol1
+377:AOR:-(double,double):+(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):184:x - tol1 |==> x + tol1
+378:AOR:-(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):184:x - tol1 |==> x / tol1
+379:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):184:u = x - tol1 |==> <NO-OP>
+380:AOR:+(double,double):%(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):187:x + d |==> x % d
+381:AOR:+(double,double):*(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):187:x + d |==> x * d
+382:AOR:+(double,double):-(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):187:x + d |==> x - d
+383:AOR:+(double,double):/(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):187:x + d |==> x / d
+384:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):187:u = x + d |==> <NO-OP>
+385:COR:isMinim:TRUE:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):191:isMinim |==> false
+386:COR:isMinim:FALSE:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):191:isMinim |==> true
+387:ORU:-(double):+(double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):192:-fu |==> +fu
+388:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):192:fu = -fu |==> <NO-OP>
+389:ROR:<=(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):196:fu <= fx |==> fu != fx
+390:ROR:<=(double,double):<(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):196:fu <= fx |==> fu < fx
+391:ROR:<=(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):196:fu <= fx |==> fu == fx
+392:ROR:<=(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):196:fu <= fx |==> fu > fx
+393:ROR:<=(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):196:fu <= fx |==> fu >= fx
+394:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):196:fu <= fx |==> false
+395:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):196:fu <= fx |==> true
+396:ROR:<(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):197:u < x |==> u != x
+397:ROR:<(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):197:u < x |==> u <= x
+398:ROR:<(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):197:u < x |==> u == x
+399:ROR:<(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):197:u < x |==> u > x
+400:ROR:<(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):197:u < x |==> u >= x
+401:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):197:u < x |==> false
+402:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):197:u < x |==> true
+403:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):198:b = x |==> <NO-OP>
+404:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):200:a = x |==> <NO-OP>
+405:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):202:v = w |==> <NO-OP>
+406:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):203:fv = fw |==> <NO-OP>
+407:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):204:w = x |==> <NO-OP>
+408:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):205:fw = fx |==> <NO-OP>
+409:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):206:x = u |==> <NO-OP>
+410:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):207:fx = fu |==> <NO-OP>
+411:ROR:<(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):209:u < x |==> u != x
+412:ROR:<(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):209:u < x |==> u <= x
+413:ROR:<(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):209:u < x |==> u == x
+414:ROR:<(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):209:u < x |==> u > x
+415:ROR:<(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):209:u < x |==> u >= x
+416:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):209:u < x |==> false
+417:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):209:u < x |==> true
+418:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):210:a = u |==> <NO-OP>
+419:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):212:b = u |==> <NO-OP>
+420:ROR:<=(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):214:fu <= fw |==> fu != fw
+421:ROR:<=(double,double):<(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):214:fu <= fw |==> fu < fw
+422:ROR:<=(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):214:fu <= fw |==> fu == fw
+423:ROR:<=(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):214:fu <= fw |==> fu > fw
+424:ROR:<=(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):214:fu <= fw |==> fu >= fw
+425:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):214:fu <= fw |==> false
+426:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):214:fu <= fw |==> true
+427:ROR:==(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):215:w == x |==> w != x
+428:ROR:==(double,double):<(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):215:w == x |==> w < x
+429:ROR:==(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):215:w == x |==> w <= x
+430:ROR:==(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):215:w == x |==> w > x
+431:ROR:==(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):215:w == x |==> w >= x
+432:ROR:==(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):215:w == x |==> false
+433:ROR:==(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):215:w == x |==> true
+434:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):214:fu <= fw || w == x |==> fu <= fw != (w == x)
+435:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):214:fu <= fw || w == x |==> fu <= fw && w == x
+436:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):214:fu <= fw || w == x |==> fu <= fw == (w == x)
+437:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):215:fu <= fw || w == x |==> false
+438:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):214:fu <= fw || w == x |==> fu <= fw
+439:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):215:fu <= fw || w == x |==> w == x
+440:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):215:fu <= fw || w == x |==> true
+441:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):216:v = w |==> <NO-OP>
+442:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):217:fv = fw |==> <NO-OP>
+443:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):218:w = u |==> <NO-OP>
+444:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):219:fw = fu |==> <NO-OP>
+445:ROR:<=(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):220:fu <= fv |==> fu != fv
+446:ROR:<=(double,double):<(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):220:fu <= fv |==> fu < fv
+447:ROR:<=(double,double):==(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):220:fu <= fv |==> fu == fv
+448:ROR:<=(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):220:fu <= fv |==> fu > fv
+449:ROR:<=(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):220:fu <= fv |==> fu >= fv
+450:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):220:fu <= fv |==> false
+451:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):220:fu <= fv |==> true
+452:ROR:==(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):221:v == x |==> v != x
+453:ROR:==(double,double):<(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):221:v == x |==> v < x
+454:ROR:==(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):221:v == x |==> v <= x
+455:ROR:==(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):221:v == x |==> v > x
+456:ROR:==(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):221:v == x |==> v >= x
+457:ROR:==(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):221:v == x |==> false
+458:ROR:==(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):221:v == x |==> true
+459:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):220:fu <= fv || v == x |==> fu <= fv != (v == x)
+460:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):220:fu <= fv || v == x |==> fu <= fv && v == x
+461:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):220:fu <= fv || v == x |==> fu <= fv == (v == x)
+462:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):221:fu <= fv || v == x |==> false
+463:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):220:fu <= fv || v == x |==> fu <= fv
+464:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):221:fu <= fv || v == x |==> v == x
+465:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):221:fu <= fv || v == x |==> true
+466:ROR:==(double,double):!=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):222:v == w |==> v != w
+467:ROR:==(double,double):<(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):222:v == w |==> v < w
+468:ROR:==(double,double):<=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):222:v == w |==> v <= w
+469:ROR:==(double,double):>(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):222:v == w |==> v > w
+470:ROR:==(double,double):>=(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):222:v == w |==> v >= w
+471:ROR:==(double,double):FALSE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):222:v == w |==> false
+472:ROR:==(double,double):TRUE(double,double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):222:v == w |==> true
+473:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):220:fu <= fv || v == x || v == w |==> (fu <= fv || v == x) != (v == w)
+474:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):220:fu <= fv || v == x || v == w |==> (fu <= fv || v == x) && v == w
+475:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):220:fu <= fv || v == x || v == w |==> (fu <= fv || v == x) == (v == w)
+476:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):222:fu <= fv || v == x || v == w |==> false
+477:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):220:fu <= fv || v == x || v == w |==> fu <= fv || v == x
+478:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):222:fu <= fv || v == x || v == w |==> v == w
+479:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):222:fu <= fv || v == x || v == w |==> true
+480:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):223:v = u |==> <NO-OP>
+481:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):224:fv = fu |==> <NO-OP>
+482:COR:isMinim:TRUE:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):228:isMinim |==> false
+483:COR:isMinim:FALSE:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):228:isMinim |==> true
+484:ORU:-(double):+(double):org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):228:-fx |==> +fx
+485:STD:<CALL>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):228:setFunctionValue(isMinim ? fx : -fx) |==> <NO-OP>
+486:STD:<CALL>:<NO-OP>:org.apache.commons.math.optimization.univariate.BrentOptimizer@localMin(boolean,double,double,double,double,double):231:incrementIterationsCounter() |==> <NO-OP>

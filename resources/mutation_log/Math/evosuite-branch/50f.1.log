@@ -1,0 +1,92 @@
+
+init:
+     [echo] -------- Commons MATH 3.0-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] Compiling 328 source files to /tmp/run_mutation.pl_101682_1501541304/50f/target/test-classes
+    [javac] Note: /tmp/run_mutation.pl_101682_1501541304/50f/src/test/java/org/apache/commons/math/PerfTestUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 13 files to /tmp/run_mutation.pl_101682_1501541304/50f/target/test-classes
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest2[test2] failed!
+    [junit] MAJOR:  -> org.apache.commons.math.exception.TooManyEvaluationsException
+    [junit] MAJOR:  -> "illegal state: maximal count (1,024) exceeded: evaluations"
+    [junit] MAJOR: org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest3[test3] failed!
+    [junit] MAJOR:  -> org.apache.commons.math.exception.TooManyEvaluationsException
+    [junit] MAJOR:  -> "illegal state: maximal count (229) exceeded: evaluations"
+    [junit] MAJOR: org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest7[test7] failed!
+    [junit] MAJOR:  -> org.apache.commons.math.exception.TooManyEvaluationsException
+    [junit] MAJOR:  -> "illegal state: maximal count (1,024) exceeded: evaluations"
+    [junit] MAJOR: org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest8[test8] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "Expecting exception: NoClassDefFoundError"
+    [junit] MAJOR: Exclude 4 failing test classes:
+    [junit] MAJOR:  - org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest2
+    [junit] MAJOR:  - org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest3
+    [junit] MAJOR:  - org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest7
+    [junit] MAJOR:  - org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest8
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 5 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 3.17 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 163
+    [junit] MAJOR: Mutants covered:   67 (41.10%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 5 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/5 - org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest1 (10ms / 1):
+    [junit] MAJOR: 175 (0 / 1 / 1) -> AVG-RTPM: 175ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 67
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/5 - org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest6 (10ms / 50):
+    [junit] MAJOR: 9917 (33 / 50 / 50) -> AVG-RTPM: 194ms
+    [junit] MAJOR: Mutants killed / live: 33 (10-23-0) / 34
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/5 - org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest5 (11ms / 20):
+    [junit] MAJOR: 15391 (6 / 20 / 20) -> AVG-RTPM: 273ms
+    [junit] MAJOR: Mutants killed / live: 39 (14-29-0) / 28
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/5 - org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest4 (13ms / 11):
+    [junit] MAJOR: 18688 (3 / 11 / 11) -> AVG-RTPM: 299ms
+    [junit] MAJOR: Mutants killed / live: 42 (20-29-0) / 25
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/5 - org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest0 (17ms / 16):
+    [junit] MAJOR: 24147 (0 / 16 / 16) -> AVG-RTPM: 341ms
+    [junit] MAJOR: Mutants killed / live: 42 (20-29-0) / 25
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  24.1 seconds
+    [junit] MAJOR: Mutation score: 25.77% (62.69%)
+    [junit] MAJOR: Mutants killed / live: 42 (20-29-0) / 25
+    [junit] MAJOR: Mutant executions: 98
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_101682_1501541304/50f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 36 seconds

@@ -1,0 +1,139 @@
+
+init:
+     [echo] -------- Commons MATH 3.1-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] Compiling 404 source files to /tmp/run_mutation.pl_33110_1483663138/16f/target/test-classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /tmp/run_mutation.pl_33110_1483663138/16f/src/test/java/org/apache/commons/math3/PerfTestUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 24 files to /tmp/run_mutation.pl_33110_1483663138/16f/target/test-classes
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: org.apache.commons.math3.util.FastMath_ESTest1[test001] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "expected:<0.0> but was:<0.603291678299495>"
+    [junit] MAJOR: Exclude 1 failing test class:
+    [junit] MAJOR:  - org.apache.commons.math3.util.FastMath_ESTest1
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 276 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 643.34 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 10887
+    [junit] MAJOR: Mutants covered:   10676 (98.06%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 276 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/276 - org.apache.commons.math3.util.FastMath_ESTest121 (5ms / 790):
+    [junit] MAJOR: 3303370 (585 / 790 / 790) -> AVG-RTPM: 4181ms
+    [junit] MAJOR: Mutants killed / live: 585 (0-507-78) / 10091
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/276 - org.apache.commons.math3.util.FastMath_ESTest125 (5ms / 663):
+    [junit] MAJOR: 5357744 (239 / 663 / 663) -> AVG-RTPM: 3098ms
+    [junit] MAJOR: Mutants killed / live: 824 (0-1170-78) / 9852
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/276 - org.apache.commons.math3.util.FastMath_ESTest117 (6ms / 600):
+    [junit] MAJOR: 7925271 (33 / 600 / 600) -> AVG-RTPM: 4279ms
+    [junit] MAJOR: Mutants killed / live: 857 (0-1770-78) / 9819
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/276 - org.apache.commons.math3.util.FastMath_ESTest119 (6ms / 1161):
+    [junit] MAJOR: 13789646 (573 / 1161 / 1161) -> AVG-RTPM: 5051ms
+    [junit] MAJOR: Mutants killed / live: 1430 (0-2930-79) / 9246
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/276 - org.apache.commons.math3.util.FastMath_ESTest120 (6ms / 582):
+    [junit] MAJOR: 15434847 (3 / 582 / 582) -> AVG-RTPM: 2826ms
+    [junit] MAJOR: Mutants killed / live: 1433 (0-3512-79) / 9243
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/276 - org.apache.commons.math3.util.FastMath_ESTest126 (6ms / 631):
+    [junit] MAJOR: 16503953 (0 / 631 / 631) -> AVG-RTPM: 1694ms
+    [junit] MAJOR: Mutants killed / live: 1433 (0-4143-79) / 9243
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/276 - org.apache.commons.math3.util.FastMath_ESTest127 (6ms / 672):
+    [junit] MAJOR: 17648860 (50 / 672 / 672) -> AVG-RTPM: 1703ms
+    [junit] MAJOR: Mutants killed / live: 1483 (0-4815-79) / 9193
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/276 - org.apache.commons.math3.util.FastMath_ESTest13 (6ms / 757):
+    [junit] MAJOR: 18964323 (190 / 757 / 757) -> AVG-RTPM: 1737ms
+    [junit] MAJOR: Mutants killed / live: 1673 (0-5572-79) / 9003
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/276 - org.apache.commons.math3.util.FastMath_ESTest135 (6ms / 630):
+    [junit] MAJOR: 20059460 (19 / 630 / 630) -> AVG-RTPM: 1738ms
+    [junit] MAJOR: Mutants killed / live: 1692 (0-6202-79) / 8984
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/276 - org.apache.commons.math3.util.FastMath_ESTest136 (6ms / 668):
+    [junit] MAJOR: 21228071 (50 / 668 / 668) -> AVG-RTPM: 1749ms
+    [junit] MAJOR: Mutants killed / live: 1742 (0-6870-79) / 8934
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/276 - org.apache.commons.math3.util.FastMath_ESTest137 (6ms / 636):
+    [junit] MAJOR: 22345483 (2 / 636 / 636) -> AVG-RTPM: 1756ms
+    [junit] MAJOR: Mutants killed / live: 1744 (0-7506-79) / 8932
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/276 - org.apache.commons.math3.util.FastMath_ESTest138 (6ms / 673):
+    [junit] MAJOR: 23408593 (48 / 673 / 673) -> AVG-RTPM: 1579ms
+    [junit] MAJOR: Mutants killed / live: 1792 (0-8179-79) / 8884
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 13/276 - org.apache.commons.math3.util.FastMath_ESTest139 (6ms / 641):
+    [junit] MAJOR: 24423393 (0 / 641 / 641) -> AVG-RTPM: 1583ms
+    [junit] MAJOR: Mutants killed / live: 1792 (0-8820-79) / 8884
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 14/276 - org.apache.commons.math3.util.FastMath_ESTest14 (6ms / 937):
+    [junit] MAJOR: 25887095 (205 / 937 / 937) -> AVG-RTPM: 1562ms
+    [junit] MAJOR: Mutants killed / live: 1997 (0-9757-79) / 8679
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 15/276 - org.apache.commons.math3.util.FastMath_ESTest140 (6ms / 686):
+    [junit] MAJOR: 27003613 (52 / 686 / 686) -> AVG-RTPM: 1627ms
+    [junit] MAJOR: Mutants killed / live: 2049 (0-10443-79) / 8627
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 16/276 - org.apache.commons.math3.util.FastMath_ESTest141 (6ms / 654):
+    [junit] MAJOR: 28130198 (4 / 654 / 654) -> AVG-RTPM: 1722ms
+    [junit] MAJOR: Mutants killed / live: 2053 (0-11097-79) / 8623
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 17/276 - org.apache.commons.math3.util.FastMath_ESTest142 (6ms / 692):
+    [junit] MAJOR: 29413530 (42 / 692 / 692) -> AVG-RTPM: 1854ms
+    [junit] MAJOR: Mutants killed / live: 2095 (0-11789-79) / 8581
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 18/276 - org.apache.commons.math3.util.FastMath_ESTest143 (6ms / 686):
+    [junit] MAJOR: 30725383 (0 / 686 / 686) -> AVG-RTPM: 1912ms
+    [junit] MAJOR: Mutants killed / live: 2095 (0-12475-79) / 8581
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 19/276 - org.apache.commons.math3.util.FastMath_ESTest144 (6ms / 590):
+    [junit] MAJOR: 31888952 (23 / 590 / 590) -> AVG-RTPM: 1972ms
+    [junit] MAJOR: Mutants killed / live: 2118 (0-13065-79) / 8558
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 20/276 - org.apache.commons.math3.util.FastMath_ESTest145 (6ms / 600):
+    [junit] MAJOR: 33059276 (10 / 600 / 600) -> AVG-RTPM: 1950ms
+    [junit] MAJOR: Mutants killed / live: 2128 (0-13665-79) / 8548
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 21/276 - org.apache.commons.math3.util.FastMath_ESTest147 (6ms / 615):
+    [junit] MAJOR: 34266396 (15 / 615 / 615) -> AVG-RTPM: 1962ms
+    [junit] MAJOR: Mutants killed / live: 2143 (0-14280-79) / 8533
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 22/276 - org.apache.commons.math3.util.FastMath_ESTest148 (6ms / 626):
+
+BUILD FAILED
+/home/to_donghwan/defects4j/framework/projects/defects4j.build.xml:185: Parallel execution timed out
+
+Total time: 600 minutes 6 seconds

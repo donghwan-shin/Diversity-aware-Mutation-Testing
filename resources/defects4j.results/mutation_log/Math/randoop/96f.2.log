@@ -1,0 +1,2593 @@
+
+init:
+
+junit-present:
+
+get-deps:
+
+compile:
+    [javac] /tmp/run_mutation.pl_39980_1500533384/96f/build.xml:46: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_39980_1500533384/96f/target/test-classes
+    [javac] /tmp/run_mutation.pl_39980_1500533384/96f/build.xml:123: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 182 source files to /tmp/run_mutation.pl_39980_1500533384/96f/target/test-classes
+    [javac] /tmp/run_mutation.pl_39980_1500533384/96f/src/test/org/apache/commons/math/TestUtils.java:26: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/run_mutation.pl_39980_1500533384/96f/src/test/org/apache/commons/math/TestUtils.java:58: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertTrue("" + actual + " is not NaN.",
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_39980_1500533384/96f/src/test/org/apache/commons/math/TestUtils.java:61: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertEquals(msg, expected, actual, delta);
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_39980_1500533384/96f/src/test/org/apache/commons/math/TestUtils.java:95: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals(a.length, b.length);
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_39980_1500533384/96f/src/test/org/apache/commons/math/TestUtils.java:97: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertEquals(a[i], b[i], tolerance);
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_39980_1500533384/96f/src/test/org/apache/commons/math/TestUtils.java:134: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals("Equals check", object, object2);
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_39980_1500533384/96f/src/test/org/apache/commons/math/TestUtils.java:135: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals("HashCode check", object.hashCode(), object2.hashCode());
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_39980_1500533384/96f/src/test/org/apache/commons/math/TestUtils.java:165: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertTrue(msg, Double.isNaN(actual));
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_39980_1500533384/96f/src/test/org/apache/commons/math/TestUtils.java:167: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertTrue(msg, Double.isNaN(expected));
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_39980_1500533384/96f/src/test/org/apache/commons/math/TestUtils.java:169: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertEquals(expected, actual, relativeError);
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_39980_1500533384/96f/src/test/org/apache/commons/math/TestUtils.java:171: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertEquals(msg, actual, expected, relativeError);
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_39980_1500533384/96f/src/test/org/apache/commons/math/TestUtils.java:174: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertEquals(msg, 0.0, x, relativeError);
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_39980_1500533384/96f/src/test/org/apache/commons/math/TestUtils.java:200: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.fail(msg + 
+    [javac]             ^
+    [javac] /tmp/run_mutation.pl_39980_1500533384/96f/src/test/org/apache/commons/math/TestUtils.java:239: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.fail(msg + " Unable to find" + x);
+    [javac]             ^
+    [javac] 14 warnings
+     [copy] Copying 12 files to /tmp/run_mutation.pl_39980_1500533384/96f/target/test-classes
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 625 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 6.26 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 581
+    [junit] MAJOR: Mutants covered:   544 (93.63%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 625 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m1/625 - RegressionTest100 (3ms / 23):[0m
+    [junit] MAJOR: 106 (0 / 23 / 23) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 544
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m2/625 - RegressionTest135 (3ms / 12):[0m
+    [junit] MAJOR: 153 (0 / 12 / 12) -> AVG-RTPM: 3ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 544
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m3/625 - RegressionTest143 (3ms / 12):[0m
+    [junit] MAJOR: 207 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 544
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m4/625 - RegressionTest15 (3ms / 12):[0m
+    [junit] MAJOR: 259 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 544
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m5/625 - RegressionTest173 (3ms / 12):[0m
+    [junit] MAJOR: 311 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 544
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m6/625 - RegressionTest181 (3ms / 12):[0m
+    [junit] MAJOR: 364 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 544
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m7/625 - RegressionTest203 (3ms / 12):[0m
+    [junit] MAJOR: 447 (0 / 12 / 12) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 544
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m8/625 - RegressionTest237 (3ms / 299):[0m
+    [junit] MAJOR: 2054 (2 / 299 / 299) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 2 (0-2-0) / 542
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m9/625 - RegressionTest24 (3ms / 154):[0m
+    [junit] MAJOR: 2868 (15 / 154 / 154) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 17 (15-2-0) / 527
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m10/625 - RegressionTest25 (3ms / 12):[0m
+    [junit] MAJOR: 2918 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 17 (15-2-0) / 527
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m11/625 - RegressionTest28 (3ms / 12):[0m
+    [junit] MAJOR: 2967 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 17 (15-2-0) / 527
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m12/625 - RegressionTest280 (3ms / 12):[0m
+    [junit] MAJOR: 3019 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 17 (15-2-0) / 527
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m13/625 - RegressionTest287 (3ms / 12):[0m
+    [junit] MAJOR: 3064 (0 / 12 / 12) -> AVG-RTPM: 3ms
+    [junit] MAJOR: Mutants killed / live: 17 (15-2-0) / 527
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m14/625 - RegressionTest296 (3ms / 12):[0m
+    [junit] MAJOR: 3110 (0 / 12 / 12) -> AVG-RTPM: 3ms
+    [junit] MAJOR: Mutants killed / live: 17 (15-2-0) / 527
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m15/625 - RegressionTest297 (3ms / 12):[0m
+    [junit] MAJOR: 3158 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 17 (15-2-0) / 527
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m16/625 - RegressionTest343 (3ms / 12):[0m
+    [junit] MAJOR: 3205 (0 / 12 / 12) -> AVG-RTPM: 3ms
+    [junit] MAJOR: Mutants killed / live: 17 (15-2-0) / 527
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m17/625 - RegressionTest348 (3ms / 29):[0m
+    [junit] MAJOR: 3339 (0 / 29 / 29) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 17 (15-2-0) / 527
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m18/625 - RegressionTest368 (3ms / 294):[0m
+    [junit] MAJOR: 4653 (0 / 294 / 294) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 17 (15-2-0) / 527
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m19/625 - RegressionTest373 (3ms / 366):[0m
+    [junit] MAJOR: 6426 (7 / 366 / 366) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 24 (22-2-0) / 520
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m20/625 - RegressionTest382 (3ms / 408):[0m
+    [junit] MAJOR: 8546 (4 / 408 / 408) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 28 (28-4-0) / 516
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m21/625 - RegressionTest383 (3ms / 131):[0m
+    [junit] MAJOR: 9101 (0 / 131 / 131) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 28 (28-4-0) / 516
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m22/625 - RegressionTest391 (3ms / 29):[0m
+    [junit] MAJOR: 9232 (0 / 29 / 29) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 28 (28-4-0) / 516
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m23/625 - RegressionTest4 (3ms / 12):[0m
+    [junit] MAJOR: 9277 (0 / 12 / 12) -> AVG-RTPM: 3ms
+    [junit] MAJOR: Mutants killed / live: 28 (28-4-0) / 516
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m24/625 - RegressionTest402 (3ms / 438):[0m
+    [junit] MAJOR: 11408 (4 / 438 / 438) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 32 (41-6-0) / 512
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m25/625 - RegressionTest406 (3ms / 12):[0m
+    [junit] MAJOR: 11455 (0 / 12 / 12) -> AVG-RTPM: 3ms
+    [junit] MAJOR: Mutants killed / live: 32 (41-6-0) / 512
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m26/625 - RegressionTest407 (3ms / 12):[0m
+    [junit] MAJOR: 11505 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 32 (41-6-0) / 512
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m27/625 - RegressionTest412 (3ms / 321):[0m
+    [junit] MAJOR: 13124 (0 / 321 / 321) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 32 (48-6-0) / 512
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m28/625 - RegressionTest431 (3ms / 439):[0m
+    [junit] MAJOR: 15298 (68 / 439 / 439) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 100 (126-6-0) / 444
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m29/625 - RegressionTest450 (3ms / 12):[0m
+    [junit] MAJOR: 15350 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 100 (126-6-0) / 444
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m30/625 - RegressionTest456 (3ms / 435):[0m
+    [junit] MAJOR: 17434 (8 / 435 / 435) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 108 (144-8-0) / 436
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m31/625 - RegressionTest467 (3ms / 220):[0m
+    [junit] MAJOR: 18603 (5 / 220 / 220) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 113 (162-8-0) / 431
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m32/625 - RegressionTest469 (3ms / 243):[0m
+    [junit] MAJOR: 19796 (93 / 243 / 243) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 206 (302-8-0) / 338
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m33/625 - RegressionTest472 (3ms / 254):[0m
+    [junit] MAJOR: 21034 (0 / 254 / 254) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 206 (309-8-0) / 338
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m34/625 - RegressionTest488 (3ms / 352):[0m
+    [junit] MAJOR: 22822 (0 / 352 / 352) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 206 (351-8-0) / 338
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m35/625 - RegressionTest49 (3ms / 40):[0m
+    [junit] MAJOR: 22997 (0 / 40 / 40) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 206 (351-8-0) / 338
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m36/625 - RegressionTest491 (3ms / 472):[0m
+    [junit] MAJOR: 25392 (91 / 472 / 472) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 297 (535-8-0) / 247
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m37/625 - RegressionTest509 (3ms / 12):[0m
+    [junit] MAJOR: 25437 (0 / 12 / 12) -> AVG-RTPM: 3ms
+    [junit] MAJOR: Mutants killed / live: 297 (535-8-0) / 247
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m38/625 - RegressionTest536 (3ms / 89):[0m
+    [junit] MAJOR: 25856 (3 / 89 / 89) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 300 (548-8-0) / 244
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m39/625 - RegressionTest541 (3ms / 389):[0m
+    [junit] MAJOR: 27861 (5 / 389 / 389) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 305 (591-10-0) / 239
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m40/625 - RegressionTest544 (3ms / 125):[0m
+    [junit] MAJOR: 28464 (13 / 125 / 125) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 318 (638-10-0) / 226
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m41/625 - RegressionTest545 (3ms / 392):[0m
+    [junit] MAJOR: 30454 (8 / 392 / 392) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 326 (700-10-0) / 218
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m42/625 - RegressionTest562 (3ms / 392):[0m
+    [junit] MAJOR: 32571 (0 / 392 / 392) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 326 (700-10-0) / 218
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m43/625 - RegressionTest571 (3ms / 373):[0m
+    [junit] MAJOR: 34499 (0 / 373 / 373) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 326 (700-12-0) / 218
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m44/625 - RegressionTest572 (3ms / 21):[0m
+    [junit] MAJOR: 34605 (0 / 21 / 21) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 326 (700-12-0) / 218
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m45/625 - RegressionTest578 (3ms / 12):[0m
+    [junit] MAJOR: 34653 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 326 (700-12-0) / 218
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m46/625 - RegressionTest585 (3ms / 12):[0m
+    [junit] MAJOR: 34700 (0 / 12 / 12) -> AVG-RTPM: 3ms
+    [junit] MAJOR: Mutants killed / live: 326 (700-12-0) / 218
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m47/625 - RegressionTest587 (3ms / 393):[0m
+    [junit] MAJOR: 36807 (0 / 393 / 393) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 326 (700-14-0) / 218
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m48/625 - RegressionTest590 (3ms / 405):[0m
+    [junit] MAJOR: 39103 (3 / 405 / 405) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 329 (860-16-0) / 215
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m49/625 - RegressionTest593 (3ms / 450):[0m
+    [junit] MAJOR: 41573 (2 / 450 / 450) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 331 (950-18-0) / 213
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m50/625 - RegressionTest596 (3ms / 282):[0m
+    [junit] MAJOR: 43130 (0 / 282 / 282) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 331 (958-18-0) / 213
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m51/625 - RegressionTest603 (3ms / 175):[0m
+    [junit] MAJOR: 44073 (0 / 175 / 175) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 331 (965-18-0) / 213
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m52/625 - RegressionTest614 (3ms / 12):[0m
+    [junit] MAJOR: 44137 (0 / 12 / 12) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 331 (965-18-0) / 213
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m53/625 - RegressionTest624 (3ms / 427):[0m
+    [junit] MAJOR: 46441 (15 / 427 / 427) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 346 (1153-20-0) / 198
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m54/625 - RegressionTest63 (3ms / 291):[0m
+    [junit] MAJOR: 48096 (0 / 291 / 291) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 346 (1162-20-0) / 198
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m55/625 - RegressionTest67 (3ms / 12):[0m
+    [junit] MAJOR: 48144 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 346 (1162-20-0) / 198
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m56/625 - RegressionTest71 (3ms / 12):[0m
+    [junit] MAJOR: 48194 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 346 (1162-20-0) / 198
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m57/625 - RegressionTest72 (3ms / 12):[0m
+    [junit] MAJOR: 48284 (0 / 12 / 12) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 346 (1162-20-0) / 198
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m58/625 - RegressionTest8 (3ms / 236):[0m
+    [junit] MAJOR: 49476 (0 / 236 / 236) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 346 (1162-20-0) / 198
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m59/625 - RegressionTest83 (3ms / 237):[0m
+    [junit] MAJOR: 50807 (1 / 237 / 237) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 347 (1166-20-0) / 197
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m60/625 - RegressionTest90 (3ms / 79):[0m
+    [junit] MAJOR: 51228 (0 / 79 / 79) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 347 (1184-20-0) / 197
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m61/625 - RegressionTest94 (3ms / 445):[0m
+    [junit] MAJOR: 53810 (0 / 445 / 445) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 347 (1321-22-0) / 197
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m62/625 - RegressionTest96 (3ms / 12):[0m
+    [junit] MAJOR: 53859 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 347 (1321-22-0) / 197
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m63/625 - RegressionTest1 (4ms / 12):[0m
+    [junit] MAJOR: 53908 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 347 (1321-22-0) / 197
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m64/625 - RegressionTest10 (4ms / 12):[0m
+    [junit] MAJOR: 53959 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 347 (1321-22-0) / 197
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m65/625 - RegressionTest117 (4ms / 219):[0m
+    [junit] MAJOR: 55191 (0 / 219 / 219) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 347 (1328-22-0) / 197
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m66/625 - RegressionTest122 (4ms / 440):[0m
+    [junit] MAJOR: 57767 (2 / 440 / 440) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 349 (1349-24-0) / 195
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m67/625 - RegressionTest123 (4ms / 254):[0m
+    [junit] MAJOR: 59304 (0 / 254 / 254) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 349 (1356-24-0) / 195
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m68/625 - RegressionTest125 (4ms / 241):[0m
+    [junit] MAJOR: 60709 (0 / 241 / 241) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 349 (1496-24-0) / 195
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m69/625 - RegressionTest128 (4ms / 426):[0m
+    [junit] MAJOR: 63359 (0 / 426 / 426) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 349 (1523-24-0) / 195
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m70/625 - RegressionTest129 (4ms / 182):[0m
+    [junit] MAJOR: 64488 (0 / 182 / 182) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 349 (1524-24-0) / 195
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m71/625 - RegressionTest13 (4ms / 267):[0m
+    [junit] MAJOR: 66103 (0 / 267 / 267) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 349 (1661-24-0) / 195
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m72/625 - RegressionTest131 (4ms / 262):[0m
+    [junit] MAJOR: 67824 (0 / 262 / 262) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 349 (1663-24-0) / 195
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m73/625 - RegressionTest133 (4ms / 405):[0m
+    [junit] MAJOR: 70396 (16 / 405 / 405) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 365 (1708-24-0) / 179
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m74/625 - RegressionTest136 (4ms / 298):[0m
+    [junit] MAJOR: 72270 (0 / 298 / 298) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 365 (1784-24-0) / 179
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m75/625 - RegressionTest137 (4ms / 55):[0m
+    [junit] MAJOR: 72594 (0 / 55 / 55) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 365 (1784-24-0) / 179
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m76/625 - RegressionTest138 (4ms / 15):[0m
+    [junit] MAJOR: 72692 (0 / 15 / 15) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 365 (1784-24-0) / 179
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m77/625 - RegressionTest139 (4ms / 291):[0m
+    [junit] MAJOR: 74463 (0 / 291 / 291) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 365 (1836-24-0) / 179
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m78/625 - RegressionTest14 (4ms / 359):[0m
+    [junit] MAJOR: 76831 (0 / 359 / 359) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 365 (1902-24-0) / 179
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m79/625 - RegressionTest141 (4ms / 296):[0m
+    [junit] MAJOR: 78667 (0 / 296 / 296) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 365 (1902-24-0) / 179
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m80/625 - RegressionTest142 (4ms / 248):[0m
+    [junit] MAJOR: 80229 (0 / 248 / 248) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 365 (1922-24-0) / 179
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m81/625 - RegressionTest146 (4ms / 451):[0m
+    [junit] MAJOR: 83401 (1 / 451 / 451) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 366 (2116-26-0) / 178
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m82/625 - RegressionTest147 (4ms / 287):[0m
+    [junit] MAJOR: 85295 (0 / 287 / 287) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 366 (2208-28-0) / 178
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m83/625 - RegressionTest148 (4ms / 159):[0m
+    [junit] MAJOR: 86309 (0 / 159 / 159) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 366 (2208-28-0) / 178
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m84/625 - RegressionTest149 (4ms / 173):[0m
+    [junit] MAJOR: 87492 (0 / 173 / 173) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 366 (2222-28-0) / 178
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m85/625 - RegressionTest150 (4ms / 443):[0m
+    [junit] MAJOR: 90681 (0 / 443 / 443) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 366 (2370-30-0) / 178
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m86/625 - RegressionTest151 (4ms / 441):[0m
+    [junit] MAJOR: 93850 (0 / 441 / 441) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 366 (2558-32-0) / 178
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m87/625 - RegressionTest152 (4ms / 406):[0m
+    [junit] MAJOR: 96603 (2 / 406 / 406) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 368 (2677-34-0) / 176
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m88/625 - RegressionTest153 (4ms / 427):[0m
+    [junit] MAJOR: 99701 (0 / 427 / 427) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 368 (2873-36-0) / 176
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m89/625 - RegressionTest155 (4ms / 405):[0m
+    [junit] MAJOR: 102621 (0 / 405 / 405) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 368 (2880-38-0) / 176
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m90/625 - RegressionTest156 (4ms / 275):[0m
+    [junit] MAJOR: 104551 (0 / 275 / 275) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 368 (2880-38-0) / 176
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m91/625 - RegressionTest157 (4ms / 485):[0m
+    [junit] MAJOR: 108227 (0 / 485 / 485) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 368 (3079-40-0) / 176
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m92/625 - RegressionTest158 (4ms / 31):[0m
+    [junit] MAJOR: 108555 (0 / 31 / 31) -> AVG-RTPM: 10ms
+    [junit] MAJOR: Mutants killed / live: 368 (3079-40-0) / 176
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m93/625 - RegressionTest159 (4ms / 367):[0m
+    [junit] MAJOR: 111073 (3 / 367 / 367) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 371 (3082-42-0) / 173
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m94/625 - RegressionTest16 (4ms / 356):[0m
+    [junit] MAJOR: 113671 (0 / 356 / 356) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 371 (3249-42-0) / 173
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m95/625 - RegressionTest160 (4ms / 426):[0m
+    [junit] MAJOR: 116670 (0 / 426 / 426) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 371 (3260-42-0) / 173
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m96/625 - RegressionTest161 (4ms / 268):[0m
+    [junit] MAJOR: 118604 (0 / 268 / 268) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 371 (3267-44-0) / 173
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m97/625 - RegressionTest162 (4ms / 12):[0m
+    [junit] MAJOR: 118738 (0 / 12 / 12) -> AVG-RTPM: 11ms
+    [junit] MAJOR: Mutants killed / live: 371 (3267-44-0) / 173
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m98/625 - RegressionTest163 (4ms / 255):[0m
+    [junit] MAJOR: 120613 (0 / 255 / 255) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 371 (3274-44-0) / 173
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m99/625 - RegressionTest164 (4ms / 294):[0m
+    [junit] MAJOR: 122853 (0 / 294 / 294) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 371 (3274-44-0) / 173
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m100/625 - RegressionTest166 (4ms / 323):[0m
+    [junit] MAJOR: 125242 (0 / 323 / 323) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 371 (3295-44-0) / 173
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m101/625 - RegressionTest167 (4ms / 310):[0m
+    [junit] MAJOR: 127637 (0 / 310 / 310) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 371 (3304-44-0) / 173
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m102/625 - RegressionTest169 (4ms / 319):[0m
+    [junit] MAJOR: 130099 (0 / 319 / 319) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 371 (3384-44-0) / 173
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m103/625 - RegressionTest170 (4ms / 474):[0m
+    [junit] MAJOR: 133837 (0 / 474 / 474) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 371 (3572-46-0) / 173
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m104/625 - RegressionTest171 (4ms / 185):[0m
+    [junit] MAJOR: 135276 (1 / 185 / 185) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 372 (3575-46-0) / 172
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m105/625 - RegressionTest172 (4ms / 272):[0m
+    [junit] MAJOR: 137307 (0 / 272 / 272) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 372 (3580-46-0) / 172
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m106/625 - RegressionTest174 (4ms / 268):[0m
+    [junit] MAJOR: 139551 (0 / 268 / 268) -> AVG-RTPM: 8ms
+    [junit] MAJOR: Mutants killed / live: 372 (3595-48-0) / 172
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m107/625 - RegressionTest175 (4ms / 473):[0m
+    [junit] MAJOR: 143267 (8 / 473 / 473) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 380 (3810-50-0) / 164
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m108/625 - RegressionTest176 (4ms / 437):[0m
+    [junit] MAJOR: 146006 (2 / 437 / 437) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 382 (3947-50-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m109/625 - RegressionTest178 (4ms / 258):[0m
+    [junit] MAJOR: 147047 (0 / 258 / 258) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (3970-52-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m110/625 - RegressionTest179 (4ms / 284):[0m
+    [junit] MAJOR: 148247 (0 / 284 / 284) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (3970-54-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m111/625 - RegressionTest18 (4ms / 292):[0m
+    [junit] MAJOR: 149480 (0 / 292 / 292) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4101-54-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m112/625 - RegressionTest180 (4ms / 12):[0m
+    [junit] MAJOR: 149520 (0 / 12 / 12) -> AVG-RTPM: 3ms
+    [junit] MAJOR: Mutants killed / live: 382 (4101-54-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m113/625 - RegressionTest182 (4ms / 410):[0m
+    [junit] MAJOR: 151281 (0 / 410 / 410) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4141-56-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m114/625 - RegressionTest183 (4ms / 407):[0m
+    [junit] MAJOR: 153103 (0 / 407 / 407) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4194-56-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m115/625 - RegressionTest184 (4ms / 157):[0m
+    [junit] MAJOR: 153822 (0 / 157 / 157) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4194-56-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m116/625 - RegressionTest185 (4ms / 282):[0m
+    [junit] MAJOR: 155036 (0 / 282 / 282) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4196-56-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m117/625 - RegressionTest186 (4ms / 264):[0m
+    [junit] MAJOR: 156274 (0 / 264 / 264) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4203-56-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m118/625 - RegressionTest187 (4ms / 439):[0m
+    [junit] MAJOR: 158361 (0 / 439 / 439) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4446-58-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m119/625 - RegressionTest188 (4ms / 322):[0m
+    [junit] MAJOR: 159792 (0 / 322 / 322) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4446-60-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m120/625 - RegressionTest189 (4ms / 53):[0m
+    [junit] MAJOR: 160019 (0 / 53 / 53) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4453-60-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m121/625 - RegressionTest19 (4ms / 242):[0m
+    [junit] MAJOR: 161168 (0 / 242 / 242) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4460-60-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m122/625 - RegressionTest190 (4ms / 60):[0m
+    [junit] MAJOR: 161462 (0 / 60 / 60) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4474-60-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m123/625 - RegressionTest191 (4ms / 308):[0m
+    [junit] MAJOR: 162975 (0 / 308 / 308) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4483-60-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m124/625 - RegressionTest192 (4ms / 443):[0m
+    [junit] MAJOR: 165133 (0 / 443 / 443) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4521-62-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m125/625 - RegressionTest194 (4ms / 218):[0m
+    [junit] MAJOR: 166146 (0 / 218 / 218) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4524-66-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m126/625 - RegressionTest195 (4ms / 401):[0m
+    [junit] MAJOR: 168113 (0 / 401 / 401) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4531-66-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m127/625 - RegressionTest196 (4ms / 405):[0m
+    [junit] MAJOR: 170129 (0 / 405 / 405) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4767-66-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m128/625 - RegressionTest198 (4ms / 304):[0m
+    [junit] MAJOR: 171581 (0 / 304 / 304) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4774-66-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m129/625 - RegressionTest199 (4ms / 268):[0m
+    [junit] MAJOR: 172928 (0 / 268 / 268) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 382 (4781-68-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m130/625 - RegressionTest2 (4ms / 47):[0m
+    [junit] MAJOR: 173163 (0 / 47 / 47) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 382 (4788-68-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m131/625 - RegressionTest20 (4ms / 241):[0m
+    [junit] MAJOR: 174421 (0 / 241 / 241) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 382 (4794-68-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m132/625 - RegressionTest200 (4ms / 405):[0m
+    [junit] MAJOR: 176443 (0 / 405 / 405) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (4806-70-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m133/625 - RegressionTest201 (4ms / 275):[0m
+    [junit] MAJOR: 177833 (0 / 275 / 275) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 382 (4818-70-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m134/625 - RegressionTest202 (4ms / 391):[0m
+    [junit] MAJOR: 179992 (0 / 391 / 391) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 382 (4828-72-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m135/625 - RegressionTest204 (4ms / 337):[0m
+    [junit] MAJOR: 181710 (0 / 337 / 337) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 382 (4834-72-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m136/625 - RegressionTest205 (4ms / 399):[0m
+    [junit] MAJOR: 183970 (0 / 399 / 399) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 382 (4847-74-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m137/625 - RegressionTest206 (4ms / 429):[0m
+    [junit] MAJOR: 186339 (0 / 429 / 429) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 382 (4909-74-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m138/625 - RegressionTest207 (4ms / 442):[0m
+    [junit] MAJOR: 188913 (0 / 442 / 442) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 382 (4947-76-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m139/625 - RegressionTest208 (4ms / 371):[0m
+    [junit] MAJOR: 190902 (0 / 371 / 371) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 382 (4954-78-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m140/625 - RegressionTest209 (4ms / 53):[0m
+    [junit] MAJOR: 191177 (0 / 53 / 53) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 382 (4961-78-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m141/625 - RegressionTest21 (4ms / 359):[0m
+    [junit] MAJOR: 193199 (0 / 359 / 359) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 382 (5098-80-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m142/625 - RegressionTest210 (4ms / 363):[0m
+    [junit] MAJOR: 195367 (0 / 363 / 363) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 382 (5204-80-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m143/625 - RegressionTest211 (4ms / 265):[0m
+    [junit] MAJOR: 196875 (0 / 265 / 265) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 382 (5204-80-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m144/625 - RegressionTest213 (4ms / 410):[0m
+    [junit] MAJOR: 198978 (0 / 410 / 410) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 382 (5210-80-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m145/625 - RegressionTest214 (4ms / 440):[0m
+    [junit] MAJOR: 201126 (0 / 440 / 440) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (5400-82-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m146/625 - RegressionTest215 (4ms / 377):[0m
+    [junit] MAJOR: 202697 (0 / 377 / 377) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (5407-82-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m147/625 - RegressionTest216 (4ms / 309):[0m
+    [junit] MAJOR: 204081 (0 / 309 / 309) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 382 (5426-82-0) / 162
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m148/625 - RegressionTest217 (4ms / 312):[0m
+    [junit] MAJOR: 205422 (1 / 312 / 312) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 383 (5538-82-0) / 161
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m149/625 - RegressionTest218 (4ms / 377):[0m
+    [junit] MAJOR: 207039 (0 / 377 / 377) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 383 (5538-82-0) / 161
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m150/625 - RegressionTest22 (4ms / 256):[0m
+    [junit] MAJOR: 208222 (0 / 256 / 256) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 383 (5544-84-0) / 161
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m151/625 - RegressionTest220 (4ms / 485):[0m
+    [junit] MAJOR: 210502 (0 / 485 / 485) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 383 (5788-86-0) / 161
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m152/625 - RegressionTest221 (4ms / 54):[0m
+    [junit] MAJOR: 210751 (0 / 54 / 54) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 383 (5806-86-0) / 161
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m153/625 - RegressionTest222 (4ms / 425):[0m
+    [junit] MAJOR: 212799 (0 / 425 / 425) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 383 (5813-88-0) / 161
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m154/625 - RegressionTest223 (4ms / 211):[0m
+    [junit] MAJOR: 213789 (0 / 211 / 211) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 383 (5813-90-0) / 161
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m155/625 - RegressionTest225 (4ms / 318):[0m
+    [junit] MAJOR: 215202 (0 / 318 / 318) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 383 (5813-90-0) / 161
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m156/625 - RegressionTest226 (4ms / 417):[0m
+    [junit] MAJOR: 217216 (0 / 417 / 417) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 383 (5819-90-0) / 161
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m157/625 - RegressionTest228 (4ms / 485):[0m
+    [junit] MAJOR: 219675 (0 / 485 / 485) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 383 (6015-92-0) / 161
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m158/625 - RegressionTest229 (4ms / 422):[0m
+    [junit] MAJOR: 221801 (0 / 422 / 422) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 383 (6015-92-0) / 161
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m159/625 - RegressionTest23 (4ms / 309):[0m
+    [junit] MAJOR: 223530 (0 / 309 / 309) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 383 (6057-92-0) / 161
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m160/625 - RegressionTest230 (4ms / 450):[0m
+    [junit] MAJOR: 225804 (0 / 450 / 450) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 383 (6255-94-0) / 161
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m161/625 - RegressionTest231 (4ms / 432):[0m
+    [junit] MAJOR: 228091 (0 / 432 / 432) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 383 (6393-96-0) / 161
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m162/625 - RegressionTest232 (4ms / 228):[0m
+    [junit] MAJOR: 229301 (1 / 228 / 228) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 384 (6507-96-0) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m163/625 - RegressionTest233 (4ms / 442):[0m
+    [junit] MAJOR: 231667 (0 / 442 / 442) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 384 (6561-98-0) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m164/625 - RegressionTest234 (4ms / 422):[0m
+    [junit] MAJOR: 233919 (0 / 422 / 422) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 384 (6593-98-0) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m165/625 - RegressionTest235 (4ms / 288):[0m
+    [junit] MAJOR: 235376 (0 / 288 / 288) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 384 (6600-98-0) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m166/625 - RegressionTest236 (4ms / 158):[0m
+    [junit] MAJOR: 236252 (0 / 158 / 158) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 384 (6611-98-0) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m167/625 - RegressionTest238 (4ms / 107):[0m
+    [junit] MAJOR: 236816 (0 / 107 / 107) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 384 (6657-98-0) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m168/625 - RegressionTest239 (4ms / 439):[0m
+    [junit] MAJOR: 239170 (0 / 439 / 439) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 384 (6684-98-0) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m169/625 - RegressionTest240 (4ms / 12):[0m
+    [junit] MAJOR: 239256 (0 / 12 / 12) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 384 (6684-98-0) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m170/625 - RegressionTest241 (4ms / 374):[0m
+    [junit] MAJOR: 241278 (0 / 374 / 374) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 384 (6684-98-0) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m171/625 - RegressionTest242 (4ms / 386):[0m
+    [junit] MAJOR: 243497 (0 / 386 / 386) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 384 (6711-98-0) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m172/625 - RegressionTest243 (4ms / 382):[0m
+    [junit] MAJOR: 245575 (0 / 382 / 382) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 384 (6777-98-0) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m173/625 - RegressionTest244 (4ms / 57):[0m
+    [junit] MAJOR: 245886 (0 / 57 / 57) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 384 (6784-98-0) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m174/625 - RegressionTest245 (4ms / 359):[0m
+    [junit] MAJOR: 248041 (0 / 359 / 359) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 384 (6784-100-0) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m175/625 - RegressionTest246 (4ms / 451):[0m
+    [junit] MAJOR: 250755 (0 / 451 / 451) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 384 (6824-102-0) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m176/625 - RegressionTest247 (4ms / 440):[0m
+    [junit] MAJOR: 253770 (0 / 440 / 440) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 384 (6843-104-0) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m177/625 - RegressionTest248 (4ms / 334):[0m
+    [junit] MAJOR: 255140 (0 / 334 / 334) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 384 (6852-104-0) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m178/625 - RegressionTest249 (4ms / 79):[0m
+    [junit] MAJOR: 255444 (0 / 79 / 79) -> AVG-RTPM: 3ms
+    [junit] MAJOR: Mutants killed / live: 384 (6894-104-0) / 160
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m179/625 - RegressionTest250 (4ms / 485):[0m
+    [junit] MAJOR: 257481 (5 / 485 / 485) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (7182-106-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m180/625 - RegressionTest251 (4ms / 447):[0m
+    [junit] MAJOR: 259376 (0 / 447 / 447) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (7254-106-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m181/625 - RegressionTest252 (4ms / 429):[0m
+    [junit] MAJOR: 261233 (0 / 429 / 429) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (7442-108-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m182/625 - RegressionTest254 (4ms / 450):[0m
+    [junit] MAJOR: 263212 (0 / 450 / 450) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (7638-110-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m183/625 - RegressionTest255 (4ms / 395):[0m
+    [junit] MAJOR: 265004 (0 / 395 / 395) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (7775-112-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m184/625 - RegressionTest256 (4ms / 229):[0m
+    [junit] MAJOR: 265987 (0 / 229 / 229) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (7775-112-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m185/625 - RegressionTest257 (4ms / 445):[0m
+    [junit] MAJOR: 268063 (0 / 445 / 445) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (7963-114-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m186/625 - RegressionTest258 (4ms / 427):[0m
+    [junit] MAJOR: 270000 (0 / 427 / 427) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (7963-114-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m187/625 - RegressionTest259 (4ms / 96):[0m
+    [junit] MAJOR: 270448 (0 / 96 / 96) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (7972-114-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m188/625 - RegressionTest26 (4ms / 275):[0m
+    [junit] MAJOR: 271822 (0 / 275 / 275) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (7985-114-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m189/625 - RegressionTest260 (4ms / 232):[0m
+    [junit] MAJOR: 272933 (0 / 232 / 232) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (7987-114-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m190/625 - RegressionTest261 (4ms / 238):[0m
+    [junit] MAJOR: 274156 (0 / 238 / 238) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (8025-114-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m191/625 - RegressionTest263 (4ms / 308):[0m
+    [junit] MAJOR: 275582 (0 / 308 / 308) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (8033-114-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m192/625 - RegressionTest264 (4ms / 427):[0m
+    [junit] MAJOR: 277759 (0 / 427 / 427) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (8221-116-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m193/625 - RegressionTest266 (4ms / 79):[0m
+    [junit] MAJOR: 278141 (0 / 79 / 79) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (8227-116-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m194/625 - RegressionTest267 (4ms / 397):[0m
+    [junit] MAJOR: 280119 (0 / 397 / 397) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (8295-118-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m195/625 - RegressionTest268 (4ms / 411):[0m
+    [junit] MAJOR: 282281 (0 / 411 / 411) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (8402-118-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m196/625 - RegressionTest269 (4ms / 96):[0m
+    [junit] MAJOR: 282800 (0 / 96 / 96) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (8415-118-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m197/625 - RegressionTest27 (4ms / 309):[0m
+    [junit] MAJOR: 284478 (0 / 309 / 309) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (8457-118-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m198/625 - RegressionTest270 (4ms / 369):[0m
+    [junit] MAJOR: 286397 (0 / 369 / 369) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (8625-120-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m199/625 - RegressionTest271 (4ms / 450):[0m
+    [junit] MAJOR: 288850 (0 / 450 / 450) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (8637-122-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m200/625 - RegressionTest272 (4ms / 379):[0m
+    [junit] MAJOR: 290838 (0 / 379 / 379) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (8637-122-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m201/625 - RegressionTest273 (4ms / 485):[0m
+    [junit] MAJOR: 293583 (0 / 485 / 485) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (8833-124-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m202/625 - RegressionTest274 (4ms / 318):[0m
+    [junit] MAJOR: 295389 (0 / 318 / 318) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (8843-124-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m203/625 - RegressionTest275 (4ms / 460):[0m
+    [junit] MAJOR: 298056 (0 / 460 / 460) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (8866-126-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m204/625 - RegressionTest276 (4ms / 470):[0m
+    [junit] MAJOR: 300779 (0 / 470 / 470) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (8888-126-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m205/625 - RegressionTest277 (4ms / 408):[0m
+    [junit] MAJOR: 303179 (0 / 408 / 408) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (8993-126-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m206/625 - RegressionTest279 (4ms / 435):[0m
+    [junit] MAJOR: 305725 (0 / 435 / 435) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (9020-126-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m207/625 - RegressionTest281 (4ms / 32):[0m
+    [junit] MAJOR: 305917 (0 / 32 / 32) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 389 (9020-126-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m208/625 - RegressionTest282 (4ms / 251):[0m
+    [junit] MAJOR: 307344 (0 / 251 / 251) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (9020-126-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m209/625 - RegressionTest283 (4ms / 223):[0m
+    [junit] MAJOR: 308685 (0 / 223 / 223) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 389 (9030-128-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m210/625 - RegressionTest285 (4ms / 354):[0m
+    [junit] MAJOR: 310927 (0 / 354 / 354) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 389 (9037-128-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m211/625 - RegressionTest286 (4ms / 246):[0m
+    [junit] MAJOR: 311918 (0 / 246 / 246) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (9083-130-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m212/625 - RegressionTest288 (4ms / 240):[0m
+    [junit] MAJOR: 312883 (0 / 240 / 240) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (9083-130-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m213/625 - RegressionTest289 (4ms / 438):[0m
+    [junit] MAJOR: 314803 (0 / 438 / 438) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (9273-132-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m214/625 - RegressionTest29 (4ms / 309):[0m
+    [junit] MAJOR: 316097 (0 / 309 / 309) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (9329-132-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m215/625 - RegressionTest290 (4ms / 112):[0m
+    [junit] MAJOR: 316543 (0 / 112 / 112) -> AVG-RTPM: 3ms
+    [junit] MAJOR: Mutants killed / live: 389 (9345-132-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m216/625 - RegressionTest291 (4ms / 322):[0m
+    [junit] MAJOR: 317928 (0 / 322 / 322) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (9399-132-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m217/625 - RegressionTest292 (4ms / 156):[0m
+    [junit] MAJOR: 318623 (0 / 156 / 156) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (9447-132-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m218/625 - RegressionTest293 (4ms / 291):[0m
+    [junit] MAJOR: 319863 (0 / 291 / 291) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (9454-132-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m219/625 - RegressionTest294 (4ms / 167):[0m
+    [junit] MAJOR: 320578 (0 / 167 / 167) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (9454-132-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m220/625 - RegressionTest295 (4ms / 166):[0m
+    [junit] MAJOR: 321290 (0 / 166 / 166) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (9454-132-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m221/625 - RegressionTest298 (4ms / 393):[0m
+    [junit] MAJOR: 323062 (0 / 393 / 393) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (9520-132-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m222/625 - RegressionTest299 (4ms / 441):[0m
+    [junit] MAJOR: 325104 (0 / 441 / 441) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (9708-134-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m223/625 - RegressionTest3 (4ms / 43):[0m
+    [junit] MAJOR: 325287 (0 / 43 / 43) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (9715-134-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m224/625 - RegressionTest30 (4ms / 440):[0m
+    [junit] MAJOR: 327291 (0 / 440 / 440) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (9908-136-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m225/625 - RegressionTest300 (4ms / 323):[0m
+    [junit] MAJOR: 328889 (0 / 323 / 323) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (9916-136-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m226/625 - RegressionTest301 (4ms / 238):[0m
+    [junit] MAJOR: 329972 (0 / 238 / 238) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (9922-136-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m227/625 - RegressionTest302 (4ms / 312):[0m
+    [junit] MAJOR: 331464 (0 / 312 / 312) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (9941-136-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m228/625 - RegressionTest303 (4ms / 118):[0m
+    [junit] MAJOR: 331987 (0 / 118 / 118) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 389 (9941-136-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m229/625 - RegressionTest304 (4ms / 411):[0m
+    [junit] MAJOR: 334052 (0 / 411 / 411) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (9996-136-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m230/625 - RegressionTest305 (4ms / 382):[0m
+    [junit] MAJOR: 336047 (0 / 382 / 382) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (10062-136-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m231/625 - RegressionTest306 (4ms / 231):[0m
+    [junit] MAJOR: 337284 (0 / 231 / 231) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (10069-136-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m232/625 - RegressionTest307 (4ms / 399):[0m
+    [junit] MAJOR: 339399 (0 / 399 / 399) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (10081-138-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m233/625 - RegressionTest309 (4ms / 450):[0m
+    [junit] MAJOR: 341855 (0 / 450 / 450) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (10277-140-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m234/625 - RegressionTest31 (4ms / 33):[0m
+    [junit] MAJOR: 342020 (0 / 33 / 33) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (10277-140-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m235/625 - RegressionTest310 (4ms / 334):[0m
+    [junit] MAJOR: 343801 (0 / 334 / 334) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (10295-140-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m236/625 - RegressionTest311 (4ms / 429):[0m
+    [junit] MAJOR: 346047 (0 / 429 / 429) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 389 (10483-142-0) / 155
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m237/625 - RegressionTest312 (4ms / 423):[0m
+    [junit] MAJOR: 348347 (5 / 423 / 423) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 394 (10645-142-0) / 150
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m238/625 - RegressionTest313 (4ms / 309):[0m
+    [junit] MAJOR: 350027 (0 / 309 / 309) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 394 (10725-142-0) / 150
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m239/625 - RegressionTest314 (4ms / 313):[0m
+    [junit] MAJOR: 351845 (0 / 313 / 313) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 394 (10793-142-0) / 150
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m240/625 - RegressionTest315 (4ms / 406):[0m
+    [junit] MAJOR: 354258 (0 / 406 / 406) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 394 (10800-144-0) / 150
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m241/625 - RegressionTest316 (4ms / 405):[0m
+    [junit] MAJOR: 356554 (0 / 405 / 405) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 394 (10868-146-0) / 150
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m242/625 - RegressionTest318 (4ms / 364):[0m
+    [junit] MAJOR: 358662 (0 / 364 / 364) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 394 (10889-148-0) / 150
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m243/625 - RegressionTest32 (4ms / 303):[0m
+    [junit] MAJOR: 360448 (0 / 303 / 303) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 394 (11032-150-0) / 150
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m244/625 - RegressionTest320 (4ms / 356):[0m
+    [junit] MAJOR: 362569 (3 / 356 / 356) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 397 (11080-150-0) / 147
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m245/625 - RegressionTest321 (4ms / 413):[0m
+    [junit] MAJOR: 365041 (0 / 413 / 413) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 397 (11108-150-0) / 147
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m246/625 - RegressionTest323 (4ms / 437):[0m
+    [junit] MAJOR: 367764 (3 / 437 / 437) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 400 (11203-150-0) / 144
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m247/625 - RegressionTest327 (4ms / 485):[0m
+    [junit] MAJOR: 370621 (0 / 485 / 485) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 400 (11399-152-0) / 144
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m248/625 - RegressionTest328 (4ms / 439):[0m
+    [junit] MAJOR: 372550 (0 / 439 / 439) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 400 (11424-154-0) / 144
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m249/625 - RegressionTest33 (4ms / 428):[0m
+    [junit] MAJOR: 374393 (0 / 428 / 428) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 400 (11625-158-0) / 144
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m250/625 - RegressionTest330 (4ms / 307):[0m
+    [junit] MAJOR: 375694 (0 / 307 / 307) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 400 (11625-158-0) / 144
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m251/625 - RegressionTest331 (4ms / 211):[0m
+    [junit] MAJOR: 376583 (4 / 211 / 211) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 404 (11651-160-0) / 140
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m252/625 - RegressionTest332 (4ms / 381):[0m
+    [junit] MAJOR: 378261 (0 / 381 / 381) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 404 (11658-160-0) / 140
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m253/625 - RegressionTest333 (4ms / 243):[0m
+    [junit] MAJOR: 379320 (0 / 243 / 243) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 404 (11658-160-0) / 140
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m254/625 - RegressionTest334 (4ms / 413):[0m
+    [junit] MAJOR: 381158 (0 / 413 / 413) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 404 (11710-160-0) / 140
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m255/625 - RegressionTest335 (4ms / 70):[0m
+    [junit] MAJOR: 381466 (0 / 70 / 70) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 404 (11717-160-0) / 140
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m256/625 - RegressionTest336 (4ms / 291):[0m
+    [junit] MAJOR: 382824 (0 / 291 / 291) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 404 (11841-160-0) / 140
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m257/625 - RegressionTest337 (4ms / 432):[0m
+    [junit] MAJOR: 384867 (0 / 432 / 432) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 404 (11868-160-0) / 140
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m258/625 - RegressionTest338 (4ms / 278):[0m
+    [junit] MAJOR: 386134 (0 / 278 / 278) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 404 (11875-160-0) / 140
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m259/625 - RegressionTest339 (4ms / 79):[0m
+    [junit] MAJOR: 386500 (0 / 79 / 79) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 404 (11888-160-0) / 140
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m260/625 - RegressionTest34 (4ms / 346):[0m
+    [junit] MAJOR: 388155 (0 / 346 / 346) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 404 (12008-160-0) / 140
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m261/625 - RegressionTest340 (4ms / 444):[0m
+    [junit] MAJOR: 390447 (0 / 444 / 444) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 404 (12248-162-0) / 140
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m262/625 - RegressionTest341 (4ms / 369):[0m
+    [junit] MAJOR: 392271 (0 / 369 / 369) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 404 (12271-164-0) / 140
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m263/625 - RegressionTest342 (4ms / 292):[0m
+    [junit] MAJOR: 393847 (4 / 292 / 292) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12346-164-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m264/625 - RegressionTest344 (4ms / 437):[0m
+    [junit] MAJOR: 396070 (0 / 437 / 437) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12548-166-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m265/625 - RegressionTest347 (4ms / 289):[0m
+    [junit] MAJOR: 397531 (0 / 289 / 289) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12555-168-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m266/625 - RegressionTest349 (4ms / 418):[0m
+    [junit] MAJOR: 399747 (0 / 418 / 418) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12693-170-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m267/625 - RegressionTest35 (4ms / 313):[0m
+    [junit] MAJOR: 401327 (0 / 313 / 313) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12700-170-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m268/625 - RegressionTest350 (4ms / 427):[0m
+    [junit] MAJOR: 403770 (0 / 427 / 427) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12782-172-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m269/625 - RegressionTest351 (4ms / 435):[0m
+    [junit] MAJOR: 406112 (0 / 435 / 435) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12850-172-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m270/625 - RegressionTest352 (4ms / 409):[0m
+    [junit] MAJOR: 408341 (0 / 409 / 409) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12856-172-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m271/625 - RegressionTest353 (4ms / 393):[0m
+    [junit] MAJOR: 410447 (0 / 393 / 393) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12866-174-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m272/625 - RegressionTest354 (4ms / 360):[0m
+    [junit] MAJOR: 412398 (0 / 360 / 360) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12893-174-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m273/625 - RegressionTest355 (4ms / 424):[0m
+    [junit] MAJOR: 414874 (0 / 424 / 424) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12935-174-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m274/625 - RegressionTest356 (4ms / 251):[0m
+    [junit] MAJOR: 416289 (0 / 251 / 251) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12935-174-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m275/625 - RegressionTest357 (4ms / 366):[0m
+    [junit] MAJOR: 418409 (0 / 366 / 366) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12935-174-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m276/625 - RegressionTest358 (4ms / 313):[0m
+    [junit] MAJOR: 420165 (0 / 313 / 313) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12956-174-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m277/625 - RegressionTest359 (4ms / 302):[0m
+    [junit] MAJOR: 421968 (0 / 302 / 302) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12963-174-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m278/625 - RegressionTest36 (4ms / 224):[0m
+    [junit] MAJOR: 423256 (0 / 224 / 224) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12973-174-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m279/625 - RegressionTest360 (4ms / 155):[0m
+    [junit] MAJOR: 424148 (0 / 155 / 155) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12973-174-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m280/625 - RegressionTest361 (4ms / 285):[0m
+    [junit] MAJOR: 425747 (0 / 285 / 285) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (12973-174-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m281/625 - RegressionTest362 (4ms / 438):[0m
+    [junit] MAJOR: 428399 (0 / 438 / 438) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 408 (13169-176-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m282/625 - RegressionTest363 (4ms / 12):[0m
+    [junit] MAJOR: 428480 (0 / 12 / 12) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 408 (13169-176-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m283/625 - RegressionTest364 (4ms / 373):[0m
+    [junit] MAJOR: 430692 (0 / 373 / 373) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (13176-178-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m284/625 - RegressionTest365 (4ms / 418):[0m
+    [junit] MAJOR: 432440 (0 / 418 / 418) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 408 (13314-180-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m285/625 - RegressionTest366 (4ms / 472):[0m
+    [junit] MAJOR: 434492 (0 / 472 / 472) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 408 (13529-182-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m286/625 - RegressionTest367 (4ms / 469):[0m
+    [junit] MAJOR: 436494 (0 / 469 / 469) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 408 (13594-182-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m287/625 - RegressionTest369 (4ms / 402):[0m
+    [junit] MAJOR: 438268 (0 / 402 / 402) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 408 (13601-182-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m288/625 - RegressionTest37 (4ms / 83):[0m
+    [junit] MAJOR: 438648 (0 / 83 / 83) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 408 (13601-182-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m289/625 - RegressionTest370 (4ms / 440):[0m
+    [junit] MAJOR: 440532 (0 / 440 / 440) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 408 (13620-184-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m290/625 - RegressionTest371 (4ms / 460):[0m
+    [junit] MAJOR: 442965 (0 / 460 / 460) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (13696-186-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m291/625 - RegressionTest372 (4ms / 427):[0m
+    [junit] MAJOR: 445143 (0 / 427 / 427) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (13884-188-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m292/625 - RegressionTest374 (4ms / 245):[0m
+    [junit] MAJOR: 446278 (0 / 245 / 245) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 408 (13902-190-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m293/625 - RegressionTest375 (4ms / 463):[0m
+    [junit] MAJOR: 448754 (0 / 463 / 463) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (13978-192-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m294/625 - RegressionTest376 (4ms / 321):[0m
+    [junit] MAJOR: 450460 (0 / 321 / 321) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (13985-192-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m295/625 - RegressionTest377 (4ms / 429):[0m
+    [junit] MAJOR: 452790 (0 / 429 / 429) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (14067-194-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m296/625 - RegressionTest378 (4ms / 485):[0m
+    [junit] MAJOR: 455441 (0 / 485 / 485) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (14263-196-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m297/625 - RegressionTest379 (4ms / 303):[0m
+    [junit] MAJOR: 457145 (0 / 303 / 303) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (14401-198-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m298/625 - RegressionTest38 (4ms / 300):[0m
+    [junit] MAJOR: 458730 (0 / 300 / 300) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 408 (14520-198-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m299/625 - RegressionTest380 (4ms / 300):[0m
+    [junit] MAJOR: 460336 (6 / 300 / 300) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 414 (14649-198-0) / 130
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m300/625 - RegressionTest381 (4ms / 251):[0m
+    [junit] MAJOR: 461647 (0 / 251 / 251) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 414 (14649-198-0) / 130
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m301/625 - RegressionTest384 (4ms / 476):[0m
+    [junit] MAJOR: 464310 (1 / 476 / 476) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (14790-200-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m302/625 - RegressionTest385 (4ms / 322):[0m
+    [junit] MAJOR: 466017 (0 / 322 / 322) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (14832-200-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m303/625 - RegressionTest386 (4ms / 416):[0m
+    [junit] MAJOR: 468510 (0 / 416 / 416) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (14924-202-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m304/625 - RegressionTest387 (4ms / 254):[0m
+    [junit] MAJOR: 470052 (0 / 254 / 254) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 415 (14950-202-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m305/625 - RegressionTest388 (4ms / 356):[0m
+    [junit] MAJOR: 472018 (0 / 356 / 356) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (14959-202-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m306/625 - RegressionTest389 (4ms / 254):[0m
+    [junit] MAJOR: 473492 (0 / 254 / 254) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (14959-202-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m307/625 - RegressionTest39 (4ms / 413):[0m
+    [junit] MAJOR: 475824 (0 / 413 / 413) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (14965-202-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m308/625 - RegressionTest390 (4ms / 302):[0m
+    [junit] MAJOR: 477574 (0 / 302 / 302) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (14972-202-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m309/625 - RegressionTest392 (4ms / 444):[0m
+    [junit] MAJOR: 480246 (0 / 444 / 444) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 415 (14979-204-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m310/625 - RegressionTest393 (4ms / 373):[0m
+    [junit] MAJOR: 482427 (0 / 373 / 373) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (14986-206-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m311/625 - RegressionTest394 (4ms / 246):[0m
+    [junit] MAJOR: 483915 (0 / 246 / 246) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 415 (14988-206-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m312/625 - RegressionTest395 (4ms / 317):[0m
+    [junit] MAJOR: 485994 (0 / 317 / 317) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 415 (14995-206-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m313/625 - RegressionTest396 (4ms / 440):[0m
+    [junit] MAJOR: 489013 (0 / 440 / 440) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 415 (15241-208-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m314/625 - RegressionTest397 (4ms / 12):[0m
+    [junit] MAJOR: 489093 (0 / 12 / 12) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 415 (15241-208-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m315/625 - RegressionTest398 (4ms / 33):[0m
+    [junit] MAJOR: 489253 (0 / 33 / 33) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (15244-208-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m316/625 - RegressionTest399 (4ms / 485):[0m
+    [junit] MAJOR: 492599 (0 / 485 / 485) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 415 (15440-210-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m317/625 - RegressionTest40 (4ms / 256):[0m
+    [junit] MAJOR: 494422 (0 / 256 / 256) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 415 (15457-212-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m318/625 - RegressionTest400 (4ms / 403):[0m
+    [junit] MAJOR: 496557 (0 / 403 / 403) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (15582-212-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m319/625 - RegressionTest401 (4ms / 266):[0m
+    [junit] MAJOR: 497722 (0 / 266 / 266) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (15728-214-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m320/625 - RegressionTest403 (4ms / 300):[0m
+    [junit] MAJOR: 498989 (0 / 300 / 300) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (15728-214-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m321/625 - RegressionTest404 (4ms / 253):[0m
+    [junit] MAJOR: 500006 (0 / 253 / 253) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (15742-214-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m322/625 - RegressionTest405 (4ms / 79):[0m
+    [junit] MAJOR: 500317 (0 / 79 / 79) -> AVG-RTPM: 3ms
+    [junit] MAJOR: Mutants killed / live: 415 (15749-214-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m323/625 - RegressionTest408 (4ms / 392):[0m
+    [junit] MAJOR: 502073 (0 / 392 / 392) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (15755-214-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m324/625 - RegressionTest409 (4ms / 441):[0m
+    [junit] MAJOR: 504249 (0 / 441 / 441) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (15755-216-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m325/625 - RegressionTest41 (4ms / 427):[0m
+    [junit] MAJOR: 506362 (0 / 427 / 427) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (15943-218-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m326/625 - RegressionTest410 (4ms / 416):[0m
+    [junit] MAJOR: 508396 (0 / 416 / 416) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (15983-220-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m327/625 - RegressionTest411 (4ms / 465):[0m
+    [junit] MAJOR: 510649 (0 / 465 / 465) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (15990-220-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m328/625 - RegressionTest413 (4ms / 429):[0m
+    [junit] MAJOR: 512910 (0 / 429 / 429) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (16232-222-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m329/625 - RegressionTest414 (4ms / 168):[0m
+    [junit] MAJOR: 513733 (0 / 168 / 168) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (16243-222-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m330/625 - RegressionTest415 (4ms / 427):[0m
+    [junit] MAJOR: 515898 (0 / 427 / 427) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (16431-224-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m331/625 - RegressionTest416 (4ms / 412):[0m
+    [junit] MAJOR: 517984 (0 / 412 / 412) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (16438-226-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m332/625 - RegressionTest417 (4ms / 251):[0m
+    [junit] MAJOR: 519249 (0 / 251 / 251) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (16486-226-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m333/625 - RegressionTest418 (4ms / 273):[0m
+    [junit] MAJOR: 520617 (0 / 273 / 273) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (16509-226-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m334/625 - RegressionTest419 (4ms / 438):[0m
+    [junit] MAJOR: 523131 (0 / 438 / 438) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (16698-228-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m335/625 - RegressionTest42 (4ms / 254):[0m
+    [junit] MAJOR: 524443 (0 / 254 / 254) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (16731-228-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m336/625 - RegressionTest421 (4ms / 189):[0m
+    [junit] MAJOR: 525414 (0 / 189 / 189) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (16777-228-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m337/625 - RegressionTest422 (4ms / 442):[0m
+    [junit] MAJOR: 527812 (0 / 442 / 442) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (17019-230-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m338/625 - RegressionTest423 (4ms / 441):[0m
+    [junit] MAJOR: 530202 (0 / 441 / 441) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (17032-232-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m339/625 - RegressionTest424 (4ms / 249):[0m
+    [junit] MAJOR: 531518 (0 / 249 / 249) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (17032-232-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m340/625 - RegressionTest425 (4ms / 427):[0m
+    [junit] MAJOR: 534018 (0 / 427 / 427) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (17240-234-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m341/625 - RegressionTest426 (4ms / 380):[0m
+    [junit] MAJOR: 536187 (0 / 380 / 380) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (17240-234-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m342/625 - RegressionTest427 (4ms / 235):[0m
+    [junit] MAJOR: 537446 (0 / 235 / 235) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (17247-234-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m343/625 - RegressionTest429 (4ms / 440):[0m
+    [junit] MAJOR: 539978 (0 / 440 / 440) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (17446-236-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m344/625 - RegressionTest43 (4ms / 282):[0m
+    [junit] MAJOR: 541521 (0 / 282 / 282) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (17446-236-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m345/625 - RegressionTest430 (4ms / 119):[0m
+    [junit] MAJOR: 542191 (0 / 119 / 119) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (17452-236-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m346/625 - RegressionTest432 (4ms / 437):[0m
+    [junit] MAJOR: 544705 (0 / 437 / 437) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (17459-236-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m347/625 - RegressionTest433 (4ms / 309):[0m
+    [junit] MAJOR: 546616 (0 / 309 / 309) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 415 (17501-236-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m348/625 - RegressionTest434 (4ms / 12):[0m
+    [junit] MAJOR: 546674 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (17501-236-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m349/625 - RegressionTest435 (4ms / 438):[0m
+    [junit] MAJOR: 549401 (0 / 438 / 438) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 415 (17690-238-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m350/625 - RegressionTest436 (4ms / 360):[0m
+    [junit] MAJOR: 551516 (0 / 360 / 360) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (17831-238-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m351/625 - RegressionTest437 (4ms / 395):[0m
+    [junit] MAJOR: 553964 (0 / 395 / 395) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 415 (17901-240-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m352/625 - RegressionTest438 (4ms / 432):[0m
+    [junit] MAJOR: 556935 (0 / 432 / 432) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 415 (18143-242-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m353/625 - RegressionTest439 (4ms / 83):[0m
+    [junit] MAJOR: 557431 (0 / 83 / 83) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (18150-242-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m354/625 - RegressionTest44 (4ms / 156):[0m
+    [junit] MAJOR: 558657 (0 / 156 / 156) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 415 (18159-242-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m355/625 - RegressionTest440 (4ms / 454):[0m
+    [junit] MAJOR: 560590 (0 / 454 / 454) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (18287-242-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m356/625 - RegressionTest441 (4ms / 412):[0m
+    [junit] MAJOR: 562307 (0 / 412 / 412) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (18467-242-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m357/625 - RegressionTest442 (4ms / 319):[0m
+    [junit] MAJOR: 563640 (0 / 319 / 319) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (18474-244-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m358/625 - RegressionTest443 (4ms / 303):[0m
+    [junit] MAJOR: 564915 (0 / 303 / 303) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (18474-244-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m359/625 - RegressionTest444 (4ms / 477):[0m
+    [junit] MAJOR: 567013 (0 / 477 / 477) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (18572-246-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m360/625 - RegressionTest445 (4ms / 248):[0m
+    [junit] MAJOR: 568107 (0 / 248 / 248) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (18572-246-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m361/625 - RegressionTest446 (4ms / 427):[0m
+    [junit] MAJOR: 570072 (0 / 427 / 427) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (18760-248-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m362/625 - RegressionTest447 (4ms / 12):[0m
+    [junit] MAJOR: 570126 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (18760-248-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m363/625 - RegressionTest448 (4ms / 416):[0m
+    [junit] MAJOR: 572006 (0 / 416 / 416) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (18852-250-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m364/625 - RegressionTest449 (4ms / 424):[0m
+    [junit] MAJOR: 574411 (0 / 424 / 424) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (19040-250-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m365/625 - RegressionTest45 (4ms / 215):[0m
+    [junit] MAJOR: 575382 (0 / 215 / 215) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (19051-250-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m366/625 - RegressionTest451 (4ms / 463):[0m
+    [junit] MAJOR: 577674 (0 / 463 / 463) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (19067-252-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m367/625 - RegressionTest452 (4ms / 402):[0m
+    [junit] MAJOR: 579723 (0 / 402 / 402) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (19073-252-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m368/625 - RegressionTest453 (4ms / 241):[0m
+    [junit] MAJOR: 581050 (0 / 241 / 241) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (19210-252-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m369/625 - RegressionTest454 (4ms / 211):[0m
+    [junit] MAJOR: 582103 (0 / 211 / 211) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 415 (19210-254-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m370/625 - RegressionTest455 (4ms / 438):[0m
+    [junit] MAJOR: 584515 (0 / 438 / 438) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (19411-256-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m371/625 - RegressionTest457 (4ms / 431):[0m
+    [junit] MAJOR: 586758 (0 / 431 / 431) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (19439-256-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m372/625 - RegressionTest458 (4ms / 309):[0m
+    [junit] MAJOR: 588334 (0 / 309 / 309) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (19481-256-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m373/625 - RegressionTest459 (4ms / 164):[0m
+    [junit] MAJOR: 589280 (0 / 164 / 164) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 415 (19560-256-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m374/625 - RegressionTest46 (4ms / 405):[0m
+    [junit] MAJOR: 591311 (4 / 405 / 405) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 419 (19828-256-0) / 125
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m375/625 - RegressionTest460 (4ms / 427):[0m
+    [junit] MAJOR: 593754 (0 / 427 / 427) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 419 (20044-258-0) / 125
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m376/625 - RegressionTest461 (4ms / 399):[0m
+    [junit] MAJOR: 595896 (6 / 399 / 399) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 425 (20137-258-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m377/625 - RegressionTest462 (4ms / 165):[0m
+    [junit] MAJOR: 596776 (0 / 165 / 165) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 425 (20137-258-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m378/625 - RegressionTest463 (4ms / 66):[0m
+    [junit] MAJOR: 597095 (0 / 66 / 66) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (20137-258-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m379/625 - RegressionTest464 (4ms / 440):[0m
+    [junit] MAJOR: 599732 (0 / 440 / 440) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 425 (20331-260-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m380/625 - RegressionTest465 (4ms / 292):[0m
+    [junit] MAJOR: 601357 (0 / 292 / 292) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 425 (20357-260-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m381/625 - RegressionTest466 (4ms / 471):[0m
+    [junit] MAJOR: 604294 (0 / 471 / 471) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (20375-260-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m382/625 - RegressionTest468 (4ms / 278):[0m
+    [junit] MAJOR: 605900 (0 / 278 / 278) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 425 (20375-260-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m383/625 - RegressionTest47 (4ms / 289):[0m
+    [junit] MAJOR: 607754 (0 / 289 / 289) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (20382-260-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m384/625 - RegressionTest470 (4ms / 430):[0m
+    [junit] MAJOR: 610304 (0 / 430 / 430) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 425 (20448-260-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m385/625 - RegressionTest471 (4ms / 165):[0m
+    [junit] MAJOR: 611392 (0 / 165 / 165) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (20448-260-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m386/625 - RegressionTest473 (4ms / 265):[0m
+    [junit] MAJOR: 612925 (0 / 265 / 265) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 425 (20461-260-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m387/625 - RegressionTest474 (4ms / 354):[0m
+    [junit] MAJOR: 615079 (0 / 354 / 354) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (20576-260-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m388/625 - RegressionTest475 (4ms / 392):[0m
+    [junit] MAJOR: 617555 (0 / 392 / 392) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (20656-260-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m389/625 - RegressionTest476 (4ms / 427):[0m
+    [junit] MAJOR: 620069 (0 / 427 / 427) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 425 (20933-260-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m390/625 - RegressionTest478 (4ms / 411):[0m
+    [junit] MAJOR: 622539 (0 / 411 / 411) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (20940-260-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m391/625 - RegressionTest48 (4ms / 59):[0m
+    [junit] MAJOR: 622901 (0 / 59 / 59) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (20940-260-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m392/625 - RegressionTest481 (4ms / 287):[0m
+    [junit] MAJOR: 624488 (0 / 287 / 287) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 425 (20947-262-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m393/625 - RegressionTest482 (4ms / 485):[0m
+    [junit] MAJOR: 626515 (0 / 485 / 485) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (21143-264-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m394/625 - RegressionTest483 (4ms / 461):[0m
+    [junit] MAJOR: 628507 (0 / 461 / 461) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (21209-266-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m395/625 - RegressionTest485 (4ms / 395):[0m
+    [junit] MAJOR: 630186 (0 / 395 / 395) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (21230-268-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m396/625 - RegressionTest487 (4ms / 294):[0m
+    [junit] MAJOR: 631430 (0 / 294 / 294) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (21230-268-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m397/625 - RegressionTest489 (4ms / 288):[0m
+    [junit] MAJOR: 632696 (0 / 288 / 288) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (21237-268-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m398/625 - RegressionTest490 (4ms / 364):[0m
+    [junit] MAJOR: 634389 (0 / 364 / 364) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (21249-268-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m399/625 - RegressionTest492 (4ms / 397):[0m
+    [junit] MAJOR: 636161 (0 / 397 / 397) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (21390-270-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m400/625 - RegressionTest493 (4ms / 93):[0m
+    [junit] MAJOR: 636561 (0 / 93 / 93) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (21392-270-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m401/625 - RegressionTest494 (4ms / 288):[0m
+    [junit] MAJOR: 637917 (0 / 288 / 288) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (21392-270-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m402/625 - RegressionTest495 (4ms / 437):[0m
+    [junit] MAJOR: 640006 (0 / 437 / 437) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (21434-270-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m403/625 - RegressionTest496 (4ms / 405):[0m
+    [junit] MAJOR: 641963 (0 / 405 / 405) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (21455-272-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m404/625 - RegressionTest497 (4ms / 320):[0m
+    [junit] MAJOR: 643540 (0 / 320 / 320) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (21455-272-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m405/625 - RegressionTest498 (4ms / 463):[0m
+    [junit] MAJOR: 645824 (0 / 463 / 463) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (21574-274-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m406/625 - RegressionTest499 (4ms / 340):[0m
+    [junit] MAJOR: 647530 (0 / 340 / 340) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 425 (21715-274-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m407/625 - RegressionTest5 (4ms / 54):[0m
+    [junit] MAJOR: 647866 (0 / 54 / 54) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (21728-274-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m408/625 - RegressionTest50 (4ms / 219):[0m
+    [junit] MAJOR: 648961 (0 / 219 / 219) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 425 (21728-274-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m409/625 - RegressionTest500 (4ms / 29):[0m
+    [junit] MAJOR: 649101 (0 / 29 / 29) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (21728-274-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m410/625 - RegressionTest501 (4ms / 317):[0m
+    [junit] MAJOR: 650667 (0 / 317 / 317) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (21746-274-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m411/625 - RegressionTest502 (4ms / 485):[0m
+    [junit] MAJOR: 653812 (0 / 485 / 485) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (21944-276-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m412/625 - RegressionTest503 (4ms / 409):[0m
+    [junit] MAJOR: 656723 (0 / 409 / 409) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 425 (21944-276-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m413/625 - RegressionTest504 (4ms / 495):[0m
+    [junit] MAJOR: 660182 (0 / 495 / 495) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (22140-278-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m414/625 - RegressionTest505 (4ms / 429):[0m
+    [junit] MAJOR: 663607 (0 / 429 / 429) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 425 (22328-280-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m415/625 - RegressionTest506 (4ms / 12):[0m
+    [junit] MAJOR: 663689 (0 / 12 / 12) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (22328-280-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m416/625 - RegressionTest507 (4ms / 419):[0m
+    [junit] MAJOR: 666640 (0 / 419 / 419) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 425 (22355-282-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m417/625 - RegressionTest508 (4ms / 278):[0m
+    [junit] MAJOR: 668239 (0 / 278 / 278) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 425 (22362-282-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m418/625 - RegressionTest510 (4ms / 367):[0m
+    [junit] MAJOR: 670464 (0 / 367 / 367) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (22378-282-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m419/625 - RegressionTest511 (4ms / 393):[0m
+    [junit] MAJOR: 672795 (0 / 393 / 393) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 425 (22378-284-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m420/625 - RegressionTest512 (4ms / 44):[0m
+    [junit] MAJOR: 673074 (0 / 44 / 44) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (22378-284-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m421/625 - RegressionTest513 (4ms / 426):[0m
+    [junit] MAJOR: 675791 (0 / 426 / 426) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (22446-286-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m422/625 - RegressionTest514 (4ms / 495):[0m
+    [junit] MAJOR: 678845 (0 / 495 / 495) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (22651-288-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m423/625 - RegressionTest515 (4ms / 437):[0m
+    [junit] MAJOR: 681470 (0 / 437 / 437) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (22738-288-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m424/625 - RegressionTest516 (4ms / 437):[0m
+    [junit] MAJOR: 684149 (0 / 437 / 437) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (22816-288-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m425/625 - RegressionTest517 (4ms / 322):[0m
+    [junit] MAJOR: 686141 (0 / 322 / 322) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (22858-288-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m426/625 - RegressionTest518 (4ms / 37):[0m
+    [junit] MAJOR: 686393 (0 / 37 / 37) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (22858-288-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m427/625 - RegressionTest519 (4ms / 340):[0m
+    [junit] MAJOR: 688637 (0 / 340 / 340) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (22871-290-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m428/625 - RegressionTest52 (4ms / 356):[0m
+    [junit] MAJOR: 691046 (0 / 356 / 356) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 425 (22878-290-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m429/625 - RegressionTest520 (4ms / 158):[0m
+    [junit] MAJOR: 692207 (0 / 158 / 158) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 425 (22878-290-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m430/625 - RegressionTest522 (4ms / 242):[0m
+    [junit] MAJOR: 693206 (0 / 242 / 242) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (22878-290-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m431/625 - RegressionTest524 (4ms / 308):[0m
+    [junit] MAJOR: 694655 (0 / 308 / 308) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (23037-290-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m432/625 - RegressionTest525 (4ms / 316):[0m
+    [junit] MAJOR: 696339 (0 / 316 / 316) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 425 (23071-290-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m433/625 - RegressionTest526 (4ms / 297):[0m
+    [junit] MAJOR: 697638 (0 / 297 / 297) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (23071-292-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m434/625 - RegressionTest527 (4ms / 297):[0m
+    [junit] MAJOR: 699010 (0 / 297 / 297) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (23078-294-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m435/625 - RegressionTest528 (4ms / 207):[0m
+    [junit] MAJOR: 699944 (0 / 207 / 207) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (23124-294-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m436/625 - RegressionTest529 (4ms / 303):[0m
+    [junit] MAJOR: 701357 (0 / 303 / 303) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (23268-296-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m437/625 - RegressionTest53 (4ms / 404):[0m
+    [junit] MAJOR: 703216 (0 / 404 / 404) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (23268-296-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m438/625 - RegressionTest530 (4ms / 463):[0m
+    [junit] MAJOR: 705411 (0 / 463 / 463) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (23284-298-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m439/625 - RegressionTest532 (4ms / 422):[0m
+    [junit] MAJOR: 707392 (0 / 422 / 422) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (23303-298-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m440/625 - RegressionTest533 (4ms / 218):[0m
+    [junit] MAJOR: 708451 (0 / 218 / 218) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (23310-298-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m441/625 - RegressionTest534 (4ms / 297):[0m
+    [junit] MAJOR: 709846 (0 / 297 / 297) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (23332-298-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m442/625 - RegressionTest535 (4ms / 403):[0m
+    [junit] MAJOR: 711734 (0 / 403 / 403) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (23468-300-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m443/625 - RegressionTest538 (4ms / 436):[0m
+    [junit] MAJOR: 713946 (0 / 436 / 436) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 425 (23520-300-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m444/625 - RegressionTest54 (4ms / 268):[0m
+    [junit] MAJOR: 715230 (0 / 268 / 268) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (23520-300-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m445/625 - RegressionTest540 (4ms / 270):[0m
+    [junit] MAJOR: 716533 (0 / 270 / 270) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 425 (23666-302-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m446/625 - RegressionTest542 (4ms / 438):[0m
+    [junit] MAJOR: 718819 (0 / 438 / 438) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 425 (23666-302-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m447/625 - RegressionTest543 (4ms / 437):[0m
+    [junit] MAJOR: 721017 (0 / 437 / 437) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 425 (23718-302-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m448/625 - RegressionTest546 (4ms / 428):[0m
+    [junit] MAJOR: 723336 (1 / 428 / 428) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (23919-304-0) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m449/625 - RegressionTest547 (4ms / 346):[0m
+    [junit] MAJOR: 725145 (0 / 346 / 346) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (23925-304-0) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m450/625 - RegressionTest548 (4ms / 223):[0m
+    [junit] MAJOR: 726335 (0 / 223 / 223) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (23932-304-0) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m451/625 - RegressionTest549 (4ms / 480):[0m
+    [junit] MAJOR: 729031 (0 / 480 / 480) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (23976-304-0) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m452/625 - RegressionTest55 (4ms / 405):[0m
+    [junit] MAJOR: 731301 (0 / 405 / 405) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (24081-304-0) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m453/625 - RegressionTest551 (4ms / 278):[0m
+    [junit] MAJOR: 732768 (0 / 278 / 278) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (24099-304-0) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m454/625 - RegressionTest552 (4ms / 12):[0m
+    [junit] MAJOR: 732813 (0 / 12 / 12) -> AVG-RTPM: 3ms
+    [junit] MAJOR: Mutants killed / live: 426 (24099-304-0) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m455/625 - RegressionTest553 (4ms / 360):[0m
+    [junit] MAJOR: 735078 (0 / 360 / 360) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (24099-304-0) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m456/625 - RegressionTest554 (4ms / 427):[0m
+    [junit] MAJOR: 737856 (0 / 427 / 427) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (24287-306-0) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m457/625 - RegressionTest555 (4ms / 12):[0m
+    [junit] MAJOR: 737907 (0 / 12 / 12) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (24287-306-0) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m458/625 - RegressionTest556 (4ms / 363):[0m
+    [junit] MAJOR: 740190 (0 / 363 / 363) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (24370-306-0) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m459/625 - RegressionTest557 (4ms / 443):[0m
+    [junit] MAJOR: 742790 (0 / 443 / 443) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (24612-308-0) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m460/625 - RegressionTest558 (4ms / 266):[0m
+    [junit] MAJOR: 744381 (0 / 266 / 266) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (24758-310-0) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m461/625 - RegressionTest559 (4ms / 415):[0m
+    [junit] MAJOR: 746885 (0 / 415 / 415) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (24828-310-0) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m462/625 - RegressionTest560 (4ms / 28):[0m
+    [junit] MAJOR: 747059 (0 / 28 / 28) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (24830-310-0) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m463/625 - RegressionTest561 (4ms / 370):[0m
+    [junit] MAJOR: 749489 (0 / 370 / 370) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (24834-310-0) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m464/625 - RegressionTest563 (4ms / 441):[0m
+    [junit] MAJOR: 752260 (0 / 441 / 441) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (24834-310-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m465/625 - RegressionTest564 (4ms / 270):[0m
+    [junit] MAJOR: 754050 (0 / 270 / 270) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (24896-312-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m466/625 - RegressionTest565 (4ms / 395):[0m
+    [junit] MAJOR: 756634 (0 / 395 / 395) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (24962-314-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m467/625 - RegressionTest566 (4ms / 431):[0m
+    [junit] MAJOR: 759307 (0 / 431 / 431) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (24962-314-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m468/625 - RegressionTest567 (4ms / 302):[0m
+    [junit] MAJOR: 760577 (0 / 302 / 302) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (24980-314-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m469/625 - RegressionTest568 (4ms / 380):[0m
+    [junit] MAJOR: 762247 (0 / 380 / 380) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (25046-314-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m470/625 - RegressionTest569 (4ms / 444):[0m
+    [junit] MAJOR: 764278 (0 / 444 / 444) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (25258-316-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m471/625 - RegressionTest570 (4ms / 268):[0m
+    [junit] MAJOR: 765432 (0 / 268 / 268) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (25276-318-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m472/625 - RegressionTest574 (4ms / 302):[0m
+    [junit] MAJOR: 766802 (0 / 302 / 302) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (25276-318-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m473/625 - RegressionTest575 (4ms / 427):[0m
+    [junit] MAJOR: 768780 (0 / 427 / 427) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (25466-320-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m474/625 - RegressionTest576 (4ms / 314):[0m
+    [junit] MAJOR: 770156 (0 / 314 / 314) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (25466-320-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m475/625 - RegressionTest579 (4ms / 287):[0m
+    [junit] MAJOR: 771447 (0 / 287 / 287) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (25473-322-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m476/625 - RegressionTest58 (4ms / 396):[0m
+    [junit] MAJOR: 773361 (0 / 396 / 396) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (25479-322-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m477/625 - RegressionTest580 (4ms / 83):[0m
+    [junit] MAJOR: 773782 (0 / 83 / 83) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (25485-322-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m478/625 - RegressionTest581 (4ms / 292):[0m
+    [junit] MAJOR: 775174 (0 / 292 / 292) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (25491-322-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m479/625 - RegressionTest583 (4ms / 392):[0m
+    [junit] MAJOR: 777021 (0 / 392 / 392) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (25510-322-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m480/625 - RegressionTest584 (4ms / 472):[0m
+    [junit] MAJOR: 779450 (0 / 472 / 472) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (25700-324-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m481/625 - RegressionTest586 (4ms / 361):[0m
+    [junit] MAJOR: 781206 (0 / 361 / 361) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (25846-326-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m482/625 - RegressionTest589 (4ms / 416):[0m
+    [junit] MAJOR: 783298 (0 / 416 / 416) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (25853-328-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m483/625 - RegressionTest59 (4ms / 389):[0m
+    [junit] MAJOR: 785250 (0 / 389 / 389) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (25859-330-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m484/625 - RegressionTest591 (4ms / 427):[0m
+    [junit] MAJOR: 787679 (0 / 427 / 427) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (26059-332-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m485/625 - RegressionTest592 (4ms / 240):[0m
+    [junit] MAJOR: 789138 (0 / 240 / 240) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (26066-332-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m486/625 - RegressionTest595 (4ms / 483):[0m
+    [junit] MAJOR: 791867 (0 / 483 / 483) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (26254-334-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m487/625 - RegressionTest597 (4ms / 462):[0m
+    [junit] MAJOR: 794509 (0 / 462 / 462) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (26275-334-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m488/625 - RegressionTest598 (4ms / 235):[0m
+    [junit] MAJOR: 795914 (0 / 235 / 235) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (26275-334-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m489/625 - RegressionTest599 (4ms / 403):[0m
+    [junit] MAJOR: 798299 (0 / 403 / 403) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (26299-334-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m490/625 - RegressionTest6 (4ms / 216):[0m
+    [junit] MAJOR: 799556 (0 / 216 / 216) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (26382-334-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m491/625 - RegressionTest60 (4ms / 401):[0m
+    [junit] MAJOR: 801907 (0 / 401 / 401) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (26514-334-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m492/625 - RegressionTest600 (4ms / 275):[0m
+    [junit] MAJOR: 803570 (0 / 275 / 275) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (26521-334-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m493/625 - RegressionTest601 (4ms / 472):[0m
+    [junit] MAJOR: 806529 (0 / 472 / 472) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (26713-336-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m494/625 - RegressionTest602 (4ms / 363):[0m
+    [junit] MAJOR: 808681 (0 / 363 / 363) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (26723-338-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m495/625 - RegressionTest604 (4ms / 112):[0m
+    [junit] MAJOR: 809442 (0 / 112 / 112) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (26729-338-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m496/625 - RegressionTest605 (4ms / 403):[0m
+    [junit] MAJOR: 811924 (0 / 403 / 403) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (26868-338-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m497/625 - RegressionTest606 (4ms / 268):[0m
+    [junit] MAJOR: 813558 (0 / 268 / 268) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (26875-338-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m498/625 - RegressionTest608 (4ms / 256):[0m
+    [junit] MAJOR: 815117 (0 / 256 / 256) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (26887-340-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m499/625 - RegressionTest609 (4ms / 495):[0m
+    [junit] MAJOR: 818423 (0 / 495 / 495) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (27084-342-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m500/625 - RegressionTest61 (4ms / 427):[0m
+    [junit] MAJOR: 821103 (0 / 427 / 427) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (27284-344-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m501/625 - RegressionTest610 (4ms / 231):[0m
+    [junit] MAJOR: 822617 (0 / 231 / 231) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (27284-344-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m502/625 - RegressionTest611 (4ms / 309):[0m
+    [junit] MAJOR: 824552 (0 / 309 / 309) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (27379-344-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m503/625 - RegressionTest612 (4ms / 317):[0m
+    [junit] MAJOR: 826550 (0 / 317 / 317) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 426 (27379-344-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m504/625 - RegressionTest613 (4ms / 427):[0m
+    [junit] MAJOR: 828442 (0 / 427 / 427) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (27587-346-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m505/625 - RegressionTest615 (4ms / 440):[0m
+    [junit] MAJOR: 830349 (0 / 440 / 440) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (27629-346-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m506/625 - RegressionTest616 (4ms / 175):[0m
+    [junit] MAJOR: 831051 (0 / 175 / 175) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (27629-346-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m507/625 - RegressionTest617 (4ms / 438):[0m
+    [junit] MAJOR: 833100 (0 / 438 / 438) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (27841-348-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m508/625 - RegressionTest618 (4ms / 242):[0m
+    [junit] MAJOR: 834158 (0 / 242 / 242) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (27848-348-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m509/625 - RegressionTest619 (4ms / 429):[0m
+    [junit] MAJOR: 836076 (0 / 429 / 429) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (28048-350-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m510/625 - RegressionTest62 (4ms / 311):[0m
+    [junit] MAJOR: 837492 (0 / 311 / 311) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (28083-350-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m511/625 - RegressionTest620 (4ms / 76):[0m
+    [junit] MAJOR: 837821 (0 / 76 / 76) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (28096-350-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m512/625 - RegressionTest621 (4ms / 429):[0m
+    [junit] MAJOR: 839920 (0 / 429 / 429) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (28117-350-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m513/625 - RegressionTest622 (4ms / 364):[0m
+    [junit] MAJOR: 841596 (0 / 364 / 364) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (28124-350-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m514/625 - RegressionTest623 (4ms / 396):[0m
+    [junit] MAJOR: 843638 (0 / 396 / 396) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (28176-350-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m515/625 - RegressionTest64 (4ms / 403):[0m
+    [junit] MAJOR: 845644 (0 / 403 / 403) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (28228-350-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m516/625 - RegressionTest65 (4ms / 427):[0m
+    [junit] MAJOR: 847807 (0 / 427 / 427) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (28416-352-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m517/625 - RegressionTest66 (4ms / 392):[0m
+    [junit] MAJOR: 849759 (0 / 392 / 392) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (28427-352-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m518/625 - RegressionTest68 (4ms / 296):[0m
+    [junit] MAJOR: 851173 (0 / 296 / 296) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 426 (28435-352-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m519/625 - RegressionTest69 (4ms / 455):[0m
+    [junit] MAJOR: 853624 (0 / 455 / 455) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (28522-352-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m520/625 - RegressionTest7 (4ms / 241):[0m
+    [junit] MAJOR: 854862 (0 / 241 / 241) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (28662-352-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m521/625 - RegressionTest70 (4ms / 273):[0m
+    [junit] MAJOR: 856289 (0 / 273 / 273) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (28662-352-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m522/625 - RegressionTest73 (4ms / 295):[0m
+    [junit] MAJOR: 857876 (0 / 295 / 295) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 426 (28662-352-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m523/625 - RegressionTest74 (4ms / 30):[0m
+    [junit] MAJOR: 858009 (2 / 30 / 30) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (28669-352-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m524/625 - RegressionTest75 (4ms / 371):[0m
+    [junit] MAJOR: 860114 (0 / 371 / 371) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (28669-352-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m525/625 - RegressionTest76 (4ms / 64):[0m
+    [junit] MAJOR: 860389 (0 / 64 / 64) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (28675-352-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m526/625 - RegressionTest77 (4ms / 253):[0m
+    [junit] MAJOR: 861679 (0 / 253 / 253) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (28675-352-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m527/625 - RegressionTest78 (4ms / 429):[0m
+    [junit] MAJOR: 864049 (0 / 429 / 429) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (28917-354-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m528/625 - RegressionTest79 (4ms / 279):[0m
+    [junit] MAJOR: 865607 (0 / 279 / 279) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (28936-356-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m529/625 - RegressionTest80 (4ms / 427):[0m
+    [junit] MAJOR: 868159 (0 / 427 / 427) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (29124-358-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m530/625 - RegressionTest81 (4ms / 294):[0m
+    [junit] MAJOR: 869906 (0 / 294 / 294) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (29124-358-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m531/625 - RegressionTest82 (4ms / 282):[0m
+    [junit] MAJOR: 871426 (0 / 282 / 282) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (29124-358-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m532/625 - RegressionTest84 (4ms / 409):[0m
+    [junit] MAJOR: 873805 (0 / 409 / 409) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (29125-358-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m533/625 - RegressionTest85 (4ms / 311):[0m
+    [junit] MAJOR: 875608 (0 / 311 / 311) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (29132-358-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m534/625 - RegressionTest86 (4ms / 429):[0m
+    [junit] MAJOR: 878229 (0 / 429 / 429) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (29320-360-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m535/625 - RegressionTest87 (4ms / 317):[0m
+    [junit] MAJOR: 880093 (0 / 317 / 317) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (29320-360-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m536/625 - RegressionTest88 (4ms / 164):[0m
+    [junit] MAJOR: 881046 (0 / 164 / 164) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (29326-360-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m537/625 - RegressionTest89 (4ms / 440):[0m
+    [junit] MAJOR: 883906 (0 / 440 / 440) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (29549-362-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m538/625 - RegressionTest9 (4ms / 356):[0m
+    [junit] MAJOR: 886109 (0 / 356 / 356) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (29614-362-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m539/625 - RegressionTest91 (4ms / 371):[0m
+    [junit] MAJOR: 888447 (0 / 371 / 371) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (29802-364-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m540/625 - RegressionTest92 (4ms / 437):[0m
+    [junit] MAJOR: 891119 (0 / 437 / 437) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (30018-366-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m541/625 - RegressionTest93 (4ms / 389):[0m
+    [junit] MAJOR: 893746 (0 / 389 / 389) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (30024-368-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m542/625 - RegressionTest95 (4ms / 53):[0m
+    [junit] MAJOR: 893961 (0 / 53 / 53) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (30042-368-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m543/625 - RegressionTest97 (4ms / 377):[0m
+    [junit] MAJOR: 895483 (0 / 377 / 377) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (30197-370-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m544/625 - RegressionTest98 (4ms / 437):[0m
+    [junit] MAJOR: 897370 (0 / 437 / 437) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (30387-372-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m545/625 - RegressionTest99 (4ms / 391):[0m
+    [junit] MAJOR: 899079 (0 / 391 / 391) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (30393-374-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m546/625 - RegressionTest0 (5ms / 12):[0m
+    [junit] MAJOR: 899121 (0 / 12 / 12) -> AVG-RTPM: 3ms
+    [junit] MAJOR: Mutants killed / live: 428 (30393-374-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m547/625 - RegressionTest101 (5ms / 36):[0m
+    [junit] MAJOR: 899307 (0 / 36 / 36) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (30398-374-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m548/625 - RegressionTest102 (5ms / 93):[0m
+    [junit] MAJOR: 899691 (0 / 93 / 93) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (30398-374-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m549/625 - RegressionTest103 (5ms / 298):[0m
+    [junit] MAJOR: 900945 (0 / 298 / 298) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (30398-374-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m550/625 - RegressionTest104 (5ms / 127):[0m
+    [junit] MAJOR: 901514 (0 / 127 / 127) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (30452-374-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m551/625 - RegressionTest105 (5ms / 453):[0m
+    [junit] MAJOR: 903605 (0 / 453 / 453) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (30539-374-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m552/625 - RegressionTest106 (5ms / 132):[0m
+    [junit] MAJOR: 904172 (0 / 132 / 132) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (30552-374-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m553/625 - RegressionTest107 (5ms / 346):[0m
+    [junit] MAJOR: 905785 (0 / 346 / 346) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (30673-374-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m554/625 - RegressionTest108 (5ms / 469):[0m
+    [junit] MAJOR: 908090 (0 / 469 / 469) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (30701-374-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m555/625 - RegressionTest109 (5ms / 409):[0m
+    [junit] MAJOR: 910031 (0 / 409 / 409) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (30970-374-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m556/625 - RegressionTest11 (5ms / 254):[0m
+    [junit] MAJOR: 911260 (0 / 254 / 254) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (31058-374-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m557/625 - RegressionTest110 (5ms / 386):[0m
+    [junit] MAJOR: 913128 (0 / 386 / 386) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (31058-374-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m558/625 - RegressionTest111 (5ms / 164):[0m
+    [junit] MAJOR: 913911 (0 / 164 / 164) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (31127-374-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m559/625 - RegressionTest112 (5ms / 437):[0m
+    [junit] MAJOR: 916091 (0 / 437 / 437) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (31346-376-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m560/625 - RegressionTest113 (5ms / 167):[0m
+    [junit] MAJOR: 916928 (0 / 167 / 167) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (31346-376-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m561/625 - RegressionTest114 (5ms / 414):[0m
+    [junit] MAJOR: 919062 (0 / 414 / 414) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (31372-376-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m562/625 - RegressionTest115 (5ms / 292):[0m
+    [junit] MAJOR: 920553 (0 / 292 / 292) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (31497-376-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m563/625 - RegressionTest116 (5ms / 397):[0m
+    [junit] MAJOR: 922691 (0 / 397 / 397) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (31525-376-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m564/625 - RegressionTest118 (5ms / 156):[0m
+    [junit] MAJOR: 923491 (0 / 156 / 156) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (31573-376-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m565/625 - RegressionTest119 (5ms / 469):[0m
+    [junit] MAJOR: 925933 (0 / 469 / 469) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (31601-376-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m566/625 - RegressionTest12 (5ms / 36):[0m
+    [junit] MAJOR: 926116 (0 / 36 / 36) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (31604-376-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m567/625 - RegressionTest120 (5ms / 437):[0m
+    [junit] MAJOR: 928487 (0 / 437 / 437) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (31656-376-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m568/625 - RegressionTest121 (5ms / 427):[0m
+    [junit] MAJOR: 930740 (0 / 427 / 427) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (31912-376-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m569/625 - RegressionTest124 (5ms / 443):[0m
+    [junit] MAJOR: 933337 (0 / 443 / 443) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (32080-378-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m570/625 - RegressionTest126 (5ms / 216):[0m
+    [junit] MAJOR: 934530 (0 / 216 / 216) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (32102-378-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m571/625 - RegressionTest127 (5ms / 33):[0m
+    [junit] MAJOR: 934721 (0 / 33 / 33) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (32102-378-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m572/625 - RegressionTest130 (5ms / 424):[0m
+    [junit] MAJOR: 937142 (0 / 424 / 424) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (32165-378-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m573/625 - RegressionTest132 (5ms / 397):[0m
+    [junit] MAJOR: 939452 (0 / 397 / 397) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (32193-378-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m574/625 - RegressionTest134 (5ms / 278):[0m
+    [junit] MAJOR: 941279 (0 / 278 / 278) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (32207-380-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m575/625 - RegressionTest140 (5ms / 302):[0m
+    [junit] MAJOR: 943053 (0 / 302 / 302) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (32225-380-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m576/625 - RegressionTest144 (5ms / 451):[0m
+    [junit] MAJOR: 945777 (0 / 451 / 451) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (32422-384-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m577/625 - RegressionTest154 (5ms / 231):[0m
+    [junit] MAJOR: 947378 (0 / 231 / 231) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (32434-384-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m578/625 - RegressionTest165 (5ms / 166):[0m
+    [junit] MAJOR: 948375 (0 / 166 / 166) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (32448-384-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m579/625 - RegressionTest168 (5ms / 439):[0m
+    [junit] MAJOR: 951028 (0 / 439 / 439) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (32475-384-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m580/625 - RegressionTest17 (5ms / 399):[0m
+    [junit] MAJOR: 953457 (0 / 399 / 399) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (32562-386-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m581/625 - RegressionTest177 (5ms / 427):[0m
+    [junit] MAJOR: 956109 (0 / 427 / 427) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (32750-388-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m582/625 - RegressionTest193 (5ms / 356):[0m
+    [junit] MAJOR: 958327 (0 / 356 / 356) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (32913-388-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m583/625 - RegressionTest219 (5ms / 241):[0m
+    [junit] MAJOR: 959832 (0 / 241 / 241) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (33048-388-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m584/625 - RegressionTest224 (5ms / 429):[0m
+    [junit] MAJOR: 961954 (0 / 429 / 429) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (33279-390-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m585/625 - RegressionTest253 (5ms / 435):[0m
+    [junit] MAJOR: 963879 (0 / 435 / 435) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (33301-392-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m586/625 - RegressionTest262 (5ms / 435):[0m
+    [junit] MAJOR: 965773 (0 / 435 / 435) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (33374-394-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m587/625 - RegressionTest265 (5ms / 435):[0m
+    [junit] MAJOR: 967843 (0 / 435 / 435) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (33396-396-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m588/625 - RegressionTest278 (5ms / 174):[0m
+    [junit] MAJOR: 968580 (0 / 174 / 174) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (33403-396-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m589/625 - RegressionTest284 (5ms / 423):[0m
+    [junit] MAJOR: 970458 (0 / 423 / 423) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (33570-396-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m590/625 - RegressionTest308 (5ms / 390):[0m
+    [junit] MAJOR: 972197 (0 / 390 / 390) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (33729-396-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m591/625 - RegressionTest317 (5ms / 360):[0m
+    [junit] MAJOR: 974174 (0 / 360 / 360) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (33773-396-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m592/625 - RegressionTest319 (5ms / 494):[0m
+    [junit] MAJOR: 976797 (0 / 494 / 494) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (33934-398-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m593/625 - RegressionTest322 (5ms / 295):[0m
+    [junit] MAJOR: 978251 (0 / 295 / 295) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (34059-400-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m594/625 - RegressionTest324 (5ms / 427):[0m
+    [junit] MAJOR: 980282 (0 / 427 / 427) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (34059-400-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m595/625 - RegressionTest329 (5ms / 483):[0m
+    [junit] MAJOR: 982734 (0 / 483 / 483) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (34081-402-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m596/625 - RegressionTest345 (5ms / 299):[0m
+    [junit] MAJOR: 984249 (0 / 299 / 299) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (34094-402-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m597/625 - RegressionTest346 (5ms / 227):[0m
+    [junit] MAJOR: 985316 (0 / 227 / 227) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (34101-402-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m598/625 - RegressionTest420 (5ms / 412):[0m
+    [junit] MAJOR: 987334 (0 / 412 / 412) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (34108-402-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m599/625 - RegressionTest428 (5ms / 370):[0m
+    [junit] MAJOR: 989214 (0 / 370 / 370) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (34108-402-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m600/625 - RegressionTest521 (5ms / 472):[0m
+    [junit] MAJOR: 991696 (0 / 472 / 472) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (34323-404-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m601/625 - RegressionTest523 (5ms / 303):[0m
+    [junit] MAJOR: 993275 (0 / 303 / 303) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (34323-404-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m602/625 - RegressionTest531 (5ms / 409):[0m
+    [junit] MAJOR: 995453 (0 / 409 / 409) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (34323-404-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m603/625 - RegressionTest537 (5ms / 81):[0m
+    [junit] MAJOR: 995845 (0 / 81 / 81) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (34355-404-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m604/625 - RegressionTest539 (5ms / 396):[0m
+    [junit] MAJOR: 998057 (0 / 396 / 396) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (34411-404-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m605/625 - RegressionTest550 (5ms / 442):[0m
+    [junit] MAJOR: 1000425 (0 / 442 / 442) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (34639-406-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m606/625 - RegressionTest57 (5ms / 295):[0m
+    [junit] MAJOR: 1002210 (0 / 295 / 295) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (34700-406-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m607/625 - RegressionTest573 (5ms / 206):[0m
+    [junit] MAJOR: 1003353 (0 / 206 / 206) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (34700-406-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m608/625 - RegressionTest607 (5ms / 185):[0m
+    [junit] MAJOR: 1004375 (0 / 185 / 185) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (34700-406-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m609/625 - RegressionTest197 (6ms / 155):[0m
+    [junit] MAJOR: 1005203 (0 / 155 / 155) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (34706-406-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m610/625 - RegressionTest212 (6ms / 272):[0m
+    [junit] MAJOR: 1006751 (0 / 272 / 272) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (34730-406-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m611/625 - RegressionTest56 (6ms / 403):[0m
+    [junit] MAJOR: 1009128 (0 / 403 / 403) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (34899-406-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m612/625 - RegressionTest577 (6ms / 437):[0m
+    [junit] MAJOR: 1011556 (0 / 437 / 437) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (34941-406-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m613/625 - RegressionTest582 (6ms / 412):[0m
+    [junit] MAJOR: 1014029 (0 / 412 / 412) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (34941-406-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m614/625 - RegressionTest227 (7ms / 416):[0m
+    [junit] MAJOR: 1016433 (0 / 416 / 416) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (34947-408-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m615/625 - RegressionTest588 (7ms / 442):[0m
+    [junit] MAJOR: 1019071 (0 / 442 / 442) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (35039-410-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m616/625 - RegressionTest484 (8ms / 408):[0m
+    [junit] MAJOR: 1021618 (0 / 408 / 408) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (35144-410-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m617/625 - RegressionTest594 (8ms / 167):[0m
+    [junit] MAJOR: 1022595 (0 / 167 / 167) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (35144-410-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m618/625 - RegressionTest325 (9ms / 442):[0m
+    [junit] MAJOR: 1025552 (0 / 442 / 442) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (35245-412-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m619/625 - RegressionTest486 (9ms / 166):[0m
+    [junit] MAJOR: 1026593 (0 / 166 / 166) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (35245-412-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m620/625 - RegressionTest479 (10ms / 276):[0m
+    [junit] MAJOR: 1028456 (0 / 276 / 276) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 428 (35310-412-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m621/625 - RegressionTest51 (11ms / 12):[0m
+    [junit] MAJOR: 1028517 (0 / 12 / 12) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 428 (35310-412-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m622/625 - RegressionTest477 (13ms / 167):[0m
+    [junit] MAJOR: 1029194 (0 / 167 / 167) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (35310-412-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m623/625 - RegressionTest480 (15ms / 392):[0m
+    [junit] MAJOR: 1030816 (0 / 392 / 392) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (35342-412-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m624/625 - RegressionTest326 (25ms / 409):[0m
+    [junit] MAJOR: 1032539 (0 / 409 / 409) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (35481-414-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m625/625 - RegressionTest145 (30ms / 166):[0m
+    [junit] MAJOR: 1033234 (0 / 166 / 166) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 428 (35481-414-1) / 116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  1033.2 seconds
+    [junit] MAJOR: Mutation score: 73.67% (78.68%)
+    [junit] MAJOR: Mutants killed / live: 428 (35481-414-1) / 116
+    [junit] MAJOR: Mutant executions: 191253
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_39980_1500533384/96f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 17 minutes 23 seconds

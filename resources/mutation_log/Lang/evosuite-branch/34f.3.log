@@ -1,0 +1,566 @@
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/maven-build.xml:75: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_24629_1501398726/34f/target/test-classes
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/maven-build.xml:108: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 98 source files to /tmp/run_mutation.pl_24629_1501398726/34f/target/test-classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:27: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:24: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/src/test/java/org/apache/commons/lang3/reflect/TypeUtilsTest.java:19: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import static junit.framework.Assert.*;
+    [javac]                              ^
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/src/test/java/org/apache/commons/lang3/time/StopWatchTest.java:19: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:194: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:195: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:203: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:204: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:212: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:213: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:221: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:222: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:114: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(NOT_SECRET_FIELD) > ArrayUtils.INDEX_NOT_FOUND);
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:115: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(NOT_SECRET_VALUE) > ArrayUtils.INDEX_NOT_FOUND);
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:119: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals(ArrayUtils.INDEX_NOT_FOUND, toString.indexOf(SECRET_VALUE));
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:124: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(SECRET_VALUE) > 0);
+    [javac]         ^
+    [javac] /tmp/run_mutation.pl_24629_1501398726/34f/src/test/java/org/apache/commons/lang3/time/StopWatchTest.java:208: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertTrue(watch.getStartTime() >= beforeStopWatch);
+    [javac]             ^
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 18 warnings
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: org.apache.commons.lang3.builder.ToStringStyle_ESTest51[test051] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "expected:<25> but was:<32>"
+    [junit] MAJOR: org.apache.commons.lang3.builder.ToStringStyle_ESTest90[test090] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "expected:<2> but was:<9>"
+    [junit] MAJOR: Exclude 2 failing test classes:
+    [junit] MAJOR:  - org.apache.commons.lang3.builder.ToStringStyle_ESTest51
+    [junit] MAJOR:  - org.apache.commons.lang3.builder.ToStringStyle_ESTest90
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 113 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 59.18 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 777
+    [junit] MAJOR: Mutants covered:   717 (92.28%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 113 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest34 (6ms / 48):
+    [junit] MAJOR: 42534 (10 / 48 / 48) -> AVG-RTPM: 886ms
+    [junit] MAJOR: Mutants killed / live: 10 (8-2-0) / 707
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest35 (6ms / 60):
+    [junit] MAJOR: 124652 (11 / 60 / 60) -> AVG-RTPM: 1368ms
+    [junit] MAJOR: Mutants killed / live: 21 (19-2-0) / 696
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest36 (6ms / 44):
+    [junit] MAJOR: 208140 (0 / 44 / 44) -> AVG-RTPM: 1897ms
+    [junit] MAJOR: Mutants killed / live: 21 (27-2-0) / 696
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest38 (6ms / 44):
+    [junit] MAJOR: 292675 (16 / 44 / 44) -> AVG-RTPM: 1921ms
+    [junit] MAJOR: Mutants killed / live: 37 (27-17-1) / 680
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest116 (7ms / 49):
+    [junit] MAJOR: 311190 (25 / 49 / 49) -> AVG-RTPM: 377ms
+    [junit] MAJOR: Mutants killed / live: 62 (27-66-1) / 655
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest13 (7ms / 108):
+    [junit] MAJOR: 352877 (64 / 108 / 108) -> AVG-RTPM: 385ms
+    [junit] MAJOR: Mutants killed / live: 126 (27-174-1) / 591
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest14 (7ms / 140):
+    [junit] MAJOR: 406635 (90 / 140 / 140) -> AVG-RTPM: 383ms
+    [junit] MAJOR: Mutants killed / live: 216 (27-314-1) / 501
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest18 (7ms / 44):
+    [junit] MAJOR: 423647 (0 / 44 / 44) -> AVG-RTPM: 386ms
+    [junit] MAJOR: Mutants killed / live: 216 (27-358-1) / 501
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest3 (7ms / 44):
+    [junit] MAJOR: 440909 (0 / 44 / 44) -> AVG-RTPM: 392ms
+    [junit] MAJOR: Mutants killed / live: 216 (27-402-1) / 501
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest31 (7ms / 44):
+    [junit] MAJOR: 458005 (0 / 44 / 44) -> AVG-RTPM: 388ms
+    [junit] MAJOR: Mutants killed / live: 216 (27-446-1) / 501
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest37 (7ms / 44):
+    [junit] MAJOR: 475206 (0 / 44 / 44) -> AVG-RTPM: 390ms
+    [junit] MAJOR: Mutants killed / live: 216 (27-490-1) / 501
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest39 (7ms / 44):
+    [junit] MAJOR: 492577 (0 / 44 / 44) -> AVG-RTPM: 394ms
+    [junit] MAJOR: Mutants killed / live: 216 (27-534-1) / 501
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 13/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest4 (7ms / 44):
+    [junit] MAJOR: 508813 (0 / 44 / 44) -> AVG-RTPM: 369ms
+    [junit] MAJOR: Mutants killed / live: 216 (27-578-1) / 501
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 14/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest52 (7ms / 83):
+    [junit] MAJOR: 541244 (0 / 83 / 83) -> AVG-RTPM: 390ms
+    [junit] MAJOR: Mutants killed / live: 216 (27-661-1) / 501
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 15/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest112 (8ms / 49):
+    [junit] MAJOR: 560324 (5 / 49 / 49) -> AVG-RTPM: 389ms
+    [junit] MAJOR: Mutants killed / live: 221 (27-710-1) / 496
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 16/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest114 (8ms / 49):
+    [junit] MAJOR: 579306 (5 / 49 / 49) -> AVG-RTPM: 387ms
+    [junit] MAJOR: Mutants killed / live: 226 (27-759-1) / 491
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 17/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest12 (8ms / 45):
+    [junit] MAJOR: 597315 (1 / 45 / 45) -> AVG-RTPM: 400ms
+    [junit] MAJOR: Mutants killed / live: 227 (27-804-1) / 490
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 18/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest15 (8ms / 44):
+    [junit] MAJOR: 613798 (0 / 44 / 44) -> AVG-RTPM: 374ms
+    [junit] MAJOR: Mutants killed / live: 227 (27-848-1) / 490
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 19/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest17 (8ms / 62):
+    [junit] MAJOR: 638616 (10 / 62 / 62) -> AVG-RTPM: 400ms
+    [junit] MAJOR: Mutants killed / live: 237 (27-910-1) / 480
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 20/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest20 (8ms / 44):
+    [junit] MAJOR: 655927 (0 / 44 / 44) -> AVG-RTPM: 393ms
+    [junit] MAJOR: Mutants killed / live: 237 (27-954-1) / 480
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 21/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest21 (8ms / 73):
+    [junit] MAJOR: 684324 (15 / 73 / 73) -> AVG-RTPM: 388ms
+    [junit] MAJOR: Mutants killed / live: 252 (27-1027-1) / 465
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 22/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest30 (8ms / 44):
+    [junit] MAJOR: 701055 (0 / 44 / 44) -> AVG-RTPM: 380ms
+    [junit] MAJOR: Mutants killed / live: 252 (27-1071-1) / 465
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 23/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest50 (8ms / 67):
+    [junit] MAJOR: 727296 (23 / 67 / 67) -> AVG-RTPM: 391ms
+    [junit] MAJOR: Mutants killed / live: 275 (27-1138-1) / 442
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 24/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest59 (8ms / 86):
+    [junit] MAJOR: 761114 (4 / 86 / 86) -> AVG-RTPM: 393ms
+    [junit] MAJOR: Mutants killed / live: 279 (27-1224-1) / 438
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 25/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest60 (8ms / 86):
+    [junit] MAJOR: 795111 (1 / 86 / 86) -> AVG-RTPM: 395ms
+    [junit] MAJOR: Mutants killed / live: 280 (27-1310-1) / 437
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 26/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest61 (8ms / 135):
+    [junit] MAJOR: 847884 (53 / 135 / 135) -> AVG-RTPM: 390ms
+    [junit] MAJOR: Mutants killed / live: 333 (27-1445-1) / 384
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 27/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest113 (9ms / 48):
+    [junit] MAJOR: 866759 (0 / 48 / 48) -> AVG-RTPM: 393ms
+    [junit] MAJOR: Mutants killed / live: 333 (27-1493-1) / 384
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 28/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest26 (9ms / 73):
+    [junit] MAJOR: 895579 (9 / 73 / 73) -> AVG-RTPM: 394ms
+    [junit] MAJOR: Mutants killed / live: 342 (27-1566-1) / 375
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 29/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest41 (9ms / 62):
+    [junit] MAJOR: 920078 (4 / 62 / 62) -> AVG-RTPM: 395ms
+    [junit] MAJOR: Mutants killed / live: 346 (27-1628-1) / 371
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 30/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest45 (9ms / 71):
+    [junit] MAJOR: 947079 (2 / 71 / 71) -> AVG-RTPM: 380ms
+    [junit] MAJOR: Mutants killed / live: 348 (27-1699-1) / 369
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 31/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest5 (9ms / 44):
+    [junit] MAJOR: 964231 (0 / 44 / 44) -> AVG-RTPM: 389ms
+    [junit] MAJOR: Mutants killed / live: 348 (27-1743-1) / 369
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 32/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest53 (9ms / 124):
+    [junit] MAJOR: 1012991 (0 / 124 / 124) -> AVG-RTPM: 393ms
+    [junit] MAJOR: Mutants killed / live: 348 (27-1867-1) / 369
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 33/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest56 (9ms / 65):
+    [junit] MAJOR: 1038580 (6 / 65 / 65) -> AVG-RTPM: 393ms
+    [junit] MAJOR: Mutants killed / live: 354 (27-1932-1) / 363
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 34/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest57 (9ms / 115):
+    [junit] MAJOR: 1082411 (4 / 115 / 115) -> AVG-RTPM: 381ms
+    [junit] MAJOR: Mutants killed / live: 358 (27-2047-1) / 359
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 35/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest58 (9ms / 88):
+    [junit] MAJOR: 1111728 (3 / 88 / 88) -> AVG-RTPM: 333ms
+    [junit] MAJOR: Mutants killed / live: 361 (27-2135-1) / 356
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 36/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest6 (9ms / 73):
+    [junit] MAJOR: 1138396 (9 / 73 / 73) -> AVG-RTPM: 365ms
+    [junit] MAJOR: Mutants killed / live: 370 (27-2208-1) / 347
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 37/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest71 (9ms / 113):
+    [junit] MAJOR: 1181153 (25 / 113 / 113) -> AVG-RTPM: 378ms
+    [junit] MAJOR: Mutants killed / live: 395 (27-2321-1) / 322
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 38/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest73 (9ms / 92):
+    [junit] MAJOR: 1215912 (1 / 92 / 92) -> AVG-RTPM: 377ms
+    [junit] MAJOR: Mutants killed / live: 396 (27-2413-1) / 321
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 39/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest77 (9ms / 65):
+    [junit] MAJOR: 1240537 (6 / 65 / 65) -> AVG-RTPM: 378ms
+    [junit] MAJOR: Mutants killed / live: 402 (27-2478-1) / 315
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 40/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest102 (10ms / 45):
+    [junit] MAJOR: 1257510 (1 / 45 / 45) -> AVG-RTPM: 377ms
+    [junit] MAJOR: Mutants killed / live: 403 (27-2523-1) / 314
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 41/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest111 (10ms / 48):
+    [junit] MAJOR: 1276615 (0 / 48 / 48) -> AVG-RTPM: 398ms
+    [junit] MAJOR: Mutants killed / live: 403 (27-2571-1) / 314
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 42/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest16 (10ms / 44):
+    [junit] MAJOR: 1293478 (0 / 44 / 44) -> AVG-RTPM: 383ms
+    [junit] MAJOR: Mutants killed / live: 403 (27-2615-1) / 314
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 43/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest27 (10ms / 92):
+    [junit] MAJOR: 1329420 (31 / 92 / 92) -> AVG-RTPM: 390ms
+    [junit] MAJOR: Mutants killed / live: 434 (27-2707-1) / 283
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 44/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest32 (10ms / 44):
+    [junit] MAJOR: 1346784 (0 / 44 / 44) -> AVG-RTPM: 394ms
+    [junit] MAJOR: Mutants killed / live: 434 (27-2751-1) / 283
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 45/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest40 (10ms / 56):
+    [junit] MAJOR: 1368657 (1 / 56 / 56) -> AVG-RTPM: 390ms
+    [junit] MAJOR: Mutants killed / live: 435 (27-2807-1) / 282
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 46/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest54 (10ms / 124):
+    [junit] MAJOR: 1418510 (0 / 124 / 124) -> AVG-RTPM: 402ms
+    [junit] MAJOR: Mutants killed / live: 435 (27-2931-1) / 282
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 47/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest62 (10ms / 140):
+    [junit] MAJOR: 1473713 (10 / 140 / 140) -> AVG-RTPM: 394ms
+    [junit] MAJOR: Mutants killed / live: 445 (27-3071-1) / 272
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 48/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest63 (10ms / 89):
+    [junit] MAJOR: 1509217 (4 / 89 / 89) -> AVG-RTPM: 398ms
+    [junit] MAJOR: Mutants killed / live: 449 (27-3160-1) / 268
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 49/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest64 (10ms / 108):
+    [junit] MAJOR: 1552277 (24 / 108 / 108) -> AVG-RTPM: 398ms
+    [junit] MAJOR: Mutants killed / live: 473 (27-3268-1) / 244
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 50/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest69 (10ms / 113):
+    [junit] MAJOR: 1596797 (5 / 113 / 113) -> AVG-RTPM: 393ms
+    [junit] MAJOR: Mutants killed / live: 478 (27-3381-1) / 239
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 51/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest70 (10ms / 65):
+    [junit] MAJOR: 1622993 (1 / 65 / 65) -> AVG-RTPM: 403ms
+    [junit] MAJOR: Mutants killed / live: 479 (27-3446-1) / 238
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 52/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest72 (10ms / 65):
+    [junit] MAJOR: 1648803 (1 / 65 / 65) -> AVG-RTPM: 397ms
+    [junit] MAJOR: Mutants killed / live: 480 (27-3511-1) / 237
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 53/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest74 (10ms / 65):
+    [junit] MAJOR: 1675345 (1 / 65 / 65) -> AVG-RTPM: 408ms
+    [junit] MAJOR: Mutants killed / live: 481 (27-3576-1) / 236
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 54/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest75 (10ms / 92):
+    [junit] MAJOR: 1712464 (23 / 92 / 92) -> AVG-RTPM: 403ms
+    [junit] MAJOR: Mutants killed / live: 504 (27-3668-1) / 213
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 55/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest76 (10ms / 87):
+    [junit] MAJOR: 1747727 (3 / 87 / 87) -> AVG-RTPM: 405ms
+    [junit] MAJOR: Mutants killed / live: 507 (27-3755-1) / 210
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 56/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest1 (11ms / 44):
+    [junit] MAJOR: 1765102 (0 / 44 / 44) -> AVG-RTPM: 394ms
+    [junit] MAJOR: Mutants killed / live: 507 (27-3799-1) / 210
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 57/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest19 (11ms / 73):
+    [junit] MAJOR: 1794693 (9 / 73 / 73) -> AVG-RTPM: 405ms
+    [junit] MAJOR: Mutants killed / live: 516 (27-3872-1) / 201
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 58/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest86 (11ms / 65):
+    [junit] MAJOR: 1821126 (1 / 65 / 65) -> AVG-RTPM: 406ms
+    [junit] MAJOR: Mutants killed / live: 517 (27-3937-1) / 200
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 59/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest87 (11ms / 65):
+    [junit] MAJOR: 1847911 (1 / 65 / 65) -> AVG-RTPM: 412ms
+    [junit] MAJOR: Mutants killed / live: 518 (27-4002-1) / 199
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 60/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest88 (11ms / 92):
+    [junit] MAJOR: 1884264 (1 / 92 / 92) -> AVG-RTPM: 395ms
+    [junit] MAJOR: Mutants killed / live: 519 (27-4094-1) / 198
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 61/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest89 (11ms / 54):
+    [junit] MAJOR: 1906112 (3 / 54 / 54) -> AVG-RTPM: 404ms
+    [junit] MAJOR: Mutants killed / live: 522 (27-4148-1) / 195
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 62/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest9 (11ms / 44):
+    [junit] MAJOR: 1924379 (0 / 44 / 44) -> AVG-RTPM: 415ms
+    [junit] MAJOR: Mutants killed / live: 522 (27-4192-1) / 195
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 63/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest91 (11ms / 54):
+    [junit] MAJOR: 1945683 (3 / 54 / 54) -> AVG-RTPM: 394ms
+    [junit] MAJOR: Mutants killed / live: 525 (27-4246-1) / 192
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 64/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest101 (12ms / 44):
+    [junit] MAJOR: 1963117 (0 / 44 / 44) -> AVG-RTPM: 396ms
+    [junit] MAJOR: Mutants killed / live: 525 (27-4290-1) / 192
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 65/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest22 (12ms / 73):
+    [junit] MAJOR: 1992748 (9 / 73 / 73) -> AVG-RTPM: 405ms
+    [junit] MAJOR: Mutants killed / live: 534 (27-4363-1) / 183
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 66/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest7 (12ms / 62):
+    [junit] MAJOR: 2017487 (3 / 62 / 62) -> AVG-RTPM: 399ms
+    [junit] MAJOR: Mutants killed / live: 537 (27-4425-1) / 180
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 67/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest78 (12ms / 73):
+    [junit] MAJOR: 2047056 (1 / 73 / 73) -> AVG-RTPM: 405ms
+    [junit] MAJOR: Mutants killed / live: 538 (27-4498-1) / 179
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 68/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest8 (12ms / 44):
+    [junit] MAJOR: 2064833 (0 / 44 / 44) -> AVG-RTPM: 404ms
+    [junit] MAJOR: Mutants killed / live: 538 (27-4542-1) / 179
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 69/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest80 (12ms / 65):
+    [junit] MAJOR: 2091193 (6 / 65 / 65) -> AVG-RTPM: 405ms
+    [junit] MAJOR: Mutants killed / live: 544 (27-4607-1) / 173
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 70/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest85 (12ms / 92):
+    [junit] MAJOR: 2124089 (23 / 92 / 92) -> AVG-RTPM: 357ms
+    [junit] MAJOR: Mutants killed / live: 567 (27-4699-1) / 150
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 71/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest99 (12ms / 44):
+    [junit] MAJOR: 2139788 (0 / 44 / 44) -> AVG-RTPM: 356ms
+    [junit] MAJOR: Mutants killed / live: 567 (27-4743-1) / 150
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 72/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest10 (13ms / 48):
+    [junit] MAJOR: 2157028 (1 / 48 / 48) -> AVG-RTPM: 359ms
+    [junit] MAJOR: Mutants killed / live: 568 (27-4791-1) / 149
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 73/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest110 (13ms / 49):
+    [junit] MAJOR: 2175450 (5 / 49 / 49) -> AVG-RTPM: 375ms
+    [junit] MAJOR: Mutants killed / live: 573 (27-4840-1) / 144
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 74/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest92 (13ms / 95):
+    [junit] MAJOR: 2212291 (0 / 95 / 95) -> AVG-RTPM: 387ms
+    [junit] MAJOR: Mutants killed / live: 573 (27-4935-1) / 144
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 75/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest103 (14ms / 48):
+    [junit] MAJOR: 2230813 (4 / 48 / 48) -> AVG-RTPM: 385ms
+    [junit] MAJOR: Mutants killed / live: 577 (27-4983-1) / 140
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 76/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest11 (14ms / 45):
+    [junit] MAJOR: 2248183 (1 / 45 / 45) -> AVG-RTPM: 386ms
+    [junit] MAJOR: Mutants killed / live: 578 (27-5028-1) / 139
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 77/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest115 (14ms / 48):
+    [junit] MAJOR: 2266922 (0 / 48 / 48) -> AVG-RTPM: 390ms
+    [junit] MAJOR: Mutants killed / live: 578 (27-5076-1) / 139
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 78/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest68 (14ms / 89):
+    [junit] MAJOR: 2301134 (1 / 89 / 89) -> AVG-RTPM: 384ms
+    [junit] MAJOR: Mutants killed / live: 579 (27-5165-1) / 138
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 79/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest79 (14ms / 92):
+    [junit] MAJOR: 2336995 (25 / 92 / 92) -> AVG-RTPM: 389ms
+    [junit] MAJOR: Mutants killed / live: 604 (27-5257-1) / 113
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 80/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest84 (14ms / 65):
+    [junit] MAJOR: 2363697 (1 / 65 / 65) -> AVG-RTPM: 410ms
+    [junit] MAJOR: Mutants killed / live: 605 (27-5322-1) / 112
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 81/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest43 (15ms / 86):
+    [junit] MAJOR: 2397416 (2 / 86 / 86) -> AVG-RTPM: 392ms
+    [junit] MAJOR: Mutants killed / live: 607 (27-5408-1) / 110
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 82/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest97 (15ms / 48):
+    [junit] MAJOR: 2416063 (4 / 48 / 48) -> AVG-RTPM: 388ms
+    [junit] MAJOR: Mutants killed / live: 611 (27-5456-1) / 106
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 83/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest98 (15ms / 49):
+    [junit] MAJOR: 2435741 (1 / 49 / 49) -> AVG-RTPM: 401ms
+    [junit] MAJOR: Mutants killed / live: 612 (27-5505-1) / 105
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 84/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest93 (16ms / 48):
+    [junit] MAJOR: 2455169 (4 / 48 / 48) -> AVG-RTPM: 404ms
+    [junit] MAJOR: Mutants killed / live: 616 (27-5553-1) / 101
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 85/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest0 (19ms / 44):
+    [junit] MAJOR: 2471993 (0 / 44 / 44) -> AVG-RTPM: 382ms
+    [junit] MAJOR: Mutants killed / live: 616 (27-5597-1) / 101
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 86/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest66 (19ms / 117):
+    [junit] MAJOR: 2518404 (4 / 117 / 117) -> AVG-RTPM: 396ms
+    [junit] MAJOR: Mutants killed / live: 620 (27-5714-1) / 97
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 87/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest46 (20ms / 90):
+    [junit] MAJOR: 2554053 (44 / 90 / 90) -> AVG-RTPM: 396ms
+    [junit] MAJOR: Mutants killed / live: 664 (27-5804-1) / 53
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 88/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest65 (20ms / 135):
+    [junit] MAJOR: 2608074 (1 / 135 / 135) -> AVG-RTPM: 400ms
+    [junit] MAJOR: Mutants killed / live: 665 (27-5939-1) / 52
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 89/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest47 (21ms / 72):
+    [junit] MAJOR: 2636598 (0 / 72 / 72) -> AVG-RTPM: 396ms
+    [junit] MAJOR: Mutants killed / live: 665 (27-6011-1) / 52
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 90/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest106 (22ms / 45):
+    [junit] MAJOR: 2653992 (1 / 45 / 45) -> AVG-RTPM: 386ms
+    [junit] MAJOR: Mutants killed / live: 666 (27-6056-1) / 51
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 91/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest24 (22ms / 44):
+    [junit] MAJOR: 2672041 (0 / 44 / 44) -> AVG-RTPM: 410ms
+    [junit] MAJOR: Mutants killed / live: 666 (27-6100-1) / 51
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 92/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest49 (22ms / 47):
+    [junit] MAJOR: 2690284 (0 / 47 / 47) -> AVG-RTPM: 388ms
+    [junit] MAJOR: Mutants killed / live: 666 (27-6147-1) / 51
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 93/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest107 (23ms / 48):
+    [junit] MAJOR: 2709408 (4 / 48 / 48) -> AVG-RTPM: 398ms
+    [junit] MAJOR: Mutants killed / live: 670 (27-6195-1) / 47
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 94/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest29 (23ms / 44):
+    [junit] MAJOR: 2727388 (0 / 44 / 44) -> AVG-RTPM: 408ms
+    [junit] MAJOR: Mutants killed / live: 670 (27-6239-1) / 47
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 95/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest67 (23ms / 107):
+    [junit] MAJOR: 2771151 (3 / 107 / 107) -> AVG-RTPM: 409ms
+    [junit] MAJOR: Mutants killed / live: 673 (27-6346-1) / 44
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 96/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest2 (24ms / 56):
+    [junit] MAJOR: 2793831 (1 / 56 / 56) -> AVG-RTPM: 405ms
+    [junit] MAJOR: Mutants killed / live: 674 (27-6402-1) / 43
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 97/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest109 (25ms / 48):
+    [junit] MAJOR: 2813079 (0 / 48 / 48) -> AVG-RTPM: 401ms
+    [junit] MAJOR: Mutants killed / live: 674 (27-6450-1) / 43
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 98/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest28 (25ms / 44):
+    [junit] MAJOR: 2830192 (0 / 44 / 44) -> AVG-RTPM: 388ms
+    [junit] MAJOR: Mutants killed / live: 674 (27-6494-1) / 43
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 99/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest81 (25ms / 73):
+    [junit] MAJOR: 2858686 (1 / 73 / 73) -> AVG-RTPM: 390ms
+    [junit] MAJOR: Mutants killed / live: 675 (27-6567-1) / 42
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 100/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest100 (26ms / 45):
+    [junit] MAJOR: 2876823 (1 / 45 / 45) -> AVG-RTPM: 403ms
+    [junit] MAJOR: Mutants killed / live: 676 (27-6612-1) / 41
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 101/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest95 (26ms / 48):
+    [junit] MAJOR: 2895534 (4 / 48 / 48) -> AVG-RTPM: 389ms
+    [junit] MAJOR: Mutants killed / live: 680 (27-6660-1) / 37
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 102/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest96 (28ms / 49):
+    [junit] MAJOR: 2915322 (1 / 49 / 49) -> AVG-RTPM: 403ms
+    [junit] MAJOR: Mutants killed / live: 681 (27-6709-1) / 36
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 103/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest108 (29ms / 49):
+    [junit] MAJOR: 2934416 (1 / 49 / 49) -> AVG-RTPM: 389ms
+    [junit] MAJOR: Mutants killed / live: 682 (27-6758-1) / 35
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 104/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest42 (29ms / 56):
+    [junit] MAJOR: 2957013 (1 / 56 / 56) -> AVG-RTPM: 403ms
+    [junit] MAJOR: Mutants killed / live: 683 (27-6814-1) / 34
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 105/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest25 (30ms / 73):
+    [junit] MAJOR: 2986101 (2 / 73 / 73) -> AVG-RTPM: 398ms
+    [junit] MAJOR: Mutants killed / live: 685 (27-6887-1) / 32
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 106/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest23 (32ms / 62):
+    [junit] MAJOR: 3011240 (3 / 62 / 62) -> AVG-RTPM: 405ms
+    [junit] MAJOR: Mutants killed / live: 688 (27-6949-1) / 29
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 107/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest94 (32ms / 49):
+    [junit] MAJOR: 3031058 (1 / 49 / 49) -> AVG-RTPM: 404ms
+    [junit] MAJOR: Mutants killed / live: 689 (27-6998-1) / 28
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 108/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest104 (35ms / 49):
+    [junit] MAJOR: 3050576 (1 / 49 / 49) -> AVG-RTPM: 398ms
+    [junit] MAJOR: Mutants killed / live: 690 (27-7047-1) / 27
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 109/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest48 (35ms / 90):
+    [junit] MAJOR: 3086827 (0 / 90 / 90) -> AVG-RTPM: 402ms
+    [junit] MAJOR: Mutants killed / live: 690 (27-7137-1) / 27
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 110/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest83 (36ms / 90):
+    [junit] MAJOR: 3123645 (24 / 90 / 90) -> AVG-RTPM: 409ms
+    [junit] MAJOR: Mutants killed / live: 714 (27-7227-1) / 3
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 111/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest82 (40ms / 65):
+    [junit] MAJOR: 3146421 (1 / 65 / 65) -> AVG-RTPM: 350ms
+    [junit] MAJOR: Mutants killed / live: 715 (27-7292-1) / 2
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 112/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest33 (44ms / 44):
+    [junit] MAJOR: 3162842 (0 / 44 / 44) -> AVG-RTPM: 373ms
+    [junit] MAJOR: Mutants killed / live: 715 (27-7336-1) / 2
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 113/113 - org.apache.commons.lang3.builder.ToStringStyle_ESTest105 (80ms / 44):
+    [junit] MAJOR: 3179189 (0 / 44 / 44) -> AVG-RTPM: 371ms
+    [junit] MAJOR: Mutants killed / live: 715 (27-7380-1) / 2
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  3179.2 seconds
+    [junit] MAJOR: Mutation score: 92.02% (99.72%)
+    [junit] MAJOR: Mutants killed / live: 715 (27-7380-1) / 2
+    [junit] MAJOR: Mutant executions: 7559
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_24629_1501398726/34f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 54 minutes 6 seconds

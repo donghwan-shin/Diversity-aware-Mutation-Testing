@@ -1,0 +1,518 @@
+1:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):111:m = matrix.getRowDimension() |==> <NO-OP>
+2:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):112:n = matrix.getColumnDimension() |==> <NO-OP>
+3:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):114:cachedU = null |==> <NO-OP>
+4:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):115:cachedS = null |==> <NO-OP>
+5:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):116:cachedV = null |==> <NO-OP>
+6:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):117:cachedVt = null |==> <NO-OP>
+7:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):120:transformer = new BiDiagonalTransformer(matrix) |==> <NO-OP>
+8:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):121:mainBidiagonal = transformer.getMainDiagonalRef() |==> <NO-OP>
+9:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):122:secondaryBidiagonal = transformer.getSecondaryDiagonalRef() |==> <NO-OP>
+10:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):125:mainTridiagonal = new double[mainBidiagonal.length] |==> <NO-OP>
+11:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):126:1 |==> 0
+12:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):126:1 |==> -1
+13:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):126:mainBidiagonal.length - 1 |==> mainBidiagonal.length % 1
+14:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):126:mainBidiagonal.length - 1 |==> mainBidiagonal.length * 1
+15:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):126:mainBidiagonal.length - 1 |==> mainBidiagonal.length + 1
+16:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):126:mainBidiagonal.length - 1 |==> mainBidiagonal.length / 1
+17:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):126:secondaryTridiagonal = new double[mainBidiagonal.length - 1] |==> <NO-OP>
+18:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):127:0 |==> 1
+19:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):127:0 |==> -1
+20:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):128:0 |==> 1
+21:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):128:0 |==> -1
+22:AOR:*(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):128:a * a |==> a % a
+23:AOR:*(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):128:a * a |==> a + a
+24:AOR:*(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):128:a * a |==> a - a
+25:AOR:*(double,double):/(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):128:a * a |==> a / a
+26:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):128:mainTridiagonal[0] = a * a |==> <NO-OP>
+27:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):129:1 |==> 0
+28:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):129:1 |==> -1
+29:ROR:<(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):129:i < mainBidiagonal.length |==> i != mainBidiagonal.length
+30:ROR:<(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):129:i < mainBidiagonal.length |==> i <= mainBidiagonal.length
+31:ROR:<(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):129:i < mainBidiagonal.length |==> i == mainBidiagonal.length
+32:ROR:<(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):129:i < mainBidiagonal.length |==> i > mainBidiagonal.length
+33:ROR:<(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):129:i < mainBidiagonal.length |==> i >= mainBidiagonal.length
+34:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):129:i < mainBidiagonal.length |==> false
+35:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):129:i < mainBidiagonal.length |==> true
+36:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):130:1 |==> 0
+37:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):130:1 |==> -1
+38:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):130:i - 1 |==> i % 1
+39:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):130:i - 1 |==> i * 1
+40:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):130:i - 1 |==> i + 1
+41:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):130:i - 1 |==> i / 1
+42:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):131:1 |==> 0
+43:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):131:1 |==> -1
+44:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):131:i - 1 |==> i % 1
+45:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):131:i - 1 |==> i * 1
+46:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):131:i - 1 |==> i + 1
+47:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):131:i - 1 |==> i / 1
+48:AOR:*(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):131:a * b |==> a % b
+49:AOR:*(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):131:a * b |==> a + b
+50:AOR:*(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):131:a * b |==> a - b
+51:AOR:*(double,double):/(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):131:a * b |==> a / b
+52:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):131:secondaryTridiagonal[i - 1] = a * b |==> <NO-OP>
+53:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):132:a = mainBidiagonal[i] |==> <NO-OP>
+54:AOR:*(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):133:a * a |==> a % a
+55:AOR:*(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):133:a * a |==> a + a
+56:AOR:*(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):133:a * a |==> a - a
+57:AOR:*(double,double):/(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):133:a * a |==> a / a
+58:AOR:*(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):133:b * b |==> b % b
+59:AOR:*(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):133:b * b |==> b + b
+60:AOR:*(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):133:b * b |==> b - b
+61:AOR:*(double,double):/(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):133:b * b |==> b / b
+62:AOR:+(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):133:a * a + b * b |==> a * a % (b * b)
+63:AOR:+(double,double):*(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):133:a * a + b * b |==> a * a * (b * b)
+64:AOR:+(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):133:a * a + b * b |==> a * a - b * b
+65:AOR:+(double,double):/(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):133:a * a + b * b |==> a * a / (b * b)
+66:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):133:mainTridiagonal[i] = a * a + b * b |==> <NO-OP>
+67:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):137:eigenDecomposition = new EigenDecompositionImpl(mainTridiagonal, secondaryTridiagonal, MathUtils.SAFE_MIN) |==> <NO-OP>
+68:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:0 |==> 1
+69:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:0 |==> -1
+70:ROR:>(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:p > 0 |==> p != 0
+71:ROR:>(int,int):<(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:p > 0 |==> p < 0
+72:ROR:>(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:p > 0 |==> p <= 0
+73:ROR:>(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:p > 0 |==> p == 0
+74:ROR:>(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:p > 0 |==> p >= 0
+75:ROR:>(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:p > 0 |==> false
+76:ROR:>(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:p > 0 |==> true
+77:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:1 |==> 0
+78:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:1 |==> -1
+79:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:p - 1 |==> p % 1
+80:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:p - 1 |==> p * 1
+81:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:p - 1 |==> p + 1
+82:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:p - 1 |==> p / 1
+83:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:0 |==> 1
+84:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:0 |==> -1
+85:ROR:<=(double,double):!=(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:eigenValues[p - 1] <= 0 |==> eigenValues[p - 1] != 0
+86:ROR:<=(double,double):<(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:eigenValues[p - 1] <= 0 |==> eigenValues[p - 1] < 0
+87:ROR:<=(double,double):==(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:eigenValues[p - 1] <= 0 |==> eigenValues[p - 1] == 0
+88:ROR:<=(double,double):>(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:eigenValues[p - 1] <= 0 |==> eigenValues[p - 1] > 0
+89:ROR:<=(double,double):>=(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:eigenValues[p - 1] <= 0 |==> eigenValues[p - 1] >= 0
+90:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:eigenValues[p - 1] <= 0 |==> false
+91:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:eigenValues[p - 1] <= 0 |==> true
+92:COR:&&(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:(p > 0) && (eigenValues[p - 1] <= 0) |==> (p > 0) != (eigenValues[p - 1] <= 0)
+93:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:(p > 0) && (eigenValues[p - 1] <= 0) |==> (p > 0) == (eigenValues[p - 1] <= 0)
+94:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:(p > 0) && (eigenValues[p - 1] <= 0) |==> false
+95:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:(p > 0) && (eigenValues[p - 1] <= 0) |==> (p > 0)
+96:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:(p > 0) && (eigenValues[p - 1] <= 0) |==> (eigenValues[p - 1] <= 0)
+97:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:(p > 0) && (eigenValues[p - 1] <= 0) |==> true
+98:COR:&&(boolean,boolean):||(boolean,boolean):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):142:(p > 0) && (eigenValues[p - 1] <= 0) |==> (p > 0) || (eigenValues[p - 1] <= 0)
+99:STD:<DEC>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):143:--p |==> <NO-OP>
+100:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):145:singularValues = new double[p] |==> <NO-OP>
+101:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):146:0 |==> 1
+102:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):146:0 |==> -1
+103:ROR:<(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):146:i < p |==> i != p
+104:ROR:<(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):146:i < p |==> i <= p
+105:ROR:<(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):146:i < p |==> i == p
+106:ROR:<(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):146:i < p |==> i > p
+107:ROR:<(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):146:i < p |==> i >= p
+108:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):146:i < p |==> false
+109:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):146:i < p |==> true
+110:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@<init>(org.apache.commons.math.linear.RealMatrix,int):147:singularValues[i] = Math.sqrt(eigenValues[i]) |==> <NO-OP>
+111:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():156:cachedU == null |==> cachedU != null
+112:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():156:cachedU == null |==> false
+113:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():156:cachedU == null |==> true
+114:ROR:>=(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():159:m >= n |==> m != n
+115:ROR:>=(int,int):<(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():159:m >= n |==> m < n
+116:ROR:>=(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():159:m >= n |==> m <= n
+117:ROR:>=(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():159:m >= n |==> m == n
+118:ROR:>=(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():159:m >= n |==> m > n
+119:ROR:>=(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():159:m >= n |==> false
+120:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():159:m >= n |==> true
+121:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():162:0 |==> 1
+122:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():162:0 |==> -1
+123:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():162:1 |==> 0
+124:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():162:1 |==> -1
+125:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():162:n - 1 |==> n % 1
+126:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():162:n - 1 |==> n * 1
+127:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():162:n - 1 |==> n + 1
+128:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():162:n - 1 |==> n / 1
+129:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():162:0 |==> 1
+130:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():162:0 |==> -1
+131:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():162:1 |==> 0
+132:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():162:1 |==> -1
+133:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():162:p - 1 |==> p % 1
+134:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():162:p - 1 |==> p * 1
+135:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():162:p - 1 |==> p + 1
+136:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():162:p - 1 |==> p / 1
+137:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():165:0 |==> 1
+138:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():165:0 |==> -1
+139:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():166:0 |==> 1
+140:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():166:0 |==> -1
+141:ROR:<(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():166:i < p |==> i != p
+142:ROR:<(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():166:i < p |==> i <= p
+143:ROR:<(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():166:i < p |==> i == p
+144:ROR:<(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():166:i < p |==> i > p
+145:ROR:<(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():166:i < p |==> i >= p
+146:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():166:i < p |==> false
+147:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():166:i < p |==> true
+148:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():171:1 |==> 0
+149:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():171:1 |==> -1
+150:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():171:n - 1 |==> n % 1
+151:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():171:n - 1 |==> n * 1
+152:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():171:n - 1 |==> n + 1
+153:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():171:n - 1 |==> n / 1
+154:ROR:<(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():171:i < n - 1 |==> i != n - 1
+155:ROR:<(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():171:i < n - 1 |==> i <= n - 1
+156:ROR:<(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():171:i < n - 1 |==> i == n - 1
+157:ROR:<(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():171:i < n - 1 |==> i > n - 1
+158:ROR:<(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():171:i < n - 1 |==> i >= n - 1
+159:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():171:i < n - 1 |==> false
+160:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():171:i < n - 1 |==> true
+161:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():172:1 |==> 0
+162:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():172:1 |==> -1
+163:AOR:+(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():172:i + 1 |==> i % 1
+164:AOR:+(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():172:i + 1 |==> i * 1
+165:AOR:+(int,int):-(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():172:i + 1 |==> i - 1
+166:AOR:+(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():172:i + 1 |==> i / 1
+167:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():172:ei1 = eData[i + 1] |==> <NO-OP>
+168:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():174:0 |==> 1
+169:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():174:0 |==> -1
+170:ROR:<(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():174:j < p |==> j != p
+171:ROR:<(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():174:j < p |==> j <= p
+172:ROR:<(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():174:j < p |==> j == p
+173:ROR:<(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():174:j < p |==> j > p
+174:ROR:<(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():174:j < p |==> j >= p
+175:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():174:j < p |==> false
+176:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():174:j < p |==> true
+177:AOR:*(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():175:mi * ei0[j] |==> mi % ei0[j]
+178:AOR:*(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():175:mi * ei0[j] |==> mi + ei0[j]
+179:AOR:*(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():175:mi * ei0[j] |==> mi - ei0[j]
+180:AOR:*(double,double):/(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():175:mi * ei0[j] |==> mi / ei0[j]
+181:AOR:*(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():175:si * ei1[j] |==> si % ei1[j]
+182:AOR:*(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():175:si * ei1[j] |==> si + ei1[j]
+183:AOR:*(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():175:si * ei1[j] |==> si - ei1[j]
+184:AOR:*(double,double):/(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():175:si * ei1[j] |==> si / ei1[j]
+185:AOR:+(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():175:mi * ei0[j] + si * ei1[j] |==> mi * ei0[j] % (si * ei1[j])
+186:AOR:+(double,double):*(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():175:mi * ei0[j] + si * ei1[j] |==> mi * ei0[j] * (si * ei1[j])
+187:AOR:+(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():175:mi * ei0[j] + si * ei1[j] |==> mi * ei0[j] - si * ei1[j]
+188:AOR:+(double,double):/(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():175:mi * ei0[j] + si * ei1[j] |==> mi * ei0[j] / (si * ei1[j])
+189:AOR:/(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():175:(mi * ei0[j] + si * ei1[j]) / singularValues[j] |==> (mi * ei0[j] + si * ei1[j]) % singularValues[j]
+190:AOR:/(double,double):*(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():175:(mi * ei0[j] + si * ei1[j]) / singularValues[j] |==> (mi * ei0[j] + si * ei1[j]) * singularValues[j]
+191:AOR:/(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():175:(mi * ei0[j] + si * ei1[j]) / singularValues[j] |==> (mi * ei0[j] + si * ei1[j]) + singularValues[j]
+192:AOR:/(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():175:(mi * ei0[j] + si * ei1[j]) / singularValues[j] |==> (mi * ei0[j] + si * ei1[j]) - singularValues[j]
+193:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():175:wi[j] = (mi * ei0[j] + si * ei1[j]) / singularValues[j] |==> <NO-OP>
+194:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():178:0 |==> 1
+195:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():178:0 |==> -1
+196:ROR:<(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():178:j < p |==> j != p
+197:ROR:<(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():178:j < p |==> j <= p
+198:ROR:<(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():178:j < p |==> j == p
+199:ROR:<(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():178:j < p |==> j > p
+200:ROR:<(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():178:j < p |==> j >= p
+201:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():178:j < p |==> false
+202:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():178:j < p |==> true
+203:AOR:*(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():179:mi * ei0[j] |==> mi % ei0[j]
+204:AOR:*(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():179:mi * ei0[j] |==> mi + ei0[j]
+205:AOR:*(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():179:mi * ei0[j] |==> mi - ei0[j]
+206:AOR:*(double,double):/(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():179:mi * ei0[j] |==> mi / ei0[j]
+207:AOR:/(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():179:mi * ei0[j] / singularValues[j] |==> mi * ei0[j] % singularValues[j]
+208:AOR:/(double,double):*(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():179:mi * ei0[j] / singularValues[j] |==> mi * ei0[j] * singularValues[j]
+209:AOR:/(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():179:mi * ei0[j] / singularValues[j] |==> mi * ei0[j] + singularValues[j]
+210:AOR:/(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():179:mi * ei0[j] / singularValues[j] |==> mi * ei0[j] - singularValues[j]
+211:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():179:wi[j] = mi * ei0[j] / singularValues[j] |==> <NO-OP>
+212:ROR:<(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():184:i < m |==> i != m
+213:ROR:<(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():184:i < m |==> i <= m
+214:ROR:<(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():184:i < m |==> i == m
+215:ROR:<(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():184:i < m |==> i > m
+216:ROR:<(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():184:i < m |==> i >= m
+217:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():184:i < m |==> false
+218:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():184:i < m |==> true
+219:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():185:wData[i] = new double[p] |==> <NO-OP>
+220:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():187:cachedU = transformer.getU().multiply(MatrixUtils.createRealMatrix(wData)) |==> <NO-OP>
+221:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():192:0 |==> 1
+222:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():192:0 |==> -1
+223:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():192:1 |==> 0
+224:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():192:1 |==> -1
+225:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():192:m - 1 |==> m % 1
+226:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():192:m - 1 |==> m * 1
+227:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():192:m - 1 |==> m + 1
+228:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():192:m - 1 |==> m / 1
+229:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():192:0 |==> 1
+230:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():192:0 |==> -1
+231:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():192:1 |==> 0
+232:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():192:1 |==> -1
+233:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():192:p - 1 |==> p % 1
+234:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():192:p - 1 |==> p * 1
+235:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():192:p - 1 |==> p + 1
+236:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():192:p - 1 |==> p / 1
+237:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@getU():193:cachedU = transformer.getU().multiply(e) |==> <NO-OP>
+238:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.math.linear.SingularValueDecompositionImpl@getUT():207:cachedUt == null |==> cachedUt != null
+239:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math.linear.SingularValueDecompositionImpl@getUT():207:cachedUt == null |==> false
+240:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.math.linear.SingularValueDecompositionImpl@getUT():207:cachedUt == null |==> true
+241:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@getUT():208:cachedUt = getU().transpose() |==> <NO-OP>
+242:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.math.linear.SingularValueDecompositionImpl@getS():220:cachedS == null |==> cachedS != null
+243:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math.linear.SingularValueDecompositionImpl@getS():220:cachedS == null |==> false
+244:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.math.linear.SingularValueDecompositionImpl@getS():220:cachedS == null |==> true
+245:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@getS():223:cachedS = MatrixUtils.createRealDiagonalMatrix(singularValues) |==> <NO-OP>
+246:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():239:cachedV == null |==> cachedV != null
+247:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():239:cachedV == null |==> false
+248:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():239:cachedV == null |==> true
+249:ROR:>=(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():242:m >= n |==> m != n
+250:ROR:>=(int,int):<(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():242:m >= n |==> m < n
+251:ROR:>=(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():242:m >= n |==> m <= n
+252:ROR:>=(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():242:m >= n |==> m == n
+253:ROR:>=(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():242:m >= n |==> m > n
+254:ROR:>=(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():242:m >= n |==> false
+255:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():242:m >= n |==> true
+256:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():245:0 |==> 1
+257:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():245:0 |==> -1
+258:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():245:1 |==> 0
+259:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():245:1 |==> -1
+260:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():245:n - 1 |==> n % 1
+261:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():245:n - 1 |==> n * 1
+262:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():245:n - 1 |==> n + 1
+263:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():245:n - 1 |==> n / 1
+264:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():245:0 |==> 1
+265:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():245:0 |==> -1
+266:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():245:1 |==> 0
+267:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():245:1 |==> -1
+268:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():245:p - 1 |==> p % 1
+269:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():245:p - 1 |==> p * 1
+270:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():245:p - 1 |==> p + 1
+271:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():245:p - 1 |==> p / 1
+272:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():246:cachedV = transformer.getV().multiply(e) |==> <NO-OP>
+273:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():251:0 |==> 1
+274:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():251:0 |==> -1
+275:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():251:1 |==> 0
+276:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():251:1 |==> -1
+277:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():251:m - 1 |==> m % 1
+278:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():251:m - 1 |==> m * 1
+279:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():251:m - 1 |==> m + 1
+280:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():251:m - 1 |==> m / 1
+281:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():251:0 |==> 1
+282:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():251:0 |==> -1
+283:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():251:1 |==> 0
+284:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():251:1 |==> -1
+285:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():251:p - 1 |==> p % 1
+286:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():251:p - 1 |==> p * 1
+287:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():251:p - 1 |==> p + 1
+288:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():251:p - 1 |==> p / 1
+289:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():254:0 |==> 1
+290:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():254:0 |==> -1
+291:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():255:0 |==> 1
+292:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():255:0 |==> -1
+293:ROR:<(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():255:i < p |==> i != p
+294:ROR:<(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():255:i < p |==> i <= p
+295:ROR:<(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():255:i < p |==> i == p
+296:ROR:<(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():255:i < p |==> i > p
+297:ROR:<(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():255:i < p |==> i >= p
+298:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():255:i < p |==> false
+299:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():255:i < p |==> true
+300:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():259:1 |==> 0
+301:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():259:1 |==> -1
+302:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():259:m - 1 |==> m % 1
+303:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():259:m - 1 |==> m * 1
+304:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():259:m - 1 |==> m + 1
+305:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():259:m - 1 |==> m / 1
+306:ROR:<(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():259:i < m - 1 |==> i != m - 1
+307:ROR:<(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():259:i < m - 1 |==> i <= m - 1
+308:ROR:<(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():259:i < m - 1 |==> i == m - 1
+309:ROR:<(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():259:i < m - 1 |==> i > m - 1
+310:ROR:<(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():259:i < m - 1 |==> i >= m - 1
+311:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():259:i < m - 1 |==> false
+312:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():259:i < m - 1 |==> true
+313:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():260:1 |==> 0
+314:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():260:1 |==> -1
+315:AOR:+(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():260:i + 1 |==> i % 1
+316:AOR:+(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():260:i + 1 |==> i * 1
+317:AOR:+(int,int):-(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():260:i + 1 |==> i - 1
+318:AOR:+(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():260:i + 1 |==> i / 1
+319:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():260:ei1 = eData[i + 1] |==> <NO-OP>
+320:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():262:0 |==> 1
+321:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():262:0 |==> -1
+322:ROR:<(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():262:j < p |==> j != p
+323:ROR:<(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():262:j < p |==> j <= p
+324:ROR:<(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():262:j < p |==> j == p
+325:ROR:<(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():262:j < p |==> j > p
+326:ROR:<(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():262:j < p |==> j >= p
+327:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():262:j < p |==> false
+328:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():262:j < p |==> true
+329:AOR:*(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():263:mi * ei0[j] |==> mi % ei0[j]
+330:AOR:*(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():263:mi * ei0[j] |==> mi + ei0[j]
+331:AOR:*(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():263:mi * ei0[j] |==> mi - ei0[j]
+332:AOR:*(double,double):/(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():263:mi * ei0[j] |==> mi / ei0[j]
+333:AOR:*(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():263:si * ei1[j] |==> si % ei1[j]
+334:AOR:*(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():263:si * ei1[j] |==> si + ei1[j]
+335:AOR:*(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():263:si * ei1[j] |==> si - ei1[j]
+336:AOR:*(double,double):/(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():263:si * ei1[j] |==> si / ei1[j]
+337:AOR:+(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():263:mi * ei0[j] + si * ei1[j] |==> mi * ei0[j] % (si * ei1[j])
+338:AOR:+(double,double):*(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():263:mi * ei0[j] + si * ei1[j] |==> mi * ei0[j] * (si * ei1[j])
+339:AOR:+(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():263:mi * ei0[j] + si * ei1[j] |==> mi * ei0[j] - si * ei1[j]
+340:AOR:+(double,double):/(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():263:mi * ei0[j] + si * ei1[j] |==> mi * ei0[j] / (si * ei1[j])
+341:AOR:/(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():263:(mi * ei0[j] + si * ei1[j]) / singularValues[j] |==> (mi * ei0[j] + si * ei1[j]) % singularValues[j]
+342:AOR:/(double,double):*(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():263:(mi * ei0[j] + si * ei1[j]) / singularValues[j] |==> (mi * ei0[j] + si * ei1[j]) * singularValues[j]
+343:AOR:/(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():263:(mi * ei0[j] + si * ei1[j]) / singularValues[j] |==> (mi * ei0[j] + si * ei1[j]) + singularValues[j]
+344:AOR:/(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():263:(mi * ei0[j] + si * ei1[j]) / singularValues[j] |==> (mi * ei0[j] + si * ei1[j]) - singularValues[j]
+345:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():263:wi[j] = (mi * ei0[j] + si * ei1[j]) / singularValues[j] |==> <NO-OP>
+346:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():266:0 |==> 1
+347:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():266:0 |==> -1
+348:ROR:<(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():266:j < p |==> j != p
+349:ROR:<(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():266:j < p |==> j <= p
+350:ROR:<(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():266:j < p |==> j == p
+351:ROR:<(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():266:j < p |==> j > p
+352:ROR:<(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():266:j < p |==> j >= p
+353:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():266:j < p |==> false
+354:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():266:j < p |==> true
+355:AOR:*(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():267:mi * ei0[j] |==> mi % ei0[j]
+356:AOR:*(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():267:mi * ei0[j] |==> mi + ei0[j]
+357:AOR:*(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():267:mi * ei0[j] |==> mi - ei0[j]
+358:AOR:*(double,double):/(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():267:mi * ei0[j] |==> mi / ei0[j]
+359:AOR:/(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():267:mi * ei0[j] / singularValues[j] |==> mi * ei0[j] % singularValues[j]
+360:AOR:/(double,double):*(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():267:mi * ei0[j] / singularValues[j] |==> mi * ei0[j] * singularValues[j]
+361:AOR:/(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():267:mi * ei0[j] / singularValues[j] |==> mi * ei0[j] + singularValues[j]
+362:AOR:/(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():267:mi * ei0[j] / singularValues[j] |==> mi * ei0[j] - singularValues[j]
+363:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():267:wi[j] = mi * ei0[j] / singularValues[j] |==> <NO-OP>
+364:ROR:<(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():271:i < n |==> i != n
+365:ROR:<(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():271:i < n |==> i <= n
+366:ROR:<(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():271:i < n |==> i == n
+367:ROR:<(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():271:i < n |==> i > n
+368:ROR:<(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():271:i < n |==> i >= n
+369:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():271:i < n |==> false
+370:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():271:i < n |==> true
+371:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():272:wData[i] = new double[p] |==> <NO-OP>
+372:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@getV():274:cachedV = transformer.getV().multiply(MatrixUtils.createRealMatrix(wData)) |==> <NO-OP>
+373:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.math.linear.SingularValueDecompositionImpl@getVT():289:cachedVt == null |==> cachedVt != null
+374:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math.linear.SingularValueDecompositionImpl@getVT():289:cachedVt == null |==> false
+375:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.math.linear.SingularValueDecompositionImpl@getVT():289:cachedVt == null |==> true
+376:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@getVT():290:cachedVt = getV().transpose() |==> <NO-OP>
+377:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):303:0 |==> 1
+378:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):303:0 |==> -1
+379:ROR:<(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:dimension < p |==> dimension != p
+380:ROR:<(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:dimension < p |==> dimension <= p
+381:ROR:<(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:dimension < p |==> dimension == p
+382:ROR:<(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:dimension < p |==> dimension > p
+383:ROR:<(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:dimension < p |==> dimension >= p
+384:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:dimension < p |==> false
+385:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:dimension < p |==> true
+386:ROR:>=(double,double):!=(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:singularValues[dimension] >= minSingularValue |==> singularValues[dimension] != minSingularValue
+387:ROR:>=(double,double):<(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:singularValues[dimension] >= minSingularValue |==> singularValues[dimension] < minSingularValue
+388:ROR:>=(double,double):<=(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:singularValues[dimension] >= minSingularValue |==> singularValues[dimension] <= minSingularValue
+389:ROR:>=(double,double):==(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:singularValues[dimension] >= minSingularValue |==> singularValues[dimension] == minSingularValue
+390:ROR:>=(double,double):>(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:singularValues[dimension] >= minSingularValue |==> singularValues[dimension] > minSingularValue
+391:ROR:>=(double,double):FALSE(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:singularValues[dimension] >= minSingularValue |==> false
+392:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:singularValues[dimension] >= minSingularValue |==> true
+393:COR:&&(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:(dimension < p) && (singularValues[dimension] >= minSingularValue) |==> (dimension < p) != (singularValues[dimension] >= minSingularValue)
+394:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:(dimension < p) && (singularValues[dimension] >= minSingularValue) |==> (dimension < p) == (singularValues[dimension] >= minSingularValue)
+395:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:(dimension < p) && (singularValues[dimension] >= minSingularValue) |==> false
+396:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:(dimension < p) && (singularValues[dimension] >= minSingularValue) |==> (dimension < p)
+397:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:(dimension < p) && (singularValues[dimension] >= minSingularValue) |==> (singularValues[dimension] >= minSingularValue)
+398:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:(dimension < p) && (singularValues[dimension] >= minSingularValue) |==> true
+399:COR:&&(boolean,boolean):||(boolean,boolean):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):304:(dimension < p) && (singularValues[dimension] >= minSingularValue) |==> (dimension < p) || (singularValues[dimension] >= minSingularValue)
+400:STD:<INC>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):305:++dimension |==> <NO-OP>
+401:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):308:0 |==> 1
+402:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):308:0 |==> -1
+403:ROR:==(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):308:dimension == 0 |==> dimension != 0
+404:ROR:==(int,int):<(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):308:dimension == 0 |==> dimension < 0
+405:ROR:==(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):308:dimension == 0 |==> dimension <= 0
+406:ROR:==(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):308:dimension == 0 |==> dimension > 0
+407:ROR:==(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):308:dimension == 0 |==> dimension >= 0
+408:ROR:==(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):308:dimension == 0 |==> false
+409:ROR:==(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):308:dimension == 0 |==> true
+410:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):311:0 |==> 1
+411:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):311:0 |==> -1
+412:AOR:/(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl$1@visit(int,int,double):319:value / singularValues[row] |==> value % singularValues[row]
+413:AOR:/(double,double):*(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl$1@visit(int,int,double):319:value / singularValues[row] |==> value * singularValues[row]
+414:AOR:/(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl$1@visit(int,int,double):319:value / singularValues[row] |==> value + singularValues[row]
+415:AOR:/(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl$1@visit(int,int,double):319:value / singularValues[row] |==> value - singularValues[row]
+416:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl$1@visit(int,int,double):319:data[row][column] = value / singularValues[row] |==> <NO-OP>
+417:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):321:0 |==> 1
+418:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):321:0 |==> -1
+419:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):321:1 |==> 0
+420:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):321:1 |==> -1
+421:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):321:dimension - 1 |==> dimension % 1
+422:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):321:dimension - 1 |==> dimension * 1
+423:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):321:dimension - 1 |==> dimension + 1
+424:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):321:dimension - 1 |==> dimension / 1
+425:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):321:0 |==> 1
+426:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):321:0 |==> -1
+427:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):321:1 |==> 0
+428:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):321:1 |==> -1
+429:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):321:p - 1 |==> p % 1
+430:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):321:p - 1 |==> p * 1
+431:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):321:p - 1 |==> p + 1
+432:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):321:p - 1 |==> p / 1
+433:STD:<CALL>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):315:getVT().walkInOptimizedOrder(new DefaultRealMatrixPreservingVisitor(){...) |==> <NO-OP>
+434:LVR:FALSE:TRUE:org.apache.commons.math.linear.SingularValueDecompositionImpl@getCovariance(double):323:false |==> true
+435:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getNorm():331:0 |==> 1
+436:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getNorm():331:0 |==> -1
+437:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getConditionNumber():337:0 |==> 1
+438:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getConditionNumber():337:0 |==> -1
+439:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@getConditionNumber():337:1 |==> 0
+440:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getConditionNumber():337:1 |==> -1
+441:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getConditionNumber():337:singularValues.length - 1 |==> singularValues.length % 1
+442:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getConditionNumber():337:singularValues.length - 1 |==> singularValues.length * 1
+443:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getConditionNumber():337:singularValues.length - 1 |==> singularValues.length + 1
+444:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getConditionNumber():337:singularValues.length - 1 |==> singularValues.length / 1
+445:AOR:/(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getConditionNumber():337:singularValues[0] / singularValues[singularValues.length - 1] |==> singularValues[0] % singularValues[singularValues.length - 1]
+446:AOR:/(double,double):*(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getConditionNumber():337:singularValues[0] / singularValues[singularValues.length - 1] |==> singularValues[0] * singularValues[singularValues.length - 1]
+447:AOR:/(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getConditionNumber():337:singularValues[0] / singularValues[singularValues.length - 1] |==> singularValues[0] + singularValues[singularValues.length - 1]
+448:AOR:/(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getConditionNumber():337:singularValues[0] / singularValues[singularValues.length - 1] |==> singularValues[0] - singularValues[singularValues.length - 1]
+449:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():344:0 |==> 1
+450:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():344:0 |==> -1
+451:AOR:*(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():344:Math.max(m, n) * Math.ulp(singularValues[0]) |==> Math.max(m, n) % Math.ulp(singularValues[0])
+452:AOR:*(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():344:Math.max(m, n) * Math.ulp(singularValues[0]) |==> Math.max(m, n) + Math.ulp(singularValues[0])
+453:AOR:*(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():344:Math.max(m, n) * Math.ulp(singularValues[0]) |==> Math.max(m, n) - Math.ulp(singularValues[0])
+454:AOR:*(double,double):/(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():344:Math.max(m, n) * Math.ulp(singularValues[0]) |==> Math.max(m, n) / Math.ulp(singularValues[0])
+455:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():346:1 |==> 0
+456:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():346:1 |==> -1
+457:AOR:-(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():346:singularValues.length - 1 |==> singularValues.length % 1
+458:AOR:-(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():346:singularValues.length - 1 |==> singularValues.length * 1
+459:AOR:-(int,int):+(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():346:singularValues.length - 1 |==> singularValues.length + 1
+460:AOR:-(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():346:singularValues.length - 1 |==> singularValues.length / 1
+461:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():346:0 |==> 1
+462:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():346:0 |==> -1
+463:ROR:>=(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():346:i >= 0 |==> i != 0
+464:ROR:>=(int,int):<(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():346:i >= 0 |==> i < 0
+465:ROR:>=(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():346:i >= 0 |==> i <= 0
+466:ROR:>=(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():346:i >= 0 |==> i == 0
+467:ROR:>=(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():346:i >= 0 |==> i > 0
+468:ROR:>=(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():346:i >= 0 |==> false
+469:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():346:i >= 0 |==> true
+470:ROR:>(double,double):!=(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():347:singularValues[i] > threshold |==> singularValues[i] != threshold
+471:ROR:>(double,double):<(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():347:singularValues[i] > threshold |==> singularValues[i] < threshold
+472:ROR:>(double,double):<=(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():347:singularValues[i] > threshold |==> singularValues[i] <= threshold
+473:ROR:>(double,double):==(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():347:singularValues[i] > threshold |==> singularValues[i] == threshold
+474:ROR:>(double,double):>=(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():347:singularValues[i] > threshold |==> singularValues[i] >= threshold
+475:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():347:singularValues[i] > threshold |==> false
+476:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():347:singularValues[i] > threshold |==> true
+477:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():348:1 |==> 0
+478:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():348:1 |==> -1
+479:AOR:+(int,int):%(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():348:i + 1 |==> i % 1
+480:AOR:+(int,int):*(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():348:i + 1 |==> i * 1
+481:AOR:+(int,int):-(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():348:i + 1 |==> i - 1
+482:AOR:+(int,int):/(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():348:i + 1 |==> i / 1
+483:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():351:0 |==> 1
+484:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl@getRank():351:0 |==> -1
+485:ROR:==(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getSolver():358:getRank() == Math.max(m, n) |==> getRank() != Math.max(m, n)
+486:ROR:==(int,int):<(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getSolver():358:getRank() == Math.max(m, n) |==> getRank() < Math.max(m, n)
+487:ROR:==(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getSolver():358:getRank() == Math.max(m, n) |==> getRank() <= Math.max(m, n)
+488:ROR:==(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getSolver():358:getRank() == Math.max(m, n) |==> getRank() > Math.max(m, n)
+489:ROR:==(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getSolver():358:getRank() == Math.max(m, n) |==> getRank() >= Math.max(m, n)
+490:ROR:==(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getSolver():358:getRank() == Math.max(m, n) |==> false
+491:ROR:==(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl@getSolver():358:getRank() == Math.max(m, n) |==> true
+492:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):380:0 |==> 1
+493:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):380:0 |==> -1
+494:ROR:<(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):380:i < singularValues.length |==> i != singularValues.length
+495:ROR:<(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):380:i < singularValues.length |==> i <= singularValues.length
+496:ROR:<(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):380:i < singularValues.length |==> i == singularValues.length
+497:ROR:<(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):380:i < singularValues.length |==> i > singularValues.length
+498:ROR:<(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):380:i < singularValues.length |==> i >= singularValues.length
+499:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):380:i < singularValues.length |==> false
+500:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):380:i < singularValues.length |==> true
+501:LVR:POS:0:org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):381:1.0 |==> 0.0
+502:LVR:POS:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):381:1.0 |==> -1.0
+503:AOR:/(double,double):%(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):381:1.0 / singularValues[i] |==> 1.0 % singularValues[i]
+504:AOR:/(double,double):*(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):381:1.0 / singularValues[i] |==> 1.0 * singularValues[i]
+505:AOR:/(double,double):+(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):381:1.0 / singularValues[i] |==> 1.0 + singularValues[i]
+506:AOR:/(double,double):-(double,double):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):381:1.0 / singularValues[i] |==> 1.0 - singularValues[i]
+507:LVR:0:POS:org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):383:0 |==> 1
+508:LVR:0:NEG:org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):383:0 |==> -1
+509:ROR:<(int,int):!=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):383:j < suTi.length |==> j != suTi.length
+510:ROR:<(int,int):<=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):383:j < suTi.length |==> j <= suTi.length
+511:ROR:<(int,int):==(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):383:j < suTi.length |==> j == suTi.length
+512:ROR:<(int,int):>(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):383:j < suTi.length |==> j > suTi.length
+513:ROR:<(int,int):>=(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):383:j < suTi.length |==> j >= suTi.length
+514:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):383:j < suTi.length |==> false
+515:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):383:j < suTi.length |==> true
+516:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):384:suTi[j] *= a |==> <NO-OP>
+517:LVR:FALSE:TRUE:org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):387:false |==> true
+518:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.linear.SingularValueDecompositionImpl$Solver@<init>(double[],org.apache.commons.math.linear.RealMatrix,org.apache.commons.math.linear.RealMatrix,boolean):388:this.nonSingular = nonSingular |==> <NO-OP>

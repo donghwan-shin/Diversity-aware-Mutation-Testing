@@ -1,0 +1,90 @@
+
+init:
+     [echo] -------- Commons MATH 3.1-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] Compiling 444 source files to /tmp/run_mutation.pl_23863_1483662521/11f/target/test-classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /tmp/run_mutation.pl_23863_1483662521/11f/src/test/java/org/apache/commons/math3/PerfTestUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 28 files to /tmp/run_mutation.pl_23863_1483662521/11f/target/test-classes
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest7[test7] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "arrays first differed at element [0]; expected:<9.010601691114058> but was:<27.8915033538522>"
+    [junit] MAJOR: Exclude 1 failing test class:
+    [junit] MAJOR:  - org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest7
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 7 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 2.91 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 170
+    [junit] MAJOR: Mutants covered:   150 (88.24%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 7 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/7 - org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest5 (10ms / 77):
+    [junit] MAJOR: 17149 (28 / 77 / 77) -> AVG-RTPM: 222ms
+    [junit] MAJOR: Mutants killed / live: 28 (0-28-0) / 122
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/7 - org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest2 (11ms / 7):
+    [junit] MAJOR: 19559 (0 / 7 / 7) -> AVG-RTPM: 344ms
+    [junit] MAJOR: Mutants killed / live: 28 (0-28-0) / 122
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/7 - org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest6 (11ms / 80):
+    [junit] MAJOR: 65474 (8 / 80 / 80) -> AVG-RTPM: 573ms
+    [junit] MAJOR: Mutants killed / live: 36 (5-59-0) / 114
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/7 - org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest4 (12ms / 43):
+    [junit] MAJOR: 112288 (6 / 43 / 43) -> AVG-RTPM: 1088ms
+    [junit] MAJOR: Mutants killed / live: 42 (11-63-0) / 108
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/7 - org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest3 (13ms / 23):
+    [junit] MAJOR: 145895 (0 / 23 / 23) -> AVG-RTPM: 1461ms
+    [junit] MAJOR: Mutants killed / live: 42 (11-64-0) / 108
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/7 - org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest0 (15ms / 70):
+    [junit] MAJOR: 224935 (20 / 70 / 70) -> AVG-RTPM: 1129ms
+    [junit] MAJOR: Mutants killed / live: 62 (11-112-1) / 88
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/7 - org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest1 (18ms / 138):
+    [junit] MAJOR: 245441 (84 / 138 / 138) -> AVG-RTPM: 148ms
+    [junit] MAJOR: Mutants killed / live: 146 (11-250-1) / 4
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  245.4 seconds
+    [junit] MAJOR: Mutation score: 85.88% (97.33%)
+    [junit] MAJOR: Mutants killed / live: 146 (11-250-1) / 4
+    [junit] MAJOR: Mutant executions: 438
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_23863_1483662521/11f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 4 minutes 15 seconds

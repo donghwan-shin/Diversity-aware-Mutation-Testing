@@ -1,0 +1,279 @@
+1:LVR:FALSE:TRUE:com.google.javascript.jscomp.SourceFile:59:false |==> true
+2:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile@<init>(java.lang.String):87:fileName == null |==> fileName != null
+3:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile@<init>(java.lang.String):87:fileName == null |==> false
+4:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile@<init>(java.lang.String):87:fileName == null |==> true
+5:COR:||(boolean,boolean):!=(boolean,boolean):com.google.javascript.jscomp.SourceFile@<init>(java.lang.String):87:fileName == null || fileName.isEmpty() |==> fileName == null != fileName.isEmpty()
+6:COR:||(boolean,boolean):&&(boolean,boolean):com.google.javascript.jscomp.SourceFile@<init>(java.lang.String):87:fileName == null || fileName.isEmpty() |==> fileName == null && fileName.isEmpty()
+7:COR:||(boolean,boolean):==(boolean,boolean):com.google.javascript.jscomp.SourceFile@<init>(java.lang.String):87:fileName == null || fileName.isEmpty() |==> fileName == null == fileName.isEmpty()
+8:COR:||(boolean,boolean):FALSE(boolean,boolean):com.google.javascript.jscomp.SourceFile@<init>(java.lang.String):87:fileName == null || fileName.isEmpty() |==> false
+9:COR:||(boolean,boolean):LHS(boolean,boolean):com.google.javascript.jscomp.SourceFile@<init>(java.lang.String):87:fileName == null || fileName.isEmpty() |==> fileName == null
+10:COR:||(boolean,boolean):RHS(boolean,boolean):com.google.javascript.jscomp.SourceFile@<init>(java.lang.String):87:fileName == null || fileName.isEmpty() |==> fileName.isEmpty()
+11:COR:||(boolean,boolean):TRUE(boolean,boolean):com.google.javascript.jscomp.SourceFile@<init>(java.lang.String):87:fileName == null || fileName.isEmpty() |==> true
+12:LVR:0:POS:com.google.javascript.jscomp.SourceFile@<init>(java.lang.String):92:0 |==> 1
+13:LVR:0:NEG:com.google.javascript.jscomp.SourceFile@<init>(java.lang.String):92:0 |==> -1
+14:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile@<init>(java.lang.String):92:this.lastOffset = 0 |==> <NO-OP>
+15:LVR:POS:0:com.google.javascript.jscomp.SourceFile@<init>(java.lang.String):93:1 |==> 0
+16:LVR:POS:NEG:com.google.javascript.jscomp.SourceFile@<init>(java.lang.String):93:1 |==> -1
+17:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile@<init>(java.lang.String):93:this.lastLine = 1 |==> <NO-OP>
+18:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile@getLineOffset(int):98:lineOffsets == null |==> lineOffsets != null
+19:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile@getLineOffset(int):98:lineOffsets == null |==> false
+20:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile@getLineOffset(int):98:lineOffsets == null |==> true
+21:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.SourceFile@getLineOffset(int):99:findLineOffsets() |==> <NO-OP>
+22:LVR:POS:0:com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:1 |==> 0
+23:LVR:POS:NEG:com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:1 |==> -1
+24:ROR:<(int,int):!=(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno < 1 |==> lineno != 1
+25:ROR:<(int,int):<=(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno < 1 |==> lineno <= 1
+26:ROR:<(int,int):==(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno < 1 |==> lineno == 1
+27:ROR:<(int,int):>(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno < 1 |==> lineno > 1
+28:ROR:<(int,int):>=(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno < 1 |==> lineno >= 1
+29:ROR:<(int,int):FALSE(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno < 1 |==> false
+30:ROR:<(int,int):TRUE(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno < 1 |==> true
+31:ROR:>(int,int):!=(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno > lineOffsets.length |==> lineno != lineOffsets.length
+32:ROR:>(int,int):<(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno > lineOffsets.length |==> lineno < lineOffsets.length
+33:ROR:>(int,int):<=(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno > lineOffsets.length |==> lineno <= lineOffsets.length
+34:ROR:>(int,int):==(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno > lineOffsets.length |==> lineno == lineOffsets.length
+35:ROR:>(int,int):>=(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno > lineOffsets.length |==> lineno >= lineOffsets.length
+36:ROR:>(int,int):FALSE(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno > lineOffsets.length |==> false
+37:ROR:>(int,int):TRUE(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno > lineOffsets.length |==> true
+38:COR:||(boolean,boolean):!=(boolean,boolean):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno < 1 || lineno > lineOffsets.length |==> lineno < 1 != lineno > lineOffsets.length
+39:COR:||(boolean,boolean):&&(boolean,boolean):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno < 1 || lineno > lineOffsets.length |==> lineno < 1 && lineno > lineOffsets.length
+40:COR:||(boolean,boolean):==(boolean,boolean):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno < 1 || lineno > lineOffsets.length |==> lineno < 1 == lineno > lineOffsets.length
+41:COR:||(boolean,boolean):FALSE(boolean,boolean):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno < 1 || lineno > lineOffsets.length |==> false
+42:COR:||(boolean,boolean):LHS(boolean,boolean):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno < 1 || lineno > lineOffsets.length |==> lineno < 1
+43:COR:||(boolean,boolean):RHS(boolean,boolean):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno < 1 || lineno > lineOffsets.length |==> lineno > lineOffsets.length
+44:COR:||(boolean,boolean):TRUE(boolean,boolean):com.google.javascript.jscomp.SourceFile@getLineOffset(int):101:lineno < 1 || lineno > lineOffsets.length |==> true
+45:LVR:POS:0:com.google.javascript.jscomp.SourceFile@getLineOffset(int):106:1 |==> 0
+46:LVR:POS:NEG:com.google.javascript.jscomp.SourceFile@getLineOffset(int):106:1 |==> -1
+47:AOR:-(int,int):%(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):106:lineno - 1 |==> lineno % 1
+48:AOR:-(int,int):*(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):106:lineno - 1 |==> lineno * 1
+49:AOR:-(int,int):+(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):106:lineno - 1 |==> lineno + 1
+50:AOR:-(int,int):/(int,int):com.google.javascript.jscomp.SourceFile@getLineOffset(int):106:lineno - 1 |==> lineno / 1
+51:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile@getNumLines():111:lineOffsets == null |==> lineOffsets != null
+52:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile@getNumLines():111:lineOffsets == null |==> false
+53:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile@getNumLines():111:lineOffsets == null |==> true
+54:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.SourceFile@getNumLines():112:findLineOffsets() |==> <NO-OP>
+55:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile@findLineOffsets():120:lineOffsets = new int[sourceLines.length] |==> <NO-OP>
+56:LVR:POS:0:com.google.javascript.jscomp.SourceFile@findLineOffsets():121:1 |==> 0
+57:LVR:POS:NEG:com.google.javascript.jscomp.SourceFile@findLineOffsets():121:1 |==> -1
+58:ROR:<(int,int):!=(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():121:ii < sourceLines.length |==> ii != sourceLines.length
+59:ROR:<(int,int):<=(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():121:ii < sourceLines.length |==> ii <= sourceLines.length
+60:ROR:<(int,int):==(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():121:ii < sourceLines.length |==> ii == sourceLines.length
+61:ROR:<(int,int):>(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():121:ii < sourceLines.length |==> ii > sourceLines.length
+62:ROR:<(int,int):>=(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():121:ii < sourceLines.length |==> ii >= sourceLines.length
+63:ROR:<(int,int):FALSE(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():121:ii < sourceLines.length |==> false
+64:ROR:<(int,int):TRUE(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():121:ii < sourceLines.length |==> true
+65:LVR:POS:0:com.google.javascript.jscomp.SourceFile@findLineOffsets():123:1 |==> 0
+66:LVR:POS:NEG:com.google.javascript.jscomp.SourceFile@findLineOffsets():123:1 |==> -1
+67:AOR:-(int,int):%(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():123:ii - 1 |==> ii % 1
+68:AOR:-(int,int):*(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():123:ii - 1 |==> ii * 1
+69:AOR:-(int,int):+(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():123:ii - 1 |==> ii + 1
+70:AOR:-(int,int):/(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():123:ii - 1 |==> ii / 1
+71:LVR:POS:0:com.google.javascript.jscomp.SourceFile@findLineOffsets():123:1 |==> 0
+72:LVR:POS:NEG:com.google.javascript.jscomp.SourceFile@findLineOffsets():123:1 |==> -1
+73:AOR:-(int,int):%(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():123:ii - 1 |==> ii % 1
+74:AOR:-(int,int):*(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():123:ii - 1 |==> ii * 1
+75:AOR:-(int,int):+(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():123:ii - 1 |==> ii + 1
+76:AOR:-(int,int):/(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():123:ii - 1 |==> ii / 1
+77:AOR:+(int,int):%(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():123:lineOffsets[ii - 1] + sourceLines[ii - 1].length() |==> lineOffsets[ii - 1] % sourceLines[ii - 1].length()
+78:AOR:+(int,int):*(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():123:lineOffsets[ii - 1] + sourceLines[ii - 1].length() |==> lineOffsets[ii - 1] * sourceLines[ii - 1].length()
+79:AOR:+(int,int):-(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():123:lineOffsets[ii - 1] + sourceLines[ii - 1].length() |==> lineOffsets[ii - 1] - sourceLines[ii - 1].length()
+80:AOR:+(int,int):/(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():123:lineOffsets[ii - 1] + sourceLines[ii - 1].length() |==> lineOffsets[ii - 1] / sourceLines[ii - 1].length()
+81:LVR:POS:0:com.google.javascript.jscomp.SourceFile@findLineOffsets():123:1 |==> 0
+82:LVR:POS:NEG:com.google.javascript.jscomp.SourceFile@findLineOffsets():123:1 |==> -1
+83:AOR:+(int,int):%(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():123:lineOffsets[ii - 1] + sourceLines[ii - 1].length() + 1 |==> (lineOffsets[ii - 1] + sourceLines[ii - 1].length()) % 1
+84:AOR:+(int,int):*(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():123:lineOffsets[ii - 1] + sourceLines[ii - 1].length() + 1 |==> (lineOffsets[ii - 1] + sourceLines[ii - 1].length()) * 1
+85:AOR:+(int,int):-(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():123:lineOffsets[ii - 1] + sourceLines[ii - 1].length() + 1 |==> lineOffsets[ii - 1] + sourceLines[ii - 1].length() - 1
+86:AOR:+(int,int):/(int,int):com.google.javascript.jscomp.SourceFile@findLineOffsets():123:lineOffsets[ii - 1] + sourceLines[ii - 1].length() + 1 |==> (lineOffsets[ii - 1] + sourceLines[ii - 1].length()) / 1
+87:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile@findLineOffsets():122:lineOffsets[ii] = lineOffsets[ii - 1] + sourceLines[ii - 1].length() + 1 |==> <NO-OP>
+88:LVR:POS:0:com.google.javascript.jscomp.SourceFile@findLineOffsets():126:1 |==> 0
+89:LVR:POS:NEG:com.google.javascript.jscomp.SourceFile@findLineOffsets():126:1 |==> -1
+90:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile@findLineOffsets():126:lineOffsets = new int[1] |==> <NO-OP>
+91:LVR:0:POS:com.google.javascript.jscomp.SourceFile@findLineOffsets():127:0 |==> 1
+92:LVR:0:NEG:com.google.javascript.jscomp.SourceFile@findLineOffsets():127:0 |==> -1
+93:LVR:0:POS:com.google.javascript.jscomp.SourceFile@findLineOffsets():127:0 |==> 1
+94:LVR:0:NEG:com.google.javascript.jscomp.SourceFile@findLineOffsets():127:0 |==> -1
+95:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile@findLineOffsets():127:lineOffsets[0] = 0 |==> <NO-OP>
+96:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile@setCode(java.lang.String):156:code = sourceCode |==> <NO-OP>
+97:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile@getOriginalPath():160:originalPath != null |==> originalPath == null
+98:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile@getOriginalPath():160:originalPath != null |==> false
+99:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile@getOriginalPath():160:originalPath != null |==> true
+100:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile@setOriginalPath(java.lang.String):164:this.originalPath = originalPath |==> <NO-OP>
+101:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile@hasSourceInMemory():177:code != null |==> code == null
+102:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile@hasSourceInMemory():177:code != null |==> false
+103:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile@hasSourceInMemory():177:code != null |==> true
+104:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile@setIsExtern(boolean):194:isExternFile = newVal |==> <NO-OP>
+105:LVR:0:POS:com.google.javascript.jscomp.SourceFile@getLine(int):216:0 |==> 1
+106:LVR:0:NEG:com.google.javascript.jscomp.SourceFile@getLine(int):216:0 |==> -1
+107:LVR:POS:0:com.google.javascript.jscomp.SourceFile@getLine(int):217:1 |==> 0
+108:LVR:POS:NEG:com.google.javascript.jscomp.SourceFile@getLine(int):217:1 |==> -1
+109:ROR:>=(int,int):!=(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):221:lineNumber >= lastLine |==> lineNumber != lastLine
+110:ROR:>=(int,int):<(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):221:lineNumber >= lastLine |==> lineNumber < lastLine
+111:ROR:>=(int,int):<=(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):221:lineNumber >= lastLine |==> lineNumber <= lastLine
+112:ROR:>=(int,int):==(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):221:lineNumber >= lastLine |==> lineNumber == lastLine
+113:ROR:>=(int,int):>(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):221:lineNumber >= lastLine |==> lineNumber > lastLine
+114:ROR:>=(int,int):FALSE(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):221:lineNumber >= lastLine |==> false
+115:ROR:>=(int,int):TRUE(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):221:lineNumber >= lastLine |==> true
+116:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile@getLine(int):222:pos = lastOffset |==> <NO-OP>
+117:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile@getLine(int):223:startLine = lastLine |==> <NO-OP>
+118:ROR:<(int,int):!=(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):226:n < lineNumber |==> n != lineNumber
+119:ROR:<(int,int):<=(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):226:n < lineNumber |==> n <= lineNumber
+120:ROR:<(int,int):==(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):226:n < lineNumber |==> n == lineNumber
+121:ROR:<(int,int):>(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):226:n < lineNumber |==> n > lineNumber
+122:ROR:<(int,int):>=(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):226:n < lineNumber |==> n >= lineNumber
+123:ROR:<(int,int):FALSE(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):226:n < lineNumber |==> false
+124:ROR:<(int,int):TRUE(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):226:n < lineNumber |==> true
+125:LVR:NEG:0:com.google.javascript.jscomp.SourceFile@getLine(int):228:-1 |==> 0
+126:LVR:NEG:POS:com.google.javascript.jscomp.SourceFile@getLine(int):228:-1 |==> 1
+127:ROR:==(int,int):!=(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):228:nextpos == -1 |==> nextpos != -1
+128:ROR:==(int,int):<(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):228:nextpos == -1 |==> nextpos < -1
+129:ROR:==(int,int):<=(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):228:nextpos == -1 |==> nextpos <= -1
+130:ROR:==(int,int):>(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):228:nextpos == -1 |==> nextpos > -1
+131:ROR:==(int,int):>=(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):228:nextpos == -1 |==> nextpos >= -1
+132:ROR:==(int,int):FALSE(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):228:nextpos == -1 |==> false
+133:ROR:==(int,int):TRUE(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):228:nextpos == -1 |==> true
+134:LVR:POS:0:com.google.javascript.jscomp.SourceFile@getLine(int):231:1 |==> 0
+135:LVR:POS:NEG:com.google.javascript.jscomp.SourceFile@getLine(int):231:1 |==> -1
+136:AOR:+(int,int):%(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):231:nextpos + 1 |==> nextpos % 1
+137:AOR:+(int,int):*(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):231:nextpos + 1 |==> nextpos * 1
+138:AOR:+(int,int):-(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):231:nextpos + 1 |==> nextpos - 1
+139:AOR:+(int,int):/(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):231:nextpos + 1 |==> nextpos / 1
+140:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile@getLine(int):231:pos = nextpos + 1 |==> <NO-OP>
+141:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile@getLine(int):235:lastOffset = pos |==> <NO-OP>
+142:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile@getLine(int):236:lastLine = lineNumber |==> <NO-OP>
+143:LVR:NEG:0:com.google.javascript.jscomp.SourceFile@getLine(int):238:-1 |==> 0
+144:LVR:NEG:POS:com.google.javascript.jscomp.SourceFile@getLine(int):238:-1 |==> 1
+145:ROR:==(int,int):!=(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):238:js.indexOf('\n', pos) == -1 |==> js.indexOf('\n', pos) != -1
+146:ROR:==(int,int):<(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):238:js.indexOf('\n', pos) == -1 |==> js.indexOf('\n', pos) < -1
+147:ROR:==(int,int):<=(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):238:js.indexOf('\n', pos) == -1 |==> js.indexOf('\n', pos) <= -1
+148:ROR:==(int,int):>(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):238:js.indexOf('\n', pos) == -1 |==> js.indexOf('\n', pos) > -1
+149:ROR:==(int,int):>=(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):238:js.indexOf('\n', pos) == -1 |==> js.indexOf('\n', pos) >= -1
+150:ROR:==(int,int):FALSE(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):238:js.indexOf('\n', pos) == -1 |==> false
+151:ROR:==(int,int):TRUE(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):238:js.indexOf('\n', pos) == -1 |==> true
+152:ROR:>=(int,int):!=(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):242:pos >= js.length() |==> pos != js.length()
+153:ROR:>=(int,int):<(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):242:pos >= js.length() |==> pos < js.length()
+154:ROR:>=(int,int):<=(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):242:pos >= js.length() |==> pos <= js.length()
+155:ROR:>=(int,int):==(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):242:pos >= js.length() |==> pos == js.length()
+156:ROR:>=(int,int):>(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):242:pos >= js.length() |==> pos > js.length()
+157:ROR:>=(int,int):FALSE(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):242:pos >= js.length() |==> false
+158:ROR:>=(int,int):TRUE(int,int):com.google.javascript.jscomp.SourceFile@getLine(int):242:pos >= js.length() |==> true
+159:LVR:0:POS:com.google.javascript.jscomp.SourceFile@getRegion(int):268:0 |==> 1
+160:LVR:0:NEG:com.google.javascript.jscomp.SourceFile@getRegion(int):268:0 |==> -1
+161:LVR:POS:0:com.google.javascript.jscomp.SourceFile@getRegion(int):269:1 |==> 0
+162:LVR:POS:NEG:com.google.javascript.jscomp.SourceFile@getRegion(int):269:1 |==> -1
+163:LVR:POS:0:com.google.javascript.jscomp.SourceFile@getRegion(int):270:1 |==> 0
+164:LVR:POS:NEG:com.google.javascript.jscomp.SourceFile@getRegion(int):270:1 |==> -1
+165:AOR:+(int,int):%(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):270:SOURCE_EXCERPT_REGION_LENGTH + 1 |==> SOURCE_EXCERPT_REGION_LENGTH % 1
+166:AOR:+(int,int):*(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):270:SOURCE_EXCERPT_REGION_LENGTH + 1 |==> SOURCE_EXCERPT_REGION_LENGTH * 1
+167:AOR:+(int,int):-(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):270:SOURCE_EXCERPT_REGION_LENGTH + 1 |==> SOURCE_EXCERPT_REGION_LENGTH - 1
+168:AOR:+(int,int):/(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):270:SOURCE_EXCERPT_REGION_LENGTH + 1 |==> SOURCE_EXCERPT_REGION_LENGTH / 1
+169:LVR:POS:0:com.google.javascript.jscomp.SourceFile@getRegion(int):270:2 |==> 0
+170:LVR:POS:NEG:com.google.javascript.jscomp.SourceFile@getRegion(int):270:2 |==> -2
+171:AOR:/(int,int):%(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):270:(SOURCE_EXCERPT_REGION_LENGTH + 1) / 2 |==> (SOURCE_EXCERPT_REGION_LENGTH + 1) % 2
+172:AOR:/(int,int):*(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):270:(SOURCE_EXCERPT_REGION_LENGTH + 1) / 2 |==> (SOURCE_EXCERPT_REGION_LENGTH + 1) * 2
+173:AOR:/(int,int):+(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):270:(SOURCE_EXCERPT_REGION_LENGTH + 1) / 2 |==> (SOURCE_EXCERPT_REGION_LENGTH + 1) + 2
+174:AOR:/(int,int):-(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):270:(SOURCE_EXCERPT_REGION_LENGTH + 1) / 2 |==> (SOURCE_EXCERPT_REGION_LENGTH + 1) - 2
+175:AOR:-(int,int):%(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):270:lineNumber - (SOURCE_EXCERPT_REGION_LENGTH + 1) / 2 |==> lineNumber % ((SOURCE_EXCERPT_REGION_LENGTH + 1) / 2)
+176:AOR:-(int,int):*(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):270:lineNumber - (SOURCE_EXCERPT_REGION_LENGTH + 1) / 2 |==> lineNumber * ((SOURCE_EXCERPT_REGION_LENGTH + 1) / 2)
+177:AOR:-(int,int):+(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):270:lineNumber - (SOURCE_EXCERPT_REGION_LENGTH + 1) / 2 |==> lineNumber + (SOURCE_EXCERPT_REGION_LENGTH + 1) / 2
+178:AOR:-(int,int):/(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):270:lineNumber - (SOURCE_EXCERPT_REGION_LENGTH + 1) / 2 |==> lineNumber / ((SOURCE_EXCERPT_REGION_LENGTH + 1) / 2)
+179:LVR:POS:0:com.google.javascript.jscomp.SourceFile@getRegion(int):270:1 |==> 0
+180:LVR:POS:NEG:com.google.javascript.jscomp.SourceFile@getRegion(int):270:1 |==> -1
+181:AOR:+(int,int):%(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):270:lineNumber - (SOURCE_EXCERPT_REGION_LENGTH + 1) / 2 + 1 |==> (lineNumber - (SOURCE_EXCERPT_REGION_LENGTH + 1) / 2) % 1
+182:AOR:+(int,int):*(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):270:lineNumber - (SOURCE_EXCERPT_REGION_LENGTH + 1) / 2 + 1 |==> (lineNumber - (SOURCE_EXCERPT_REGION_LENGTH + 1) / 2) * 1
+183:AOR:+(int,int):-(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):270:lineNumber - (SOURCE_EXCERPT_REGION_LENGTH + 1) / 2 + 1 |==> lineNumber - (SOURCE_EXCERPT_REGION_LENGTH + 1) / 2 - 1
+184:AOR:+(int,int):/(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):270:lineNumber - (SOURCE_EXCERPT_REGION_LENGTH + 1) / 2 + 1 |==> (lineNumber - (SOURCE_EXCERPT_REGION_LENGTH + 1) / 2) / 1
+185:LVR:POS:0:com.google.javascript.jscomp.SourceFile@getRegion(int):271:1 |==> 0
+186:LVR:POS:NEG:com.google.javascript.jscomp.SourceFile@getRegion(int):271:1 |==> -1
+187:ROR:<(int,int):!=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):271:n < startLine |==> n != startLine
+188:ROR:<(int,int):<=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):271:n < startLine |==> n <= startLine
+189:ROR:<(int,int):==(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):271:n < startLine |==> n == startLine
+190:ROR:<(int,int):>(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):271:n < startLine |==> n > startLine
+191:ROR:<(int,int):>=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):271:n < startLine |==> n >= startLine
+192:ROR:<(int,int):FALSE(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):271:n < startLine |==> false
+193:ROR:<(int,int):TRUE(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):271:n < startLine |==> true
+194:LVR:NEG:0:com.google.javascript.jscomp.SourceFile@getRegion(int):273:-1 |==> 0
+195:LVR:NEG:POS:com.google.javascript.jscomp.SourceFile@getRegion(int):273:-1 |==> 1
+196:ROR:==(int,int):!=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):273:nextpos == -1 |==> nextpos != -1
+197:ROR:==(int,int):<(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):273:nextpos == -1 |==> nextpos < -1
+198:ROR:==(int,int):<=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):273:nextpos == -1 |==> nextpos <= -1
+199:ROR:==(int,int):>(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):273:nextpos == -1 |==> nextpos > -1
+200:ROR:==(int,int):>=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):273:nextpos == -1 |==> nextpos >= -1
+201:ROR:==(int,int):FALSE(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):273:nextpos == -1 |==> false
+202:ROR:==(int,int):TRUE(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):273:nextpos == -1 |==> true
+203:LVR:POS:0:com.google.javascript.jscomp.SourceFile@getRegion(int):276:1 |==> 0
+204:LVR:POS:NEG:com.google.javascript.jscomp.SourceFile@getRegion(int):276:1 |==> -1
+205:AOR:+(int,int):%(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):276:nextpos + 1 |==> nextpos % 1
+206:AOR:+(int,int):*(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):276:nextpos + 1 |==> nextpos * 1
+207:AOR:+(int,int):-(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):276:nextpos + 1 |==> nextpos - 1
+208:AOR:+(int,int):/(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):276:nextpos + 1 |==> nextpos / 1
+209:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile@getRegion(int):276:pos = nextpos + 1 |==> <NO-OP>
+210:LVR:0:POS:com.google.javascript.jscomp.SourceFile@getRegion(int):280:0 |==> 1
+211:LVR:0:NEG:com.google.javascript.jscomp.SourceFile@getRegion(int):280:0 |==> -1
+212:ROR:<(int,int):!=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):280:n < SOURCE_EXCERPT_REGION_LENGTH |==> n != SOURCE_EXCERPT_REGION_LENGTH
+213:ROR:<(int,int):<=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):280:n < SOURCE_EXCERPT_REGION_LENGTH |==> n <= SOURCE_EXCERPT_REGION_LENGTH
+214:ROR:<(int,int):==(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):280:n < SOURCE_EXCERPT_REGION_LENGTH |==> n == SOURCE_EXCERPT_REGION_LENGTH
+215:ROR:<(int,int):>(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):280:n < SOURCE_EXCERPT_REGION_LENGTH |==> n > SOURCE_EXCERPT_REGION_LENGTH
+216:ROR:<(int,int):>=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):280:n < SOURCE_EXCERPT_REGION_LENGTH |==> n >= SOURCE_EXCERPT_REGION_LENGTH
+217:ROR:<(int,int):FALSE(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):280:n < SOURCE_EXCERPT_REGION_LENGTH |==> false
+218:ROR:<(int,int):TRUE(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):280:n < SOURCE_EXCERPT_REGION_LENGTH |==> true
+219:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile@getRegion(int):281:end = js.indexOf('\n', end) |==> <NO-OP>
+220:LVR:NEG:0:com.google.javascript.jscomp.SourceFile@getRegion(int):282:-1 |==> 0
+221:LVR:NEG:POS:com.google.javascript.jscomp.SourceFile@getRegion(int):282:-1 |==> 1
+222:ROR:==(int,int):!=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):282:end == -1 |==> end != -1
+223:ROR:==(int,int):<(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):282:end == -1 |==> end < -1
+224:ROR:==(int,int):<=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):282:end == -1 |==> end <= -1
+225:ROR:==(int,int):>(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):282:end == -1 |==> end > -1
+226:ROR:==(int,int):>=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):282:end == -1 |==> end >= -1
+227:ROR:==(int,int):FALSE(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):282:end == -1 |==> false
+228:ROR:==(int,int):TRUE(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):282:end == -1 |==> true
+229:STD:<INC>:<NO-OP>:com.google.javascript.jscomp.SourceFile@getRegion(int):285:end++ |==> <NO-OP>
+230:ROR:>=(int,int):!=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):287:lineNumber >= endLine |==> lineNumber != endLine
+231:ROR:>=(int,int):<(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):287:lineNumber >= endLine |==> lineNumber < endLine
+232:ROR:>=(int,int):<=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):287:lineNumber >= endLine |==> lineNumber <= endLine
+233:ROR:>=(int,int):==(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):287:lineNumber >= endLine |==> lineNumber == endLine
+234:ROR:>=(int,int):>(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):287:lineNumber >= endLine |==> lineNumber > endLine
+235:ROR:>=(int,int):FALSE(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):287:lineNumber >= endLine |==> false
+236:ROR:>=(int,int):TRUE(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):287:lineNumber >= endLine |==> true
+237:LVR:NEG:0:com.google.javascript.jscomp.SourceFile@getRegion(int):290:-1 |==> 0
+238:LVR:NEG:POS:com.google.javascript.jscomp.SourceFile@getRegion(int):290:-1 |==> 1
+239:ROR:==(int,int):!=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):290:end == -1 |==> end != -1
+240:ROR:==(int,int):<(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):290:end == -1 |==> end < -1
+241:ROR:==(int,int):<=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):290:end == -1 |==> end <= -1
+242:ROR:==(int,int):>(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):290:end == -1 |==> end > -1
+243:ROR:==(int,int):>=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):290:end == -1 |==> end >= -1
+244:ROR:==(int,int):FALSE(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):290:end == -1 |==> false
+245:ROR:==(int,int):TRUE(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):290:end == -1 |==> true
+246:LVR:POS:0:com.google.javascript.jscomp.SourceFile@getRegion(int):291:1 |==> 0
+247:LVR:POS:NEG:com.google.javascript.jscomp.SourceFile@getRegion(int):291:1 |==> -1
+248:AOR:-(int,int):%(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):291:js.length() - 1 |==> js.length() % 1
+249:AOR:-(int,int):*(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):291:js.length() - 1 |==> js.length() * 1
+250:AOR:-(int,int):+(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):291:js.length() - 1 |==> js.length() + 1
+251:AOR:-(int,int):/(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):291:js.length() - 1 |==> js.length() / 1
+252:ROR:==(int,int):!=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):292:js.charAt(last) == '\n' |==> js.charAt(last) != '\n'
+253:ROR:==(int,int):<(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):292:js.charAt(last) == '\n' |==> js.charAt(last) < '\n'
+254:ROR:==(int,int):<=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):292:js.charAt(last) == '\n' |==> js.charAt(last) <= '\n'
+255:ROR:==(int,int):>(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):292:js.charAt(last) == '\n' |==> js.charAt(last) > '\n'
+256:ROR:==(int,int):>=(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):292:js.charAt(last) == '\n' |==> js.charAt(last) >= '\n'
+257:ROR:==(int,int):FALSE(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):292:js.charAt(last) == '\n' |==> false
+258:ROR:==(int,int):TRUE(int,int):com.google.javascript.jscomp.SourceFile@getRegion(int):292:js.charAt(last) == '\n' |==> true
+259:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.SourceFile$Preloaded@<init>(java.lang.String,java.lang.String,java.lang.String):371:super.setOriginalPath(originalPath) |==> <NO-OP>
+260:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.SourceFile$Preloaded@<init>(java.lang.String,java.lang.String,java.lang.String):372:super.setCode(code) |==> <NO-OP>
+261:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile$Generated@getCode():394:cachedCode == null |==> cachedCode != null
+262:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile$Generated@getCode():394:cachedCode == null |==> false
+263:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile$Generated@getCode():394:cachedCode == null |==> true
+264:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile$Generated@getCode():395:cachedCode = generator.getCode() |==> <NO-OP>
+265:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.SourceFile$Generated@getCode():396:super.setCode(cachedCode) |==> <NO-OP>
+266:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.SourceFile$Generated@clearCachedSource():405:super.setCode(null) |==> <NO-OP>
+267:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile$OnDisk@<init>(java.io.File,java.nio.charset.Charset):425:c != null |==> c == null
+268:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile$OnDisk@<init>(java.io.File,java.nio.charset.Charset):425:c != null |==> false
+269:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile$OnDisk@<init>(java.io.File,java.nio.charset.Charset):425:c != null |==> true
+270:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.SourceFile$OnDisk@<init>(java.io.File,java.nio.charset.Charset):426:this.setCharset(c) |==> <NO-OP>
+271:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile$OnDisk@getCode():440:cachedCode == null |==> cachedCode != null
+272:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile$OnDisk@getCode():440:cachedCode == null |==> false
+273:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.SourceFile$OnDisk@getCode():440:cachedCode == null |==> true
+274:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile$OnDisk@getCode():441:cachedCode = Files.toString(file, this.getCharset()) |==> <NO-OP>
+275:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.SourceFile$OnDisk@getCode():442:super.setCode(cachedCode) |==> <NO-OP>
+276:COR:hasSourceInMemory():TRUE:com.google.javascript.jscomp.SourceFile$OnDisk@getCodeReader():452:hasSourceInMemory() |==> false
+277:COR:hasSourceInMemory():FALSE:com.google.javascript.jscomp.SourceFile$OnDisk@getCodeReader():452:hasSourceInMemory() |==> true
+278:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.SourceFile$OnDisk@clearCachedSource():464:super.setCode(null) |==> <NO-OP>
+279:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.SourceFile$OnDisk@setCharset(java.nio.charset.Charset):474:inputCharset = c.name() |==> <NO-OP>

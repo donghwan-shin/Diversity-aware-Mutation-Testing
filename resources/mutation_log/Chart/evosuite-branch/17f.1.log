@@ -1,0 +1,261 @@
+
+initialise:
+
+compile:
+    [javac] /home/to_donghwan/defects4j/framework/projects/Chart/Chart.build.xml:56: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-experimental:
+    [javac] /home/to_donghwan/defects4j/framework/projects/Chart/Chart.build.xml:105: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 4 source files to /tmp/run_mutation.pl_9175_1501350889/17f/build
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.4
+    [javac] 1 warning
+
+compile.tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_9175_1501350889/17f/build-tests
+    [javac] /home/to_donghwan/defects4j/framework/projects/Chart/Chart.build.xml:122: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 350 source files to /tmp/run_mutation.pl_9175_1501350889/17f/build-tests
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.4
+    [javac] Note: /tmp/run_mutation.pl_9175_1501350889/17f/tests/org/jfree/chart/axis/junit/SegmentedTimelineTests.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 1 warning
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: org.jfree.data.time.TimeSeries_ESTest0[test00] failed!
+    [junit] MAJOR:  -> java.lang.ClassCastException
+    [junit] MAJOR:  -> "java.util.Date cannot be cast to org.evosuite.runtime.mock.java.util.MockDate"
+    [junit] MAJOR: org.jfree.data.time.TimeSeries_ESTest14[test14] failed!
+    [junit] MAJOR:  -> java.lang.ClassCastException
+    [junit] MAJOR:  -> "java.util.Date cannot be cast to org.evosuite.runtime.mock.java.util.MockDate"
+    [junit] MAJOR: org.jfree.data.time.TimeSeries_ESTest24[test24] failed!
+    [junit] MAJOR:  -> java.lang.ClassCastException
+    [junit] MAJOR:  -> "java.util.Date cannot be cast to org.evosuite.runtime.mock.java.util.MockDate"
+    [junit] MAJOR: org.jfree.data.time.TimeSeries_ESTest25[test25] failed!
+    [junit] MAJOR:  -> java.lang.ClassCastException
+    [junit] MAJOR:  -> "java.util.Date cannot be cast to org.evosuite.runtime.mock.java.util.MockDate"
+    [junit] MAJOR: org.jfree.data.time.TimeSeries_ESTest26[test26] failed!
+    [junit] MAJOR:  -> java.lang.ClassCastException
+    [junit] MAJOR:  -> "java.util.Date cannot be cast to org.evosuite.runtime.mock.java.util.MockDate"
+    [junit] MAJOR: org.jfree.data.time.TimeSeries_ESTest32[test32] failed!
+    [junit] MAJOR:  -> java.lang.ClassCastException
+    [junit] MAJOR:  -> "java.util.Date cannot be cast to org.evosuite.runtime.mock.java.util.MockDate"
+    [junit] MAJOR: Exclude 6 failing test classes:
+    [junit] MAJOR:  - org.jfree.data.time.TimeSeries_ESTest0
+    [junit] MAJOR:  - org.jfree.data.time.TimeSeries_ESTest14
+    [junit] MAJOR:  - org.jfree.data.time.TimeSeries_ESTest24
+    [junit] MAJOR:  - org.jfree.data.time.TimeSeries_ESTest25
+    [junit] MAJOR:  - org.jfree.data.time.TimeSeries_ESTest26
+    [junit] MAJOR:  - org.jfree.data.time.TimeSeries_ESTest32
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 45 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 18.38 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 719
+    [junit] MAJOR: Mutants covered:   587 (81.64%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 45 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/45 - org.jfree.data.time.TimeSeries_ESTest11 (-67ms / 66):
+    [junit] MAJOR: 35697 (33 / 66 / 66) -> AVG-RTPM: 540ms
+    [junit] MAJOR: Mutants killed / live: 33 (2-31-0) / 554
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/45 - org.jfree.data.time.TimeSeries_ESTest39 (9ms / 15):
+    [junit] MAJOR: 48056 (0 / 15 / 15) -> AVG-RTPM: 823ms
+    [junit] MAJOR: Mutants killed / live: 33 (2-31-0) / 554
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/45 - org.jfree.data.time.TimeSeries_ESTest18 (10ms / 56):
+    [junit] MAJOR: 114570 (8 / 56 / 56) -> AVG-RTPM: 1187ms
+    [junit] MAJOR: Mutants killed / live: 41 (8-49-0) / 546
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/45 - org.jfree.data.time.TimeSeries_ESTest19 (10ms / 67):
+    [junit] MAJOR: 247980 (5 / 67 / 67) -> AVG-RTPM: 1991ms
+    [junit] MAJOR: Mutants killed / live: 46 (14-69-0) / 541
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/45 - org.jfree.data.time.TimeSeries_ESTest27 (10ms / 70):
+    [junit] MAJOR: 309291 (47 / 70 / 70) -> AVG-RTPM: 875ms
+    [junit] MAJOR: Mutants killed / live: 93 (16-130-1) / 494
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/45 - org.jfree.data.time.TimeSeries_ESTest28 (10ms / 15):
+    [junit] MAJOR: 312940 (11 / 15 / 15) -> AVG-RTPM: 243ms
+    [junit] MAJOR: Mutants killed / live: 104 (16-145-1) / 483
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/45 - org.jfree.data.time.TimeSeries_ESTest3 (10ms / 26):
+    [junit] MAJOR: 317822 (20 / 26 / 26) -> AVG-RTPM: 187ms
+    [junit] MAJOR: Mutants killed / live: 124 (16-171-1) / 463
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/45 - org.jfree.data.time.TimeSeries_ESTest30 (10ms / 93):
+    [junit] MAJOR: 341330 (15 / 93 / 93) -> AVG-RTPM: 252ms
+    [junit] MAJOR: Mutants killed / live: 139 (16-264-1) / 448
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/45 - org.jfree.data.time.TimeSeries_ESTest31 (10ms / 9):
+    [junit] MAJOR: 342948 (0 / 9 / 9) -> AVG-RTPM: 179ms
+    [junit] MAJOR: Mutants killed / live: 139 (16-273-1) / 448
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/45 - org.jfree.data.time.TimeSeries_ESTest38 (10ms / 13):
+    [junit] MAJOR: 345434 (7 / 13 / 13) -> AVG-RTPM: 191ms
+    [junit] MAJOR: Mutants killed / live: 146 (16-286-1) / 441
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/45 - org.jfree.data.time.TimeSeries_ESTest4 (10ms / 82):
+    [junit] MAJOR: 365949 (8 / 82 / 82) -> AVG-RTPM: 250ms
+    [junit] MAJOR: Mutants killed / live: 154 (16-368-1) / 433
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/45 - org.jfree.data.time.TimeSeries_ESTest41 (10ms / 9):
+    [junit] MAJOR: 368093 (3 / 9 / 9) -> AVG-RTPM: 238ms
+    [junit] MAJOR: Mutants killed / live: 157 (16-377-1) / 430
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 13/45 - org.jfree.data.time.TimeSeries_ESTest43 (10ms / 21):
+    [junit] MAJOR: 373278 (12 / 21 / 21) -> AVG-RTPM: 246ms
+    [junit] MAJOR: Mutants killed / live: 169 (16-398-1) / 418
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 14/45 - org.jfree.data.time.TimeSeries_ESTest44 (10ms / 17):
+    [junit] MAJOR: 376510 (0 / 17 / 17) -> AVG-RTPM: 190ms
+    [junit] MAJOR: Mutants killed / live: 169 (16-415-1) / 418
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 15/45 - org.jfree.data.time.TimeSeries_ESTest45 (10ms / 106):
+    [junit] MAJOR: 402876 (73 / 106 / 106) -> AVG-RTPM: 248ms
+    [junit] MAJOR: Mutants killed / live: 242 (16-521-1) / 345
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 16/45 - org.jfree.data.time.TimeSeries_ESTest48 (10ms / 139):
+    [junit] MAJOR: 437530 (23 / 139 / 139) -> AVG-RTPM: 249ms
+    [junit] MAJOR: Mutants killed / live: 265 (16-660-1) / 322
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 17/45 - org.jfree.data.time.TimeSeries_ESTest2 (11ms / 6):
+    [junit] MAJOR: 438639 (0 / 6 / 6) -> AVG-RTPM: 184ms
+    [junit] MAJOR: Mutants killed / live: 265 (16-666-1) / 322
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 18/45 - org.jfree.data.time.TimeSeries_ESTest20 (11ms / 94):
+    [junit] MAJOR: 462524 (42 / 94 / 94) -> AVG-RTPM: 254ms
+    [junit] MAJOR: Mutants killed / live: 307 (16-760-1) / 280
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 19/45 - org.jfree.data.time.TimeSeries_ESTest22 (11ms / 18):
+    [junit] MAJOR: 467742 (9 / 18 / 18) -> AVG-RTPM: 289ms
+    [junit] MAJOR: Mutants killed / live: 316 (16-778-1) / 271
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 20/45 - org.jfree.data.time.TimeSeries_ESTest23 (11ms / 9):
+    [junit] MAJOR: 469462 (0 / 9 / 9) -> AVG-RTPM: 191ms
+    [junit] MAJOR: Mutants killed / live: 316 (16-787-1) / 271
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 21/45 - org.jfree.data.time.TimeSeries_ESTest34 (11ms / 15):
+    [junit] MAJOR: 472423 (9 / 15 / 15) -> AVG-RTPM: 197ms
+    [junit] MAJOR: Mutants killed / live: 325 (16-802-1) / 262
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 22/45 - org.jfree.data.time.TimeSeries_ESTest36 (11ms / 18):
+    [junit] MAJOR: 477069 (9 / 18 / 18) -> AVG-RTPM: 258ms
+    [junit] MAJOR: Mutants killed / live: 334 (16-820-1) / 253
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 23/45 - org.jfree.data.time.TimeSeries_ESTest37 (11ms / 60):
+    [junit] MAJOR: 492186 (2 / 60 / 60) -> AVG-RTPM: 251ms
+    [junit] MAJOR: Mutants killed / live: 336 (16-880-1) / 251
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 24/45 - org.jfree.data.time.TimeSeries_ESTest40 (11ms / 22):
+    [junit] MAJOR: 496324 (0 / 22 / 22) -> AVG-RTPM: 188ms
+    [junit] MAJOR: Mutants killed / live: 336 (16-902-1) / 251
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 25/45 - org.jfree.data.time.TimeSeries_ESTest42 (11ms / 12):
+    [junit] MAJOR: 499415 (0 / 12 / 12) -> AVG-RTPM: 257ms
+    [junit] MAJOR: Mutants killed / live: 336 (16-914-1) / 251
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 26/45 - org.jfree.data.time.TimeSeries_ESTest49 (11ms / 179):
+    [junit] MAJOR: 545095 (18 / 179 / 179) -> AVG-RTPM: 255ms
+    [junit] MAJOR: Mutants killed / live: 354 (16-1093-1) / 233
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 27/45 - org.jfree.data.time.TimeSeries_ESTest50 (11ms / 101):
+    [junit] MAJOR: 564653 (95 / 101 / 101) -> AVG-RTPM: 193ms
+    [junit] MAJOR: Mutants killed / live: 449 (16-1194-1) / 138
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 28/45 - org.jfree.data.time.TimeSeries_ESTest52 (11ms / 150):
+    [junit] MAJOR: 602786 (13 / 150 / 150) -> AVG-RTPM: 254ms
+    [junit] MAJOR: Mutants killed / live: 462 (16-1344-1) / 125
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 29/45 - org.jfree.data.time.TimeSeries_ESTest6 (11ms / 6):
+    [junit] MAJOR: 603997 (0 / 6 / 6) -> AVG-RTPM: 201ms
+    [junit] MAJOR: Mutants killed / live: 462 (16-1350-1) / 125
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 30/45 - org.jfree.data.time.TimeSeries_ESTest7 (11ms / 7):
+    [junit] MAJOR: 605438 (1 / 7 / 7) -> AVG-RTPM: 205ms
+    [junit] MAJOR: Mutants killed / live: 463 (16-1357-1) / 124
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 31/45 - org.jfree.data.time.TimeSeries_ESTest8 (11ms / 12):
+    [junit] MAJOR: 607807 (6 / 12 / 12) -> AVG-RTPM: 197ms
+    [junit] MAJOR: Mutants killed / live: 469 (16-1369-1) / 118
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 32/45 - org.jfree.data.time.TimeSeries_ESTest9 (11ms / 20):
+    [junit] MAJOR: 612829 (9 / 20 / 20) -> AVG-RTPM: 251ms
+    [junit] MAJOR: Mutants killed / live: 478 (16-1389-1) / 109
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 33/45 - org.jfree.data.time.TimeSeries_ESTest12 (12ms / 15):
+    [junit] MAJOR: 615708 (0 / 15 / 15) -> AVG-RTPM: 191ms
+    [junit] MAJOR: Mutants killed / live: 478 (16-1404-1) / 109
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 34/45 - org.jfree.data.time.TimeSeries_ESTest13 (12ms / 98):
+    [junit] MAJOR: 641187 (28 / 98 / 98) -> AVG-RTPM: 259ms
+    [junit] MAJOR: Mutants killed / live: 506 (16-1502-1) / 81
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 35/45 - org.jfree.data.time.TimeSeries_ESTest15 (12ms / 15):
+    [junit] MAJOR: 643983 (9 / 15 / 15) -> AVG-RTPM: 186ms
+    [junit] MAJOR: Mutants killed / live: 515 (16-1517-1) / 72
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 36/45 - org.jfree.data.time.TimeSeries_ESTest21 (12ms / 9):
+    [junit] MAJOR: 645751 (0 / 9 / 9) -> AVG-RTPM: 196ms
+    [junit] MAJOR: Mutants killed / live: 515 (16-1526-1) / 72
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 37/45 - org.jfree.data.time.TimeSeries_ESTest35 (12ms / 61):
+    [junit] MAJOR: 661506 (2 / 61 / 61) -> AVG-RTPM: 258ms
+    [junit] MAJOR: Mutants killed / live: 517 (16-1587-1) / 70
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 38/45 - org.jfree.data.time.TimeSeries_ESTest47 (12ms / 136):
+    [junit] MAJOR: 696408 (4 / 136 / 136) -> AVG-RTPM: 256ms
+    [junit] MAJOR: Mutants killed / live: 521 (16-1723-1) / 66
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 39/45 - org.jfree.data.time.TimeSeries_ESTest53 (12ms / 194):
+    [junit] MAJOR: 746144 (44 / 194 / 194) -> AVG-RTPM: 256ms
+    [junit] MAJOR: Mutants killed / live: 565 (16-1917-1) / 22
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 40/45 - org.jfree.data.time.TimeSeries_ESTest1 (13ms / 138):
+    [junit] MAJOR: 781481 (0 / 138 / 138) -> AVG-RTPM: 256ms
+    [junit] MAJOR: Mutants killed / live: 565 (16-2055-1) / 22
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 41/45 - org.jfree.data.time.TimeSeries_ESTest46 (13ms / 108):
+    [junit] MAJOR: 809464 (3 / 108 / 108) -> AVG-RTPM: 259ms
+    [junit] MAJOR: Mutants killed / live: 568 (16-2163-1) / 19
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 42/45 - org.jfree.data.time.TimeSeries_ESTest16 (14ms / 18):
+    [junit] MAJOR: 814047 (9 / 18 / 18) -> AVG-RTPM: 254ms
+    [junit] MAJOR: Mutants killed / live: 577 (16-2181-1) / 10
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 43/45 - org.jfree.data.time.TimeSeries_ESTest51 (14ms / 99):
+    [junit] MAJOR: 833348 (2 / 99 / 99) -> AVG-RTPM: 194ms
+    [junit] MAJOR: Mutants killed / live: 579 (16-2280-1) / 8
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 44/45 - org.jfree.data.time.TimeSeries_ESTest10 (20ms / 58):
+    [junit] MAJOR: 848064 (0 / 58 / 58) -> AVG-RTPM: 253ms
+    [junit] MAJOR: Mutants killed / live: 579 (16-2338-1) / 8
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 45/45 - org.jfree.data.time.TimeSeries_ESTest17 (48ms / 58):
+    [junit] MAJOR: 862928 (0 / 58 / 58) -> AVG-RTPM: 256ms
+    [junit] MAJOR: Mutants killed / live: 579 (16-2396-1) / 8
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  862.9 seconds
+    [junit] MAJOR: Mutation score: 80.53% (98.64%)
+    [junit] MAJOR: Mutants killed / live: 579 (16-2396-1) / 8
+    [junit] MAJOR: Mutant executions: 2540
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_9175_1501350889/17f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 14 minutes 46 seconds

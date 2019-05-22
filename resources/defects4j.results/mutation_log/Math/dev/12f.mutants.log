@@ -1,0 +1,229 @@
+1:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.random.BitsStreamGenerator@<init>():41:nextGaussian = Double.NaN |==> <NO-OP>
+2:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextBoolean():66:1 |==> 0
+3:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBoolean():66:1 |==> -1
+4:LVR:0:POS:org.apache.commons.math3.random.BitsStreamGenerator@nextBoolean():66:0 |==> 1
+5:LVR:0:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBoolean():66:0 |==> -1
+6:ROR:!=(int,int):<(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBoolean():66:next(1) != 0 |==> next(1) < 0
+7:ROR:!=(int,int):<=(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBoolean():66:next(1) != 0 |==> next(1) <= 0
+8:ROR:!=(int,int):==(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBoolean():66:next(1) != 0 |==> next(1) == 0
+9:ROR:!=(int,int):>(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBoolean():66:next(1) != 0 |==> next(1) > 0
+10:ROR:!=(int,int):>=(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBoolean():66:next(1) != 0 |==> next(1) >= 0
+11:ROR:!=(int,int):FALSE(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBoolean():66:next(1) != 0 |==> false
+12:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBoolean():66:next(1) != 0 |==> true
+13:LVR:0:POS:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):71:0 |==> 1
+14:LVR:0:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):71:0 |==> -1
+15:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):72:3 |==> 0
+16:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):72:3 |==> -3
+17:AOR:-(int,int):%(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):72:bytes.length - 3 |==> bytes.length % 3
+18:AOR:-(int,int):*(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):72:bytes.length - 3 |==> bytes.length * 3
+19:AOR:-(int,int):+(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):72:bytes.length - 3 |==> bytes.length + 3
+20:AOR:-(int,int):/(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):72:bytes.length - 3 |==> bytes.length / 3
+21:ROR:<(int,int):!=(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):73:i < iEnd |==> i != iEnd
+22:ROR:<(int,int):<=(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):73:i < iEnd |==> i <= iEnd
+23:ROR:<(int,int):==(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):73:i < iEnd |==> i == iEnd
+24:ROR:<(int,int):>(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):73:i < iEnd |==> i > iEnd
+25:ROR:<(int,int):>=(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):73:i < iEnd |==> i >= iEnd
+26:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):73:i < iEnd |==> false
+27:ROR:<(int,int):TRUE(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):73:i < iEnd |==> true
+28:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):74:32 |==> 0
+29:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):74:32 |==> -32
+30:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):75:255 |==> 0
+31:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):75:255 |==> -255
+32:LOR:&(int,int):^(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):75:random & 255 |==> random ^ 255
+33:LOR:&(int,int):|(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):75:random & 255 |==> random | 255
+34:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):75:bytes[i] = (byte)(random & 255) |==> <NO-OP>
+35:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):76:1 |==> 0
+36:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):76:1 |==> -1
+37:AOR:+(int,int):%(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):76:i + 1 |==> i % 1
+38:AOR:+(int,int):*(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):76:i + 1 |==> i * 1
+39:AOR:+(int,int):-(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):76:i + 1 |==> i - 1
+40:AOR:+(int,int):/(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):76:i + 1 |==> i / 1
+41:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):76:8 |==> 0
+42:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):76:8 |==> -8
+43:SOR:>>(int,int):<<(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):76:random >> 8 |==> random << 8
+44:SOR:>>(int,int):>>>(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):76:random >> 8 |==> random >>> 8
+45:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):76:255 |==> 0
+46:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):76:255 |==> -255
+47:LOR:&(int,int):^(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):76:(random >> 8) & 255 |==> (random >> 8) ^ 255
+48:LOR:&(int,int):|(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):76:(random >> 8) & 255 |==> (random >> 8) | 255
+49:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):76:bytes[i + 1] = (byte)((random >> 8) & 255) |==> <NO-OP>
+50:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):77:2 |==> 0
+51:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):77:2 |==> -2
+52:AOR:+(int,int):%(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):77:i + 2 |==> i % 2
+53:AOR:+(int,int):*(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):77:i + 2 |==> i * 2
+54:AOR:+(int,int):-(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):77:i + 2 |==> i - 2
+55:AOR:+(int,int):/(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):77:i + 2 |==> i / 2
+56:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):77:16 |==> 0
+57:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):77:16 |==> -16
+58:SOR:>>(int,int):<<(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):77:random >> 16 |==> random << 16
+59:SOR:>>(int,int):>>>(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):77:random >> 16 |==> random >>> 16
+60:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):77:255 |==> 0
+61:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):77:255 |==> -255
+62:LOR:&(int,int):^(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):77:(random >> 16) & 255 |==> (random >> 16) ^ 255
+63:LOR:&(int,int):|(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):77:(random >> 16) & 255 |==> (random >> 16) | 255
+64:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):77:bytes[i + 2] = (byte)((random >> 16) & 255) |==> <NO-OP>
+65:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):78:3 |==> 0
+66:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):78:3 |==> -3
+67:AOR:+(int,int):%(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):78:i + 3 |==> i % 3
+68:AOR:+(int,int):*(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):78:i + 3 |==> i * 3
+69:AOR:+(int,int):-(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):78:i + 3 |==> i - 3
+70:AOR:+(int,int):/(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):78:i + 3 |==> i / 3
+71:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):78:24 |==> 0
+72:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):78:24 |==> -24
+73:SOR:>>(int,int):<<(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):78:random >> 24 |==> random << 24
+74:SOR:>>(int,int):>>>(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):78:random >> 24 |==> random >>> 24
+75:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):78:255 |==> 0
+76:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):78:255 |==> -255
+77:LOR:&(int,int):^(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):78:(random >> 24) & 255 |==> (random >> 24) ^ 255
+78:LOR:&(int,int):|(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):78:(random >> 24) & 255 |==> (random >> 24) | 255
+79:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):78:bytes[i + 3] = (byte)((random >> 24) & 255) |==> <NO-OP>
+80:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):79:4 |==> 0
+81:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):79:4 |==> -4
+82:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):79:i += 4 |==> <NO-OP>
+83:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):81:32 |==> 0
+84:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):81:32 |==> -32
+85:ROR:<(int,int):!=(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):82:i < bytes.length |==> i != bytes.length
+86:ROR:<(int,int):<=(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):82:i < bytes.length |==> i <= bytes.length
+87:ROR:<(int,int):==(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):82:i < bytes.length |==> i == bytes.length
+88:ROR:<(int,int):>(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):82:i < bytes.length |==> i > bytes.length
+89:ROR:<(int,int):>=(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):82:i < bytes.length |==> i >= bytes.length
+90:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):82:i < bytes.length |==> false
+91:ROR:<(int,int):TRUE(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):82:i < bytes.length |==> true
+92:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):83:255 |==> 0
+93:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):83:255 |==> -255
+94:LOR:&(int,int):^(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):83:random & 255 |==> random ^ 255
+95:LOR:&(int,int):|(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):83:random & 255 |==> random | 255
+96:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):83:bytes[i++] = (byte)(random & 255) |==> <NO-OP>
+97:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):84:8 |==> 0
+98:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):84:8 |==> -8
+99:SOR:>>(int,int):<<(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):84:random >> 8 |==> random << 8
+100:SOR:>>(int,int):>>>(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):84:random >> 8 |==> random >>> 8
+101:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.random.BitsStreamGenerator@nextBytes(byte[]):84:random = random >> 8 |==> <NO-OP>
+102:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextDouble():90:26 |==> 0
+103:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextDouble():90:26 |==> -26
+104:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextDouble():90:26 |==> 0
+105:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextDouble():90:26 |==> -26
+106:SOR:<<(long,int):>>(long,int):org.apache.commons.math3.random.BitsStreamGenerator@nextDouble():90:((long)next(26)) << 26 |==> ((long)next(26)) >> 26
+107:SOR:<<(long,int):>>>(long,int):org.apache.commons.math3.random.BitsStreamGenerator@nextDouble():90:((long)next(26)) << 26 |==> ((long)next(26)) >>> 26
+108:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextDouble():91:26 |==> 0
+109:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextDouble():91:26 |==> -26
+110:LOR:|(long,long):&(long,long):org.apache.commons.math3.random.BitsStreamGenerator@nextDouble():92:high | low |==> high & low
+111:LOR:|(long,long):^(long,long):org.apache.commons.math3.random.BitsStreamGenerator@nextDouble():92:high | low |==> high ^ low
+112:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextDouble():92:2.220446049250313E-16 |==> 0.0
+113:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextDouble():92:2.220446049250313E-16 |==> -2.220446049250313E-16
+114:AOR:*(double,double):%(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextDouble():92:(high | low) * 2.220446049250313E-16 |==> (high | low) % 2.220446049250313E-16
+115:AOR:*(double,double):+(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextDouble():92:(high | low) * 2.220446049250313E-16 |==> (high | low) + 2.220446049250313E-16
+116:AOR:*(double,double):-(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextDouble():92:(high | low) * 2.220446049250313E-16 |==> (high | low) - 2.220446049250313E-16
+117:AOR:*(double,double):/(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextDouble():92:(high | low) * 2.220446049250313E-16 |==> (high | low) / 2.220446049250313E-16
+118:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextFloat():97:23 |==> 0
+119:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextFloat():97:23 |==> -23
+120:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextFloat():97:1.1920929E-7F |==> 0.0F
+121:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextFloat():97:1.1920929E-7F |==> -1.1920929E-7F
+122:AOR:*(float,float):%(float,float):org.apache.commons.math3.random.BitsStreamGenerator@nextFloat():97:next(23) * 1.1920929E-7F |==> next(23) % 1.1920929E-7F
+123:AOR:*(float,float):+(float,float):org.apache.commons.math3.random.BitsStreamGenerator@nextFloat():97:next(23) * 1.1920929E-7F |==> next(23) + 1.1920929E-7F
+124:AOR:*(float,float):-(float,float):org.apache.commons.math3.random.BitsStreamGenerator@nextFloat():97:next(23) * 1.1920929E-7F |==> next(23) - 1.1920929E-7F
+125:AOR:*(float,float):/(float,float):org.apache.commons.math3.random.BitsStreamGenerator@nextFloat():97:next(23) * 1.1920929E-7F |==> next(23) / 1.1920929E-7F
+126:COR:Double.isNaN(nextGaussian):TRUE:org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():104:Double.isNaN(nextGaussian) |==> false
+127:COR:Double.isNaN(nextGaussian):FALSE:org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():104:Double.isNaN(nextGaussian) |==> true
+128:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():108:2 |==> 0
+129:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():108:2 |==> -2
+130:AOR:*(double,double):%(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():108:2 * FastMath.PI |==> 2 % FastMath.PI
+131:AOR:*(double,double):+(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():108:2 * FastMath.PI |==> 2 + FastMath.PI
+132:AOR:*(double,double):-(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():108:2 * FastMath.PI |==> 2 - FastMath.PI
+133:AOR:*(double,double):/(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():108:2 * FastMath.PI |==> 2 / FastMath.PI
+134:AOR:*(double,double):%(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():108:2 * FastMath.PI * x |==> 2 * FastMath.PI % x
+135:AOR:*(double,double):+(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():108:2 * FastMath.PI * x |==> 2 * FastMath.PI + x
+136:AOR:*(double,double):-(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():108:2 * FastMath.PI * x |==> 2 * FastMath.PI - x
+137:AOR:*(double,double):/(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():108:2 * FastMath.PI * x |==> 2 * FastMath.PI / x
+138:LVR:NEG:0:org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():109:-2 |==> 0
+139:LVR:NEG:POS:org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():109:-2 |==> 2
+140:AOR:*(double,double):%(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():109:-2 * FastMath.log(y) |==> -2 % FastMath.log(y)
+141:AOR:*(double,double):+(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():109:-2 * FastMath.log(y) |==> -2 + FastMath.log(y)
+142:AOR:*(double,double):-(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():109:-2 * FastMath.log(y) |==> -2 - FastMath.log(y)
+143:AOR:*(double,double):/(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():109:-2 * FastMath.log(y) |==> -2 / FastMath.log(y)
+144:AOR:*(double,double):%(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():110:r * FastMath.cos(alpha) |==> r % FastMath.cos(alpha)
+145:AOR:*(double,double):+(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():110:r * FastMath.cos(alpha) |==> r + FastMath.cos(alpha)
+146:AOR:*(double,double):-(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():110:r * FastMath.cos(alpha) |==> r - FastMath.cos(alpha)
+147:AOR:*(double,double):/(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():110:r * FastMath.cos(alpha) |==> r / FastMath.cos(alpha)
+148:AOR:*(double,double):%(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():111:r * FastMath.sin(alpha) |==> r % FastMath.sin(alpha)
+149:AOR:*(double,double):+(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():111:r * FastMath.sin(alpha) |==> r + FastMath.sin(alpha)
+150:AOR:*(double,double):-(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():111:r * FastMath.sin(alpha) |==> r - FastMath.sin(alpha)
+151:AOR:*(double,double):/(double,double):org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():111:r * FastMath.sin(alpha) |==> r / FastMath.sin(alpha)
+152:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():111:nextGaussian = r * FastMath.sin(alpha) |==> <NO-OP>
+153:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.random.BitsStreamGenerator@nextGaussian():115:nextGaussian = Double.NaN |==> <NO-OP>
+154:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextInt():124:32 |==> 0
+155:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextInt():124:32 |==> -32
+156:LVR:0:POS:org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):143:0 |==> 1
+157:LVR:0:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):143:0 |==> -1
+158:ROR:>(int,int):!=(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):143:n > 0 |==> n != 0
+159:ROR:>(int,int):<(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):143:n > 0 |==> n < 0
+160:ROR:>(int,int):<=(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):143:n > 0 |==> n <= 0
+161:ROR:>(int,int):==(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):143:n > 0 |==> n == 0
+162:ROR:>(int,int):>=(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):143:n > 0 |==> n >= 0
+163:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):143:n > 0 |==> false
+164:ROR:>(int,int):TRUE(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):143:n > 0 |==> true
+165:ORU:-(int):+(int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):144:-n |==> +n
+166:ORU:-(int):~(int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):144:-n |==> ~n
+167:LOR:&(int,int):^(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):144:n & -n |==> n ^ -n
+168:LOR:&(int,int):|(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):144:n & -n |==> n | -n
+169:ROR:==(int,int):!=(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):144:(n & -n) == n |==> (n & -n) != n
+170:ROR:==(int,int):<(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):144:(n & -n) == n |==> (n & -n) < n
+171:ROR:==(int,int):<=(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):144:(n & -n) == n |==> (n & -n) <= n
+172:ROR:==(int,int):>(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):144:(n & -n) == n |==> (n & -n) > n
+173:ROR:==(int,int):>=(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):144:(n & -n) == n |==> (n & -n) >= n
+174:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):144:(n & -n) == n |==> false
+175:ROR:==(int,int):TRUE(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):144:(n & -n) == n |==> true
+176:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):145:31 |==> 0
+177:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):145:31 |==> -31
+178:AOR:*(long,long):%(long,long):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):145:n * (long)next(31) |==> n % (long)next(31)
+179:AOR:*(long,long):+(long,long):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):145:n * (long)next(31) |==> n + (long)next(31)
+180:AOR:*(long,long):-(long,long):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):145:n * (long)next(31) |==> n - (long)next(31)
+181:AOR:*(long,long):/(long,long):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):145:n * (long)next(31) |==> n / (long)next(31)
+182:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):145:31 |==> 0
+183:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):145:31 |==> -31
+184:SOR:>>(long,int):<<(long,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):145:(n * (long)next(31)) >> 31 |==> (n * (long)next(31)) << 31
+185:SOR:>>(long,int):>>>(long,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):145:(n * (long)next(31)) >> 31 |==> (n * (long)next(31)) >>> 31
+186:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):150:31 |==> 0
+187:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):150:31 |==> -31
+188:AOR:%(int,int):*(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):151:bits % n |==> bits * n
+189:AOR:%(int,int):+(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):151:bits % n |==> bits + n
+190:AOR:%(int,int):-(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):151:bits % n |==> bits - n
+191:AOR:%(int,int):/(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):151:bits % n |==> bits / n
+192:AOR:-(int,int):%(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:bits - val |==> bits % val
+193:AOR:-(int,int):*(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:bits - val |==> bits * val
+194:AOR:-(int,int):+(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:bits - val |==> bits + val
+195:AOR:-(int,int):/(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:bits - val |==> bits / val
+196:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:1 |==> 0
+197:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:1 |==> -1
+198:AOR:-(int,int):%(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:n - 1 |==> n % 1
+199:AOR:-(int,int):*(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:n - 1 |==> n * 1
+200:AOR:-(int,int):+(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:n - 1 |==> n + 1
+201:AOR:-(int,int):/(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:n - 1 |==> n / 1
+202:AOR:+(int,int):%(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:bits - val + (n - 1) |==> (bits - val) % (n - 1)
+203:AOR:+(int,int):*(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:bits - val + (n - 1) |==> (bits - val) * (n - 1)
+204:AOR:+(int,int):-(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:bits - val + (n - 1) |==> bits - val - (n - 1)
+205:AOR:+(int,int):/(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:bits - val + (n - 1) |==> (bits - val) / (n - 1)
+206:LVR:0:POS:org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:0 |==> 1
+207:LVR:0:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:0 |==> -1
+208:ROR:<(int,int):!=(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:bits - val + (n - 1) < 0 |==> bits - val + (n - 1) != 0
+209:ROR:<(int,int):<=(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:bits - val + (n - 1) < 0 |==> bits - val + (n - 1) <= 0
+210:ROR:<(int,int):==(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:bits - val + (n - 1) < 0 |==> bits - val + (n - 1) == 0
+211:ROR:<(int,int):>(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:bits - val + (n - 1) < 0 |==> bits - val + (n - 1) > 0
+212:ROR:<(int,int):>=(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:bits - val + (n - 1) < 0 |==> bits - val + (n - 1) >= 0
+213:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:bits - val + (n - 1) < 0 |==> false
+214:ROR:<(int,int):TRUE(int,int):org.apache.commons.math3.random.BitsStreamGenerator@nextInt(int):152:bits - val + (n - 1) < 0 |==> true
+215:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextLong():160:32 |==> 0
+216:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextLong():160:32 |==> -32
+217:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextLong():160:32 |==> 0
+218:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextLong():160:32 |==> -32
+219:SOR:<<(long,int):>>(long,int):org.apache.commons.math3.random.BitsStreamGenerator@nextLong():160:((long)next(32)) << 32 |==> ((long)next(32)) >> 32
+220:SOR:<<(long,int):>>>(long,int):org.apache.commons.math3.random.BitsStreamGenerator@nextLong():160:((long)next(32)) << 32 |==> ((long)next(32)) >>> 32
+221:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextLong():161:32 |==> 0
+222:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextLong():161:32 |==> -32
+223:LVR:POS:0:org.apache.commons.math3.random.BitsStreamGenerator@nextLong():161:4294967295L |==> 0L
+224:LVR:POS:NEG:org.apache.commons.math3.random.BitsStreamGenerator@nextLong():161:4294967295L |==> -4294967295L
+225:LOR:&(long,long):^(long,long):org.apache.commons.math3.random.BitsStreamGenerator@nextLong():161:((long)next(32)) & 4294967295L |==> ((long)next(32)) ^ 4294967295L
+226:LOR:&(long,long):|(long,long):org.apache.commons.math3.random.BitsStreamGenerator@nextLong():161:((long)next(32)) & 4294967295L |==> ((long)next(32)) | 4294967295L
+227:LOR:|(long,long):&(long,long):org.apache.commons.math3.random.BitsStreamGenerator@nextLong():162:high | low |==> high & low
+228:LOR:|(long,long):^(long,long):org.apache.commons.math3.random.BitsStreamGenerator@nextLong():162:high | low |==> high ^ low
+229:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.random.BitsStreamGenerator@clear():170:nextGaussian = Double.NaN |==> <NO-OP>

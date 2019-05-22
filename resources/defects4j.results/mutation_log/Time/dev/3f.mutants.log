@@ -1,0 +1,249 @@
+1:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@now(org.joda.time.DateTimeZone):118:zone == null |==> zone != null
+2:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@now(org.joda.time.DateTimeZone):118:zone == null |==> false
+3:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@now(org.joda.time.DateTimeZone):118:zone == null |==> true
+4:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@now(org.joda.time.Chronology):133:chronology == null |==> chronology != null
+5:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@now(org.joda.time.Chronology):133:chronology == null |==> false
+6:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@now(org.joda.time.Chronology):133:chronology == null |==> true
+7:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField):418:setRounding(field, MutableDateTime.ROUND_FLOOR) |==> <NO-OP>
+8:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:field != null |==> field == null
+9:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:field != null |==> false
+10:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:field != null |==> true
+11:ROR:<(int,int):!=(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode < ROUND_NONE |==> mode != ROUND_NONE
+12:ROR:<(int,int):<=(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode < ROUND_NONE |==> mode <= ROUND_NONE
+13:ROR:<(int,int):==(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode < ROUND_NONE |==> mode == ROUND_NONE
+14:ROR:<(int,int):>(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode < ROUND_NONE |==> mode > ROUND_NONE
+15:ROR:<(int,int):>=(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode < ROUND_NONE |==> mode >= ROUND_NONE
+16:ROR:<(int,int):FALSE(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode < ROUND_NONE |==> false
+17:ROR:<(int,int):TRUE(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode < ROUND_NONE |==> true
+18:ROR:>(int,int):!=(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode > ROUND_HALF_EVEN |==> mode != ROUND_HALF_EVEN
+19:ROR:>(int,int):<(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode > ROUND_HALF_EVEN |==> mode < ROUND_HALF_EVEN
+20:ROR:>(int,int):<=(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode > ROUND_HALF_EVEN |==> mode <= ROUND_HALF_EVEN
+21:ROR:>(int,int):==(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode > ROUND_HALF_EVEN |==> mode == ROUND_HALF_EVEN
+22:ROR:>(int,int):>=(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode > ROUND_HALF_EVEN |==> mode >= ROUND_HALF_EVEN
+23:ROR:>(int,int):FALSE(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode > ROUND_HALF_EVEN |==> false
+24:ROR:>(int,int):TRUE(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode > ROUND_HALF_EVEN |==> true
+25:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode < ROUND_NONE || mode > ROUND_HALF_EVEN |==> mode < ROUND_NONE != mode > ROUND_HALF_EVEN
+26:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode < ROUND_NONE || mode > ROUND_HALF_EVEN |==> mode < ROUND_NONE && mode > ROUND_HALF_EVEN
+27:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode < ROUND_NONE || mode > ROUND_HALF_EVEN |==> mode < ROUND_NONE == mode > ROUND_HALF_EVEN
+28:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode < ROUND_NONE || mode > ROUND_HALF_EVEN |==> false
+29:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode < ROUND_NONE || mode > ROUND_HALF_EVEN |==> mode < ROUND_NONE
+30:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode < ROUND_NONE || mode > ROUND_HALF_EVEN |==> mode > ROUND_HALF_EVEN
+31:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:mode < ROUND_NONE || mode > ROUND_HALF_EVEN |==> true
+32:COR:&&(boolean,boolean):!=(boolean,boolean):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:field != null && (mode < ROUND_NONE || mode > ROUND_HALF_EVEN) |==> field != null != (mode < ROUND_NONE || mode > ROUND_HALF_EVEN)
+33:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:field != null && (mode < ROUND_NONE || mode > ROUND_HALF_EVEN) |==> field != null == (mode < ROUND_NONE || mode > ROUND_HALF_EVEN)
+34:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:field != null && (mode < ROUND_NONE || mode > ROUND_HALF_EVEN) |==> false
+35:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:field != null && (mode < ROUND_NONE || mode > ROUND_HALF_EVEN) |==> field != null
+36:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:field != null && (mode < ROUND_NONE || mode > ROUND_HALF_EVEN) |==> (mode < ROUND_NONE || mode > ROUND_HALF_EVEN)
+37:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:field != null && (mode < ROUND_NONE || mode > ROUND_HALF_EVEN) |==> true
+38:COR:&&(boolean,boolean):||(boolean,boolean):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):436:field != null && (mode < ROUND_NONE || mode > ROUND_HALF_EVEN) |==> field != null || (mode < ROUND_NONE || mode > ROUND_HALF_EVEN)
+39:ROR:==(int,int):!=(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):439:mode == ROUND_NONE |==> mode != ROUND_NONE
+40:ROR:==(int,int):<(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):439:mode == ROUND_NONE |==> mode < ROUND_NONE
+41:ROR:==(int,int):<=(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):439:mode == ROUND_NONE |==> mode <= ROUND_NONE
+42:ROR:==(int,int):>(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):439:mode == ROUND_NONE |==> mode > ROUND_NONE
+43:ROR:==(int,int):>=(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):439:mode == ROUND_NONE |==> mode >= ROUND_NONE
+44:ROR:==(int,int):FALSE(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):439:mode == ROUND_NONE |==> false
+45:ROR:==(int,int):TRUE(int,int):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):439:mode == ROUND_NONE |==> true
+46:STD:<ASSIGN>:<NO-OP>:org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):439:iRoundingField = (mode == ROUND_NONE ? null : field) |==> <NO-OP>
+47:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):440:field == null |==> field != null
+48:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):440:field == null |==> false
+49:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):440:field == null |==> true
+50:STD:<ASSIGN>:<NO-OP>:org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):440:iRoundingMode = (field == null ? ROUND_NONE : mode) |==> <NO-OP>
+51:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setRounding(org.joda.time.DateTimeField,int):441:setMillis(getMillis()) |==> <NO-OP>
+52:STD:<ASSIGN>:<NO-OP>:org.joda.time.MutableDateTime@setMillis(long):458:instant = iRoundingField.roundFloor(instant) |==> <NO-OP>
+53:STD:<ASSIGN>:<NO-OP>:org.joda.time.MutableDateTime@setMillis(long):461:instant = iRoundingField.roundCeiling(instant) |==> <NO-OP>
+54:STD:<ASSIGN>:<NO-OP>:org.joda.time.MutableDateTime@setMillis(long):464:instant = iRoundingField.roundHalfFloor(instant) |==> <NO-OP>
+55:STD:<ASSIGN>:<NO-OP>:org.joda.time.MutableDateTime@setMillis(long):467:instant = iRoundingField.roundHalfCeiling(instant) |==> <NO-OP>
+56:STD:<ASSIGN>:<NO-OP>:org.joda.time.MutableDateTime@setMillis(long):470:instant = iRoundingField.roundHalfEven(instant) |==> <NO-OP>
+57:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setMillis(long):473:super.setMillis(instant) |==> <NO-OP>
+58:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setMillis(org.joda.time.ReadableInstant):486:setMillis(instantMillis) |==> <NO-OP>
+59:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@add(long):497:setMillis(FieldUtils.safeAdd(getMillis(), duration)) |==> <NO-OP>
+60:LVR:POS:0:org.joda.time.MutableDateTime@add(org.joda.time.ReadableDuration):509:1 |==> 0
+61:LVR:POS:NEG:org.joda.time.MutableDateTime@add(org.joda.time.ReadableDuration):509:1 |==> -1
+62:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@add(org.joda.time.ReadableDuration):509:add(duration, 1) |==> <NO-OP>
+63:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@add(org.joda.time.ReadableDuration,int):522:duration != null |==> duration == null
+64:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@add(org.joda.time.ReadableDuration,int):522:duration != null |==> false
+65:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@add(org.joda.time.ReadableDuration,int):522:duration != null |==> true
+66:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@add(org.joda.time.ReadableDuration,int):523:add(FieldUtils.safeMultiply(duration.getMillis(), scalar)) |==> <NO-OP>
+67:LVR:POS:0:org.joda.time.MutableDateTime@add(org.joda.time.ReadablePeriod):536:1 |==> 0
+68:LVR:POS:NEG:org.joda.time.MutableDateTime@add(org.joda.time.ReadablePeriod):536:1 |==> -1
+69:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@add(org.joda.time.ReadablePeriod):536:add(period, 1) |==> <NO-OP>
+70:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@add(org.joda.time.ReadablePeriod,int):549:period != null |==> period == null
+71:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@add(org.joda.time.ReadablePeriod,int):549:period != null |==> false
+72:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@add(org.joda.time.ReadablePeriod,int):549:period != null |==> true
+73:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@add(org.joda.time.ReadablePeriod,int):550:setMillis(getChronology().add(period, getMillis(), scalar)) |==> <NO-OP>
+74:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setChronology(org.joda.time.Chronology):563:super.setChronology(chronology) |==> <NO-OP>
+75:STD:<ASSIGN>:<NO-OP>:org.joda.time.MutableDateTime@setZone(org.joda.time.DateTimeZone):582:newZone = DateTimeUtils.getZone(newZone) |==> <NO-OP>
+76:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setZone(org.joda.time.DateTimeZone):584:chrono.getZone() != newZone |==> chrono.getZone() == newZone
+77:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setZone(org.joda.time.DateTimeZone):584:chrono.getZone() != newZone |==> false
+78:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setZone(org.joda.time.DateTimeZone):584:chrono.getZone() != newZone |==> true
+79:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setZone(org.joda.time.DateTimeZone):585:setChronology(chrono.withZone(newZone)) |==> <NO-OP>
+80:STD:<ASSIGN>:<NO-OP>:org.joda.time.MutableDateTime@setZoneRetainFields(org.joda.time.DateTimeZone):601:newZone = DateTimeUtils.getZone(newZone) |==> <NO-OP>
+81:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setZoneRetainFields(org.joda.time.DateTimeZone):603:newZone == originalZone |==> newZone != originalZone
+82:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setZoneRetainFields(org.joda.time.DateTimeZone):603:newZone == originalZone |==> false
+83:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setZoneRetainFields(org.joda.time.DateTimeZone):603:newZone == originalZone |==> true
+84:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setZoneRetainFields(org.joda.time.DateTimeZone):608:setChronology(getChronology().withZone(newZone)) |==> <NO-OP>
+85:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setZoneRetainFields(org.joda.time.DateTimeZone):609:setMillis(millis) |==> <NO-OP>
+86:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@set(org.joda.time.DateTimeFieldType,int):621:type == null |==> type != null
+87:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@set(org.joda.time.DateTimeFieldType,int):621:type == null |==> false
+88:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@set(org.joda.time.DateTimeFieldType,int):621:type == null |==> true
+89:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@set(org.joda.time.DateTimeFieldType,int):624:setMillis(type.getField(getChronology()).set(getMillis(), value)) |==> <NO-OP>
+90:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@add(org.joda.time.DurationFieldType,int):636:type == null |==> type != null
+91:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@add(org.joda.time.DurationFieldType,int):636:type == null |==> false
+92:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@add(org.joda.time.DurationFieldType,int):636:type == null |==> true
+93:LVR:0:POS:org.joda.time.MutableDateTime@add(org.joda.time.DurationFieldType,int):639:0 |==> 1
+94:LVR:0:NEG:org.joda.time.MutableDateTime@add(org.joda.time.DurationFieldType,int):639:0 |==> -1
+95:ROR:!=(int,int):<(int,int):org.joda.time.MutableDateTime@add(org.joda.time.DurationFieldType,int):639:amount != 0 |==> amount < 0
+96:ROR:!=(int,int):<=(int,int):org.joda.time.MutableDateTime@add(org.joda.time.DurationFieldType,int):639:amount != 0 |==> amount <= 0
+97:ROR:!=(int,int):==(int,int):org.joda.time.MutableDateTime@add(org.joda.time.DurationFieldType,int):639:amount != 0 |==> amount == 0
+98:ROR:!=(int,int):>(int,int):org.joda.time.MutableDateTime@add(org.joda.time.DurationFieldType,int):639:amount != 0 |==> amount > 0
+99:ROR:!=(int,int):>=(int,int):org.joda.time.MutableDateTime@add(org.joda.time.DurationFieldType,int):639:amount != 0 |==> amount >= 0
+100:ROR:!=(int,int):FALSE(int,int):org.joda.time.MutableDateTime@add(org.joda.time.DurationFieldType,int):639:amount != 0 |==> false
+101:ROR:!=(int,int):TRUE(int,int):org.joda.time.MutableDateTime@add(org.joda.time.DurationFieldType,int):639:amount != 0 |==> true
+102:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@add(org.joda.time.DurationFieldType,int):640:setMillis(type.getField(getChronology()).add(getMillis(), amount)) |==> <NO-OP>
+103:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setYear(int):652:setMillis(getChronology().year().set(getMillis(), year)) |==> <NO-OP>
+104:LVR:0:POS:org.joda.time.MutableDateTime@addYears(int):662:0 |==> 1
+105:LVR:0:NEG:org.joda.time.MutableDateTime@addYears(int):662:0 |==> -1
+106:ROR:!=(int,int):<(int,int):org.joda.time.MutableDateTime@addYears(int):662:years != 0 |==> years < 0
+107:ROR:!=(int,int):<=(int,int):org.joda.time.MutableDateTime@addYears(int):662:years != 0 |==> years <= 0
+108:ROR:!=(int,int):==(int,int):org.joda.time.MutableDateTime@addYears(int):662:years != 0 |==> years == 0
+109:ROR:!=(int,int):>(int,int):org.joda.time.MutableDateTime@addYears(int):662:years != 0 |==> years > 0
+110:ROR:!=(int,int):>=(int,int):org.joda.time.MutableDateTime@addYears(int):662:years != 0 |==> years >= 0
+111:ROR:!=(int,int):FALSE(int,int):org.joda.time.MutableDateTime@addYears(int):662:years != 0 |==> false
+112:ROR:!=(int,int):TRUE(int,int):org.joda.time.MutableDateTime@addYears(int):662:years != 0 |==> true
+113:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@addYears(int):663:setMillis(getChronology().years().add(getMillis(), years)) |==> <NO-OP>
+114:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setWeekyear(int):675:setMillis(getChronology().weekyear().set(getMillis(), weekyear)) |==> <NO-OP>
+115:LVR:0:POS:org.joda.time.MutableDateTime@addWeekyears(int):685:0 |==> 1
+116:LVR:0:NEG:org.joda.time.MutableDateTime@addWeekyears(int):685:0 |==> -1
+117:ROR:!=(int,int):<(int,int):org.joda.time.MutableDateTime@addWeekyears(int):685:weekyears != 0 |==> weekyears < 0
+118:ROR:!=(int,int):<=(int,int):org.joda.time.MutableDateTime@addWeekyears(int):685:weekyears != 0 |==> weekyears <= 0
+119:ROR:!=(int,int):==(int,int):org.joda.time.MutableDateTime@addWeekyears(int):685:weekyears != 0 |==> weekyears == 0
+120:ROR:!=(int,int):>(int,int):org.joda.time.MutableDateTime@addWeekyears(int):685:weekyears != 0 |==> weekyears > 0
+121:ROR:!=(int,int):>=(int,int):org.joda.time.MutableDateTime@addWeekyears(int):685:weekyears != 0 |==> weekyears >= 0
+122:ROR:!=(int,int):FALSE(int,int):org.joda.time.MutableDateTime@addWeekyears(int):685:weekyears != 0 |==> false
+123:ROR:!=(int,int):TRUE(int,int):org.joda.time.MutableDateTime@addWeekyears(int):685:weekyears != 0 |==> true
+124:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@addWeekyears(int):686:setMillis(getChronology().weekyears().add(getMillis(), weekyears)) |==> <NO-OP>
+125:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setMonthOfYear(int):698:setMillis(getChronology().monthOfYear().set(getMillis(), monthOfYear)) |==> <NO-OP>
+126:LVR:0:POS:org.joda.time.MutableDateTime@addMonths(int):708:0 |==> 1
+127:LVR:0:NEG:org.joda.time.MutableDateTime@addMonths(int):708:0 |==> -1
+128:ROR:!=(int,int):<(int,int):org.joda.time.MutableDateTime@addMonths(int):708:months != 0 |==> months < 0
+129:ROR:!=(int,int):<=(int,int):org.joda.time.MutableDateTime@addMonths(int):708:months != 0 |==> months <= 0
+130:ROR:!=(int,int):==(int,int):org.joda.time.MutableDateTime@addMonths(int):708:months != 0 |==> months == 0
+131:ROR:!=(int,int):>(int,int):org.joda.time.MutableDateTime@addMonths(int):708:months != 0 |==> months > 0
+132:ROR:!=(int,int):>=(int,int):org.joda.time.MutableDateTime@addMonths(int):708:months != 0 |==> months >= 0
+133:ROR:!=(int,int):FALSE(int,int):org.joda.time.MutableDateTime@addMonths(int):708:months != 0 |==> false
+134:ROR:!=(int,int):TRUE(int,int):org.joda.time.MutableDateTime@addMonths(int):708:months != 0 |==> true
+135:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@addMonths(int):709:setMillis(getChronology().months().add(getMillis(), months)) |==> <NO-OP>
+136:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setWeekOfWeekyear(int):721:setMillis(getChronology().weekOfWeekyear().set(getMillis(), weekOfWeekyear)) |==> <NO-OP>
+137:LVR:0:POS:org.joda.time.MutableDateTime@addWeeks(int):731:0 |==> 1
+138:LVR:0:NEG:org.joda.time.MutableDateTime@addWeeks(int):731:0 |==> -1
+139:ROR:!=(int,int):<(int,int):org.joda.time.MutableDateTime@addWeeks(int):731:weeks != 0 |==> weeks < 0
+140:ROR:!=(int,int):<=(int,int):org.joda.time.MutableDateTime@addWeeks(int):731:weeks != 0 |==> weeks <= 0
+141:ROR:!=(int,int):==(int,int):org.joda.time.MutableDateTime@addWeeks(int):731:weeks != 0 |==> weeks == 0
+142:ROR:!=(int,int):>(int,int):org.joda.time.MutableDateTime@addWeeks(int):731:weeks != 0 |==> weeks > 0
+143:ROR:!=(int,int):>=(int,int):org.joda.time.MutableDateTime@addWeeks(int):731:weeks != 0 |==> weeks >= 0
+144:ROR:!=(int,int):FALSE(int,int):org.joda.time.MutableDateTime@addWeeks(int):731:weeks != 0 |==> false
+145:ROR:!=(int,int):TRUE(int,int):org.joda.time.MutableDateTime@addWeeks(int):731:weeks != 0 |==> true
+146:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@addWeeks(int):732:setMillis(getChronology().weeks().add(getMillis(), weeks)) |==> <NO-OP>
+147:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setDayOfYear(int):744:setMillis(getChronology().dayOfYear().set(getMillis(), dayOfYear)) |==> <NO-OP>
+148:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setDayOfMonth(int):754:setMillis(getChronology().dayOfMonth().set(getMillis(), dayOfMonth)) |==> <NO-OP>
+149:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setDayOfWeek(int):764:setMillis(getChronology().dayOfWeek().set(getMillis(), dayOfWeek)) |==> <NO-OP>
+150:LVR:0:POS:org.joda.time.MutableDateTime@addDays(int):774:0 |==> 1
+151:LVR:0:NEG:org.joda.time.MutableDateTime@addDays(int):774:0 |==> -1
+152:ROR:!=(int,int):<(int,int):org.joda.time.MutableDateTime@addDays(int):774:days != 0 |==> days < 0
+153:ROR:!=(int,int):<=(int,int):org.joda.time.MutableDateTime@addDays(int):774:days != 0 |==> days <= 0
+154:ROR:!=(int,int):==(int,int):org.joda.time.MutableDateTime@addDays(int):774:days != 0 |==> days == 0
+155:ROR:!=(int,int):>(int,int):org.joda.time.MutableDateTime@addDays(int):774:days != 0 |==> days > 0
+156:ROR:!=(int,int):>=(int,int):org.joda.time.MutableDateTime@addDays(int):774:days != 0 |==> days >= 0
+157:ROR:!=(int,int):FALSE(int,int):org.joda.time.MutableDateTime@addDays(int):774:days != 0 |==> false
+158:ROR:!=(int,int):TRUE(int,int):org.joda.time.MutableDateTime@addDays(int):774:days != 0 |==> true
+159:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@addDays(int):775:setMillis(getChronology().days().add(getMillis(), days)) |==> <NO-OP>
+160:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setHourOfDay(int):787:setMillis(getChronology().hourOfDay().set(getMillis(), hourOfDay)) |==> <NO-OP>
+161:LVR:0:POS:org.joda.time.MutableDateTime@addHours(int):797:0 |==> 1
+162:LVR:0:NEG:org.joda.time.MutableDateTime@addHours(int):797:0 |==> -1
+163:ROR:!=(int,int):<(int,int):org.joda.time.MutableDateTime@addHours(int):797:hours != 0 |==> hours < 0
+164:ROR:!=(int,int):<=(int,int):org.joda.time.MutableDateTime@addHours(int):797:hours != 0 |==> hours <= 0
+165:ROR:!=(int,int):==(int,int):org.joda.time.MutableDateTime@addHours(int):797:hours != 0 |==> hours == 0
+166:ROR:!=(int,int):>(int,int):org.joda.time.MutableDateTime@addHours(int):797:hours != 0 |==> hours > 0
+167:ROR:!=(int,int):>=(int,int):org.joda.time.MutableDateTime@addHours(int):797:hours != 0 |==> hours >= 0
+168:ROR:!=(int,int):FALSE(int,int):org.joda.time.MutableDateTime@addHours(int):797:hours != 0 |==> false
+169:ROR:!=(int,int):TRUE(int,int):org.joda.time.MutableDateTime@addHours(int):797:hours != 0 |==> true
+170:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@addHours(int):798:setMillis(getChronology().hours().add(getMillis(), hours)) |==> <NO-OP>
+171:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setMinuteOfDay(int):810:setMillis(getChronology().minuteOfDay().set(getMillis(), minuteOfDay)) |==> <NO-OP>
+172:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setMinuteOfHour(int):820:setMillis(getChronology().minuteOfHour().set(getMillis(), minuteOfHour)) |==> <NO-OP>
+173:LVR:0:POS:org.joda.time.MutableDateTime@addMinutes(int):830:0 |==> 1
+174:LVR:0:NEG:org.joda.time.MutableDateTime@addMinutes(int):830:0 |==> -1
+175:ROR:!=(int,int):<(int,int):org.joda.time.MutableDateTime@addMinutes(int):830:minutes != 0 |==> minutes < 0
+176:ROR:!=(int,int):<=(int,int):org.joda.time.MutableDateTime@addMinutes(int):830:minutes != 0 |==> minutes <= 0
+177:ROR:!=(int,int):==(int,int):org.joda.time.MutableDateTime@addMinutes(int):830:minutes != 0 |==> minutes == 0
+178:ROR:!=(int,int):>(int,int):org.joda.time.MutableDateTime@addMinutes(int):830:minutes != 0 |==> minutes > 0
+179:ROR:!=(int,int):>=(int,int):org.joda.time.MutableDateTime@addMinutes(int):830:minutes != 0 |==> minutes >= 0
+180:ROR:!=(int,int):FALSE(int,int):org.joda.time.MutableDateTime@addMinutes(int):830:minutes != 0 |==> false
+181:ROR:!=(int,int):TRUE(int,int):org.joda.time.MutableDateTime@addMinutes(int):830:minutes != 0 |==> true
+182:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@addMinutes(int):831:setMillis(getChronology().minutes().add(getMillis(), minutes)) |==> <NO-OP>
+183:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setSecondOfDay(int):843:setMillis(getChronology().secondOfDay().set(getMillis(), secondOfDay)) |==> <NO-OP>
+184:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setSecondOfMinute(int):853:setMillis(getChronology().secondOfMinute().set(getMillis(), secondOfMinute)) |==> <NO-OP>
+185:LVR:0:POS:org.joda.time.MutableDateTime@addSeconds(int):863:0 |==> 1
+186:LVR:0:NEG:org.joda.time.MutableDateTime@addSeconds(int):863:0 |==> -1
+187:ROR:!=(int,int):<(int,int):org.joda.time.MutableDateTime@addSeconds(int):863:seconds != 0 |==> seconds < 0
+188:ROR:!=(int,int):<=(int,int):org.joda.time.MutableDateTime@addSeconds(int):863:seconds != 0 |==> seconds <= 0
+189:ROR:!=(int,int):==(int,int):org.joda.time.MutableDateTime@addSeconds(int):863:seconds != 0 |==> seconds == 0
+190:ROR:!=(int,int):>(int,int):org.joda.time.MutableDateTime@addSeconds(int):863:seconds != 0 |==> seconds > 0
+191:ROR:!=(int,int):>=(int,int):org.joda.time.MutableDateTime@addSeconds(int):863:seconds != 0 |==> seconds >= 0
+192:ROR:!=(int,int):FALSE(int,int):org.joda.time.MutableDateTime@addSeconds(int):863:seconds != 0 |==> false
+193:ROR:!=(int,int):TRUE(int,int):org.joda.time.MutableDateTime@addSeconds(int):863:seconds != 0 |==> true
+194:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@addSeconds(int):864:setMillis(getChronology().seconds().add(getMillis(), seconds)) |==> <NO-OP>
+195:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setMillisOfDay(int):876:setMillis(getChronology().millisOfDay().set(getMillis(), millisOfDay)) |==> <NO-OP>
+196:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setMillisOfSecond(int):886:setMillis(getChronology().millisOfSecond().set(getMillis(), millisOfSecond)) |==> <NO-OP>
+197:LVR:0:POS:org.joda.time.MutableDateTime@addMillis(int):898:0 |==> 1
+198:LVR:0:NEG:org.joda.time.MutableDateTime@addMillis(int):898:0 |==> -1
+199:ROR:!=(int,int):<(int,int):org.joda.time.MutableDateTime@addMillis(int):898:millis != 0 |==> millis < 0
+200:ROR:!=(int,int):<=(int,int):org.joda.time.MutableDateTime@addMillis(int):898:millis != 0 |==> millis <= 0
+201:ROR:!=(int,int):==(int,int):org.joda.time.MutableDateTime@addMillis(int):898:millis != 0 |==> millis == 0
+202:ROR:!=(int,int):>(int,int):org.joda.time.MutableDateTime@addMillis(int):898:millis != 0 |==> millis > 0
+203:ROR:!=(int,int):>=(int,int):org.joda.time.MutableDateTime@addMillis(int):898:millis != 0 |==> millis >= 0
+204:ROR:!=(int,int):FALSE(int,int):org.joda.time.MutableDateTime@addMillis(int):898:millis != 0 |==> false
+205:ROR:!=(int,int):TRUE(int,int):org.joda.time.MutableDateTime@addMillis(int):898:millis != 0 |==> true
+206:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@addMillis(int):899:setMillis(getChronology().millis().add(getMillis(), millis)) |==> <NO-OP>
+207:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setDate(long):912:setMillis(getChronology().millisOfDay().set(instant, getMillisOfDay())) |==> <NO-OP>
+208:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setDate(org.joda.time.ReadableInstant):931:zone != null |==> zone == null
+209:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setDate(org.joda.time.ReadableInstant):931:zone != null |==> false
+210:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setDate(org.joda.time.ReadableInstant):931:zone != null |==> true
+211:STD:<ASSIGN>:<NO-OP>:org.joda.time.MutableDateTime@setDate(org.joda.time.ReadableInstant):932:instantMillis = zone.getMillisKeepLocal(getZone(), instantMillis) |==> <NO-OP>
+212:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setDate(org.joda.time.ReadableInstant):935:setDate(instantMillis) |==> <NO-OP>
+213:LVR:0:POS:org.joda.time.MutableDateTime@setDate(int,int,int):952:0 |==> 1
+214:LVR:0:NEG:org.joda.time.MutableDateTime@setDate(int,int,int):952:0 |==> -1
+215:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setDate(int,int,int):953:setDate(instantMidnight) |==> <NO-OP>
+216:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setTime(long):966:setMillis(getChronology().millisOfDay().set(getMillis(), millisOfDay)) |==> <NO-OP>
+217:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setTime(org.joda.time.ReadableInstant):980:zone != null |==> zone == null
+218:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setTime(org.joda.time.ReadableInstant):980:zone != null |==> false
+219:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@setTime(org.joda.time.ReadableInstant):980:zone != null |==> true
+220:STD:<ASSIGN>:<NO-OP>:org.joda.time.MutableDateTime@setTime(org.joda.time.ReadableInstant):981:instantMillis = zone.getMillisKeepLocal(DateTimeZone.UTC, instantMillis) |==> <NO-OP>
+221:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setTime(org.joda.time.ReadableInstant):983:setTime(instantMillis) |==> <NO-OP>
+222:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setTime(int,int,int,int):1003:setMillis(instant) |==> <NO-OP>
+223:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime@setDateTime(int,int,int,int,int,int,int):1028:setMillis(instant) |==> <NO-OP>
+224:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@property(org.joda.time.DateTimeFieldType):1041:type == null |==> type != null
+225:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@property(org.joda.time.DateTimeFieldType):1041:type == null |==> false
+226:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.MutableDateTime@property(org.joda.time.DateTimeFieldType):1041:type == null |==> true
+227:LVR:FALSE:TRUE:org.joda.time.MutableDateTime@property(org.joda.time.DateTimeFieldType):1045:false |==> true
+228:ROR:==(boolean,boolean):!=(boolean,boolean):org.joda.time.MutableDateTime@property(org.joda.time.DateTimeFieldType):1045:field.isSupported() == false |==> field.isSupported() != false
+229:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.joda.time.MutableDateTime@property(org.joda.time.DateTimeFieldType):1045:field.isSupported() == false |==> false
+230:ROR:==(boolean,boolean):LHS(boolean,boolean):org.joda.time.MutableDateTime@property(org.joda.time.DateTimeFieldType):1045:field.isSupported() == false |==> field.isSupported()
+231:ROR:==(boolean,boolean):RHS(boolean,boolean):org.joda.time.MutableDateTime@property(org.joda.time.DateTimeFieldType):1045:field.isSupported() == false |==> false
+232:ROR:==(boolean,boolean):TRUE(boolean,boolean):org.joda.time.MutableDateTime@property(org.joda.time.DateTimeFieldType):1045:field.isSupported() == false |==> true
+233:STD:<ASSIGN>:<NO-OP>:org.joda.time.MutableDateTime$Property@<init>(org.joda.time.MutableDateTime,org.joda.time.DateTimeField):1290:iInstant = instant |==> <NO-OP>
+234:STD:<ASSIGN>:<NO-OP>:org.joda.time.MutableDateTime$Property@<init>(org.joda.time.MutableDateTime,org.joda.time.DateTimeField):1291:iField = field |==> <NO-OP>
+235:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime$Property@writeObject(java.io.ObjectOutputStream):1298:oos.writeObject(iInstant) |==> <NO-OP>
+236:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime$Property@writeObject(java.io.ObjectOutputStream):1299:oos.writeObject(iField.getType()) |==> <NO-OP>
+237:STD:<ASSIGN>:<NO-OP>:org.joda.time.MutableDateTime$Property@readObject(java.io.ObjectInputStream):1306:iInstant = (MutableDateTime)oos.readObject() |==> <NO-OP>
+238:STD:<ASSIGN>:<NO-OP>:org.joda.time.MutableDateTime$Property@readObject(java.io.ObjectInputStream):1308:iField = type.getField(iInstant.getChronology()) |==> <NO-OP>
+239:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime$Property@add(int):1358:iInstant.setMillis(getField().add(iInstant.getMillis(), value)) |==> <NO-OP>
+240:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime$Property@add(long):1370:iInstant.setMillis(getField().add(iInstant.getMillis(), value)) |==> <NO-OP>
+241:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime$Property@addWrapField(int):1382:iInstant.setMillis(getField().addWrapField(iInstant.getMillis(), value)) |==> <NO-OP>
+242:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime$Property@set(int):1395:iInstant.setMillis(getField().set(iInstant.getMillis(), value)) |==> <NO-OP>
+243:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime$Property@set(java.lang.String,java.util.Locale):1409:iInstant.setMillis(getField().set(iInstant.getMillis(), text, locale)) |==> <NO-OP>
+244:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime$Property@set(java.lang.String):1422:set(text, null) |==> <NO-OP>
+245:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime$Property@roundFloor():1434:iInstant.setMillis(getField().roundFloor(iInstant.getMillis())) |==> <NO-OP>
+246:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime$Property@roundCeiling():1445:iInstant.setMillis(getField().roundCeiling(iInstant.getMillis())) |==> <NO-OP>
+247:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime$Property@roundHalfFloor():1457:iInstant.setMillis(getField().roundHalfFloor(iInstant.getMillis())) |==> <NO-OP>
+248:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime$Property@roundHalfCeiling():1469:iInstant.setMillis(getField().roundHalfCeiling(iInstant.getMillis())) |==> <NO-OP>
+249:STD:<CALL>:<NO-OP>:org.joda.time.MutableDateTime$Property@roundHalfEven():1481:iInstant.setMillis(getField().roundHalfEven(iInstant.getMillis())) |==> <NO-OP>

@@ -1,0 +1,237 @@
+1:LVR:FALSE:TRUE:org.apache.commons.lang.StringEscapeUtils@escapeJava(java.lang.String):81:false |==> true
+2:LVR:FALSE:TRUE:org.apache.commons.lang.StringEscapeUtils@escapeJava(java.io.Writer,java.lang.String):97:false |==> true
+3:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJava(java.io.Writer,java.lang.String):97:escapeJavaStyleString(out, str, false) |==> <NO-OP>
+4:LVR:TRUE:FALSE:org.apache.commons.lang.StringEscapeUtils@escapeJavaScript(java.lang.String):122:true |==> false
+5:LVR:TRUE:FALSE:org.apache.commons.lang.StringEscapeUtils@escapeJavaScript(java.io.Writer,java.lang.String):138:true |==> false
+6:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaScript(java.io.Writer,java.lang.String):138:escapeJavaStyleString(out, str, true) |==> <NO-OP>
+7:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.lang.String,boolean):149:str == null |==> str != null
+8:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.lang.String,boolean):149:str == null |==> false
+9:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.lang.String,boolean):149:str == null |==> true
+10:LVR:POS:0:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.lang.String,boolean):153:2 |==> 0
+11:LVR:POS:NEG:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.lang.String,boolean):153:2 |==> -2
+12:AOR:*(int,int):%(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.lang.String,boolean):153:str.length() * 2 |==> str.length() % 2
+13:AOR:*(int,int):+(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.lang.String,boolean):153:str.length() * 2 |==> str.length() + 2
+14:AOR:*(int,int):-(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.lang.String,boolean):153:str.length() * 2 |==> str.length() - 2
+15:AOR:*(int,int):/(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.lang.String,boolean):153:str.length() * 2 |==> str.length() / 2
+16:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.lang.String,boolean):154:escapeJavaStyleString(writer, str, escapeSingleQuotes) |==> <NO-OP>
+17:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.lang.String,boolean):158:ioe.printStackTrace() |==> <NO-OP>
+18:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):172:out == null |==> out != null
+19:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):172:out == null |==> false
+20:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):172:out == null |==> true
+21:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):175:str == null |==> str != null
+22:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):175:str == null |==> false
+23:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):175:str == null |==> true
+24:LVR:0:POS:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):180:0 |==> 1
+25:LVR:0:NEG:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):180:0 |==> -1
+26:ROR:<(int,int):!=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):180:i < sz |==> i != sz
+27:ROR:<(int,int):<=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):180:i < sz |==> i <= sz
+28:ROR:<(int,int):==(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):180:i < sz |==> i == sz
+29:ROR:<(int,int):>(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):180:i < sz |==> i > sz
+30:ROR:<(int,int):>=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):180:i < sz |==> i >= sz
+31:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):180:i < sz |==> false
+32:ROR:<(int,int):TRUE(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):180:i < sz |==> true
+33:LVR:POS:0:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):184:4095 |==> 0
+34:LVR:POS:NEG:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):184:4095 |==> -4095
+35:ROR:>(int,int):!=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):184:ch > 4095 |==> ch != 4095
+36:ROR:>(int,int):<(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):184:ch > 4095 |==> ch < 4095
+37:ROR:>(int,int):<=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):184:ch > 4095 |==> ch <= 4095
+38:ROR:>(int,int):==(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):184:ch > 4095 |==> ch == 4095
+39:ROR:>(int,int):>=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):184:ch > 4095 |==> ch >= 4095
+40:ROR:>(int,int):FALSE(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):184:ch > 4095 |==> false
+41:ROR:>(int,int):TRUE(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):184:ch > 4095 |==> true
+42:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):185:out.write("\\u" + hex(ch)) |==> <NO-OP>
+43:LVR:POS:0:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):186:255 |==> 0
+44:LVR:POS:NEG:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):186:255 |==> -255
+45:ROR:>(int,int):!=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):186:ch > 255 |==> ch != 255
+46:ROR:>(int,int):<(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):186:ch > 255 |==> ch < 255
+47:ROR:>(int,int):<=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):186:ch > 255 |==> ch <= 255
+48:ROR:>(int,int):==(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):186:ch > 255 |==> ch == 255
+49:ROR:>(int,int):>=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):186:ch > 255 |==> ch >= 255
+50:ROR:>(int,int):FALSE(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):186:ch > 255 |==> false
+51:ROR:>(int,int):TRUE(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):186:ch > 255 |==> true
+52:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):187:out.write("\\u0" + hex(ch)) |==> <NO-OP>
+53:LVR:POS:0:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):188:127 |==> 0
+54:LVR:POS:NEG:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):188:127 |==> -127
+55:ROR:>(int,int):!=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):188:ch > 127 |==> ch != 127
+56:ROR:>(int,int):<(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):188:ch > 127 |==> ch < 127
+57:ROR:>(int,int):<=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):188:ch > 127 |==> ch <= 127
+58:ROR:>(int,int):==(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):188:ch > 127 |==> ch == 127
+59:ROR:>(int,int):>=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):188:ch > 127 |==> ch >= 127
+60:ROR:>(int,int):FALSE(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):188:ch > 127 |==> false
+61:ROR:>(int,int):TRUE(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):188:ch > 127 |==> true
+62:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):189:out.write("\\u00" + hex(ch)) |==> <NO-OP>
+63:LVR:POS:0:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):190:32 |==> 0
+64:LVR:POS:NEG:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):190:32 |==> -32
+65:ROR:<(int,int):!=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):190:ch < 32 |==> ch != 32
+66:ROR:<(int,int):<=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):190:ch < 32 |==> ch <= 32
+67:ROR:<(int,int):==(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):190:ch < 32 |==> ch == 32
+68:ROR:<(int,int):>(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):190:ch < 32 |==> ch > 32
+69:ROR:<(int,int):>=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):190:ch < 32 |==> ch >= 32
+70:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):190:ch < 32 |==> false
+71:ROR:<(int,int):TRUE(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):190:ch < 32 |==> true
+72:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):193:out.write('\\') |==> <NO-OP>
+73:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):194:out.write('b') |==> <NO-OP>
+74:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):197:out.write('\\') |==> <NO-OP>
+75:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):198:out.write('n') |==> <NO-OP>
+76:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):201:out.write('\\') |==> <NO-OP>
+77:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):202:out.write('t') |==> <NO-OP>
+78:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):205:out.write('\\') |==> <NO-OP>
+79:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):206:out.write('f') |==> <NO-OP>
+80:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):209:out.write('\\') |==> <NO-OP>
+81:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):210:out.write('r') |==> <NO-OP>
+82:LVR:POS:0:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):213:15 |==> 0
+83:LVR:POS:NEG:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):213:15 |==> -15
+84:ROR:>(int,int):!=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):213:ch > 15 |==> ch != 15
+85:ROR:>(int,int):<(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):213:ch > 15 |==> ch < 15
+86:ROR:>(int,int):<=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):213:ch > 15 |==> ch <= 15
+87:ROR:>(int,int):==(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):213:ch > 15 |==> ch == 15
+88:ROR:>(int,int):>=(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):213:ch > 15 |==> ch >= 15
+89:ROR:>(int,int):FALSE(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):213:ch > 15 |==> false
+90:ROR:>(int,int):TRUE(int,int):org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):213:ch > 15 |==> true
+91:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):214:out.write("\\u00" + hex(ch)) |==> <NO-OP>
+92:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):216:out.write("\\u000" + hex(ch)) |==> <NO-OP>
+93:COR:escapeSingleQuote:TRUE:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):223:escapeSingleQuote |==> false
+94:COR:escapeSingleQuote:FALSE:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):223:escapeSingleQuote |==> true
+95:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):224:out.write('\\') |==> <NO-OP>
+96:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):226:out.write('\'') |==> <NO-OP>
+97:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):229:out.write('\\') |==> <NO-OP>
+98:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):230:out.write('\"') |==> <NO-OP>
+99:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):233:out.write('\\') |==> <NO-OP>
+100:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):234:out.write('\\') |==> <NO-OP>
+101:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):237:out.write('\\') |==> <NO-OP>
+102:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):238:out.write('/') |==> <NO-OP>
+103:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeJavaStyleString(java.io.Writer,java.lang.String,boolean):241:out.write(ch) |==> <NO-OP>
+104:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.lang.String):269:str == null |==> str != null
+105:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.lang.String):269:str == null |==> false
+106:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.lang.String):269:str == null |==> true
+107:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.lang.String):274:unescapeJava(writer, str) |==> <NO-OP>
+108:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.lang.String):278:ioe.printStackTrace() |==> <NO-OP>
+109:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):299:out == null |==> out != null
+110:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):299:out == null |==> false
+111:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):299:out == null |==> true
+112:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):302:str == null |==> str != null
+113:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):302:str == null |==> false
+114:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):302:str == null |==> true
+115:LVR:POS:0:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):306:4 |==> 0
+116:LVR:POS:NEG:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):306:4 |==> -4
+117:LVR:FALSE:TRUE:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):307:false |==> true
+118:LVR:FALSE:TRUE:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):308:false |==> true
+119:LVR:0:POS:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):309:0 |==> 1
+120:LVR:0:NEG:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):309:0 |==> -1
+121:ROR:<(int,int):!=(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):309:i < sz |==> i != sz
+122:ROR:<(int,int):<=(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):309:i < sz |==> i <= sz
+123:ROR:<(int,int):==(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):309:i < sz |==> i == sz
+124:ROR:<(int,int):>(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):309:i < sz |==> i > sz
+125:ROR:<(int,int):>=(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):309:i < sz |==> i >= sz
+126:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):309:i < sz |==> false
+127:ROR:<(int,int):TRUE(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):309:i < sz |==> true
+128:COR:inUnicode:TRUE:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):311:inUnicode |==> false
+129:COR:inUnicode:FALSE:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):311:inUnicode |==> true
+130:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):314:unicode.append(ch) |==> <NO-OP>
+131:LVR:POS:0:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):315:4 |==> 0
+132:LVR:POS:NEG:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):315:4 |==> -4
+133:ROR:==(int,int):!=(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):315:unicode.length() == 4 |==> unicode.length() != 4
+134:ROR:==(int,int):<(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):315:unicode.length() == 4 |==> unicode.length() < 4
+135:ROR:==(int,int):<=(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):315:unicode.length() == 4 |==> unicode.length() <= 4
+136:ROR:==(int,int):>(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):315:unicode.length() == 4 |==> unicode.length() > 4
+137:ROR:==(int,int):>=(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):315:unicode.length() == 4 |==> unicode.length() >= 4
+138:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):315:unicode.length() == 4 |==> false
+139:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):315:unicode.length() == 4 |==> true
+140:LVR:POS:0:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):319:16 |==> 0
+141:LVR:POS:NEG:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):319:16 |==> -16
+142:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):320:out.write((char)value) |==> <NO-OP>
+143:LVR:0:POS:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):321:0 |==> 1
+144:LVR:0:NEG:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):321:0 |==> -1
+145:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):321:unicode.setLength(0) |==> <NO-OP>
+146:LVR:FALSE:TRUE:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):322:false |==> true
+147:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):322:inUnicode = false |==> <NO-OP>
+148:LVR:FALSE:TRUE:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):323:false |==> true
+149:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):323:hadSlash = false |==> <NO-OP>
+150:COR:hadSlash:TRUE:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):330:hadSlash |==> false
+151:COR:hadSlash:FALSE:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):330:hadSlash |==> true
+152:LVR:FALSE:TRUE:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):332:false |==> true
+153:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):332:hadSlash = false |==> <NO-OP>
+154:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):335:out.write('\\') |==> <NO-OP>
+155:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):338:out.write('\'') |==> <NO-OP>
+156:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):341:out.write('\"') |==> <NO-OP>
+157:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):344:out.write('\r') |==> <NO-OP>
+158:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):347:out.write('\f') |==> <NO-OP>
+159:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):350:out.write('\t') |==> <NO-OP>
+160:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):353:out.write('\n') |==> <NO-OP>
+161:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):356:out.write('\b') |==> <NO-OP>
+162:LVR:TRUE:FALSE:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):361:true |==> false
+163:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):361:inUnicode = true |==> <NO-OP>
+164:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):365:out.write(ch) |==> <NO-OP>
+165:ROR:==(int,int):!=(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):369:ch == '\\' |==> ch != '\\'
+166:ROR:==(int,int):<(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):369:ch == '\\' |==> ch < '\\'
+167:ROR:==(int,int):<=(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):369:ch == '\\' |==> ch <= '\\'
+168:ROR:==(int,int):>(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):369:ch == '\\' |==> ch > '\\'
+169:ROR:==(int,int):>=(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):369:ch == '\\' |==> ch >= '\\'
+170:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):369:ch == '\\' |==> false
+171:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):369:ch == '\\' |==> true
+172:LVR:TRUE:FALSE:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):370:true |==> false
+173:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):370:hadSlash = true |==> <NO-OP>
+174:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):373:out.write(ch) |==> <NO-OP>
+175:COR:hadSlash:TRUE:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):375:hadSlash |==> false
+176:COR:hadSlash:FALSE:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):375:hadSlash |==> true
+177:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJava(java.io.Writer,java.lang.String):378:out.write('\\') |==> <NO-OP>
+178:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeJavaScript(java.io.Writer,java.lang.String):414:unescapeJava(out, str) |==> <NO-OP>
+179:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.lang.String):446:str == null |==> str != null
+180:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.lang.String):446:str == null |==> false
+181:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.lang.String):446:str == null |==> true
+182:LVR:POS:0:org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.lang.String):450:1.5 |==> 0.0
+183:LVR:POS:NEG:org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.lang.String):450:1.5 |==> -1.5
+184:AOR:*(double,double):%(double,double):org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.lang.String):450:str.length() * 1.5 |==> str.length() % 1.5
+185:AOR:*(double,double):+(double,double):org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.lang.String):450:str.length() * 1.5 |==> str.length() + 1.5
+186:AOR:*(double,double):-(double,double):org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.lang.String):450:str.length() * 1.5 |==> str.length() - 1.5
+187:AOR:*(double,double):/(double,double):org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.lang.String):450:str.length() * 1.5 |==> str.length() / 1.5
+188:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.lang.String):451:escapeHtml(writer, str) |==> <NO-OP>
+189:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.lang.String):456:e.printStackTrace() |==> <NO-OP>
+190:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.io.Writer,java.lang.String):491:writer == null |==> writer != null
+191:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.io.Writer,java.lang.String):491:writer == null |==> false
+192:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.io.Writer,java.lang.String):491:writer == null |==> true
+193:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.io.Writer,java.lang.String):494:string == null |==> string != null
+194:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.io.Writer,java.lang.String):494:string == null |==> false
+195:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.io.Writer,java.lang.String):494:string == null |==> true
+196:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeHtml(java.io.Writer,java.lang.String):497:Entities.HTML40.escape(writer, string) |==> <NO-OP>
+197:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.lang.String):518:str == null |==> str != null
+198:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.lang.String):518:str == null |==> false
+199:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.lang.String):518:str == null |==> true
+200:LVR:POS:0:org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.lang.String):522:1.5 |==> 0.0
+201:LVR:POS:NEG:org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.lang.String):522:1.5 |==> -1.5
+202:AOR:*(double,double):%(double,double):org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.lang.String):522:str.length() * 1.5 |==> str.length() % 1.5
+203:AOR:*(double,double):+(double,double):org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.lang.String):522:str.length() * 1.5 |==> str.length() + 1.5
+204:AOR:*(double,double):-(double,double):org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.lang.String):522:str.length() * 1.5 |==> str.length() - 1.5
+205:AOR:*(double,double):/(double,double):org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.lang.String):522:str.length() * 1.5 |==> str.length() / 1.5
+206:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.lang.String):523:unescapeHtml(writer, str) |==> <NO-OP>
+207:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.lang.String):528:e.printStackTrace() |==> <NO-OP>
+208:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.io.Writer,java.lang.String):552:writer == null |==> writer != null
+209:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.io.Writer,java.lang.String):552:writer == null |==> false
+210:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.io.Writer,java.lang.String):552:writer == null |==> true
+211:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.io.Writer,java.lang.String):555:string == null |==> string != null
+212:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.io.Writer,java.lang.String):555:string == null |==> false
+213:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.io.Writer,java.lang.String):555:string == null |==> true
+214:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeHtml(java.io.Writer,java.lang.String):558:Entities.HTML40.unescape(writer, string) |==> <NO-OP>
+215:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeXml(java.io.Writer,java.lang.String):582:writer == null |==> writer != null
+216:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeXml(java.io.Writer,java.lang.String):582:writer == null |==> false
+217:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeXml(java.io.Writer,java.lang.String):582:writer == null |==> true
+218:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeXml(java.io.Writer,java.lang.String):585:str == null |==> str != null
+219:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeXml(java.io.Writer,java.lang.String):585:str == null |==> false
+220:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeXml(java.io.Writer,java.lang.String):585:str == null |==> true
+221:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@escapeXml(java.io.Writer,java.lang.String):588:Entities.XML.escape(writer, str) |==> <NO-OP>
+222:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeXml(java.lang.String):609:str == null |==> str != null
+223:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeXml(java.lang.String):609:str == null |==> false
+224:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeXml(java.lang.String):609:str == null |==> true
+225:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeXml(java.io.Writer,java.lang.String):634:writer == null |==> writer != null
+226:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeXml(java.io.Writer,java.lang.String):634:writer == null |==> false
+227:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeXml(java.io.Writer,java.lang.String):634:writer == null |==> true
+228:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeXml(java.io.Writer,java.lang.String):637:str == null |==> str != null
+229:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeXml(java.io.Writer,java.lang.String):637:str == null |==> false
+230:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeXml(java.io.Writer,java.lang.String):637:str == null |==> true
+231:STD:<CALL>:<NO-OP>:org.apache.commons.lang.StringEscapeUtils@unescapeXml(java.io.Writer,java.lang.String):640:Entities.XML.unescape(writer, str) |==> <NO-OP>
+232:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeXml(java.lang.String):659:str == null |==> str != null
+233:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeXml(java.lang.String):659:str == null |==> false
+234:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@unescapeXml(java.lang.String):659:str == null |==> true
+235:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeSql(java.lang.String):685:str == null |==> str != null
+236:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeSql(java.lang.String):685:str == null |==> false
+237:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.StringEscapeUtils@escapeSql(java.lang.String):685:str == null |==> true

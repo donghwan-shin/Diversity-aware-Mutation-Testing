@@ -1,0 +1,53 @@
+1:LVR:POS:0:org.apache.commons.math3.genetics.ElitisticListPopulation:36:0.9 |==> 0.0
+2:LVR:POS:NEG:org.apache.commons.math3.genetics.ElitisticListPopulation:36:0.9 |==> -0.9
+3:STD:<CALL>:<NO-OP>:org.apache.commons.math3.genetics.ElitisticListPopulation@<init>(java.util.List<org.apache.commons.math3.genetics.Chromosome>,int,double):51:setElitismRate(elitismRate) |==> <NO-OP>
+4:STD:<CALL>:<NO-OP>:org.apache.commons.math3.genetics.ElitisticListPopulation@<init>(int,double):65:setElitismRate(elitismRate) |==> <NO-OP>
+5:STD:<CALL>:<NO-OP>:org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():79:Collections.sort(oldChromosomes) |==> <NO-OP>
+6:LVR:POS:0:org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():82:1.0 |==> 0.0
+7:LVR:POS:NEG:org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():82:1.0 |==> -1.0
+8:AOR:-(double,double):%(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():82:1.0 - this.getElitismRate() |==> 1.0 % this.getElitismRate()
+9:AOR:-(double,double):*(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():82:1.0 - this.getElitismRate() |==> 1.0 * this.getElitismRate()
+10:AOR:-(double,double):+(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():82:1.0 - this.getElitismRate() |==> 1.0 + this.getElitismRate()
+11:AOR:-(double,double):/(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():82:1.0 - this.getElitismRate() |==> 1.0 / this.getElitismRate()
+12:AOR:*(double,double):%(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():82:(1.0 - this.getElitismRate()) * oldChromosomes.size() |==> (1.0 - this.getElitismRate()) % oldChromosomes.size()
+13:AOR:*(double,double):+(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():82:(1.0 - this.getElitismRate()) * oldChromosomes.size() |==> (1.0 - this.getElitismRate()) + oldChromosomes.size()
+14:AOR:*(double,double):-(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():82:(1.0 - this.getElitismRate()) * oldChromosomes.size() |==> (1.0 - this.getElitismRate()) - oldChromosomes.size()
+15:AOR:*(double,double):/(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():82:(1.0 - this.getElitismRate()) * oldChromosomes.size() |==> (1.0 - this.getElitismRate()) / oldChromosomes.size()
+16:ROR:<(int,int):!=(int,int):org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():83:i < oldChromosomes.size() |==> i != oldChromosomes.size()
+17:ROR:<(int,int):<=(int,int):org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():83:i < oldChromosomes.size() |==> i <= oldChromosomes.size()
+18:ROR:<(int,int):==(int,int):org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():83:i < oldChromosomes.size() |==> i == oldChromosomes.size()
+19:ROR:<(int,int):>(int,int):org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():83:i < oldChromosomes.size() |==> i > oldChromosomes.size()
+20:ROR:<(int,int):>=(int,int):org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():83:i < oldChromosomes.size() |==> i >= oldChromosomes.size()
+21:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():83:i < oldChromosomes.size() |==> false
+22:ROR:<(int,int):TRUE(int,int):org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():83:i < oldChromosomes.size() |==> true
+23:STD:<CALL>:<NO-OP>:org.apache.commons.math3.genetics.ElitisticListPopulation@nextGeneration():84:nextGeneration.addChromosome(oldChromosomes.get(i)) |==> <NO-OP>
+24:LVR:0:POS:org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:0 |==> 1
+25:LVR:0:NEG:org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:0 |==> -1
+26:ROR:<(double,double):!=(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate < 0 |==> elitismRate != 0
+27:ROR:<(double,double):<=(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate < 0 |==> elitismRate <= 0
+28:ROR:<(double,double):==(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate < 0 |==> elitismRate == 0
+29:ROR:<(double,double):>(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate < 0 |==> elitismRate > 0
+30:ROR:<(double,double):>=(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate < 0 |==> elitismRate >= 0
+31:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate < 0 |==> false
+32:ROR:<(double,double):TRUE(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate < 0 |==> true
+33:LVR:POS:0:org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:1 |==> 0
+34:LVR:POS:NEG:org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:1 |==> -1
+35:ROR:>(double,double):!=(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate > 1 |==> elitismRate != 1
+36:ROR:>(double,double):<(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate > 1 |==> elitismRate < 1
+37:ROR:>(double,double):<=(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate > 1 |==> elitismRate <= 1
+38:ROR:>(double,double):==(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate > 1 |==> elitismRate == 1
+39:ROR:>(double,double):>=(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate > 1 |==> elitismRate >= 1
+40:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate > 1 |==> false
+41:ROR:>(double,double):TRUE(double,double):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate > 1 |==> true
+42:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate < 0 || elitismRate > 1 |==> elitismRate < 0 != elitismRate > 1
+43:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate < 0 || elitismRate > 1 |==> elitismRate < 0 && elitismRate > 1
+44:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate < 0 || elitismRate > 1 |==> elitismRate < 0 == elitismRate > 1
+45:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate < 0 || elitismRate > 1 |==> false
+46:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate < 0 || elitismRate > 1 |==> elitismRate < 0
+47:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate < 0 || elitismRate > 1 |==> elitismRate > 1
+48:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):98:elitismRate < 0 || elitismRate > 1 |==> true
+49:LVR:0:POS:org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):99:0 |==> 1
+50:LVR:0:NEG:org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):99:0 |==> -1
+51:LVR:POS:0:org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):99:1 |==> 0
+52:LVR:POS:NEG:org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):99:1 |==> -1
+53:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.genetics.ElitisticListPopulation@setElitismRate(double):101:this.elitismRate = elitismRate |==> <NO-OP>

@@ -1,0 +1,166 @@
+1:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter@<init>():40:this.excerpt = LINE |==> <NO-OP>
+2:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter@<init>(com.google.javascript.jscomp.SourceExcerptProvider,com.google.javascript.jscomp.SourceExcerptProvider.SourceExcerpt):50:Preconditions.checkNotNull(source) |==> <NO-OP>
+3:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter@<init>(com.google.javascript.jscomp.SourceExcerptProvider,com.google.javascript.jscomp.SourceExcerptProvider.SourceExcerpt):51:this.excerpt = excerpt |==> <NO-OP>
+4:LVR:FALSE:TRUE:com.google.javascript.jscomp.LightweightMessageFormatter@formatError(com.google.javascript.jscomp.JSError):59:false |==> true
+5:LVR:TRUE:FALSE:com.google.javascript.jscomp.LightweightMessageFormatter@formatWarning(com.google.javascript.jscomp.JSError):63:true |==> false
+6:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):69:source == null |==> source != null
+7:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):69:source == null |==> false
+8:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):69:source == null |==> true
+9:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):75:error.sourceName != null |==> error.sourceName == null
+10:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):75:error.sourceName != null |==> false
+11:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):75:error.sourceName != null |==> true
+12:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):76:b.append(error.sourceName) |==> <NO-OP>
+13:LVR:0:POS:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):77:0 |==> 1
+14:LVR:0:NEG:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):77:0 |==> -1
+15:ROR:>(int,int):!=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):77:error.lineNumber > 0 |==> error.lineNumber != 0
+16:ROR:>(int,int):<(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):77:error.lineNumber > 0 |==> error.lineNumber < 0
+17:ROR:>(int,int):<=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):77:error.lineNumber > 0 |==> error.lineNumber <= 0
+18:ROR:>(int,int):==(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):77:error.lineNumber > 0 |==> error.lineNumber == 0
+19:ROR:>(int,int):>=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):77:error.lineNumber > 0 |==> error.lineNumber >= 0
+20:ROR:>(int,int):FALSE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):77:error.lineNumber > 0 |==> false
+21:ROR:>(int,int):TRUE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):77:error.lineNumber > 0 |==> true
+22:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):78:b.append(':') |==> <NO-OP>
+23:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):79:b.append(error.lineNumber) |==> <NO-OP>
+24:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):81:b.append(": ") |==> <NO-OP>
+25:COR:warning:TRUE:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):84:warning |==> false
+26:COR:warning:FALSE:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):84:warning |==> true
+27:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):84:b.append(getLevelName(warning ? CheckLevel.WARNING : CheckLevel.ERROR)) |==> <NO-OP>
+28:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):85:b.append(" - ") |==> <NO-OP>
+29:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):87:b.append(error.description) |==> <NO-OP>
+30:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):88:b.append('\n') |==> <NO-OP>
+31:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):89:sourceExcerpt != null |==> sourceExcerpt == null
+32:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):89:sourceExcerpt != null |==> false
+33:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):89:sourceExcerpt != null |==> true
+34:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):90:b.append(sourceExcerpt) |==> <NO-OP>
+35:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):91:b.append('\n') |==> <NO-OP>
+36:LVR:0:POS:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:0 |==> 1
+37:LVR:0:NEG:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:0 |==> -1
+38:ROR:<=(int,int):!=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:0 <= charno |==> 0 != charno
+39:ROR:<=(int,int):<(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:0 <= charno |==> 0 < charno
+40:ROR:<=(int,int):==(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:0 <= charno |==> 0 == charno
+41:ROR:<=(int,int):>(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:0 <= charno |==> 0 > charno
+42:ROR:<=(int,int):>=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:0 <= charno |==> 0 >= charno
+43:ROR:<=(int,int):FALSE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:0 <= charno |==> false
+44:ROR:<=(int,int):TRUE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:0 <= charno |==> true
+45:COR:&&(boolean,boolean):!=(boolean,boolean):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):97:excerpt.equals(LINE) && 0 <= charno |==> excerpt.equals(LINE) != 0 <= charno
+46:COR:&&(boolean,boolean):==(boolean,boolean):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):97:excerpt.equals(LINE) && 0 <= charno |==> excerpt.equals(LINE) == 0 <= charno
+47:COR:&&(boolean,boolean):FALSE(boolean,boolean):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:excerpt.equals(LINE) && 0 <= charno |==> false
+48:COR:&&(boolean,boolean):LHS(boolean,boolean):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):97:excerpt.equals(LINE) && 0 <= charno |==> excerpt.equals(LINE)
+49:COR:&&(boolean,boolean):RHS(boolean,boolean):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:excerpt.equals(LINE) && 0 <= charno |==> 0 <= charno
+50:COR:&&(boolean,boolean):TRUE(boolean,boolean):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:excerpt.equals(LINE) && 0 <= charno |==> true
+51:COR:&&(boolean,boolean):||(boolean,boolean):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):97:excerpt.equals(LINE) && 0 <= charno |==> excerpt.equals(LINE) || 0 <= charno
+52:ROR:<=(int,int):!=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:charno <= sourceExcerpt.length() |==> charno != sourceExcerpt.length()
+53:ROR:<=(int,int):<(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:charno <= sourceExcerpt.length() |==> charno < sourceExcerpt.length()
+54:ROR:<=(int,int):==(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:charno <= sourceExcerpt.length() |==> charno == sourceExcerpt.length()
+55:ROR:<=(int,int):>(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:charno <= sourceExcerpt.length() |==> charno > sourceExcerpt.length()
+56:ROR:<=(int,int):>=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:charno <= sourceExcerpt.length() |==> charno >= sourceExcerpt.length()
+57:ROR:<=(int,int):FALSE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:charno <= sourceExcerpt.length() |==> false
+58:ROR:<=(int,int):TRUE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:charno <= sourceExcerpt.length() |==> true
+59:COR:&&(boolean,boolean):!=(boolean,boolean):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):97:excerpt.equals(LINE) && 0 <= charno && charno <= sourceExcerpt.length() |==> (excerpt.equals(LINE) && 0 <= charno) != charno <= sourceExcerpt.length()
+60:COR:&&(boolean,boolean):==(boolean,boolean):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):97:excerpt.equals(LINE) && 0 <= charno && charno <= sourceExcerpt.length() |==> (excerpt.equals(LINE) && 0 <= charno) == charno <= sourceExcerpt.length()
+61:COR:&&(boolean,boolean):FALSE(boolean,boolean):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:excerpt.equals(LINE) && 0 <= charno && charno <= sourceExcerpt.length() |==> false
+62:COR:&&(boolean,boolean):LHS(boolean,boolean):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):97:excerpt.equals(LINE) && 0 <= charno && charno <= sourceExcerpt.length() |==> excerpt.equals(LINE) && 0 <= charno
+63:COR:&&(boolean,boolean):RHS(boolean,boolean):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:excerpt.equals(LINE) && 0 <= charno && charno <= sourceExcerpt.length() |==> charno <= sourceExcerpt.length()
+64:COR:&&(boolean,boolean):TRUE(boolean,boolean):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):98:excerpt.equals(LINE) && 0 <= charno && charno <= sourceExcerpt.length() |==> true
+65:COR:&&(boolean,boolean):||(boolean,boolean):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):97:excerpt.equals(LINE) && 0 <= charno && charno <= sourceExcerpt.length() |==> excerpt.equals(LINE) && 0 <= charno || charno <= sourceExcerpt.length()
+66:LVR:0:POS:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):99:0 |==> 1
+67:LVR:0:NEG:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):99:0 |==> -1
+68:ROR:<(int,int):!=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):99:i < charno |==> i != charno
+69:ROR:<(int,int):<=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):99:i < charno |==> i <= charno
+70:ROR:<(int,int):==(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):99:i < charno |==> i == charno
+71:ROR:<(int,int):>(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):99:i < charno |==> i > charno
+72:ROR:<(int,int):>=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):99:i < charno |==> i >= charno
+73:ROR:<(int,int):FALSE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):99:i < charno |==> false
+74:ROR:<(int,int):TRUE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):99:i < charno |==> true
+75:COR:Character.isWhitespace(c):TRUE:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):101:Character.isWhitespace(c) |==> false
+76:COR:Character.isWhitespace(c):FALSE:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):101:Character.isWhitespace(c) |==> true
+77:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):102:b.append(c) |==> <NO-OP>
+78:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):104:b.append(' ') |==> <NO-OP>
+79:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter@format(com.google.javascript.jscomp.JSError,boolean):107:b.append("^\n") |==> <NO-OP>
+80:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):126:region == null |==> region != null
+81:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):126:region == null |==> false
+82:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):126:region == null |==> true
+83:LVR:0:POS:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):130:0 |==> 1
+84:LVR:0:NEG:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):130:0 |==> -1
+85:ROR:==(int,int):!=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):130:code.length() == 0 |==> code.length() != 0
+86:ROR:==(int,int):<(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):130:code.length() == 0 |==> code.length() < 0
+87:ROR:==(int,int):<=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):130:code.length() == 0 |==> code.length() <= 0
+88:ROR:==(int,int):>(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):130:code.length() == 0 |==> code.length() > 0
+89:ROR:==(int,int):>=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):130:code.length() == 0 |==> code.length() >= 0
+90:ROR:==(int,int):FALSE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):130:code.length() == 0 |==> false
+91:ROR:==(int,int):TRUE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):130:code.length() == 0 |==> true
+92:LVR:POS:0:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):139:2 |==> 0
+93:LVR:POS:NEG:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):139:2 |==> -2
+94:AOR:*(int,int):%(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):139:code.length() * 2 |==> code.length() % 2
+95:AOR:*(int,int):+(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):139:code.length() * 2 |==> code.length() + 2
+96:AOR:*(int,int):-(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):139:code.length() * 2 |==> code.length() - 2
+97:AOR:*(int,int):/(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):139:code.length() * 2 |==> code.length() / 2
+98:LVR:0:POS:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):140:0 |==> 1
+99:LVR:0:NEG:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):140:0 |==> -1
+100:LVR:0:POS:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):143:0 |==> 1
+101:LVR:0:NEG:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):143:0 |==> -1
+102:ROR:>=(int,int):!=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):143:start >= 0 |==> start != 0
+103:ROR:>=(int,int):<(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):143:start >= 0 |==> start < 0
+104:ROR:>=(int,int):<=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):143:start >= 0 |==> start <= 0
+105:ROR:>=(int,int):==(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):143:start >= 0 |==> start == 0
+106:ROR:>=(int,int):>(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):143:start >= 0 |==> start > 0
+107:ROR:>=(int,int):FALSE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):143:start >= 0 |==> false
+108:ROR:>=(int,int):TRUE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):143:start >= 0 |==> true
+109:LVR:0:POS:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):146:0 |==> 1
+110:LVR:0:NEG:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):146:0 |==> -1
+111:ROR:<(int,int):!=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):146:end < 0 |==> end != 0
+112:ROR:<(int,int):<=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):146:end < 0 |==> end <= 0
+113:ROR:<(int,int):==(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):146:end < 0 |==> end == 0
+114:ROR:<(int,int):>(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):146:end < 0 |==> end > 0
+115:ROR:<(int,int):>=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):146:end < 0 |==> end >= 0
+116:ROR:<(int,int):FALSE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):146:end < 0 |==> false
+117:ROR:<(int,int):TRUE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):146:end < 0 |==> true
+118:LVR:0:POS:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):148:0 |==> 1
+119:LVR:0:NEG:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):148:0 |==> -1
+120:ROR:==(int,int):!=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):148:line.length() == 0 |==> line.length() != 0
+121:ROR:==(int,int):<(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):148:line.length() == 0 |==> line.length() < 0
+122:ROR:==(int,int):<=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):148:line.length() == 0 |==> line.length() <= 0
+123:ROR:==(int,int):>(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):148:line.length() == 0 |==> line.length() > 0
+124:ROR:==(int,int):>=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):148:line.length() == 0 |==> line.length() >= 0
+125:ROR:==(int,int):FALSE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):148:line.length() == 0 |==> false
+126:ROR:==(int,int):TRUE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):148:line.length() == 0 |==> true
+127:LVR:0:POS:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):149:0 |==> 1
+128:LVR:0:NEG:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):149:0 |==> -1
+129:LVR:POS:0:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):149:1 |==> 0
+130:LVR:POS:NEG:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):149:1 |==> -1
+131:AOR:-(int,int):%(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):149:builder.length() - 1 |==> builder.length() % 1
+132:AOR:-(int,int):*(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):149:builder.length() - 1 |==> builder.length() * 1
+133:AOR:-(int,int):+(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):149:builder.length() - 1 |==> builder.length() + 1
+134:AOR:-(int,int):/(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):149:builder.length() - 1 |==> builder.length() / 1
+135:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):154:builder.append("  ") |==> <NO-OP>
+136:AOR:-(int,int):%(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):157:numberLength - Integer.toString(lineNumber).length() |==> numberLength % Integer.toString(lineNumber).length()
+137:AOR:-(int,int):*(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):157:numberLength - Integer.toString(lineNumber).length() |==> numberLength * Integer.toString(lineNumber).length()
+138:AOR:-(int,int):+(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):157:numberLength - Integer.toString(lineNumber).length() |==> numberLength + Integer.toString(lineNumber).length()
+139:AOR:-(int,int):/(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):157:numberLength - Integer.toString(lineNumber).length() |==> numberLength / Integer.toString(lineNumber).length()
+140:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):158:builder.append(Strings.repeat(" ", spaces)) |==> <NO-OP>
+141:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):159:builder.append(lineNumber) |==> <NO-OP>
+142:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):160:builder.append("| ") |==> <NO-OP>
+143:LVR:0:POS:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):163:0 |==> 1
+144:LVR:0:NEG:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):163:0 |==> -1
+145:ROR:<(int,int):!=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):163:end < 0 |==> end != 0
+146:ROR:<(int,int):<=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):163:end < 0 |==> end <= 0
+147:ROR:<(int,int):==(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):163:end < 0 |==> end == 0
+148:ROR:<(int,int):>(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):163:end < 0 |==> end > 0
+149:ROR:<(int,int):>=(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):163:end < 0 |==> end >= 0
+150:ROR:<(int,int):FALSE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):163:end < 0 |==> false
+151:ROR:<(int,int):TRUE(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):163:end < 0 |==> true
+152:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):164:builder.append(line) |==> <NO-OP>
+153:LVR:NEG:0:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):165:-1 |==> 0
+154:LVR:NEG:POS:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):165:-1 |==> 1
+155:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):165:start = -1 |==> <NO-OP>
+156:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):167:builder.append(line) |==> <NO-OP>
+157:STD:<CALL>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):168:builder.append('\n') |==> <NO-OP>
+158:LVR:POS:0:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):169:1 |==> 0
+159:LVR:POS:NEG:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):169:1 |==> -1
+160:AOR:+(int,int):%(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):169:end + 1 |==> end % 1
+161:AOR:+(int,int):*(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):169:end + 1 |==> end * 1
+162:AOR:+(int,int):-(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):169:end + 1 |==> end - 1
+163:AOR:+(int,int):/(int,int):com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):169:end + 1 |==> end / 1
+164:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):169:start = end + 1 |==> <NO-OP>
+165:STD:<ASSIGN>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):170:end = code.indexOf('\n', start) |==> <NO-OP>
+166:STD:<INC>:<NO-OP>:com.google.javascript.jscomp.LightweightMessageFormatter$LineNumberingFormatter@formatRegion(com.google.javascript.jscomp.Region):171:lineNumber++ |==> <NO-OP>

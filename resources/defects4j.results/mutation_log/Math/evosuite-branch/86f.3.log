@@ -1,0 +1,85 @@
+
+init:
+     [echo] -------- Commons MATH 2.0-SNAPSHOT --------
+
+compile:
+    [javac] /tmp/run_mutation.pl_42340_1501332331/86f/build.xml:151: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] /tmp/run_mutation.pl_42340_1501332331/86f/build.xml:165: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 224 source files to /tmp/run_mutation.pl_42340_1501332331/86f/target/test-classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+     [copy] Copying 12 files to /tmp/run_mutation.pl_42340_1501332331/86f/target/test-classes
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 7 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 3.17 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 353
+    [junit] MAJOR: Mutants covered:   119 (33.71%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 7 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/7 - org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest6 (9ms / 110):
+    [junit] MAJOR: 28558 (39 / 110 / 110) -> AVG-RTPM: 259ms
+    [junit] MAJOR: Mutants killed / live: 39 (5-34-0) / 80
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/7 - org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest4 (16ms / 102):
+    [junit] MAJOR: 105970 (22 / 102 / 102) -> AVG-RTPM: 758ms
+    [junit] MAJOR: Mutants killed / live: 61 (16-71-0) / 58
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/7 - org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest5 (24ms / 98):
+    [junit] MAJOR: 196130 (21 / 98 / 98) -> AVG-RTPM: 920ms
+    [junit] MAJOR: Mutants killed / live: 82 (16-134-0) / 37
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/7 - org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest3 (26ms / 94):
+    [junit] MAJOR: 216584 (27 / 94 / 94) -> AVG-RTPM: 217ms
+    [junit] MAJOR: Mutants killed / live: 109 (16-228-0) / 10
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/7 - org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest2 (37ms / 94):
+    [junit] MAJOR: 237016 (0 / 94 / 94) -> AVG-RTPM: 217ms
+    [junit] MAJOR: Mutants killed / live: 109 (16-322-0) / 10
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/7 - org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest1 (43ms / 2):
+    [junit] MAJOR: 237367 (0 / 2 / 2) -> AVG-RTPM: 175ms
+    [junit] MAJOR: Mutants killed / live: 109 (16-324-0) / 10
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/7 - org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest0 (44ms / 24):
+    [junit] MAJOR: 242574 (1 / 24 / 24) -> AVG-RTPM: 216ms
+    [junit] MAJOR: Mutants killed / live: 110 (16-348-0) / 9
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  242.6 seconds
+    [junit] MAJOR: Mutation score: 31.16% (92.44%)
+    [junit] MAJOR: Mutants killed / live: 110 (16-348-0) / 9
+    [junit] MAJOR: Mutant executions: 524
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_42340_1501332331/86f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 4 minutes 15 seconds

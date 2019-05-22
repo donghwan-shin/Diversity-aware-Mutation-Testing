@@ -1,0 +1,449 @@
+1:ROR:==(int,int):!=(int,int):org.joda.time.field.FieldUtils@safeNegate(int):49:value == Integer.MIN_VALUE |==> value != Integer.MIN_VALUE
+2:ROR:==(int,int):<(int,int):org.joda.time.field.FieldUtils@safeNegate(int):49:value == Integer.MIN_VALUE |==> value < Integer.MIN_VALUE
+3:ROR:==(int,int):<=(int,int):org.joda.time.field.FieldUtils@safeNegate(int):49:value == Integer.MIN_VALUE |==> value <= Integer.MIN_VALUE
+4:ROR:==(int,int):>(int,int):org.joda.time.field.FieldUtils@safeNegate(int):49:value == Integer.MIN_VALUE |==> value > Integer.MIN_VALUE
+5:ROR:==(int,int):>=(int,int):org.joda.time.field.FieldUtils@safeNegate(int):49:value == Integer.MIN_VALUE |==> value >= Integer.MIN_VALUE
+6:ROR:==(int,int):FALSE(int,int):org.joda.time.field.FieldUtils@safeNegate(int):49:value == Integer.MIN_VALUE |==> false
+7:ROR:==(int,int):TRUE(int,int):org.joda.time.field.FieldUtils@safeNegate(int):49:value == Integer.MIN_VALUE |==> true
+8:ORU:-(int):+(int):org.joda.time.field.FieldUtils@safeNegate(int):52:-value |==> +value
+9:ORU:-(int):~(int):org.joda.time.field.FieldUtils@safeNegate(int):52:-value |==> ~value
+10:AOR:+(int,int):%(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):64:val1 + val2 |==> val1 % val2
+11:AOR:+(int,int):*(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):64:val1 + val2 |==> val1 * val2
+12:AOR:+(int,int):-(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):64:val1 + val2 |==> val1 - val2
+13:AOR:+(int,int):/(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):64:val1 + val2 |==> val1 / val2
+14:LOR:^(int,int):&(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:val1 ^ sum |==> val1 & sum
+15:LOR:^(int,int):|(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:val1 ^ sum |==> val1 | sum
+16:LVR:0:POS:org.joda.time.field.FieldUtils@safeAdd(int,int):66:0 |==> 1
+17:LVR:0:NEG:org.joda.time.field.FieldUtils@safeAdd(int,int):66:0 |==> -1
+18:ROR:<(int,int):!=(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ sum) < 0 |==> (val1 ^ sum) != 0
+19:ROR:<(int,int):<=(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ sum) < 0 |==> (val1 ^ sum) <= 0
+20:ROR:<(int,int):==(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ sum) < 0 |==> (val1 ^ sum) == 0
+21:ROR:<(int,int):>(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ sum) < 0 |==> (val1 ^ sum) > 0
+22:ROR:<(int,int):>=(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ sum) < 0 |==> (val1 ^ sum) >= 0
+23:ROR:<(int,int):FALSE(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ sum) < 0 |==> false
+24:ROR:<(int,int):TRUE(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ sum) < 0 |==> true
+25:LOR:^(int,int):&(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:val1 ^ val2 |==> val1 & val2
+26:LOR:^(int,int):|(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:val1 ^ val2 |==> val1 | val2
+27:LVR:0:POS:org.joda.time.field.FieldUtils@safeAdd(int,int):66:0 |==> 1
+28:LVR:0:NEG:org.joda.time.field.FieldUtils@safeAdd(int,int):66:0 |==> -1
+29:ROR:>=(int,int):!=(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ val2) >= 0 |==> (val1 ^ val2) != 0
+30:ROR:>=(int,int):<(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ val2) >= 0 |==> (val1 ^ val2) < 0
+31:ROR:>=(int,int):<=(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ val2) >= 0 |==> (val1 ^ val2) <= 0
+32:ROR:>=(int,int):==(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ val2) >= 0 |==> (val1 ^ val2) == 0
+33:ROR:>=(int,int):>(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ val2) >= 0 |==> (val1 ^ val2) > 0
+34:ROR:>=(int,int):FALSE(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ val2) >= 0 |==> false
+35:ROR:>=(int,int):TRUE(int,int):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ val2) >= 0 |==> true
+36:COR:&&(boolean,boolean):!=(boolean,boolean):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 |==> (val1 ^ sum) < 0 != (val1 ^ val2) >= 0
+37:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 |==> (val1 ^ sum) < 0 == (val1 ^ val2) >= 0
+38:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 |==> false
+39:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 |==> (val1 ^ sum) < 0
+40:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 |==> (val1 ^ val2) >= 0
+41:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 |==> true
+42:COR:&&(boolean,boolean):||(boolean,boolean):org.joda.time.field.FieldUtils@safeAdd(int,int):66:(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 |==> (val1 ^ sum) < 0 || (val1 ^ val2) >= 0
+43:AOR:+(long,long):%(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):82:val1 + val2 |==> val1 % val2
+44:AOR:+(long,long):*(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):82:val1 + val2 |==> val1 * val2
+45:AOR:+(long,long):-(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):82:val1 + val2 |==> val1 - val2
+46:AOR:+(long,long):/(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):82:val1 + val2 |==> val1 / val2
+47:LOR:^(long,long):&(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:val1 ^ sum |==> val1 & sum
+48:LOR:^(long,long):|(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:val1 ^ sum |==> val1 | sum
+49:LVR:0:POS:org.joda.time.field.FieldUtils@safeAdd(long,long):84:0 |==> 1
+50:LVR:0:NEG:org.joda.time.field.FieldUtils@safeAdd(long,long):84:0 |==> -1
+51:ROR:<(long,long):!=(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ sum) < 0 |==> (val1 ^ sum) != 0
+52:ROR:<(long,long):<=(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ sum) < 0 |==> (val1 ^ sum) <= 0
+53:ROR:<(long,long):==(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ sum) < 0 |==> (val1 ^ sum) == 0
+54:ROR:<(long,long):>(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ sum) < 0 |==> (val1 ^ sum) > 0
+55:ROR:<(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ sum) < 0 |==> (val1 ^ sum) >= 0
+56:ROR:<(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ sum) < 0 |==> false
+57:ROR:<(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ sum) < 0 |==> true
+58:LOR:^(long,long):&(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:val1 ^ val2 |==> val1 & val2
+59:LOR:^(long,long):|(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:val1 ^ val2 |==> val1 | val2
+60:LVR:0:POS:org.joda.time.field.FieldUtils@safeAdd(long,long):84:0 |==> 1
+61:LVR:0:NEG:org.joda.time.field.FieldUtils@safeAdd(long,long):84:0 |==> -1
+62:ROR:>=(long,long):!=(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ val2) >= 0 |==> (val1 ^ val2) != 0
+63:ROR:>=(long,long):<(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ val2) >= 0 |==> (val1 ^ val2) < 0
+64:ROR:>=(long,long):<=(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ val2) >= 0 |==> (val1 ^ val2) <= 0
+65:ROR:>=(long,long):==(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ val2) >= 0 |==> (val1 ^ val2) == 0
+66:ROR:>=(long,long):>(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ val2) >= 0 |==> (val1 ^ val2) > 0
+67:ROR:>=(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ val2) >= 0 |==> false
+68:ROR:>=(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ val2) >= 0 |==> true
+69:COR:&&(boolean,boolean):!=(boolean,boolean):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 |==> (val1 ^ sum) < 0 != (val1 ^ val2) >= 0
+70:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 |==> (val1 ^ sum) < 0 == (val1 ^ val2) >= 0
+71:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 |==> false
+72:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 |==> (val1 ^ sum) < 0
+73:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 |==> (val1 ^ val2) >= 0
+74:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 |==> true
+75:COR:&&(boolean,boolean):||(boolean,boolean):org.joda.time.field.FieldUtils@safeAdd(long,long):84:(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 |==> (val1 ^ sum) < 0 || (val1 ^ val2) >= 0
+76:AOR:-(long,long):%(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):100:val1 - val2 |==> val1 % val2
+77:AOR:-(long,long):*(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):100:val1 - val2 |==> val1 * val2
+78:AOR:-(long,long):+(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):100:val1 - val2 |==> val1 + val2
+79:AOR:-(long,long):/(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):100:val1 - val2 |==> val1 / val2
+80:LOR:^(long,long):&(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:val1 ^ diff |==> val1 & diff
+81:LOR:^(long,long):|(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:val1 ^ diff |==> val1 | diff
+82:LVR:0:POS:org.joda.time.field.FieldUtils@safeSubtract(long,long):102:0 |==> 1
+83:LVR:0:NEG:org.joda.time.field.FieldUtils@safeSubtract(long,long):102:0 |==> -1
+84:ROR:<(long,long):!=(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ diff) < 0 |==> (val1 ^ diff) != 0
+85:ROR:<(long,long):<=(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ diff) < 0 |==> (val1 ^ diff) <= 0
+86:ROR:<(long,long):==(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ diff) < 0 |==> (val1 ^ diff) == 0
+87:ROR:<(long,long):>(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ diff) < 0 |==> (val1 ^ diff) > 0
+88:ROR:<(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ diff) < 0 |==> (val1 ^ diff) >= 0
+89:ROR:<(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ diff) < 0 |==> false
+90:ROR:<(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ diff) < 0 |==> true
+91:LOR:^(long,long):&(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:val1 ^ val2 |==> val1 & val2
+92:LOR:^(long,long):|(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:val1 ^ val2 |==> val1 | val2
+93:LVR:0:POS:org.joda.time.field.FieldUtils@safeSubtract(long,long):102:0 |==> 1
+94:LVR:0:NEG:org.joda.time.field.FieldUtils@safeSubtract(long,long):102:0 |==> -1
+95:ROR:<(long,long):!=(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ val2) < 0 |==> (val1 ^ val2) != 0
+96:ROR:<(long,long):<=(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ val2) < 0 |==> (val1 ^ val2) <= 0
+97:ROR:<(long,long):==(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ val2) < 0 |==> (val1 ^ val2) == 0
+98:ROR:<(long,long):>(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ val2) < 0 |==> (val1 ^ val2) > 0
+99:ROR:<(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ val2) < 0 |==> (val1 ^ val2) >= 0
+100:ROR:<(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ val2) < 0 |==> false
+101:ROR:<(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ val2) < 0 |==> true
+102:COR:&&(boolean,boolean):!=(boolean,boolean):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ diff) < 0 && (val1 ^ val2) < 0 |==> (val1 ^ diff) < 0 != (val1 ^ val2) < 0
+103:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ diff) < 0 && (val1 ^ val2) < 0 |==> (val1 ^ diff) < 0 == (val1 ^ val2) < 0
+104:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ diff) < 0 && (val1 ^ val2) < 0 |==> false
+105:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ diff) < 0 && (val1 ^ val2) < 0 |==> (val1 ^ diff) < 0
+106:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ diff) < 0 && (val1 ^ val2) < 0 |==> (val1 ^ val2) < 0
+107:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ diff) < 0 && (val1 ^ val2) < 0 |==> true
+108:COR:&&(boolean,boolean):||(boolean,boolean):org.joda.time.field.FieldUtils@safeSubtract(long,long):102:(val1 ^ diff) < 0 && (val1 ^ val2) < 0 |==> (val1 ^ diff) < 0 || (val1 ^ val2) < 0
+109:AOR:*(long,long):%(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):119:(long)val1 * (long)val2 |==> (long)val1 % (long)val2
+110:AOR:*(long,long):+(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):119:(long)val1 * (long)val2 |==> (long)val1 + (long)val2
+111:AOR:*(long,long):-(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):119:(long)val1 * (long)val2 |==> (long)val1 - (long)val2
+112:AOR:*(long,long):/(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):119:(long)val1 * (long)val2 |==> (long)val1 / (long)val2
+113:ROR:<(long,long):!=(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total < Integer.MIN_VALUE |==> total != Integer.MIN_VALUE
+114:ROR:<(long,long):<=(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total < Integer.MIN_VALUE |==> total <= Integer.MIN_VALUE
+115:ROR:<(long,long):==(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total < Integer.MIN_VALUE |==> total == Integer.MIN_VALUE
+116:ROR:<(long,long):>(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total < Integer.MIN_VALUE |==> total > Integer.MIN_VALUE
+117:ROR:<(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total < Integer.MIN_VALUE |==> total >= Integer.MIN_VALUE
+118:ROR:<(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total < Integer.MIN_VALUE |==> false
+119:ROR:<(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total < Integer.MIN_VALUE |==> true
+120:ROR:>(long,long):!=(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total > Integer.MAX_VALUE |==> total != Integer.MAX_VALUE
+121:ROR:>(long,long):<(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total > Integer.MAX_VALUE |==> total < Integer.MAX_VALUE
+122:ROR:>(long,long):<=(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total > Integer.MAX_VALUE |==> total <= Integer.MAX_VALUE
+123:ROR:>(long,long):==(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total > Integer.MAX_VALUE |==> total == Integer.MAX_VALUE
+124:ROR:>(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total > Integer.MAX_VALUE |==> total >= Integer.MAX_VALUE
+125:ROR:>(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total > Integer.MAX_VALUE |==> false
+126:ROR:>(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total > Integer.MAX_VALUE |==> true
+127:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total < Integer.MIN_VALUE || total > Integer.MAX_VALUE |==> total < Integer.MIN_VALUE != total > Integer.MAX_VALUE
+128:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total < Integer.MIN_VALUE || total > Integer.MAX_VALUE |==> total < Integer.MIN_VALUE && total > Integer.MAX_VALUE
+129:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total < Integer.MIN_VALUE || total > Integer.MAX_VALUE |==> total < Integer.MIN_VALUE == total > Integer.MAX_VALUE
+130:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total < Integer.MIN_VALUE || total > Integer.MAX_VALUE |==> false
+131:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total < Integer.MIN_VALUE || total > Integer.MAX_VALUE |==> total < Integer.MIN_VALUE
+132:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total < Integer.MIN_VALUE || total > Integer.MAX_VALUE |==> total > Integer.MAX_VALUE
+133:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(int,int):120:total < Integer.MIN_VALUE || total > Integer.MAX_VALUE |==> true
+134:ROR:==(long,long):!=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):138:val1 == Long.MIN_VALUE |==> val1 != Long.MIN_VALUE
+135:ROR:==(long,long):<(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):138:val1 == Long.MIN_VALUE |==> val1 < Long.MIN_VALUE
+136:ROR:==(long,long):<=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):138:val1 == Long.MIN_VALUE |==> val1 <= Long.MIN_VALUE
+137:ROR:==(long,long):>(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):138:val1 == Long.MIN_VALUE |==> val1 > Long.MIN_VALUE
+138:ROR:==(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):138:val1 == Long.MIN_VALUE |==> val1 >= Long.MIN_VALUE
+139:ROR:==(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):138:val1 == Long.MIN_VALUE |==> false
+140:ROR:==(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):138:val1 == Long.MIN_VALUE |==> true
+141:ORU:-(long):+(long):org.joda.time.field.FieldUtils@safeMultiply(long,int):141:-val1 |==> +val1
+142:ORU:-(long):~(long):org.joda.time.field.FieldUtils@safeMultiply(long,int):141:-val1 |==> ~val1
+143:LVR:0:POS:org.joda.time.field.FieldUtils@safeMultiply(long,int):143:0L |==> 1L
+144:LVR:0:NEG:org.joda.time.field.FieldUtils@safeMultiply(long,int):143:0L |==> -1L
+145:AOR:*(long,long):%(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):147:val1 * val2 |==> val1 % val2
+146:AOR:*(long,long):+(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):147:val1 * val2 |==> val1 + val2
+147:AOR:*(long,long):-(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):147:val1 * val2 |==> val1 - val2
+148:AOR:*(long,long):/(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):147:val1 * val2 |==> val1 / val2
+149:AOR:/(long,long):%(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):148:total / val2 |==> total % val2
+150:AOR:/(long,long):*(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):148:total / val2 |==> total * val2
+151:AOR:/(long,long):+(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):148:total / val2 |==> total + val2
+152:AOR:/(long,long):-(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):148:total / val2 |==> total - val2
+153:ROR:!=(long,long):<(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):148:total / val2 != val1 |==> total / val2 < val1
+154:ROR:!=(long,long):<=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):148:total / val2 != val1 |==> total / val2 <= val1
+155:ROR:!=(long,long):==(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):148:total / val2 != val1 |==> total / val2 == val1
+156:ROR:!=(long,long):>(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):148:total / val2 != val1 |==> total / val2 > val1
+157:ROR:!=(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):148:total / val2 != val1 |==> total / val2 >= val1
+158:ROR:!=(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):148:total / val2 != val1 |==> false
+159:ROR:!=(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,int):148:total / val2 != val1 |==> true
+160:LVR:POS:0:org.joda.time.field.FieldUtils@safeMultiply(long,long):163:1 |==> 0
+161:LVR:POS:NEG:org.joda.time.field.FieldUtils@safeMultiply(long,long):163:1 |==> -1
+162:ROR:==(long,long):!=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):163:val2 == 1 |==> val2 != 1
+163:ROR:==(long,long):<(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):163:val2 == 1 |==> val2 < 1
+164:ROR:==(long,long):<=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):163:val2 == 1 |==> val2 <= 1
+165:ROR:==(long,long):>(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):163:val2 == 1 |==> val2 > 1
+166:ROR:==(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):163:val2 == 1 |==> val2 >= 1
+167:ROR:==(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):163:val2 == 1 |==> false
+168:ROR:==(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):163:val2 == 1 |==> true
+169:LVR:POS:0:org.joda.time.field.FieldUtils@safeMultiply(long,long):166:1 |==> 0
+170:LVR:POS:NEG:org.joda.time.field.FieldUtils@safeMultiply(long,long):166:1 |==> -1
+171:ROR:==(long,long):!=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):166:val1 == 1 |==> val1 != 1
+172:ROR:==(long,long):<(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):166:val1 == 1 |==> val1 < 1
+173:ROR:==(long,long):<=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):166:val1 == 1 |==> val1 <= 1
+174:ROR:==(long,long):>(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):166:val1 == 1 |==> val1 > 1
+175:ROR:==(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):166:val1 == 1 |==> val1 >= 1
+176:ROR:==(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):166:val1 == 1 |==> false
+177:ROR:==(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):166:val1 == 1 |==> true
+178:LVR:0:POS:org.joda.time.field.FieldUtils@safeMultiply(long,long):169:0 |==> 1
+179:LVR:0:NEG:org.joda.time.field.FieldUtils@safeMultiply(long,long):169:0 |==> -1
+180:ROR:==(long,long):!=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val1 == 0 |==> val1 != 0
+181:ROR:==(long,long):<(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val1 == 0 |==> val1 < 0
+182:ROR:==(long,long):<=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val1 == 0 |==> val1 <= 0
+183:ROR:==(long,long):>(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val1 == 0 |==> val1 > 0
+184:ROR:==(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val1 == 0 |==> val1 >= 0
+185:ROR:==(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val1 == 0 |==> false
+186:ROR:==(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val1 == 0 |==> true
+187:LVR:0:POS:org.joda.time.field.FieldUtils@safeMultiply(long,long):169:0 |==> 1
+188:LVR:0:NEG:org.joda.time.field.FieldUtils@safeMultiply(long,long):169:0 |==> -1
+189:ROR:==(long,long):!=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val2 == 0 |==> val2 != 0
+190:ROR:==(long,long):<(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val2 == 0 |==> val2 < 0
+191:ROR:==(long,long):<=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val2 == 0 |==> val2 <= 0
+192:ROR:==(long,long):>(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val2 == 0 |==> val2 > 0
+193:ROR:==(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val2 == 0 |==> val2 >= 0
+194:ROR:==(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val2 == 0 |==> false
+195:ROR:==(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val2 == 0 |==> true
+196:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val1 == 0 || val2 == 0 |==> val1 == 0 != (val2 == 0)
+197:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val1 == 0 || val2 == 0 |==> val1 == 0 && val2 == 0
+198:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val1 == 0 || val2 == 0 |==> val1 == 0 == (val2 == 0)
+199:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val1 == 0 || val2 == 0 |==> false
+200:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val1 == 0 || val2 == 0 |==> val1 == 0
+201:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val1 == 0 || val2 == 0 |==> val2 == 0
+202:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):169:val1 == 0 || val2 == 0 |==> true
+203:LVR:0:POS:org.joda.time.field.FieldUtils@safeMultiply(long,long):170:0 |==> 1
+204:LVR:0:NEG:org.joda.time.field.FieldUtils@safeMultiply(long,long):170:0 |==> -1
+205:AOR:*(long,long):%(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):172:val1 * val2 |==> val1 % val2
+206:AOR:*(long,long):+(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):172:val1 * val2 |==> val1 + val2
+207:AOR:*(long,long):-(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):172:val1 * val2 |==> val1 - val2
+208:AOR:*(long,long):/(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):172:val1 * val2 |==> val1 / val2
+209:AOR:/(long,long):%(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 |==> total % val2
+210:AOR:/(long,long):*(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 |==> total * val2
+211:AOR:/(long,long):+(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 |==> total + val2
+212:AOR:/(long,long):-(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 |==> total - val2
+213:ROR:!=(long,long):<(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 |==> total / val2 < val1
+214:ROR:!=(long,long):<=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 |==> total / val2 <= val1
+215:ROR:!=(long,long):==(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 |==> total / val2 == val1
+216:ROR:!=(long,long):>(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 |==> total / val2 > val1
+217:ROR:!=(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 |==> total / val2 >= val1
+218:ROR:!=(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 |==> false
+219:ROR:!=(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 |==> true
+220:ROR:==(long,long):!=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == Long.MIN_VALUE |==> val1 != Long.MIN_VALUE
+221:ROR:==(long,long):<(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == Long.MIN_VALUE |==> val1 < Long.MIN_VALUE
+222:ROR:==(long,long):<=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == Long.MIN_VALUE |==> val1 <= Long.MIN_VALUE
+223:ROR:==(long,long):>(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == Long.MIN_VALUE |==> val1 > Long.MIN_VALUE
+224:ROR:==(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == Long.MIN_VALUE |==> val1 >= Long.MIN_VALUE
+225:ROR:==(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == Long.MIN_VALUE |==> false
+226:ROR:==(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == Long.MIN_VALUE |==> true
+227:LVR:NEG:0:org.joda.time.field.FieldUtils@safeMultiply(long,long):173:-1 |==> 0
+228:LVR:NEG:POS:org.joda.time.field.FieldUtils@safeMultiply(long,long):173:-1 |==> 1
+229:ROR:==(long,long):!=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == -1 |==> val2 != -1
+230:ROR:==(long,long):<(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == -1 |==> val2 < -1
+231:ROR:==(long,long):<=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == -1 |==> val2 <= -1
+232:ROR:==(long,long):>(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == -1 |==> val2 > -1
+233:ROR:==(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == -1 |==> val2 >= -1
+234:ROR:==(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == -1 |==> false
+235:ROR:==(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == -1 |==> true
+236:COR:&&(boolean,boolean):!=(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == Long.MIN_VALUE && val2 == -1 |==> val1 == Long.MIN_VALUE != (val2 == -1)
+237:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == Long.MIN_VALUE && val2 == -1 |==> val1 == Long.MIN_VALUE == (val2 == -1)
+238:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == Long.MIN_VALUE && val2 == -1 |==> false
+239:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == Long.MIN_VALUE && val2 == -1 |==> val1 == Long.MIN_VALUE
+240:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == Long.MIN_VALUE && val2 == -1 |==> val2 == -1
+241:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == Long.MIN_VALUE && val2 == -1 |==> true
+242:COR:&&(boolean,boolean):||(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == Long.MIN_VALUE && val2 == -1 |==> val1 == Long.MIN_VALUE || val2 == -1
+243:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 |==> total / val2 != val1 != (val1 == Long.MIN_VALUE && val2 == -1)
+244:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 |==> total / val2 != val1 && (val1 == Long.MIN_VALUE && val2 == -1)
+245:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 |==> total / val2 != val1 == (val1 == Long.MIN_VALUE && val2 == -1)
+246:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 |==> false
+247:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 |==> total / val2 != val1
+248:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 |==> val1 == Long.MIN_VALUE && val2 == -1
+249:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 |==> true
+250:ROR:==(long,long):!=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == Long.MIN_VALUE |==> val2 != Long.MIN_VALUE
+251:ROR:==(long,long):<(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == Long.MIN_VALUE |==> val2 < Long.MIN_VALUE
+252:ROR:==(long,long):<=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == Long.MIN_VALUE |==> val2 <= Long.MIN_VALUE
+253:ROR:==(long,long):>(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == Long.MIN_VALUE |==> val2 > Long.MIN_VALUE
+254:ROR:==(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == Long.MIN_VALUE |==> val2 >= Long.MIN_VALUE
+255:ROR:==(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == Long.MIN_VALUE |==> false
+256:ROR:==(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == Long.MIN_VALUE |==> true
+257:LVR:NEG:0:org.joda.time.field.FieldUtils@safeMultiply(long,long):173:-1 |==> 0
+258:LVR:NEG:POS:org.joda.time.field.FieldUtils@safeMultiply(long,long):173:-1 |==> 1
+259:ROR:==(long,long):!=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == -1 |==> val1 != -1
+260:ROR:==(long,long):<(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == -1 |==> val1 < -1
+261:ROR:==(long,long):<=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == -1 |==> val1 <= -1
+262:ROR:==(long,long):>(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == -1 |==> val1 > -1
+263:ROR:==(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == -1 |==> val1 >= -1
+264:ROR:==(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == -1 |==> false
+265:ROR:==(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val1 == -1 |==> true
+266:COR:&&(boolean,boolean):!=(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == Long.MIN_VALUE && val1 == -1 |==> val2 == Long.MIN_VALUE != (val1 == -1)
+267:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == Long.MIN_VALUE && val1 == -1 |==> val2 == Long.MIN_VALUE == (val1 == -1)
+268:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == Long.MIN_VALUE && val1 == -1 |==> false
+269:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == Long.MIN_VALUE && val1 == -1 |==> val2 == Long.MIN_VALUE
+270:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == Long.MIN_VALUE && val1 == -1 |==> val1 == -1
+271:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == Long.MIN_VALUE && val1 == -1 |==> true
+272:COR:&&(boolean,boolean):||(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:val2 == Long.MIN_VALUE && val1 == -1 |==> val2 == Long.MIN_VALUE || val1 == -1
+273:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1 |==> (total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1) != (val2 == Long.MIN_VALUE && val1 == -1)
+274:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1 |==> (total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1) && (val2 == Long.MIN_VALUE && val1 == -1)
+275:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1 |==> (total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1) == (val2 == Long.MIN_VALUE && val1 == -1)
+276:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1 |==> false
+277:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1 |==> total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1
+278:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1 |==> val2 == Long.MIN_VALUE && val1 == -1
+279:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.field.FieldUtils@safeMultiply(long,long):173:total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1 |==> true
+280:ROR:<=(long,long):!=(long,long):org.joda.time.field.FieldUtils@safeToInt(long):187:Integer.MIN_VALUE <= value |==> Integer.MIN_VALUE != value
+281:ROR:<=(long,long):<(long,long):org.joda.time.field.FieldUtils@safeToInt(long):187:Integer.MIN_VALUE <= value |==> Integer.MIN_VALUE < value
+282:ROR:<=(long,long):==(long,long):org.joda.time.field.FieldUtils@safeToInt(long):187:Integer.MIN_VALUE <= value |==> Integer.MIN_VALUE == value
+283:ROR:<=(long,long):>(long,long):org.joda.time.field.FieldUtils@safeToInt(long):187:Integer.MIN_VALUE <= value |==> Integer.MIN_VALUE > value
+284:ROR:<=(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeToInt(long):187:Integer.MIN_VALUE <= value |==> Integer.MIN_VALUE >= value
+285:ROR:<=(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeToInt(long):187:Integer.MIN_VALUE <= value |==> false
+286:ROR:<=(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeToInt(long):187:Integer.MIN_VALUE <= value |==> true
+287:ROR:<=(long,long):!=(long,long):org.joda.time.field.FieldUtils@safeToInt(long):187:value <= Integer.MAX_VALUE |==> value != Integer.MAX_VALUE
+288:ROR:<=(long,long):<(long,long):org.joda.time.field.FieldUtils@safeToInt(long):187:value <= Integer.MAX_VALUE |==> value < Integer.MAX_VALUE
+289:ROR:<=(long,long):==(long,long):org.joda.time.field.FieldUtils@safeToInt(long):187:value <= Integer.MAX_VALUE |==> value == Integer.MAX_VALUE
+290:ROR:<=(long,long):>(long,long):org.joda.time.field.FieldUtils@safeToInt(long):187:value <= Integer.MAX_VALUE |==> value > Integer.MAX_VALUE
+291:ROR:<=(long,long):>=(long,long):org.joda.time.field.FieldUtils@safeToInt(long):187:value <= Integer.MAX_VALUE |==> value >= Integer.MAX_VALUE
+292:ROR:<=(long,long):FALSE(long,long):org.joda.time.field.FieldUtils@safeToInt(long):187:value <= Integer.MAX_VALUE |==> false
+293:ROR:<=(long,long):TRUE(long,long):org.joda.time.field.FieldUtils@safeToInt(long):187:value <= Integer.MAX_VALUE |==> true
+294:COR:&&(boolean,boolean):!=(boolean,boolean):org.joda.time.field.FieldUtils@safeToInt(long):187:Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE |==> Integer.MIN_VALUE <= value != value <= Integer.MAX_VALUE
+295:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.field.FieldUtils@safeToInt(long):187:Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE |==> Integer.MIN_VALUE <= value == value <= Integer.MAX_VALUE
+296:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.field.FieldUtils@safeToInt(long):187:Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE |==> false
+297:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.field.FieldUtils@safeToInt(long):187:Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE |==> Integer.MIN_VALUE <= value
+298:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.field.FieldUtils@safeToInt(long):187:Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE |==> value <= Integer.MAX_VALUE
+299:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.joda.time.field.FieldUtils@safeToInt(long):187:Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE |==> true
+300:COR:&&(boolean,boolean):||(boolean,boolean):org.joda.time.field.FieldUtils@safeToInt(long):187:Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE |==> Integer.MIN_VALUE <= value || value <= Integer.MAX_VALUE
+301:ROR:<(int,int):!=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:value < lowerBound |==> value != lowerBound
+302:ROR:<(int,int):<=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:value < lowerBound |==> value <= lowerBound
+303:ROR:<(int,int):==(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:value < lowerBound |==> value == lowerBound
+304:ROR:<(int,int):>(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:value < lowerBound |==> value > lowerBound
+305:ROR:<(int,int):>=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:value < lowerBound |==> value >= lowerBound
+306:ROR:<(int,int):FALSE(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:value < lowerBound |==> false
+307:ROR:<(int,int):TRUE(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:value < lowerBound |==> true
+308:ROR:>(int,int):!=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:value > upperBound |==> value != upperBound
+309:ROR:>(int,int):<(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:value > upperBound |==> value < upperBound
+310:ROR:>(int,int):<=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:value > upperBound |==> value <= upperBound
+311:ROR:>(int,int):==(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:value > upperBound |==> value == upperBound
+312:ROR:>(int,int):>=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:value > upperBound |==> value >= upperBound
+313:ROR:>(int,int):FALSE(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:value > upperBound |==> false
+314:ROR:>(int,int):TRUE(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:value > upperBound |==> true
+315:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:(value < lowerBound) || (value > upperBound) |==> (value < lowerBound) != (value > upperBound)
+316:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:(value < lowerBound) || (value > upperBound) |==> (value < lowerBound) && (value > upperBound)
+317:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:(value < lowerBound) || (value > upperBound) |==> (value < lowerBound) == (value > upperBound)
+318:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:(value < lowerBound) || (value > upperBound) |==> false
+319:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:(value < lowerBound) || (value > upperBound) |==> (value < lowerBound)
+320:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:(value < lowerBound) || (value > upperBound) |==> (value > upperBound)
+321:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeField,int,int,int):217:(value < lowerBound) || (value > upperBound) |==> true
+322:ROR:<(int,int):!=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:value < lowerBound |==> value != lowerBound
+323:ROR:<(int,int):<=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:value < lowerBound |==> value <= lowerBound
+324:ROR:<(int,int):==(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:value < lowerBound |==> value == lowerBound
+325:ROR:<(int,int):>(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:value < lowerBound |==> value > lowerBound
+326:ROR:<(int,int):>=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:value < lowerBound |==> value >= lowerBound
+327:ROR:<(int,int):FALSE(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:value < lowerBound |==> false
+328:ROR:<(int,int):TRUE(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:value < lowerBound |==> true
+329:ROR:>(int,int):!=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:value > upperBound |==> value != upperBound
+330:ROR:>(int,int):<(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:value > upperBound |==> value < upperBound
+331:ROR:>(int,int):<=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:value > upperBound |==> value <= upperBound
+332:ROR:>(int,int):==(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:value > upperBound |==> value == upperBound
+333:ROR:>(int,int):>=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:value > upperBound |==> value >= upperBound
+334:ROR:>(int,int):FALSE(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:value > upperBound |==> false
+335:ROR:>(int,int):TRUE(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:value > upperBound |==> true
+336:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:(value < lowerBound) || (value > upperBound) |==> (value < lowerBound) != (value > upperBound)
+337:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:(value < lowerBound) || (value > upperBound) |==> (value < lowerBound) && (value > upperBound)
+338:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:(value < lowerBound) || (value > upperBound) |==> (value < lowerBound) == (value > upperBound)
+339:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:(value < lowerBound) || (value > upperBound) |==> false
+340:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:(value < lowerBound) || (value > upperBound) |==> (value < lowerBound)
+341:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:(value < lowerBound) || (value > upperBound) |==> (value > upperBound)
+342:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):235:(value < lowerBound) || (value > upperBound) |==> true
+343:ROR:<(int,int):!=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:value < lowerBound |==> value != lowerBound
+344:ROR:<(int,int):<=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:value < lowerBound |==> value <= lowerBound
+345:ROR:<(int,int):==(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:value < lowerBound |==> value == lowerBound
+346:ROR:<(int,int):>(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:value < lowerBound |==> value > lowerBound
+347:ROR:<(int,int):>=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:value < lowerBound |==> value >= lowerBound
+348:ROR:<(int,int):FALSE(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:value < lowerBound |==> false
+349:ROR:<(int,int):TRUE(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:value < lowerBound |==> true
+350:ROR:>(int,int):!=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:value > upperBound |==> value != upperBound
+351:ROR:>(int,int):<(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:value > upperBound |==> value < upperBound
+352:ROR:>(int,int):<=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:value > upperBound |==> value <= upperBound
+353:ROR:>(int,int):==(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:value > upperBound |==> value == upperBound
+354:ROR:>(int,int):>=(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:value > upperBound |==> value >= upperBound
+355:ROR:>(int,int):FALSE(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:value > upperBound |==> false
+356:ROR:>(int,int):TRUE(int,int):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:value > upperBound |==> true
+357:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:(value < lowerBound) || (value > upperBound) |==> (value < lowerBound) != (value > upperBound)
+358:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:(value < lowerBound) || (value > upperBound) |==> (value < lowerBound) && (value > upperBound)
+359:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:(value < lowerBound) || (value > upperBound) |==> (value < lowerBound) == (value > upperBound)
+360:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:(value < lowerBound) || (value > upperBound) |==> false
+361:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:(value < lowerBound) || (value > upperBound) |==> (value < lowerBound)
+362:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:(value < lowerBound) || (value > upperBound) |==> (value > upperBound)
+363:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.field.FieldUtils@verifyValueBounds(java.lang.String,int,int,int):252:(value < lowerBound) || (value > upperBound) |==> true
+364:AOR:+(int,int):%(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int,int):276:currentValue + wrapValue |==> currentValue % wrapValue
+365:AOR:+(int,int):*(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int,int):276:currentValue + wrapValue |==> currentValue * wrapValue
+366:AOR:+(int,int):-(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int,int):276:currentValue + wrapValue |==> currentValue - wrapValue
+367:AOR:+(int,int):/(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int,int):276:currentValue + wrapValue |==> currentValue / wrapValue
+368:ROR:>=(int,int):!=(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):292:minValue >= maxValue |==> minValue != maxValue
+369:ROR:>=(int,int):<(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):292:minValue >= maxValue |==> minValue < maxValue
+370:ROR:>=(int,int):<=(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):292:minValue >= maxValue |==> minValue <= maxValue
+371:ROR:>=(int,int):==(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):292:minValue >= maxValue |==> minValue == maxValue
+372:ROR:>=(int,int):>(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):292:minValue >= maxValue |==> minValue > maxValue
+373:ROR:>=(int,int):FALSE(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):292:minValue >= maxValue |==> false
+374:ROR:>=(int,int):TRUE(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):292:minValue >= maxValue |==> true
+375:AOR:-(int,int):%(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):296:maxValue - minValue |==> maxValue % minValue
+376:AOR:-(int,int):*(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):296:maxValue - minValue |==> maxValue * minValue
+377:AOR:-(int,int):+(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):296:maxValue - minValue |==> maxValue + minValue
+378:AOR:-(int,int):/(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):296:maxValue - minValue |==> maxValue / minValue
+379:LVR:POS:0:org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):296:1 |==> 0
+380:LVR:POS:NEG:org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):296:1 |==> -1
+381:AOR:+(int,int):%(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):296:maxValue - minValue + 1 |==> (maxValue - minValue) % 1
+382:AOR:+(int,int):*(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):296:maxValue - minValue + 1 |==> (maxValue - minValue) * 1
+383:AOR:+(int,int):-(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):296:maxValue - minValue + 1 |==> maxValue - minValue - 1
+384:AOR:+(int,int):/(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):296:maxValue - minValue + 1 |==> (maxValue - minValue) / 1
+385:STD:<ASSIGN>:<NO-OP>:org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):297:value -= minValue |==> <NO-OP>
+386:LVR:0:POS:org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):299:0 |==> 1
+387:LVR:0:NEG:org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):299:0 |==> -1
+388:ROR:>=(int,int):!=(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):299:value >= 0 |==> value != 0
+389:ROR:>=(int,int):<(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):299:value >= 0 |==> value < 0
+390:ROR:>=(int,int):<=(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):299:value >= 0 |==> value <= 0
+391:ROR:>=(int,int):==(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):299:value >= 0 |==> value == 0
+392:ROR:>=(int,int):>(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):299:value >= 0 |==> value > 0
+393:ROR:>=(int,int):FALSE(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):299:value >= 0 |==> false
+394:ROR:>=(int,int):TRUE(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):299:value >= 0 |==> true
+395:AOR:%(int,int):*(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):300:value % wrapRange |==> value * wrapRange
+396:AOR:%(int,int):+(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):300:value % wrapRange |==> value + wrapRange
+397:AOR:%(int,int):-(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):300:value % wrapRange |==> value - wrapRange
+398:AOR:%(int,int):/(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):300:value % wrapRange |==> value / wrapRange
+399:AOR:+(int,int):%(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):300:(value % wrapRange) + minValue |==> (value % wrapRange) % minValue
+400:AOR:+(int,int):*(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):300:(value % wrapRange) + minValue |==> (value % wrapRange) * minValue
+401:AOR:+(int,int):-(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):300:(value % wrapRange) + minValue |==> (value % wrapRange) - minValue
+402:AOR:+(int,int):/(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):300:(value % wrapRange) + minValue |==> (value % wrapRange) / minValue
+403:ORU:-(int):+(int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):303:-value |==> +value
+404:ORU:-(int):~(int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):303:-value |==> ~value
+405:AOR:%(int,int):*(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):303:(-value) % wrapRange |==> (-value) * wrapRange
+406:AOR:%(int,int):+(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):303:(-value) % wrapRange |==> (-value) + wrapRange
+407:AOR:%(int,int):-(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):303:(-value) % wrapRange |==> (-value) - wrapRange
+408:AOR:%(int,int):/(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):303:(-value) % wrapRange |==> (-value) / wrapRange
+409:LVR:0:POS:org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):305:0 |==> 1
+410:LVR:0:NEG:org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):305:0 |==> -1
+411:ROR:==(int,int):!=(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):305:remByRange == 0 |==> remByRange != 0
+412:ROR:==(int,int):<(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):305:remByRange == 0 |==> remByRange < 0
+413:ROR:==(int,int):<=(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):305:remByRange == 0 |==> remByRange <= 0
+414:ROR:==(int,int):>(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):305:remByRange == 0 |==> remByRange > 0
+415:ROR:==(int,int):>=(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):305:remByRange == 0 |==> remByRange >= 0
+416:ROR:==(int,int):FALSE(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):305:remByRange == 0 |==> false
+417:ROR:==(int,int):TRUE(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):305:remByRange == 0 |==> true
+418:LVR:0:POS:org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):306:0 |==> 1
+419:LVR:0:NEG:org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):306:0 |==> -1
+420:AOR:+(int,int):%(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):306:0 + minValue |==> 0 % minValue
+421:AOR:+(int,int):*(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):306:0 + minValue |==> 0 * minValue
+422:AOR:+(int,int):-(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):306:0 + minValue |==> 0 - minValue
+423:AOR:+(int,int):/(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):306:0 + minValue |==> 0 / minValue
+424:AOR:-(int,int):%(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):308:wrapRange - remByRange |==> wrapRange % remByRange
+425:AOR:-(int,int):*(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):308:wrapRange - remByRange |==> wrapRange * remByRange
+426:AOR:-(int,int):+(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):308:wrapRange - remByRange |==> wrapRange + remByRange
+427:AOR:-(int,int):/(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):308:wrapRange - remByRange |==> wrapRange / remByRange
+428:AOR:+(int,int):%(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):308:(wrapRange - remByRange) + minValue |==> (wrapRange - remByRange) % minValue
+429:AOR:+(int,int):*(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):308:(wrapRange - remByRange) + minValue |==> (wrapRange - remByRange) * minValue
+430:AOR:+(int,int):-(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):308:(wrapRange - remByRange) + minValue |==> (wrapRange - remByRange) - minValue
+431:AOR:+(int,int):/(int,int):org.joda.time.field.FieldUtils@getWrappedValue(int,int,int):308:(wrapRange - remByRange) + minValue |==> (wrapRange - remByRange) / minValue
+432:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):321:object1 == object2 |==> object1 != object2
+433:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):321:object1 == object2 |==> false
+434:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):321:object1 == object2 |==> true
+435:LVR:TRUE:FALSE:org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):322:true |==> false
+436:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):324:object1 == null |==> object1 != null
+437:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):324:object1 == null |==> false
+438:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):324:object1 == null |==> true
+439:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):324:object2 == null |==> object2 != null
+440:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):324:object2 == null |==> false
+441:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):324:object2 == null |==> true
+442:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):324:object1 == null || object2 == null |==> object1 == null != (object2 == null)
+443:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):324:object1 == null || object2 == null |==> object1 == null && object2 == null
+444:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):324:object1 == null || object2 == null |==> object1 == null == (object2 == null)
+445:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):324:object1 == null || object2 == null |==> false
+446:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):324:object1 == null || object2 == null |==> object1 == null
+447:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):324:object1 == null || object2 == null |==> object2 == null
+448:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):324:object1 == null || object2 == null |==> true
+449:LVR:FALSE:TRUE:org.joda.time.field.FieldUtils@equals(java.lang.Object,java.lang.Object):325:false |==> true

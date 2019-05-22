@@ -1,0 +1,120 @@
+
+rhino:
+
+properties:
+
+init:
+
+compile:
+
+compile-most:
+
+compile-jdk15:
+
+compile:
+
+properties:
+
+compile:
+
+xmlimplsrc-compile:
+     [echo] Calling /tmp/run_mutation.pl_63643_1483703252/12f/lib/rhino/xmlimplsrc/build.xml
+
+compile:
+
+compile-all:
+
+compile:
+
+jar:
+
+rhino-jarjar:
+   [jarjar] Updating jar: /tmp/run_mutation.pl_63643_1483703252/12f/build/lib/rhino.jar
+
+svnversion:
+
+compile:
+    [javac] /tmp/run_mutation.pl_63643_1483703252/12f/build.xml:252: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] /tmp/run_mutation.pl_63643_1483703252/12f/build.xml:258: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+[propertyfile] Updating property file: /tmp/run_mutation.pl_63643_1483703252/12f/build/classes/com/google/javascript/jscomp/parsing/ParserConfig.properties
+
+compile-tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_63643_1483703252/12f/build/test
+    [javac] /tmp/run_mutation.pl_63643_1483703252/12f/build.xml:325: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 403 source files to /tmp/run_mutation.pl_63643_1483703252/12f/build/test
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] Note: /tmp/run_mutation.pl_63643_1483703252/12f/src/com/google/javascript/jscomp/ant/CompileTask.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+    [javac] /tmp/run_mutation.pl_63643_1483703252/12f/build.xml:331: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 225 source files to /tmp/run_mutation.pl_63643_1483703252/12f/build/test
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] Note: /tmp/run_mutation.pl_63643_1483703252/12f/test/com/google/javascript/jscomp/parsing/JsDocInfoParserTest.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 1 warning
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 7 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 11.20 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 99
+    [junit] MAJOR: Mutants covered:   28 (28.28%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 7 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/7 - com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest2 (27ms / 7):
+    [junit] MAJOR: 5700 (5 / 7 / 7) -> AVG-RTPM: 814ms
+    [junit] MAJOR: Mutants killed / live: 5 (1-4-0) / 23
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/7 - com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest6 (32ms / 22):
+    [junit] MAJOR: 26352 (6 / 22 / 22) -> AVG-RTPM: 938ms
+    [junit] MAJOR: Mutants killed / live: 11 (1-10-0) / 17
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/7 - com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest3 (34ms / 10):
+    [junit] MAJOR: 38167 (1 / 10 / 10) -> AVG-RTPM: 1181ms
+    [junit] MAJOR: Mutants killed / live: 12 (3-10-0) / 16
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/7 - com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest4 (34ms / 24):
+    [junit] MAJOR: 74234 (1 / 24 / 24) -> AVG-RTPM: 1502ms
+    [junit] MAJOR: Mutants killed / live: 13 (3-19-0) / 15
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/7 - com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest1 (35ms / 3):
+    [junit] MAJOR: 79811 (0 / 3 / 3) -> AVG-RTPM: 1859ms
+    [junit] MAJOR: Mutants killed / live: 13 (3-19-0) / 15
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/7 - com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest5 (35ms / 24):
+    [junit] MAJOR: 132335 (0 / 24 / 24) -> AVG-RTPM: 2188ms
+    [junit] MAJOR: Mutants killed / live: 13 (3-28-0) / 15
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/7 - com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest0 (81ms / 2):
+    [junit] MAJOR: 137239 (0 / 2 / 2) -> AVG-RTPM: 2452ms
+    [junit] MAJOR: Mutants killed / live: 13 (3-28-0) / 15
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  137.2 seconds
+    [junit] MAJOR: Mutation score: 13.13% (46.43%)
+    [junit] MAJOR: Mutants killed / live: 13 (3-28-0) / 15
+    [junit] MAJOR: Mutant executions: 92
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_63643_1483703252/12f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 2 minutes 39 seconds

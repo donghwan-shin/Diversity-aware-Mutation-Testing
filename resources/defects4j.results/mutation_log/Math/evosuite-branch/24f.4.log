@@ -1,0 +1,77 @@
+
+init:
+     [echo] -------- Commons MATH 3.0-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] Compiling 388 source files to /tmp/run_mutation.pl_8440_1501561650/24f/target/test-classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /tmp/run_mutation.pl_8440_1501561650/24f/src/test/java/org/apache/commons/math3/PerfTestUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 24 files to /tmp/run_mutation.pl_8440_1501561650/24f/target/test-classes
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 5 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 2.06 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 495
+    [junit] MAJOR: Mutants covered:   478 (96.57%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 5 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/5 - org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest6 (10ms / 447):
+    [junit] MAJOR: 336690 (210 / 447 / 447) -> AVG-RTPM: 753ms
+    [junit] MAJOR: Mutants killed / live: 210 (56-153-1) / 268
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/5 - org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest2 (11ms / 365):
+    [junit] MAJOR: 432618 (203 / 365 / 365) -> AVG-RTPM: 262ms
+    [junit] MAJOR: Mutants killed / live: 413 (56-518-1) / 65
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/5 - org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest7 (11ms / 118):
+    [junit] MAJOR: 463706 (0 / 118 / 118) -> AVG-RTPM: 263ms
+    [junit] MAJOR: Mutants killed / live: 413 (56-636-1) / 65
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/5 - org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest1 (12ms / 38):
+    [junit] MAJOR: 473100 (0 / 38 / 38) -> AVG-RTPM: 247ms
+    [junit] MAJOR: Mutants killed / live: 413 (56-674-1) / 65
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/5 - org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest0 (22ms / 30):
+    [junit] MAJOR: 480637 (1 / 30 / 30) -> AVG-RTPM: 251ms
+    [junit] MAJOR: Mutants killed / live: 414 (56-704-1) / 64
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  480.6 seconds
+    [junit] MAJOR: Mutation score: 83.64% (86.61%)
+    [junit] MAJOR: Mutants killed / live: 414 (56-704-1) / 64
+    [junit] MAJOR: Mutant executions: 998
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_8440_1501561650/24f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 8 minutes 12 seconds

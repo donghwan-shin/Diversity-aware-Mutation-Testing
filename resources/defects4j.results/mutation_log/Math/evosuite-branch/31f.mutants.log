@@ -1,0 +1,88 @@
+1:LVR:0:POS:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):125:0 |==> 1
+2:LVR:0:NEG:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):125:0 |==> -1
+3:LVR:0:POS:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):128:0.0 |==> 1.0
+4:LVR:0:NEG:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):128:0.0 |==> -1.0
+5:COR:Precision.equals(hPrev, 0.0, small):TRUE:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):128:Precision.equals(hPrev, 0.0, small) |==> false
+6:COR:Precision.equals(hPrev, 0.0, small):FALSE:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):128:Precision.equals(hPrev, 0.0, small) |==> true
+7:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):129:hPrev = small |==> <NO-OP>
+8:LVR:POS:0:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):132:1 |==> 0
+9:LVR:POS:NEG:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):132:1 |==> -1
+10:LVR:0:POS:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):133:0.0 |==> 1.0
+11:LVR:0:NEG:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):133:0.0 |==> -1.0
+12:ROR:<(int,int):!=(int,int):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):137:n < maxIterations |==> n != maxIterations
+13:ROR:<(int,int):<=(int,int):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):137:n < maxIterations |==> n <= maxIterations
+14:ROR:<(int,int):==(int,int):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):137:n < maxIterations |==> n == maxIterations
+15:ROR:<(int,int):>(int,int):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):137:n < maxIterations |==> n > maxIterations
+16:ROR:<(int,int):>=(int,int):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):137:n < maxIterations |==> n >= maxIterations
+17:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):137:n < maxIterations |==> false
+18:ROR:<(int,int):TRUE(int,int):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):137:n < maxIterations |==> true
+19:AOR:*(double,double):%(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):141:b * dPrev |==> b % dPrev
+20:AOR:*(double,double):+(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):141:b * dPrev |==> b + dPrev
+21:AOR:*(double,double):-(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):141:b * dPrev |==> b - dPrev
+22:AOR:*(double,double):/(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):141:b * dPrev |==> b / dPrev
+23:AOR:+(double,double):%(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):141:a + b * dPrev |==> a % (b * dPrev)
+24:AOR:+(double,double):*(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):141:a + b * dPrev |==> a * (b * dPrev)
+25:AOR:+(double,double):-(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):141:a + b * dPrev |==> a - b * dPrev
+26:AOR:+(double,double):/(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):141:a + b * dPrev |==> a / (b * dPrev)
+27:LVR:0:POS:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):142:0.0 |==> 1.0
+28:LVR:0:NEG:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):142:0.0 |==> -1.0
+29:COR:Precision.equals(dN, 0.0, small):TRUE:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):142:Precision.equals(dN, 0.0, small) |==> false
+30:COR:Precision.equals(dN, 0.0, small):FALSE:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):142:Precision.equals(dN, 0.0, small) |==> true
+31:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):143:dN = small |==> <NO-OP>
+32:AOR:/(double,double):%(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):145:b / cPrev |==> b % cPrev
+33:AOR:/(double,double):*(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):145:b / cPrev |==> b * cPrev
+34:AOR:/(double,double):+(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):145:b / cPrev |==> b + cPrev
+35:AOR:/(double,double):-(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):145:b / cPrev |==> b - cPrev
+36:AOR:+(double,double):%(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):145:a + b / cPrev |==> a % (b / cPrev)
+37:AOR:+(double,double):*(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):145:a + b / cPrev |==> a * (b / cPrev)
+38:AOR:+(double,double):-(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):145:a + b / cPrev |==> a - b / cPrev
+39:AOR:+(double,double):/(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):145:a + b / cPrev |==> a / (b / cPrev)
+40:LVR:0:POS:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):146:0.0 |==> 1.0
+41:LVR:0:NEG:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):146:0.0 |==> -1.0
+42:COR:Precision.equals(cN, 0.0, small):TRUE:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):146:Precision.equals(cN, 0.0, small) |==> false
+43:COR:Precision.equals(cN, 0.0, small):FALSE:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):146:Precision.equals(cN, 0.0, small) |==> true
+44:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):147:cN = small |==> <NO-OP>
+45:LVR:POS:0:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):150:1 |==> 0
+46:LVR:POS:NEG:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):150:1 |==> -1
+47:AOR:/(double,double):%(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):150:1 / dN |==> 1 % dN
+48:AOR:/(double,double):*(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):150:1 / dN |==> 1 * dN
+49:AOR:/(double,double):+(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):150:1 / dN |==> 1 + dN
+50:AOR:/(double,double):-(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):150:1 / dN |==> 1 - dN
+51:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):150:dN = 1 / dN |==> <NO-OP>
+52:AOR:*(double,double):%(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):151:cN * dN |==> cN % dN
+53:AOR:*(double,double):+(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):151:cN * dN |==> cN + dN
+54:AOR:*(double,double):-(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):151:cN * dN |==> cN - dN
+55:AOR:*(double,double):/(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):151:cN * dN |==> cN / dN
+56:AOR:*(double,double):%(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):152:hPrev * deltaN |==> hPrev % deltaN
+57:AOR:*(double,double):+(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):152:hPrev * deltaN |==> hPrev + deltaN
+58:AOR:*(double,double):-(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):152:hPrev * deltaN |==> hPrev - deltaN
+59:AOR:*(double,double):/(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):152:hPrev * deltaN |==> hPrev / deltaN
+60:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):152:hN = hPrev * deltaN |==> <NO-OP>
+61:COR:Double.isInfinite(hN):TRUE:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):154:Double.isInfinite(hN) |==> false
+62:COR:Double.isInfinite(hN):FALSE:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):154:Double.isInfinite(hN) |==> true
+63:COR:Double.isNaN(hN):TRUE:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):158:Double.isNaN(hN) |==> false
+64:COR:Double.isNaN(hN):FALSE:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):158:Double.isNaN(hN) |==> true
+65:LVR:POS:0:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):163:1.0 |==> 0.0
+66:LVR:POS:NEG:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):163:1.0 |==> -1.0
+67:AOR:-(double,double):%(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):163:deltaN - 1.0 |==> deltaN % 1.0
+68:AOR:-(double,double):*(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):163:deltaN - 1.0 |==> deltaN * 1.0
+69:AOR:-(double,double):+(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):163:deltaN - 1.0 |==> deltaN + 1.0
+70:AOR:-(double,double):/(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):163:deltaN - 1.0 |==> deltaN / 1.0
+71:ROR:<(double,double):!=(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):163:FastMath.abs(deltaN - 1.0) < epsilon |==> FastMath.abs(deltaN - 1.0) != epsilon
+72:ROR:<(double,double):<=(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):163:FastMath.abs(deltaN - 1.0) < epsilon |==> FastMath.abs(deltaN - 1.0) <= epsilon
+73:ROR:<(double,double):==(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):163:FastMath.abs(deltaN - 1.0) < epsilon |==> FastMath.abs(deltaN - 1.0) == epsilon
+74:ROR:<(double,double):>(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):163:FastMath.abs(deltaN - 1.0) < epsilon |==> FastMath.abs(deltaN - 1.0) > epsilon
+75:ROR:<(double,double):>=(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):163:FastMath.abs(deltaN - 1.0) < epsilon |==> FastMath.abs(deltaN - 1.0) >= epsilon
+76:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):163:FastMath.abs(deltaN - 1.0) < epsilon |==> false
+77:ROR:<(double,double):TRUE(double,double):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):163:FastMath.abs(deltaN - 1.0) < epsilon |==> true
+78:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):167:dPrev = dN |==> <NO-OP>
+79:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):168:cPrev = cN |==> <NO-OP>
+80:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):169:hPrev = hN |==> <NO-OP>
+81:STD:<INC>:<NO-OP>:org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):170:n++ |==> <NO-OP>
+82:ROR:>=(int,int):!=(int,int):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):173:n >= maxIterations |==> n != maxIterations
+83:ROR:>=(int,int):<(int,int):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):173:n >= maxIterations |==> n < maxIterations
+84:ROR:>=(int,int):<=(int,int):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):173:n >= maxIterations |==> n <= maxIterations
+85:ROR:>=(int,int):==(int,int):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):173:n >= maxIterations |==> n == maxIterations
+86:ROR:>=(int,int):>(int,int):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):173:n >= maxIterations |==> n > maxIterations
+87:ROR:>=(int,int):FALSE(int,int):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):173:n >= maxIterations |==> false
+88:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.util.ContinuedFraction@evaluate(double,double,int):173:n >= maxIterations |==> true

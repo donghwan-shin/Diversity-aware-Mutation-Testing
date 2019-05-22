@@ -1,0 +1,274 @@
+1:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils:802:getSystemProperty("user.country") == null |==> getSystemProperty("user.country") != null
+2:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils:802:getSystemProperty("user.country") == null |==> false
+3:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils:802:getSystemProperty("user.country") == null |==> true
+4:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.SystemUtils:1108:getOSMatchesName("Linux") || getOSMatchesName("LINUX") |==> getOSMatchesName("Linux") != getOSMatchesName("LINUX")
+5:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang3.SystemUtils:1108:getOSMatchesName("Linux") || getOSMatchesName("LINUX") |==> getOSMatchesName("Linux") && getOSMatchesName("LINUX")
+6:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.SystemUtils:1108:getOSMatchesName("Linux") || getOSMatchesName("LINUX") |==> getOSMatchesName("Linux") == getOSMatchesName("LINUX")
+7:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.SystemUtils:1108:getOSMatchesName("Linux") || getOSMatchesName("LINUX") |==> false
+8:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.SystemUtils:1108:getOSMatchesName("Linux") || getOSMatchesName("LINUX") |==> getOSMatchesName("Linux")
+9:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.SystemUtils:1108:getOSMatchesName("Linux") || getOSMatchesName("LINUX") |==> getOSMatchesName("LINUX")
+10:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.SystemUtils:1108:getOSMatchesName("Linux") || getOSMatchesName("LINUX") |==> true
+11:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX |==> IS_OS_AIX != IS_OS_HP_UX
+12:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX |==> IS_OS_AIX && IS_OS_HP_UX
+13:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX |==> IS_OS_AIX == IS_OS_HP_UX
+14:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX |==> false
+15:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX |==> IS_OS_AIX
+16:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX |==> IS_OS_HP_UX
+17:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX |==> true
+18:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX |==> (IS_OS_AIX || IS_OS_HP_UX) != IS_OS_IRIX
+19:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX |==> (IS_OS_AIX || IS_OS_HP_UX) && IS_OS_IRIX
+20:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX |==> (IS_OS_AIX || IS_OS_HP_UX) == IS_OS_IRIX
+21:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX |==> false
+22:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX |==> IS_OS_AIX || IS_OS_HP_UX
+23:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX |==> IS_OS_IRIX
+24:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX |==> true
+25:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX |==> (IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX) != IS_OS_LINUX
+26:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX |==> (IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX) && IS_OS_LINUX
+27:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX |==> (IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX) == IS_OS_LINUX
+28:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX |==> false
+29:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX |==> IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX
+30:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX |==> IS_OS_LINUX
+31:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX |==> true
+32:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX |==> (IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX) != IS_OS_MAC_OSX
+33:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX |==> (IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX) && IS_OS_MAC_OSX
+34:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX |==> (IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX) == IS_OS_MAC_OSX
+35:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX |==> false
+36:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX |==> IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX
+37:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX |==> IS_OS_MAC_OSX
+38:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX |==> true
+39:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS |==> (IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX) != IS_OS_SOLARIS
+40:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS |==> (IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX) && IS_OS_SOLARIS
+41:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS |==> (IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX) == IS_OS_SOLARIS
+42:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS |==> false
+43:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS |==> IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX
+44:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS |==> IS_OS_SOLARIS
+45:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS |==> true
+46:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS || IS_OS_SUN_OS |==> (IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS) != IS_OS_SUN_OS
+47:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS || IS_OS_SUN_OS |==> (IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS) && IS_OS_SUN_OS
+48:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS || IS_OS_SUN_OS |==> (IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS) == IS_OS_SUN_OS
+49:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.SystemUtils:1187:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS || IS_OS_SUN_OS |==> false
+50:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.SystemUtils:1186:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS || IS_OS_SUN_OS |==> IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS
+51:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.SystemUtils:1187:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS || IS_OS_SUN_OS |==> IS_OS_SUN_OS
+52:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.SystemUtils:1187:IS_OS_AIX || IS_OS_HP_UX || IS_OS_IRIX || IS_OS_LINUX || IS_OS_MAC_OSX || IS_OS_SOLARIS || IS_OS_SUN_OS |==> true
+53:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1410:JAVA_VERSION != null |==> JAVA_VERSION == null
+54:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1410:JAVA_VERSION != null |==> false
+55:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1410:JAVA_VERSION != null |==> true
+56:LVR:0:POS:org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1411:0 |==> 1
+57:LVR:0:NEG:org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1411:0 |==> -1
+58:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1411:i < JAVA_VERSION.length() |==> i != JAVA_VERSION.length()
+59:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1411:i < JAVA_VERSION.length() |==> i <= JAVA_VERSION.length()
+60:ROR:<(int,int):==(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1411:i < JAVA_VERSION.length() |==> i == JAVA_VERSION.length()
+61:ROR:<(int,int):>(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1411:i < JAVA_VERSION.length() |==> i > JAVA_VERSION.length()
+62:ROR:<(int,int):>=(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1411:i < JAVA_VERSION.length() |==> i >= JAVA_VERSION.length()
+63:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1411:i < JAVA_VERSION.length() |==> false
+64:ROR:<(int,int):TRUE(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1411:i < JAVA_VERSION.length() |==> true
+65:ROR:>=(int,int):!=(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch >= '0' |==> ch != '0'
+66:ROR:>=(int,int):<(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch >= '0' |==> ch < '0'
+67:ROR:>=(int,int):<=(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch >= '0' |==> ch <= '0'
+68:ROR:>=(int,int):==(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch >= '0' |==> ch == '0'
+69:ROR:>=(int,int):>(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch >= '0' |==> ch > '0'
+70:ROR:>=(int,int):FALSE(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch >= '0' |==> false
+71:ROR:>=(int,int):TRUE(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch >= '0' |==> true
+72:ROR:<=(int,int):!=(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch <= '9' |==> ch != '9'
+73:ROR:<=(int,int):<(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch <= '9' |==> ch < '9'
+74:ROR:<=(int,int):==(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch <= '9' |==> ch == '9'
+75:ROR:<=(int,int):>(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch <= '9' |==> ch > '9'
+76:ROR:<=(int,int):>=(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch <= '9' |==> ch >= '9'
+77:ROR:<=(int,int):FALSE(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch <= '9' |==> false
+78:ROR:<=(int,int):TRUE(int,int):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch <= '9' |==> true
+79:COR:&&(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch >= '0' && ch <= '9' |==> ch >= '0' != ch <= '9'
+80:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch >= '0' && ch <= '9' |==> ch >= '0' == ch <= '9'
+81:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch >= '0' && ch <= '9' |==> false
+82:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch >= '0' && ch <= '9' |==> ch >= '0'
+83:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch >= '0' && ch <= '9' |==> ch <= '9'
+84:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch >= '0' && ch <= '9' |==> true
+85:COR:&&(boolean,boolean):||(boolean,boolean):org.apache.commons.lang3.SystemUtils@getJavaVersionTrimmed():1413:ch >= '0' && ch <= '9' |==> ch >= '0' || ch <= '9'
+86:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.SystemUtils@getSystemProperty(java.lang.String):1465:System.err.println("Caught a SecurityException reading the system property \'" + property + "\'; the SystemUtils property value will default to null.") |==> <NO-OP>
+87:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@isJavaAwtHeadless():1513:JAVA_AWT_HEADLESS != null |==> JAVA_AWT_HEADLESS == null
+88:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@isJavaAwtHeadless():1513:JAVA_AWT_HEADLESS != null |==> false
+89:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@isJavaAwtHeadless():1513:JAVA_AWT_HEADLESS != null |==> true
+90:LVR:FALSE:TRUE:org.apache.commons.lang3.SystemUtils@isJavaAwtHeadless():1513:false |==> true
+91:ROR:>=(float,float):!=(float,float):org.apache.commons.lang3.SystemUtils@isJavaVersionAtLeast(float):1534:JAVA_VERSION_FLOAT >= requiredVersion |==> JAVA_VERSION_FLOAT != requiredVersion
+92:ROR:>=(float,float):<(float,float):org.apache.commons.lang3.SystemUtils@isJavaVersionAtLeast(float):1534:JAVA_VERSION_FLOAT >= requiredVersion |==> JAVA_VERSION_FLOAT < requiredVersion
+93:ROR:>=(float,float):<=(float,float):org.apache.commons.lang3.SystemUtils@isJavaVersionAtLeast(float):1534:JAVA_VERSION_FLOAT >= requiredVersion |==> JAVA_VERSION_FLOAT <= requiredVersion
+94:ROR:>=(float,float):==(float,float):org.apache.commons.lang3.SystemUtils@isJavaVersionAtLeast(float):1534:JAVA_VERSION_FLOAT >= requiredVersion |==> JAVA_VERSION_FLOAT == requiredVersion
+95:ROR:>=(float,float):>(float,float):org.apache.commons.lang3.SystemUtils@isJavaVersionAtLeast(float):1534:JAVA_VERSION_FLOAT >= requiredVersion |==> JAVA_VERSION_FLOAT > requiredVersion
+96:ROR:>=(float,float):FALSE(float,float):org.apache.commons.lang3.SystemUtils@isJavaVersionAtLeast(float):1534:JAVA_VERSION_FLOAT >= requiredVersion |==> false
+97:ROR:>=(float,float):TRUE(float,float):org.apache.commons.lang3.SystemUtils@isJavaVersionAtLeast(float):1534:JAVA_VERSION_FLOAT >= requiredVersion |==> true
+98:ROR:>=(int,int):!=(int,int):org.apache.commons.lang3.SystemUtils@isJavaVersionAtLeast(int):1556:JAVA_VERSION_INT >= requiredVersion |==> JAVA_VERSION_INT != requiredVersion
+99:ROR:>=(int,int):<(int,int):org.apache.commons.lang3.SystemUtils@isJavaVersionAtLeast(int):1556:JAVA_VERSION_INT >= requiredVersion |==> JAVA_VERSION_INT < requiredVersion
+100:ROR:>=(int,int):<=(int,int):org.apache.commons.lang3.SystemUtils@isJavaVersionAtLeast(int):1556:JAVA_VERSION_INT >= requiredVersion |==> JAVA_VERSION_INT <= requiredVersion
+101:ROR:>=(int,int):==(int,int):org.apache.commons.lang3.SystemUtils@isJavaVersionAtLeast(int):1556:JAVA_VERSION_INT >= requiredVersion |==> JAVA_VERSION_INT == requiredVersion
+102:ROR:>=(int,int):>(int,int):org.apache.commons.lang3.SystemUtils@isJavaVersionAtLeast(int):1556:JAVA_VERSION_INT >= requiredVersion |==> JAVA_VERSION_INT > requiredVersion
+103:ROR:>=(int,int):FALSE(int,int):org.apache.commons.lang3.SystemUtils@isJavaVersionAtLeast(int):1556:JAVA_VERSION_INT >= requiredVersion |==> false
+104:ROR:>=(int,int):TRUE(int,int):org.apache.commons.lang3.SystemUtils@isJavaVersionAtLeast(int):1556:JAVA_VERSION_INT >= requiredVersion |==> true
+105:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@isJavaVersionMatch(java.lang.String,java.lang.String):1574:version == null |==> version != null
+106:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@isJavaVersionMatch(java.lang.String,java.lang.String):1574:version == null |==> false
+107:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@isJavaVersionMatch(java.lang.String,java.lang.String):1574:version == null |==> true
+108:LVR:FALSE:TRUE:org.apache.commons.lang3.SystemUtils@isJavaVersionMatch(java.lang.String,java.lang.String):1575:false |==> true
+109:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1597:osName == null |==> osName != null
+110:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1597:osName == null |==> false
+111:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1597:osName == null |==> true
+112:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1597:osVersion == null |==> osVersion != null
+113:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1597:osVersion == null |==> false
+114:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1597:osVersion == null |==> true
+115:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1597:osName == null || osVersion == null |==> osName == null != (osVersion == null)
+116:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1597:osName == null || osVersion == null |==> osName == null && osVersion == null
+117:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1597:osName == null || osVersion == null |==> osName == null == (osVersion == null)
+118:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1597:osName == null || osVersion == null |==> false
+119:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1597:osName == null || osVersion == null |==> osName == null
+120:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1597:osName == null || osVersion == null |==> osVersion == null
+121:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1597:osName == null || osVersion == null |==> true
+122:LVR:FALSE:TRUE:org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1598:false |==> true
+123:COR:&&(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1600:osName.startsWith(osNamePrefix) && osVersion.startsWith(osVersionPrefix) |==> osName.startsWith(osNamePrefix) != osVersion.startsWith(osVersionPrefix)
+124:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1600:osName.startsWith(osNamePrefix) && osVersion.startsWith(osVersionPrefix) |==> osName.startsWith(osNamePrefix) == osVersion.startsWith(osVersionPrefix)
+125:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1600:osName.startsWith(osNamePrefix) && osVersion.startsWith(osVersionPrefix) |==> false
+126:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1600:osName.startsWith(osNamePrefix) && osVersion.startsWith(osVersionPrefix) |==> osName.startsWith(osNamePrefix)
+127:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1600:osName.startsWith(osNamePrefix) && osVersion.startsWith(osVersionPrefix) |==> osVersion.startsWith(osVersionPrefix)
+128:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1600:osName.startsWith(osNamePrefix) && osVersion.startsWith(osVersionPrefix) |==> true
+129:COR:&&(boolean,boolean):||(boolean,boolean):org.apache.commons.lang3.SystemUtils@isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String):1600:osName.startsWith(osNamePrefix) && osVersion.startsWith(osVersionPrefix) |==> osName.startsWith(osNamePrefix) || osVersion.startsWith(osVersionPrefix)
+130:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@isOSNameMatch(java.lang.String,java.lang.String):1616:osName == null |==> osName != null
+131:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@isOSNameMatch(java.lang.String,java.lang.String):1616:osName == null |==> false
+132:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@isOSNameMatch(java.lang.String,java.lang.String):1616:osName == null |==> true
+133:LVR:FALSE:TRUE:org.apache.commons.lang3.SystemUtils@isOSNameMatch(java.lang.String,java.lang.String):1617:false |==> true
+134:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1716:version == null |==> version != null
+135:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1716:version == null |==> false
+136:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1716:version == null |==> true
+137:LVR:0:POS:org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1721:0 |==> 1
+138:LVR:0:NEG:org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1721:0 |==> -1
+139:LVR:0:POS:org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:0 |==> 1
+140:LVR:0:NEG:org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:0 |==> -1
+141:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:i < strings.length |==> i != strings.length
+142:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:i < strings.length |==> i <= strings.length
+143:ROR:<(int,int):==(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:i < strings.length |==> i == strings.length
+144:ROR:<(int,int):>(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:i < strings.length |==> i > strings.length
+145:ROR:<(int,int):>=(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:i < strings.length |==> i >= strings.length
+146:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:i < strings.length |==> false
+147:ROR:<(int,int):TRUE(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:i < strings.length |==> true
+148:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:j < limit |==> j != limit
+149:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:j < limit |==> j <= limit
+150:ROR:<(int,int):==(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:j < limit |==> j == limit
+151:ROR:<(int,int):>(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:j < limit |==> j > limit
+152:ROR:<(int,int):>=(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:j < limit |==> j >= limit
+153:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:j < limit |==> false
+154:ROR:<(int,int):TRUE(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:j < limit |==> true
+155:COR:&&(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:i < strings.length && j < limit |==> i < strings.length != j < limit
+156:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:i < strings.length && j < limit |==> i < strings.length == j < limit
+157:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:i < strings.length && j < limit |==> false
+158:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:i < strings.length && j < limit |==> i < strings.length
+159:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:i < strings.length && j < limit |==> j < limit
+160:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:i < strings.length && j < limit |==> true
+161:COR:&&(boolean,boolean):||(boolean,boolean):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1722:i < strings.length && j < limit |==> i < strings.length || j < limit
+162:LVR:0:POS:org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1724:0 |==> 1
+163:LVR:0:NEG:org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1724:0 |==> -1
+164:ROR:>(int,int):!=(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1724:s.length() > 0 |==> s.length() != 0
+165:ROR:>(int,int):<(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1724:s.length() > 0 |==> s.length() < 0
+166:ROR:>(int,int):<=(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1724:s.length() > 0 |==> s.length() <= 0
+167:ROR:>(int,int):==(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1724:s.length() > 0 |==> s.length() == 0
+168:ROR:>(int,int):>=(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1724:s.length() > 0 |==> s.length() >= 0
+169:ROR:>(int,int):FALSE(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1724:s.length() > 0 |==> false
+170:ROR:>(int,int):TRUE(int,int):org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1724:s.length() > 0 |==> true
+171:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.SystemUtils@toJavaVersionIntArray(java.lang.String,int):1725:ints[j++] = Integer.parseInt(s) |==> <NO-OP>
+172:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:javaVersions == null |==> javaVersions != null
+173:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:javaVersions == null |==> false
+174:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:javaVersions == null |==> true
+175:LVR:0:POS:org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:0 |==> 1
+176:LVR:0:NEG:org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:0 |==> -1
+177:ROR:==(int,int):!=(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:javaVersions.length == 0 |==> javaVersions.length != 0
+178:ROR:==(int,int):<(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:javaVersions.length == 0 |==> javaVersions.length < 0
+179:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:javaVersions.length == 0 |==> javaVersions.length <= 0
+180:ROR:==(int,int):>(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:javaVersions.length == 0 |==> javaVersions.length > 0
+181:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:javaVersions.length == 0 |==> javaVersions.length >= 0
+182:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:javaVersions.length == 0 |==> false
+183:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:javaVersions.length == 0 |==> true
+184:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:javaVersions == null || javaVersions.length == 0 |==> javaVersions == null != (javaVersions.length == 0)
+185:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:javaVersions == null || javaVersions.length == 0 |==> javaVersions == null && javaVersions.length == 0
+186:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:javaVersions == null || javaVersions.length == 0 |==> javaVersions == null == (javaVersions.length == 0)
+187:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:javaVersions == null || javaVersions.length == 0 |==> false
+188:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:javaVersions == null || javaVersions.length == 0 |==> javaVersions == null
+189:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:javaVersions == null || javaVersions.length == 0 |==> javaVersions.length == 0
+190:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1752:javaVersions == null || javaVersions.length == 0 |==> true
+191:LVR:0:POS:org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1753:0.0F |==> 1.0F
+192:LVR:0:NEG:org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1753:0.0F |==> -1.0F
+193:LVR:POS:0:org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1755:1 |==> 0
+194:LVR:POS:NEG:org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1755:1 |==> -1
+195:ROR:==(int,int):!=(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1755:javaVersions.length == 1 |==> javaVersions.length != 1
+196:ROR:==(int,int):<(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1755:javaVersions.length == 1 |==> javaVersions.length < 1
+197:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1755:javaVersions.length == 1 |==> javaVersions.length <= 1
+198:ROR:==(int,int):>(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1755:javaVersions.length == 1 |==> javaVersions.length > 1
+199:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1755:javaVersions.length == 1 |==> javaVersions.length >= 1
+200:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1755:javaVersions.length == 1 |==> false
+201:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1755:javaVersions.length == 1 |==> true
+202:LVR:0:POS:org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1756:0 |==> 1
+203:LVR:0:NEG:org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1756:0 |==> -1
+204:LVR:0:POS:org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1759:0 |==> 1
+205:LVR:0:NEG:org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1759:0 |==> -1
+206:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1759:builder.append(javaVersions[0]) |==> <NO-OP>
+207:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1760:builder.append('.') |==> <NO-OP>
+208:LVR:POS:0:org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1761:1 |==> 0
+209:LVR:POS:NEG:org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1761:1 |==> -1
+210:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1761:i < javaVersions.length |==> i != javaVersions.length
+211:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1761:i < javaVersions.length |==> i <= javaVersions.length
+212:ROR:<(int,int):==(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1761:i < javaVersions.length |==> i == javaVersions.length
+213:ROR:<(int,int):>(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1761:i < javaVersions.length |==> i > javaVersions.length
+214:ROR:<(int,int):>=(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1761:i < javaVersions.length |==> i >= javaVersions.length
+215:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1761:i < javaVersions.length |==> false
+216:ROR:<(int,int):TRUE(int,int):org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1761:i < javaVersions.length |==> true
+217:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1762:builder.append(javaVersions[i]) |==> <NO-OP>
+218:LVR:0:POS:org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1767:0.0F |==> 1.0F
+219:LVR:0:NEG:org.apache.commons.lang3.SystemUtils@toVersionFloat(int[]):1767:0.0F |==> -1.0F
+220:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1792:javaVersions == null |==> javaVersions != null
+221:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1792:javaVersions == null |==> false
+222:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1792:javaVersions == null |==> true
+223:LVR:0:POS:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1793:0 |==> 1
+224:LVR:0:NEG:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1793:0 |==> -1
+225:LVR:0:POS:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1795:0 |==> 1
+226:LVR:0:NEG:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1795:0 |==> -1
+227:LVR:POS:0:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1797:1 |==> 0
+228:LVR:POS:NEG:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1797:1 |==> -1
+229:ROR:>=(int,int):!=(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1797:len >= 1 |==> len != 1
+230:ROR:>=(int,int):<(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1797:len >= 1 |==> len < 1
+231:ROR:>=(int,int):<=(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1797:len >= 1 |==> len <= 1
+232:ROR:>=(int,int):==(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1797:len >= 1 |==> len == 1
+233:ROR:>=(int,int):>(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1797:len >= 1 |==> len > 1
+234:ROR:>=(int,int):FALSE(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1797:len >= 1 |==> false
+235:ROR:>=(int,int):TRUE(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1797:len >= 1 |==> true
+236:LVR:0:POS:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1798:0 |==> 1
+237:LVR:0:NEG:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1798:0 |==> -1
+238:LVR:POS:0:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1798:100 |==> 0
+239:LVR:POS:NEG:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1798:100 |==> -100
+240:AOR:*(int,int):%(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1798:javaVersions[0] * 100 |==> javaVersions[0] % 100
+241:AOR:*(int,int):+(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1798:javaVersions[0] * 100 |==> javaVersions[0] + 100
+242:AOR:*(int,int):-(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1798:javaVersions[0] * 100 |==> javaVersions[0] - 100
+243:AOR:*(int,int):/(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1798:javaVersions[0] * 100 |==> javaVersions[0] / 100
+244:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1798:intVersion = javaVersions[0] * 100 |==> <NO-OP>
+245:LVR:POS:0:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1800:2 |==> 0
+246:LVR:POS:NEG:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1800:2 |==> -2
+247:ROR:>=(int,int):!=(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1800:len >= 2 |==> len != 2
+248:ROR:>=(int,int):<(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1800:len >= 2 |==> len < 2
+249:ROR:>=(int,int):<=(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1800:len >= 2 |==> len <= 2
+250:ROR:>=(int,int):==(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1800:len >= 2 |==> len == 2
+251:ROR:>=(int,int):>(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1800:len >= 2 |==> len > 2
+252:ROR:>=(int,int):FALSE(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1800:len >= 2 |==> false
+253:ROR:>=(int,int):TRUE(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1800:len >= 2 |==> true
+254:LVR:POS:0:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1801:1 |==> 0
+255:LVR:POS:NEG:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1801:1 |==> -1
+256:LVR:POS:0:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1801:10 |==> 0
+257:LVR:POS:NEG:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1801:10 |==> -10
+258:AOR:*(int,int):%(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1801:javaVersions[1] * 10 |==> javaVersions[1] % 10
+259:AOR:*(int,int):+(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1801:javaVersions[1] * 10 |==> javaVersions[1] + 10
+260:AOR:*(int,int):-(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1801:javaVersions[1] * 10 |==> javaVersions[1] - 10
+261:AOR:*(int,int):/(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1801:javaVersions[1] * 10 |==> javaVersions[1] / 10
+262:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1801:intVersion += javaVersions[1] * 10 |==> <NO-OP>
+263:LVR:POS:0:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1803:3 |==> 0
+264:LVR:POS:NEG:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1803:3 |==> -3
+265:ROR:>=(int,int):!=(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1803:len >= 3 |==> len != 3
+266:ROR:>=(int,int):<(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1803:len >= 3 |==> len < 3
+267:ROR:>=(int,int):<=(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1803:len >= 3 |==> len <= 3
+268:ROR:>=(int,int):==(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1803:len >= 3 |==> len == 3
+269:ROR:>=(int,int):>(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1803:len >= 3 |==> len > 3
+270:ROR:>=(int,int):FALSE(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1803:len >= 3 |==> false
+271:ROR:>=(int,int):TRUE(int,int):org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1803:len >= 3 |==> true
+272:LVR:POS:0:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1804:2 |==> 0
+273:LVR:POS:NEG:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1804:2 |==> -2
+274:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.SystemUtils@toVersionInt(int[]):1804:intVersion += javaVersions[2] |==> <NO-OP>

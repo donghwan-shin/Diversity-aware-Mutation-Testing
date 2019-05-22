@@ -1,0 +1,476 @@
+1:LVR:POS:0:org.apache.commons.math.analysis.BrentSolver@<init>(org.apache.commons.math.analysis.UnivariateRealFunction):42:100 |==> 0
+2:LVR:POS:NEG:org.apache.commons.math.analysis.BrentSolver@<init>(org.apache.commons.math.analysis.UnivariateRealFunction):42:100 |==> -100
+3:LVR:POS:0:org.apache.commons.math.analysis.BrentSolver@<init>(org.apache.commons.math.analysis.UnivariateRealFunction):42:1.0E-6 |==> 0.0
+4:LVR:POS:NEG:org.apache.commons.math.analysis.BrentSolver@<init>(org.apache.commons.math.analysis.UnivariateRealFunction):42:1.0E-6 |==> -1.0E-6
+5:AOR:-(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:initial - min |==> initial % min
+6:AOR:-(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:initial - min |==> initial * min
+7:AOR:-(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:initial - min |==> initial + min
+8:AOR:-(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:initial - min |==> initial / min
+9:AOR:-(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:max - initial |==> max % initial
+10:AOR:-(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:max - initial |==> max * initial
+11:AOR:-(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:max - initial |==> max + initial
+12:AOR:-(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:max - initial |==> max / initial
+13:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:(initial - min) * (max - initial) |==> (initial - min) % (max - initial)
+14:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:(initial - min) * (max - initial) |==> (initial - min) + (max - initial)
+15:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:(initial - min) * (max - initial) |==> (initial - min) - (max - initial)
+16:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:(initial - min) * (max - initial) |==> (initial - min) / (max - initial)
+17:LVR:0:POS:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:0 |==> 1
+18:LVR:0:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:0 |==> -1
+19:ROR:<(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:((initial - min) * (max - initial)) < 0 |==> ((initial - min) * (max - initial)) != 0
+20:ROR:<(double,double):<=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:((initial - min) * (max - initial)) < 0 |==> ((initial - min) * (max - initial)) <= 0
+21:ROR:<(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:((initial - min) * (max - initial)) < 0 |==> ((initial - min) * (max - initial)) == 0
+22:ROR:<(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:((initial - min) * (max - initial)) < 0 |==> ((initial - min) * (max - initial)) > 0
+23:ROR:<(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:((initial - min) * (max - initial)) < 0 |==> ((initial - min) * (max - initial)) >= 0
+24:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:((initial - min) * (max - initial)) < 0 |==> false
+25:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):67:((initial - min) * (max - initial)) < 0 |==> true
+26:ROR:<=(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):75:Math.abs(yInitial) <= functionValueAccuracy |==> Math.abs(yInitial) != functionValueAccuracy
+27:ROR:<=(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):75:Math.abs(yInitial) <= functionValueAccuracy |==> Math.abs(yInitial) < functionValueAccuracy
+28:ROR:<=(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):75:Math.abs(yInitial) <= functionValueAccuracy |==> Math.abs(yInitial) == functionValueAccuracy
+29:ROR:<=(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):75:Math.abs(yInitial) <= functionValueAccuracy |==> Math.abs(yInitial) > functionValueAccuracy
+30:ROR:<=(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):75:Math.abs(yInitial) <= functionValueAccuracy |==> Math.abs(yInitial) >= functionValueAccuracy
+31:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):75:Math.abs(yInitial) <= functionValueAccuracy |==> false
+32:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):75:Math.abs(yInitial) <= functionValueAccuracy |==> true
+33:LVR:0:POS:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):76:0 |==> 1
+34:LVR:0:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):76:0 |==> -1
+35:STD:<CALL>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):76:setResult(initial, 0) |==> <NO-OP>
+36:ROR:<=(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):82:Math.abs(yMin) <= functionValueAccuracy |==> Math.abs(yMin) != functionValueAccuracy
+37:ROR:<=(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):82:Math.abs(yMin) <= functionValueAccuracy |==> Math.abs(yMin) < functionValueAccuracy
+38:ROR:<=(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):82:Math.abs(yMin) <= functionValueAccuracy |==> Math.abs(yMin) == functionValueAccuracy
+39:ROR:<=(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):82:Math.abs(yMin) <= functionValueAccuracy |==> Math.abs(yMin) > functionValueAccuracy
+40:ROR:<=(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):82:Math.abs(yMin) <= functionValueAccuracy |==> Math.abs(yMin) >= functionValueAccuracy
+41:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):82:Math.abs(yMin) <= functionValueAccuracy |==> false
+42:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):82:Math.abs(yMin) <= functionValueAccuracy |==> true
+43:LVR:0:POS:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):83:0 |==> 1
+44:LVR:0:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):83:0 |==> -1
+45:STD:<CALL>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):83:setResult(yMin, 0) |==> <NO-OP>
+46:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):88:yInitial * yMin |==> yInitial % yMin
+47:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):88:yInitial * yMin |==> yInitial + yMin
+48:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):88:yInitial * yMin |==> yInitial - yMin
+49:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):88:yInitial * yMin |==> yInitial / yMin
+50:LVR:0:POS:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):88:0 |==> 1
+51:LVR:0:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):88:0 |==> -1
+52:ROR:<(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):88:yInitial * yMin < 0 |==> yInitial * yMin != 0
+53:ROR:<(double,double):<=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):88:yInitial * yMin < 0 |==> yInitial * yMin <= 0
+54:ROR:<(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):88:yInitial * yMin < 0 |==> yInitial * yMin == 0
+55:ROR:<(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):88:yInitial * yMin < 0 |==> yInitial * yMin > 0
+56:ROR:<(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):88:yInitial * yMin < 0 |==> yInitial * yMin >= 0
+57:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):88:yInitial * yMin < 0 |==> false
+58:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):88:yInitial * yMin < 0 |==> true
+59:ROR:<=(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):94:Math.abs(yMax) <= functionValueAccuracy |==> Math.abs(yMax) != functionValueAccuracy
+60:ROR:<=(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):94:Math.abs(yMax) <= functionValueAccuracy |==> Math.abs(yMax) < functionValueAccuracy
+61:ROR:<=(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):94:Math.abs(yMax) <= functionValueAccuracy |==> Math.abs(yMax) == functionValueAccuracy
+62:ROR:<=(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):94:Math.abs(yMax) <= functionValueAccuracy |==> Math.abs(yMax) > functionValueAccuracy
+63:ROR:<=(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):94:Math.abs(yMax) <= functionValueAccuracy |==> Math.abs(yMax) >= functionValueAccuracy
+64:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):94:Math.abs(yMax) <= functionValueAccuracy |==> false
+65:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):94:Math.abs(yMax) <= functionValueAccuracy |==> true
+66:LVR:0:POS:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):95:0 |==> 1
+67:LVR:0:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):95:0 |==> -1
+68:STD:<CALL>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):95:setResult(yMax, 0) |==> <NO-OP>
+69:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):100:yInitial * yMax |==> yInitial % yMax
+70:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):100:yInitial * yMax |==> yInitial + yMax
+71:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):100:yInitial * yMax |==> yInitial - yMax
+72:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):100:yInitial * yMax |==> yInitial / yMax
+73:LVR:0:POS:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):100:0 |==> 1
+74:LVR:0:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):100:0 |==> -1
+75:ROR:<(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):100:yInitial * yMax < 0 |==> yInitial * yMax != 0
+76:ROR:<(double,double):<=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):100:yInitial * yMax < 0 |==> yInitial * yMax <= 0
+77:ROR:<(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):100:yInitial * yMax < 0 |==> yInitial * yMax == 0
+78:ROR:<(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):100:yInitial * yMax < 0 |==> yInitial * yMax > 0
+79:ROR:<(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):100:yInitial * yMax < 0 |==> yInitial * yMax >= 0
+80:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):100:yInitial * yMax < 0 |==> false
+81:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double):100:yInitial * yMax < 0 |==> true
+82:STD:<CALL>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double):128:clearResult() |==> <NO-OP>
+83:STD:<CALL>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double):129:verifyInterval(min, max) |==> <NO-OP>
+84:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):137:yMin * yMax |==> yMin % yMax
+85:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):137:yMin * yMax |==> yMin + yMax
+86:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):137:yMin * yMax |==> yMin - yMax
+87:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):137:yMin * yMax |==> yMin / yMax
+88:LVR:0:POS:org.apache.commons.math.analysis.BrentSolver@solve(double,double):138:0 |==> 1
+89:LVR:0:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double):138:0 |==> -1
+90:ROR:>(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):138:sign > 0 |==> sign != 0
+91:ROR:>(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):138:sign > 0 |==> sign < 0
+92:ROR:>(double,double):<=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):138:sign > 0 |==> sign <= 0
+93:ROR:>(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):138:sign > 0 |==> sign == 0
+94:ROR:>(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):138:sign > 0 |==> sign >= 0
+95:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):138:sign > 0 |==> false
+96:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):138:sign > 0 |==> true
+97:ROR:<=(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):140:Math.abs(yMin) <= functionValueAccuracy |==> Math.abs(yMin) != functionValueAccuracy
+98:ROR:<=(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):140:Math.abs(yMin) <= functionValueAccuracy |==> Math.abs(yMin) < functionValueAccuracy
+99:ROR:<=(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):140:Math.abs(yMin) <= functionValueAccuracy |==> Math.abs(yMin) == functionValueAccuracy
+100:ROR:<=(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):140:Math.abs(yMin) <= functionValueAccuracy |==> Math.abs(yMin) > functionValueAccuracy
+101:ROR:<=(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):140:Math.abs(yMin) <= functionValueAccuracy |==> Math.abs(yMin) >= functionValueAccuracy
+102:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):140:Math.abs(yMin) <= functionValueAccuracy |==> false
+103:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):140:Math.abs(yMin) <= functionValueAccuracy |==> true
+104:LVR:0:POS:org.apache.commons.math.analysis.BrentSolver@solve(double,double):141:0 |==> 1
+105:LVR:0:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double):141:0 |==> -1
+106:STD:<CALL>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double):141:setResult(min, 0) |==> <NO-OP>
+107:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double):142:ret = min |==> <NO-OP>
+108:ROR:<=(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):143:Math.abs(yMax) <= functionValueAccuracy |==> Math.abs(yMax) != functionValueAccuracy
+109:ROR:<=(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):143:Math.abs(yMax) <= functionValueAccuracy |==> Math.abs(yMax) < functionValueAccuracy
+110:ROR:<=(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):143:Math.abs(yMax) <= functionValueAccuracy |==> Math.abs(yMax) == functionValueAccuracy
+111:ROR:<=(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):143:Math.abs(yMax) <= functionValueAccuracy |==> Math.abs(yMax) > functionValueAccuracy
+112:ROR:<=(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):143:Math.abs(yMax) <= functionValueAccuracy |==> Math.abs(yMax) >= functionValueAccuracy
+113:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):143:Math.abs(yMax) <= functionValueAccuracy |==> false
+114:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):143:Math.abs(yMax) <= functionValueAccuracy |==> true
+115:LVR:0:POS:org.apache.commons.math.analysis.BrentSolver@solve(double,double):144:0 |==> 1
+116:LVR:0:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double):144:0 |==> -1
+117:STD:<CALL>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double):144:setResult(max, 0) |==> <NO-OP>
+118:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double):145:ret = max |==> <NO-OP>
+119:LVR:0:POS:org.apache.commons.math.analysis.BrentSolver@solve(double,double):153:0 |==> 1
+120:LVR:0:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double):153:0 |==> -1
+121:ROR:<(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):153:sign < 0 |==> sign != 0
+122:ROR:<(double,double):<=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):153:sign < 0 |==> sign <= 0
+123:ROR:<(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):153:sign < 0 |==> sign == 0
+124:ROR:<(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):153:sign < 0 |==> sign > 0
+125:ROR:<(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):153:sign < 0 |==> sign >= 0
+126:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):153:sign < 0 |==> false
+127:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):153:sign < 0 |==> true
+128:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double):155:ret = solve(min, yMin, max, yMax, min, yMin) |==> <NO-OP>
+129:LVR:0:POS:org.apache.commons.math.analysis.BrentSolver@solve(double,double):158:0.0 |==> 1.0
+130:LVR:0:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double):158:0.0 |==> -1.0
+131:ROR:==(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):158:yMin == 0.0 |==> yMin != 0.0
+132:ROR:==(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):158:yMin == 0.0 |==> yMin < 0.0
+133:ROR:==(double,double):<=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):158:yMin == 0.0 |==> yMin <= 0.0
+134:ROR:==(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):158:yMin == 0.0 |==> yMin > 0.0
+135:ROR:==(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):158:yMin == 0.0 |==> yMin >= 0.0
+136:ROR:==(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):158:yMin == 0.0 |==> false
+137:ROR:==(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double):158:yMin == 0.0 |==> true
+138:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double):159:ret = min |==> <NO-OP>
+139:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double):161:ret = max |==> <NO-OP>
+140:AOR:-(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):189:x1 - x0 |==> x1 % x0
+141:AOR:-(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):189:x1 - x0 |==> x1 * x0
+142:AOR:-(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):189:x1 - x0 |==> x1 + x0
+143:AOR:-(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):189:x1 - x0 |==> x1 / x0
+144:LVR:0:POS:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):192:0 |==> 1
+145:LVR:0:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):192:0 |==> -1
+146:ROR:<(int,int):!=(int,int):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):193:i < maximalIterationCount |==> i != maximalIterationCount
+147:ROR:<(int,int):<=(int,int):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):193:i < maximalIterationCount |==> i <= maximalIterationCount
+148:ROR:<(int,int):==(int,int):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):193:i < maximalIterationCount |==> i == maximalIterationCount
+149:ROR:<(int,int):>(int,int):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):193:i < maximalIterationCount |==> i > maximalIterationCount
+150:ROR:<(int,int):>=(int,int):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):193:i < maximalIterationCount |==> i >= maximalIterationCount
+151:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):193:i < maximalIterationCount |==> false
+152:ROR:<(int,int):TRUE(int,int):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):193:i < maximalIterationCount |==> true
+153:ROR:<(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):194:Math.abs(y2) < Math.abs(y1) |==> Math.abs(y2) != Math.abs(y1)
+154:ROR:<(double,double):<=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):194:Math.abs(y2) < Math.abs(y1) |==> Math.abs(y2) <= Math.abs(y1)
+155:ROR:<(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):194:Math.abs(y2) < Math.abs(y1) |==> Math.abs(y2) == Math.abs(y1)
+156:ROR:<(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):194:Math.abs(y2) < Math.abs(y1) |==> Math.abs(y2) > Math.abs(y1)
+157:ROR:<(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):194:Math.abs(y2) < Math.abs(y1) |==> Math.abs(y2) >= Math.abs(y1)
+158:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):194:Math.abs(y2) < Math.abs(y1) |==> false
+159:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):194:Math.abs(y2) < Math.abs(y1) |==> true
+160:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):196:x0 = x1 |==> <NO-OP>
+161:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):197:x1 = x2 |==> <NO-OP>
+162:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):198:x2 = x0 |==> <NO-OP>
+163:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):199:y0 = y1 |==> <NO-OP>
+164:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):200:y1 = y2 |==> <NO-OP>
+165:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):201:y2 = y0 |==> <NO-OP>
+166:ROR:<=(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):203:Math.abs(y1) <= functionValueAccuracy |==> Math.abs(y1) != functionValueAccuracy
+167:ROR:<=(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):203:Math.abs(y1) <= functionValueAccuracy |==> Math.abs(y1) < functionValueAccuracy
+168:ROR:<=(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):203:Math.abs(y1) <= functionValueAccuracy |==> Math.abs(y1) == functionValueAccuracy
+169:ROR:<=(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):203:Math.abs(y1) <= functionValueAccuracy |==> Math.abs(y1) > functionValueAccuracy
+170:ROR:<=(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):203:Math.abs(y1) <= functionValueAccuracy |==> Math.abs(y1) >= functionValueAccuracy
+171:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):203:Math.abs(y1) <= functionValueAccuracy |==> false
+172:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):203:Math.abs(y1) <= functionValueAccuracy |==> true
+173:STD:<CALL>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):207:setResult(x1, i) |==> <NO-OP>
+174:AOR:-(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):210:x2 - x1 |==> x2 % x1
+175:AOR:-(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):210:x2 - x1 |==> x2 * x1
+176:AOR:-(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):210:x2 - x1 |==> x2 + x1
+177:AOR:-(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):210:x2 - x1 |==> x2 / x1
+178:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):212:relativeAccuracy * Math.abs(x1) |==> relativeAccuracy % Math.abs(x1)
+179:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):212:relativeAccuracy * Math.abs(x1) |==> relativeAccuracy + Math.abs(x1)
+180:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):212:relativeAccuracy * Math.abs(x1) |==> relativeAccuracy - Math.abs(x1)
+181:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):212:relativeAccuracy * Math.abs(x1) |==> relativeAccuracy / Math.abs(x1)
+182:ROR:<=(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):213:Math.abs(dx) <= tolerance |==> Math.abs(dx) != tolerance
+183:ROR:<=(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):213:Math.abs(dx) <= tolerance |==> Math.abs(dx) < tolerance
+184:ROR:<=(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):213:Math.abs(dx) <= tolerance |==> Math.abs(dx) == tolerance
+185:ROR:<=(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):213:Math.abs(dx) <= tolerance |==> Math.abs(dx) > tolerance
+186:ROR:<=(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):213:Math.abs(dx) <= tolerance |==> Math.abs(dx) >= tolerance
+187:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):213:Math.abs(dx) <= tolerance |==> false
+188:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):213:Math.abs(dx) <= tolerance |==> true
+189:STD:<CALL>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):214:setResult(x1, i) |==> <NO-OP>
+190:ROR:<(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):217:Math.abs(oldDelta) < tolerance |==> Math.abs(oldDelta) != tolerance
+191:ROR:<(double,double):<=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):217:Math.abs(oldDelta) < tolerance |==> Math.abs(oldDelta) <= tolerance
+192:ROR:<(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):217:Math.abs(oldDelta) < tolerance |==> Math.abs(oldDelta) == tolerance
+193:ROR:<(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):217:Math.abs(oldDelta) < tolerance |==> Math.abs(oldDelta) > tolerance
+194:ROR:<(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):217:Math.abs(oldDelta) < tolerance |==> Math.abs(oldDelta) >= tolerance
+195:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):217:Math.abs(oldDelta) < tolerance |==> false
+196:ROR:<(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):217:Math.abs(oldDelta) < tolerance |==> true
+197:ROR:<=(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):218:Math.abs(y0) <= Math.abs(y1) |==> Math.abs(y0) != Math.abs(y1)
+198:ROR:<=(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):218:Math.abs(y0) <= Math.abs(y1) |==> Math.abs(y0) < Math.abs(y1)
+199:ROR:<=(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):218:Math.abs(y0) <= Math.abs(y1) |==> Math.abs(y0) == Math.abs(y1)
+200:ROR:<=(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):218:Math.abs(y0) <= Math.abs(y1) |==> Math.abs(y0) > Math.abs(y1)
+201:ROR:<=(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):218:Math.abs(y0) <= Math.abs(y1) |==> Math.abs(y0) >= Math.abs(y1)
+202:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):218:Math.abs(y0) <= Math.abs(y1) |==> false
+203:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):218:Math.abs(y0) <= Math.abs(y1) |==> true
+204:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):217:(Math.abs(oldDelta) < tolerance) || (Math.abs(y0) <= Math.abs(y1)) |==> (Math.abs(oldDelta) < tolerance) != (Math.abs(y0) <= Math.abs(y1))
+205:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):217:(Math.abs(oldDelta) < tolerance) || (Math.abs(y0) <= Math.abs(y1)) |==> (Math.abs(oldDelta) < tolerance) && (Math.abs(y0) <= Math.abs(y1))
+206:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):217:(Math.abs(oldDelta) < tolerance) || (Math.abs(y0) <= Math.abs(y1)) |==> (Math.abs(oldDelta) < tolerance) == (Math.abs(y0) <= Math.abs(y1))
+207:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):217:(Math.abs(oldDelta) < tolerance) || (Math.abs(y0) <= Math.abs(y1)) |==> false
+208:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):217:(Math.abs(oldDelta) < tolerance) || (Math.abs(y0) <= Math.abs(y1)) |==> (Math.abs(oldDelta) < tolerance)
+209:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):218:(Math.abs(oldDelta) < tolerance) || (Math.abs(y0) <= Math.abs(y1)) |==> (Math.abs(y0) <= Math.abs(y1))
+210:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):217:(Math.abs(oldDelta) < tolerance) || (Math.abs(y0) <= Math.abs(y1)) |==> true
+211:LVR:POS:0:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):220:0.5 |==> 0.0
+212:LVR:POS:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):220:0.5 |==> -0.5
+213:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):220:0.5 * dx |==> 0.5 % dx
+214:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):220:0.5 * dx |==> 0.5 + dx
+215:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):220:0.5 * dx |==> 0.5 - dx
+216:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):220:0.5 * dx |==> 0.5 / dx
+217:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):220:delta = 0.5 * dx |==> <NO-OP>
+218:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):221:oldDelta = delta |==> <NO-OP>
+219:AOR:/(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):223:y1 / y0 |==> y1 % y0
+220:AOR:/(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):223:y1 / y0 |==> y1 * y0
+221:AOR:/(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):223:y1 / y0 |==> y1 + y0
+222:AOR:/(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):223:y1 / y0 |==> y1 - y0
+223:ROR:==(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):229:x0 == x2 |==> x0 != x2
+224:ROR:==(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):229:x0 == x2 |==> x0 < x2
+225:ROR:==(double,double):<=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):229:x0 == x2 |==> x0 <= x2
+226:ROR:==(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):229:x0 == x2 |==> x0 > x2
+227:ROR:==(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):229:x0 == x2 |==> x0 >= x2
+228:ROR:==(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):229:x0 == x2 |==> false
+229:ROR:==(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):229:x0 == x2 |==> true
+230:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):231:dx * r3 |==> dx % r3
+231:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):231:dx * r3 |==> dx + r3
+232:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):231:dx * r3 |==> dx - r3
+233:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):231:dx * r3 |==> dx / r3
+234:LVR:POS:0:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):232:1.0 |==> 0.0
+235:LVR:POS:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):232:1.0 |==> -1.0
+236:AOR:-(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):232:1.0 - r3 |==> 1.0 % r3
+237:AOR:-(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):232:1.0 - r3 |==> 1.0 * r3
+238:AOR:-(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):232:1.0 - r3 |==> 1.0 + r3
+239:AOR:-(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):232:1.0 - r3 |==> 1.0 / r3
+240:AOR:/(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):235:y0 / y2 |==> y0 % y2
+241:AOR:/(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):235:y0 / y2 |==> y0 * y2
+242:AOR:/(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):235:y0 / y2 |==> y0 + y2
+243:AOR:/(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):235:y0 / y2 |==> y0 - y2
+244:AOR:/(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):236:y1 / y2 |==> y1 % y2
+245:AOR:/(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):236:y1 / y2 |==> y1 * y2
+246:AOR:/(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):236:y1 / y2 |==> y1 + y2
+247:AOR:/(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):236:y1 / y2 |==> y1 - y2
+248:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:dx * r1 |==> dx % r1
+249:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:dx * r1 |==> dx + r1
+250:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:dx * r1 |==> dx - r1
+251:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:dx * r1 |==> dx / r1
+252:AOR:-(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:r1 - r2 |==> r1 % r2
+253:AOR:-(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:r1 - r2 |==> r1 * r2
+254:AOR:-(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:r1 - r2 |==> r1 + r2
+255:AOR:-(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:r1 - r2 |==> r1 / r2
+256:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:dx * r1 * (r1 - r2) |==> dx * r1 % (r1 - r2)
+257:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:dx * r1 * (r1 - r2) |==> dx * r1 + (r1 - r2)
+258:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:dx * r1 * (r1 - r2) |==> dx * r1 - (r1 - r2)
+259:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:dx * r1 * (r1 - r2) |==> dx * r1 / (r1 - r2)
+260:AOR:-(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:x1 - x0 |==> x1 % x0
+261:AOR:-(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:x1 - x0 |==> x1 * x0
+262:AOR:-(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:x1 - x0 |==> x1 + x0
+263:AOR:-(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:x1 - x0 |==> x1 / x0
+264:LVR:POS:0:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:1.0 |==> 0.0
+265:LVR:POS:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:1.0 |==> -1.0
+266:AOR:-(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:r2 - 1.0 |==> r2 % 1.0
+267:AOR:-(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:r2 - 1.0 |==> r2 * 1.0
+268:AOR:-(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:r2 - 1.0 |==> r2 + 1.0
+269:AOR:-(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:r2 - 1.0 |==> r2 / 1.0
+270:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:(x1 - x0) * (r2 - 1.0) |==> (x1 - x0) % (r2 - 1.0)
+271:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:(x1 - x0) * (r2 - 1.0) |==> (x1 - x0) + (r2 - 1.0)
+272:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:(x1 - x0) * (r2 - 1.0) |==> (x1 - x0) - (r2 - 1.0)
+273:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:(x1 - x0) * (r2 - 1.0) |==> (x1 - x0) / (r2 - 1.0)
+274:AOR:-(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:dx * r1 * (r1 - r2) - (x1 - x0) * (r2 - 1.0) |==> dx * r1 * (r1 - r2) % ((x1 - x0) * (r2 - 1.0))
+275:AOR:-(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:dx * r1 * (r1 - r2) - (x1 - x0) * (r2 - 1.0) |==> dx * r1 * (r1 - r2) * ((x1 - x0) * (r2 - 1.0))
+276:AOR:-(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:dx * r1 * (r1 - r2) - (x1 - x0) * (r2 - 1.0) |==> dx * r1 * (r1 - r2) + (x1 - x0) * (r2 - 1.0)
+277:AOR:-(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:dx * r1 * (r1 - r2) - (x1 - x0) * (r2 - 1.0) |==> dx * r1 * (r1 - r2) / ((x1 - x0) * (r2 - 1.0))
+278:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:r3 * (dx * r1 * (r1 - r2) - (x1 - x0) * (r2 - 1.0)) |==> r3 % (dx * r1 * (r1 - r2) - (x1 - x0) * (r2 - 1.0))
+279:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:r3 * (dx * r1 * (r1 - r2) - (x1 - x0) * (r2 - 1.0)) |==> r3 + (dx * r1 * (r1 - r2) - (x1 - x0) * (r2 - 1.0))
+280:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:r3 * (dx * r1 * (r1 - r2) - (x1 - x0) * (r2 - 1.0)) |==> r3 - (dx * r1 * (r1 - r2) - (x1 - x0) * (r2 - 1.0))
+281:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):237:r3 * (dx * r1 * (r1 - r2) - (x1 - x0) * (r2 - 1.0)) |==> r3 / (dx * r1 * (r1 - r2) - (x1 - x0) * (r2 - 1.0))
+282:LVR:POS:0:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:1.0 |==> 0.0
+283:LVR:POS:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:1.0 |==> -1.0
+284:AOR:-(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:r1 - 1.0 |==> r1 % 1.0
+285:AOR:-(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:r1 - 1.0 |==> r1 * 1.0
+286:AOR:-(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:r1 - 1.0 |==> r1 + 1.0
+287:AOR:-(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:r1 - 1.0 |==> r1 / 1.0
+288:LVR:POS:0:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:1.0 |==> 0.0
+289:LVR:POS:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:1.0 |==> -1.0
+290:AOR:-(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:r2 - 1.0 |==> r2 % 1.0
+291:AOR:-(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:r2 - 1.0 |==> r2 * 1.0
+292:AOR:-(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:r2 - 1.0 |==> r2 + 1.0
+293:AOR:-(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:r2 - 1.0 |==> r2 / 1.0
+294:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:(r1 - 1.0) * (r2 - 1.0) |==> (r1 - 1.0) % (r2 - 1.0)
+295:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:(r1 - 1.0) * (r2 - 1.0) |==> (r1 - 1.0) + (r2 - 1.0)
+296:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:(r1 - 1.0) * (r2 - 1.0) |==> (r1 - 1.0) - (r2 - 1.0)
+297:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:(r1 - 1.0) * (r2 - 1.0) |==> (r1 - 1.0) / (r2 - 1.0)
+298:LVR:POS:0:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:1.0 |==> 0.0
+299:LVR:POS:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:1.0 |==> -1.0
+300:AOR:-(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:r3 - 1.0 |==> r3 % 1.0
+301:AOR:-(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:r3 - 1.0 |==> r3 * 1.0
+302:AOR:-(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:r3 - 1.0 |==> r3 + 1.0
+303:AOR:-(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:r3 - 1.0 |==> r3 / 1.0
+304:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:(r1 - 1.0) * (r2 - 1.0) * (r3 - 1.0) |==> (r1 - 1.0) * (r2 - 1.0) % (r3 - 1.0)
+305:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:(r1 - 1.0) * (r2 - 1.0) * (r3 - 1.0) |==> (r1 - 1.0) * (r2 - 1.0) + (r3 - 1.0)
+306:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:(r1 - 1.0) * (r2 - 1.0) * (r3 - 1.0) |==> (r1 - 1.0) * (r2 - 1.0) - (r3 - 1.0)
+307:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):238:(r1 - 1.0) * (r2 - 1.0) * (r3 - 1.0) |==> (r1 - 1.0) * (r2 - 1.0) / (r3 - 1.0)
+308:LVR:0:POS:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):240:0.0 |==> 1.0
+309:LVR:0:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):240:0.0 |==> -1.0
+310:ROR:>(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):240:p > 0.0 |==> p != 0.0
+311:ROR:>(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):240:p > 0.0 |==> p < 0.0
+312:ROR:>(double,double):<=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):240:p > 0.0 |==> p <= 0.0
+313:ROR:>(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):240:p > 0.0 |==> p == 0.0
+314:ROR:>(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):240:p > 0.0 |==> p >= 0.0
+315:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):240:p > 0.0 |==> false
+316:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):240:p > 0.0 |==> true
+317:ORU:-(double):+(double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):241:-p1 |==> +p1
+318:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):241:p1 = -p1 |==> <NO-OP>
+319:ORU:-(double):+(double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):243:-p |==> +p
+320:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):243:p = -p |==> <NO-OP>
+321:LVR:POS:0:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 |==> 0.0
+322:LVR:POS:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 |==> -2.0
+323:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 * p |==> 2.0 % p
+324:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 * p |==> 2.0 + p
+325:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 * p |==> 2.0 - p
+326:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 * p |==> 2.0 / p
+327:LVR:POS:0:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:1.5 |==> 0.0
+328:LVR:POS:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:1.5 |==> -1.5
+329:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:1.5 * dx |==> 1.5 % dx
+330:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:1.5 * dx |==> 1.5 + dx
+331:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:1.5 * dx |==> 1.5 - dx
+332:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:1.5 * dx |==> 1.5 / dx
+333:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:1.5 * dx * p1 |==> 1.5 * dx % p1
+334:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:1.5 * dx * p1 |==> 1.5 * dx + p1
+335:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:1.5 * dx * p1 |==> 1.5 * dx - p1
+336:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:1.5 * dx * p1 |==> 1.5 * dx / p1
+337:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:tolerance * p1 |==> tolerance % p1
+338:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:tolerance * p1 |==> tolerance + p1
+339:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:tolerance * p1 |==> tolerance - p1
+340:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:tolerance * p1 |==> tolerance / p1
+341:AOR:-(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:1.5 * dx * p1 - Math.abs(tolerance * p1) |==> 1.5 * dx * p1 % Math.abs(tolerance * p1)
+342:AOR:-(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:1.5 * dx * p1 - Math.abs(tolerance * p1) |==> 1.5 * dx * p1 * Math.abs(tolerance * p1)
+343:AOR:-(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:1.5 * dx * p1 - Math.abs(tolerance * p1) |==> 1.5 * dx * p1 + Math.abs(tolerance * p1)
+344:AOR:-(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:1.5 * dx * p1 - Math.abs(tolerance * p1) |==> 1.5 * dx * p1 / Math.abs(tolerance * p1)
+345:ROR:>=(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) |==> 2.0 * p != 1.5 * dx * p1 - Math.abs(tolerance * p1)
+346:ROR:>=(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) |==> 2.0 * p < 1.5 * dx * p1 - Math.abs(tolerance * p1)
+347:ROR:>=(double,double):<=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) |==> 2.0 * p <= 1.5 * dx * p1 - Math.abs(tolerance * p1)
+348:ROR:>=(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) |==> 2.0 * p == 1.5 * dx * p1 - Math.abs(tolerance * p1)
+349:ROR:>=(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) |==> 2.0 * p > 1.5 * dx * p1 - Math.abs(tolerance * p1)
+350:ROR:>=(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) |==> false
+351:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) |==> true
+352:LVR:POS:0:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:0.5 |==> 0.0
+353:LVR:POS:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:0.5 |==> -0.5
+354:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:0.5 * oldDelta |==> 0.5 % oldDelta
+355:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:0.5 * oldDelta |==> 0.5 + oldDelta
+356:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:0.5 * oldDelta |==> 0.5 - oldDelta
+357:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:0.5 * oldDelta |==> 0.5 / oldDelta
+358:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:0.5 * oldDelta * p1 |==> 0.5 * oldDelta % p1
+359:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:0.5 * oldDelta * p1 |==> 0.5 * oldDelta + p1
+360:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:0.5 * oldDelta * p1 |==> 0.5 * oldDelta - p1
+361:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:0.5 * oldDelta * p1 |==> 0.5 * oldDelta / p1
+362:ROR:>=(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:p >= Math.abs(0.5 * oldDelta * p1) |==> p != Math.abs(0.5 * oldDelta * p1)
+363:ROR:>=(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:p >= Math.abs(0.5 * oldDelta * p1) |==> p < Math.abs(0.5 * oldDelta * p1)
+364:ROR:>=(double,double):<=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:p >= Math.abs(0.5 * oldDelta * p1) |==> p <= Math.abs(0.5 * oldDelta * p1)
+365:ROR:>=(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:p >= Math.abs(0.5 * oldDelta * p1) |==> p == Math.abs(0.5 * oldDelta * p1)
+366:ROR:>=(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:p >= Math.abs(0.5 * oldDelta * p1) |==> p > Math.abs(0.5 * oldDelta * p1)
+367:ROR:>=(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:p >= Math.abs(0.5 * oldDelta * p1) |==> false
+368:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:p >= Math.abs(0.5 * oldDelta * p1) |==> true
+369:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) || p >= Math.abs(0.5 * oldDelta * p1) |==> 2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) != p >= Math.abs(0.5 * oldDelta * p1)
+370:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) || p >= Math.abs(0.5 * oldDelta * p1) |==> 2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) && p >= Math.abs(0.5 * oldDelta * p1)
+371:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) || p >= Math.abs(0.5 * oldDelta * p1) |==> 2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) == p >= Math.abs(0.5 * oldDelta * p1)
+372:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) || p >= Math.abs(0.5 * oldDelta * p1) |==> false
+373:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) || p >= Math.abs(0.5 * oldDelta * p1) |==> 2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1)
+374:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):246:2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) || p >= Math.abs(0.5 * oldDelta * p1) |==> p >= Math.abs(0.5 * oldDelta * p1)
+375:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):245:2.0 * p >= 1.5 * dx * p1 - Math.abs(tolerance * p1) || p >= Math.abs(0.5 * oldDelta * p1) |==> true
+376:LVR:POS:0:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):250:0.5 |==> 0.0
+377:LVR:POS:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):250:0.5 |==> -0.5
+378:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):250:0.5 * dx |==> 0.5 % dx
+379:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):250:0.5 * dx |==> 0.5 + dx
+380:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):250:0.5 * dx |==> 0.5 - dx
+381:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):250:0.5 * dx |==> 0.5 / dx
+382:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):250:delta = 0.5 * dx |==> <NO-OP>
+383:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):251:oldDelta = delta |==> <NO-OP>
+384:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):253:oldDelta = delta |==> <NO-OP>
+385:AOR:/(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):254:p / p1 |==> p % p1
+386:AOR:/(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):254:p / p1 |==> p * p1
+387:AOR:/(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):254:p / p1 |==> p + p1
+388:AOR:/(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):254:p / p1 |==> p - p1
+389:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):254:delta = p / p1 |==> <NO-OP>
+390:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):258:x0 = x1 |==> <NO-OP>
+391:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):259:y0 = y1 |==> <NO-OP>
+392:ROR:>(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):261:Math.abs(delta) > tolerance |==> Math.abs(delta) != tolerance
+393:ROR:>(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):261:Math.abs(delta) > tolerance |==> Math.abs(delta) < tolerance
+394:ROR:>(double,double):<=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):261:Math.abs(delta) > tolerance |==> Math.abs(delta) <= tolerance
+395:ROR:>(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):261:Math.abs(delta) > tolerance |==> Math.abs(delta) == tolerance
+396:ROR:>(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):261:Math.abs(delta) > tolerance |==> Math.abs(delta) >= tolerance
+397:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):261:Math.abs(delta) > tolerance |==> false
+398:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):261:Math.abs(delta) > tolerance |==> true
+399:AOR:+(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):262:x1 + delta |==> x1 % delta
+400:AOR:+(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):262:x1 + delta |==> x1 * delta
+401:AOR:+(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):262:x1 + delta |==> x1 - delta
+402:AOR:+(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):262:x1 + delta |==> x1 / delta
+403:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):262:x1 = x1 + delta |==> <NO-OP>
+404:LVR:0:POS:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):263:0.0 |==> 1.0
+405:LVR:0:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):263:0.0 |==> -1.0
+406:ROR:>(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):263:dx > 0.0 |==> dx != 0.0
+407:ROR:>(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):263:dx > 0.0 |==> dx < 0.0
+408:ROR:>(double,double):<=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):263:dx > 0.0 |==> dx <= 0.0
+409:ROR:>(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):263:dx > 0.0 |==> dx == 0.0
+410:ROR:>(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):263:dx > 0.0 |==> dx >= 0.0
+411:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):263:dx > 0.0 |==> false
+412:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):263:dx > 0.0 |==> true
+413:LVR:POS:0:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):264:0.5 |==> 0.0
+414:LVR:POS:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):264:0.5 |==> -0.5
+415:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):264:0.5 * tolerance |==> 0.5 % tolerance
+416:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):264:0.5 * tolerance |==> 0.5 + tolerance
+417:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):264:0.5 * tolerance |==> 0.5 - tolerance
+418:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):264:0.5 * tolerance |==> 0.5 / tolerance
+419:AOR:+(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):264:x1 + 0.5 * tolerance |==> x1 % (0.5 * tolerance)
+420:AOR:+(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):264:x1 + 0.5 * tolerance |==> x1 * (0.5 * tolerance)
+421:AOR:+(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):264:x1 + 0.5 * tolerance |==> x1 - 0.5 * tolerance
+422:AOR:+(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):264:x1 + 0.5 * tolerance |==> x1 / (0.5 * tolerance)
+423:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):264:x1 = x1 + 0.5 * tolerance |==> <NO-OP>
+424:LVR:0:POS:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):265:0.0 |==> 1.0
+425:LVR:0:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):265:0.0 |==> -1.0
+426:ROR:<=(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):265:dx <= 0.0 |==> dx != 0.0
+427:ROR:<=(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):265:dx <= 0.0 |==> dx < 0.0
+428:ROR:<=(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):265:dx <= 0.0 |==> dx == 0.0
+429:ROR:<=(double,double):>(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):265:dx <= 0.0 |==> dx > 0.0
+430:ROR:<=(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):265:dx <= 0.0 |==> dx >= 0.0
+431:ROR:<=(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):265:dx <= 0.0 |==> false
+432:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):265:dx <= 0.0 |==> true
+433:LVR:POS:0:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):266:0.5 |==> 0.0
+434:LVR:POS:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):266:0.5 |==> -0.5
+435:AOR:*(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):266:0.5 * tolerance |==> 0.5 % tolerance
+436:AOR:*(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):266:0.5 * tolerance |==> 0.5 + tolerance
+437:AOR:*(double,double):-(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):266:0.5 * tolerance |==> 0.5 - tolerance
+438:AOR:*(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):266:0.5 * tolerance |==> 0.5 / tolerance
+439:AOR:-(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):266:x1 - 0.5 * tolerance |==> x1 % (0.5 * tolerance)
+440:AOR:-(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):266:x1 - 0.5 * tolerance |==> x1 * (0.5 * tolerance)
+441:AOR:-(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):266:x1 - 0.5 * tolerance |==> x1 + 0.5 * tolerance
+442:AOR:-(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):266:x1 - 0.5 * tolerance |==> x1 / (0.5 * tolerance)
+443:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):266:x1 = x1 - 0.5 * tolerance |==> <NO-OP>
+444:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):268:y1 = f.value(x1) |==> <NO-OP>
+445:LVR:0:POS:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:0 |==> 1
+446:LVR:0:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:0 |==> -1
+447:ROR:>(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:y1 > 0 |==> y1 != 0
+448:ROR:>(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:y1 > 0 |==> y1 < 0
+449:ROR:>(double,double):<=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:y1 > 0 |==> y1 <= 0
+450:ROR:>(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:y1 > 0 |==> y1 == 0
+451:ROR:>(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:y1 > 0 |==> y1 >= 0
+452:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:y1 > 0 |==> false
+453:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:y1 > 0 |==> true
+454:LVR:0:POS:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:0 |==> 1
+455:LVR:0:NEG:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:0 |==> -1
+456:ROR:>(double,double):!=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:y2 > 0 |==> y2 != 0
+457:ROR:>(double,double):<(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:y2 > 0 |==> y2 < 0
+458:ROR:>(double,double):<=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:y2 > 0 |==> y2 <= 0
+459:ROR:>(double,double):==(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:y2 > 0 |==> y2 == 0
+460:ROR:>(double,double):>=(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:y2 > 0 |==> y2 >= 0
+461:ROR:>(double,double):FALSE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:y2 > 0 |==> false
+462:ROR:>(double,double):TRUE(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:y2 > 0 |==> true
+463:ROR:==(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:(y1 > 0) == (y2 > 0) |==> (y1 > 0) != (y2 > 0)
+464:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:(y1 > 0) == (y2 > 0) |==> false
+465:ROR:==(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:(y1 > 0) == (y2 > 0) |==> (y1 > 0)
+466:ROR:==(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:(y1 > 0) == (y2 > 0) |==> (y2 > 0)
+467:ROR:==(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):269:(y1 > 0) == (y2 > 0) |==> true
+468:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):270:x2 = x0 |==> <NO-OP>
+469:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):271:y2 = y0 |==> <NO-OP>
+470:AOR:-(double,double):%(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):272:x1 - x0 |==> x1 % x0
+471:AOR:-(double,double):*(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):272:x1 - x0 |==> x1 * x0
+472:AOR:-(double,double):+(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):272:x1 - x0 |==> x1 + x0
+473:AOR:-(double,double):/(double,double):org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):272:x1 - x0 |==> x1 / x0
+474:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):272:delta = x1 - x0 |==> <NO-OP>
+475:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):273:oldDelta = delta |==> <NO-OP>
+476:STD:<INC>:<NO-OP>:org.apache.commons.math.analysis.BrentSolver@solve(double,double,double,double,double,double):275:i++ |==> <NO-OP>

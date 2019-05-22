@@ -1,0 +1,97 @@
+
+init:
+     [echo] -------- Commons MATH 3.0-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] Compiling 368 source files to /tmp/run_mutation.pl_105900_1501172742/32f/target/test-classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 17 files to /tmp/run_mutation.pl_105900_1501172742/32f/target/test-classes
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 10 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 4.91 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 400
+    [junit] MAJOR: Mutants covered:   375 (93.75%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 10 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/10 - org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest9 (11ms / 70):
+    [junit] MAJOR: 17931 (39 / 70 / 70) -> AVG-RTPM: 256ms
+    [junit] MAJOR: Mutants killed / live: 39 (25-14-0) / 336
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/10 - org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest6 (12ms / 245):
+    [junit] MAJOR: 119944 (141 / 245 / 245) -> AVG-RTPM: 416ms
+    [junit] MAJOR: Mutants killed / live: 180 (36-182-1) / 195
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/10 - org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest3 (13ms / 278):
+    [junit] MAJOR: 148674 (124 / 278 / 278) -> AVG-RTPM: 103ms
+    [junit] MAJOR: Mutants killed / live: 304 (36-460-1) / 71
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/10 - org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest7 (13ms / 32):
+    [junit] MAJOR: 152032 (16 / 32 / 32) -> AVG-RTPM: 104ms
+    [junit] MAJOR: Mutants killed / live: 320 (36-492-1) / 55
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/10 - org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest5 (16ms / 38):
+    [junit] MAJOR: 155876 (8 / 38 / 38) -> AVG-RTPM: 101ms
+    [junit] MAJOR: Mutants killed / live: 328 (36-530-1) / 47
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/10 - org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest8 (16ms / 109):
+    [junit] MAJOR: 167071 (6 / 109 / 109) -> AVG-RTPM: 102ms
+    [junit] MAJOR: Mutants killed / live: 334 (36-639-1) / 41
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/10 - org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest4 (17ms / 157):
+    [junit] MAJOR: 183118 (0 / 157 / 157) -> AVG-RTPM: 102ms
+    [junit] MAJOR: Mutants killed / live: 334 (36-796-1) / 41
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/10 - org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest0 (21ms / 19):
+    [junit] MAJOR: 185036 (0 / 19 / 19) -> AVG-RTPM: 100ms
+    [junit] MAJOR: Mutants killed / live: 334 (36-815-1) / 41
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/10 - org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest2 (26ms / 0):
+    [junit] MAJOR: 185036 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 334 (36-815-1) / 41
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/10 - org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest1 (46ms / 216):
+    [junit] MAJOR: 207247 (31 / 216 / 216) -> AVG-RTPM: 102ms
+    [junit] MAJOR: Mutants killed / live: 365 (36-1031-1) / 10
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  207.2 seconds
+    [junit] MAJOR: Mutation score: 91.25% (97.33%)
+    [junit] MAJOR: Mutants killed / live: 365 (36-1031-1) / 10
+    [junit] MAJOR: Mutant executions: 1164
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_105900_1501172742/32f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 3 minutes 43 seconds

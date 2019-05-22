@@ -1,0 +1,88 @@
+
+svnversion:
+
+compile:
+    [javac] /tmp/run_mutation.pl_25510_1483713583/83f/build.xml:180: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] /tmp/run_mutation.pl_25510_1483713583/83f/build.xml:186: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+[propertyfile] Updating property file: /tmp/run_mutation.pl_25510_1483713583/83f/build/classes/com/google/javascript/jscomp/parsing/ParserConfig.properties
+
+compile-tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_25510_1483713583/83f/build/test
+    [javac] /tmp/run_mutation.pl_25510_1483713583/83f/build.xml:250: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 358 source files to /tmp/run_mutation.pl_25510_1483713583/83f/build/test
+    [javac] /tmp/run_mutation.pl_25510_1483713583/83f/build.xml:255: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 190 source files to /tmp/run_mutation.pl_25510_1483713583/83f/build/test
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: com.google.javascript.jscomp.CommandLineRunner_ESTest0[test0] failed!
+    [junit] MAJOR:  -> java.lang.SecurityException
+    [junit] MAJOR:  -> "Security manager blocks ("java.lang.RuntimePermission" "exitVM.-1")
+    [junit] java.lang.Thread.getStackTrace(Thread.java:1589)
+    [junit] org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:440)
+    [junit] java.lang.SecurityManager.checkExit(SecurityManager.java:761)
+    [junit] java.lang.Runtime.exit(Runtime.java:107)
+    [junit] java.lang.System.exit(System.java:962)
+    [junit] com.google.javascript.jscomp.CommandLineRunner.main(CommandLineRunner.java:624)
+    [junit] com.google.javascript.jscomp.CommandLineRunner_ESTest0.test0(CommandLineRunner_ESTest0.java:37)
+    [junit] sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+    [junit] sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] java.lang.reflect.Method.invoke(Method.java:606)
+    [junit] org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+    [junit] org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+    [junit] org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+    [junit] org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+    [junit] org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+    [junit] "
+    [junit] MAJOR: Exclude 1 failing test class:
+    [junit] MAJOR:  - com.google.javascript.jscomp.CommandLineRunner_ESTest0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 3 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 8.60 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 109
+    [junit] MAJOR: Mutants covered:   51 (46.79%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 3 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/3 - com.google.javascript.jscomp.CommandLineRunner_ESTest4 (49ms / 44):
+    [junit] MAJOR: 51953 (4 / 44 / 44) -> AVG-RTPM: 1180ms
+    [junit] MAJOR: Mutants killed / live: 4 (3-1-0) / 47
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/3 - com.google.javascript.jscomp.CommandLineRunner_ESTest1 (98ms / 37):
+    [junit] MAJOR: 128545 (5 / 37 / 37) -> AVG-RTPM: 2070ms
+    [junit] MAJOR: Mutants killed / live: 9 (8-2-0) / 42
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/3 - com.google.javascript.jscomp.CommandLineRunner_ESTest3 (127ms / 43):
+    [junit] MAJOR: 274966 (0 / 43 / 43) -> AVG-RTPM: 3405ms
+    [junit] MAJOR: Mutants killed / live: 9 (8-3-0) / 42
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  275.0 seconds
+    [junit] MAJOR: Mutation score: 8.26% (17.65%)
+    [junit] MAJOR: Mutants killed / live: 9 (8-3-0) / 42
+    [junit] MAJOR: Mutant executions: 124
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_25510_1483713583/83f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 4 minutes 54 seconds

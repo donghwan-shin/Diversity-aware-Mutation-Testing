@@ -1,0 +1,427 @@
+1:LVR:FALSE:TRUE:org.joda.time.chrono.BasicMonthOfYearDateTimeField@isLenient():59:false |==> true
+2:LVR:0:POS:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):92:0 |==> 1
+3:LVR:0:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):92:0 |==> -1
+4:ROR:==(int,int):!=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):92:months == 0 |==> months != 0
+5:ROR:==(int,int):<(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):92:months == 0 |==> months < 0
+6:ROR:==(int,int):<=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):92:months == 0 |==> months <= 0
+7:ROR:==(int,int):>(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):92:months == 0 |==> months > 0
+8:ROR:==(int,int):>=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):92:months == 0 |==> months >= 0
+9:ROR:==(int,int):FALSE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):92:months == 0 |==> false
+10:ROR:==(int,int):TRUE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):92:months == 0 |==> true
+11:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):112:1 |==> 0
+12:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):112:1 |==> -1
+13:AOR:-(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):112:thisMonth - 1 |==> thisMonth % 1
+14:AOR:-(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):112:thisMonth - 1 |==> thisMonth * 1
+15:AOR:-(int,int):+(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):112:thisMonth - 1 |==> thisMonth + 1
+16:AOR:-(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):112:thisMonth - 1 |==> thisMonth / 1
+17:AOR:+(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):112:thisMonth - 1 + months |==> (thisMonth - 1) % months
+18:AOR:+(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):112:thisMonth - 1 + months |==> (thisMonth - 1) * months
+19:AOR:+(int,int):-(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):112:thisMonth - 1 + months |==> thisMonth - 1 - months
+20:AOR:+(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):112:thisMonth - 1 + months |==> (thisMonth - 1) / months
+21:LVR:0:POS:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):113:0 |==> 1
+22:LVR:0:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):113:0 |==> -1
+23:ROR:>=(int,int):!=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):113:monthToUse >= 0 |==> monthToUse != 0
+24:ROR:>=(int,int):<(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):113:monthToUse >= 0 |==> monthToUse < 0
+25:ROR:>=(int,int):<=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):113:monthToUse >= 0 |==> monthToUse <= 0
+26:ROR:>=(int,int):==(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):113:monthToUse >= 0 |==> monthToUse == 0
+27:ROR:>=(int,int):>(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):113:monthToUse >= 0 |==> monthToUse > 0
+28:ROR:>=(int,int):FALSE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):113:monthToUse >= 0 |==> false
+29:ROR:>=(int,int):TRUE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):113:monthToUse >= 0 |==> true
+30:AOR:/(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):114:monthToUse / iMax |==> monthToUse % iMax
+31:AOR:/(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):114:monthToUse / iMax |==> monthToUse * iMax
+32:AOR:/(int,int):+(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):114:monthToUse / iMax |==> monthToUse + iMax
+33:AOR:/(int,int):-(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):114:monthToUse / iMax |==> monthToUse - iMax
+34:AOR:+(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):114:thisYear + (monthToUse / iMax) |==> thisYear % (monthToUse / iMax)
+35:AOR:+(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):114:thisYear + (monthToUse / iMax) |==> thisYear * (monthToUse / iMax)
+36:AOR:+(int,int):-(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):114:thisYear + (monthToUse / iMax) |==> thisYear - (monthToUse / iMax)
+37:AOR:+(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):114:thisYear + (monthToUse / iMax) |==> thisYear / (monthToUse / iMax)
+38:AOR:%(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):115:monthToUse % iMax |==> monthToUse * iMax
+39:AOR:%(int,int):+(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):115:monthToUse % iMax |==> monthToUse + iMax
+40:AOR:%(int,int):-(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):115:monthToUse % iMax |==> monthToUse - iMax
+41:AOR:%(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):115:monthToUse % iMax |==> monthToUse / iMax
+42:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):115:1 |==> 0
+43:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):115:1 |==> -1
+44:AOR:+(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):115:(monthToUse % iMax) + 1 |==> (monthToUse % iMax) % 1
+45:AOR:+(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):115:(monthToUse % iMax) + 1 |==> (monthToUse % iMax) * 1
+46:AOR:+(int,int):-(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):115:(monthToUse % iMax) + 1 |==> (monthToUse % iMax) - 1
+47:AOR:+(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):115:(monthToUse % iMax) + 1 |==> (monthToUse % iMax) / 1
+48:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):115:monthToUse = (monthToUse % iMax) + 1 |==> <NO-OP>
+49:AOR:/(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):117:monthToUse / iMax |==> monthToUse % iMax
+50:AOR:/(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):117:monthToUse / iMax |==> monthToUse * iMax
+51:AOR:/(int,int):+(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):117:monthToUse / iMax |==> monthToUse + iMax
+52:AOR:/(int,int):-(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):117:monthToUse / iMax |==> monthToUse - iMax
+53:AOR:+(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):117:thisYear + (monthToUse / iMax) |==> thisYear % (monthToUse / iMax)
+54:AOR:+(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):117:thisYear + (monthToUse / iMax) |==> thisYear * (monthToUse / iMax)
+55:AOR:+(int,int):-(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):117:thisYear + (monthToUse / iMax) |==> thisYear - (monthToUse / iMax)
+56:AOR:+(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):117:thisYear + (monthToUse / iMax) |==> thisYear / (monthToUse / iMax)
+57:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):117:1 |==> 0
+58:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):117:1 |==> -1
+59:AOR:-(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):117:thisYear + (monthToUse / iMax) - 1 |==> (thisYear + (monthToUse / iMax)) % 1
+60:AOR:-(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):117:thisYear + (monthToUse / iMax) - 1 |==> (thisYear + (monthToUse / iMax)) * 1
+61:AOR:-(int,int):+(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):117:thisYear + (monthToUse / iMax) - 1 |==> thisYear + (monthToUse / iMax) + 1
+62:AOR:-(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):117:thisYear + (monthToUse / iMax) - 1 |==> (thisYear + (monthToUse / iMax)) / 1
+63:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):118:monthToUse = Math.abs(monthToUse) |==> <NO-OP>
+64:AOR:%(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):119:monthToUse % iMax |==> monthToUse * iMax
+65:AOR:%(int,int):+(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):119:monthToUse % iMax |==> monthToUse + iMax
+66:AOR:%(int,int):-(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):119:monthToUse % iMax |==> monthToUse - iMax
+67:AOR:%(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):119:monthToUse % iMax |==> monthToUse / iMax
+68:LVR:0:POS:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):121:0 |==> 1
+69:LVR:0:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):121:0 |==> -1
+70:ROR:==(int,int):!=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):121:remMonthToUse == 0 |==> remMonthToUse != 0
+71:ROR:==(int,int):<(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):121:remMonthToUse == 0 |==> remMonthToUse < 0
+72:ROR:==(int,int):<=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):121:remMonthToUse == 0 |==> remMonthToUse <= 0
+73:ROR:==(int,int):>(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):121:remMonthToUse == 0 |==> remMonthToUse > 0
+74:ROR:==(int,int):>=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):121:remMonthToUse == 0 |==> remMonthToUse >= 0
+75:ROR:==(int,int):FALSE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):121:remMonthToUse == 0 |==> false
+76:ROR:==(int,int):TRUE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):121:remMonthToUse == 0 |==> true
+77:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):122:remMonthToUse = iMax |==> <NO-OP>
+78:AOR:-(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):124:iMax - remMonthToUse |==> iMax % remMonthToUse
+79:AOR:-(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):124:iMax - remMonthToUse |==> iMax * remMonthToUse
+80:AOR:-(int,int):+(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):124:iMax - remMonthToUse |==> iMax + remMonthToUse
+81:AOR:-(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):124:iMax - remMonthToUse |==> iMax / remMonthToUse
+82:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):124:1 |==> 0
+83:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):124:1 |==> -1
+84:AOR:+(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):124:iMax - remMonthToUse + 1 |==> (iMax - remMonthToUse) % 1
+85:AOR:+(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):124:iMax - remMonthToUse + 1 |==> (iMax - remMonthToUse) * 1
+86:AOR:+(int,int):-(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):124:iMax - remMonthToUse + 1 |==> iMax - remMonthToUse - 1
+87:AOR:+(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):124:iMax - remMonthToUse + 1 |==> (iMax - remMonthToUse) / 1
+88:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):124:monthToUse = iMax - remMonthToUse + 1 |==> <NO-OP>
+89:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):126:1 |==> 0
+90:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):126:1 |==> -1
+91:ROR:==(int,int):!=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):126:monthToUse == 1 |==> monthToUse != 1
+92:ROR:==(int,int):<(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):126:monthToUse == 1 |==> monthToUse < 1
+93:ROR:==(int,int):<=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):126:monthToUse == 1 |==> monthToUse <= 1
+94:ROR:==(int,int):>(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):126:monthToUse == 1 |==> monthToUse > 1
+95:ROR:==(int,int):>=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):126:monthToUse == 1 |==> monthToUse >= 1
+96:ROR:==(int,int):FALSE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):126:monthToUse == 1 |==> false
+97:ROR:==(int,int):TRUE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):126:monthToUse == 1 |==> true
+98:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):127:1 |==> 0
+99:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):127:1 |==> -1
+100:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):127:yearToUse += 1 |==> <NO-OP>
+101:ROR:>(int,int):!=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):138:dayToUse > maxDay |==> dayToUse != maxDay
+102:ROR:>(int,int):<(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):138:dayToUse > maxDay |==> dayToUse < maxDay
+103:ROR:>(int,int):<=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):138:dayToUse > maxDay |==> dayToUse <= maxDay
+104:ROR:>(int,int):==(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):138:dayToUse > maxDay |==> dayToUse == maxDay
+105:ROR:>(int,int):>=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):138:dayToUse > maxDay |==> dayToUse >= maxDay
+106:ROR:>(int,int):FALSE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):138:dayToUse > maxDay |==> false
+107:ROR:>(int,int):TRUE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):138:dayToUse > maxDay |==> true
+108:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):139:dayToUse = maxDay |==> <NO-OP>
+109:AOR:+(long,long):%(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):146:datePart + timePart |==> datePart % timePart
+110:AOR:+(long,long):*(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):146:datePart + timePart |==> datePart * timePart
+111:AOR:+(long,long):-(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):146:datePart + timePart |==> datePart - timePart
+112:AOR:+(long,long):/(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,int):146:datePart + timePart |==> datePart / timePart
+113:ROR:==(long,long):!=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):152:i_months == months |==> i_months != months
+114:ROR:==(long,long):<(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):152:i_months == months |==> i_months < months
+115:ROR:==(long,long):<=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):152:i_months == months |==> i_months <= months
+116:ROR:==(long,long):>(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):152:i_months == months |==> i_months > months
+117:ROR:==(long,long):>=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):152:i_months == months |==> i_months >= months
+118:ROR:==(long,long):FALSE(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):152:i_months == months |==> false
+119:ROR:==(long,long):TRUE(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):152:i_months == months |==> true
+120:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):164:1 |==> 0
+121:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):164:1 |==> -1
+122:AOR:-(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):164:thisMonth - 1 |==> thisMonth % 1
+123:AOR:-(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):164:thisMonth - 1 |==> thisMonth * 1
+124:AOR:-(int,int):+(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):164:thisMonth - 1 |==> thisMonth + 1
+125:AOR:-(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):164:thisMonth - 1 |==> thisMonth / 1
+126:AOR:+(long,long):%(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):164:thisMonth - 1 + months |==> (thisMonth - 1) % months
+127:AOR:+(long,long):*(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):164:thisMonth - 1 + months |==> (thisMonth - 1) * months
+128:AOR:+(long,long):-(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):164:thisMonth - 1 + months |==> thisMonth - 1 - months
+129:AOR:+(long,long):/(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):164:thisMonth - 1 + months |==> (thisMonth - 1) / months
+130:LVR:0:POS:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):165:0 |==> 1
+131:LVR:0:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):165:0 |==> -1
+132:ROR:>=(long,long):!=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):165:monthToUse >= 0 |==> monthToUse != 0
+133:ROR:>=(long,long):<(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):165:monthToUse >= 0 |==> monthToUse < 0
+134:ROR:>=(long,long):<=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):165:monthToUse >= 0 |==> monthToUse <= 0
+135:ROR:>=(long,long):==(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):165:monthToUse >= 0 |==> monthToUse == 0
+136:ROR:>=(long,long):>(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):165:monthToUse >= 0 |==> monthToUse > 0
+137:ROR:>=(long,long):FALSE(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):165:monthToUse >= 0 |==> false
+138:ROR:>=(long,long):TRUE(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):165:monthToUse >= 0 |==> true
+139:AOR:/(long,long):%(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):166:monthToUse / iMax |==> monthToUse % iMax
+140:AOR:/(long,long):*(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):166:monthToUse / iMax |==> monthToUse * iMax
+141:AOR:/(long,long):+(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):166:monthToUse / iMax |==> monthToUse + iMax
+142:AOR:/(long,long):-(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):166:monthToUse / iMax |==> monthToUse - iMax
+143:AOR:+(long,long):%(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):166:thisYear + (monthToUse / iMax) |==> thisYear % (monthToUse / iMax)
+144:AOR:+(long,long):*(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):166:thisYear + (monthToUse / iMax) |==> thisYear * (monthToUse / iMax)
+145:AOR:+(long,long):-(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):166:thisYear + (monthToUse / iMax) |==> thisYear - (monthToUse / iMax)
+146:AOR:+(long,long):/(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):166:thisYear + (monthToUse / iMax) |==> thisYear / (monthToUse / iMax)
+147:AOR:%(long,long):*(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):167:monthToUse % iMax |==> monthToUse * iMax
+148:AOR:%(long,long):+(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):167:monthToUse % iMax |==> monthToUse + iMax
+149:AOR:%(long,long):-(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):167:monthToUse % iMax |==> monthToUse - iMax
+150:AOR:%(long,long):/(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):167:monthToUse % iMax |==> monthToUse / iMax
+151:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):167:1 |==> 0
+152:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):167:1 |==> -1
+153:AOR:+(long,long):%(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):167:(monthToUse % iMax) + 1 |==> (monthToUse % iMax) % 1
+154:AOR:+(long,long):*(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):167:(monthToUse % iMax) + 1 |==> (monthToUse % iMax) * 1
+155:AOR:+(long,long):-(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):167:(monthToUse % iMax) + 1 |==> (monthToUse % iMax) - 1
+156:AOR:+(long,long):/(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):167:(monthToUse % iMax) + 1 |==> (monthToUse % iMax) / 1
+157:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):167:monthToUse = (monthToUse % iMax) + 1 |==> <NO-OP>
+158:AOR:/(long,long):%(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):169:monthToUse / iMax |==> monthToUse % iMax
+159:AOR:/(long,long):*(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):169:monthToUse / iMax |==> monthToUse * iMax
+160:AOR:/(long,long):+(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):169:monthToUse / iMax |==> monthToUse + iMax
+161:AOR:/(long,long):-(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):169:monthToUse / iMax |==> monthToUse - iMax
+162:AOR:+(long,long):%(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):169:thisYear + (monthToUse / iMax) |==> thisYear % (monthToUse / iMax)
+163:AOR:+(long,long):*(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):169:thisYear + (monthToUse / iMax) |==> thisYear * (monthToUse / iMax)
+164:AOR:+(long,long):-(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):169:thisYear + (monthToUse / iMax) |==> thisYear - (monthToUse / iMax)
+165:AOR:+(long,long):/(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):169:thisYear + (monthToUse / iMax) |==> thisYear / (monthToUse / iMax)
+166:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):169:1 |==> 0
+167:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):169:1 |==> -1
+168:AOR:-(long,long):%(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):169:thisYear + (monthToUse / iMax) - 1 |==> (thisYear + (monthToUse / iMax)) % 1
+169:AOR:-(long,long):*(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):169:thisYear + (monthToUse / iMax) - 1 |==> (thisYear + (monthToUse / iMax)) * 1
+170:AOR:-(long,long):+(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):169:thisYear + (monthToUse / iMax) - 1 |==> thisYear + (monthToUse / iMax) + 1
+171:AOR:-(long,long):/(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):169:thisYear + (monthToUse / iMax) - 1 |==> (thisYear + (monthToUse / iMax)) / 1
+172:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):170:monthToUse = Math.abs(monthToUse) |==> <NO-OP>
+173:AOR:%(long,long):*(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):171:monthToUse % iMax |==> monthToUse * iMax
+174:AOR:%(long,long):+(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):171:monthToUse % iMax |==> monthToUse + iMax
+175:AOR:%(long,long):-(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):171:monthToUse % iMax |==> monthToUse - iMax
+176:AOR:%(long,long):/(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):171:monthToUse % iMax |==> monthToUse / iMax
+177:LVR:0:POS:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):172:0 |==> 1
+178:LVR:0:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):172:0 |==> -1
+179:ROR:==(int,int):!=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):172:remMonthToUse == 0 |==> remMonthToUse != 0
+180:ROR:==(int,int):<(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):172:remMonthToUse == 0 |==> remMonthToUse < 0
+181:ROR:==(int,int):<=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):172:remMonthToUse == 0 |==> remMonthToUse <= 0
+182:ROR:==(int,int):>(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):172:remMonthToUse == 0 |==> remMonthToUse > 0
+183:ROR:==(int,int):>=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):172:remMonthToUse == 0 |==> remMonthToUse >= 0
+184:ROR:==(int,int):FALSE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):172:remMonthToUse == 0 |==> false
+185:ROR:==(int,int):TRUE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):172:remMonthToUse == 0 |==> true
+186:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):173:remMonthToUse = iMax |==> <NO-OP>
+187:AOR:-(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):175:iMax - remMonthToUse |==> iMax % remMonthToUse
+188:AOR:-(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):175:iMax - remMonthToUse |==> iMax * remMonthToUse
+189:AOR:-(int,int):+(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):175:iMax - remMonthToUse |==> iMax + remMonthToUse
+190:AOR:-(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):175:iMax - remMonthToUse |==> iMax / remMonthToUse
+191:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):175:1 |==> 0
+192:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):175:1 |==> -1
+193:AOR:+(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):175:iMax - remMonthToUse + 1 |==> (iMax - remMonthToUse) % 1
+194:AOR:+(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):175:iMax - remMonthToUse + 1 |==> (iMax - remMonthToUse) * 1
+195:AOR:+(int,int):-(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):175:iMax - remMonthToUse + 1 |==> iMax - remMonthToUse - 1
+196:AOR:+(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):175:iMax - remMonthToUse + 1 |==> (iMax - remMonthToUse) / 1
+197:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):175:monthToUse = iMax - remMonthToUse + 1 |==> <NO-OP>
+198:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):176:1 |==> 0
+199:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):176:1 |==> -1
+200:ROR:==(long,long):!=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):176:monthToUse == 1 |==> monthToUse != 1
+201:ROR:==(long,long):<(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):176:monthToUse == 1 |==> monthToUse < 1
+202:ROR:==(long,long):<=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):176:monthToUse == 1 |==> monthToUse <= 1
+203:ROR:==(long,long):>(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):176:monthToUse == 1 |==> monthToUse > 1
+204:ROR:==(long,long):>=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):176:monthToUse == 1 |==> monthToUse >= 1
+205:ROR:==(long,long):FALSE(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):176:monthToUse == 1 |==> false
+206:ROR:==(long,long):TRUE(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):176:monthToUse == 1 |==> true
+207:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):177:1 |==> 0
+208:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):177:1 |==> -1
+209:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):177:yearToUse += 1 |==> <NO-OP>
+210:ROR:<(long,long):!=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):181:yearToUse < iChronology.getMinYear() |==> yearToUse != iChronology.getMinYear()
+211:ROR:<(long,long):<=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):181:yearToUse < iChronology.getMinYear() |==> yearToUse <= iChronology.getMinYear()
+212:ROR:<(long,long):==(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):181:yearToUse < iChronology.getMinYear() |==> yearToUse == iChronology.getMinYear()
+213:ROR:<(long,long):>(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):181:yearToUse < iChronology.getMinYear() |==> yearToUse > iChronology.getMinYear()
+214:ROR:<(long,long):>=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):181:yearToUse < iChronology.getMinYear() |==> yearToUse >= iChronology.getMinYear()
+215:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):181:yearToUse < iChronology.getMinYear() |==> false
+216:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):181:yearToUse < iChronology.getMinYear() |==> true
+217:ROR:>(long,long):!=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):182:yearToUse > iChronology.getMaxYear() |==> yearToUse != iChronology.getMaxYear()
+218:ROR:>(long,long):<(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):182:yearToUse > iChronology.getMaxYear() |==> yearToUse < iChronology.getMaxYear()
+219:ROR:>(long,long):<=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):182:yearToUse > iChronology.getMaxYear() |==> yearToUse <= iChronology.getMaxYear()
+220:ROR:>(long,long):==(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):182:yearToUse > iChronology.getMaxYear() |==> yearToUse == iChronology.getMaxYear()
+221:ROR:>(long,long):>=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):182:yearToUse > iChronology.getMaxYear() |==> yearToUse >= iChronology.getMaxYear()
+222:ROR:>(long,long):FALSE(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):182:yearToUse > iChronology.getMaxYear() |==> false
+223:ROR:>(long,long):TRUE(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):182:yearToUse > iChronology.getMaxYear() |==> true
+224:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):181:yearToUse < iChronology.getMinYear() || yearToUse > iChronology.getMaxYear() |==> yearToUse < iChronology.getMinYear() != yearToUse > iChronology.getMaxYear()
+225:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):181:yearToUse < iChronology.getMinYear() || yearToUse > iChronology.getMaxYear() |==> yearToUse < iChronology.getMinYear() && yearToUse > iChronology.getMaxYear()
+226:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):181:yearToUse < iChronology.getMinYear() || yearToUse > iChronology.getMaxYear() |==> yearToUse < iChronology.getMinYear() == yearToUse > iChronology.getMaxYear()
+227:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):181:yearToUse < iChronology.getMinYear() || yearToUse > iChronology.getMaxYear() |==> false
+228:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):181:yearToUse < iChronology.getMinYear() || yearToUse > iChronology.getMaxYear() |==> yearToUse < iChronology.getMinYear()
+229:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):182:yearToUse < iChronology.getMinYear() || yearToUse > iChronology.getMaxYear() |==> yearToUse > iChronology.getMaxYear()
+230:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):181:yearToUse < iChronology.getMinYear() || yearToUse > iChronology.getMaxYear() |==> true
+231:ROR:>(int,int):!=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):193:dayToUse > maxDay |==> dayToUse != maxDay
+232:ROR:>(int,int):<(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):193:dayToUse > maxDay |==> dayToUse < maxDay
+233:ROR:>(int,int):<=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):193:dayToUse > maxDay |==> dayToUse <= maxDay
+234:ROR:>(int,int):==(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):193:dayToUse > maxDay |==> dayToUse == maxDay
+235:ROR:>(int,int):>=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):193:dayToUse > maxDay |==> dayToUse >= maxDay
+236:ROR:>(int,int):FALSE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):193:dayToUse > maxDay |==> false
+237:ROR:>(int,int):TRUE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):193:dayToUse > maxDay |==> true
+238:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):194:dayToUse = maxDay |==> <NO-OP>
+239:AOR:+(long,long):%(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):199:datePart + timePart |==> datePart % timePart
+240:AOR:+(long,long):*(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):199:datePart + timePart |==> datePart * timePart
+241:AOR:+(long,long):-(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):199:datePart + timePart |==> datePart - timePart
+242:AOR:+(long,long):/(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(long,long):199:datePart + timePart |==> datePart / timePart
+243:LVR:0:POS:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):206:0 |==> 1
+244:LVR:0:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):206:0 |==> -1
+245:ROR:==(int,int):!=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):206:valueToAdd == 0 |==> valueToAdd != 0
+246:ROR:==(int,int):<(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):206:valueToAdd == 0 |==> valueToAdd < 0
+247:ROR:==(int,int):<=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):206:valueToAdd == 0 |==> valueToAdd <= 0
+248:ROR:==(int,int):>(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):206:valueToAdd == 0 |==> valueToAdd > 0
+249:ROR:==(int,int):>=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):206:valueToAdd == 0 |==> valueToAdd >= 0
+250:ROR:==(int,int):FALSE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):206:valueToAdd == 0 |==> false
+251:ROR:==(int,int):TRUE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):206:valueToAdd == 0 |==> true
+252:LVR:0:POS:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:0 |==> 1
+253:LVR:0:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:0 |==> -1
+254:ROR:>(int,int):!=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 |==> partial.size() != 0
+255:ROR:>(int,int):<(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 |==> partial.size() < 0
+256:ROR:>(int,int):<=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 |==> partial.size() <= 0
+257:ROR:>(int,int):==(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 |==> partial.size() == 0
+258:ROR:>(int,int):>=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 |==> partial.size() >= 0
+259:ROR:>(int,int):FALSE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 |==> false
+260:ROR:>(int,int):TRUE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 |==> true
+261:LVR:0:POS:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:0 |==> 1
+262:LVR:0:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:0 |==> -1
+263:COR:&&(boolean,boolean):!=(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear()) |==> partial.size() > 0 != partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear())
+264:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear()) |==> partial.size() > 0 == partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear())
+265:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear()) |==> false
+266:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear()) |==> partial.size() > 0
+267:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear()) |==> partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear())
+268:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear()) |==> true
+269:COR:&&(boolean,boolean):||(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear()) |==> partial.size() > 0 || partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear())
+270:LVR:0:POS:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:0 |==> 1
+271:LVR:0:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:0 |==> -1
+272:ROR:==(int,int):!=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:fieldIndex == 0 |==> fieldIndex != 0
+273:ROR:==(int,int):<(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:fieldIndex == 0 |==> fieldIndex < 0
+274:ROR:==(int,int):<=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:fieldIndex == 0 |==> fieldIndex <= 0
+275:ROR:==(int,int):>(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:fieldIndex == 0 |==> fieldIndex > 0
+276:ROR:==(int,int):>=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:fieldIndex == 0 |==> fieldIndex >= 0
+277:ROR:==(int,int):FALSE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:fieldIndex == 0 |==> false
+278:ROR:==(int,int):TRUE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:fieldIndex == 0 |==> true
+279:COR:&&(boolean,boolean):!=(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear()) && fieldIndex == 0 |==> (partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear())) != (fieldIndex == 0)
+280:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear()) && fieldIndex == 0 |==> (partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear())) == (fieldIndex == 0)
+281:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear()) && fieldIndex == 0 |==> false
+282:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear()) && fieldIndex == 0 |==> partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear())
+283:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear()) && fieldIndex == 0 |==> fieldIndex == 0
+284:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear()) && fieldIndex == 0 |==> true
+285:COR:&&(boolean,boolean):||(boolean,boolean):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):209:partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear()) && fieldIndex == 0 |==> partial.size() > 0 && partial.getFieldType(0).equals(DateTimeFieldType.monthOfYear()) || fieldIndex == 0
+286:LVR:0:POS:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):211:0 |==> 1
+287:LVR:0:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):211:0 |==> -1
+288:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):211:1 |==> 0
+289:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):211:1 |==> -1
+290:AOR:-(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):211:partial.getValue(0) - 1 |==> partial.getValue(0) % 1
+291:AOR:-(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):211:partial.getValue(0) - 1 |==> partial.getValue(0) * 1
+292:AOR:-(int,int):+(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):211:partial.getValue(0) - 1 |==> partial.getValue(0) + 1
+293:AOR:-(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):211:partial.getValue(0) - 1 |==> partial.getValue(0) / 1
+294:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:12 |==> 0
+295:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:12 |==> -12
+296:AOR:%(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:valueToAdd % 12 |==> valueToAdd * 12
+297:AOR:%(int,int):+(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:valueToAdd % 12 |==> valueToAdd + 12
+298:AOR:%(int,int):-(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:valueToAdd % 12 |==> valueToAdd - 12
+299:AOR:%(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:valueToAdd % 12 |==> valueToAdd / 12
+300:AOR:+(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:curMonth0 + (valueToAdd % 12) |==> curMonth0 % (valueToAdd % 12)
+301:AOR:+(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:curMonth0 + (valueToAdd % 12) |==> curMonth0 * (valueToAdd % 12)
+302:AOR:+(int,int):-(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:curMonth0 + (valueToAdd % 12) |==> curMonth0 - (valueToAdd % 12)
+303:AOR:+(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:curMonth0 + (valueToAdd % 12) |==> curMonth0 / (valueToAdd % 12)
+304:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:12 |==> 0
+305:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:12 |==> -12
+306:AOR:+(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:curMonth0 + (valueToAdd % 12) + 12 |==> (curMonth0 + (valueToAdd % 12)) % 12
+307:AOR:+(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:curMonth0 + (valueToAdd % 12) + 12 |==> (curMonth0 + (valueToAdd % 12)) * 12
+308:AOR:+(int,int):-(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:curMonth0 + (valueToAdd % 12) + 12 |==> curMonth0 + (valueToAdd % 12) - 12
+309:AOR:+(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:curMonth0 + (valueToAdd % 12) + 12 |==> (curMonth0 + (valueToAdd % 12)) / 12
+310:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:12 |==> 0
+311:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:12 |==> -12
+312:AOR:%(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:(curMonth0 + (valueToAdd % 12) + 12) % 12 |==> (curMonth0 + (valueToAdd % 12) + 12) * 12
+313:AOR:%(int,int):+(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:(curMonth0 + (valueToAdd % 12) + 12) % 12 |==> (curMonth0 + (valueToAdd % 12) + 12) + 12
+314:AOR:%(int,int):-(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:(curMonth0 + (valueToAdd % 12) + 12) % 12 |==> (curMonth0 + (valueToAdd % 12) + 12) - 12
+315:AOR:%(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:(curMonth0 + (valueToAdd % 12) + 12) % 12 |==> (curMonth0 + (valueToAdd % 12) + 12) / 12
+316:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:1 |==> 0
+317:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:1 |==> -1
+318:AOR:+(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:((curMonth0 + (valueToAdd % 12) + 12) % 12) + 1 |==> ((curMonth0 + (valueToAdd % 12) + 12) % 12) % 1
+319:AOR:+(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:((curMonth0 + (valueToAdd % 12) + 12) % 12) + 1 |==> ((curMonth0 + (valueToAdd % 12) + 12) % 12) * 1
+320:AOR:+(int,int):-(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:((curMonth0 + (valueToAdd % 12) + 12) % 12) + 1 |==> ((curMonth0 + (valueToAdd % 12) + 12) % 12) - 1
+321:AOR:+(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):212:((curMonth0 + (valueToAdd % 12) + 12) % 12) + 1 |==> ((curMonth0 + (valueToAdd % 12) + 12) % 12) / 1
+322:LVR:0:POS:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):213:0 |==> 1
+323:LVR:0:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):213:0 |==> -1
+324:COR:DateTimeUtils.isContiguous(partial):TRUE:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):215:DateTimeUtils.isContiguous(partial) |==> false
+325:COR:DateTimeUtils.isContiguous(partial):FALSE:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):215:DateTimeUtils.isContiguous(partial) |==> true
+326:LVR:0:POS:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):216:0L |==> 1L
+327:LVR:0:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):216:0L |==> -1L
+328:LVR:0:POS:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):217:0 |==> 1
+329:LVR:0:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):217:0 |==> -1
+330:ROR:<(int,int):!=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):217:i < isize |==> i != isize
+331:ROR:<(int,int):<=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):217:i < isize |==> i <= isize
+332:ROR:<(int,int):==(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):217:i < isize |==> i == isize
+333:ROR:<(int,int):>(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):217:i < isize |==> i > isize
+334:ROR:<(int,int):>=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):217:i < isize |==> i >= isize
+335:ROR:<(int,int):FALSE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):217:i < isize |==> false
+336:ROR:<(int,int):TRUE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):217:i < isize |==> true
+337:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):218:instant = partial.getFieldType(i).getField(iChronology).set(instant, values[i]) |==> <NO-OP>
+338:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@add(org.joda.time.ReadablePartial,int,int[],int):220:instant = add(instant, valueToAdd) |==> <NO-OP>
+339:ROR:<(long,long):!=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):243:minuendInstant < subtrahendInstant |==> minuendInstant != subtrahendInstant
+340:ROR:<(long,long):<=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):243:minuendInstant < subtrahendInstant |==> minuendInstant <= subtrahendInstant
+341:ROR:<(long,long):==(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):243:minuendInstant < subtrahendInstant |==> minuendInstant == subtrahendInstant
+342:ROR:<(long,long):>(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):243:minuendInstant < subtrahendInstant |==> minuendInstant > subtrahendInstant
+343:ROR:<(long,long):>=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):243:minuendInstant < subtrahendInstant |==> minuendInstant >= subtrahendInstant
+344:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):243:minuendInstant < subtrahendInstant |==> false
+345:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):243:minuendInstant < subtrahendInstant |==> true
+346:ORU:-(int):+(int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):244:-getDifference(subtrahendInstant, minuendInstant) |==> +getDifference(subtrahendInstant, minuendInstant)
+347:ORU:-(int):~(int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):244:-getDifference(subtrahendInstant, minuendInstant) |==> ~getDifference(subtrahendInstant, minuendInstant)
+348:AOR:-(int,int):%(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):252:minuendYear - subtrahendYear |==> minuendYear % subtrahendYear
+349:AOR:-(int,int):*(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):252:minuendYear - subtrahendYear |==> minuendYear * subtrahendYear
+350:AOR:-(int,int):+(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):252:minuendYear - subtrahendYear |==> minuendYear + subtrahendYear
+351:AOR:-(int,int):/(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):252:minuendYear - subtrahendYear |==> minuendYear / subtrahendYear
+352:AOR:*(long,long):%(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):252:(minuendYear - subtrahendYear) * ((long)iMax) |==> (minuendYear - subtrahendYear) % ((long)iMax)
+353:AOR:*(long,long):+(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):252:(minuendYear - subtrahendYear) * ((long)iMax) |==> (minuendYear - subtrahendYear) + ((long)iMax)
+354:AOR:*(long,long):-(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):252:(minuendYear - subtrahendYear) * ((long)iMax) |==> (minuendYear - subtrahendYear) - ((long)iMax)
+355:AOR:*(long,long):/(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):252:(minuendYear - subtrahendYear) * ((long)iMax) |==> (minuendYear - subtrahendYear) / ((long)iMax)
+356:AOR:+(long,long):%(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):252:(minuendYear - subtrahendYear) * ((long)iMax) + minuendMonth |==> (minuendYear - subtrahendYear) * ((long)iMax) % minuendMonth
+357:AOR:+(long,long):*(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):252:(minuendYear - subtrahendYear) * ((long)iMax) + minuendMonth |==> (minuendYear - subtrahendYear) * ((long)iMax) * minuendMonth
+358:AOR:+(long,long):-(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):252:(minuendYear - subtrahendYear) * ((long)iMax) + minuendMonth |==> (minuendYear - subtrahendYear) * ((long)iMax) - minuendMonth
+359:AOR:+(long,long):/(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):252:(minuendYear - subtrahendYear) * ((long)iMax) + minuendMonth |==> (minuendYear - subtrahendYear) * ((long)iMax) / minuendMonth
+360:AOR:-(long,long):%(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):252:(minuendYear - subtrahendYear) * ((long)iMax) + minuendMonth - subtrahendMonth |==> ((minuendYear - subtrahendYear) * ((long)iMax) + minuendMonth) % subtrahendMonth
+361:AOR:-(long,long):*(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):252:(minuendYear - subtrahendYear) * ((long)iMax) + minuendMonth - subtrahendMonth |==> ((minuendYear - subtrahendYear) * ((long)iMax) + minuendMonth) * subtrahendMonth
+362:AOR:-(long,long):+(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):252:(minuendYear - subtrahendYear) * ((long)iMax) + minuendMonth - subtrahendMonth |==> (minuendYear - subtrahendYear) * ((long)iMax) + minuendMonth + subtrahendMonth
+363:AOR:-(long,long):/(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):252:(minuendYear - subtrahendYear) * ((long)iMax) + minuendMonth - subtrahendMonth |==> ((minuendYear - subtrahendYear) * ((long)iMax) + minuendMonth) / subtrahendMonth
+364:ROR:==(int,int):!=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):258:minuendDom == iChronology.getDaysInYearMonth(minuendYear, minuendMonth) |==> minuendDom != iChronology.getDaysInYearMonth(minuendYear, minuendMonth)
+365:ROR:==(int,int):<(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):258:minuendDom == iChronology.getDaysInYearMonth(minuendYear, minuendMonth) |==> minuendDom < iChronology.getDaysInYearMonth(minuendYear, minuendMonth)
+366:ROR:==(int,int):<=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):258:minuendDom == iChronology.getDaysInYearMonth(minuendYear, minuendMonth) |==> minuendDom <= iChronology.getDaysInYearMonth(minuendYear, minuendMonth)
+367:ROR:==(int,int):>(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):258:minuendDom == iChronology.getDaysInYearMonth(minuendYear, minuendMonth) |==> minuendDom > iChronology.getDaysInYearMonth(minuendYear, minuendMonth)
+368:ROR:==(int,int):>=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):258:minuendDom == iChronology.getDaysInYearMonth(minuendYear, minuendMonth) |==> minuendDom >= iChronology.getDaysInYearMonth(minuendYear, minuendMonth)
+369:ROR:==(int,int):FALSE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):258:minuendDom == iChronology.getDaysInYearMonth(minuendYear, minuendMonth) |==> false
+370:ROR:==(int,int):TRUE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):258:minuendDom == iChronology.getDaysInYearMonth(minuendYear, minuendMonth) |==> true
+371:ROR:>(int,int):!=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):262:subtrahendDom > minuendDom |==> subtrahendDom != minuendDom
+372:ROR:>(int,int):<(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):262:subtrahendDom > minuendDom |==> subtrahendDom < minuendDom
+373:ROR:>(int,int):<=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):262:subtrahendDom > minuendDom |==> subtrahendDom <= minuendDom
+374:ROR:>(int,int):==(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):262:subtrahendDom > minuendDom |==> subtrahendDom == minuendDom
+375:ROR:>(int,int):>=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):262:subtrahendDom > minuendDom |==> subtrahendDom >= minuendDom
+376:ROR:>(int,int):FALSE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):262:subtrahendDom > minuendDom |==> false
+377:ROR:>(int,int):TRUE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):262:subtrahendDom > minuendDom |==> true
+378:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):266:subtrahendInstant = iChronology.dayOfMonth().set(subtrahendInstant, minuendDom) |==> <NO-OP>
+379:AOR:-(long,long):%(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):271:minuendInstant - iChronology.getYearMonthMillis(minuendYear, minuendMonth) |==> minuendInstant % iChronology.getYearMonthMillis(minuendYear, minuendMonth)
+380:AOR:-(long,long):*(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):271:minuendInstant - iChronology.getYearMonthMillis(minuendYear, minuendMonth) |==> minuendInstant * iChronology.getYearMonthMillis(minuendYear, minuendMonth)
+381:AOR:-(long,long):+(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):271:minuendInstant - iChronology.getYearMonthMillis(minuendYear, minuendMonth) |==> minuendInstant + iChronology.getYearMonthMillis(minuendYear, minuendMonth)
+382:AOR:-(long,long):/(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):271:minuendInstant - iChronology.getYearMonthMillis(minuendYear, minuendMonth) |==> minuendInstant / iChronology.getYearMonthMillis(minuendYear, minuendMonth)
+383:AOR:-(long,long):%(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):273:subtrahendInstant - iChronology.getYearMonthMillis(subtrahendYear, subtrahendMonth) |==> subtrahendInstant % iChronology.getYearMonthMillis(subtrahendYear, subtrahendMonth)
+384:AOR:-(long,long):*(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):273:subtrahendInstant - iChronology.getYearMonthMillis(subtrahendYear, subtrahendMonth) |==> subtrahendInstant * iChronology.getYearMonthMillis(subtrahendYear, subtrahendMonth)
+385:AOR:-(long,long):+(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):273:subtrahendInstant - iChronology.getYearMonthMillis(subtrahendYear, subtrahendMonth) |==> subtrahendInstant + iChronology.getYearMonthMillis(subtrahendYear, subtrahendMonth)
+386:AOR:-(long,long):/(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):273:subtrahendInstant - iChronology.getYearMonthMillis(subtrahendYear, subtrahendMonth) |==> subtrahendInstant / iChronology.getYearMonthMillis(subtrahendYear, subtrahendMonth)
+387:ROR:<(long,long):!=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):276:minuendRem < subtrahendRem |==> minuendRem != subtrahendRem
+388:ROR:<(long,long):<=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):276:minuendRem < subtrahendRem |==> minuendRem <= subtrahendRem
+389:ROR:<(long,long):==(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):276:minuendRem < subtrahendRem |==> minuendRem == subtrahendRem
+390:ROR:<(long,long):>(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):276:minuendRem < subtrahendRem |==> minuendRem > subtrahendRem
+391:ROR:<(long,long):>=(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):276:minuendRem < subtrahendRem |==> minuendRem >= subtrahendRem
+392:ROR:<(long,long):FALSE(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):276:minuendRem < subtrahendRem |==> false
+393:ROR:<(long,long):TRUE(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):276:minuendRem < subtrahendRem |==> true
+394:STD:<DEC>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@getDifferenceAsLong(long,long):277:difference-- |==> <NO-OP>
+395:STD:<CALL>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@set(long,int):298:FieldUtils.verifyValueBounds(this, month, MIN, iMax) |==> <NO-OP>
+396:ROR:>(int,int):!=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@set(long,int):304:thisDom > maxDom |==> thisDom != maxDom
+397:ROR:>(int,int):<(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@set(long,int):304:thisDom > maxDom |==> thisDom < maxDom
+398:ROR:>(int,int):<=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@set(long,int):304:thisDom > maxDom |==> thisDom <= maxDom
+399:ROR:>(int,int):==(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@set(long,int):304:thisDom > maxDom |==> thisDom == maxDom
+400:ROR:>(int,int):>=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@set(long,int):304:thisDom > maxDom |==> thisDom >= maxDom
+401:ROR:>(int,int):FALSE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@set(long,int):304:thisDom > maxDom |==> false
+402:ROR:>(int,int):TRUE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@set(long,int):304:thisDom > maxDom |==> true
+403:STD:<ASSIGN>:<NO-OP>:org.joda.time.chrono.BasicMonthOfYearDateTimeField@set(long,int):306:thisDom = maxDom |==> <NO-OP>
+404:AOR:+(long,long):%(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@set(long,int):309:iChronology.getYearMonthDayMillis(thisYear, month, thisDom) + iChronology.getMillisOfDay(instant) |==> iChronology.getYearMonthDayMillis(thisYear, month, thisDom) % iChronology.getMillisOfDay(instant)
+405:AOR:+(long,long):*(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@set(long,int):309:iChronology.getYearMonthDayMillis(thisYear, month, thisDom) + iChronology.getMillisOfDay(instant) |==> iChronology.getYearMonthDayMillis(thisYear, month, thisDom) * iChronology.getMillisOfDay(instant)
+406:AOR:+(long,long):-(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@set(long,int):309:iChronology.getYearMonthDayMillis(thisYear, month, thisDom) + iChronology.getMillisOfDay(instant) |==> iChronology.getYearMonthDayMillis(thisYear, month, thisDom) - iChronology.getMillisOfDay(instant)
+407:AOR:+(long,long):/(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@set(long,int):309:iChronology.getYearMonthDayMillis(thisYear, month, thisDom) + iChronology.getMillisOfDay(instant) |==> iChronology.getYearMonthDayMillis(thisYear, month, thisDom) / iChronology.getMillisOfDay(instant)
+408:COR:iChronology.isLeapYear(thisYear):TRUE:org.joda.time.chrono.BasicMonthOfYearDateTimeField@isLeap(long):321:iChronology.isLeapYear(thisYear) |==> false
+409:COR:iChronology.isLeapYear(thisYear):FALSE:org.joda.time.chrono.BasicMonthOfYearDateTimeField@isLeap(long):321:iChronology.isLeapYear(thisYear) |==> true
+410:ROR:==(int,int):!=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@isLeap(long):322:iChronology.getMonthOfYear(instant, thisYear) == iLeapMonth |==> iChronology.getMonthOfYear(instant, thisYear) != iLeapMonth
+411:ROR:==(int,int):<(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@isLeap(long):322:iChronology.getMonthOfYear(instant, thisYear) == iLeapMonth |==> iChronology.getMonthOfYear(instant, thisYear) < iLeapMonth
+412:ROR:==(int,int):<=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@isLeap(long):322:iChronology.getMonthOfYear(instant, thisYear) == iLeapMonth |==> iChronology.getMonthOfYear(instant, thisYear) <= iLeapMonth
+413:ROR:==(int,int):>(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@isLeap(long):322:iChronology.getMonthOfYear(instant, thisYear) == iLeapMonth |==> iChronology.getMonthOfYear(instant, thisYear) > iLeapMonth
+414:ROR:==(int,int):>=(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@isLeap(long):322:iChronology.getMonthOfYear(instant, thisYear) == iLeapMonth |==> iChronology.getMonthOfYear(instant, thisYear) >= iLeapMonth
+415:ROR:==(int,int):FALSE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@isLeap(long):322:iChronology.getMonthOfYear(instant, thisYear) == iLeapMonth |==> false
+416:ROR:==(int,int):TRUE(int,int):org.joda.time.chrono.BasicMonthOfYearDateTimeField@isLeap(long):322:iChronology.getMonthOfYear(instant, thisYear) == iLeapMonth |==> true
+417:LVR:FALSE:TRUE:org.joda.time.chrono.BasicMonthOfYearDateTimeField@isLeap(long):324:false |==> true
+418:COR:isLeap(instant):TRUE:org.joda.time.chrono.BasicMonthOfYearDateTimeField@getLeapAmount(long):329:isLeap(instant) |==> false
+419:COR:isLeap(instant):FALSE:org.joda.time.chrono.BasicMonthOfYearDateTimeField@getLeapAmount(long):329:isLeap(instant) |==> true
+420:LVR:POS:0:org.joda.time.chrono.BasicMonthOfYearDateTimeField@getLeapAmount(long):329:1 |==> 0
+421:LVR:POS:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@getLeapAmount(long):329:1 |==> -1
+422:LVR:0:POS:org.joda.time.chrono.BasicMonthOfYearDateTimeField@getLeapAmount(long):329:0 |==> 1
+423:LVR:0:NEG:org.joda.time.chrono.BasicMonthOfYearDateTimeField@getLeapAmount(long):329:0 |==> -1
+424:AOR:-(long,long):%(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@remainder(long):356:instant - roundFloor(instant) |==> instant % roundFloor(instant)
+425:AOR:-(long,long):*(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@remainder(long):356:instant - roundFloor(instant) |==> instant * roundFloor(instant)
+426:AOR:-(long,long):+(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@remainder(long):356:instant - roundFloor(instant) |==> instant + roundFloor(instant)
+427:AOR:-(long,long):/(long,long):org.joda.time.chrono.BasicMonthOfYearDateTimeField@remainder(long):356:instant - roundFloor(instant) |==> instant / roundFloor(instant)

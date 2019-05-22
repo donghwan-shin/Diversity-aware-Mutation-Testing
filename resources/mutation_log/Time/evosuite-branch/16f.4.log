@@ -1,0 +1,279 @@
+
+init:
+     [echo] -------- joda-time 2.1 --------
+
+getjunit:
+
+installjunit:
+
+getjodaconvert:
+
+prepare:
+
+static:
+
+compile.main:
+
+compile.zoneinfo:
+
+joda-time.compile:
+
+compile:
+     [java] Writing zoneinfo files
+     [java] Writing ZoneInfoMap
+
+joda-time.compile.tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_87742_1501622696/16f/build/tests
+    [javac] Compiling 154 source files to /tmp/run_mutation.pl_87742_1501622696/16f/build/tests
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 2 files to /tmp/run_mutation.pl_87742_1501622696/16f/build/tests
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: org.joda.time.format.DateTimeFormatter_ESTest33[test33] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "expected:<1392409281320> but was:<1501622735868>"
+    [junit] MAJOR: org.joda.time.format.DateTimeFormatter_ESTest34[test34] failed!
+    [junit] MAJOR:  -> AssertionFailedError
+    [junit] MAJOR:  -> "expected:<1392409281320> but was:<1501622736130>"
+    [junit] MAJOR: Exclude 2 failing test classes:
+    [junit] MAJOR:  - org.joda.time.format.DateTimeFormatter_ESTest33
+    [junit] MAJOR:  - org.joda.time.format.DateTimeFormatter_ESTest34
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 50 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 34.48 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 348
+    [junit] MAJOR: Mutants covered:   333 (95.69%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 50 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/50 - org.joda.time.format.DateTimeFormatter_ESTest32 (13ms / 13):
+    [junit] MAJOR: 8641 (4 / 13 / 13) -> AVG-RTPM: 664ms
+    [junit] MAJOR: Mutants killed / live: 4 (0-4-0) / 329
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/50 - org.joda.time.format.DateTimeFormatter_ESTest6 (13ms / 7):
+    [junit] MAJOR: 14282 (3 / 7 / 7) -> AVG-RTPM: 805ms
+    [junit] MAJOR: Mutants killed / live: 7 (3-4-0) / 326
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/50 - org.joda.time.format.DateTimeFormatter_ESTest18 (14ms / 10):
+    [junit] MAJOR: 23270 (2 / 10 / 10) -> AVG-RTPM: 898ms
+    [junit] MAJOR: Mutants killed / live: 9 (8-4-0) / 324
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/50 - org.joda.time.format.DateTimeFormatter_ESTest21 (14ms / 10):
+    [junit] MAJOR: 33605 (2 / 10 / 10) -> AVG-RTPM: 1033ms
+    [junit] MAJOR: Mutants killed / live: 11 (13-4-0) / 322
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/50 - org.joda.time.format.DateTimeFormatter_ESTest30 (14ms / 10):
+    [junit] MAJOR: 45258 (2 / 10 / 10) -> AVG-RTPM: 1165ms
+    [junit] MAJOR: Mutants killed / live: 13 (13-6-0) / 320
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/50 - org.joda.time.format.DateTimeFormatter_ESTest35 (14ms / 37):
+    [junit] MAJOR: 95962 (1 / 37 / 37) -> AVG-RTPM: 1370ms
+    [junit] MAJOR: Mutants killed / live: 14 (13-9-0) / 319
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/50 - org.joda.time.format.DateTimeFormatter_ESTest40 (14ms / 45):
+    [junit] MAJOR: 189529 (15 / 45 / 45) -> AVG-RTPM: 2079ms
+    [junit] MAJOR: Mutants killed / live: 29 (16-26-0) / 304
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/50 - org.joda.time.format.DateTimeFormatter_ESTest41 (14ms / 33):
+    [junit] MAJOR: 285927 (1 / 33 / 33) -> AVG-RTPM: 2921ms
+    [junit] MAJOR: Mutants killed / live: 30 (16-29-0) / 303
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/50 - org.joda.time.format.DateTimeFormatter_ESTest42 (14ms / 37):
+    [junit] MAJOR: 402122 (6 / 37 / 37) -> AVG-RTPM: 3140ms
+    [junit] MAJOR: Mutants killed / live: 36 (20-34-0) / 297
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/50 - org.joda.time.format.DateTimeFormatter_ESTest45 (14ms / 51):
+    [junit] MAJOR: 410009 (36 / 51 / 51) -> AVG-RTPM: 154ms
+    [junit] MAJOR: Mutants killed / live: 72 (20-85-0) / 261
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/50 - org.joda.time.format.DateTimeFormatter_ESTest47 (14ms / 33):
+    [junit] MAJOR: 415966 (16 / 33 / 33) -> AVG-RTPM: 180ms
+    [junit] MAJOR: Mutants killed / live: 88 (20-118-0) / 245
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/50 - org.joda.time.format.DateTimeFormatter_ESTest49 (14ms / 62):
+    [junit] MAJOR: 427916 (32 / 62 / 62) -> AVG-RTPM: 192ms
+    [junit] MAJOR: Mutants killed / live: 120 (20-180-0) / 213
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 13/50 - org.joda.time.format.DateTimeFormatter_ESTest50 (14ms / 59):
+    [junit] MAJOR: 439668 (1 / 59 / 59) -> AVG-RTPM: 199ms
+    [junit] MAJOR: Mutants killed / live: 121 (20-239-0) / 212
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 14/50 - org.joda.time.format.DateTimeFormatter_ESTest51 (14ms / 10):
+    [junit] MAJOR: 441346 (0 / 10 / 10) -> AVG-RTPM: 167ms
+    [junit] MAJOR: Mutants killed / live: 121 (20-249-0) / 212
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 15/50 - org.joda.time.format.DateTimeFormatter_ESTest7 (14ms / 7):
+    [junit] MAJOR: 442714 (0 / 7 / 7) -> AVG-RTPM: 195ms
+    [junit] MAJOR: Mutants killed / live: 121 (20-256-0) / 212
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 16/50 - org.joda.time.format.DateTimeFormatter_ESTest9 (14ms / 33):
+    [junit] MAJOR: 449170 (10 / 33 / 33) -> AVG-RTPM: 195ms
+    [junit] MAJOR: Mutants killed / live: 131 (20-289-0) / 202
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 17/50 - org.joda.time.format.DateTimeFormatter_ESTest16 (15ms / 10):
+    [junit] MAJOR: 451114 (3 / 10 / 10) -> AVG-RTPM: 194ms
+    [junit] MAJOR: Mutants killed / live: 134 (20-299-0) / 199
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 18/50 - org.joda.time.format.DateTimeFormatter_ESTest2 (15ms / 7):
+    [junit] MAJOR: 452536 (0 / 7 / 7) -> AVG-RTPM: 203ms
+    [junit] MAJOR: Mutants killed / live: 134 (20-306-0) / 199
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 19/50 - org.joda.time.format.DateTimeFormatter_ESTest20 (15ms / 27):
+    [junit] MAJOR: 458094 (20 / 27 / 27) -> AVG-RTPM: 205ms
+    [junit] MAJOR: Mutants killed / live: 154 (20-333-0) / 179
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 20/50 - org.joda.time.format.DateTimeFormatter_ESTest22 (15ms / 7):
+    [junit] MAJOR: 459721 (0 / 7 / 7) -> AVG-RTPM: 232ms
+    [junit] MAJOR: Mutants killed / live: 154 (20-340-0) / 179
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 21/50 - org.joda.time.format.DateTimeFormatter_ESTest3 (15ms / 14):
+    [junit] MAJOR: 462332 (0 / 14 / 14) -> AVG-RTPM: 186ms
+    [junit] MAJOR: Mutants killed / live: 154 (20-354-0) / 179
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 22/50 - org.joda.time.format.DateTimeFormatter_ESTest31 (15ms / 77):
+    [junit] MAJOR: 479602 (23 / 77 / 77) -> AVG-RTPM: 224ms
+    [junit] MAJOR: Mutants killed / live: 177 (20-431-0) / 156
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 23/50 - org.joda.time.format.DateTimeFormatter_ESTest36 (15ms / 38):
+    [junit] MAJOR: 486399 (20 / 38 / 38) -> AVG-RTPM: 178ms
+    [junit] MAJOR: Mutants killed / live: 197 (20-469-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 24/50 - org.joda.time.format.DateTimeFormatter_ESTest37 (15ms / 37):
+    [junit] MAJOR: 491997 (0 / 37 / 37) -> AVG-RTPM: 151ms
+    [junit] MAJOR: Mutants killed / live: 197 (20-506-0) / 136
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 25/50 - org.joda.time.format.DateTimeFormatter_ESTest39 (15ms / 37):
+    [junit] MAJOR: 497834 (3 / 37 / 37) -> AVG-RTPM: 157ms
+    [junit] MAJOR: Mutants killed / live: 200 (20-543-0) / 133
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 26/50 - org.joda.time.format.DateTimeFormatter_ESTest43 (15ms / 62):
+    [junit] MAJOR: 509664 (4 / 62 / 62) -> AVG-RTPM: 190ms
+    [junit] MAJOR: Mutants killed / live: 204 (20-605-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 27/50 - org.joda.time.format.DateTimeFormatter_ESTest5 (15ms / 17):
+    [junit] MAJOR: 513061 (0 / 17 / 17) -> AVG-RTPM: 199ms
+    [junit] MAJOR: Mutants killed / live: 204 (20-622-0) / 129
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 28/50 - org.joda.time.format.DateTimeFormatter_ESTest8 (15ms / 42):
+    [junit] MAJOR: 524326 (26 / 42 / 42) -> AVG-RTPM: 268ms
+    [junit] MAJOR: Mutants killed / live: 230 (20-664-0) / 103
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 29/50 - org.joda.time.format.DateTimeFormatter_ESTest11 (16ms / 44):
+    [junit] MAJOR: 533629 (27 / 44 / 44) -> AVG-RTPM: 211ms
+    [junit] MAJOR: Mutants killed / live: 257 (20-708-0) / 76
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 30/50 - org.joda.time.format.DateTimeFormatter_ESTest14 (16ms / 7):
+    [junit] MAJOR: 534951 (0 / 7 / 7) -> AVG-RTPM: 188ms
+    [junit] MAJOR: Mutants killed / live: 257 (20-715-0) / 76
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 31/50 - org.joda.time.format.DateTimeFormatter_ESTest17 (16ms / 10):
+    [junit] MAJOR: 536974 (0 / 10 / 10) -> AVG-RTPM: 202ms
+    [junit] MAJOR: Mutants killed / live: 257 (20-725-0) / 76
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 32/50 - org.joda.time.format.DateTimeFormatter_ESTest19 (16ms / 10):
+    [junit] MAJOR: 538830 (1 / 10 / 10) -> AVG-RTPM: 185ms
+    [junit] MAJOR: Mutants killed / live: 258 (20-735-0) / 75
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 33/50 - org.joda.time.format.DateTimeFormatter_ESTest25 (16ms / 15):
+    [junit] MAJOR: 541888 (5 / 15 / 15) -> AVG-RTPM: 203ms
+    [junit] MAJOR: Mutants killed / live: 263 (20-750-0) / 70
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 34/50 - org.joda.time.format.DateTimeFormatter_ESTest29 (16ms / 53):
+    [junit] MAJOR: 553494 (12 / 53 / 53) -> AVG-RTPM: 218ms
+    [junit] MAJOR: Mutants killed / live: 275 (20-803-0) / 58
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 35/50 - org.joda.time.format.DateTimeFormatter_ESTest38 (16ms / 42):
+    [junit] MAJOR: 561613 (3 / 42 / 42) -> AVG-RTPM: 193ms
+    [junit] MAJOR: Mutants killed / live: 278 (20-845-0) / 55
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 36/50 - org.joda.time.format.DateTimeFormatter_ESTest4 (16ms / 7):
+    [junit] MAJOR: 563015 (0 / 7 / 7) -> AVG-RTPM: 200ms
+    [junit] MAJOR: Mutants killed / live: 278 (20-852-0) / 55
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 37/50 - org.joda.time.format.DateTimeFormatter_ESTest46 (16ms / 54):
+    [junit] MAJOR: 573681 (2 / 54 / 54) -> AVG-RTPM: 197ms
+    [junit] MAJOR: Mutants killed / live: 280 (20-906-0) / 53
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 38/50 - org.joda.time.format.DateTimeFormatter_ESTest10 (17ms / 7):
+    [junit] MAJOR: 575046 (0 / 7 / 7) -> AVG-RTPM: 195ms
+    [junit] MAJOR: Mutants killed / live: 280 (20-913-0) / 53
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 39/50 - org.joda.time.format.DateTimeFormatter_ESTest23 (17ms / 27):
+    [junit] MAJOR: 580596 (20 / 27 / 27) -> AVG-RTPM: 205ms
+    [junit] MAJOR: Mutants killed / live: 300 (20-940-0) / 33
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 40/50 - org.joda.time.format.DateTimeFormatter_ESTest24 (17ms / 27):
+    [junit] MAJOR: 585712 (0 / 27 / 27) -> AVG-RTPM: 189ms
+    [junit] MAJOR: Mutants killed / live: 300 (20-967-0) / 33
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 41/50 - org.joda.time.format.DateTimeFormatter_ESTest12 (18ms / 7):
+    [junit] MAJOR: 587029 (0 / 7 / 7) -> AVG-RTPM: 188ms
+    [junit] MAJOR: Mutants killed / live: 300 (20-974-0) / 33
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 42/50 - org.joda.time.format.DateTimeFormatter_ESTest15 (20ms / 42):
+    [junit] MAJOR: 595323 (0 / 42 / 42) -> AVG-RTPM: 197ms
+    [junit] MAJOR: Mutants killed / live: 300 (20-1016-0) / 33
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 43/50 - org.joda.time.format.DateTimeFormatter_ESTest27 (20ms / 13):
+    [junit] MAJOR: 598481 (3 / 13 / 13) -> AVG-RTPM: 242ms
+    [junit] MAJOR: Mutants killed / live: 303 (20-1029-0) / 30
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 44/50 - org.joda.time.format.DateTimeFormatter_ESTest44 (20ms / 59):
+    [junit] MAJOR: 609972 (1 / 59 / 59) -> AVG-RTPM: 194ms
+    [junit] MAJOR: Mutants killed / live: 304 (20-1088-0) / 29
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 45/50 - org.joda.time.format.DateTimeFormatter_ESTest26 (21ms / 59):
+    [junit] MAJOR: 624604 (1 / 59 / 59) -> AVG-RTPM: 247ms
+    [junit] MAJOR: Mutants killed / live: 305 (20-1147-0) / 28
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 46/50 - org.joda.time.format.DateTimeFormatter_ESTest28 (21ms / 54):
+    [junit] MAJOR: 637146 (13 / 54 / 54) -> AVG-RTPM: 232ms
+    [junit] MAJOR: Mutants killed / live: 318 (20-1201-0) / 15
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 47/50 - org.joda.time.format.DateTimeFormatter_ESTest0 (23ms / 54):
+    [junit] MAJOR: 648127 (1 / 54 / 54) -> AVG-RTPM: 203ms
+    [junit] MAJOR: Mutants killed / live: 319 (20-1255-0) / 14
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 48/50 - org.joda.time.format.DateTimeFormatter_ESTest1 (24ms / 15):
+    [junit] MAJOR: 651145 (1 / 15 / 15) -> AVG-RTPM: 201ms
+    [junit] MAJOR: Mutants killed / live: 320 (20-1270-0) / 13
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 49/50 - org.joda.time.format.DateTimeFormatter_ESTest13 (25ms / 11):
+    [junit] MAJOR: 653334 (1 / 11 / 11) -> AVG-RTPM: 199ms
+    [junit] MAJOR: Mutants killed / live: 321 (20-1281-0) / 12
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 50/50 - org.joda.time.format.DateTimeFormatter_ESTest48 (29ms / 37):
+    [junit] MAJOR: 660683 (0 / 37 / 37) -> AVG-RTPM: 198ms
+    [junit] MAJOR: Mutants killed / live: 321 (20-1318-0) / 12
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  660.7 seconds
+    [junit] MAJOR: Mutation score: 92.24% (96.40%)
+    [junit] MAJOR: Mutants killed / live: 321 (20-1318-0) / 12
+    [junit] MAJOR: Mutant executions: 1486
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_87742_1501622696/16f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 11 minutes 42 seconds

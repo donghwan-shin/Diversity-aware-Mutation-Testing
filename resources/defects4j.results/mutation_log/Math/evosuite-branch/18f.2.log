@@ -1,0 +1,101 @@
+
+init:
+     [echo] -------- Commons MATH 3.0-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] Compiling 393 source files to /tmp/run_mutation.pl_27414_1501709683/18f/target/test-classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /tmp/run_mutation.pl_27414_1501709683/18f/src/test/java/org/apache/commons/math3/PerfTestUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 24 files to /tmp/run_mutation.pl_27414_1501709683/18f/target/test-classes
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 11 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 11.11 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 2244
+    [junit] MAJOR: Mutants covered:   1601 (71.35%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 11 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/11 - org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest4 (22ms / 796):
+    [junit] MAJOR: 769222 (558 / 796 / 796) -> AVG-RTPM: 966ms
+    [junit] MAJOR: Mutants killed / live: 558 (0-558-0) / 1043
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/11 - org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest5 (22ms / 60):
+    [junit] MAJOR: 795979 (53 / 60 / 60) -> AVG-RTPM: 445ms
+    [junit] MAJOR: Mutants killed / live: 611 (0-618-0) / 990
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/11 - org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest7 (25ms / 0):
+    [junit] MAJOR: 795980 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 611 (0-618-0) / 990
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/11 - org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest2 (39ms / 19):
+    [junit] MAJOR: 802228 (3 / 19 / 19) -> AVG-RTPM: 328ms
+    [junit] MAJOR: Mutants killed / live: 614 (0-637-0) / 987
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/11 - org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest1 (44ms / 17):
+    [junit] MAJOR: 807422 (0 / 17 / 17) -> AVG-RTPM: 305ms
+    [junit] MAJOR: Mutants killed / live: 614 (0-654-0) / 987
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/11 - org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest9 (52ms / 259):
+    [junit] MAJOR: 906455 (119 / 259 / 259) -> AVG-RTPM: 382ms
+    [junit] MAJOR: Mutants killed / live: 733 (0-913-0) / 868
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/11 - org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest10 (56ms / 1540):
+    [junit] MAJOR: 1496515 (826 / 1540 / 1540) -> AVG-RTPM: 383ms
+    [junit] MAJOR: Mutants killed / live: 1559 (0-2453-0) / 42
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/11 - org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest0 (57ms / 19):
+    [junit] MAJOR: 1502526 (0 / 19 / 19) -> AVG-RTPM: 316ms
+    [junit] MAJOR: Mutants killed / live: 1559 (0-2472-0) / 42
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/11 - org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest8 (70ms / 142):
+    [junit] MAJOR: 1558943 (39 / 142 / 142) -> AVG-RTPM: 397ms
+    [junit] MAJOR: Mutants killed / live: 1598 (0-2614-0) / 3
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/11 - org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest3 (78ms / 1531):
+    [junit] MAJOR: 2132696 (0 / 1531 / 1531) -> AVG-RTPM: 374ms
+    [junit] MAJOR: Mutants killed / live: 1598 (0-4145-0) / 3
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/11 - org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest6 (84ms / 114):
+    [junit] MAJOR: 2176999 (0 / 114 / 114) -> AVG-RTPM: 388ms
+    [junit] MAJOR: Mutants killed / live: 1598 (0-4259-0) / 3
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  2177.0 seconds
+    [junit] MAJOR: Mutation score: 71.21% (99.81%)
+    [junit] MAJOR: Mutants killed / live: 1598 (0-4259-0) / 3
+    [junit] MAJOR: Mutant executions: 4497
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_27414_1501709683/18f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 36 minutes 47 seconds

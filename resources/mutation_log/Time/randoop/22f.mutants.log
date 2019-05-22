@@ -1,0 +1,281 @@
+1:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(int,int,int,int,int,int,int,int,org.joda.time.PeriodType):82:type = checkPeriodType(type) |==> <NO-OP>
+2:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(int,int,int,int,int,int,int,int,org.joda.time.PeriodType):83:iType = type |==> <NO-OP>
+3:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(int,int,int,int,int,int,int,int,org.joda.time.PeriodType):84:setPeriodInternal(years, months, weeks, days, hours, minutes, seconds, millis) |==> <NO-OP>
+4:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(long,long,org.joda.time.PeriodType,org.joda.time.Chronology):98:type = checkPeriodType(type) |==> <NO-OP>
+5:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(long,long,org.joda.time.PeriodType,org.joda.time.Chronology):99:chrono = DateTimeUtils.getChronology(chrono) |==> <NO-OP>
+6:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(long,long,org.joda.time.PeriodType,org.joda.time.Chronology):100:iType = type |==> <NO-OP>
+7:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(long,long,org.joda.time.PeriodType,org.joda.time.Chronology):101:iValues = chrono.get(this, startInstant, endInstant) |==> <NO-OP>
+8:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):114:type = checkPeriodType(type) |==> <NO-OP>
+9:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):115:startInstant == null |==> startInstant != null
+10:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):115:startInstant == null |==> false
+11:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):115:startInstant == null |==> true
+12:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):115:endInstant == null |==> endInstant != null
+13:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):115:endInstant == null |==> false
+14:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):115:endInstant == null |==> true
+15:COR:&&(boolean,boolean):!=(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):115:startInstant == null && endInstant == null |==> startInstant == null != (endInstant == null)
+16:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):115:startInstant == null && endInstant == null |==> startInstant == null == (endInstant == null)
+17:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):115:startInstant == null && endInstant == null |==> false
+18:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):115:startInstant == null && endInstant == null |==> startInstant == null
+19:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):115:startInstant == null && endInstant == null |==> endInstant == null
+20:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):115:startInstant == null && endInstant == null |==> true
+21:COR:&&(boolean,boolean):||(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):115:startInstant == null && endInstant == null |==> startInstant == null || endInstant == null
+22:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):116:iType = type |==> <NO-OP>
+23:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):117:iValues = new int[size()] |==> <NO-OP>
+24:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):122:iType = type |==> <NO-OP>
+25:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant,org.joda.time.PeriodType):123:iValues = chrono.get(this, startMillis, endMillis) |==> <NO-OP>
+26:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):147:start == null |==> start != null
+27:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):147:start == null |==> false
+28:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):147:start == null |==> true
+29:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):147:end == null |==> end != null
+30:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):147:end == null |==> false
+31:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):147:end == null |==> true
+32:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):147:start == null || end == null |==> start == null != (end == null)
+33:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):147:start == null || end == null |==> start == null && end == null
+34:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):147:start == null || end == null |==> start == null == (end == null)
+35:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):147:start == null || end == null |==> false
+36:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):147:start == null || end == null |==> start == null
+37:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):147:start == null || end == null |==> end == null
+38:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):147:start == null || end == null |==> true
+39:COR:&&(boolean,boolean):!=(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):150:start instanceof BaseLocal && end instanceof BaseLocal |==> start instanceof BaseLocal != end instanceof BaseLocal
+40:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):150:start instanceof BaseLocal && end instanceof BaseLocal |==> start instanceof BaseLocal == end instanceof BaseLocal
+41:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):150:start instanceof BaseLocal && end instanceof BaseLocal |==> false
+42:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):150:start instanceof BaseLocal && end instanceof BaseLocal |==> start instanceof BaseLocal
+43:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):150:start instanceof BaseLocal && end instanceof BaseLocal |==> end instanceof BaseLocal
+44:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):150:start instanceof BaseLocal && end instanceof BaseLocal |==> true
+45:COR:&&(boolean,boolean):||(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):150:start instanceof BaseLocal && end instanceof BaseLocal |==> start instanceof BaseLocal || end instanceof BaseLocal
+46:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):150:start.getClass() == end.getClass() |==> start.getClass() != end.getClass()
+47:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):150:start.getClass() == end.getClass() |==> false
+48:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):150:start.getClass() == end.getClass() |==> true
+49:COR:&&(boolean,boolean):!=(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):150:start instanceof BaseLocal && end instanceof BaseLocal && start.getClass() == end.getClass() |==> (start instanceof BaseLocal && end instanceof BaseLocal) != (start.getClass() == end.getClass())
+50:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):150:start instanceof BaseLocal && end instanceof BaseLocal && start.getClass() == end.getClass() |==> (start instanceof BaseLocal && end instanceof BaseLocal) == (start.getClass() == end.getClass())
+51:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):150:start instanceof BaseLocal && end instanceof BaseLocal && start.getClass() == end.getClass() |==> false
+52:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):150:start instanceof BaseLocal && end instanceof BaseLocal && start.getClass() == end.getClass() |==> start instanceof BaseLocal && end instanceof BaseLocal
+53:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):150:start instanceof BaseLocal && end instanceof BaseLocal && start.getClass() == end.getClass() |==> start.getClass() == end.getClass()
+54:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):150:start instanceof BaseLocal && end instanceof BaseLocal && start.getClass() == end.getClass() |==> true
+55:COR:&&(boolean,boolean):||(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):150:start instanceof BaseLocal && end instanceof BaseLocal && start.getClass() == end.getClass() |==> start instanceof BaseLocal && end instanceof BaseLocal || start.getClass() == end.getClass()
+56:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):152:type = checkPeriodType(type) |==> <NO-OP>
+57:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):156:chrono = DateTimeUtils.getChronology(chrono) |==> <NO-OP>
+58:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):157:iType = type |==> <NO-OP>
+59:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):158:iValues = chrono.get(this, startMillis, endMillis) |==> <NO-OP>
+60:ROR:!=(int,int):<(int,int):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):160:start.size() != end.size() |==> start.size() < end.size()
+61:ROR:!=(int,int):<=(int,int):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):160:start.size() != end.size() |==> start.size() <= end.size()
+62:ROR:!=(int,int):==(int,int):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):160:start.size() != end.size() |==> start.size() == end.size()
+63:ROR:!=(int,int):>(int,int):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):160:start.size() != end.size() |==> start.size() > end.size()
+64:ROR:!=(int,int):>=(int,int):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):160:start.size() != end.size() |==> start.size() >= end.size()
+65:ROR:!=(int,int):FALSE(int,int):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):160:start.size() != end.size() |==> false
+66:ROR:!=(int,int):TRUE(int,int):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):160:start.size() != end.size() |==> true
+67:LVR:0:POS:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):163:0 |==> 1
+68:LVR:0:NEG:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):163:0 |==> -1
+69:ROR:<(int,int):!=(int,int):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):163:i < isize |==> i != isize
+70:ROR:<(int,int):<=(int,int):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):163:i < isize |==> i <= isize
+71:ROR:<(int,int):==(int,int):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):163:i < isize |==> i == isize
+72:ROR:<(int,int):>(int,int):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):163:i < isize |==> i > isize
+73:ROR:<(int,int):>=(int,int):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):163:i < isize |==> i >= isize
+74:ROR:<(int,int):FALSE(int,int):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):163:i < isize |==> false
+75:ROR:<(int,int):TRUE(int,int):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):163:i < isize |==> true
+76:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):164:start.getFieldType(i) != end.getFieldType(i) |==> start.getFieldType(i) == end.getFieldType(i)
+77:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):164:start.getFieldType(i) != end.getFieldType(i) |==> false
+78:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):164:start.getFieldType(i) != end.getFieldType(i) |==> true
+79:LVR:FALSE:TRUE:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):168:false |==> true
+80:ROR:==(boolean,boolean):!=(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):168:DateTimeUtils.isContiguous(start) == false |==> DateTimeUtils.isContiguous(start) != false
+81:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):168:DateTimeUtils.isContiguous(start) == false |==> false
+82:ROR:==(boolean,boolean):LHS(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):168:DateTimeUtils.isContiguous(start) == false |==> DateTimeUtils.isContiguous(start)
+83:ROR:==(boolean,boolean):RHS(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):168:DateTimeUtils.isContiguous(start) == false |==> false
+84:ROR:==(boolean,boolean):TRUE(boolean,boolean):org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):168:DateTimeUtils.isContiguous(start) == false |==> true
+85:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):171:iType = checkPeriodType(type) |==> <NO-OP>
+86:LVR:0:POS:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):173:0L |==> 1L
+87:LVR:0:NEG:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):173:0L |==> -1L
+88:LVR:0:POS:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):173:0L |==> 1L
+89:LVR:0:NEG:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):173:0L |==> -1L
+90:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial,org.joda.time.PeriodType):173:iValues = chrono.get(this, chrono.set(start, 0L), chrono.set(end, 0L)) |==> <NO-OP>
+91:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableDuration,org.joda.time.PeriodType):186:type = checkPeriodType(type) |==> <NO-OP>
+92:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableDuration,org.joda.time.PeriodType):191:iType = type |==> <NO-OP>
+93:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableInstant,org.joda.time.ReadableDuration,org.joda.time.PeriodType):192:iValues = chrono.get(this, startMillis, endMillis) |==> <NO-OP>
+94:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableDuration,org.joda.time.ReadableInstant,org.joda.time.PeriodType):204:type = checkPeriodType(type) |==> <NO-OP>
+95:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableDuration,org.joda.time.ReadableInstant,org.joda.time.PeriodType):209:iType = type |==> <NO-OP>
+96:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(org.joda.time.ReadableDuration,org.joda.time.ReadableInstant,org.joda.time.PeriodType):210:iValues = chrono.get(this, startMillis, endMillis) |==> <NO-OP>
+97:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(long):224:iType = PeriodType.time() |==> <NO-OP>
+98:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(long):226:iType = PeriodType.standard() |==> <NO-OP>
+99:LVR:POS:0:org.joda.time.base.BasePeriod@<init>(long):227:8 |==> 0
+100:LVR:POS:NEG:org.joda.time.base.BasePeriod@<init>(long):227:8 |==> -8
+101:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(long):227:iValues = new int[8] |==> <NO-OP>
+102:LVR:0:POS:org.joda.time.base.BasePeriod@<init>(long):228:0 |==> 1
+103:LVR:0:NEG:org.joda.time.base.BasePeriod@<init>(long):228:0 |==> -1
+104:LVR:POS:0:org.joda.time.base.BasePeriod@<init>(long):228:4 |==> 0
+105:LVR:POS:NEG:org.joda.time.base.BasePeriod@<init>(long):228:4 |==> -4
+106:LVR:POS:0:org.joda.time.base.BasePeriod@<init>(long):228:4 |==> 0
+107:LVR:POS:NEG:org.joda.time.base.BasePeriod@<init>(long):228:4 |==> -4
+108:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(long):228:System.arraycopy(values, 0, iValues, 4, 4) |==> <NO-OP>
+109:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(long,org.joda.time.PeriodType,org.joda.time.Chronology):245:type = checkPeriodType(type) |==> <NO-OP>
+110:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(long,org.joda.time.PeriodType,org.joda.time.Chronology):246:chrono = DateTimeUtils.getChronology(chrono) |==> <NO-OP>
+111:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(long,org.joda.time.PeriodType,org.joda.time.Chronology):247:iType = type |==> <NO-OP>
+112:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(long,org.joda.time.PeriodType,org.joda.time.Chronology):248:iValues = chrono.get(this, duration) |==> <NO-OP>
+113:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(java.lang.Object,org.joda.time.PeriodType,org.joda.time.Chronology):263:type == null |==> type != null
+114:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(java.lang.Object,org.joda.time.PeriodType,org.joda.time.Chronology):263:type == null |==> false
+115:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@<init>(java.lang.Object,org.joda.time.PeriodType,org.joda.time.Chronology):263:type == null |==> true
+116:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(java.lang.Object,org.joda.time.PeriodType,org.joda.time.Chronology):263:type = (type == null ? converter.getPeriodType(period) : type) |==> <NO-OP>
+117:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(java.lang.Object,org.joda.time.PeriodType,org.joda.time.Chronology):264:type = checkPeriodType(type) |==> <NO-OP>
+118:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(java.lang.Object,org.joda.time.PeriodType,org.joda.time.Chronology):265:iType = type |==> <NO-OP>
+119:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(java.lang.Object,org.joda.time.PeriodType,org.joda.time.Chronology):267:iValues = new int[size()] |==> <NO-OP>
+120:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(java.lang.Object,org.joda.time.PeriodType,org.joda.time.Chronology):268:chrono = DateTimeUtils.getChronology(chrono) |==> <NO-OP>
+121:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(java.lang.Object,org.joda.time.PeriodType,org.joda.time.Chronology):269:converter.setInto((ReadWritablePeriod)this, period, chrono) |==> <NO-OP>
+122:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(java.lang.Object,org.joda.time.PeriodType,org.joda.time.Chronology):271:iValues = new MutablePeriod(period, type, chrono).getValues() |==> <NO-OP>
+123:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(int[],org.joda.time.PeriodType):284:iType = type |==> <NO-OP>
+124:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@<init>(int[],org.joda.time.PeriodType):285:iValues = values |==> <NO-OP>
+125:LVR:POS:0:org.joda.time.base.BasePeriod@toDurationFrom(org.joda.time.ReadableInstant):363:1 |==> 0
+126:LVR:POS:NEG:org.joda.time.base.BasePeriod@toDurationFrom(org.joda.time.ReadableInstant):363:1 |==> -1
+127:LVR:NEG:0:org.joda.time.base.BasePeriod@toDurationTo(org.joda.time.ReadableInstant):387:-1 |==> 0
+128:LVR:NEG:POS:org.joda.time.base.BasePeriod@toDurationTo(org.joda.time.ReadableInstant):387:-1 |==> 1
+129:LVR:NEG:0:org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):402:-1 |==> 0
+130:LVR:NEG:POS:org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):402:-1 |==> 1
+131:ROR:==(int,int):!=(int,int):org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):402:index == -1 |==> index != -1
+132:ROR:==(int,int):<(int,int):org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):402:index == -1 |==> index < -1
+133:ROR:==(int,int):<=(int,int):org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):402:index == -1 |==> index <= -1
+134:ROR:==(int,int):>(int,int):org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):402:index == -1 |==> index > -1
+135:ROR:==(int,int):>=(int,int):org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):402:index == -1 |==> index >= -1
+136:ROR:==(int,int):FALSE(int,int):org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):402:index == -1 |==> false
+137:ROR:==(int,int):TRUE(int,int):org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):402:index == -1 |==> true
+138:LVR:0:POS:org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):403:0 |==> 1
+139:LVR:0:NEG:org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):403:0 |==> -1
+140:ROR:!=(int,int):<(int,int):org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):403:newValue != 0 |==> newValue < 0
+141:ROR:!=(int,int):<=(int,int):org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):403:newValue != 0 |==> newValue <= 0
+142:ROR:!=(int,int):==(int,int):org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):403:newValue != 0 |==> newValue == 0
+143:ROR:!=(int,int):>(int,int):org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):403:newValue != 0 |==> newValue > 0
+144:ROR:!=(int,int):>=(int,int):org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):403:newValue != 0 |==> newValue >= 0
+145:ROR:!=(int,int):FALSE(int,int):org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):403:newValue != 0 |==> false
+146:ROR:!=(int,int):TRUE(int,int):org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):403:newValue != 0 |==> true
+147:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@checkAndUpdate(org.joda.time.DurationFieldType,int[],int):408:values[index] = newValue |==> <NO-OP>
+148:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@setPeriod(org.joda.time.ReadablePeriod):420:period == null |==> period != null
+149:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@setPeriod(org.joda.time.ReadablePeriod):420:period == null |==> false
+150:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@setPeriod(org.joda.time.ReadablePeriod):420:period == null |==> true
+151:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@setPeriod(org.joda.time.ReadablePeriod):421:setValues(new int[size()]) |==> <NO-OP>
+152:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@setPeriod(org.joda.time.ReadablePeriod):423:setPeriodInternal(period) |==> <NO-OP>
+153:LVR:0:POS:org.joda.time.base.BasePeriod@setPeriodInternal(org.joda.time.ReadablePeriod):432:0 |==> 1
+154:LVR:0:NEG:org.joda.time.base.BasePeriod@setPeriodInternal(org.joda.time.ReadablePeriod):432:0 |==> -1
+155:ROR:<(int,int):!=(int,int):org.joda.time.base.BasePeriod@setPeriodInternal(org.joda.time.ReadablePeriod):432:i < isize |==> i != isize
+156:ROR:<(int,int):<=(int,int):org.joda.time.base.BasePeriod@setPeriodInternal(org.joda.time.ReadablePeriod):432:i < isize |==> i <= isize
+157:ROR:<(int,int):==(int,int):org.joda.time.base.BasePeriod@setPeriodInternal(org.joda.time.ReadablePeriod):432:i < isize |==> i == isize
+158:ROR:<(int,int):>(int,int):org.joda.time.base.BasePeriod@setPeriodInternal(org.joda.time.ReadablePeriod):432:i < isize |==> i > isize
+159:ROR:<(int,int):>=(int,int):org.joda.time.base.BasePeriod@setPeriodInternal(org.joda.time.ReadablePeriod):432:i < isize |==> i >= isize
+160:ROR:<(int,int):FALSE(int,int):org.joda.time.base.BasePeriod@setPeriodInternal(org.joda.time.ReadablePeriod):432:i < isize |==> false
+161:ROR:<(int,int):TRUE(int,int):org.joda.time.base.BasePeriod@setPeriodInternal(org.joda.time.ReadablePeriod):432:i < isize |==> true
+162:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@setPeriodInternal(org.joda.time.ReadablePeriod):435:checkAndUpdate(type, newValues, value) |==> <NO-OP>
+163:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@setPeriodInternal(org.joda.time.ReadablePeriod):437:iValues = newValues |==> <NO-OP>
+164:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@setPeriod(int,int,int,int,int,int,int,int):455:setPeriodInternal(years, months, weeks, days, hours, minutes, seconds, millis) |==> <NO-OP>
+165:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@setPeriodInternal(int,int,int,int,int,int,int,int):464:checkAndUpdate(DurationFieldType.years(), newValues, years) |==> <NO-OP>
+166:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@setPeriodInternal(int,int,int,int,int,int,int,int):465:checkAndUpdate(DurationFieldType.months(), newValues, months) |==> <NO-OP>
+167:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@setPeriodInternal(int,int,int,int,int,int,int,int):466:checkAndUpdate(DurationFieldType.weeks(), newValues, weeks) |==> <NO-OP>
+168:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@setPeriodInternal(int,int,int,int,int,int,int,int):467:checkAndUpdate(DurationFieldType.days(), newValues, days) |==> <NO-OP>
+169:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@setPeriodInternal(int,int,int,int,int,int,int,int):468:checkAndUpdate(DurationFieldType.hours(), newValues, hours) |==> <NO-OP>
+170:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@setPeriodInternal(int,int,int,int,int,int,int,int):469:checkAndUpdate(DurationFieldType.minutes(), newValues, minutes) |==> <NO-OP>
+171:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@setPeriodInternal(int,int,int,int,int,int,int,int):470:checkAndUpdate(DurationFieldType.seconds(), newValues, seconds) |==> <NO-OP>
+172:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@setPeriodInternal(int,int,int,int,int,int,int,int):471:checkAndUpdate(DurationFieldType.millis(), newValues, millis) |==> <NO-OP>
+173:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@setPeriodInternal(int,int,int,int,int,int,int,int):472:iValues = newValues |==> <NO-OP>
+174:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@setField(org.joda.time.DurationFieldType,int):484:setFieldInto(iValues, field, value) |==> <NO-OP>
+175:LVR:NEG:0:org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):497:-1 |==> 0
+176:LVR:NEG:POS:org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):497:-1 |==> 1
+177:ROR:==(int,int):!=(int,int):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):497:index == -1 |==> index != -1
+178:ROR:==(int,int):<(int,int):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):497:index == -1 |==> index < -1
+179:ROR:==(int,int):<=(int,int):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):497:index == -1 |==> index <= -1
+180:ROR:==(int,int):>(int,int):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):497:index == -1 |==> index > -1
+181:ROR:==(int,int):>=(int,int):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):497:index == -1 |==> index >= -1
+182:ROR:==(int,int):FALSE(int,int):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):497:index == -1 |==> false
+183:ROR:==(int,int):TRUE(int,int):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):497:index == -1 |==> true
+184:LVR:0:POS:org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:0 |==> 1
+185:LVR:0:NEG:org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:0 |==> -1
+186:ROR:!=(int,int):<(int,int):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:value != 0 |==> value < 0
+187:ROR:!=(int,int):<=(int,int):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:value != 0 |==> value <= 0
+188:ROR:!=(int,int):==(int,int):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:value != 0 |==> value == 0
+189:ROR:!=(int,int):>(int,int):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:value != 0 |==> value > 0
+190:ROR:!=(int,int):>=(int,int):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:value != 0 |==> value >= 0
+191:ROR:!=(int,int):FALSE(int,int):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:value != 0 |==> false
+192:ROR:!=(int,int):TRUE(int,int):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:value != 0 |==> true
+193:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:field == null |==> field != null
+194:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:field == null |==> false
+195:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:field == null |==> true
+196:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:value != 0 || field == null |==> value != 0 != (field == null)
+197:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:value != 0 || field == null |==> value != 0 && field == null
+198:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:value != 0 || field == null |==> value != 0 == (field == null)
+199:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:value != 0 || field == null |==> false
+200:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:value != 0 || field == null |==> value != 0
+201:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:value != 0 || field == null |==> field == null
+202:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):498:value != 0 || field == null |==> true
+203:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@setFieldInto(int[],org.joda.time.DurationFieldType,int):503:values[index] = value |==> <NO-OP>
+204:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@addField(org.joda.time.DurationFieldType,int):515:addFieldInto(iValues, field, value) |==> <NO-OP>
+205:LVR:NEG:0:org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):528:-1 |==> 0
+206:LVR:NEG:POS:org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):528:-1 |==> 1
+207:ROR:==(int,int):!=(int,int):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):528:index == -1 |==> index != -1
+208:ROR:==(int,int):<(int,int):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):528:index == -1 |==> index < -1
+209:ROR:==(int,int):<=(int,int):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):528:index == -1 |==> index <= -1
+210:ROR:==(int,int):>(int,int):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):528:index == -1 |==> index > -1
+211:ROR:==(int,int):>=(int,int):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):528:index == -1 |==> index >= -1
+212:ROR:==(int,int):FALSE(int,int):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):528:index == -1 |==> false
+213:ROR:==(int,int):TRUE(int,int):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):528:index == -1 |==> true
+214:LVR:0:POS:org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:0 |==> 1
+215:LVR:0:NEG:org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:0 |==> -1
+216:ROR:!=(int,int):<(int,int):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:value != 0 |==> value < 0
+217:ROR:!=(int,int):<=(int,int):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:value != 0 |==> value <= 0
+218:ROR:!=(int,int):==(int,int):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:value != 0 |==> value == 0
+219:ROR:!=(int,int):>(int,int):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:value != 0 |==> value > 0
+220:ROR:!=(int,int):>=(int,int):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:value != 0 |==> value >= 0
+221:ROR:!=(int,int):FALSE(int,int):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:value != 0 |==> false
+222:ROR:!=(int,int):TRUE(int,int):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:value != 0 |==> true
+223:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:field == null |==> field != null
+224:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:field == null |==> false
+225:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:field == null |==> true
+226:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:value != 0 || field == null |==> value != 0 != (field == null)
+227:COR:||(boolean,boolean):&&(boolean,boolean):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:value != 0 || field == null |==> value != 0 && field == null
+228:COR:||(boolean,boolean):==(boolean,boolean):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:value != 0 || field == null |==> value != 0 == (field == null)
+229:COR:||(boolean,boolean):FALSE(boolean,boolean):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:value != 0 || field == null |==> false
+230:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:value != 0 || field == null |==> value != 0
+231:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:value != 0 || field == null |==> field == null
+232:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):529:value != 0 || field == null |==> true
+233:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@addFieldInto(int[],org.joda.time.DurationFieldType,int):534:values[index] = FieldUtils.safeAdd(values[index], value) |==> <NO-OP>
+234:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@mergePeriod(org.joda.time.ReadablePeriod):545:period != null |==> period == null
+235:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@mergePeriod(org.joda.time.ReadablePeriod):545:period != null |==> false
+236:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@mergePeriod(org.joda.time.ReadablePeriod):545:period != null |==> true
+237:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@mergePeriod(org.joda.time.ReadablePeriod):546:iValues = mergePeriodInto(getValues(), period) |==> <NO-OP>
+238:LVR:0:POS:org.joda.time.base.BasePeriod@mergePeriodInto(int[],org.joda.time.ReadablePeriod):559:0 |==> 1
+239:LVR:0:NEG:org.joda.time.base.BasePeriod@mergePeriodInto(int[],org.joda.time.ReadablePeriod):559:0 |==> -1
+240:ROR:<(int,int):!=(int,int):org.joda.time.base.BasePeriod@mergePeriodInto(int[],org.joda.time.ReadablePeriod):559:i < isize |==> i != isize
+241:ROR:<(int,int):<=(int,int):org.joda.time.base.BasePeriod@mergePeriodInto(int[],org.joda.time.ReadablePeriod):559:i < isize |==> i <= isize
+242:ROR:<(int,int):==(int,int):org.joda.time.base.BasePeriod@mergePeriodInto(int[],org.joda.time.ReadablePeriod):559:i < isize |==> i == isize
+243:ROR:<(int,int):>(int,int):org.joda.time.base.BasePeriod@mergePeriodInto(int[],org.joda.time.ReadablePeriod):559:i < isize |==> i > isize
+244:ROR:<(int,int):>=(int,int):org.joda.time.base.BasePeriod@mergePeriodInto(int[],org.joda.time.ReadablePeriod):559:i < isize |==> i >= isize
+245:ROR:<(int,int):FALSE(int,int):org.joda.time.base.BasePeriod@mergePeriodInto(int[],org.joda.time.ReadablePeriod):559:i < isize |==> false
+246:ROR:<(int,int):TRUE(int,int):org.joda.time.base.BasePeriod@mergePeriodInto(int[],org.joda.time.ReadablePeriod):559:i < isize |==> true
+247:STD:<CALL>:<NO-OP>:org.joda.time.base.BasePeriod@mergePeriodInto(int[],org.joda.time.ReadablePeriod):562:checkAndUpdate(type, values, value) |==> <NO-OP>
+248:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@addPeriod(org.joda.time.ReadablePeriod):574:period != null |==> period == null
+249:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@addPeriod(org.joda.time.ReadablePeriod):574:period != null |==> false
+250:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.base.BasePeriod@addPeriod(org.joda.time.ReadablePeriod):574:period != null |==> true
+251:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@addPeriod(org.joda.time.ReadablePeriod):575:iValues = addPeriodInto(getValues(), period) |==> <NO-OP>
+252:LVR:0:POS:org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):588:0 |==> 1
+253:LVR:0:NEG:org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):588:0 |==> -1
+254:ROR:<(int,int):!=(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):588:i < isize |==> i != isize
+255:ROR:<(int,int):<=(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):588:i < isize |==> i <= isize
+256:ROR:<(int,int):==(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):588:i < isize |==> i == isize
+257:ROR:<(int,int):>(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):588:i < isize |==> i > isize
+258:ROR:<(int,int):>=(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):588:i < isize |==> i >= isize
+259:ROR:<(int,int):FALSE(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):588:i < isize |==> false
+260:ROR:<(int,int):TRUE(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):588:i < isize |==> true
+261:LVR:0:POS:org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):591:0 |==> 1
+262:LVR:0:NEG:org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):591:0 |==> -1
+263:ROR:!=(int,int):<(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):591:value != 0 |==> value < 0
+264:ROR:!=(int,int):<=(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):591:value != 0 |==> value <= 0
+265:ROR:!=(int,int):==(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):591:value != 0 |==> value == 0
+266:ROR:!=(int,int):>(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):591:value != 0 |==> value > 0
+267:ROR:!=(int,int):>=(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):591:value != 0 |==> value >= 0
+268:ROR:!=(int,int):FALSE(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):591:value != 0 |==> false
+269:ROR:!=(int,int):TRUE(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):591:value != 0 |==> true
+270:LVR:NEG:0:org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):593:-1 |==> 0
+271:LVR:NEG:POS:org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):593:-1 |==> 1
+272:ROR:==(int,int):!=(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):593:index == -1 |==> index != -1
+273:ROR:==(int,int):<(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):593:index == -1 |==> index < -1
+274:ROR:==(int,int):<=(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):593:index == -1 |==> index <= -1
+275:ROR:==(int,int):>(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):593:index == -1 |==> index > -1
+276:ROR:==(int,int):>=(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):593:index == -1 |==> index >= -1
+277:ROR:==(int,int):FALSE(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):593:index == -1 |==> false
+278:ROR:==(int,int):TRUE(int,int):org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):593:index == -1 |==> true
+279:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@addPeriodInto(int[],org.joda.time.ReadablePeriod):597:values[index] = FieldUtils.safeAdd(getValue(index), value) |==> <NO-OP>
+280:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@setValue(int,int):613:iValues[index] = value |==> <NO-OP>
+281:STD:<ASSIGN>:<NO-OP>:org.joda.time.base.BasePeriod@setValues(int[]):622:iValues = values |==> <NO-OP>

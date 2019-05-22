@@ -1,0 +1,85 @@
+
+init:
+     [echo] -------- Commons MATH 2.1-SNAPSHOT --------
+
+compile:
+    [javac] /tmp/run_mutation.pl_16542_1483685043/82f/build.xml:154: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] /tmp/run_mutation.pl_16542_1483685043/82f/build.xml:168: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 256 source files to /tmp/run_mutation.pl_16542_1483685043/82f/target/test-classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+     [copy] Copying 11 files to /tmp/run_mutation.pl_16542_1483685043/82f/target/test-classes
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 7 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 2.00 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 184
+    [junit] MAJOR: Mutants covered:   135 (73.37%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 7 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/7 - org.apache.commons.math.optimization.linear.SimplexSolver_ESTest1 (9ms / 0):
+    [junit] MAJOR: 0 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 135
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/7 - org.apache.commons.math.optimization.linear.SimplexSolver_ESTest5 (10ms / 47):
+    [junit] MAJOR: 5654 (16 / 47 / 47) -> AVG-RTPM: 120ms
+    [junit] MAJOR: Mutants killed / live: 16 (0-16-0) / 119
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/7 - org.apache.commons.math.optimization.linear.SimplexSolver_ESTest2 (11ms / 51):
+    [junit] MAJOR: 17251 (15 / 51 / 51) -> AVG-RTPM: 227ms
+    [junit] MAJOR: Mutants killed / live: 31 (0-31-0) / 104
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/7 - org.apache.commons.math.optimization.linear.SimplexSolver_ESTest4 (11ms / 10):
+    [junit] MAJOR: 20569 (3 / 10 / 10) -> AVG-RTPM: 331ms
+    [junit] MAJOR: Mutants killed / live: 34 (5-31-0) / 101
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/7 - org.apache.commons.math.optimization.linear.SimplexSolver_ESTest6 (12ms / 51):
+    [junit] MAJOR: 44262 (5 / 51 / 51) -> AVG-RTPM: 464ms
+    [junit] MAJOR: Mutants killed / live: 39 (10-31-0) / 96
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/7 - org.apache.commons.math.optimization.linear.SimplexSolver_ESTest3 (21ms / 87):
+    [junit] MAJOR: 118939 (3 / 87 / 87) -> AVG-RTPM: 858ms
+    [junit] MAJOR: Mutants killed / live: 42 (15-31-0) / 93
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/7 - org.apache.commons.math.optimization.linear.SimplexSolver_ESTest0 (22ms / 89):
+    [junit] MAJOR: 133782 (66 / 89 / 89) -> AVG-RTPM: 166ms
+    [junit] MAJOR: Mutants killed / live: 108 (15-120-1) / 27
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  133.8 seconds
+    [junit] MAJOR: Mutation score: 58.70% (80.00%)
+    [junit] MAJOR: Mutants killed / live: 108 (15-120-1) / 27
+    [junit] MAJOR: Mutant executions: 335
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_16542_1483685043/82f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 2 minutes 21 seconds

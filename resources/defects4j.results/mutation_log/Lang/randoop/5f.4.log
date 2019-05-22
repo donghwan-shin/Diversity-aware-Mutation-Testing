@@ -1,0 +1,95 @@
+
+init:
+     [echo] -------- commons-lang3 3.2-SNAPSHOT --------
+
+compile:
+
+compile.tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_16085_1501532413/5f/target/tests
+    [javac] Compiling 128 source files to /tmp/run_mutation.pl_16085_1501532413/5f/target/tests
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 1 warning
+     [copy] Copying 4 files to /tmp/run_mutation.pl_16085_1501532413/5f/target/tests
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 12 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 0.32 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 286
+    [junit] MAJOR: Mutants covered:   113 (39.51%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 12 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/12 - RegressionTest3 (2ms / 0):
+    [junit] MAJOR: 0 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 113
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/12 - RegressionTest2 (3ms / 0):
+    [junit] MAJOR: 0 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 113
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/12 - RegressionTest6 (3ms / 0):
+    [junit] MAJOR: 0 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 113
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/12 - RegressionTest8 (3ms / 12):
+    [junit] MAJOR: 88 (8 / 12 / 12) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 8 (2-6-0) / 105
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/12 - RegressionTest10 (4ms / 33):
+    [junit] MAJOR: 374 (7 / 33 / 33) -> AVG-RTPM: 8ms
+    [junit] MAJOR: Mutants killed / live: 15 (5-10-0) / 98
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/12 - RegressionTest11 (4ms / 33):
+    [junit] MAJOR: 577 (0 / 33 / 33) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 15 (8-14-0) / 98
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/12 - RegressionTest4 (4ms / 5):
+    [junit] MAJOR: 607 (3 / 5 / 5) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 18 (8-17-0) / 95
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/12 - RegressionTest5 (4ms / 26):
+    [junit] MAJOR: 819 (7 / 26 / 26) -> AVG-RTPM: 8ms
+    [junit] MAJOR: Mutants killed / live: 25 (11-21-0) / 88
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/12 - RegressionTest7 (4ms / 27):
+    [junit] MAJOR: 1028 (0 / 27 / 27) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 25 (14-25-0) / 88
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/12 - RegressionTest9 (4ms / 48):
+    [junit] MAJOR: 1265 (6 / 48 / 48) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 31 (20-27-0) / 82
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/12 - RegressionTest0 (13ms / 0):
+    [junit] MAJOR: 1266 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 31 (20-27-0) / 82
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/12 - RegressionTest1 (23ms / 5):
+    [junit] MAJOR: 1309 (0 / 5 / 5) -> AVG-RTPM: 8ms
+    [junit] MAJOR: Mutants killed / live: 31 (20-30-0) / 82
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  1.3 seconds
+    [junit] MAJOR: Mutation score: 10.84% (27.43%)
+    [junit] MAJOR: Mutants killed / live: 31 (20-30-0) / 82
+    [junit] MAJOR: Mutant executions: 189
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_16085_1501532413/5f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 7 seconds

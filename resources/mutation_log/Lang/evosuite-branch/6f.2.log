@@ -1,0 +1,78 @@
+
+init:
+     [echo] -------- commons-lang3 3.2-SNAPSHOT --------
+
+compile:
+
+compile.tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_85122_1501538467/6f/target/tests
+    [javac] Compiling 128 source files to /tmp/run_mutation.pl_85122_1501538467/6f/target/tests
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 1 warning
+     [copy] Copying 4 files to /tmp/run_mutation.pl_85122_1501538467/6f/target/tests
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 7 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 2.05 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 60
+    [junit] MAJOR: Mutants covered:   60 (100.00%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 7 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/7 - org.apache.commons.lang3.text.translate.CharSequenceTranslator_ESTest1 (10ms / 14):
+    [junit] MAJOR: 1323 (10 / 14 / 14) -> AVG-RTPM: 94ms
+    [junit] MAJOR: Mutants killed / live: 10 (0-10-0) / 50
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/7 - org.apache.commons.lang3.text.translate.CharSequenceTranslator_ESTest4 (11ms / 6):
+    [junit] MAJOR: 1795 (4 / 6 / 6) -> AVG-RTPM: 78ms
+    [junit] MAJOR: Mutants killed / live: 14 (0-14-0) / 46
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/7 - org.apache.commons.lang3.text.translate.CharSequenceTranslator_ESTest5 (11ms / 44):
+    [junit] MAJOR: 8612 (28 / 44 / 44) -> AVG-RTPM: 154ms
+    [junit] MAJOR: Mutants killed / live: 42 (15-29-1) / 18
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/7 - org.apache.commons.lang3.text.translate.CharSequenceTranslator_ESTest3 (12ms / 3):
+    [junit] MAJOR: 8682 (1 / 3 / 3) -> AVG-RTPM: 23ms
+    [junit] MAJOR: Mutants killed / live: 43 (15-32-1) / 17
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/7 - org.apache.commons.lang3.text.translate.CharSequenceTranslator_ESTest2 (14ms / 3):
+    [junit] MAJOR: 8743 (1 / 3 / 3) -> AVG-RTPM: 20ms
+    [junit] MAJOR: Mutants killed / live: 44 (15-35-1) / 16
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/7 - org.apache.commons.lang3.text.translate.CharSequenceTranslator_ESTest6 (17ms / 36):
+    [junit] MAJOR: 9441 (12 / 36 / 36) -> AVG-RTPM: 19ms
+    [junit] MAJOR: Mutants killed / live: 56 (15-71-1) / 4
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/7 - org.apache.commons.lang3.text.translate.CharSequenceTranslator_ESTest0 (31ms / 0):
+    [junit] MAJOR: 9441 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 56 (15-71-1) / 4
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  9.4 seconds
+    [junit] MAJOR: Mutation score: 93.33% (93.33%)
+    [junit] MAJOR: Mutants killed / live: 56 (15-71-1) / 4
+    [junit] MAJOR: Mutant executions: 106
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_85122_1501538467/6f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 20 seconds

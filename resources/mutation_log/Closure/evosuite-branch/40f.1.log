@@ -1,0 +1,108 @@
+
+rhino:
+
+properties:
+
+init:
+
+compile:
+
+compile-most:
+
+compile-jdk15:
+
+compile:
+
+properties:
+
+compile:
+
+xmlimplsrc-compile:
+     [echo] Calling /tmp/run_mutation.pl_95277_1501656354/40f/lib/rhino/xmlimplsrc/build.xml
+
+compile:
+
+compile-all:
+
+compile:
+
+jar:
+
+rhino-jarjar:
+   [jarjar] Updating jar: /tmp/run_mutation.pl_95277_1501656354/40f/build/lib/rhino.jar
+
+svnversion:
+
+compile:
+    [javac] /tmp/run_mutation.pl_95277_1501656354/40f/build.xml:252: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] /tmp/run_mutation.pl_95277_1501656354/40f/build.xml:258: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+[propertyfile] Updating property file: /tmp/run_mutation.pl_95277_1501656354/40f/build/classes/com/google/javascript/jscomp/parsing/ParserConfig.properties
+
+compile-tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_95277_1501656354/40f/build/test
+    [javac] /tmp/run_mutation.pl_95277_1501656354/40f/build.xml:324: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 395 source files to /tmp/run_mutation.pl_95277_1501656354/40f/build/test
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] Note: /tmp/run_mutation.pl_95277_1501656354/40f/src/com/google/javascript/jscomp/ant/CompileTask.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+    [javac] /tmp/run_mutation.pl_95277_1501656354/40f/build.xml:330: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 220 source files to /tmp/run_mutation.pl_95277_1501656354/40f/build/test
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] Note: /tmp/run_mutation.pl_95277_1501656354/40f/test/com/google/javascript/jscomp/parsing/JsDocInfoParserTest.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 1 warning
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 4 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 10.27 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 1023
+    [junit] MAJOR: Mutants covered:   330 (32.26%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 4 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/4 - com.google.javascript.jscomp.NameAnalyzer_ESTest3 (47ms / 91):
+    [junit] MAJOR: 188502 (39 / 91 / 91) -> AVG-RTPM: 2071ms
+    [junit] MAJOR: Mutants killed / live: 39 (0-39-0) / 291
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/4 - com.google.javascript.jscomp.NameAnalyzer_ESTest0 (52ms / 85):
+    [junit] MAJOR: 452841 (20 / 85 / 85) -> AVG-RTPM: 3109ms
+    [junit] MAJOR: Mutants killed / live: 59 (0-92-0) / 271
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/4 - com.google.javascript.jscomp.NameAnalyzer_ESTest1 (60ms / 196):
+    [junit] MAJOR: 470153 (146 / 196 / 196) -> AVG-RTPM: 88ms
+    [junit] MAJOR: Mutants killed / live: 205 (0-288-0) / 125
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/4 - com.google.javascript.jscomp.NameAnalyzer_ESTest2 (71ms / 172):
+    [junit] MAJOR: 485902 (122 / 172 / 172) -> AVG-RTPM: 91ms
+    [junit] MAJOR: Mutants killed / live: 327 (0-460-0) / 3
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  485.9 seconds
+    [junit] MAJOR: Mutation score: 31.96% (99.09%)
+    [junit] MAJOR: Mutants killed / live: 327 (0-460-0) / 3
+    [junit] MAJOR: Mutant executions: 544
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_95277_1501656354/40f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 8 minutes 36 seconds

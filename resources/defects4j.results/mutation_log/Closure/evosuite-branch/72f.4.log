@@ -1,0 +1,88 @@
+
+svnversion:
+
+compile:
+    [javac] /tmp/run_mutation.pl_58231_1501322522/72f/build.xml:185: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] /tmp/run_mutation.pl_58231_1501322522/72f/build.xml:191: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+[propertyfile] Updating property file: /tmp/run_mutation.pl_58231_1501322522/72f/build/classes/com/google/javascript/jscomp/parsing/ParserConfig.properties
+
+compile-tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_58231_1501322522/72f/build/test
+    [javac] /tmp/run_mutation.pl_58231_1501322522/72f/build.xml:255: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 383 source files to /tmp/run_mutation.pl_58231_1501322522/72f/build/test
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+    [javac] /tmp/run_mutation.pl_58231_1501322522/72f/build.xml:260: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 206 source files to /tmp/run_mutation.pl_58231_1501322522/72f/build/test
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 8 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 14.09 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 293
+    [junit] MAJOR: Mutants covered:   74 (25.26%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to (testMap.csv)
+    [junit] MAJOR: Export coverage map to (covMap.csv)
+    [junit] MAJOR: Exclude 0 mutants
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 8 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/8 - com.google.javascript.jscomp.RenameLabels_ESTest2 (26ms / 17):
+    [junit] MAJOR: 16114 (6 / 17 / 17) -> AVG-RTPM: 947ms
+    [junit] MAJOR: Mutants killed / live: 6 (0-6-0) / 68
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/8 - com.google.javascript.jscomp.RenameLabels_ESTest4 (26ms / 16):
+    [junit] MAJOR: 35319 (4 / 16 / 16) -> AVG-RTPM: 1200ms
+    [junit] MAJOR: Mutants killed / live: 10 (5-6-0) / 64
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/8 - com.google.javascript.jscomp.RenameLabels_ESTest1 (28ms / 0):
+    [junit] MAJOR: 35319 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 10 (5-6-0) / 64
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/8 - com.google.javascript.jscomp.RenameLabels_ESTest3 (30ms / 17):
+    [junit] MAJOR: 62562 (0 / 17 / 17) -> AVG-RTPM: 1602ms
+    [junit] MAJOR: Mutants killed / live: 10 (5-12-0) / 64
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/8 - com.google.javascript.jscomp.FunctionToBlockMutator_ESTest0 (37ms / 0):
+    [junit] MAJOR: 62562 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 10 (5-12-0) / 64
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/8 - com.google.javascript.jscomp.RenameLabels_ESTest5 (39ms / 59):
+    [junit] MAJOR: 220685 (27 / 59 / 59) -> AVG-RTPM: 2680ms
+    [junit] MAJOR: Mutants killed / live: 37 (5-43-0) / 37
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/8 - com.google.javascript.jscomp.RenameLabels_ESTest0 (41ms / 53):
+    [junit] MAJOR: 312160 (20 / 53 / 53) -> AVG-RTPM: 1725ms
+    [junit] MAJOR: Mutants killed / live: 57 (5-91-0) / 17
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/8 - com.google.javascript.jscomp.FunctionToBlockMutator_ESTest1 (45ms / 18):
+    [junit] MAJOR: 313736 (9 / 18 / 18) -> AVG-RTPM: 87ms
+    [junit] MAJOR: Mutants killed / live: 66 (5-109-0) / 8
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  313.7 seconds
+    [junit] MAJOR: Mutation score: 22.53% (89.19%)
+    [junit] MAJOR: Mutants killed / live: 66 (5-109-0) / 8
+    [junit] MAJOR: Mutant executions: 180
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results (to summary.csv)
+    [junit] MAJOR: Export mutant kill details (to /tmp/run_mutation.pl_58231_1501322522/72f/kill.csv)
+    [junit] MAJOR: Export kill map (to killMap.csv)!
+
+BUILD SUCCESSFUL
+Total time: 5 minutes 37 seconds

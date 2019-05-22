@@ -1,0 +1,36 @@
+
+svnversion:
+
+compile:
+    [javac] /tmp/run_mutation.pl_14376_1500995860/86f/build.xml:169: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] /tmp/run_mutation.pl_14376_1500995860/86f/build.xml:175: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+[propertyfile] Updating property file: /tmp/run_mutation.pl_14376_1500995860/86f/build/classes/com/google/javascript/jscomp/parsing/ParserConfig.properties
+
+compile-tests:
+    [mkdir] Created dir: /tmp/run_mutation.pl_14376_1500995860/86f/build/test
+    [javac] /tmp/run_mutation.pl_14376_1500995860/86f/build.xml:234: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 189 source files to /tmp/run_mutation.pl_14376_1500995860/86f/build/test
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Caught an exception while logging the end of the build.  Exception was:
+java.lang.OutOfMemoryError: PermGen space
+There has been an error prior to that:
+java.lang.OutOfMemoryError: PermGen space
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1408)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Caused by: java.lang.OutOfMemoryError: PermGen space

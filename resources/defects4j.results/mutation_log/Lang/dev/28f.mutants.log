@@ -1,0 +1,118 @@
+1:ROR:==(int,int):!=(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index) == '&' |==> input.charAt(index) != '&'
+2:ROR:==(int,int):<(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index) == '&' |==> input.charAt(index) < '&'
+3:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index) == '&' |==> input.charAt(index) <= '&'
+4:ROR:==(int,int):>(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index) == '&' |==> input.charAt(index) > '&'
+5:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index) == '&' |==> input.charAt(index) >= '&'
+6:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index) == '&' |==> false
+7:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index) == '&' |==> true
+8:LVR:POS:0:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:1 |==> 0
+9:LVR:POS:NEG:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:1 |==> -1
+10:AOR:+(int,int):%(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:index + 1 |==> index % 1
+11:AOR:+(int,int):*(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:index + 1 |==> index * 1
+12:AOR:+(int,int):-(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:index + 1 |==> index - 1
+13:AOR:+(int,int):/(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:index + 1 |==> index / 1
+14:ROR:==(int,int):!=(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index + 1) == '#' |==> input.charAt(index + 1) != '#'
+15:ROR:==(int,int):<(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index + 1) == '#' |==> input.charAt(index + 1) < '#'
+16:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index + 1) == '#' |==> input.charAt(index + 1) <= '#'
+17:ROR:==(int,int):>(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index + 1) == '#' |==> input.charAt(index + 1) > '#'
+18:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index + 1) == '#' |==> input.charAt(index + 1) >= '#'
+19:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index + 1) == '#' |==> false
+20:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index + 1) == '#' |==> true
+21:COR:&&(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index) == '&' && input.charAt(index + 1) == '#' |==> input.charAt(index) == '&' != (input.charAt(index + 1) == '#')
+22:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index) == '&' && input.charAt(index + 1) == '#' |==> input.charAt(index) == '&' == (input.charAt(index + 1) == '#')
+23:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index) == '&' && input.charAt(index + 1) == '#' |==> false
+24:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index) == '&' && input.charAt(index + 1) == '#' |==> input.charAt(index) == '&'
+25:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index) == '&' && input.charAt(index + 1) == '#' |==> input.charAt(index + 1) == '#'
+26:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index) == '&' && input.charAt(index + 1) == '#' |==> true
+27:COR:&&(boolean,boolean):||(boolean,boolean):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):37:input.charAt(index) == '&' && input.charAt(index + 1) == '#' |==> input.charAt(index) == '&' || input.charAt(index + 1) == '#'
+28:LVR:POS:0:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):38:2 |==> 0
+29:LVR:POS:NEG:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):38:2 |==> -2
+30:AOR:+(int,int):%(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):38:index + 2 |==> index % 2
+31:AOR:+(int,int):*(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):38:index + 2 |==> index * 2
+32:AOR:+(int,int):-(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):38:index + 2 |==> index - 2
+33:AOR:+(int,int):/(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):38:index + 2 |==> index / 2
+34:LVR:FALSE:TRUE:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):39:false |==> true
+35:ROR:==(int,int):!=(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'x' |==> firstChar != 'x'
+36:ROR:==(int,int):<(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'x' |==> firstChar < 'x'
+37:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'x' |==> firstChar <= 'x'
+38:ROR:==(int,int):>(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'x' |==> firstChar > 'x'
+39:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'x' |==> firstChar >= 'x'
+40:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'x' |==> false
+41:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'x' |==> true
+42:ROR:==(int,int):!=(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'X' |==> firstChar != 'X'
+43:ROR:==(int,int):<(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'X' |==> firstChar < 'X'
+44:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'X' |==> firstChar <= 'X'
+45:ROR:==(int,int):>(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'X' |==> firstChar > 'X'
+46:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'X' |==> firstChar >= 'X'
+47:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'X' |==> false
+48:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'X' |==> true
+49:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'x' || firstChar == 'X' |==> firstChar == 'x' != (firstChar == 'X')
+50:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'x' || firstChar == 'X' |==> firstChar == 'x' && firstChar == 'X'
+51:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'x' || firstChar == 'X' |==> firstChar == 'x' == (firstChar == 'X')
+52:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'x' || firstChar == 'X' |==> false
+53:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'x' || firstChar == 'X' |==> firstChar == 'x'
+54:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'x' || firstChar == 'X' |==> firstChar == 'X'
+55:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):42:firstChar == 'x' || firstChar == 'X' |==> true
+56:STD:<INC>:<NO-OP>:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):43:start++ |==> <NO-OP>
+57:LVR:TRUE:FALSE:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):44:true |==> false
+58:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):44:isHex = true |==> <NO-OP>
+59:ROR:!=(int,int):<(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):48:input.charAt(end) != ';' |==> input.charAt(end) < ';'
+60:ROR:!=(int,int):<=(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):48:input.charAt(end) != ';' |==> input.charAt(end) <= ';'
+61:ROR:!=(int,int):==(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):48:input.charAt(end) != ';' |==> input.charAt(end) == ';'
+62:ROR:!=(int,int):>(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):48:input.charAt(end) != ';' |==> input.charAt(end) > ';'
+63:ROR:!=(int,int):>=(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):48:input.charAt(end) != ';' |==> input.charAt(end) >= ';'
+64:ROR:!=(int,int):FALSE(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):48:input.charAt(end) != ';' |==> false
+65:ROR:!=(int,int):TRUE(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):48:input.charAt(end) != ';' |==> true
+66:STD:<INC>:<NO-OP>:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):49:end++ |==> <NO-OP>
+67:COR:isHex:TRUE:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):54:isHex |==> false
+68:COR:isHex:FALSE:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):54:isHex |==> true
+69:LVR:POS:0:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):55:16 |==> 0
+70:LVR:POS:NEG:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):55:16 |==> -16
+71:LVR:POS:0:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):57:10 |==> 0
+72:LVR:POS:NEG:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):57:10 |==> -10
+73:LVR:0:POS:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):60:0 |==> 1
+74:LVR:0:NEG:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):60:0 |==> -1
+75:LVR:POS:0:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):63:65535 |==> 0
+76:LVR:POS:NEG:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):63:65535 |==> -65535
+77:ROR:>(int,int):!=(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):63:entityValue > 65535 |==> entityValue != 65535
+78:ROR:>(int,int):<(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):63:entityValue > 65535 |==> entityValue < 65535
+79:ROR:>(int,int):<=(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):63:entityValue > 65535 |==> entityValue <= 65535
+80:ROR:>(int,int):==(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):63:entityValue > 65535 |==> entityValue == 65535
+81:ROR:>(int,int):>=(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):63:entityValue > 65535 |==> entityValue >= 65535
+82:ROR:>(int,int):FALSE(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):63:entityValue > 65535 |==> false
+83:ROR:>(int,int):TRUE(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):63:entityValue > 65535 |==> true
+84:LVR:0:POS:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):65:0 |==> 1
+85:LVR:0:NEG:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):65:0 |==> -1
+86:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):65:out.write(chrs[0]) |==> <NO-OP>
+87:LVR:POS:0:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):66:1 |==> 0
+88:LVR:POS:NEG:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):66:1 |==> -1
+89:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):66:out.write(chrs[1]) |==> <NO-OP>
+90:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):68:out.write(entityValue) |==> <NO-OP>
+91:LVR:POS:0:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:2 |==> 0
+92:LVR:POS:NEG:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:2 |==> -2
+93:AOR:-(int,int):%(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:end - start |==> end % start
+94:AOR:-(int,int):*(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:end - start |==> end * start
+95:AOR:-(int,int):+(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:end - start |==> end + start
+96:AOR:-(int,int):/(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:end - start |==> end / start
+97:AOR:+(int,int):%(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:2 + (end - start) |==> 2 % (end - start)
+98:AOR:+(int,int):*(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:2 + (end - start) |==> 2 * (end - start)
+99:AOR:+(int,int):-(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:2 + (end - start) |==> 2 - (end - start)
+100:AOR:+(int,int):/(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:2 + (end - start) |==> 2 / (end - start)
+101:COR:isHex:TRUE:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:isHex |==> false
+102:COR:isHex:FALSE:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:isHex |==> true
+103:LVR:POS:0:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:1 |==> 0
+104:LVR:POS:NEG:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:1 |==> -1
+105:LVR:0:POS:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:0 |==> 1
+106:LVR:0:NEG:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:0 |==> -1
+107:AOR:+(int,int):%(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:2 + (end - start) + (isHex ? 1 : 0) |==> (2 + (end - start)) % (isHex ? 1 : 0)
+108:AOR:+(int,int):*(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:2 + (end - start) + (isHex ? 1 : 0) |==> (2 + (end - start)) * (isHex ? 1 : 0)
+109:AOR:+(int,int):-(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:2 + (end - start) + (isHex ? 1 : 0) |==> 2 + (end - start) - (isHex ? 1 : 0)
+110:AOR:+(int,int):/(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:2 + (end - start) + (isHex ? 1 : 0) |==> (2 + (end - start)) / (isHex ? 1 : 0)
+111:LVR:POS:0:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:1 |==> 0
+112:LVR:POS:NEG:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:1 |==> -1
+113:AOR:+(int,int):%(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:2 + (end - start) + (isHex ? 1 : 0) + 1 |==> (2 + (end - start) + (isHex ? 1 : 0)) % 1
+114:AOR:+(int,int):*(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:2 + (end - start) + (isHex ? 1 : 0) + 1 |==> (2 + (end - start) + (isHex ? 1 : 0)) * 1
+115:AOR:+(int,int):-(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:2 + (end - start) + (isHex ? 1 : 0) + 1 |==> 2 + (end - start) + (isHex ? 1 : 0) - 1
+116:AOR:+(int,int):/(int,int):org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):70:2 + (end - start) + (isHex ? 1 : 0) + 1 |==> (2 + (end - start) + (isHex ? 1 : 0)) / 1
+117:LVR:0:POS:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):72:0 |==> 1
+118:LVR:0:NEG:org.apache.commons.lang3.text.translate.NumericEntityUnescaper@translate(java.lang.CharSequence,int,java.io.Writer):72:0 |==> -1

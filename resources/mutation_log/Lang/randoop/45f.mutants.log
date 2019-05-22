@@ -1,0 +1,490 @@
+1:LVR:FALSE:TRUE:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int):142:false |==> true
+2:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):164:str == null |==> str != null
+3:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):164:str == null |==> false
+4:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):164:str == null |==> true
+5:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):167:newLineStr == null |==> newLineStr != null
+6:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):167:newLineStr == null |==> false
+7:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):167:newLineStr == null |==> true
+8:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):168:newLineStr = SystemUtils.LINE_SEPARATOR |==> <NO-OP>
+9:LVR:POS:0:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):170:1 |==> 0
+10:LVR:POS:NEG:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):170:1 |==> -1
+11:ROR:<(int,int):!=(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):170:wrapLength < 1 |==> wrapLength != 1
+12:ROR:<(int,int):<=(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):170:wrapLength < 1 |==> wrapLength <= 1
+13:ROR:<(int,int):==(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):170:wrapLength < 1 |==> wrapLength == 1
+14:ROR:<(int,int):>(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):170:wrapLength < 1 |==> wrapLength > 1
+15:ROR:<(int,int):>=(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):170:wrapLength < 1 |==> wrapLength >= 1
+16:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):170:wrapLength < 1 |==> false
+17:ROR:<(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):170:wrapLength < 1 |==> true
+18:LVR:POS:0:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):171:1 |==> 0
+19:LVR:POS:NEG:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):171:1 |==> -1
+20:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):171:wrapLength = 1 |==> <NO-OP>
+21:LVR:0:POS:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):174:0 |==> 1
+22:LVR:0:NEG:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):174:0 |==> -1
+23:LVR:POS:0:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):175:32 |==> 0
+24:LVR:POS:NEG:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):175:32 |==> -32
+25:AOR:+(int,int):%(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):175:inputLineLength + 32 |==> inputLineLength % 32
+26:AOR:+(int,int):*(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):175:inputLineLength + 32 |==> inputLineLength * 32
+27:AOR:+(int,int):-(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):175:inputLineLength + 32 |==> inputLineLength - 32
+28:AOR:+(int,int):/(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):175:inputLineLength + 32 |==> inputLineLength / 32
+29:AOR:-(int,int):%(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):177:inputLineLength - offset |==> inputLineLength % offset
+30:AOR:-(int,int):*(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):177:inputLineLength - offset |==> inputLineLength * offset
+31:AOR:-(int,int):+(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):177:inputLineLength - offset |==> inputLineLength + offset
+32:AOR:-(int,int):/(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):177:inputLineLength - offset |==> inputLineLength / offset
+33:ROR:>(int,int):!=(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):177:(inputLineLength - offset) > wrapLength |==> (inputLineLength - offset) != wrapLength
+34:ROR:>(int,int):<(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):177:(inputLineLength - offset) > wrapLength |==> (inputLineLength - offset) < wrapLength
+35:ROR:>(int,int):<=(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):177:(inputLineLength - offset) > wrapLength |==> (inputLineLength - offset) <= wrapLength
+36:ROR:>(int,int):==(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):177:(inputLineLength - offset) > wrapLength |==> (inputLineLength - offset) == wrapLength
+37:ROR:>(int,int):>=(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):177:(inputLineLength - offset) > wrapLength |==> (inputLineLength - offset) >= wrapLength
+38:ROR:>(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):177:(inputLineLength - offset) > wrapLength |==> false
+39:ROR:>(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):177:(inputLineLength - offset) > wrapLength |==> true
+40:ROR:==(int,int):!=(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):178:str.charAt(offset) == ' ' |==> str.charAt(offset) != ' '
+41:ROR:==(int,int):<(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):178:str.charAt(offset) == ' ' |==> str.charAt(offset) < ' '
+42:ROR:==(int,int):<=(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):178:str.charAt(offset) == ' ' |==> str.charAt(offset) <= ' '
+43:ROR:==(int,int):>(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):178:str.charAt(offset) == ' ' |==> str.charAt(offset) > ' '
+44:ROR:==(int,int):>=(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):178:str.charAt(offset) == ' ' |==> str.charAt(offset) >= ' '
+45:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):178:str.charAt(offset) == ' ' |==> false
+46:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):178:str.charAt(offset) == ' ' |==> true
+47:STD:<INC>:<NO-OP>:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):179:offset++ |==> <NO-OP>
+48:AOR:+(int,int):%(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):182:wrapLength + offset |==> wrapLength % offset
+49:AOR:+(int,int):*(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):182:wrapLength + offset |==> wrapLength * offset
+50:AOR:+(int,int):-(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):182:wrapLength + offset |==> wrapLength - offset
+51:AOR:+(int,int):/(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):182:wrapLength + offset |==> wrapLength / offset
+52:ROR:>=(int,int):!=(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):184:spaceToWrapAt >= offset |==> spaceToWrapAt != offset
+53:ROR:>=(int,int):<(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):184:spaceToWrapAt >= offset |==> spaceToWrapAt < offset
+54:ROR:>=(int,int):<=(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):184:spaceToWrapAt >= offset |==> spaceToWrapAt <= offset
+55:ROR:>=(int,int):==(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):184:spaceToWrapAt >= offset |==> spaceToWrapAt == offset
+56:ROR:>=(int,int):>(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):184:spaceToWrapAt >= offset |==> spaceToWrapAt > offset
+57:ROR:>=(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):184:spaceToWrapAt >= offset |==> false
+58:ROR:>=(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):184:spaceToWrapAt >= offset |==> true
+59:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):186:wrappedLine.append(str.substring(offset, spaceToWrapAt)) |==> <NO-OP>
+60:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):187:wrappedLine.append(newLineStr) |==> <NO-OP>
+61:LVR:POS:0:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):188:1 |==> 0
+62:LVR:POS:NEG:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):188:1 |==> -1
+63:AOR:+(int,int):%(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):188:spaceToWrapAt + 1 |==> spaceToWrapAt % 1
+64:AOR:+(int,int):*(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):188:spaceToWrapAt + 1 |==> spaceToWrapAt * 1
+65:AOR:+(int,int):-(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):188:spaceToWrapAt + 1 |==> spaceToWrapAt - 1
+66:AOR:+(int,int):/(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):188:spaceToWrapAt + 1 |==> spaceToWrapAt / 1
+67:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):188:offset = spaceToWrapAt + 1 |==> <NO-OP>
+68:COR:wrapLongWords:TRUE:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):192:wrapLongWords |==> false
+69:COR:wrapLongWords:FALSE:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):192:wrapLongWords |==> true
+70:AOR:+(int,int):%(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):194:wrapLength + offset |==> wrapLength % offset
+71:AOR:+(int,int):*(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):194:wrapLength + offset |==> wrapLength * offset
+72:AOR:+(int,int):-(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):194:wrapLength + offset |==> wrapLength - offset
+73:AOR:+(int,int):/(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):194:wrapLength + offset |==> wrapLength / offset
+74:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):194:wrappedLine.append(str.substring(offset, wrapLength + offset)) |==> <NO-OP>
+75:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):195:wrappedLine.append(newLineStr) |==> <NO-OP>
+76:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):196:offset += wrapLength |==> <NO-OP>
+77:AOR:+(int,int):%(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):199:wrapLength + offset |==> wrapLength % offset
+78:AOR:+(int,int):*(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):199:wrapLength + offset |==> wrapLength * offset
+79:AOR:+(int,int):-(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):199:wrapLength + offset |==> wrapLength - offset
+80:AOR:+(int,int):/(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):199:wrapLength + offset |==> wrapLength / offset
+81:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):199:spaceToWrapAt = str.indexOf(' ', wrapLength + offset) |==> <NO-OP>
+82:LVR:0:POS:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):200:0 |==> 1
+83:LVR:0:NEG:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):200:0 |==> -1
+84:ROR:>=(int,int):!=(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):200:spaceToWrapAt >= 0 |==> spaceToWrapAt != 0
+85:ROR:>=(int,int):<(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):200:spaceToWrapAt >= 0 |==> spaceToWrapAt < 0
+86:ROR:>=(int,int):<=(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):200:spaceToWrapAt >= 0 |==> spaceToWrapAt <= 0
+87:ROR:>=(int,int):==(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):200:spaceToWrapAt >= 0 |==> spaceToWrapAt == 0
+88:ROR:>=(int,int):>(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):200:spaceToWrapAt >= 0 |==> spaceToWrapAt > 0
+89:ROR:>=(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):200:spaceToWrapAt >= 0 |==> false
+90:ROR:>=(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):200:spaceToWrapAt >= 0 |==> true
+91:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):201:wrappedLine.append(str.substring(offset, spaceToWrapAt)) |==> <NO-OP>
+92:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):202:wrappedLine.append(newLineStr) |==> <NO-OP>
+93:LVR:POS:0:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):203:1 |==> 0
+94:LVR:POS:NEG:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):203:1 |==> -1
+95:AOR:+(int,int):%(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):203:spaceToWrapAt + 1 |==> spaceToWrapAt % 1
+96:AOR:+(int,int):*(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):203:spaceToWrapAt + 1 |==> spaceToWrapAt * 1
+97:AOR:+(int,int):-(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):203:spaceToWrapAt + 1 |==> spaceToWrapAt - 1
+98:AOR:+(int,int):/(int,int):org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):203:spaceToWrapAt + 1 |==> spaceToWrapAt / 1
+99:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):203:offset = spaceToWrapAt + 1 |==> <NO-OP>
+100:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):205:wrappedLine.append(str.substring(offset)) |==> <NO-OP>
+101:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):206:offset = inputLineLength |==> <NO-OP>
+102:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@wrap(java.lang.String,int,java.lang.String,boolean):213:wrappedLine.append(str.substring(offset)) |==> <NO-OP>
+103:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):276:delimiters == null |==> delimiters != null
+104:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):276:delimiters == null |==> false
+105:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):276:delimiters == null |==> true
+106:LVR:NEG:0:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):276:-1 |==> 0
+107:LVR:NEG:POS:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):276:-1 |==> 1
+108:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str == null |==> str != null
+109:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str == null |==> false
+110:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str == null |==> true
+111:LVR:0:POS:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:0 |==> 1
+112:LVR:0:NEG:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:0 |==> -1
+113:ROR:==(int,int):!=(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str.length() == 0 |==> str.length() != 0
+114:ROR:==(int,int):<(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str.length() == 0 |==> str.length() < 0
+115:ROR:==(int,int):<=(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str.length() == 0 |==> str.length() <= 0
+116:ROR:==(int,int):>(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str.length() == 0 |==> str.length() > 0
+117:ROR:==(int,int):>=(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str.length() == 0 |==> str.length() >= 0
+118:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str.length() == 0 |==> false
+119:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str.length() == 0 |==> true
+120:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str == null || str.length() == 0 |==> str == null != (str.length() == 0)
+121:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str == null || str.length() == 0 |==> str == null && str.length() == 0
+122:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str == null || str.length() == 0 |==> str == null == (str.length() == 0)
+123:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str == null || str.length() == 0 |==> false
+124:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str == null || str.length() == 0 |==> str == null
+125:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str == null || str.length() == 0 |==> str.length() == 0
+126:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str == null || str.length() == 0 |==> true
+127:LVR:0:POS:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:0 |==> 1
+128:LVR:0:NEG:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:0 |==> -1
+129:ROR:==(int,int):!=(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:delimLen == 0 |==> delimLen != 0
+130:ROR:==(int,int):<(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:delimLen == 0 |==> delimLen < 0
+131:ROR:==(int,int):<=(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:delimLen == 0 |==> delimLen <= 0
+132:ROR:==(int,int):>(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:delimLen == 0 |==> delimLen > 0
+133:ROR:==(int,int):>=(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:delimLen == 0 |==> delimLen >= 0
+134:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:delimLen == 0 |==> false
+135:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:delimLen == 0 |==> true
+136:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str == null || str.length() == 0 || delimLen == 0 |==> (str == null || str.length() == 0) != (delimLen == 0)
+137:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str == null || str.length() == 0 || delimLen == 0 |==> (str == null || str.length() == 0) && delimLen == 0
+138:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str == null || str.length() == 0 || delimLen == 0 |==> (str == null || str.length() == 0) == (delimLen == 0)
+139:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str == null || str.length() == 0 || delimLen == 0 |==> false
+140:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str == null || str.length() == 0 || delimLen == 0 |==> str == null || str.length() == 0
+141:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str == null || str.length() == 0 || delimLen == 0 |==> delimLen == 0
+142:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):277:str == null || str.length() == 0 || delimLen == 0 |==> true
+143:LVR:TRUE:FALSE:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):282:true |==> false
+144:LVR:0:POS:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):283:0 |==> 1
+145:LVR:0:NEG:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):283:0 |==> -1
+146:ROR:<(int,int):!=(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):283:i < strLen |==> i != strLen
+147:ROR:<(int,int):<=(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):283:i < strLen |==> i <= strLen
+148:ROR:<(int,int):==(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):283:i < strLen |==> i == strLen
+149:ROR:<(int,int):>(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):283:i < strLen |==> i > strLen
+150:ROR:<(int,int):>=(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):283:i < strLen |==> i >= strLen
+151:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):283:i < strLen |==> false
+152:ROR:<(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):283:i < strLen |==> true
+153:COR:isDelimiter(ch, delimiters):TRUE:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):286:isDelimiter(ch, delimiters) |==> false
+154:COR:isDelimiter(ch, delimiters):FALSE:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):286:isDelimiter(ch, delimiters) |==> true
+155:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):287:buffer.append(ch) |==> <NO-OP>
+156:LVR:TRUE:FALSE:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):288:true |==> false
+157:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):288:capitalizeNext = true |==> <NO-OP>
+158:COR:capitalizeNext:TRUE:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):289:capitalizeNext |==> false
+159:COR:capitalizeNext:FALSE:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):289:capitalizeNext |==> true
+160:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):290:buffer.append(Character.toTitleCase(ch)) |==> <NO-OP>
+161:LVR:FALSE:TRUE:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):291:false |==> true
+162:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):291:capitalizeNext = false |==> <NO-OP>
+163:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@capitalize(java.lang.String,char[]):293:buffer.append(ch) |==> <NO-OP>
+164:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):350:delimiters == null |==> delimiters != null
+165:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):350:delimiters == null |==> false
+166:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):350:delimiters == null |==> true
+167:LVR:NEG:0:org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):350:-1 |==> 0
+168:LVR:NEG:POS:org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):350:-1 |==> 1
+169:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str == null |==> str != null
+170:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str == null |==> false
+171:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str == null |==> true
+172:LVR:0:POS:org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:0 |==> 1
+173:LVR:0:NEG:org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:0 |==> -1
+174:ROR:==(int,int):!=(int,int):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str.length() == 0 |==> str.length() != 0
+175:ROR:==(int,int):<(int,int):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str.length() == 0 |==> str.length() < 0
+176:ROR:==(int,int):<=(int,int):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str.length() == 0 |==> str.length() <= 0
+177:ROR:==(int,int):>(int,int):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str.length() == 0 |==> str.length() > 0
+178:ROR:==(int,int):>=(int,int):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str.length() == 0 |==> str.length() >= 0
+179:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str.length() == 0 |==> false
+180:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str.length() == 0 |==> true
+181:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str == null || str.length() == 0 |==> str == null != (str.length() == 0)
+182:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str == null || str.length() == 0 |==> str == null && str.length() == 0
+183:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str == null || str.length() == 0 |==> str == null == (str.length() == 0)
+184:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str == null || str.length() == 0 |==> false
+185:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str == null || str.length() == 0 |==> str == null
+186:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str == null || str.length() == 0 |==> str.length() == 0
+187:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str == null || str.length() == 0 |==> true
+188:LVR:0:POS:org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:0 |==> 1
+189:LVR:0:NEG:org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:0 |==> -1
+190:ROR:==(int,int):!=(int,int):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:delimLen == 0 |==> delimLen != 0
+191:ROR:==(int,int):<(int,int):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:delimLen == 0 |==> delimLen < 0
+192:ROR:==(int,int):<=(int,int):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:delimLen == 0 |==> delimLen <= 0
+193:ROR:==(int,int):>(int,int):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:delimLen == 0 |==> delimLen > 0
+194:ROR:==(int,int):>=(int,int):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:delimLen == 0 |==> delimLen >= 0
+195:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:delimLen == 0 |==> false
+196:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:delimLen == 0 |==> true
+197:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str == null || str.length() == 0 || delimLen == 0 |==> (str == null || str.length() == 0) != (delimLen == 0)
+198:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str == null || str.length() == 0 || delimLen == 0 |==> (str == null || str.length() == 0) && delimLen == 0
+199:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str == null || str.length() == 0 || delimLen == 0 |==> (str == null || str.length() == 0) == (delimLen == 0)
+200:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str == null || str.length() == 0 || delimLen == 0 |==> false
+201:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str == null || str.length() == 0 || delimLen == 0 |==> str == null || str.length() == 0
+202:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str == null || str.length() == 0 || delimLen == 0 |==> delimLen == 0
+203:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):351:str == null || str.length() == 0 || delimLen == 0 |==> true
+204:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@capitalizeFully(java.lang.String,char[]):354:str = str.toLowerCase() |==> <NO-OP>
+205:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):406:delimiters == null |==> delimiters != null
+206:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):406:delimiters == null |==> false
+207:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):406:delimiters == null |==> true
+208:LVR:NEG:0:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):406:-1 |==> 0
+209:LVR:NEG:POS:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):406:-1 |==> 1
+210:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str == null |==> str != null
+211:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str == null |==> false
+212:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str == null |==> true
+213:LVR:0:POS:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:0 |==> 1
+214:LVR:0:NEG:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:0 |==> -1
+215:ROR:==(int,int):!=(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str.length() == 0 |==> str.length() != 0
+216:ROR:==(int,int):<(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str.length() == 0 |==> str.length() < 0
+217:ROR:==(int,int):<=(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str.length() == 0 |==> str.length() <= 0
+218:ROR:==(int,int):>(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str.length() == 0 |==> str.length() > 0
+219:ROR:==(int,int):>=(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str.length() == 0 |==> str.length() >= 0
+220:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str.length() == 0 |==> false
+221:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str.length() == 0 |==> true
+222:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str == null || str.length() == 0 |==> str == null != (str.length() == 0)
+223:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str == null || str.length() == 0 |==> str == null && str.length() == 0
+224:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str == null || str.length() == 0 |==> str == null == (str.length() == 0)
+225:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str == null || str.length() == 0 |==> false
+226:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str == null || str.length() == 0 |==> str == null
+227:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str == null || str.length() == 0 |==> str.length() == 0
+228:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str == null || str.length() == 0 |==> true
+229:LVR:0:POS:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:0 |==> 1
+230:LVR:0:NEG:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:0 |==> -1
+231:ROR:==(int,int):!=(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:delimLen == 0 |==> delimLen != 0
+232:ROR:==(int,int):<(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:delimLen == 0 |==> delimLen < 0
+233:ROR:==(int,int):<=(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:delimLen == 0 |==> delimLen <= 0
+234:ROR:==(int,int):>(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:delimLen == 0 |==> delimLen > 0
+235:ROR:==(int,int):>=(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:delimLen == 0 |==> delimLen >= 0
+236:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:delimLen == 0 |==> false
+237:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:delimLen == 0 |==> true
+238:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str == null || str.length() == 0 || delimLen == 0 |==> (str == null || str.length() == 0) != (delimLen == 0)
+239:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str == null || str.length() == 0 || delimLen == 0 |==> (str == null || str.length() == 0) && delimLen == 0
+240:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str == null || str.length() == 0 || delimLen == 0 |==> (str == null || str.length() == 0) == (delimLen == 0)
+241:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str == null || str.length() == 0 || delimLen == 0 |==> false
+242:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str == null || str.length() == 0 || delimLen == 0 |==> str == null || str.length() == 0
+243:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str == null || str.length() == 0 || delimLen == 0 |==> delimLen == 0
+244:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):407:str == null || str.length() == 0 || delimLen == 0 |==> true
+245:LVR:TRUE:FALSE:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):412:true |==> false
+246:LVR:0:POS:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):413:0 |==> 1
+247:LVR:0:NEG:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):413:0 |==> -1
+248:ROR:<(int,int):!=(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):413:i < strLen |==> i != strLen
+249:ROR:<(int,int):<=(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):413:i < strLen |==> i <= strLen
+250:ROR:<(int,int):==(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):413:i < strLen |==> i == strLen
+251:ROR:<(int,int):>(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):413:i < strLen |==> i > strLen
+252:ROR:<(int,int):>=(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):413:i < strLen |==> i >= strLen
+253:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):413:i < strLen |==> false
+254:ROR:<(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):413:i < strLen |==> true
+255:COR:isDelimiter(ch, delimiters):TRUE:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):416:isDelimiter(ch, delimiters) |==> false
+256:COR:isDelimiter(ch, delimiters):FALSE:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):416:isDelimiter(ch, delimiters) |==> true
+257:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):417:buffer.append(ch) |==> <NO-OP>
+258:LVR:TRUE:FALSE:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):418:true |==> false
+259:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):418:uncapitalizeNext = true |==> <NO-OP>
+260:COR:uncapitalizeNext:TRUE:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):419:uncapitalizeNext |==> false
+261:COR:uncapitalizeNext:FALSE:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):419:uncapitalizeNext |==> true
+262:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):420:buffer.append(Character.toLowerCase(ch)) |==> <NO-OP>
+263:LVR:FALSE:TRUE:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):421:false |==> true
+264:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):421:uncapitalizeNext = false |==> <NO-OP>
+265:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@uncapitalize(java.lang.String,char[]):423:buffer.append(ch) |==> <NO-OP>
+266:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):454:str == null |==> str != null
+267:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):454:str == null |==> false
+268:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):454:str == null |==> true
+269:LVR:0:POS:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):454:0 |==> 1
+270:LVR:0:NEG:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):454:0 |==> -1
+271:ROR:==(int,int):!=(int,int):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):454:(strLen = str.length()) == 0 |==> (strLen = str.length()) != 0
+272:ROR:==(int,int):<(int,int):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):454:(strLen = str.length()) == 0 |==> (strLen = str.length()) < 0
+273:ROR:==(int,int):<=(int,int):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):454:(strLen = str.length()) == 0 |==> (strLen = str.length()) <= 0
+274:ROR:==(int,int):>(int,int):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):454:(strLen = str.length()) == 0 |==> (strLen = str.length()) > 0
+275:ROR:==(int,int):>=(int,int):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):454:(strLen = str.length()) == 0 |==> (strLen = str.length()) >= 0
+276:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):454:(strLen = str.length()) == 0 |==> true
+277:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):454:str == null || (strLen = str.length()) == 0 |==> str == null != ((strLen = str.length()) == 0)
+278:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):454:str == null || (strLen = str.length()) == 0 |==> str == null == ((strLen = str.length()) == 0)
+279:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):454:str == null || (strLen = str.length()) == 0 |==> (strLen = str.length()) == 0
+280:LVR:TRUE:FALSE:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):459:true |==> false
+281:LVR:0:POS:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):460:0 |==> 1
+282:LVR:0:NEG:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):460:0 |==> -1
+283:LVR:0:POS:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):461:0 |==> 1
+284:LVR:0:NEG:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):461:0 |==> -1
+285:LVR:0:POS:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):463:0 |==> 1
+286:LVR:0:NEG:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):463:0 |==> -1
+287:ROR:<(int,int):!=(int,int):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):463:i < strLen |==> i != strLen
+288:ROR:<(int,int):<=(int,int):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):463:i < strLen |==> i <= strLen
+289:ROR:<(int,int):==(int,int):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):463:i < strLen |==> i == strLen
+290:ROR:<(int,int):>(int,int):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):463:i < strLen |==> i > strLen
+291:ROR:<(int,int):>=(int,int):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):463:i < strLen |==> i >= strLen
+292:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):463:i < strLen |==> false
+293:ROR:<(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@swapCase(java.lang.String):463:i < strLen |==> true
+294:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):464:ch = str.charAt(i) |==> <NO-OP>
+295:COR:Character.isUpperCase(ch):TRUE:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):465:Character.isUpperCase(ch) |==> false
+296:COR:Character.isUpperCase(ch):FALSE:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):465:Character.isUpperCase(ch) |==> true
+297:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):466:tmp = Character.toLowerCase(ch) |==> <NO-OP>
+298:COR:Character.isTitleCase(ch):TRUE:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):467:Character.isTitleCase(ch) |==> false
+299:COR:Character.isTitleCase(ch):FALSE:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):467:Character.isTitleCase(ch) |==> true
+300:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):468:tmp = Character.toLowerCase(ch) |==> <NO-OP>
+301:COR:Character.isLowerCase(ch):TRUE:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):469:Character.isLowerCase(ch) |==> false
+302:COR:Character.isLowerCase(ch):FALSE:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):469:Character.isLowerCase(ch) |==> true
+303:COR:whitespace:TRUE:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):470:whitespace |==> false
+304:COR:whitespace:FALSE:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):470:whitespace |==> true
+305:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):471:tmp = Character.toTitleCase(ch) |==> <NO-OP>
+306:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):473:tmp = Character.toUpperCase(ch) |==> <NO-OP>
+307:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):476:tmp = ch |==> <NO-OP>
+308:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):478:buffer.append(tmp) |==> <NO-OP>
+309:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@swapCase(java.lang.String):479:whitespace = Character.isWhitespace(ch) |==> <NO-OP>
+310:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:str == null |==> str != null
+311:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:str == null |==> false
+312:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:str == null |==> true
+313:LVR:0:POS:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:0 |==> 1
+314:LVR:0:NEG:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:0 |==> -1
+315:ROR:==(int,int):!=(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:str.length() == 0 |==> str.length() != 0
+316:ROR:==(int,int):<(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:str.length() == 0 |==> str.length() < 0
+317:ROR:==(int,int):<=(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:str.length() == 0 |==> str.length() <= 0
+318:ROR:==(int,int):>(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:str.length() == 0 |==> str.length() > 0
+319:ROR:==(int,int):>=(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:str.length() == 0 |==> str.length() >= 0
+320:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:str.length() == 0 |==> false
+321:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:str.length() == 0 |==> true
+322:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:str == null || str.length() == 0 |==> str == null != (str.length() == 0)
+323:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:str == null || str.length() == 0 |==> str == null && str.length() == 0
+324:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:str == null || str.length() == 0 |==> str == null == (str.length() == 0)
+325:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:str == null || str.length() == 0 |==> false
+326:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:str == null || str.length() == 0 |==> str == null
+327:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:str == null || str.length() == 0 |==> str.length() == 0
+328:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):539:str == null || str.length() == 0 |==> true
+329:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:delimiters != null |==> delimiters == null
+330:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:delimiters != null |==> false
+331:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:delimiters != null |==> true
+332:LVR:0:POS:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:0 |==> 1
+333:LVR:0:NEG:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:0 |==> -1
+334:ROR:==(int,int):!=(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:delimiters.length == 0 |==> delimiters.length != 0
+335:ROR:==(int,int):<(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:delimiters.length == 0 |==> delimiters.length < 0
+336:ROR:==(int,int):<=(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:delimiters.length == 0 |==> delimiters.length <= 0
+337:ROR:==(int,int):>(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:delimiters.length == 0 |==> delimiters.length > 0
+338:ROR:==(int,int):>=(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:delimiters.length == 0 |==> delimiters.length >= 0
+339:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:delimiters.length == 0 |==> false
+340:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:delimiters.length == 0 |==> true
+341:COR:&&(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:delimiters != null && delimiters.length == 0 |==> delimiters != null != (delimiters.length == 0)
+342:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:delimiters != null && delimiters.length == 0 |==> delimiters != null == (delimiters.length == 0)
+343:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:delimiters != null && delimiters.length == 0 |==> false
+344:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:delimiters != null && delimiters.length == 0 |==> delimiters != null
+345:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:delimiters != null && delimiters.length == 0 |==> delimiters.length == 0
+346:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:delimiters != null && delimiters.length == 0 |==> true
+347:COR:&&(boolean,boolean):||(boolean,boolean):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):542:delimiters != null && delimiters.length == 0 |==> delimiters != null || delimiters.length == 0
+348:LVR:POS:0:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):546:2 |==> 0
+349:LVR:POS:NEG:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):546:2 |==> -2
+350:AOR:/(int,int):%(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):546:strLen / 2 |==> strLen % 2
+351:AOR:/(int,int):*(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):546:strLen / 2 |==> strLen * 2
+352:AOR:/(int,int):+(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):546:strLen / 2 |==> strLen + 2
+353:AOR:/(int,int):-(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):546:strLen / 2 |==> strLen - 2
+354:LVR:POS:0:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):546:1 |==> 0
+355:LVR:POS:NEG:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):546:1 |==> -1
+356:AOR:+(int,int):%(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):546:strLen / 2 + 1 |==> strLen / 2 % 1
+357:AOR:+(int,int):*(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):546:strLen / 2 + 1 |==> strLen / 2 * 1
+358:AOR:+(int,int):-(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):546:strLen / 2 + 1 |==> strLen / 2 - 1
+359:AOR:+(int,int):/(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):546:strLen / 2 + 1 |==> strLen / 2 / 1
+360:LVR:0:POS:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):547:0 |==> 1
+361:LVR:0:NEG:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):547:0 |==> -1
+362:LVR:TRUE:FALSE:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):548:true |==> false
+363:LVR:0:POS:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):549:0 |==> 1
+364:LVR:0:NEG:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):549:0 |==> -1
+365:ROR:<(int,int):!=(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):549:i < strLen |==> i != strLen
+366:ROR:<(int,int):<=(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):549:i < strLen |==> i <= strLen
+367:ROR:<(int,int):==(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):549:i < strLen |==> i == strLen
+368:ROR:<(int,int):>(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):549:i < strLen |==> i > strLen
+369:ROR:<(int,int):>=(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):549:i < strLen |==> i >= strLen
+370:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):549:i < strLen |==> false
+371:ROR:<(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):549:i < strLen |==> true
+372:COR:isDelimiter(ch, delimiters):TRUE:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):552:isDelimiter(ch, delimiters) |==> false
+373:COR:isDelimiter(ch, delimiters):FALSE:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):552:isDelimiter(ch, delimiters) |==> true
+374:LVR:TRUE:FALSE:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):553:true |==> false
+375:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):553:lastWasGap = true |==> <NO-OP>
+376:COR:lastWasGap:TRUE:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):554:lastWasGap |==> false
+377:COR:lastWasGap:FALSE:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):554:lastWasGap |==> true
+378:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):555:buf[count++] = ch |==> <NO-OP>
+379:LVR:FALSE:TRUE:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):556:false |==> true
+380:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):556:lastWasGap = false |==> <NO-OP>
+381:LVR:0:POS:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):561:0 |==> 1
+382:LVR:0:NEG:org.apache.commons.lang.WordUtils@initials(java.lang.String,char[]):561:0 |==> -1
+383:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):573:delimiters == null |==> delimiters != null
+384:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):573:delimiters == null |==> false
+385:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):573:delimiters == null |==> true
+386:LVR:0:POS:org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):576:0 |==> 1
+387:LVR:0:NEG:org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):576:0 |==> -1
+388:ROR:<(int,int):!=(int,int):org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):576:i < isize |==> i != isize
+389:ROR:<(int,int):<=(int,int):org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):576:i < isize |==> i <= isize
+390:ROR:<(int,int):==(int,int):org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):576:i < isize |==> i == isize
+391:ROR:<(int,int):>(int,int):org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):576:i < isize |==> i > isize
+392:ROR:<(int,int):>=(int,int):org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):576:i < isize |==> i >= isize
+393:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):576:i < isize |==> false
+394:ROR:<(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):576:i < isize |==> true
+395:ROR:==(int,int):!=(int,int):org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):577:ch == delimiters[i] |==> ch != delimiters[i]
+396:ROR:==(int,int):<(int,int):org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):577:ch == delimiters[i] |==> ch < delimiters[i]
+397:ROR:==(int,int):<=(int,int):org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):577:ch == delimiters[i] |==> ch <= delimiters[i]
+398:ROR:==(int,int):>(int,int):org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):577:ch == delimiters[i] |==> ch > delimiters[i]
+399:ROR:==(int,int):>=(int,int):org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):577:ch == delimiters[i] |==> ch >= delimiters[i]
+400:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):577:ch == delimiters[i] |==> false
+401:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):577:ch == delimiters[i] |==> true
+402:LVR:TRUE:FALSE:org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):578:true |==> false
+403:LVR:FALSE:TRUE:org.apache.commons.lang.WordUtils@isDelimiter(char,char[]):581:false |==> true
+404:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):607:str == null |==> str != null
+405:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):607:str == null |==> false
+406:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):607:str == null |==> true
+407:LVR:0:POS:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):610:0 |==> 1
+408:LVR:0:NEG:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):610:0 |==> -1
+409:ROR:==(int,int):!=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):610:str.length() == 0 |==> str.length() != 0
+410:ROR:==(int,int):<(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):610:str.length() == 0 |==> str.length() < 0
+411:ROR:==(int,int):<=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):610:str.length() == 0 |==> str.length() <= 0
+412:ROR:==(int,int):>(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):610:str.length() == 0 |==> str.length() > 0
+413:ROR:==(int,int):>=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):610:str.length() == 0 |==> str.length() >= 0
+414:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):610:str.length() == 0 |==> false
+415:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):610:str.length() == 0 |==> true
+416:ROR:>(int,int):!=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):616:lower > str.length() |==> lower != str.length()
+417:ROR:>(int,int):<(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):616:lower > str.length() |==> lower < str.length()
+418:ROR:>(int,int):<=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):616:lower > str.length() |==> lower <= str.length()
+419:ROR:>(int,int):==(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):616:lower > str.length() |==> lower == str.length()
+420:ROR:>(int,int):>=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):616:lower > str.length() |==> lower >= str.length()
+421:ROR:>(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):616:lower > str.length() |==> false
+422:ROR:>(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):616:lower > str.length() |==> true
+423:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):617:lower = str.length() |==> <NO-OP>
+424:LVR:NEG:0:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:-1 |==> 0
+425:LVR:NEG:POS:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:-1 |==> 1
+426:ROR:==(int,int):!=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper == -1 |==> upper != -1
+427:ROR:==(int,int):<(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper == -1 |==> upper < -1
+428:ROR:==(int,int):<=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper == -1 |==> upper <= -1
+429:ROR:==(int,int):>(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper == -1 |==> upper > -1
+430:ROR:==(int,int):>=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper == -1 |==> upper >= -1
+431:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper == -1 |==> false
+432:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper == -1 |==> true
+433:ROR:>(int,int):!=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper > str.length() |==> upper != str.length()
+434:ROR:>(int,int):<(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper > str.length() |==> upper < str.length()
+435:ROR:>(int,int):<=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper > str.length() |==> upper <= str.length()
+436:ROR:>(int,int):==(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper > str.length() |==> upper == str.length()
+437:ROR:>(int,int):>=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper > str.length() |==> upper >= str.length()
+438:ROR:>(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper > str.length() |==> false
+439:ROR:>(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper > str.length() |==> true
+440:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper == -1 || upper > str.length() |==> upper == -1 != upper > str.length()
+441:COR:||(boolean,boolean):&&(boolean,boolean):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper == -1 || upper > str.length() |==> upper == -1 && upper > str.length()
+442:COR:||(boolean,boolean):==(boolean,boolean):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper == -1 || upper > str.length() |==> upper == -1 == upper > str.length()
+443:COR:||(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper == -1 || upper > str.length() |==> false
+444:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper == -1 || upper > str.length() |==> upper == -1
+445:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper == -1 || upper > str.length() |==> upper > str.length()
+446:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):621:upper == -1 || upper > str.length() |==> true
+447:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):622:upper = str.length() |==> <NO-OP>
+448:ROR:<(int,int):!=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):625:upper < lower |==> upper != lower
+449:ROR:<(int,int):<=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):625:upper < lower |==> upper <= lower
+450:ROR:<(int,int):==(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):625:upper < lower |==> upper == lower
+451:ROR:<(int,int):>(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):625:upper < lower |==> upper > lower
+452:ROR:<(int,int):>=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):625:upper < lower |==> upper >= lower
+453:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):625:upper < lower |==> false
+454:ROR:<(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):625:upper < lower |==> true
+455:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):626:upper = lower |==> <NO-OP>
+456:LVR:NEG:0:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):631:-1 |==> 0
+457:LVR:NEG:POS:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):631:-1 |==> 1
+458:ROR:==(int,int):!=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):631:index == -1 |==> index != -1
+459:ROR:==(int,int):<(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):631:index == -1 |==> index < -1
+460:ROR:==(int,int):<=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):631:index == -1 |==> index <= -1
+461:ROR:==(int,int):>(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):631:index == -1 |==> index > -1
+462:ROR:==(int,int):>=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):631:index == -1 |==> index >= -1
+463:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):631:index == -1 |==> false
+464:ROR:==(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):631:index == -1 |==> true
+465:LVR:0:POS:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):632:0 |==> 1
+466:LVR:0:NEG:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):632:0 |==> -1
+467:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):632:result.append(str.substring(0, upper)) |==> <NO-OP>
+468:ROR:!=(int,int):<(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):634:upper != str.length() |==> upper < str.length()
+469:ROR:!=(int,int):<=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):634:upper != str.length() |==> upper <= str.length()
+470:ROR:!=(int,int):==(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):634:upper != str.length() |==> upper == str.length()
+471:ROR:!=(int,int):>(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):634:upper != str.length() |==> upper > str.length()
+472:ROR:!=(int,int):>=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):634:upper != str.length() |==> upper >= str.length()
+473:ROR:!=(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):634:upper != str.length() |==> false
+474:ROR:!=(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):634:upper != str.length() |==> true
+475:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):635:result.append(StringUtils.defaultString(appendToEnd)) |==> <NO-OP>
+476:ROR:>(int,int):!=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):637:index > upper |==> index != upper
+477:ROR:>(int,int):<(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):637:index > upper |==> index < upper
+478:ROR:>(int,int):<=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):637:index > upper |==> index <= upper
+479:ROR:>(int,int):==(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):637:index > upper |==> index == upper
+480:ROR:>(int,int):>=(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):637:index > upper |==> index >= upper
+481:ROR:>(int,int):FALSE(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):637:index > upper |==> false
+482:ROR:>(int,int):TRUE(int,int):org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):637:index > upper |==> true
+483:LVR:0:POS:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):638:0 |==> 1
+484:LVR:0:NEG:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):638:0 |==> -1
+485:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):638:result.append(str.substring(0, upper)) |==> <NO-OP>
+486:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):639:result.append(StringUtils.defaultString(appendToEnd)) |==> <NO-OP>
+487:LVR:0:POS:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):641:0 |==> 1
+488:LVR:0:NEG:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):641:0 |==> -1
+489:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):641:result.append(str.substring(0, index)) |==> <NO-OP>
+490:STD:<CALL>:<NO-OP>:org.apache.commons.lang.WordUtils@abbreviate(java.lang.String,int,int,java.lang.String):642:result.append(StringUtils.defaultString(appendToEnd)) |==> <NO-OP>
