@@ -6,7 +6,7 @@ This repository contains resources regarding the following paper:
 > "A theoretical and empirical study of diversity-aware mutation adequacy criterion." 
 > IEEE Transactions on Software Engineering 44.10 (2018): 914-931.
 
-The main purpose of this implementation is experiments;
+This repository provides not a ready-made tool for testing, but a program for experiments;
 you can generate various mutation-adequate test suites (from the given test pool) 
 using 
 * (traditional) kill-only mutation adequacy criterion and
